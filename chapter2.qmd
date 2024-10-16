@@ -1,0 +1,10 @@
+---
+title: "Chapter 2"
+---
+
+# Chapter 2
+
+This is the second chapter of my Quarto book.
+
+```{r}
+# R code goes here

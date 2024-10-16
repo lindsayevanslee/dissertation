@@ -1,0 +1,136 @@
+---
+title: "Chapter 4"
+---
+
+This is the fourth chapter of my Quarto book.
+
+```{r setup, include=FALSE}
+# Load the xml2 package
+library(xml2)
+```
+
+::: {.panel-tabset}
+
+## Unedited Mess
+
+```{r}
+# Read the XML content
+xml_file <- read_xml("data/T-E.xml")
+
+# Extract the <l> elements inside the <text> element
+lines <- xml_find_all(xml_file, "//text//l")
+
+# Function to process each <l> element
+process_line <- function(line) {
+  # Find all <choice> elements within the line
+  choices <- xml_find_all(line, ".//choice")
+  for (choice in choices) {
+    # Extract the text from the <orig> tag
+    orig_text <- xml_text(xml_find_first(choice, ".//orig"))
+    # Remove the <choice> element and replace it with the text from the <orig> tag
+    xml_set_text(choice, orig_text)
+  }
+  
+  # Now we want to remove any <reg> elements entirely
+  reg_elements <- xml_find_all(line, ".//reg")
+  xml_remove(reg_elements)
+  
+  # Return the processed text of the line
+  return(xml_text(line))
+}
+
+# Apply the function to each <l> element and concatenate with line breaks
+text_content <- sapply(lines, process_line)
+formatted_text <- paste(text_content, collapse = "\n")
+
+# Print the formatted text content as a block of text, preserving line breaks
+cat(formatted_text, sep = "\n")
+```
+
+## Expanded Abbreviations Mess
+
+```{r}
+# Read the XML content
+xml_file <- read_xml("data/T-E.xml")
+
+# Extract the <l> elements inside the <text> element
+lines <- xml_find_all(xml_file, "//text//l")
+
+# Function to process each <l> element
+process_line <- function(line) {
+  # Find all <choice> elements within the line
+  choices <- xml_find_all(line, ".//choice")
+  for (choice in choices) {
+    # Check if the <choice> element contains <abbr> and <expan>
+    abbr_exists <- xml_find_first(choice, ".//abbr")
+    expan_exists <- xml_find_first(choice, ".//expan")
+    
+    if (!is.na(abbr_exists) && !is.na(expan_exists)) {
+      # If <abbr> and <expan> tags exist, replace the <choice> element with the <reg> text inside <expan>
+      expan_reg_text <- xml_text(xml_find_first(choice, ".//expan//reg"))
+
+      # Ensure to replace the entire <choice> content with <expan><reg> text only once
+      xml_set_text(choice, expan_reg_text)
+      
+    } else {
+      # If no <abbr>/<expan>, process the <orig>/<reg> tags
+      orig_text <- xml_text(xml_find_first(choice, ".//orig"))
+      
+      # Remove the <reg> elements, making sure only the <orig> text remains
+      reg_elements <- xml_find_all(choice, ".//reg")
+      xml_remove(reg_elements)
+      
+      # Set the text of the <choice> element to the text of the <orig> tag
+      xml_set_text(choice, orig_text)
+    }
+  }
+  
+  # Return the processed text of the line
+  return(xml_text(line))
+}
+
+# Apply the function to each <l> element and concatenate with line breaks
+text_content <- sapply(lines, process_line)
+formatted_text <- paste(text_content, collapse = "\n")
+
+# Print the formatted text content as a block of text, preserving line breaks
+cat(formatted_text, sep = "\n")
+```
+
+## Editor's Choice Mess
+
+```{r}
+# Read the XML content
+xml_file <- read_xml("data/T-E.xml")
+
+# Extract the <l> elements inside the <text> element
+lines <- xml_find_all(xml_file, "//text//l")
+
+# Function to process each <l> element
+process_line <- function(line) {
+  # Find all <choice> elements within the line
+  choices <- xml_find_all(line, ".//choice")
+  for (choice in choices) {
+    # Extract the text from the <reg> tag
+    reg_text <- xml_text(xml_find_first(choice, ".//reg"))
+    # Replace the <choice> element with the text from the <reg> tag
+    xml_set_text(choice, reg_text)
+  }
+  
+  # Now we want to remove any <orig> elements entirely
+  orig_elements <- xml_find_all(line, ".//orig")
+  xml_remove(orig_elements)
+  
+  # Return the processed text of the line
+  return(xml_text(line))
+}
+
+# Apply the function to each <l> element and concatenate with line breaks
+text_content <- sapply(lines, process_line)
+formatted_text <- paste(text_content, collapse = "\n")
+
+# Print the formatted text content as a block of text, preserving line breaks
+cat(formatted_text, sep = "\n")
+```
+
+:::
