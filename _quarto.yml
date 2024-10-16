@@ -1,5 +1,6 @@
 project:
   type: book
+  output-dir: docs
 
 book:
   title: "dissertation"
@@ -20,7 +21,6 @@ bibliography: references.bib
 format:
   html:
     theme: cosmo
-    output-dir: docs
   pdf:
     documentclass: scrreprt
 
