@@ -9,18 +9,20 @@ book:
   chapters:
     - index.qmd
     - intro.qmd
-    - summary.qmd
-    - references.qmd
     - chapter1.qmd
     - chapter2.qmd
     - chapter3.qmd
     - chapter4.qmd
+    - conclusion.qmd
+    - references.qmd
 
 bibliography: references.bib
 
 format:
   html:
     theme: cosmo
+    number-sections: false
+
   pdf:
     documentclass: scrreprt
 
