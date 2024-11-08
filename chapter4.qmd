@@ -38,14 +38,14 @@ process_line <- function(line) {
   reg_elements <- xml_find_all(line, ".//reg")
   xml_remove(reg_elements)
   
-  # Replace <lb/> tags with \n\n
+  # Replace <lb/> tags with HTML line break
   lb_elements <- xml_find_all(line, ".//lb")
   for (lb in lb_elements) {
-    xml_set_text(lb, "\n\n")
+    xml_set_text(lb, "")
   }
   
-  # Get the text of the line
-  line_text <- as.character(line)
+  # Get the text of the line and wrap in a div with line-height control
+  line_text <- sprintf("<div style='line-height: 1.2;'>%s</div>", as.character(line))
   
   # Return the processed text of the line
   return(line_text)

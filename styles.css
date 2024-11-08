@@ -1,4 +1,5 @@
 .column-break {
   margin-bottom: 2em; /* Adjust the margin to create the desired spacing */
+  line-height: 1.2;
   background-color: lightgray; /* Temporary background to check if column break is appearing */
 }
