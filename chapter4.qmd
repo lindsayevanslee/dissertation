@@ -17,7 +17,7 @@ library(xml2)
 # Read the XML content
 xml_file <- read_xml("data/T-E.xml")
 
-# Extract the <l> elements inside the <text> element
+# Extract the <l> and <cb> elements inside the <text> element
 lines <- xml_find_all(xml_file, "//text//l | //text//cb")
 
 # Initialize an empty list to store the processed lines
@@ -38,8 +38,14 @@ process_line <- function(line) {
   reg_elements <- xml_find_all(line, ".//reg")
   xml_remove(reg_elements)
   
+  # Replace <lb/> tags with \n\n
+  lb_elements <- xml_find_all(line, ".//lb")
+  for (lb in lb_elements) {
+    xml_set_text(lb, "\n\n")
+  }
+  
   # Get the text of the line
-  line_text <- xml_text(line)
+  line_text <- as.character(line)
   
   # Return the processed text of the line
   return(line_text)
@@ -60,7 +66,7 @@ for (line in lines) {
 formatted_text <- paste(c("<div class='column-break'>", processed_lines, "</div>"), collapse = "\n")
 
 # Print the formatted text content as a block of text, preserving line breaks
-cat(formatted_text, sep = "<br><br>")
+cat(formatted_text, sep = "")
 ```
 
 ## Expanded Abbreviations Mess
