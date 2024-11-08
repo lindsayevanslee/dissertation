@@ -23,6 +23,8 @@ format:
     theme: cosmo
     number-sections: false
     css: styles.css
+    code-fold: true
+    code-summary: "show the code"
 
   pdf:
     documentclass: scrreprt
