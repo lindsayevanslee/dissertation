@@ -5091,1616 +5091,1617 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb2-14"><a href="#cb2-14" aria-hidden="true" tabindex="-1"></a>    expan_exists <span class="ot">&lt;-</span> <span class="fu">xml_find_first</span>(choice, <span class="st">".//expan"</span>)</span>
 <span id="cb2-15"><a href="#cb2-15" aria-hidden="true" tabindex="-1"></a>    </span>
 <span id="cb2-16"><a href="#cb2-16" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="sc">!</span><span class="fu">is.na</span>(abbr_exists) <span class="sc">&amp;&amp;</span> <span class="sc">!</span><span class="fu">is.na</span>(expan_exists)) {</span>
-<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>      <span class="co"># If &lt;abbr&gt; and &lt;expan&gt; tags exist, replace the &lt;choice&gt; element with the &lt;reg&gt; text inside &lt;expan&gt;</span></span>
-<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>      expan_reg_text <span class="ot">&lt;-</span> <span class="fu">xml_text</span>(<span class="fu">xml_find_first</span>(choice, <span class="st">".//expan//reg"</span>))</span>
-<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>      <span class="co"># Ensure to replace the entire &lt;choice&gt; content with &lt;expan&gt;&lt;reg&gt; text only once</span></span>
-<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>      <span class="fu">xml_set_text</span>(choice, expan_reg_text)</span>
-<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>      </span>
-<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> {</span>
-<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>      <span class="co"># If no &lt;abbr&gt;/&lt;expan&gt;, process the &lt;orig&gt;/&lt;reg&gt; tags</span></span>
-<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>      orig_text <span class="ot">&lt;-</span> <span class="fu">xml_text</span>(<span class="fu">xml_find_first</span>(choice, <span class="st">".//orig"</span>))</span>
-<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>      </span>
-<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>      <span class="co"># Remove the &lt;reg&gt; elements, making sure only the &lt;orig&gt; text remains</span></span>
-<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>      reg_elements <span class="ot">&lt;-</span> <span class="fu">xml_find_all</span>(choice, <span class="st">".//reg"</span>)</span>
-<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>      <span class="fu">xml_remove</span>(reg_elements)</span>
-<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>      </span>
-<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>      <span class="co"># Set the text of the &lt;choice&gt; element to the text of the &lt;orig&gt; tag</span></span>
-<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>      <span class="fu">xml_set_text</span>(choice, orig_text)</span>
-<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Return the processed text of the line</span></span>
-<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(<span class="fu">xml_text</span>(line))</span>
-<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a><span class="co"># Apply the function to each &lt;l&gt; element and concatenate with line breaks</span></span>
-<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a>text_content <span class="ot">&lt;-</span> <span class="fu">sapply</span>(lines, process_line)</span>
-<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a>formatted_text <span class="ot">&lt;-</span> <span class="fu">paste</span>(text_content, <span class="at">collapse =</span> <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span>
-<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a><span class="co"># Print the formatted text content as a block of text, preserving line breaks</span></span>
-<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(formatted_text, <span class="at">sep =</span> <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb2-17"><a href="#cb2-17" aria-hidden="true" tabindex="-1"></a>      <span class="co"># If &lt;abbr&gt; and &lt;expan&gt; tags exist, extract only the &lt;reg&gt; text from &lt;expan&gt;</span></span>
+<span id="cb2-18"><a href="#cb2-18" aria-hidden="true" tabindex="-1"></a>      reg_text <span class="ot">&lt;-</span> <span class="fu">xml_text</span>(<span class="fu">xml_find_first</span>(choice, <span class="st">".//expan/reg"</span>))</span>
+<span id="cb2-19"><a href="#cb2-19" aria-hidden="true" tabindex="-1"></a>      <span class="fu">xml_set_text</span>(choice, reg_text)</span>
+<span id="cb2-20"><a href="#cb2-20" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> {</span>
+<span id="cb2-21"><a href="#cb2-21" aria-hidden="true" tabindex="-1"></a>      <span class="co"># For non-abbreviation choices, keep original behavior</span></span>
+<span id="cb2-22"><a href="#cb2-22" aria-hidden="true" tabindex="-1"></a>      orig_text <span class="ot">&lt;-</span> <span class="fu">xml_text</span>(<span class="fu">xml_find_first</span>(choice, <span class="st">".//orig"</span>))</span>
+<span id="cb2-23"><a href="#cb2-23" aria-hidden="true" tabindex="-1"></a>      <span class="fu">xml_set_text</span>(choice, orig_text)</span>
+<span id="cb2-24"><a href="#cb2-24" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb2-25"><a href="#cb2-25" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb2-26"><a href="#cb2-26" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-27"><a href="#cb2-27" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Now we want to remove any &lt;reg&gt; elements entirely</span></span>
+<span id="cb2-28"><a href="#cb2-28" aria-hidden="true" tabindex="-1"></a>  reg_elements <span class="ot">&lt;-</span> <span class="fu">xml_find_all</span>(line, <span class="st">".//reg"</span>)</span>
+<span id="cb2-29"><a href="#cb2-29" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xml_remove</span>(reg_elements)</span>
+<span id="cb2-30"><a href="#cb2-30" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-31"><a href="#cb2-31" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Replace &lt;lb/&gt; tags with HTML line break</span></span>
+<span id="cb2-32"><a href="#cb2-32" aria-hidden="true" tabindex="-1"></a>  lb_elements <span class="ot">&lt;-</span> <span class="fu">xml_find_all</span>(line, <span class="st">".//lb"</span>)</span>
+<span id="cb2-33"><a href="#cb2-33" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (lb <span class="cf">in</span> lb_elements) {</span>
+<span id="cb2-34"><a href="#cb2-34" aria-hidden="true" tabindex="-1"></a>    <span class="fu">xml_set_text</span>(lb, <span class="st">"&lt;br&gt;"</span>)</span>
+<span id="cb2-35"><a href="#cb2-35" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb2-36"><a href="#cb2-36" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb2-37"><a href="#cb2-37" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Get the text of the line</span></span>
+<span id="cb2-38"><a href="#cb2-38" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(<span class="fu">xml_text</span>(line))</span>
+<span id="cb2-39"><a href="#cb2-39" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb2-40"><a href="#cb2-40" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-41"><a href="#cb2-41" aria-hidden="true" tabindex="-1"></a><span class="co"># Apply the function to each &lt;l&gt; element and concatenate with line breaks</span></span>
+<span id="cb2-42"><a href="#cb2-42" aria-hidden="true" tabindex="-1"></a>text_content <span class="ot">&lt;-</span> <span class="fu">sapply</span>(lines, process_line)</span>
+<span id="cb2-43"><a href="#cb2-43" aria-hidden="true" tabindex="-1"></a>formatted_text <span class="ot">&lt;-</span> <span class="fu">paste</span>(text_content, <span class="at">collapse =</span> <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span>
+<span id="cb2-44"><a href="#cb2-44" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb2-45"><a href="#cb2-45" aria-hidden="true" tabindex="-1"></a><span class="co"># Print the formatted text content as a block of text, preserving line breaks</span></span>
+<span id="cb2-46"><a href="#cb2-46" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(formatted_text, <span class="at">sep =</span> <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 <div class="cell-output cell-output-stdout">
-<pre><code>Seignor oies une raison
-ou il na severite non
-tot est faite de verite
-Ni a -i- mot defausete
-BienBien croi queque volentiersvolentiers l'orrontl'orront
-Cil qui Damedeu ameront
-Car acels quiqui de luy nont cure
-Est sa parolesa parole &amp; aspre &amp; dure
-tot cil quiqui le volrontvolront amer
-&amp; por samor moi escouterescouter
-de ma dame saint Marie
-legiptiene orront la vie
-Car ce sachent tot pecheor
-QuiQui forfait se al Creator
-QuiQui nul pechies nest tant pesant
-Nesioribles ne tant gransgrans
-dont Dex ne face vrai pardonpardon
-parpar foi &amp; parpar confession
-acelsquiqui prendent penitance
-Mais gardent soi de mescreancemescreance
-Se hom guerpistguerpist la mercila merci De
-cis pechies niert ja pardoneja pardone
-Car honte fait al Creator
-&amp; al dyable fait honor
-QuiQuimoltmolt est fel &amp; en vieus
-&amp; de mal faire covoiteus
-devant nos vient souvent esterester
-QuiQuinosnos volroit aluy tornertorner
-Il nest nus hom enceste vie
-QuiQui tant soit sage u nait folie
-Li apostle quiqui Deu sievoient
-parparmoltmolt de foies pechoient
-porpor co ne me puis merveillermerveiller
-del home sele voi pecherpecher
-Mais de ce luy est grantgrant merveillemerveille
-QuiQui tos jors dort &amp; ne someille
-&amp; enses ors pechies sen dort
-tant qu'ilqu'il sent al cuer lamort
-QuantQuant il se muert &amp; il se sent
-a dont il ja me repent
-Selonc le dit saint Agustinsaint Agustin
-Nest mie bone iceste fin
-QuiQui tart est prispris ______ al repentir
-QuantQuant on est ______ venusvenus al morir
-Car quantquant licuers sent lamort
-Il nepuet faire droit netort
-Guerpist lamale iniquite
-Car il nen a mais poeste
-Se il sentist plus de savie
-Encore fesist il folie
-QuantQuantlameenvaconmeconme caitive
-Qui li feraQui li feradonquesdonques aide
-NusNus hom soseies nelifera
-Se nest cil sires quilquil cria
-Celadameeladamedontdont doi conterconter
-Marieloi apeler
-Egiptiene est por ce dite
-QueQue ele fu nee de gipte
-Iluec fu nee &amp; baptisie
-Mais malementmalement fu enseignie
-Legiere devint desenfance
-honte perdiperdi tote emeance
-tant ert espriseesprise de luxure
-de nule autreautre rien navoit curecure
-PorPor ce qu'elqu'el est tanttant bele &amp; gentegente
-Se fioit tant ensajovente
-Ne li membroitli membroit pas demorir
-Si faisoit tot a son plaisir
-de -ii- parens ne se gardoit
-A tos homes sabandonoit
-Nespoirqueque fust en ceste vie
-Feme de plusplus grantgrant legerie
-perepere &amp; meremere quantquant leveoient
-A poi de duel ne socioient
-Il levoloient castoier
-Ele nes prisoitprisoit -i- denierdenier
-Ne prisoitNe prisoit casti deparent
-Nient plusplus qu'unqu'un trespas de ventde vent
-Fille ce lidisoit lamere
-Car croi le conseilconseil de ton perede ton pere
-SelongementSelongement tiens cest mestiermestier
-MoltMolt en arons grantgrant reprovierreprovier
-PorPorDeu te proi fille Marie
-Guerpis mais ceste legerie
-QuantQuant cest mestiermestier aras guerpiguerpi
-Nos te donrons riche mari
-Nest drois queque tu soies perie
-Por soffraite de nostrenostre aie
-Filletues de haut parage
-MoltMolt est grantgrant duel &amp; grantgrant damage
-QueQue tu seras issi perie
-porta malvaise legerie
-tes peres en est si iries
-Jamaisanul jor n'enn'en ert lies
-&amp; maldist tote s'aventures'aventure
-QuantQuantafait tele engenieure
-QuantQuantMarielooit parler
-Nelevoloit nes escouterescouter
-tresqu'eletresqu'ele avoit passe -xii- anz
-del tot volt faire ses conmansconmans
-porporbienbien faire savolente
-Sen fui en autre regne
-tot son parente deguerpideguerpi
-puis n'oirentn'oirent parlerparler de li
-Elesen fui commecomme leire
-Sans seu de pere &amp; de meremere
-El chemin sen entra Marie
-Ainc nidemanda compaigniecompaignie
-En Alixandre en est venue
-alun chief delamaistrecue
-ot les meretrix pristprist ostal
-Iluec fut de son cors venal
-Ele estoit blance commecomme flor
-des jovencelsjovencels avoit l'amorl'amor
-tot en venoientvenoient al bordel
-porpor sa [] biaute li jovencel
-Ele les recoit volentiersvolentiers
-NientNientseulementseulement por lor deniersdeniers
-Mais porpor faire lesien delit
-Les ot osoi tote lanuit
-A son delit ert entendive
-de jor &amp; denuit la chaitive
-boire&amp;mangiermangier &amp; luxure
-Co ert tote la soie cure
-QuantQuant ele levoit del soper
-od les garconsgarcons aloit juer
-tant amoit o eus a bordir
-Nentendoit gaires aldormir
-Li jovencel tot lipluisor
-Erent siespris desamor
-QueQue devant sen huis en l'entreeen l'entree
-En faisoient maire mellee
-parpar ce qu'ilqu'il erent si ami
-Si se faisoient la hardi
-de Gisarmes &amp; de espees
-S'entredonoientS'entredonoientgrantgrant colees
-Li sans quiqui en ert espandus
-Encoroit parpar tot lepalus
-La chaitive quiqui ce veoit
-Nulepities ne len prenoit
-Se uns moroit deses amis
-Ele en avoit -xl- vis
-QuantQuant ele en veoit -ii- ocis
-Ja plus tart ne feist -i- ris
-Ja cil quiqui fust porpor li navres
-Ja par liJa par li ne fust visites
-plus amoit ot les vis juer
-coles malades visiter
-En Alixandre estoit Marie
-QuantQuant demenoit iceste vie
-Iluec demena ses talans
-Lachaitive -xvii- ans
-La vile en estoit enpirie
-AlquesAlques en estoit mahaignie
-&amp; li pais tot environ
-en erent en perdicionperdicion
-de sa biaute de sa figure
-Si comSi com il est en escripture
-Voil -i- poi dire le samblantsamblant
-ancois queque jo tres pas avant
-En icel tans ne en cel regne
-Nen ot onquesonques plus bele feme
-onquesonquescomtessecomtesse ne roine
-Nen ot el chief plus bele crignecrigne
-roondes avoit les oreilles
-&amp; blances erenterent a merveillesmerveilles
-les sorcils noirs &amp; avenansavenans
-&amp; les ioex vairs &amp; moltmolt riansrians
-La bouche bele &amp; par mesurepar mesure
-&amp; pieue laregardeure
-la face tenre &amp; coloree
-commecomme rose novele nee
-Ne ja el nes ne el mentonmenton
-Ne parceusciesparceuscies mesfacon
-Le col avoit blanc comcom ermine
-Loiet estoit sa blonde crine
-Niert mie greindresgreindres dunepome
-Lun des traians de cele dommedomme
-de sus la boce en la poitrinepoitrine
-Ert si blance comcom flor despine
-blans bras avoit &amp; blances&amp; blances mainsmains
-les dois reons greillesles dois reons greilles&amp;plains
-Gent cors avoit &amp; bien molle&amp; bien molle
-Sus lasoele lonc lecoste
-Netropgrandegrandene tropne trop petite
-Jasafaconnenertdescrite
-la gransla gransbiautesdecestedame
-Niert toute escrite par nul hommeescrite par nul homme
-Tant ert cortoise de parlerde parler
-Rien ni avoit que amenderque amender
-a plaindre fait tel creaturecreature
-QuantQuantde sonde sonCreatornacure
-Ele recevoit gransgrans presenspresens
-Sen achatoit biaus garnemensgarnemens
-biaus dras avoit &amp; avenansavenans
-porporbienbien plaisir a ses amans
-Navoit pas soingsoing de dras de lainede dras de laine
-Alpiorjor de la semaine
-vestoit bonbon bliaut ostorinostorin
-Si afubloit mantelmantel erminermin
-SollersSollersbienbienpainspains de cordoan
-chaucoit a tusa tus les jors del an
-liciteain de lacite
-l'amoientl'amoient tot porpor sa biaute
-liancien home &amp; lisage
-disoient tot queque cert damage
-tant parpar mar fu ceste dolente
-moltmolt fait aplaindre sa jovente
-mar fu onquesonques la soie vie
-QuantQuant si est plaine de folie
-tot disoient par lacite
-Qu'eleQu'ele ert de haut parente
-Car atos respondoit raison
-&amp; moltmolt ert debele facon
-lifiex a -i- empereor
-Le peust prendre parpar honor
-Ce fu en mai el mois deste
-QuieleQuiele issi de lacite
-&amp; esgardoit aval al port
-U soloit faire son deport
-ariver vit une galee
-QuiQui de tos biensbiens ert escipee
-tote ert plaine de pelerinsde pelerins
-de viex homes &amp; de mescins
-En JherusalemJherusalem en aloient
-parpar bon corage se hastoient
-por estre atans aune feste
-QuiQui de la crois idevoit estre
-Cil quiqui erent li plus legier
-Sen saloient fors el gravergraver
-Main amain aloient avant
-Soz lariviere li enfant
-Mais quantquant les aparcutaparcut Marie
-Nepuet muer que neque ne sen rie 
-Apres si vit -i- home ester
-commencacommenca li ademander
-Sire dist ele car me dis
-porpor icel Deu parpar quiqui tu vie
-Quil partQuil part en iront cil baronbaron
-QuiQui la issent de cel dromon
-Se jo pooie o eus aler
-Car cil ne voil mais demorer
-Aler voil de ceste cite
-Comest vis troptrop iai este
-dontdont li respondi li preudompreudom
-Il iront en JherusalemJherusalem
-Se vusvus lor aves queque doner
-Si porres bienbien deus aler
-parparDeu ce respont la dolente
-moltmoltparpar ai bele jovente
-Mon cors lor metrai abandonabandon
-Nelor puis doner autre don
-QuantQuant li preudompreudom ot lafolie
-Nepuet muer que neque ne senrie
-QuantQuantaoi le covenant
-Guerpi la sisen vait riant
-Eledolentesentorna
-Ainc a lostel ne repaira
-ains sen a la grantgrant aleure
-Si comcom lemenoit s'aventures'aventure
-ainc ne fina trescal vaiscel
-ou estoient li jovencel
-Mais a cols parlaparla tot premerpremer
-QuiQui se juoient el graviergravier
-a aeus en vint isnelementisnelement
-&amp; i parlaparla moltmolt simplementsimplement
-SeigneureignSeigneur dist ele pelerin
-Dexvosvos mete en corage fin
-&amp; vosvos doinst icel volente
-QuiQuivosvos me fa cies carite
-Jasui jo une povre feme
-Ci sui venue d'autred'autre regne
-del regne degipte sui nee
-En cest pais sui esgaree
-Joni ai ami ne parent
-Se mi parpar va moltmolt malementmalement
-ot moi nen ai argent neor
-tot poes veoir monmon tresor
-Joni ai autre manandie
-Mais moltmolt prispris vostrevostre compaigniecompaignie
-Se en la nef o vos estoie
-MoltMolt volentiers vosvos serviroie
-&amp; jo men voil o vos aler
-Se vosvos plaisoit moi aporteraporter
-Ja por porterporter une chaitive
-Ne venries plus tart a rive
-&amp; respondent li jovencel
-Venes onos moltmolt nusnus est bel
-Sus en lanef le font montermonter
-Apres silevont des ancrer
-DonquesDonquescommencentcommencentanagier
-Cil del dromont li plusli plus legerleger
-Ne finerent li bachelerbacheler
-Tres qu'ilqu'il vindrent en haute mermer
-Tote nuit corentcorent as estoiles
-En haute mermer drecent lor voileslor voiles
-Mais del dormir rien ni avoit
-Car Marie les arguoit
-primesprimes les prentprent atastoner
-&amp; en apres a acoler
-dont les commencacommenca a baisier
-&amp; en tus sens&amp; en tus sensalosengier
-Niot-i-seul tant fust lassez
-Ne jovencels ne viels alez
-Qui enQui en peust prendre respit
-Que neQue ne pechast  en lien li la nuit
-tant ert cortoise del mestermester
-Que tosQue tos les fist ensoi pecherpecher
-QuantQuant ele ooit les gransgrans vens
-&amp; les plueves &amp; les tormenstormens
-&amp; el ooit le grantgrant orage
-Nemuoit pas lesien corage
-lisiens sanblans estoit moltmolt lies
-de rien ne cremoit ses pechies
-Tos les paovres comfortoitcomfortoit
-&amp; tote nuit o eus juoit
-Tant parpar lavoit dyable espriseesprise
-Tote nuit ert ensa chemise
-porpor faire bienbien le sien delis
-Ala lanuit parpar tot les lis
-A moltA moltgrantgrant gres les recevoit
-lor volentes aenplisoit
-Merveille fu ce voirementce voirement
-QuiQui pot soffrir issi grantgrant gentgent
-de ce nestuet il douterdouter mie
-QueQuenaitdyable a compaigniecompaignie
-QuiQuivolentersvolenters la les noiast
-Se Damedex le li laissast
-M ais il les agari demort
-&amp; si les fist venir al port
-QuantQuantMarie fu arivee
-Dolante fu &amp; esgaree
-Sospire &amp; pleure a la rive
-Nesetque faireque faire la caitive
-Ele ni conoist hom ne feme
-MoltMolt li sambla estrangeestrange regne
-A la parfinla parfin sest porpensel
-QueQue en lacite en ira
-&amp; Fera la lesien mestermester
-Car na corage del laissier
-Oies de la mal euree
-en JherusalemJherusalem est entree
-OnquesOnques ne setint de pecherde pecher
-Ains commencacommenca aen pirier
-oies comcom grantgrant pardicionpardicion
-Ains queque venist lasention
-De la sainte crois onoree
-QueQueidevoit estre a oree
-ot en pirie sitot le lieu
-Miex li venist queque Fust enfu
-Car moltmolt decevoit sa joventesa jovente
-porpor co qu'elequ'ele ert bele &amp; gentegente
-lijovencel de lacite
-Erent esprisespris de sa biaute
-Ne demora queque moltmolt petit
-QueQue li jors de la feste vint
-Li jors vint de l'Acensionde l'Acension
-Ester vosvos la procession
-des pelerins d'outred'outre lemer
-QuiQui vont altemple porpor orer
-commecommepreudomepreudome &amp; commecomme sage
-Al mostermoster vontvont parpar bonbon corage
-&amp; quantquant les aparcoitaparcoit Marie
-mist soi de dens la compaigniecompaignie
-Entra en la procession
-Nonpasparpar bone enten[]cion]cioenten[]cion
-lipelerinquiquileveoient
-Savolente ne conissoientconissoient
-Seil seussent de savie
-o eus n'eustn'eust ja compaigniecompaignie
-atant les degres sontsont montemonte
-dedens le tenple sontsont ale
-tot en tra ens la compaigniela compaignie
-mais ainc nipot entrerentrer Marie
-celiert vis son escient
-QueQue ele veoit une gent
-QueQueli sambloientli sambloientchevalierschevaliers
-mais moltmolt avoientavoient lesvis fiers
-cascunscascuns tenoit versvers li sespee
-&amp; li desfendoientdesfendoient lentree
-QuantQuant ele volt aler avantavant
-des espees cremoit le brantbrant
-QuantQuant vit queque niot nule entreeentree
-En un angle senest torneetornee
-dontdont se commencecommence aporpenser
-QueQue doit qu'elequ'ele nipuet entrerentrer
-A la parfinparfin voit &amp; entent
-QueQue ses pechies le li deffent
-delcuercommencecommenceasospirer
-&amp; de ses ioels fort aplorer
-del cuer li issent lisospir
-mains prisoitprisoit vie queque morir
-ases .ii. mainsmains derontderont sa crinesa crine
-GrantGrant cors se fiert en la poitrinela poitrine
-Seut queque Dex iert ires versvers li
-Ne liosa crier mercimerci
-hai dist ele peceris
-com marcom mar i fustes meretrismeretris
-porpor coi fesis les ors pechies
-dontdontDex est issi corecies
-mal conseilconseil ai tostans eu
-QuantQuantmonmonCreator ai pardeupardeu
-tant parpar sui plainsplains devil ordureordure
-QueQueDamledeunademoicure
-Ne el temple ne puis entrerentrer
-Ne NostreNostre Seignor apeler
-QueQue fera ore la chaitive
-Ce li pesoit queque tanttant ert vive
-Regarda ladestre partiepartie
-limage a veu de Marie
-En la masiere enfiguree
-MoltMolt la pieuementpieuement regardee
-Dame dist ele pieue mere
-QuiQui en ton cors portas ton pareton pare
-SainsSains Gabrieus en fu message
-Tu li respondis commecomme sage
-QuantQuant il te dist ave Marie
-de la Deu grace raemplie
-Entoiprendraprendra humanite
-JhesusJhesus de sainte maiste
-QuantQuantqueque il dist tu lotrias
-la sieue ancele reclamas
-porpor co estu el ciel roine
-A toi seule quierquier me dicine
-Ames plaies quiqui sontsont mortals 
-Ne quierquier autre me de cinals
-Se tu oton chier Fil mapaies
-tot erent saines mes grantgrant plaies
-Ci gerpisgerpis ja la male vie
-QueQue od li nar ai compaigniecompaignie
-EntonFil ai jo macreance
-toi met en plege &amp; en fiancefiance
-a tost ans mais teservirai
-Ne jade lui ne partirai
-tote gerpisgerpis jo ceste vie
-porpor ma malvaise legerie
-Jamaisniert jor naie gervancegervance
-MoltMolt ert aspre ma penitancema penitance
-Virgeroine jo croi bien
-QueQueonquesonquesnest icele rien
-QueQue tant parpar soit fors a vengera venger
-Setu ton Fil en veus proier
-QueQuemoltmolt ne soit tost pardonepardone
-&amp; aton Fil lues acorde
-Encore ai jo en macreance
-QueQue tes Fils fu ata naissance
-En toi mist il virginite
-&amp; en apres sadeite
-moltmolt fu grantgrant merveillemerveille del Peredel Pere
-QuantQuant de safille fist sa Meresa Mere
-Il prist entoi humanite
-Ainc ni pardispardis virginite
-Il fu tes Fiex &amp; fu tes Peretes Pere
-Tu fus sa Fille &amp; sa Meresa Mere
-moltmolt fu ce merveillosemerveillose chose
-QueQue de lespine issi larose
-&amp; delarose issi li fruis
-par coipar coidyables fu destruis
-Un non avons co est Marie
-moltmolt est diverse nostrenostre vie
-tu amas bienbien &amp; castee
-&amp; jo luxure &amp; ordee
-dyable eus a anemi
-&amp; jolai tostans servi
-Ainc delatoie hum ilite
-Ne nasquinasqui feme encest regne
-Jo sui povre &amp; orgoillose
-&amp; de monmon cors luxuriouse
-NostreNostre Sires toi en ama
-&amp; moi chaitive refusa
-moi refusa &amp; ama toi
-Dame aies mercimerci demoi
-Virge tu portas letresor
-QuiQui plus reluist queque geme enor
-Entoipristprist char li Fiex al roi
-QuiQuiSainsSains Jehans mostra al doi
-dist qu'ilqu'il estoit li Aignels Dei
-parpar cai li mons ert racatei
-mais quantquant loi lianemis
-QueQue il jeta de paradis
-QueQue il devoit lemont salversalver
-Selquiqui da sempres enganerenganer
-Si comcom il fist le premerle premerhommehomme
-QueQue il fist mangermanger de la pommede la pomme
-parpar .iii. foies la saia
-onquesonques del su en rien ni trovatrova
-QuantQuant si levit arme &amp; fort
-parpartraisontraisonlidona mort
-moltmolt fu li mors bon euree
-parpar coi vie fu restoree
-Se li Fiex Deu ne fust ocis
-Jahomnen trast en paradis
-parparlamortpristprist il les vertusvertus
-parpar coi dyables fu vencus
-denfer brisa laserreure
-Sienron pi tot laclosure
-Fors en jeta sa compaigniesa compaignie
-QueQuedyables avoit ravie
-a son ParePare tos les mena
-en sa glorie ou il esta
-puis vint el sepulcre ason cors
-parpargrantgrant vertu en isci fors
-as apostles puis aparut
-&amp; .xl. jors o eus fut
-mostra lor lanovele loi
-apres les baissa tos en foi
-commandacommanda lor sa douce MereMere
-El ciel monta puis ason ParePare
-del ciel lor mist itel comfortcomfort
-onquesonques puis ne cremirentcremirent mort
-lisains espirs oeus i mist
-tos les langages lor aprist
-or siet a la destre son Pere
-tues od lui sadouce Mere
-QuantQuant il venra al jugementjugement
-A son secont avenementavenement
-tu seras en sa compaigniecompaignie
-commecommelasoie chiere amie
-Il jugera &amp; mors &amp; vis
-li juste irontiront enp aradis
-li mal iront el fu durables
-Ensamble o les pu ans dyables
-VirgeRoine coronee
-QuiQui tant par espar es bone euree
-QueQue celi portasportas en ton ventre
-QueQue tos li monsli mons nepot reprendrereprendre
-Si comSi com jo croi ce queque jo di
-Si aies vos de moi merci
-QuantntQuant ot finee sorison
-&amp; Dex liot fait son pardonpardon
-desorison leva Marie
-En son novel SeignorSeignor se fie
-En lui mist tote sa fiance
-El temple entra sans demorancedemorance
-de densentraentra sans destorbier
-Si va oir le Deu mestier
-Soz ses jenols dontdont se clina
-la sainte crois si aora
-mais quantquant ele lot aoree
-de Deu fu si tote aspiree
-QueQue tot conut le Deu mestermester
-Estes le vosvos hors del mostermoster
-de ses pechies sent a legie
-A limage sest repairie
-En li atote sesperance
-conseilconseilrequiertrequiertdepenitance
-En quelquel maniere le fera
-&amp; en quelquel teretere sen ira
-Vint une vois queque ele entent
-Se li adit apartementapartement
-vaten al mostermoster SaintSaint Jehan
-lapasseras le flun Jordan
-puis ten iras en lagastine
-Al mostermoster prendrasprendras medicine
-IluequesIlueques espeneiras
-trestos les jors queque tu vivras
-QuantQuant ele a entendu lavois
-Seigna soi de lavraie crois
-lues en entra enson chemin
-devant lui vit .i. pelerin
-.iii. maailles li presenta
-.iii. petit pains en acata
-Ce fu trestote sa sustancesustance
-tant commecomme fu en penitancepenitance
-A flun Jordan en vintvint Marie
-lanuit i pristprist herbergerie
-moltmolt pres del mostermoster SaintSaint Jehan
-Sor la rive del flun Jordan
-Se se herbergaherberga sans nul ami
-dun de ses painspains manga demi
-but de laighe sainte fiie
-QuantQuant en ot but moltmolt en fu lie
-Son chief lava de la pardonnela pardonne
-de ses pechies devint la mondela monde
-Ele sesent alquesalques lassee
-Car fait avoit bienbien grantgrant jornee
-depierre dure fist sonson lit
-Iluec dormi tote lanuit
-dormi mais ce fu moltmolt petit
-Car ni avoit pointpoint dedelit
-parpar matin ala al mosteral moster
-porpor la oir le Deu mestermester
-larecutcorpuscorpus domini
-A donc fu lie ainc nefusi
-QuantQuant ele fu acumeignie
-Cepoes croire moltmolt fu lie
-puis en entra en.i.calan
-outre passa le flunle flun JordanJordan
-QuantQuant ele fu outreoutre passee
-En la forest en est entreeentree
-Marie va parpar la gastine
-Sovent deproie laroine
-QueQue ele avoit misen ostage
-le jor ancois devantdevant simage
-parpar sa mercimerci ne le gerpisegerpise
-&amp; del dyable legarisee
-Iluec est tote sa fiance
-or commencaor commencasapenitance
-Napas talent de repentirde repentir
-Ains se lairoit de faimde faim morir
-Nen a queque .ii. pains &amp; demi
-Or ait JhesusJhesus de li merci
-de ce ne vivra ele mie
-Se Dex ne lifait autre aie
-parpar le bos vait grantgrant aleure
-En Deu se fie &amp; asseure
-mais quantquant afaite sajornee
-desos .i. arbre en est tor nee
-Un petit manga deson pain
-puis sen dormi duscal demaindemain
-El demain leva parpar matin
-Vers orient tint son cemincemin
-tant ala parpar jor &amp; parpar nuis
-parpar bos parpar plains &amp; parpar larris
-&amp; tant parpar font vint el boscage
-QueQue tot devint iluec salvage
-mais ele ne soblioit mie
-de proier a sainte Marie
-Sovent li menbroit del image
-QueQue ele avoit mis en ostage
-Si drapel furent tost use
-&amp; si sollerssollers tost desrame
-QuantQuant si drapeldrapel furent ronpu
-li cors de li remest tot nu
-la sieue char mua color
-devant ert blance commecomme flor
-QuantQuant .i. iver iot este
-tot li noircirent li coste
-moltmolt li mua la blonde crine
-blance devint comcom .i. ermine
-del soleil &amp; de la gelee
-li fu la face moltmolt bruslee
-Sa bouche fu atenevie
-&amp; environenviron sachar noircie
-itant avoit noir le mentonle menton
-commecomme ce fust chies dun tison
-tot lierent noir oi lioil
-Navoit ore .i. pointpoint dorgoil
-Se vosvos en veiscies loreille
-moltmoltvosvos venist a granta grant merveillemerveille
-QuiQui maigre estoit &amp; de creue
-&amp; de blanc poil tote molsue
-Noire &amp; molsue ert sa poitrinesa poitrine
-bienbien resambloit escorce despine
-Navoit de char en ses traians
-Nient plusplus qu'ilqu'il est en .i. gans
-les bras les mains &amp; les lons dois
-Avoit plus noirs queque nenest pois
-moltmoltparpar avoit lesongles gransgrans
-asdens les rontront qu'elequ'ele ot trencanstrencans
-liventresliert agaris
-car navoit nul deses delis
-li pie li erent de creve
-&amp; en viron tot denavre
-Ele ne segardoit despine
-QuantQuant ele aloit par lagastine
-Ce li ert vis son escient
-del bienbien fai soit petit u nient
-QuantQuant une espine le poignoit
-En un deses pies li chaoit
-de co estoit ele moltmolt lie
-QuantQuant ele avoit la grantla grant hascie
-Nestoitmerveillemerveillesiert noircie
-car moltmolt de menoit aspre vie
-plus de .xl. ans a la nue
-Niert par merveillemerveille siert molsue
-povre despens avoit od li
-Damedex ait deli merci
-.ii. pains avoit negaires gransgrans
-de ces vesquivesqui parpar pluisors ans
-le premerpremer an devindrentdevindrent dur
-comcom ce fuissent pieres de murde mur
-chascunchascun jor en usoit Marie
-mais co ert petite partiepartie
-QuantQuant ele ot tot son painpain use
-donquesdonquesaqueltaqueltlerbe del pre
-comcom autre beste lemangoit
-de rien nese recomfortoitrecomfortoit
-as dens bevoit dou ruissel
-Car ni avoit autre vaiscel
-Ne fait aplaindre lipechiet
-dont licors est si castiet
-derbevesquivesqui &amp; de racine
-dis &amp; set anz en la gastine
-puis fu .xxx. anz que neque ne manga
-Se langles Deu ne laporta
-dyable vint ali depremier
-SoventSovent le soloit assaier
-tot ce lifaisoit ramenbrer
-Qu'eleQu'elejadis soloit amer
-les biaus delis &amp; les bels lieus
-ouele seut faire ses gieus
-ore fu ele bon euree
-QuantQuant de tot ce fu obliee
-Ainc gaires puis entote savie
-Neli sovint puis defolie
-Neainc en trestot leboscage
-Ne vit gaires beste salvage
-Ne autre vive creature
-parpar la forest vait tote nue
-Enpluisors lieus pristprist son ostal
-Sa vie estoit esperital
-Or lairommesrlairomesOr lairommes a demarie
-Si vosvos dirons dun abeie
-QuiQui ert al chief de la forest
-Si comcom li livres nos fait cert
-onquesonquesDex ne fist nule gent
-QuiQuivesquisentvesquisent tant bonementbonement
-Ni miex servent lor CreatorCreator
-QueQue faisoient icil seignor
-Il navoient soingsoing de mal faire
-ChascunsChascuns avoit vestu sa haire
-tant erent en grantgrant decipline
-N'avoientN'avoient pas vestu stamine
-En haires erent &amp; nus pies
-porpor espeneir lor pechies
-Ne il de jor ne il de nuit
-Ne fuissentNe fuissent ja trove en lit
-tote jor erent el mosterel moster
-fors seul al eure de mangerde manger
-Il vivoient moltmolt povrementpovrement
-de painde paindorge &amp; de polmentpolment
-&amp; tos les venredis de lan
-Vivoient de nois &amp; de glan
-Aighe bevoient queque niert saine
-Car ele niert pas defontaine
-Entrelsnestoit pas simonie
-Ne covoitise ne envie
-N'avoientN'avoientsoigd'argentd'argent ne dor
-En Deu avoient lor tresor
-Nul dels navoit proprietepropriete
-tot erent dune volente
-Nesthomhom la lor bonte vosvos die
-tant estoientestoient de bone vie
-QuantQuant venoit a la quarantainequarantaine
-le premerpremer jor faisoientfaisoient caine
-li abes les a cu mencoit
-CorpusCorpusdominidomini lor donoit
-QuantQuant les avoit acommenchiesacommenchies
-parpar ordre lor lavoit lorpies
-puis aloient aorison
-&amp; si lor faisoient sermonsermon
-commandoitcommandoit les entre baisier
-puis lor ovroit luis del mostermoster
-En la forest les en voioit
-A Damedeu les commandoitcommandoit
-li saintsaint moine se departoientdepartoient
-Fors seul .ii. qui laqui la remanoientremanoient
-NonNon pas porpor peur de larron
-Qu'ilQu'ilcremissentcremissent de lor maison
-mais porpor faire le Deu mestermester
-Remanoient cil el mostermoster
-Car nest pas bonbon de saintesainte eglise
-QueQue soit laissie ledeu service
-li autre sen issoient tuit
-El desert vivoient de fruit
-En Deu avoient grantgrant amor
-Derbes vivoient li pluisor
-&amp; quantquant li .i. lautre veoit
-de la fuioit ou il estoit
-assi sen aloit comcom enbles
-Jadelui ne fust destorbes
-Iluec ou la nuit le pernoitpernoit
-Sor la Fresce erbe se colchoit
-parpar matin se levoit bienbien main
-Seignoit soi desa destre mainmain
-Ilnesavoit ou il aloit
-A Damledeu se commandoitcommandoit
-Ceste meisme entencion
-Avoient tot si compaignoncompaignon
-des ioels ploroient tenrementtenrement
-Sovenoit lor del jugementjugement
-ou tot li angle tranbleronttranbleront
-porpor la paor que ilque il aront
-la u il verrontverront le Fil De
-El siege de sa maiste
-&amp; devantdevant lui le fu dorabledorable
-dontdont il tormenteratormentera dyable
-&amp; tote la malvaise gent
-tormenteratormentera il ensementensement
-En infer puis descenderontdescenderont
-Si queque jamais nen isteront
-porpor co estoit icil moine
-En la forest entel angone
-porporescaparescaperescapar de cel peril
-estoient il entel escil
-QuantQuant passee ert la quarantainequarantaine
-&amp; venoit aljor de la caine
-le jor del a soluption
-RevenoientRevenoient tot en maisonmaison
-li sains abes estoit moltmolt lies
-QuantQuant les veoit tos repairies
-li paistre ert lies de sonlies de son bergil
-QuiQui escapes ert deperil
-El mostermoster les en fait aler
-A pres soi fist les huis fermerfermer
-puis estoientestoient tot lan sos geu
-Ne lor estovoit cremir leu
-QuantQuantrevientrevient al jor de quaresmede quaresme
-QueQuecascuncascun doit aler son esme
-li abes fist queque il soloit
-Ses oeilles mist fors del toit
-Ancois les fist entre baisier
-puis lor ovri luis del mostermoster
-Enlaforest les en voioit
-Adamledeu les commandoitcommandoit
-Uns senva a destrea destre partie
-QuiQuimoltmolt estoit de bone vie
-Il ert apeles Zosimas
-moltmolt ert vestus de povres drasde povres dras
-miex amoit il sa povertepoverte
-QueQuenusnusquensquens ne fait sa conteconte
-Enlaforestparfondementparfondement
-Se mist ot poi formementformement
-Ermites iquida trovertrover
-de Deu voloit o eus parleparle
-mais quantquant il ot fait .xx. jornees
-QuiQuimoltmolterenterent des mesurees
-&amp; vit que nulque nul n'en potn'en pot trovertrover
-Not corage d'avantd'avant aler
-Endroit miedi canta sore
-Aore Deu &amp; si demore
-QuantQuant il ot sorison fenie
-Regarde ala destre partiepartie
-Il esgarda versvers orient
-un ombre vit son escient
-QuiQui estoit de home u de feme
-&amp; cestoit de legiptiene
-Dexlavoit iluec amenee
-Nevoloit mais queque fust celee
-descovrir voloit letresor
-QuiQui plus valoit c'argentc'argent neor
-Li sains homhom fu moltmolt esmaris
-QuantQuantalonbre torna sonvis
-QuidaQuidaqueque fust encantementencantement
-Reclama Deu omnipotentomnipotent
-QueQue le des fendist del felon
-&amp; de male tenptacion
-QuantQuant il ot sorison fenie
-la figure vit demarie
-apartementapartement vit l afigure
-Car ni avoit pas coverturecoverture
-EnvironEnviron lui avoit sa crinesa crine
-tant ert blance com flor d'espinecom flor d'espine
-li blanc cevoil n'ierentn'ierent treciestrecies
-li avenoient dus cas pies
-Ele navoit plusplus vestemensvestemens
-QuantQuant ces li soslevoit li vensvens
-desus paroit la char brullee
-del soleil &amp; de la gelee
-QuantQuantZosimas vit lafigure
-vers liala grantgrant aleure
-ladamequantquantlevit venir
-IsnelementIsnelementpristpristafuir
-li sains hom le vait enchaucantenchaucant
-&amp; sovent le vait apelant
-dame dist il paroleparole amoi
-Se tu o Deu as nule foi
-jo te conjurconjur de Deu le grantgrant
-QueQue tu ne voises mais avant
-QuantQuantladame ot de Deu parlerparler
-dontdontcommencacommenca fort aplorer
-hez Dex dist ele Creator
-En toi croi jo &amp; toi aor
-Xlvi. ans puis conterconter
-QueQuenoi mais de ti parler
-or mas .i. saint home tramistramis
-jo ne lios tornertorner mon vis
-mostrer ne lios ma figure
-tote sui nue creature
-or sest arestee la dommedomme
-Son vis nosa tornertorner versvers l'ommel'omme
-dans Zosimas moltmolt leporsieut
-apres ala tresca.i. duit
-la vint Marie tres corant
-mais ne douta pas leve grantgrant
-tote seure outre passa
-de lautre partpart puis saresta
-dans Zosimas vint la corant
-duscalarive del torant
-lasarestutnepot avant
-dont se clama caitif dolant
-de l'autre partl'autre part Marie estoit
-vers Zosimas seregardoit
-or ne se volra mais celer
-A lui commencacommenca aparler
-QuelesQueles dist ele Zosimas
-met moi iluec .i. detes dras
-dontdont jo mepuisse covrircovrir alquesalques
-de monmon noir cors que si estque si est lasqueslasques
-puis men irai de la atoi
-QuantQuant tu nepues venir amoi
-QuantQuantZosimassoi nomer
-de pec commencacommenca aplorer
-Car ele ne sot pas son non
-Se parpar le SaintSaint esperit non
-dundeses dras dont li jeta
-A ladame doncdonc saproisma
-A drapel vint corant Marie
-de son cors en covri partiepartie
-QuantQuant fu del drapel afublee
-vers le saintsaint home seit tornee
-&amp; vait alui parpar de sor londe
-Car de pechies estoit ja mondemonde
-Sire dist ele dous amis
-Or me di queque tu as ci quis
-Ici vees une dolente
-En icel bos pleure &amp; gaimentegaimente
-por les pechies queque jo aifais
-QuiQui tant parpar sontsont orible &amp; lais
-Nest hom sel seit nenait pesancepesance
-Or en fai ci mapenitance
-QuantQuant li sains hom lot si parlerparler
-depitiecommencecommenceaplorer
-as pies li fait afliction
-RequiertRequiert li sa beneicon
-ladame li rechiet aspies
-Car moltmolt secrient deses pecies
-merci licria moltmolt sovent
-&amp; ele li moltmolt durementdurement
-Zosimas se gist en la place
-laighelide cortparpar la face
-moltmolttenrementtenrement des jo els ploroit
-porpor le pitie que ilque il avoit
-tant sanguissa queque tot tressue
-parpar la barbe qu'ilqu'il ot chenue
-li decort aval lasuor
-ladame prie parpar amor
-Face porpor le pople orison
-&amp; li doinst sa beneicon
-Sire fait ele dous amis
-tu mas beneiconbeneicon requis
-tues prestre messe cantantcantant
-porpor co est il plus avenant
-QueQue tu le doignes ore moi
-QueQue se jo le donaisse toi
-congiecongie as demesse cantercanter
-tam ain pues metremetre sor autel
-moltmolt ert cose sainte fiie
-QuiQui de tam ain sera seinie
-jo croi bienbien queque par tonpar ton seignacle
-Fait Dex desor lautel miracle
-QueQue li pains devient li sens cors
-&amp; li vins sans qu'enqu'en issi fors
-Dexconnoistconnoistbienbien ton sacreficesacrefice
-Car te vie ma tote apriseaprise
-Car tu las servi de t'enfancede t'enfance
-Enlui pues avoir grantgrant fiancefiance
-moltmolt en avras bonbon gerredongerredon
-Or mefai tabeneicon
-dame ce respont Zosimas
-jam a beneicon navras
-Setuprimesprimes ne lemefais
-Jade ci ne leverai mais
-por fain ne porpor nule soffraite
-Se ancois ne le maies faite
-Or voit bienbien &amp; entent Marie
-QueQue il ne sen levera mie
-tost ans ert encele orison
-QueQue li donast beneicon
-torna son vis versvers orient
-Reclama Deu omnipotent
-Dex dist ele Roi Creator
-Sire toi lo jo &amp; aor
-Sire beneoist soiestu
-&amp; tote la toie vertu
-de nos pechies nos fai pardonpardon
-puis amis sa beneicon
-des or se lieve Zosimas
-GrantGrant plains jete car moltmolt fu las
-dont li commencecommence ademander
-Car volentiers lovolt saver
-des rois des contescontes de la terrela terre
-Seil ont pais u il ont gerregerre
-&amp; de ces quiqui justice tienent
-confaitementconfaitement il se contienentcontienent
-dansZosimasdontdont li respont
-Dexamis pais parpar tot le montle mont
-NusNus ne va itant par la terrepar la terre
-QuiQuiloie mais parlerparler de gerrede gerre
-mais sainte eglise a granta grant besonbeson
-QueQueporpor li faites orison
-QueQueDex li donast pais durable
-&amp; desfende delvis dyable
-Marielia respondu
-JhesusJhesus le gart parpar sa vertu
-Ele esgarde versvers orient
-drece ses mainsmains alciel les tentles tent
-Deu en proia le Creator
-moltmoltdoucementdoucement &amp; parpar amor
-Si queque la bouche nemovoit
-Ne nule vois fors nen issoit
-de terrede terre fu senperssenpers ravie
-Que eleQue eleni aivenoit mie
-Zosimas ot paor moltmolt grantgrant
-mais Damledeu trait a garanta garant
-Car plusplus de .ii. pies &amp; demi
-Avoit entre la terrela terre &amp; li
-ouele faisoit saproiere
-Nostre Sireslavoitmoltmolt chiere
-de la paor cot Zosimas
-commencacommencasent aler lepas
-QuidaQuida fantosme avoir trovertrover
-Ariere sen est retorne
-QuantQuantMarielen voit aleraler
-Sel commencacommenca a apelerapeler
-Keles dist ele Zosimas
-bieaus chiers parepare por coipor coi t'en vast'en vas
-por coipor coi doutas porpor une feme
-Saches que joque jo sui crestiene
-baptisie fui en menfance
-Endeu ai tote ma creance
-Jo sui ci por espeneir
-Sel servira duscal morir
-Sa destre mainmain leva amontamont
-la saintesainte crois fist en son frontfront
-li bons hermiteshermites quantquant la vit
-As pies aladame chait
-el len aiue arelever
-apres commencacommenca a parlera parler
-dontdont est venue &amp; de quelde quel teretere b
-Zosimasli pristli prista enquerrea enquerre a
-descuevre moi latoie vie
-porporDeu nel me celer tumie
-dilemoiparparconfessionconfession
-QueQueDex te face voir pardonpardon
-Sire ce li respont Marie
-Jo ne le te celerai mie
-QuantQuant tu nue mas regardee
-Ja ma vie netiert celee
-tote le te descoverrai
-Ne ja de rien nen mentiraimentirai
-Dont commencecommencea contera conterMarie
-Rien ne coile queque tot nedie
-tote savie a aconteeacontee
-des icele eure queque fu nee
-EndementresEndementresqu'elequ'eleli conteli conte
-bienbien poes croi re qu'elequ'ele ot hontehonte
-QuantQuant el liot conteconte savie
-Aspieslichietmercimercilicrie
-QuantQuantliotconteconte ses pechies
-Apres liest cheue aspies
-Zosimasaoisavie
-le Creator en glorefie
-mercimerci en rent NostreNostreSeignorSeignor
-parparmoltmoltbonbon cuer &amp; parpar amor
-dameporpor coi chies ames pies
-porporDeuteproiqueque tu ten lies
-Nest pas en moi ladignete
-Ne sui de tel auctorite
-acequeque jo toi ci conter
-QueQue ne nos seul versvers ci gardergarder
-Car onquesonques ton pareil ne vi
-porporDeu aies de moi merci
-parpar carite dites le moi
-Se jo porrai remaindre otoi
-Nenil biaus pere Zosimas
-Respont Marie ains ten iras
-Mais ne te chaut conterconter ma vie
-tant queque jo soie de fenie
-Se Dex ma atoi demostree
-parpar toi volrai estre celee
-a labe Johan parlerasparleras
-Cest message li porteras
-de ses oeilles prangeprange cure
-tel ja quiqui troptrop saseure
-prengent cure porpor amoramor De
-Car il ia a amender
-mais al tans queque venra al tans
-Seres enfers si comcom jo pens
-QuantQuant ti parpar &amp; ti compaignoncompaignon
-Sen iront fors de lor maisonmaison
-le jor venra del saintsaint quaresmequaresme
-QueQuecascunscascuns en ira son esme
-toi estovra el lit jesir
-Ne porras pas oeus iroit
-QuantQuant venra lejor de la caine
-&amp; passee ert la quarantainequarantaine
-Garis seras si comcom jo croi
-dontdont te pri devenir a moi
-le cors NostreNostreSeignorSeignor me met
-En -i- vaiscel quiqui moltmolt soit net
-del sanc en -i- autre vaiscel
-mais ce garde queque moltmolt soit bel
-perequantquant tu m'aporterasm'aporteras
-plus fort de toi me traverasme traveras
-de toi me serai aproismie
-QuantQuant te verraiverrai moltmolt serai lie
-Envoir te di si comsi com jo croi
-Enl autre an irai contre toicontre toi
-Al flun Jordan metroveras
-corpuscorpus domini me donras
-Iluec serai acommunieacommunie
-porpor co me serai aproismie
-desquedesque passai le flunle flun JordanJordan
-deses le mostermoster SaintSaint Jehan
-Ne noi le cors NostreNostreSeignorSeignor
-En quiqui ai tote ma doucor
-Ne puis ne vi hommehomme fors toi
-aler men voil proie porpor moi
-lors sen est la dame torneetornee
-El grantgrant de sert en est entreeentree
-QuantQuant li sains hom levit altrealtre
-desor ses pies nepot estreestre
-od les ioels le sieut el desert
-moltmolt ot grantgrant duel quantquant il le partle part
-A la terreA la terre est a jenoillies
-ou ele avoit tenu ses pies
-baise la terrela terre moltmolt soventsovent
-Deu en aore omnipotent
-Dex dist il loes soiestu
-QuiQui en feme as mis tel vertuvertu
-Sire tois en puis aorer
-QuiQui le me deignas demostrer
-puis li menbra de son mosterson moster
-Sirecommencecommence a repairier
-venus en est a sam aison
-EnsementEnsementsontsont si compaignoncompaignon
-li abes Johans fu moltmolt lies
-QuantQuant il les voit tos repairies
-mais chascunchascun deus sest bienbien teu
-de quantquant queque il avoit veu
-Nus ni voloit pas novelier
-Ne soi -i- pointpoint glorifier
-Aprespresquantquant ce vintvint al quaremequareme
-QueQuecascuncascun doit aleraler son esme
-En son lit jut dans Zosimasdans Zosimas
-malades fu ni ala pas
-amaison le covint esterester
-Car febles fu ni pot aleraler
-Sot queque voire ert la prophesiela prophesie
-QueQue avoit oi de Marie
-tote passa la quarentainequarentaine
-tres queque vintvint al jor de la caine
-Zosimas se senti gari
-dontdonta prisa priscorpuscorpusdomni
-le sanc preciousprecious ensementensement
-porpor faire le commandementcommandement
-dontdontladamelavoit proie
-QuantQuant ele pristprist alui congiecongie
-Zosimasa enprisa enpris son oire
-o soi porta -i- poi de soire
-&amp; de lentilles ensementensement
-Ilotsoingsoingdautreforniementforniement
-al flun Jordan vint Zosimas
-QuantQuant il vint la moltmolt par fu maspar fu mas
-Iluec quidaquida trover Marie
-mais en cor n'enn'en iavoit mie
-Co ert la rienla rien que plusque plus doutoit
-QueQue pechies ne li ait toloit
-ou quelequele iait ja este
-&amp; queque il ait troptrop de more
-de latendre fu anuies
-a poi queque nen fu repairies
-Dex dist il Rois de Maiste
-Ne me laisse ci esgare
-lai moi veoir en cor lafeme
-QuiQuina son per entot cest regne
-Janen vivrai si comcom jo croi
-Se jo en core ne lavoi
-mais se ne vientse ne vient amoi parlerparler
-commentcomment porrai a li passer
-dontdont passerai le flun Jordan
-car il ni a nef ne calan
-peire de toute creature
-de ce puestu bienbien prendreprendre cure
-tant parpar est grantgrant ta poeste
-tote rien sert ta volente
-QuantQuant il ot sorison fenie
-Outre le flun en vit Marie
-Sor la rive le vit esterester
-commencacommenca le a apeler'
-dame ce a dit Zosimas
-merecommentcomment or le feras
-dontdont passeras le flun JordanJordan
-QuantQuant tu nen as nef ne calancalan
-Marielot issi parler
-dontdontcommencacommenca fort a plorer
-a Damedeu sest commandeecommandee
-de dens le flun en est entreeentree
-Sor le flun vait tot sanssans dou
-oies comcom fu de grantgrant creance
-Sor laighe roide vait grantgrant paspas
-moltmoltsenmerveillemerveilleZosimas
-outre passa de lautre partpart
-onquesonques sa plante ni moilla
-QuantQuantalarive fu venue
-vait al saintsaint home sel salue
-apresapres li est cheue as pies
-Car moltmolt se crient deses peciespecies
-As pies li fait afliction
-RequiertRequiert li sa beneicon
-li sainslaivearelever
-de pitie commencecommence a plorer
-No se faire sor li seignacle
-QuantQuantDexporpor li fait tel miracle
-QuiQuilefait si aler sor londe
-de leue queque siert parfondeparfonde
-QuantQuant de la terreterre la dreca
-parpar vraie amistie le baisa
-li sains hom le volt amer
-commencacommenca le a acoler
-Credo in Deum li rova
-por Deu li desist si lorra
-adont lidist moltmolt belementbelement
-&amp; lapatre nostre ensementensement
-ladame respont apresapres lui
-moltmoltsentre gardent anbedui
-QuantQuant orent fait lor parlementparlement
-li sains li mostre tel presentpresent
-commecomme le cors NostreNostre Seignor
-parparquiqui seront sauf pecheor
-Zosimas le tint en sa mainen sa main
-dame dist il ce samble painpain
-mais co est lecors JhesuJhesu Crist
-QueQue li malvais pueples acist
-Enlacrois fu mis &amp; ocis
-Ja nusJa nusnavera paradis
-Se il ne croit ce en sa vie
-tot ce croi jo ce dist Marie
-Encore ai jo en ma creance
-QueQue il fu ferus du ne lance
-&amp; a son ParePare nos fist paie
-parpar le sanc qu'issiqu'issi de saplaie
-parpar lui furent cil si ami
-QuiQui ains furent si anemi
-parpar le pechie del premerpremer home
-QuiQui sor de fois man g a la pommepomme
-I cest saint sanc nos laissa il
-Cil est moltmolt fols quiqui le tient vil
-Se tu las aporte otoi
-porporDeu te pri do ne lemoi
-li sainslot issi desraisnerdesraisner
-moltmoltsencommencecommencea merveillera merveiller
-le sacrefice li mostra
-la sainte damelaora
-Il li dona el le re cut
-le cors manga &amp; le sanc but
-QuantQuant ele fu acommencieacommencie
-onquesonques de rien ne fu si lie
-he; Dex dist ele creator
-Pere toi lo jo &amp; aor
-biaus sire or oies morison
-&amp; si me rent monmon gerredongerredon
-xlvi- anz tai servi
-Sire or aies de moi mercimerci
-Fai de ta fille ton plaisir
-des or volroie jo morir
-Sire or voldroie mes soldees
-QueQue to as pieca aprestees
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-&amp; []
-xxx- ans erent ?????? ?????
-Qu'eleQu'elenavoit mangie de ble
-deleve but tot sans soi
-puis li adit prie por moi
-aicest mot sen est tornee
-En -i- eure fu tres portee
-En icel lieu quiqui moltmolt fu cherschers
-u josi mas le vit premerspremers
-Fu en -i- eure tres alee
-Se i avoit m ainte jornee
-QuantQuant ele acel lieu fu venue
-ou Zosimas latrova mie
-QuiQui miex o loit &amp; plus formentforment
-QueQue ne fait basmes ne piementne piement
-Sor la terre sest acotee
-a Damledeu sest commandeecommandee
-Dex dist ele commecomme fosis
-&amp; en mon cors arme mesis
-a toi le puisse jo livrer
-&amp; otroier &amp; commandercommander
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-?????????????????????????? ?p??gnie
-Niot beste tant parpar fust fier
-QuiQuionquesonqueslosaitaproismeraproismer
-Sor li nosa oiseaus volervoler
-tant par le voltpar le volt Dex honorer
-Si grantSi grant miracle Dex ifist
-QueQue sa char onquesonques ne malmist
-Ne por froidor ne porne por chalor
-Nen issi malvaise flairor
-Tant fu li cors desenterresdesenterres
-QueQue li ans fu trestos passes
-Zosimasnesoblia mie
-Repaire sent ensabeie
-mais dune rien fu moltfu molt iries
-li sainsquantquant il fu repairies
-QueQue a la dame avoit parleparle
-&amp; son non navoit demande
-Ne liot pas son non enquisenquis
-de ce setint aentrepris
-ancois eust prispris le congietcongiet
-QueQue peust issir de son siet
-QuantQuant fu trespasses icel an
-moltmolt tost passa le flunflun JordanJordan
-Eldesert vint por la moillerla moiller
-dontdont avoit si grantsi grant de sirier
-tant la quistla quist il par le desert
-QuilQuil est venus u li cors ert
-ancois queque il leust trove
-moltmolt le veiscies esgare
-Il fait grantgrant duel &amp; plore &amp; crie&amp; crie
-pres ert delcors n'enn'en veoit mie
-Pere dist il quiqui me fesir
-mostre moi co que tantque tant ai quisquis
-Saches de ci ne moverai
-N'avantN'avantna rierenen irai
-desquedesque jo voie cele feme
-QuiQui per il na entot cest regne
-Sire mostre moi la moillerla moiller
-vers quiqui aitot monmon desirier
-Ne viverai si comcom le croi
-Se jo en core nelavoi
-Lai moi veir lecorsmamie
-car jo quitquit quelequele soit fenie
-Selevesquistvesquist si comcom jo croi
-Ele fust ja venue amoi
-Jaesgare ne me laissast
-Se seul me soust en cest gast
-Sire setuas demoi cure
-lai moi faire sasepulture
-Biaus ParePareDeu de Maiste
-Ne me laisse ci esgare
-QuantQuant il ot sorison fenie
-dontdontlimostralecorsmarie
-vers destre partdestre part sest regarde
-En -i- lieu vit une clarte
-QuiQuida queque fu eust la 
-a la clarte dontdont saproisma
-le cors trova moltmolt en fu lie
-car moltmolt partpart lavoit desirie
-a la terre tot est endu
-poi sen faloit que n'iertque n'iert totnu
-Son vis avoit vers oriant
-&amp; ses ioels clos avenanmentavenanment
-Sa crine avoit sor son viaire
-Ele navoit autre suaire
-al cors aproisma Zosimas
-Sor li posa -i- de sesdras
-les pies commencacommenca a baisier
-a lautre cors nose atoucheratoucher
-Il regarda amontamont al chief
-letres i vit comcom en -i- brief
-En ces letres que li sains vitque li sains vit
-Ert cis commandementcommandement escrit
-Zosimas prent le cors Marie
-sevelis le ou fina vie
-QuantQuant tu lauras enseveli
-proie por luipor lui parpar ta merci
-les letres furent de bonbon tor
-comcom se fuissent faites cel jor
-En la terrela terre erent fi gurees
-li sains hom les a recitees
-mais quantquant il ot le nonnon trove
-moltmoltgrantgrantmercismercis en rent ade
-parpar le bel non en fu moltmolt lie
-dontdont son service a commenciecommencie
-QuantQuant il ot dit le suen mestermester
-puis dit ses salmes del sautersauter
-dontdontleveiscieses gare
-car ni avoit rien aporte
-dontdont il peust la terrela terre ovrir
-al saintisme cors en foir
-un fust trova parpar aventureaventure
-Fuir en volt la terreterre dure
-Il vout la terrela terre manovrer
-ainc ne lepot nes entamerentamer
-tot tres suoit de dens sa haire
-&amp; nule rien ni pooit faire
-GrantGrant mestier a li sainsa li sains daue
-tel ahan a que totque tot tressue
-&amp; porpor quantquant porpor tot lahan
-Ne le cavast il en tot lan
-Se Dex ne lidonast aie
-parpar le deserte de Marie
-Dexlidon abonboncompaignoncompaignon
-Nient autre mais -i- lion
-Un lion issi del des sert
-la aproisma u licors ert
-les pies commencacommenca alecier
-Ne savoit autrementautrement baisier
-Signe lifai soit dobeir
-&amp; queque il le voloit servir
-QuantQuantli sains homhom vit le lionlion
-Navait apris tel compaignoncompaignon
-Neustsoig de sa compaigniecompaignie
-Se Dex li donast autre aie
-premierementpremierementsen vout fuir
-QuantQuant il levit al cors venir
-mais puis quantquant il levoit priveprive
-&amp; de si grantgrant humilite
-tant ert souef comcom -i- aignel
-Sachies queque celi fu moltmolt bel
-Sot que Dex liavoit tramistramis
-Il liadit biaus dous amis
-Ceste feme a anon Marie
-QuiQuimoltmoltparpar fu de bone vie
-ma ci de mostre en -i- briefbrief
-QueQuejai ci trove a son chief
-QueQueparpar moi veut estre enfoie
-mais jo ai grantgrant mestermester daie
-Se me voloie aider
-Cest saintisme cors enterrerenterrer
-li lions est apareillier
-del commandementcommandement fu moltmolt lies
-a ce queque il seut obeir
-commencacommencala terrela terre a fuir
-li lions fuet la terrela terre dure
-li sainslimostre la mesure
-aspies devant il le fooit
-a cels deriere le jetoit
-GransGrans ert la vertusvertus le lion
-QuantQuant si estruoit lesablon
-la fosse fu tost acurie
-IsnelementIsnelement fu netoie
-Zosimas fu lies quantquant levit
-deversdevers le chief le cors saisit
-&amp; li lions la as pies pris
-Entreus deus
-                        lont el sarcu mis
-de denslaterre ont
-                        mis le cors []
-Zosimasdoncdoncsen issi fors
-Or fait la commandacionla commandacion
-tot sans aiue del lion
-Cil ni puet faire nule aiue
-Car il ert une beste mue
-mais quantquant cevint a la covrera la covrer
-Nel covintcovint pas amonesteramonester
-tote la terrela terre rasamble
-Sor le saintsaint cors lerejeta
-QuantQuant il lot tote raunee
-&amp; sobedience finee
-a la terrela terre est ajenoilliet
-Samblant fait de prandrede prandre congietcongiet
-ariere sen est retornes
-El grantgrant de sert en est entresentres
-QuantQuantZosimasl'en vit tornerl'en vit torner
-Deu en commencacommenca aloer
-SireDeus loes foiestu
-moltmoltparpar est grandegrande ta vertu
-bienbienmasde mostreparparMarie
-QueQuemoltmoltparpar est fols quiqui toblie
-Orvoi &amp; croi bienbien sans doutancesans doutance
-QueQue fort cose a en penitancepenitance
-Ne jamais tresquestresques al morir
-Ne serai sans espeneir
-Jademon cors merci narai
-Nemais ne le deporterai
-commencacommencasentarepairier
-plorant senvait a son mostermoster
-EnsementEnsementsontsont si compaignoncompaignon
-tot sen repairent amaison
-QuantQuant il furent enlorostal
-&amp; en capitle communalcommunal
-Zosimascommencecommence a parlerparler
-Ornesevolra mais celerceler
-del Egiptiene Marie
-lor a conteconte tote la vie
-commentcommentletrova el desert
-El lieu de litable ou ele ert
-&amp; comcom il vint al secont an
-EncontreEncontre lui al flun JordanJordan
-&amp; comcom ala a pie sorlonde
-de leve que tantque tant ert parfondeparfonde
-&amp; comcom il letrova fenie
-al tiere an &amp; des enfoie
-&amp; del non queque trova escrit
-&amp; del obsequeobseque queque il fist
-puis lor a conteconte del lion
-commentcomment il lot a compaignoncompaignon
-QuantQuantlimoine ont oi son dit
-a Deu en ont rendu mercitmercit
-liabes pleure tenrementtenrement
-&amp; tot liautre ensementensement
-Niot nul namendast sa vie
-porpor les miracles de Marie
-Nos meisme nos amendonamendon
-QuiQui en avons greignorgreignor besoig
-&amp; de proions ceste Marie
-de quiqui nos oons ceste vie
-QueQue ele proit NostreNostre Seignor
-Vers quiqui ele ot si grantgrant amoramor
-QueQue il nos parpar doinst nos pecies
-&amp; les novels &amp; tos les vies
-QueQue lui puissons faire presentpresent
-denos armes al jugementjugement
-amen amen &amp; JhesuJhesu crist
-consautconsautquiqui cest romans escristescrist
-&amp; madame sainte Marie
-Nos doinstdoinst la parmenableparmenable vie
-amen amen cascunscascuns endie
-Ce nusnus otroit li Fils Marie
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]
-[]</code></pre>
+<pre><code>Seignor oies une raison&lt;br&gt;
+ou il na severite non&lt;br&gt;
+tot est faite de verite&lt;br&gt;
+Ni a -i- mot defausete&lt;br&gt;
+Bien croi que volentiers l'orront&lt;br&gt;
+Cil qui Damedeu ameront&lt;br&gt;
+Car acels qui de luy nont cure&lt;br&gt;
+Est sa parole &amp; aspre &amp; dure&lt;br&gt;
+tot cil qui le volront amer&lt;br&gt;
+&amp; por samor moi escouter&lt;br&gt;
+de ma dame saint Marie&lt;br&gt;
+legiptiene orront la vie&lt;br&gt;
+Car ce sachent tot pecheor&lt;br&gt;
+Qui forfait se al Creator&lt;br&gt;
+Qui nul pechies nest tant pesant&lt;br&gt;
+Nesioribles ne tant grans&lt;br&gt;
+dont Dex ne face vrai pardon&lt;br&gt;
+par foi &amp; par confession&lt;br&gt;
+acelsqui prendent penitance&lt;br&gt;
+Mais gardent soi de mescreance&lt;br&gt;
+Se hom guerpist la merci De&lt;br&gt;
+cis pechies niert ja pardone&lt;br&gt;
+Car honte fait al Creator&lt;br&gt;
+&amp; al dyable fait honor&lt;br&gt;
+Quimolt est fel &amp; en vieus&lt;br&gt;
+&amp; de mal faire covoiteus&lt;br&gt;
+devant nos vient souvent ester&lt;br&gt;
+Quinos volroit aluy torner&lt;br&gt;
+Il nest nus hom enceste vie&lt;br&gt;
+Qui tant soit sage u nait folie&lt;br&gt;
+Li apostle qui Deu sievoient&lt;br&gt;
+parmolt de foies pechoient&lt;br&gt;
+por co ne me puis merveiller&lt;br&gt;
+del home sele voi pecher&lt;br&gt;
+Mais de ce luy est grant merveille&lt;br&gt;
+Qui tos jors dort &amp; ne someille&lt;br&gt;
+&amp; enses ors pechies sen dort&lt;br&gt;
+tant qu'il sent al cuer lamort&lt;br&gt;
+Quant il se muert &amp; il se sent&lt;br&gt;
+a dont il ja me repent&lt;br&gt;
+Selonc le dit saint Agustin&lt;br&gt;
+Nest mie bone iceste fin&lt;br&gt;
+Qui tart est pris ______ al repentir&lt;br&gt;
+Quant on est ______ venus al morir&lt;br&gt;
+Car quant licuers sent lamort&lt;br&gt;
+Il nepuet faire droit netort&lt;br&gt;
+Guerpist lamale iniquite&lt;br&gt;
+Car il nen a mais poeste&lt;br&gt;
+Se il sentist plus de savie&lt;br&gt;
+Encore fesist il folie&lt;br&gt;
+Quantlameenvaconme caitive&lt;br&gt;
+Qui li feradonques aide&lt;br&gt;
+Nus hom soseies nelifera&lt;br&gt;
+Se nest cil sires quil cria&lt;br&gt;
+Celadameeladamedont doi conter&lt;br&gt;
+Marieloi apeler&lt;br&gt;
+Egiptiene est por ce dite&lt;br&gt;
+Que ele fu nee de gipte&lt;br&gt;
+Iluec fu nee &amp; baptisie&lt;br&gt;
+Mais malement fu enseignie&lt;br&gt;
+Legiere devint desenfance&lt;br&gt;
+honte perdi tote emeance&lt;br&gt;
+tant ert esprise de luxure&lt;br&gt;
+de nule autre rien navoit cure&lt;br&gt;
+Por ce qu'el est tant bele &amp; gente&lt;br&gt;
+Se fioit tant ensajovente&lt;br&gt;
+Ne li membroit pas demorir&lt;br&gt;
+Si faisoit tot a son plaisir&lt;br&gt;
+de -ii- parens ne se gardoit&lt;br&gt;
+A tos homes sabandonoit&lt;br&gt;
+Nespoirque fust en ceste vie&lt;br&gt;
+Feme de plus grant legerie&lt;br&gt;
+pere &amp; mere quant leveoient&lt;br&gt;
+A poi de duel ne socioient&lt;br&gt;
+Il levoloient castoier&lt;br&gt;
+Ele nes prisoit -i- denier&lt;br&gt;
+Ne prisoit casti deparent&lt;br&gt;
+Nient plus qu'un trespas de vent&lt;br&gt;
+Fille ce lidisoit lamere&lt;br&gt;
+Car croi le conseil de ton pere&lt;br&gt;
+Selongement tiens cest mestier&lt;br&gt;
+Molt en arons grant reprovier&lt;br&gt;
+PorDeu te proi fille Marie&lt;br&gt;
+Guerpis mais ceste legerie&lt;br&gt;
+Quant cest mestier aras guerpi&lt;br&gt;
+Nos te donrons riche mari&lt;br&gt;
+Nest drois que tu soies perie&lt;br&gt;
+Por soffraite de nostre aie&lt;br&gt;
+Filletues de haut parage&lt;br&gt;
+Molt est grant duel &amp; grant damage&lt;br&gt;
+Que tu seras issi perie&lt;br&gt;
+porta malvaise legerie&lt;br&gt;
+tes peres en est si iries&lt;br&gt;
+Jamaisanul jor n'en ert lies&lt;br&gt;
+&amp; maldist tote s'aventure&lt;br&gt;
+Quantafait tele engenieure&lt;br&gt;
+QuantMarielooit parler&lt;br&gt;
+Nelevoloit nes escouter&lt;br&gt;
+tresqu'ele avoit passe -xii- anz&lt;br&gt;
+del tot volt faire ses conmans&lt;br&gt;
+porbien faire savolente&lt;br&gt;
+Sen fui en autre regne&lt;br&gt;
+tot son parente deguerpi&lt;br&gt;
+puis n'oirent parler de li&lt;br&gt;
+Elesen fui comme leire&lt;br&gt;
+Sans seu de pere &amp; de mere&lt;br&gt;
+El chemin sen entra Marie&lt;br&gt;
+Ainc nidemanda compaignie&lt;br&gt;
+En Alixandre en est venue&lt;br&gt;
+alun chief delamaistrecue&lt;br&gt;
+ot les meretrix prist ostal&lt;br&gt;
+Iluec fut de son cors venal&lt;br&gt;
+Ele estoit blance comme flor&lt;br&gt;
+des jovencels avoit l'amor&lt;br&gt;
+tot en venoient al bordel&lt;br&gt;
+por sa [] biaute li jovencel&lt;br&gt;
+Ele les recoit volentiers&lt;br&gt;
+Nientseulement por lor deniers&lt;br&gt;
+Mais por faire lesien delit&lt;br&gt;
+Les ot osoi tote lanuit&lt;br&gt;
+A son delit ert entendive&lt;br&gt;
+de jor &amp; denuit la chaitive&lt;br&gt;
+boire&amp;mangier &amp; luxure&lt;br&gt;
+Co ert tote la soie cure&lt;br&gt;
+Quant ele levoit del soper&lt;br&gt;
+od les garcons aloit juer&lt;br&gt;
+tant amoit o eus a bordir&lt;br&gt;
+Nentendoit gaires aldormir&lt;br&gt;
+Li jovencel tot lipluisor&lt;br&gt;
+Erent siespris desamor&lt;br&gt;
+Que devant sen huis en l'entree&lt;br&gt;
+En faisoient maire mellee&lt;br&gt;
+par ce qu'il erent si ami&lt;br&gt;
+Si se faisoient la hardi&lt;br&gt;
+de Gisarmes &amp; de espees&lt;br&gt;
+S'entredonoientgrant colees&lt;br&gt;
+Li sans qui en ert espandus&lt;br&gt;
+Encoroit par tot lepalus&lt;br&gt;
+La chaitive qui ce veoit&lt;br&gt;
+Nulepities ne len prenoit&lt;br&gt;
+Se uns moroit deses amis&lt;br&gt;
+Ele en avoit -xl- vis&lt;br&gt;
+Quant ele en veoit -ii- ocis&lt;br&gt;
+Ja plus tart ne feist -i- ris&lt;br&gt;
+Ja cil qui fust por li navres&lt;br&gt;
+Ja par li ne fust visites&lt;br&gt;
+plus amoit ot les vis juer&lt;br&gt;
+coles malades visiter&lt;br&gt;
+En Alixandre estoit Marie&lt;br&gt;
+Quant demenoit iceste vie&lt;br&gt;
+Iluec demena ses talans&lt;br&gt;
+Lachaitive -xvii- ans&lt;br&gt;
+La vile en estoit enpirie&lt;br&gt;
+Alques en estoit mahaignie&lt;br&gt;
+&amp; li pais tot environ&lt;br&gt;
+en erent en perdicion&lt;br&gt;
+de sa biaute de sa figure&lt;br&gt;
+Si com il est en escripture&lt;br&gt;
+Voil -i- poi dire le samblant&lt;br&gt;
+ancois que jo tres pas avant&lt;br&gt;
+En icel tans ne en cel regne&lt;br&gt;
+Nen ot onques plus bele feme&lt;br&gt;
+onquescomtesse ne roine&lt;br&gt;
+Nen ot el chief plus bele crigne&lt;br&gt;
+roondes avoit les oreilles&lt;br&gt;
+&amp; blances erent a merveilles&lt;br&gt;
+les sorcils noirs &amp; avenans&lt;br&gt;
+&amp; les ioex vairs &amp; molt rians&lt;br&gt;
+La bouche bele &amp; par mesure&lt;br&gt;
+&amp; pieue laregardeure&lt;br&gt;
+la face tenre &amp; coloree&lt;br&gt;
+comme rose novele nee&lt;br&gt;
+Ne ja el nes ne el menton&lt;br&gt;
+Ne parceuscies mesfacon&lt;br&gt;
+Le col avoit blanc com ermine&lt;br&gt;
+Loiet estoit sa blonde crine&lt;br&gt;
+Niert mie greindres dunepome&lt;br&gt;
+Lun des traians de cele domme&lt;br&gt;
+de sus la boce en la poitrine&lt;br&gt;
+Ert si blance com flor despine&lt;br&gt;
+blans bras avoit &amp; blances mains&lt;br&gt;
+les dois reons greilles&amp;plains&lt;br&gt;
+Gent cors avoit &amp; bien molle&lt;br&gt;
+Sus lasoele lonc lecoste&lt;br&gt;
+Netropgrandene trop petite&lt;br&gt;
+Jasafaconnenertdescrite&lt;br&gt;
+la gransbiautesdecestedame&lt;br&gt;
+Niert toute escrite par nul homme&lt;br&gt;
+Tant ert cortoise de parler&lt;br&gt;
+Rien ni avoit que amender&lt;br&gt;
+a plaindre fait tel creature&lt;br&gt;
+Quantde sonCreatornacure&lt;br&gt;
+Ele recevoit grans presens&lt;br&gt;
+Sen achatoit biaus garnemens&lt;br&gt;
+biaus dras avoit &amp; avenans&lt;br&gt;
+porbien plaisir a ses amans&lt;br&gt;
+Navoit pas soing de dras de laine&lt;br&gt;
+Alpiorjor de la semaine&lt;br&gt;
+vestoit bon bliaut ostorin&lt;br&gt;
+Si afubloit mantel ermin&lt;br&gt;
+Sollersbienpains de cordoan&lt;br&gt;
+chaucoit a tus les jors del an&lt;br&gt;
+liciteain de lacite&lt;br&gt;
+l'amoient tot por sa biaute&lt;br&gt;
+liancien home &amp; lisage&lt;br&gt;
+disoient tot que cert damage&lt;br&gt;
+tant par mar fu ceste dolente&lt;br&gt;
+molt fait aplaindre sa jovente&lt;br&gt;
+mar fu onques la soie vie&lt;br&gt;
+Quant si est plaine de folie&lt;br&gt;
+tot disoient par lacite&lt;br&gt;
+Qu'ele ert de haut parente&lt;br&gt;
+Car atos respondoit raison&lt;br&gt;
+&amp; molt ert debele facon&lt;br&gt;
+lifiex a -i- empereor&lt;br&gt;
+Le peust prendre par honor&lt;br&gt;
+Ce fu en mai el mois deste&lt;br&gt;
+Quiele issi de lacite&lt;br&gt;
+&amp; esgardoit aval al port&lt;br&gt;
+U soloit faire son deport&lt;br&gt;
+ariver vit une galee&lt;br&gt;
+Qui de tos biens ert escipee&lt;br&gt;
+tote ert plaine de pelerins&lt;br&gt;
+de viex homes &amp; de mescins&lt;br&gt;
+En Jherusalem en aloient&lt;br&gt;
+par bon corage se hastoient&lt;br&gt;
+por estre atans aune feste&lt;br&gt;
+Qui de la crois idevoit estre&lt;br&gt;
+Cil qui erent li plus legier&lt;br&gt;
+Sen saloient fors el graver&lt;br&gt;
+Main amain aloient avant&lt;br&gt;
+Soz lariviere li enfant&lt;br&gt;
+Mais quant les aparcut Marie&lt;br&gt;
+Nepuet muer que ne sen rie &lt;br&gt;
+Apres si vit -i- home ester&lt;br&gt;
+commenca li ademander&lt;br&gt;
+Sire dist ele car me dis&lt;br&gt;
+por icel Deu par qui tu vie&lt;br&gt;
+Quil part en iront cil baron&lt;br&gt;
+Qui la issent de cel dromon&lt;br&gt;
+Se jo pooie o eus aler&lt;br&gt;
+Car cil ne voil mais demorer&lt;br&gt;
+Aler voil de ceste cite&lt;br&gt;
+Comest vis trop iai este&lt;br&gt;
+dont li respondi li preudom&lt;br&gt;
+Il iront en Jherusalem&lt;br&gt;
+Se vus lor aves que doner&lt;br&gt;
+Si porres bien deus aler&lt;br&gt;
+parDeu ce respont la dolente&lt;br&gt;
+moltpar ai bele jovente&lt;br&gt;
+Mon cors lor metrai abandon&lt;br&gt;
+Nelor puis doner autre don&lt;br&gt;
+Quant li preudom ot lafolie&lt;br&gt;
+Nepuet muer que ne senrie&lt;br&gt;
+Quantaoi le covenant&lt;br&gt;
+Guerpi la sisen vait riant&lt;br&gt;
+Eledolentesentorna&lt;br&gt;
+Ainc a lostel ne repaira&lt;br&gt;
+ains sen a la grant aleure&lt;br&gt;
+Si com lemenoit s'aventure&lt;br&gt;
+ainc ne fina trescal vaiscel&lt;br&gt;
+ou estoient li jovencel&lt;br&gt;
+Mais a cols parla tot premer&lt;br&gt;
+Qui se juoient el gravier&lt;br&gt;
+a aeus en vint isnelement&lt;br&gt;
+&amp; i parla molt simplement&lt;br&gt;
+Seigneureign dist ele pelerin&lt;br&gt;
+Dexvos mete en corage fin&lt;br&gt;
+&amp; vos doinst icel volente&lt;br&gt;
+Quivos me fa cies carite&lt;br&gt;
+Jasui jo une povre feme&lt;br&gt;
+Ci sui venue d'autre regne&lt;br&gt;
+del regne degipte sui nee&lt;br&gt;
+En cest pais sui esgaree&lt;br&gt;
+Joni ai ami ne parent&lt;br&gt;
+Se mi par va molt malement&lt;br&gt;
+ot moi nen ai argent neor&lt;br&gt;
+tot poes veoir mon tresor&lt;br&gt;
+Joni ai autre manandie&lt;br&gt;
+Mais molt pris vostre compaignie&lt;br&gt;
+Se en la nef o vos estoie&lt;br&gt;
+Molt volentiers vos serviroie&lt;br&gt;
+&amp; jo men voil o vos aler&lt;br&gt;
+Se vos plaisoit moi aporter&lt;br&gt;
+Ja por porter une chaitive&lt;br&gt;
+Ne venries plus tart a rive&lt;br&gt;
+&amp; respondent li jovencel&lt;br&gt;
+Venes onos molt nus est bel&lt;br&gt;
+Sus en lanef le font monter&lt;br&gt;
+Apres silevont des ancrer&lt;br&gt;
+Donquescommencentanagier&lt;br&gt;
+Cil del dromont li plus leger&lt;br&gt;
+Ne finerent li bacheler&lt;br&gt;
+Tres qu'il vindrent en haute mer&lt;br&gt;
+Tote nuit corent as estoiles&lt;br&gt;
+En haute mer drecent lor voiles&lt;br&gt;
+Mais del dormir rien ni avoit&lt;br&gt;
+Car Marie les arguoit&lt;br&gt;
+primes les prent atastoner&lt;br&gt;
+&amp; en apres a acoler&lt;br&gt;
+dont les commenca a baisier&lt;br&gt;
+&amp; en tus sensalosengier&lt;br&gt;
+Niot-i-seul tant fust lassez&lt;br&gt;
+Ne jovencels ne viels alez&lt;br&gt;
+Qui en peust prendre respit&lt;br&gt;
+Que ne pechast  en li la nuit&lt;br&gt;
+tant ert cortoise del mester&lt;br&gt;
+Que tos les fist ensoi pecher&lt;br&gt;
+Quant ele ooit les grans vens&lt;br&gt;
+&amp; les plueves &amp; les tormens&lt;br&gt;
+&amp; el ooit le grant orage&lt;br&gt;
+Nemuoit pas lesien corage&lt;br&gt;
+lisiens sanblans estoit molt lies&lt;br&gt;
+de rien ne cremoit ses pechies&lt;br&gt;
+Tos les paovres comfortoit&lt;br&gt;
+&amp; tote nuit o eus juoit&lt;br&gt;
+Tant par lavoit dyable esprise&lt;br&gt;
+Tote nuit ert ensa chemise&lt;br&gt;
+por faire bien le sien delis&lt;br&gt;
+Ala lanuit par tot les lis&lt;br&gt;
+A moltgrant gres les recevoit&lt;br&gt;
+lor volentes aenplisoit&lt;br&gt;
+Merveille fu ce voirement&lt;br&gt;
+Qui pot soffrir issi grant gent&lt;br&gt;
+de ce nestuet il douter mie&lt;br&gt;
+Quenaitdyable a compaignie&lt;br&gt;
+Quivolenters la les noiast&lt;br&gt;
+Se Damedex le li laissast&lt;br&gt;
+M ais il les agari demort&lt;br&gt;
+&amp; si les fist venir al port&lt;br&gt;
+QuantMarie fu arivee&lt;br&gt;
+Dolante fu &amp; esgaree&lt;br&gt;
+Sospire &amp; pleure a la rive&lt;br&gt;
+Nesetque faire la caitive&lt;br&gt;
+Ele ni conoist hom ne feme&lt;br&gt;
+Molt li sambla estrange regne&lt;br&gt;
+A la parfin sest porpensel&lt;br&gt;
+Que en lacite en ira&lt;br&gt;
+&amp; Fera la lesien mester&lt;br&gt;
+Car na corage del laissier&lt;br&gt;
+Oies de la mal euree&lt;br&gt;
+en Jherusalem est entree&lt;br&gt;
+Onques ne setint de pecher&lt;br&gt;
+Ains commenca aen pirier&lt;br&gt;
+oies com grant pardicion&lt;br&gt;
+Ains que venist lasention&lt;br&gt;
+De la sainte onoree&lt;br&gt;
+Queidevoit estre a oree&lt;br&gt;
+ot en pirie sitot le lieu&lt;br&gt;
+Miex li venist que Fust enfu&lt;br&gt;
+Car molt decevoit sa jovente&lt;br&gt;
+por co qu'ele ert bele &amp; gente&lt;br&gt;
+lijovencel de lacite&lt;br&gt;
+Erent espris de sa biaute&lt;br&gt;
+Ne demora que molt petit&lt;br&gt;
+Que li jors de la feste vint&lt;br&gt;
+Li jors vint de l'Acension&lt;br&gt;
+Ester vos la procession&lt;br&gt;
+des pelerins d'outre lemer&lt;br&gt;
+Qui vont altemple por orer&lt;br&gt;
+commepreudome &amp; comme sage&lt;br&gt;
+Al moster vont par bon corage&lt;br&gt;
+&amp; quant les aparcoit Marie&lt;br&gt;
+mist soi de dens la compaignie&lt;br&gt;
+Entra en la procession&lt;br&gt;
+Nonpaspar bone enten[]cion]cio&lt;br&gt;
+lipelerinquileveoient&lt;br&gt;
+Savolente ne conissoient&lt;br&gt;
+Seil seussent de savie&lt;br&gt;
+o eus n'eust ja compaignie&lt;br&gt;
+atant les degres sont monte&lt;br&gt;
+dedens le tenple sont ale&lt;br&gt;
+tot en tra ens la compaignie&lt;br&gt;
+mais ainc nipot entrer Marie&lt;br&gt;
+celiert vis son escient&lt;br&gt;
+Que ele veoit une gent&lt;br&gt;
+Queli sambloientchevaliers&lt;br&gt;
+mais molt avoient lesvis fiers&lt;br&gt;
+cascuns tenoit vers li sespee&lt;br&gt;
+&amp; li desfendoient lentree&lt;br&gt;
+Quant ele volt aler avant&lt;br&gt;
+des espees cremoit le brant&lt;br&gt;
+Quant vit que niot nule entree&lt;br&gt;
+En un angle senest tornee&lt;br&gt;
+dont se commence aporpenser&lt;br&gt;
+Que doit qu'ele nipuet entrer&lt;br&gt;
+A la parfin voit &amp; entent&lt;br&gt;
+Que ses pechies le li deffent&lt;br&gt;
+delcuercommenceasospirer&lt;br&gt;
+&amp; de ses ioels fort aplorer&lt;br&gt;
+del cuer li issent lisospir&lt;br&gt;
+mains prisoit vie que morir&lt;br&gt;
+ases .ii. mains deront sa crine&lt;br&gt;
+Grant cors se fiert en la poitrine&lt;br&gt;
+Seut que Dex iert ires vers li&lt;br&gt;
+Ne liosa crier merci&lt;br&gt;
+hai dist ele peceris&lt;br&gt;
+com mar i fustes meretris&lt;br&gt;
+por coi fesis les ors pechies&lt;br&gt;
+dontDex est issi corecies&lt;br&gt;
+mal conseil ai tostans eu&lt;br&gt;
+QuantmonCreator ai pardeu&lt;br&gt;
+tant par sui plains devil ordure&lt;br&gt;
+QueDamledeunademoicure&lt;br&gt;
+Ne el temple ne puis entrer&lt;br&gt;
+Ne Nostre Seignor apeler&lt;br&gt;
+Que fera ore la chaitive&lt;br&gt;
+Ce li pesoit que tant ert vive&lt;br&gt;
+Regarda ladestre partie&lt;br&gt;
+limage a veu de Marie&lt;br&gt;
+En la masiere enfiguree&lt;br&gt;
+Molt la pieuement regardee&lt;br&gt;
+Dame dist ele pieue mere&lt;br&gt;
+Qui en ton cors portas ton pare&lt;br&gt;
+Sains Gabrieus en fu message&lt;br&gt;
+Tu li respondis comme sage&lt;br&gt;
+Quant il te dist ave Marie&lt;br&gt;
+de la Deu grace raemplie&lt;br&gt;
+Entoiprendra humanite&lt;br&gt;
+Jhesus de sainte maiste&lt;br&gt;
+Quantque il dist tu lotrias&lt;br&gt;
+la sieue ancele reclamas&lt;br&gt;
+por co estu el ciel roine&lt;br&gt;
+A toi seule quier me dicine&lt;br&gt;
+Ames plaies qui sont mortals &lt;br&gt;
+Ne quier autre me de cinals&lt;br&gt;
+Se tu oton chier Fil mapaies&lt;br&gt;
+tot erent saines mes grant plaies&lt;br&gt;
+Ci gerpis ja la male vie&lt;br&gt;
+Que od li nar ai compaignie&lt;br&gt;
+EntonFil ai jo macreance&lt;br&gt;
+toi met en plege &amp; en fiance&lt;br&gt;
+a tost ans mais teservirai&lt;br&gt;
+Ne jade lui ne partirai&lt;br&gt;
+tote gerpis jo ceste vie&lt;br&gt;
+por ma malvaise legerie&lt;br&gt;
+Jamaisniert jor naie gervance&lt;br&gt;
+Molt ert aspre ma penitance&lt;br&gt;
+Virgeroine jo croi bien&lt;br&gt;
+Queonquesnest icele rien&lt;br&gt;
+Que tant par soit fors a venger&lt;br&gt;
+Setu ton Fil en veus proier&lt;br&gt;
+Quemolt ne soit tost pardone&lt;br&gt;
+&amp; aton Fil lues acorde&lt;br&gt;
+Encore ai jo en macreance&lt;br&gt;
+Que tes Fils fu ata naissance&lt;br&gt;
+En toi mist il virginite&lt;br&gt;
+&amp; en apres sadeite&lt;br&gt;
+molt fu grant merveille del Pere&lt;br&gt;
+Quant de safille fist sa Mere&lt;br&gt;
+Il prist entoi humanite&lt;br&gt;
+Ainc ni pardis virginite&lt;br&gt;
+Il fu tes Fiex &amp; fu tes Pere&lt;br&gt;
+Tu fus sa Fille &amp; sa Mere&lt;br&gt;
+molt fu ce merveillose chose&lt;br&gt;
+Que de lespine issi larose&lt;br&gt;
+&amp; delarose issi li fruis&lt;br&gt;
+par coidyables fu destruis&lt;br&gt;
+Un non avons co est Marie&lt;br&gt;
+molt est diverse nostre vie&lt;br&gt;
+tu amas bien &amp; castee&lt;br&gt;
+&amp; jo luxure &amp; ordee&lt;br&gt;
+dyable eus a anemi&lt;br&gt;
+&amp; jolai tostans servi&lt;br&gt;
+Ainc delatoie hum ilite&lt;br&gt;
+Ne nasqui feme encest regne&lt;br&gt;
+Jo sui povre &amp; orgoillose&lt;br&gt;
+&amp; de mon cors luxuriouse&lt;br&gt;
+Nostre Sires toi en ama&lt;br&gt;
+&amp; moi chaitive refusa&lt;br&gt;
+moi refusa &amp; ama toi&lt;br&gt;
+Dame aies merci demoi&lt;br&gt;
+Virge tu portas letresor&lt;br&gt;
+Qui plus reluist que geme enor&lt;br&gt;
+Entoiprist char li Fiex al roi&lt;br&gt;
+QuiSains Jehans mostra al doi&lt;br&gt;
+dist qu'il estoit li Aignels Dei&lt;br&gt;
+par cai li mons ert racatei&lt;br&gt;
+mais quant loi lianemis&lt;br&gt;
+Que il jeta de paradis&lt;br&gt;
+Que il devoit lemont salver&lt;br&gt;
+Selqui da sempres enganer&lt;br&gt;
+Si com il fist le premerhomme&lt;br&gt;
+Que il fist manger de la pomme&lt;br&gt;
+par .iii. foies la saia&lt;br&gt;
+onques del su en rien ni trova&lt;br&gt;
+Quant si levit arme &amp; fort&lt;br&gt;
+partraisonlidona mort&lt;br&gt;
+molt fu li mors bon euree&lt;br&gt;
+par coi vie fu restoree&lt;br&gt;
+Se li Fiex Deu ne fust ocis&lt;br&gt;
+Jahomnen trast en paradis&lt;br&gt;
+parlamortprist il les vertus&lt;br&gt;
+par coi dyables fu vencus&lt;br&gt;
+denfer brisa laserreure&lt;br&gt;
+Sienron pi tot laclosure&lt;br&gt;
+Fors en jeta sa compaignie&lt;br&gt;
+Quedyables avoit ravie&lt;br&gt;
+a son Pare tos les mena&lt;br&gt;
+en sa glorie ou il esta&lt;br&gt;
+puis vint el sepulcre ason cors&lt;br&gt;
+pargrant vertu en isci fors&lt;br&gt;
+as apostles puis aparut&lt;br&gt;
+&amp; .xl. jors o eus fut&lt;br&gt;
+mostra lor lanovele loi&lt;br&gt;
+apres les baissa tos en foi&lt;br&gt;
+commanda lor sa douce Mere&lt;br&gt;
+El ciel monta puis ason Pare&lt;br&gt;
+del ciel lor mist itel comfort&lt;br&gt;
+onques puis ne cremirent mort&lt;br&gt;
+lisains espirs oeus i mist&lt;br&gt;
+tos les langages lor aprist&lt;br&gt;
+or siet a la destre son Pere&lt;br&gt;
+tues od lui sadouce Mere&lt;br&gt;
+Quant il venra al jugement&lt;br&gt;
+A son secont avenement&lt;br&gt;
+tu seras en sa compaignie&lt;br&gt;
+commelasoie chiere amie&lt;br&gt;
+Il jugera &amp; mors &amp; vis&lt;br&gt;
+li juste iront enp aradis&lt;br&gt;
+li mal iront el fu durables&lt;br&gt;
+Ensamble o les pu ans dyables&lt;br&gt;
+VirgeRoine coronee&lt;br&gt;
+Qui tant par es bone euree&lt;br&gt;
+Que celi portas en ton ventre&lt;br&gt;
+Que tos li mons nepot reprendre&lt;br&gt;
+Si com jo croi ce que jo di&lt;br&gt;
+Si aies vos de moi merci&lt;br&gt;
+Quantnt ot finee sorison&lt;br&gt;
+&amp; Dex liot fait son pardon&lt;br&gt;
+desorison leva Marie&lt;br&gt;
+En son novel Seignor se fie&lt;br&gt;
+En lui mist tote sa fiance&lt;br&gt;
+El temple entra sans demorance&lt;br&gt;
+de densentra sans destorbier&lt;br&gt;
+Si va oir le Deu mestier&lt;br&gt;
+Soz ses jenols dont se clina&lt;br&gt;
+la sainte crois si aora&lt;br&gt;
+mais quant ele lot aoree&lt;br&gt;
+de Deu fu si tote aspiree&lt;br&gt;
+Que tot conut le Deu mester&lt;br&gt;
+Estes le vos hors del moster&lt;br&gt;
+de ses pechies sent a legie&lt;br&gt;
+A limage sest repairie&lt;br&gt;
+En li atote sesperance&lt;br&gt;
+conseilrequiertdepenitance&lt;br&gt;
+En quel maniere le fera&lt;br&gt;
+&amp; en quel tere sen ira&lt;br&gt;
+Vint une vois que ele entent&lt;br&gt;
+Se li adit apartement&lt;br&gt;
+vaten al moster Saint Jehan&lt;br&gt;
+lapasseras le flun Jordan&lt;br&gt;
+puis ten iras en lagastine&lt;br&gt;
+Al moster prendras medicine&lt;br&gt;
+Ilueques espeneiras&lt;br&gt;
+trestos les jors que tu vivras&lt;br&gt;
+Quant ele a entendu lavois&lt;br&gt;
+Seigna soi de lavraie crois&lt;br&gt;
+lues en entra enson chemin&lt;br&gt;
+devant lui vit .i. pelerin&lt;br&gt;
+.iii. maailles li presenta&lt;br&gt;
+.iii. petit pains en acata&lt;br&gt;
+Ce fu trestote sa sustance&lt;br&gt;
+tant comme fu en penitance&lt;br&gt;
+A flun Jordan en vint Marie&lt;br&gt;
+lanuit i prist herbergerie&lt;br&gt;
+molt pres del moster Saint Jehan&lt;br&gt;
+Sor la rive del flun Jordan&lt;br&gt;
+Se se herberga sans nul ami&lt;br&gt;
+dun de ses pains manga demi&lt;br&gt;
+but de laighe sainte fiie&lt;br&gt;
+Quant en ot but molt en fu lie&lt;br&gt;
+Son chief lava de la pardonne&lt;br&gt;
+de ses pechies devint la monde&lt;br&gt;
+Ele sesent alques lassee&lt;br&gt;
+Car fait avoit bien grant jornee&lt;br&gt;
+depierre dure fist son lit&lt;br&gt;
+Iluec dormi tote lanuit&lt;br&gt;
+dormi mais ce fu molt petit&lt;br&gt;
+Car ni avoit point dedelit&lt;br&gt;
+par matin ala al moster&lt;br&gt;
+por la oir le Deu mester&lt;br&gt;
+larecutcorpus domini&lt;br&gt;
+A donc fu lie ainc nefusi&lt;br&gt;
+Quant ele fu acumeignie&lt;br&gt;
+Cepoes croire molt fu lie&lt;br&gt;
+puis en entra en.i.calan&lt;br&gt;
+outre passa le flun Jordan&lt;br&gt;
+Quant ele fu outre passee&lt;br&gt;
+En la forest en est entree&lt;br&gt;
+Marie va par la gastine&lt;br&gt;
+Sovent deproie laroine&lt;br&gt;
+Que ele avoit misen ostage&lt;br&gt;
+le jor ancois devant simage&lt;br&gt;
+par sa merci ne le gerpise&lt;br&gt;
+&amp; del dyable legarisee&lt;br&gt;
+Iluec est tote sa fiance&lt;br&gt;
+or commencasapenitance&lt;br&gt;
+Napas talent de repentir&lt;br&gt;
+Ains se lairoit de faim morir&lt;br&gt;
+Nen a que .ii. pains &amp; demi&lt;br&gt;
+Or ait Jhesus de li merci&lt;br&gt;
+de ce ne vivra ele mie&lt;br&gt;
+Se Dex ne lifait autre aie&lt;br&gt;
+par le bos vait grant aleure&lt;br&gt;
+En Deu se fie &amp; asseure&lt;br&gt;
+mais quant afaite sajornee&lt;br&gt;
+desos .i. arbre en est tor nee&lt;br&gt;
+Un petit manga deson pain&lt;br&gt;
+puis sen dormi duscal demain&lt;br&gt;
+El demain leva par matin&lt;br&gt;
+Vers orient tint son cemin&lt;br&gt;
+tant ala par jor &amp; par nuis&lt;br&gt;
+par bos par plains &amp; par larris&lt;br&gt;
+&amp; tant par font vint el boscage&lt;br&gt;
+Que tot devint iluec salvage&lt;br&gt;
+mais ele ne soblioit mie&lt;br&gt;
+de proier a sainte Marie&lt;br&gt;
+Sovent li menbroit del image&lt;br&gt;
+Que ele avoit mis en ostage&lt;br&gt;
+Si drapel furent tost use&lt;br&gt;
+&amp; si sollers tost desrame&lt;br&gt;
+Quant si drapel furent ronpu&lt;br&gt;
+li cors de li remest tot nu&lt;br&gt;
+la sieue char mua color&lt;br&gt;
+devant ert blance comme flor&lt;br&gt;
+Quant .i. iver iot este&lt;br&gt;
+tot li noircirent li coste&lt;br&gt;
+molt li mua la blonde crine&lt;br&gt;
+blance devint com .i. ermine&lt;br&gt;
+del soleil &amp; de la gelee&lt;br&gt;
+li fu la face molt bruslee&lt;br&gt;
+Sa bouche fu atenevie&lt;br&gt;
+&amp; environ sachar noircie&lt;br&gt;
+itant avoit noir le menton&lt;br&gt;
+comme ce fust chies dun tison&lt;br&gt;
+tot lierent noir oi lioil&lt;br&gt;
+Navoit ore .i. point dorgoil&lt;br&gt;
+Se vos en veiscies loreille&lt;br&gt;
+moltvos venist a grant merveille&lt;br&gt;
+Qui maigre estoit &amp; de creue&lt;br&gt;
+&amp; de blanc poil tote molsue&lt;br&gt;
+Noire &amp; molsue ert sa poitrine&lt;br&gt;
+bien resambloit escorce despine&lt;br&gt;
+Navoit de char en ses traians&lt;br&gt;
+Nient plus qu'il est en .i. gans&lt;br&gt;
+les bras les mains &amp; les lons dois&lt;br&gt;
+Avoit plus noirs que nenest pois&lt;br&gt;
+moltpar avoit lesongles grans&lt;br&gt;
+asdens les ront qu'ele ot trencans&lt;br&gt;
+liventresliert agaris&lt;br&gt;
+car navoit nul deses delis&lt;br&gt;
+li pie li erent de creve&lt;br&gt;
+&amp; en viron tot denavre&lt;br&gt;
+Ele ne segardoit despine&lt;br&gt;
+Quant ele aloit par lagastine&lt;br&gt;
+Ce li ert vis son escient&lt;br&gt;
+del bien fai soit petit u nient&lt;br&gt;
+Quant une espine le poignoit&lt;br&gt;
+En un deses pies li chaoit&lt;br&gt;
+de co estoit ele molt lie&lt;br&gt;
+Quant ele avoit la grant hascie&lt;br&gt;
+Nestoitmerveillesiert noircie&lt;br&gt;
+car molt de menoit aspre vie&lt;br&gt;
+plus de .xl. ans a la nue&lt;br&gt;
+Niert par merveille siert molsue&lt;br&gt;
+povre despens avoit od li&lt;br&gt;
+Damedex ait deli merci&lt;br&gt;
+.ii. pains avoit negaires grans&lt;br&gt;
+de ces vesqui par pluisors ans&lt;br&gt;
+le premer an devindrent dur&lt;br&gt;
+com ce fuissent pieres de mur&lt;br&gt;
+chascun jor en usoit Marie&lt;br&gt;
+mais co ert petite partie&lt;br&gt;
+Quant ele ot tot son pain use&lt;br&gt;
+donquesaqueltlerbe del pre&lt;br&gt;
+com autre beste lemangoit&lt;br&gt;
+de rien nese recomfortoit&lt;br&gt;
+as dens bevoit dou ruissel&lt;br&gt;
+Car ni avoit autre vaiscel&lt;br&gt;
+Ne fait aplaindre lipechiet&lt;br&gt;
+dont licors est si castiet&lt;br&gt;
+derbevesqui &amp; de racine&lt;br&gt;
+dis &amp; set anz en la gastine&lt;br&gt;
+puis fu .xxx. anz que ne manga&lt;br&gt;
+Se langles Deu ne laporta&lt;br&gt;
+dyable vint ali depremier&lt;br&gt;
+Sovent le soloit assaier&lt;br&gt;
+tot ce lifaisoit ramenbrer&lt;br&gt;
+Qu'elejadis soloit amer&lt;br&gt;
+les biaus delis &amp; les bels lieus&lt;br&gt;
+ouele seut faire ses gieus&lt;br&gt;
+ore fu ele bon euree&lt;br&gt;
+Quant de tot ce fu obliee&lt;br&gt;
+Ainc gaires puis entote savie&lt;br&gt;
+Neli sovint puis defolie&lt;br&gt;
+Neainc en trestot leboscage&lt;br&gt;
+Ne vit gaires beste salvage&lt;br&gt;
+Ne autre vive creature&lt;br&gt;
+par la forest vait tote nue&lt;br&gt;
+Enpluisors lieus prist son ostal&lt;br&gt;
+Sa vie estoit esperital&lt;br&gt;
+Or lairommesrlairomes a demarie&lt;br&gt;
+Si vos dirons dun abeie&lt;br&gt;
+Qui ert al chief de la forest&lt;br&gt;
+Si com li livres nos fait cert&lt;br&gt;
+onquesDex ne fist nule gent&lt;br&gt;
+Quivesquisent tant bonement&lt;br&gt;
+Ni miex servent lor Creator&lt;br&gt;
+Que faisoient icil seignor&lt;br&gt;
+Il navoient soing de mal faire&lt;br&gt;
+Chascuns avoit vestu sa haire&lt;br&gt;
+tant erent en grant decipline&lt;br&gt;
+N'avoient pas vestu stamine&lt;br&gt;
+En haires erent &amp; nus pies&lt;br&gt;
+por espeneir lor pechies&lt;br&gt;
+Ne il de jor ne il de nuit&lt;br&gt;
+Ne fuissent ja trove en lit&lt;br&gt;
+tote jor erent el moster&lt;br&gt;
+fors seul al eure de manger&lt;br&gt;
+Il vivoient molt povrement&lt;br&gt;
+de paindorge &amp; de polment&lt;br&gt;
+&amp; tos les venredis de lan&lt;br&gt;
+Vivoient de nois &amp; de glan&lt;br&gt;
+Aighe bevoient que niert saine&lt;br&gt;
+Car ele niert pas defontaine&lt;br&gt;
+Entrelsnestoit pas simonie&lt;br&gt;
+Ne covoitise ne envie&lt;br&gt;
+N'avoientsoigd'argent ne dor&lt;br&gt;
+En Deu avoient lor tresor&lt;br&gt;
+Nul dels navoit propriete&lt;br&gt;
+tot erent dune volente&lt;br&gt;
+Nesthom la lor bonte vos die&lt;br&gt;
+tant estoient de bone vie&lt;br&gt;
+Quant venoit a la quarantaine&lt;br&gt;
+le premer jor faisoient caine&lt;br&gt;
+li abes les a cu mencoit&lt;br&gt;
+Corpusdomini lor donoit&lt;br&gt;
+Quant les avoit acommenchies&lt;br&gt;
+par ordre lor lavoit lorpies&lt;br&gt;
+puis aloient aorison&lt;br&gt;
+&amp; si lor faisoient sermon&lt;br&gt;
+commandoit les entre baisier&lt;br&gt;
+puis lor ovroit luis del moster&lt;br&gt;
+En la forest les en voioit&lt;br&gt;
+A Damedeu les commandoit&lt;br&gt;
+li saint moine se departoient&lt;br&gt;
+Fors seul .ii. qui la remanoient&lt;br&gt;
+Non pas por peur de larron&lt;br&gt;
+Qu'ilcremissent de lor maison&lt;br&gt;
+mais por faire le Deu mester&lt;br&gt;
+Remanoient cil el moster&lt;br&gt;
+Car nest pas bon de sainte eglise&lt;br&gt;
+Que soit laissie ledeu service&lt;br&gt;
+li autre sen issoient tuit&lt;br&gt;
+El desert vivoient de fruit&lt;br&gt;
+En Deu avoient grant amor&lt;br&gt;
+Derbes vivoient li pluisor&lt;br&gt;
+&amp; quant li .i. lautre veoit&lt;br&gt;
+de la fuioit ou il estoit&lt;br&gt;
+assi sen aloit com enbles&lt;br&gt;
+Jadelui ne fust destorbes&lt;br&gt;
+Iluec ou la nuit le pernoit&lt;br&gt;
+Sor la Fresce erbe se colchoit&lt;br&gt;
+par matin se levoit bien main&lt;br&gt;
+Seignoit soi desa destre main&lt;br&gt;
+Ilnesavoit ou il aloit&lt;br&gt;
+A Damledeu se commandoit&lt;br&gt;
+Ceste meisme entencion&lt;br&gt;
+Avoient tot si compaignon&lt;br&gt;
+des ioels ploroient tenrement&lt;br&gt;
+Sovenoit lor del jugement&lt;br&gt;
+ou tot li angle tranbleront&lt;br&gt;
+por la paor que il aront&lt;br&gt;
+la u il verront le Fil De&lt;br&gt;
+El siege de sa maiste&lt;br&gt;
+&amp; devant lui le fu dorable&lt;br&gt;
+dont il tormentera dyable&lt;br&gt;
+&amp; tote la malvaise gent&lt;br&gt;
+tormentera il ensement&lt;br&gt;
+En infer puis descenderont&lt;br&gt;
+Si que jamais nen isteront&lt;br&gt;
+por co estoit icil moine&lt;br&gt;
+En la forest entel angone&lt;br&gt;
+porescaparescaper de cel peril&lt;br&gt;
+estoient il entel escil&lt;br&gt;
+Quant passee ert la quarantaine&lt;br&gt;
+&amp; venoit aljor de la caine&lt;br&gt;
+le jor del a soluption&lt;br&gt;
+Revenoient tot en maison&lt;br&gt;
+li sains abes estoit molt lies&lt;br&gt;
+Quant les veoit tos repairies&lt;br&gt;
+li paistre ert lies de son bergil&lt;br&gt;
+Qui escapes ert deperil&lt;br&gt;
+El moster les en fait aler&lt;br&gt;
+A pres soi fist les huis fermer&lt;br&gt;
+puis estoient tot lan sos geu&lt;br&gt;
+Ne lor estovoit cremir leu&lt;br&gt;
+Quantrevient al jor de quaresme&lt;br&gt;
+Quecascun doit aler son esme&lt;br&gt;
+li abes fist que il soloit&lt;br&gt;
+Ses oeilles mist fors del toit&lt;br&gt;
+Ancois les fist entre baisier&lt;br&gt;
+puis lor ovri luis del moster&lt;br&gt;
+Enlaforest les en voioit&lt;br&gt;
+Adamledeu les commandoit&lt;br&gt;
+Uns senva a destre partie&lt;br&gt;
+Quimolt estoit de bone vie&lt;br&gt;
+Il ert apeles Zosimas&lt;br&gt;
+molt ert vestus de povres dras&lt;br&gt;
+miex amoit il sa poverte&lt;br&gt;
+Quenusquens ne fait sa conte&lt;br&gt;
+Enlaforestparfondement&lt;br&gt;
+Se mist ot poi formement&lt;br&gt;
+Ermites iquida trover&lt;br&gt;
+de Deu voloit o eus parle&lt;br&gt;
+mais quant il ot fait .xx. jornees&lt;br&gt;
+Quimolterent des mesurees&lt;br&gt;
+&amp; vit que nul n'en pot trover&lt;br&gt;
+Not corage d'avant aler&lt;br&gt;
+Endroit miedi canta sore&lt;br&gt;
+Aore Deu &amp; si demore&lt;br&gt;
+Quant il ot sorison fenie&lt;br&gt;
+Regarde ala destre partie&lt;br&gt;
+Il esgarda vers orient&lt;br&gt;
+un ombre vit son escient&lt;br&gt;
+Qui estoit de home u de feme&lt;br&gt;
+&amp; cestoit de legiptiene&lt;br&gt;
+Dexlavoit iluec amenee&lt;br&gt;
+Nevoloit mais que fust celee&lt;br&gt;
+descovrir voloit letresor&lt;br&gt;
+Qui plus valoit c'argent neor&lt;br&gt;
+Li sains hom fu molt esmaris&lt;br&gt;
+Quantalonbre torna sonvis&lt;br&gt;
+Quidaque fust encantement&lt;br&gt;
+Reclama Deu omnipotent&lt;br&gt;
+Que le des fendist del felon&lt;br&gt;
+&amp; de male tenptacion&lt;br&gt;
+Quant il ot sorison fenie&lt;br&gt;
+la figure vit demarie&lt;br&gt;
+apartement vit l afigure&lt;br&gt;
+Car ni avoit pas coverture&lt;br&gt;
+Environ lui avoit sa crine&lt;br&gt;
+tant ert blance com flor d'espine&lt;br&gt;
+li blanc cevoil n'ierent trecies&lt;br&gt;
+li avenoient dus cas pies&lt;br&gt;
+Ele navoit plus vestemens&lt;br&gt;
+Quant ces li soslevoit li vens&lt;br&gt;
+desus paroit la char brullee&lt;br&gt;
+del soleil &amp; de la gelee&lt;br&gt;
+QuantZosimas vit lafigure&lt;br&gt;
+vers liala grant aleure&lt;br&gt;
+ladamequantlevit venir&lt;br&gt;
+Isnelementpristafuir&lt;br&gt;
+li sains hom le vait enchaucant&lt;br&gt;
+&amp; sovent le vait apelant&lt;br&gt;
+dame dist il parole amoi&lt;br&gt;
+Se tu o Deu as nule foi&lt;br&gt;
+jo te conjur de Deu le grant&lt;br&gt;
+Que tu ne voises mais avant&lt;br&gt;
+Quantladame ot de Deu parler&lt;br&gt;
+dontcommenca fort aplorer&lt;br&gt;
+hez Dex dist ele Creator&lt;br&gt;
+En toi croi jo &amp; toi aor&lt;br&gt;
+Xlvi. ans puis conter&lt;br&gt;
+Quenoi mais de ti parler&lt;br&gt;
+or mas .i. saint home tramis&lt;br&gt;
+jo ne lios torner mon vis&lt;br&gt;
+mostrer ne lios ma figure&lt;br&gt;
+tote sui nue creature&lt;br&gt;
+or sest arestee la domme&lt;br&gt;
+Son vis nosa torner vers l'omme&lt;br&gt;
+dans Zosimas molt leporsieut&lt;br&gt;
+apres ala tresca.i. duit&lt;br&gt;
+la vint Marie tres corant&lt;br&gt;
+mais ne douta pas leve grant&lt;br&gt;
+tote seure outre passa&lt;br&gt;
+de lautre part puis saresta&lt;br&gt;
+dans Zosimas vint la corant&lt;br&gt;
+duscalarive del torant&lt;br&gt;
+lasarestutnepot avant&lt;br&gt;
+dont se clama caitif dolant&lt;br&gt;
+de l'autre part Marie estoit&lt;br&gt;
+vers Zosimas seregardoit&lt;br&gt;
+or ne se volra mais celer&lt;br&gt;
+A lui commenca aparler&lt;br&gt;
+Queles dist ele Zosimas&lt;br&gt;
+met moi iluec .i. detes dras&lt;br&gt;
+dont jo mepuisse covrir alques&lt;br&gt;
+de mon noir cors que si est lasques&lt;br&gt;
+puis men irai de la atoi&lt;br&gt;
+Quant tu nepues venir amoi&lt;br&gt;
+QuantZosimassoi nomer&lt;br&gt;
+de pec commenca aplorer&lt;br&gt;
+Car ele ne sot pas son non&lt;br&gt;
+Se par le Saint esperit non&lt;br&gt;
+dundeses dras dont li jeta&lt;br&gt;
+A ladame donc saproisma&lt;br&gt;
+A drapel vint corant Marie&lt;br&gt;
+de son cors en covri partie&lt;br&gt;
+Quant fu del drapel afublee&lt;br&gt;
+vers le saint home seit tornee&lt;br&gt;
+&amp; vait alui par de sor londe&lt;br&gt;
+Car de pechies estoit ja monde&lt;br&gt;
+Sire dist ele dous amis&lt;br&gt;
+Or me di que tu as ci quis&lt;br&gt;
+Ici vees une dolente&lt;br&gt;
+En icel bos pleure &amp; gaimente&lt;br&gt;
+por les pechies que jo aifais&lt;br&gt;
+Qui tant par sont orible &amp; lais&lt;br&gt;
+Nest hom sel seit nenait pesance&lt;br&gt;
+Or en fai ci mapenitance&lt;br&gt;
+Quant li sains hom lot si parler&lt;br&gt;
+depitiecommenceaplorer&lt;br&gt;
+as pies li fait afliction&lt;br&gt;
+Requiert li sa beneicon&lt;br&gt;
+ladame li rechiet aspies&lt;br&gt;
+Car molt secrient deses pecies&lt;br&gt;
+merci licria molt sovent&lt;br&gt;
+&amp; ele li molt durement&lt;br&gt;
+Zosimas se gist en la place&lt;br&gt;
+laighelide cortpar la face&lt;br&gt;
+molttenrement des jo els ploroit&lt;br&gt;
+por le pitie que il avoit&lt;br&gt;
+tant sanguissa que tot tressue&lt;br&gt;
+par la barbe qu'il ot chenue&lt;br&gt;
+li decort aval lasuor&lt;br&gt;
+ladame prie par amor&lt;br&gt;
+Face por le pople orison&lt;br&gt;
+&amp; li doinst sa beneicon&lt;br&gt;
+Sire fait ele dous amis&lt;br&gt;
+tu mas beneicon requis&lt;br&gt;
+tues prestre messe cantant&lt;br&gt;
+por co est il plus avenant&lt;br&gt;
+Que tu le doignes ore moi&lt;br&gt;
+Que se jo le donaisse toi&lt;br&gt;
+congie as demesse canter&lt;br&gt;
+tam ain pues metre sor autel&lt;br&gt;
+molt ert cose sainte fiie&lt;br&gt;
+Qui de tam ain sera seinie&lt;br&gt;
+jo croi bien que par ton seignacle&lt;br&gt;
+Fait Dex desor lautel miracle&lt;br&gt;
+Que li pains devient li sens cors&lt;br&gt;
+&amp; li vins sans qu'en issi fors&lt;br&gt;
+Dexconnoistbien ton sacrefice&lt;br&gt;
+Car te vie ma tote aprise&lt;br&gt;
+Car tu las servi de t'enfance&lt;br&gt;
+Enlui pues avoir grant fiance&lt;br&gt;
+molt en avras bon gerredon&lt;br&gt;
+Or mefai tabeneicon&lt;br&gt;
+dame ce respont Zosimas&lt;br&gt;
+jam a beneicon navras&lt;br&gt;
+Setuprimes ne lemefais&lt;br&gt;
+Jade ci ne leverai mais&lt;br&gt;
+por fain ne por nule soffraite&lt;br&gt;
+Se ancois ne le maies faite&lt;br&gt;
+Or voit bien &amp; entent Marie&lt;br&gt;
+Que il ne sen levera mie&lt;br&gt;
+tost ans ert encele orison&lt;br&gt;
+Que li donast beneicon&lt;br&gt;
+torna son vis vers orient&lt;br&gt;
+Reclama Deu omnipotent&lt;br&gt;
+Dex dist ele Roi Creator&lt;br&gt;
+Sire toi lo jo &amp; aor&lt;br&gt;
+Sire beneoist soiestu&lt;br&gt;
+&amp; tote la toie vertu&lt;br&gt;
+de nos pechies nos fai pardon&lt;br&gt;
+puis amis sa beneicon&lt;br&gt;
+des or se lieve Zosimas&lt;br&gt;
+Grant plains jete car molt fu &lt;br&gt;
+dont li commence ademander&lt;br&gt;
+Car volentiers lovolt saver&lt;br&gt;
+des rois des contes de la terre&lt;br&gt;
+Seil ont pais u il ont gerre&lt;br&gt;
+&amp; de ces qui justice tienent&lt;br&gt;
+confaitement il se contienent&lt;br&gt;
+dansZosimasdont li respont&lt;br&gt;
+Dexamis pais par tot le mont&lt;br&gt;
+Nus ne va itant par la terre&lt;br&gt;
+Quiloie mais parler de gerre&lt;br&gt;
+mais sainte eglise a grant beson&lt;br&gt;
+Quepor li faites orison&lt;br&gt;
+QueDex li donast pais durable&lt;br&gt;
+&amp; desfende delvis dyable&lt;br&gt;
+Marielia respondu&lt;br&gt;
+Jhesus le gart par sa vertu&lt;br&gt;
+Ele esgarde vers orient&lt;br&gt;
+drece ses mains alciel les tent&lt;br&gt;
+Deu en proia le Creator&lt;br&gt;
+moltdoucement &amp; par amor&lt;br&gt;
+Si que la bouche nemovoit&lt;br&gt;
+Ne nule vois fors nen issoit&lt;br&gt;
+de terre fu senpers ravie&lt;br&gt;
+Que eleni aivenoit mie&lt;br&gt;
+Zosimas ot paor molt grant&lt;br&gt;
+mais Damledeu trait a garant&lt;br&gt;
+Car plus de .ii. pies &amp; demi&lt;br&gt;
+Avoit entre la terre &amp; li&lt;br&gt;
+ouele faisoit saproiere&lt;br&gt;
+Nostre Sireslavoitmolt chiere&lt;br&gt;
+de la paor cot Zosimas&lt;br&gt;
+commencasent aler lepas&lt;br&gt;
+Quida fantosme avoir trover&lt;br&gt;
+Ariere sen est retorne&lt;br&gt;
+QuantMarielen voit aler&lt;br&gt;
+Sel commenca a apeler&lt;br&gt;
+Keles dist ele Zosimas&lt;br&gt;
+bieaus chiers pare por coi t'en vas&lt;br&gt;
+por coi doutas por une feme&lt;br&gt;
+Saches que jo sui crestiene&lt;br&gt;
+baptisie fui en menfance&lt;br&gt;
+Endeu ai tote ma creance&lt;br&gt;
+Jo sui ci por espeneir&lt;br&gt;
+Sel servira duscal morir&lt;br&gt;
+Sa destre main leva amont&lt;br&gt;
+la sainte crois fist en son front&lt;br&gt;
+li bons hermites quant la vit&lt;br&gt;
+As pies aladame chait&lt;br&gt;
+el len aiue arelever&lt;br&gt;
+apres commenca a parler&lt;br&gt;
+dont est venue &amp; de quel tere b&lt;br&gt;
+Zosimasli prista enquerre a&lt;br&gt;
+descuevre moi latoie vie&lt;br&gt;
+porDeu nel me celer tumie&lt;br&gt;
+dilemoiparconfession&lt;br&gt;
+QueDex te face voir pardon&lt;br&gt;
+Sire ce li respont Marie&lt;br&gt;
+Jo ne le te celerai mie&lt;br&gt;
+Quant tu nue mas regardee&lt;br&gt;
+Ja ma vie netiert celee&lt;br&gt;
+tote le te descoverrai&lt;br&gt;
+Ne ja de rien nen mentirai&lt;br&gt;
+Dont commencea conterMarie&lt;br&gt;
+Rien ne coile que tot nedie&lt;br&gt;
+tote savie a acontee&lt;br&gt;
+des icele eure que fu nee&lt;br&gt;
+Endementresqu'eleli conte&lt;br&gt;
+bien poes croi re qu'ele ot honte&lt;br&gt;
+Quant el liot conte savie&lt;br&gt;
+Aspieslichietmercilicrie&lt;br&gt;
+Quantliotconte ses pechies&lt;br&gt;
+Apres liest cheue aspies&lt;br&gt;
+Zosimasaoisavie&lt;br&gt;
+le Creator en glorefie&lt;br&gt;
+merci en rent NostreSeignor&lt;br&gt;
+parmoltbon cuer &amp; par amor&lt;br&gt;
+damepor coi chies ames pies&lt;br&gt;
+porDeuteproique tu ten lies&lt;br&gt;
+Nest pas en moi ladignete&lt;br&gt;
+Ne sui de tel auctorite&lt;br&gt;
+aceque jo toi ci conter&lt;br&gt;
+Que ne nos seul vers ci garder&lt;br&gt;
+Car onques ton pareil ne vi&lt;br&gt;
+porDeu aies de moi merci&lt;br&gt;
+par carite dites le moi&lt;br&gt;
+Se jo porrai remaindre otoi&lt;br&gt;
+Nenil biaus pere Zosimas&lt;br&gt;
+Respont Marie ains ten iras&lt;br&gt;
+Mais ne te chaut conter ma vie&lt;br&gt;
+tant que jo soie de fenie&lt;br&gt;
+Se Dex ma atoi demostree&lt;br&gt;
+par toi volrai estre celee&lt;br&gt;
+a labe Johan parleras&lt;br&gt;
+Cest message li porteras&lt;br&gt;
+de ses oeilles prange cure&lt;br&gt;
+tel ja qui trop saseure&lt;br&gt;
+prengent cure por amor De&lt;br&gt;
+Car il ia a amender&lt;br&gt;
+mais al tans que venra al tans&lt;br&gt;
+Seres enfers si com jo pens&lt;br&gt;
+Quant ti par &amp; ti compaignon&lt;br&gt;
+Sen iront fors de lor maison&lt;br&gt;
+le jor venra del saint quaresme&lt;br&gt;
+Quecascuns en ira son esme&lt;br&gt;
+toi estovra el lit jesir&lt;br&gt;
+Ne porras pas oeus iroit&lt;br&gt;
+Quant venra lejor de la caine&lt;br&gt;
+&amp; passee ert la quarantaine&lt;br&gt;
+Garis seras si com jo croi&lt;br&gt;
+dont te pri devenir a moi&lt;br&gt;
+le cors NostreSeignor me met&lt;br&gt;
+En -i- vaiscel qui molt soit net&lt;br&gt;
+del sanc en -i- autre vaiscel&lt;br&gt;
+mais ce garde que molt soit bel&lt;br&gt;
+perequant tu m'aporteras&lt;br&gt;
+plus fort de toi me traveras&lt;br&gt;
+de toi me serai aproismie&lt;br&gt;
+Quant te verrai molt serai lie&lt;br&gt;
+Envoir te di si com jo croi&lt;br&gt;
+Enl autre an irai contre toi&lt;br&gt;
+Al flun Jordan metroveras&lt;br&gt;
+corpus domini me donras&lt;br&gt;
+Iluec serai acommunie&lt;br&gt;
+por co me serai aproismie&lt;br&gt;
+desque passai le flun Jordan&lt;br&gt;
+deses le moster Saint Jehan&lt;br&gt;
+Ne noi le cors NostreSeignor&lt;br&gt;
+En qui ai tote ma doucor&lt;br&gt;
+Ne puis ne vi homme fors toi&lt;br&gt;
+aler men voil proie por moi&lt;br&gt;
+lors sen est la dame tornee&lt;br&gt;
+El grant de sert en est entree&lt;br&gt;
+Quant li sains hom levit altre&lt;br&gt;
+desor ses pies nepot estre&lt;br&gt;
+od les ioels le sieut el desert&lt;br&gt;
+molt ot grant duel quant il le part&lt;br&gt;
+A la terre est a jenoillies&lt;br&gt;
+ou ele avoit tenu ses pies&lt;br&gt;
+baise la terre molt sovent&lt;br&gt;
+Deu en aore omnipotent&lt;br&gt;
+Dex dist il loes soiestu&lt;br&gt;
+Qui en feme as mis tel vertu&lt;br&gt;
+Sire tois en puis aorer&lt;br&gt;
+Qui le me deignas demostrer&lt;br&gt;
+puis li menbra de son moster&lt;br&gt;
+Sirecommence a repairier&lt;br&gt;
+venus en est a sam aison&lt;br&gt;
+Ensementsont si compaignon&lt;br&gt;
+li abes Johans fu molt lies&lt;br&gt;
+Quant il les voit tos repairies&lt;br&gt;
+mais chascun deus sest bien teu&lt;br&gt;
+de quant que il avoit veu&lt;br&gt;
+Nus ni voloit pas novelier&lt;br&gt;
+Ne soi -i- point glorifier&lt;br&gt;
+Apresquant ce vint al quareme&lt;br&gt;
+Quecascun doit aler son esme&lt;br&gt;
+En son lit jut dans Zosimas&lt;br&gt;
+malades fu ni ala pas&lt;br&gt;
+amaison le covint ester&lt;br&gt;
+Car febles fu ni pot aler&lt;br&gt;
+Sot que voire ert la prophesie&lt;br&gt;
+Que avoit oi de Marie&lt;br&gt;
+tote passa la quarentaine&lt;br&gt;
+tres que vint al jor de la caine&lt;br&gt;
+Zosimas se senti gari&lt;br&gt;
+donta priscorpusdomni&lt;br&gt;
+le sanc precious ensement&lt;br&gt;
+por faire le commandement&lt;br&gt;
+dontladamelavoit proie&lt;br&gt;
+Quant ele prist alui congie&lt;br&gt;
+Zosimasa enpris son oire&lt;br&gt;
+o soi porta -i- poi de soire&lt;br&gt;
+&amp; de lentilles ensement&lt;br&gt;
+Ilotsoingdautreforniement&lt;br&gt;
+al flun Jordan vint Zosimas&lt;br&gt;
+Quant il vint la molt par fu mas&lt;br&gt;
+Iluec quida trover Marie&lt;br&gt;
+mais en cor n'en iavoit mie&lt;br&gt;
+Co ert la rien que plus doutoit&lt;br&gt;
+Que pechies ne li ait toloit&lt;br&gt;
+ou quele iait ja este&lt;br&gt;
+&amp; que il ait trop de more&lt;br&gt;
+de latendre fu anuies&lt;br&gt;
+a poi que nen fu repairies&lt;br&gt;
+Dex dist il Rois de Maiste&lt;br&gt;
+Ne me laisse ci esgare&lt;br&gt;
+lai moi veoir en cor lafeme&lt;br&gt;
+Quina son per entot cest regne&lt;br&gt;
+Janen vivrai si com jo croi&lt;br&gt;
+Se jo en core ne lavoi&lt;br&gt;
+mais se ne vient amoi parler&lt;br&gt;
+comment porrai a li passer&lt;br&gt;
+dont passerai le flun Jordan&lt;br&gt;
+car il ni a nef ne calan&lt;br&gt;
+peire de toute creature&lt;br&gt;
+de ce puestu bien prendre cure&lt;br&gt;
+tant par est grant ta poeste&lt;br&gt;
+tote rien sert ta volente&lt;br&gt;
+Quant il ot sorison fenie&lt;br&gt;
+Outre le flun en vit Marie&lt;br&gt;
+Sor la rive le vit ester&lt;br&gt;
+commenca le a apeler'&lt;br&gt;
+dame ce a dit Zosimas&lt;br&gt;
+merecomment or le feras&lt;br&gt;
+dont passeras le flun Jordan&lt;br&gt;
+Quant tu nen as nef ne calan&lt;br&gt;
+Marielot issi parler&lt;br&gt;
+dontcommenca fort a plorer&lt;br&gt;
+a Damedeu sest commandee&lt;br&gt;
+de dens le flun en est entree&lt;br&gt;
+Sor le flun vait tot sans dou&lt;br&gt;
+oies com fu de grant creance&lt;br&gt;
+Sor laighe roide vait grant pas&lt;br&gt;
+moltsenmerveilleZosimas&lt;br&gt;
+outre passa de lautre part&lt;br&gt;
+onques sa plante ni moilla&lt;br&gt;
+Quantalarive fu venue&lt;br&gt;
+vait al saint home sel salue&lt;br&gt;
+apres li est cheue as pies&lt;br&gt;
+Car molt se crient deses pecies&lt;br&gt;
+As pies li fait afliction&lt;br&gt;
+Requiert li sa beneicon&lt;br&gt;
+li sainslaivearelever&lt;br&gt;
+de pitie commence a plorer&lt;br&gt;
+No se faire sor li seignacle&lt;br&gt;
+QuantDexpor li fait tel miracle&lt;br&gt;
+Quilefait si aler sor londe&lt;br&gt;
+de leue que siert parfonde&lt;br&gt;
+Quant de la terre la dreca&lt;br&gt;
+par vraie amistie le baisa&lt;br&gt;
+li sains hom le volt amer&lt;br&gt;
+commenca le a acoler&lt;br&gt;
+Credo in Deum li rova&lt;br&gt;
+por Deu li desist si lorra&lt;br&gt;
+adont lidist molt belement&lt;br&gt;
+&amp; lapatre nostre ensement&lt;br&gt;
+ladame respont apres lui&lt;br&gt;
+moltsentre gardent anbedui&lt;br&gt;
+Quant orent fait lor parlement&lt;br&gt;
+li sains li mostre tel present&lt;br&gt;
+comme le cors Nostre Seignor&lt;br&gt;
+parqui seront sauf pecheor&lt;br&gt;
+Zosimas le tint en sa main&lt;br&gt;
+dame dist il ce samble pain&lt;br&gt;
+mais co est lecors Jhesu Crist&lt;br&gt;
+Que li malvais pueples acist&lt;br&gt;
+Enlacrois fu mis &amp; ocis&lt;br&gt;
+Ja nusnavera paradis&lt;br&gt;
+Se il ne croit ce en sa vie&lt;br&gt;
+tot ce croi jo ce dist Marie&lt;br&gt;
+Encore ai jo en ma creance&lt;br&gt;
+Que il fu ferus du ne lance&lt;br&gt;
+&amp; a son Pare nos fist paie&lt;br&gt;
+par le sanc qu'issi de saplaie&lt;br&gt;
+par lui furent cil si ami&lt;br&gt;
+Qui ains furent si anemi&lt;br&gt;
+par le pechie del premer home&lt;br&gt;
+Qui sor de fois man g a la pomme&lt;br&gt;
+I cest saint sanc nos laissa il&lt;br&gt;
+Cil est molt fols qui le tient vil&lt;br&gt;
+Se tu las aporte otoi&lt;br&gt;
+porDeu te pri do ne lemoi&lt;br&gt;
+li sainslot issi desraisner&lt;br&gt;
+moltsencommencea merveiller&lt;br&gt;
+le sacrefice li mostra&lt;br&gt;
+la sainte damelaora&lt;br&gt;
+Il li dona el le re cut&lt;br&gt;
+le cors manga &amp; le sanc but&lt;br&gt;
+Quant ele fu acommencie&lt;br&gt;
+onques de rien ne fu si lie&lt;br&gt;
+he; Dex dist ele creator&lt;br&gt;
+Pere toi lo jo &amp; aor&lt;br&gt;
+biaus sire or oies morison&lt;br&gt;
+&amp; si me rent mon gerredon&lt;br&gt;
+xlvi- anz tai servi&lt;br&gt;
+Sire or aies de moi merci&lt;br&gt;
+Fai de ta fille ton plaisir&lt;br&gt;
+des or volroie jo morir&lt;br&gt;
+Sire or voldroie mes soldees&lt;br&gt;
+Que to as pieca aprestees&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+&amp; []&lt;br&gt;
+xxx- ans erent ?????? ?????&lt;br&gt;
+Qu'elenavoit mangie de ble&lt;br&gt;
+deleve but tot sans soi&lt;br&gt;
+puis li adit prie por moi&lt;br&gt;
+aicest mot sen est tornee&lt;br&gt;
+En -i- eure fu tres portee&lt;br&gt;
+En icel lieu qui molt fu chers&lt;br&gt;
+u josi mas le vit premers&lt;br&gt;
+Fu en -i- eure tres alee&lt;br&gt;
+Se i avoit m ainte jornee&lt;br&gt;
+Quant ele acel lieu fu venue&lt;br&gt;
+ou Zosimas latrova mie&lt;br&gt;
+Qui miex o loit &amp; plus forment&lt;br&gt;
+Que ne fait basmes ne piement&lt;br&gt;
+Sor la terre sest acotee&lt;br&gt;
+a Damledeu sest commandee&lt;br&gt;
+Dex dist ele comme fosis&lt;br&gt;
+&amp; en mon cors arme mesis&lt;br&gt;
+a toi le puisse jo livrer&lt;br&gt;
+&amp; otroier &amp; commander&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+?????????????????????????? ?p??gnie&lt;br&gt;
+Niot beste tant par fust fier&lt;br&gt;
+Quionqueslosaitaproismer&lt;br&gt;
+Sor li nosa oiseaus voler&lt;br&gt;
+tant par le volt Dex honorer&lt;br&gt;
+Si grant miracle Dex ifist&lt;br&gt;
+Que sa char onques ne malmist&lt;br&gt;
+Ne por froidor ne por chalor&lt;br&gt;
+Nen issi malvaise flairor&lt;br&gt;
+Tant fu li cors desenterres&lt;br&gt;
+Que li ans fu trestos passes&lt;br&gt;
+Zosimasnesoblia mie&lt;br&gt;
+Repaire sent ensabeie&lt;br&gt;
+mais dune rien fu molt iries&lt;br&gt;
+li sainsquant il fu repairies&lt;br&gt;
+Que a la dame avoit parle&lt;br&gt;
+&amp; son non navoit demande&lt;br&gt;
+Ne liot pas son non enquis&lt;br&gt;
+de ce setint aentrepris&lt;br&gt;
+ancois eust pris le congiet&lt;br&gt;
+Que peust issir de son siet&lt;br&gt;
+Quant fu trespasses icel an&lt;br&gt;
+molt tost passa le flun Jordan&lt;br&gt;
+Eldesert vint por la moiller&lt;br&gt;
+dont avoit si grant de sirier&lt;br&gt;
+tant la quist il par le desert&lt;br&gt;
+Quil est venus u li cors ert&lt;br&gt;
+ancois que il leust trove&lt;br&gt;
+molt le veiscies esgare&lt;br&gt;
+Il fait grant duel &amp; plore &amp; crie&lt;br&gt;
+pres ert delcors n'en veoit mie&lt;br&gt;
+Pere dist il qui me fesir&lt;br&gt;
+mostre moi co que tant ai quis&lt;br&gt;
+Saches de ci ne moverai&lt;br&gt;
+N'avantna rierenen irai&lt;br&gt;
+desque jo voie cele feme&lt;br&gt;
+Qui per il na entot cest regne&lt;br&gt;
+Sire mostre moi la moiller&lt;br&gt;
+vers qui aitot mon desirier&lt;br&gt;
+Ne viverai si com le croi&lt;br&gt;
+Se jo en core nelavoi&lt;br&gt;
+Lai moi veir lecorsmamie&lt;br&gt;
+car jo quit quele soit fenie&lt;br&gt;
+Selevesquist si com jo croi&lt;br&gt;
+Ele fust ja venue amoi&lt;br&gt;
+Jaesgare ne me laissast&lt;br&gt;
+Se seul me soust en cest gast&lt;br&gt;
+Sire setuas demoi cure&lt;br&gt;
+lai moi faire sasepulture&lt;br&gt;
+Biaus PareDeu de Maiste&lt;br&gt;
+Ne me laisse ci esgare&lt;br&gt;
+Quant il ot sorison fenie&lt;br&gt;
+dontlimostralecorsmarie&lt;br&gt;
+vers destre part sest regarde&lt;br&gt;
+En -i- lieu vit une clarte&lt;br&gt;
+Quida que fu eust la &lt;br&gt;
+a la clarte dont saproisma&lt;br&gt;
+le cors trova molt en fu lie&lt;br&gt;
+car molt part lavoit desirie&lt;br&gt;
+a la terre tot est endu&lt;br&gt;
+poi sen faloit que n'iert totnu&lt;br&gt;
+Son vis avoit vers oriant&lt;br&gt;
+&amp; ses ioels clos avenanment&lt;br&gt;
+Sa crine avoit sor son viaire&lt;br&gt;
+Ele navoit autre suaire&lt;br&gt;
+al cors aproisma Zosimas&lt;br&gt;
+Sor li posa -i- de sesdras&lt;br&gt;
+les pies commenca a baisier&lt;br&gt;
+a lautre cors nose atoucher&lt;br&gt;
+Il regarda amont al chief&lt;br&gt;
+letres i vit com en -i- brief&lt;br&gt;
+En ces letres que li sains vit&lt;br&gt;
+Ert cis commandement escrit&lt;br&gt;
+Zosimas prent le cors Marie&lt;br&gt;
+sevelis le ou fina vie&lt;br&gt;
+Quant tu lauras enseveli&lt;br&gt;
+proie por lui par ta merci&lt;br&gt;
+les letres furent de bon tor&lt;br&gt;
+com se fuissent faites cel jor&lt;br&gt;
+En la terre erent fi gurees&lt;br&gt;
+li sains hom les a recitees&lt;br&gt;
+mais quant il ot le non trove&lt;br&gt;
+moltgrantmercis en rent ade&lt;br&gt;
+par le bel non en fu molt lie&lt;br&gt;
+dont son service a commencie&lt;br&gt;
+Quant il ot dit le suen mester&lt;br&gt;
+puis dit ses salmes del sauter&lt;br&gt;
+dontleveiscieses gare&lt;br&gt;
+car ni avoit rien aporte&lt;br&gt;
+dont il peust la terre ovrir&lt;br&gt;
+al saintisme cors en foir&lt;br&gt;
+un fust trova par aventure&lt;br&gt;
+Fuir en volt la terre dure&lt;br&gt;
+Il vout la terre manovrer&lt;br&gt;
+ainc ne lepot nes entamer&lt;br&gt;
+tot tres suoit de dens sa haire&lt;br&gt;
+&amp; nule rien ni pooit faire&lt;br&gt;
+Grant mestier a li sains daue&lt;br&gt;
+tel ahan a que tot tressue&lt;br&gt;
+&amp; por quant por tot lahan&lt;br&gt;
+Ne le cavast il en tot lan&lt;br&gt;
+Se Dex ne lidonast aie&lt;br&gt;
+par le deserte de Marie&lt;br&gt;
+Dexlidon aboncompaignon&lt;br&gt;
+Nient autre mais -i- lion&lt;br&gt;
+Un lion issi del des sert&lt;br&gt;
+la aproisma u licors ert&lt;br&gt;
+les pies commenca alecier&lt;br&gt;
+Ne savoit autrement baisier&lt;br&gt;
+Signe lifai soit dobeir&lt;br&gt;
+&amp; que il le voloit servir&lt;br&gt;
+Quantli sains hom vit le lion&lt;br&gt;
+Navait apris tel compaignon&lt;br&gt;
+Neustsoig de sa compaignie&lt;br&gt;
+Se Dex li donast autre aie&lt;br&gt;
+premierementsen vout fuir&lt;br&gt;
+Quant il levit al cors venir&lt;br&gt;
+mais puis quant il levoit prive&lt;br&gt;
+&amp; de si grant humilite&lt;br&gt;
+tant ert souef com -i- aignel&lt;br&gt;
+Sachies que celi fu molt bel&lt;br&gt;
+Sot que Dex liavoit tramis&lt;br&gt;
+Il liadit biaus dous amis&lt;br&gt;
+Ceste feme a anon Marie&lt;br&gt;
+Quimoltpar fu de bone vie&lt;br&gt;
+ma ci de mostre en -i- brief&lt;br&gt;
+Quejai ci trove a son chief&lt;br&gt;
+Quepar moi veut estre enfoie&lt;br&gt;
+mais jo ai grant mester daie&lt;br&gt;
+Se me voloie aider&lt;br&gt;
+Cest saintisme cors enterrer&lt;br&gt;
+li lions est apareillier&lt;br&gt;
+del commandement fu molt lies&lt;br&gt;
+a ce que il seut obeir&lt;br&gt;
+commencala terre a fuir&lt;br&gt;
+li lions fuet la terre dure&lt;br&gt;
+li sainslimostre la mesure&lt;br&gt;
+aspies devant il le fooit&lt;br&gt;
+a cels deriere le jetoit&lt;br&gt;
+Grans ert la vertus le lion&lt;br&gt;
+Quant si estruoit lesablon&lt;br&gt;
+la fosse fu tost acurie&lt;br&gt;
+Isnelement fu netoie&lt;br&gt;
+Zosimas fu lies quant levit&lt;br&gt;
+devers le chief le cors saisit&lt;br&gt;
+&amp; li lions la as pies pris&lt;br&gt;
+Entreus deus&lt;br&gt;
+                        lont el sarcu mis&lt;br&gt;
+de denslaterre ont&lt;br&gt;
+                        mis le cors []&lt;br&gt;
+Zosimasdoncsen issi fors&lt;br&gt;
+Or fait la commandacion&lt;br&gt;
+tot sans aiue del lion&lt;br&gt;
+Cil ni puet faire nule aiue&lt;br&gt;
+Car il ert une beste mue&lt;br&gt;
+mais quant cevint a la covrer&lt;br&gt;
+Nel covint pas amonester&lt;br&gt;
+tote la terre rasamble&lt;br&gt;
+Sor le saint cors lerejeta&lt;br&gt;
+Quant il lot tote raunee&lt;br&gt;
+&amp; sobedience finee&lt;br&gt;
+a la terre est ajenoilliet&lt;br&gt;
+Samblant fait de prandre congiet&lt;br&gt;
+ariere sen est retornes&lt;br&gt;
+El grant de sert en est entres&lt;br&gt;
+QuantZosimasl'en vit torner&lt;br&gt;
+Deu en commenca aloer&lt;br&gt;
+SireDeus loes foiestu&lt;br&gt;
+moltpar est grande ta vertu&lt;br&gt;
+bienmasde mostreparMarie&lt;br&gt;
+Quemoltpar est fols qui toblie&lt;br&gt;
+Orvoi &amp; croi bien sans doutance&lt;br&gt;
+Que fort cose a en penitance&lt;br&gt;
+Ne jamais tresques al morir&lt;br&gt;
+Ne serai sans espeneir&lt;br&gt;
+Jademon cors merci narai&lt;br&gt;
+Nemais ne le deporterai&lt;br&gt;
+commencasentarepairier&lt;br&gt;
+plorant senvait a son moster&lt;br&gt;
+Ensementsont si compaignon&lt;br&gt;
+tot sen repairent amaison&lt;br&gt;
+Quant il furent enlorostal&lt;br&gt;
+&amp; en capitle communal&lt;br&gt;
+Zosimascommence a parler&lt;br&gt;
+Ornesevolra mais celer&lt;br&gt;
+del Egiptiene Marie&lt;br&gt;
+lor a conte tote la vie&lt;br&gt;
+commentletrova el desert&lt;br&gt;
+El lieu de litable ou ele ert&lt;br&gt;
+&amp; com il vint al secont an&lt;br&gt;
+Encontre lui al flun Jordan&lt;br&gt;
+&amp; com ala a pie sorlonde&lt;br&gt;
+de leve que tant ert parfonde&lt;br&gt;
+&amp; com il letrova fenie&lt;br&gt;
+al tiere an &amp; des enfoie&lt;br&gt;
+&amp; del non que trova escrit&lt;br&gt;
+&amp; del obseque que il fist&lt;br&gt;
+puis lor a conte del lion&lt;br&gt;
+comment il lot a compaignon&lt;br&gt;
+Quantlimoine ont oi son dit&lt;br&gt;
+a Deu en ont rendu mercit&lt;br&gt;
+liabes pleure tenrement&lt;br&gt;
+&amp; tot liautre ensement&lt;br&gt;
+Niot nul namendast sa vie&lt;br&gt;
+por les miracles de Marie&lt;br&gt;
+Nos meisme nos amendon&lt;br&gt;
+Qui en avons greignor besoig&lt;br&gt;
+&amp; de proions ceste Marie&lt;br&gt;
+de qui nos oons ceste vie&lt;br&gt;
+Que ele proit Nostre Seignor&lt;br&gt;
+Vers qui ele ot si grant amor&lt;br&gt;
+Que il nos par doinst nos pecies&lt;br&gt;
+&amp; les novels &amp; tos les vies&lt;br&gt;
+Que lui puissons faire present&lt;br&gt;
+denos armes al jugement&lt;br&gt;
+amen amen &amp; Jhesu crist&lt;br&gt;
+consautqui cest romans escrist&lt;br&gt;
+&amp; madame sainte Marie&lt;br&gt;
+Nos doinst la parmenable vie&lt;br&gt;
+amen amen cascuns endie&lt;br&gt;
+Ce nus otroit li Fils Marie&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;
+[]&lt;br&gt;</code></pre>
 </div>
 </div>
 </div>
