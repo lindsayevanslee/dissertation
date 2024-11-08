@@ -1,5 +1,5 @@
 ---
-title: "Chapter 4"
+title: "The Edition"
 ---
 
 This is the fourth chapter of my Quarto book.
@@ -13,12 +13,15 @@ library(xml2)
 
 ## Unedited Mess
 
-```{r}
+```{r results='asis'}
 # Read the XML content
 xml_file <- read_xml("data/T-E.xml")
 
 # Extract the <l> elements inside the <text> element
-lines <- xml_find_all(xml_file, "//text//l")
+lines <- xml_find_all(xml_file, "//text//l | //text//cb")
+
+# Initialize an empty list to store the processed lines
+processed_lines <- list()
 
 # Function to process each <l> element
 process_line <- function(line) {
@@ -35,16 +38,29 @@ process_line <- function(line) {
   reg_elements <- xml_find_all(line, ".//reg")
   xml_remove(reg_elements)
   
+  # Get the text of the line
+  line_text <- xml_text(line)
+  
   # Return the processed text of the line
-  return(xml_text(line))
+  return(line_text)
 }
 
-# Apply the function to each <l> element and concatenate with line breaks
-text_content <- sapply(lines, process_line)
-formatted_text <- paste(text_content, collapse = "\n")
+# Process each line and wrap with <div class='column-break'> at each <cb/>
+for (line in lines) {
+  if (xml_name(line) == "cb") {
+    # Add a closing </div> for the previous column and an opening <div> for the new column
+    processed_lines <- c(processed_lines, "</div>", "<div class='column-break'>")
+  } else {
+    # Process the line and add it to the current column
+    processed_lines <- c(processed_lines, process_line(line))
+  }
+}
+
+# Wrap the entire content with <div class='column-break'> tags
+formatted_text <- paste(c("<div class='column-break'>", processed_lines, "</div>"), collapse = "\n")
 
 # Print the formatted text content as a block of text, preserving line breaks
-cat(formatted_text, sep = "\n")
+cat(formatted_text, sep = "<br><br>")
 ```
 
 ## Expanded Abbreviations Mess

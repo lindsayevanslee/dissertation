@@ -1,10 +1,11 @@
 ---
-title: "Chapter 3"
+title: "The Manuscripts"
 ---
 
 # Chapter 3
 
 This is the third chapter of my Quarto book.
+In this chapter, I describe the corpus of T-manuscripts in detail.
 
 ```{r}
 # R code goes here
