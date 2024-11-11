@@ -1,6 +1,6 @@
 .column-break {
   margin-bottom: 2em; /* Adjust the margin to create the desired spacing */
-  margin-left: 50px; /* Space for folio numbers */
+  margin-left: 70px; /* Space for folio numbers and line numbers*/
   position: relative; /* Enable positioning context */
   line-height: 1.2;
   background-color: lightgray; /* Temporary background to check if column break is appearing */
@@ -13,4 +13,12 @@
   font-style: italic;
   color: #666;
   font-size: 0.9em;
+}
+
+.line-number {
+  position: absolute;
+  left: -60px; /* Further left than folio numbers */
+  font-family: "Helvetica", sans-serif;
+  color: #999;
+  font-size: 0.8em;
 }

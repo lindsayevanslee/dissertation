@@ -23,6 +23,9 @@ lines <- xml_find_all(xml_file, "//text//l | //text//cb | //text//pb")
 # Initialize an empty list to store the processed lines
 processed_lines <- list()
 
+# Initialize line counter
+line_count <- 0
+
 # Function to process each element
 process_line <- function(line) {
   # Handle page breaks differently
@@ -31,6 +34,19 @@ process_line <- function(line) {
     folio_num <- xml_attr(line, "n")
     return(sprintf("<div class='folio-number'>%s</div>", folio_num))
 }
+  
+  # Only increment line count for verse lines
+  if (xml_name(line) == "l") {
+    line_count <<- line_count + 1
+    # Add line number div every 5th line
+    line_number <- if (line_count %% 5 == 0) {
+      sprintf("<div class='line-number'>%d</div>", line_count)
+    } else {
+      ""
+    }
+  } else {
+    line_number <- ""
+  }
   
   # Find all <choice> elements within the line
   choices <- xml_find_all(line, ".//choice")
@@ -53,6 +69,10 @@ process_line <- function(line) {
   
   # Get the text of the line and wrap in a div with line-height control
   line_text <- sprintf("<div style='line-height: 1.2;'>%s</div>", as.character(line))
+  
+  # Return line with number if applicable
+  line_text <- sprintf("<div style='line-height: 1.2;'>%s%s</div>", 
+                      line_number, as.character(line))
   
   # Return the processed text of the line
   return(line_text)
@@ -88,6 +108,9 @@ lines <- xml_find_all(xml_file, "//text//l | //text//cb | //text//pb")
 # Initialize an empty list to store the processed lines
 processed_lines <- list()
 
+# Initialize line counter
+line_count <- 0
+
 # Function to process each element
 process_line <- function(line) {
   # Handle page breaks differently
@@ -95,6 +118,19 @@ process_line <- function(line) {
     # Get folio number and format as standalone line
     folio_num <- xml_attr(line, "n")
     return(sprintf("<div class='folio-number'>%s</div>", folio_num))
+  }
+  
+  # Only increment line count for verse lines
+  if (xml_name(line) == "l") {
+    line_count <<- line_count + 1
+    # Add line number div every 5th line
+    line_number <- if (line_count %% 5 == 0) {
+      sprintf("<div class='line-number'>%d</div>", line_count)
+    } else {
+      ""
+    }
+  } else {
+    line_number <- ""
   }
   
   # Find all <choice> elements within the line
@@ -127,6 +163,10 @@ process_line <- function(line) {
   
   # Get the text of the line and wrap in a div with line-height control
   line_text <- sprintf("<div style='line-height: 1.2;'>%s</div>", as.character(line))
+  
+  # Return line with number if applicable
+  line_text <- sprintf("<div style='line-height: 1.2;'>%s%s</div>", 
+                      line_number, as.character(line))
   
   # Return the processed text of the line
   return(line_text)
@@ -162,6 +202,9 @@ lines <- xml_find_all(xml_file, "//text//l | //text//cb | //text//pb")
 # Initialize an empty list to store the processed lines
 processed_lines <- list()
 
+# Initialize line counter
+line_count <- 0
+
 # Function to process each element
 process_line <- function(line) {
   # Handle page breaks differently
@@ -169,6 +212,19 @@ process_line <- function(line) {
     # Get folio number and format as standalone line
     folio_num <- xml_attr(line, "n")
     return(sprintf("<div class='folio-number'>%s</div>", folio_num))
+  }
+  
+  # Only increment line count for verse lines
+  if (xml_name(line) == "l") {
+    line_count <<- line_count + 1
+    # Add line number div every 5th line
+    line_number <- if (line_count %% 5 == 0) {
+      sprintf("<div class='line-number'>%d</div>", line_count)
+    } else {
+      ""
+    }
+  } else {
+    line_number <- ""
   }
   
   # Find all <choice> elements within the line
@@ -192,6 +248,10 @@ process_line <- function(line) {
   
   # Get the text of the line and wrap in a div with line-height control
   line_text <- sprintf("<div style='line-height: 1.2;'>%s</div>", as.character(line))
+  
+  # Return line with number if applicable
+  line_text <- sprintf("<div style='line-height: 1.2;'>%s%s</div>", 
+                      line_number, as.character(line))
   
   # Return the processed text of the line
   return(line_text)
