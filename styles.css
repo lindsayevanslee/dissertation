@@ -1,5 +1,16 @@
 .column-break {
   margin-bottom: 2em; /* Adjust the margin to create the desired spacing */
+  margin-left: 50px; /* Space for folio numbers */
+  position: relative; /* Enable positioning context */
   line-height: 1.2;
   background-color: lightgray; /* Temporary background to check if column break is appearing */
+}
+
+.folio-number {
+  position: absolute;
+  left: -40px; /* Pull number left of main text */
+  font-family: "Palatino", serif; /* Example fancy font */
+  font-style: italic;
+  color: #666;
+  font-size: 0.9em;
 }
