@@ -17,14 +17,21 @@ library(xml2)
 # Read the XML content
 xml_file <- read_xml("data/T-E.xml")
 
-# Extract the <l> and <cb> elements inside the <text> element
-lines <- xml_find_all(xml_file, "//text//l | //text//cb")
+# Extract both <l>, <cb>, and <pb> elements
+lines <- xml_find_all(xml_file, "//text//l | //text//cb | //text//pb")
 
 # Initialize an empty list to store the processed lines
 processed_lines <- list()
 
-# Function to process each <l> element
+# Function to process each element
 process_line <- function(line) {
+  # Handle page breaks differently
+  if (xml_name(line) == "pb") {
+    # Get folio number and format as standalone line
+    folio_num <- xml_attr(line, "n")
+    return(sprintf("<div style='line-height: 1.2;'>%s</div>", folio_num))
+  }
+  
   # Find all <choice> elements within the line
   choices <- xml_find_all(line, ".//choice")
   for (choice in choices) {
