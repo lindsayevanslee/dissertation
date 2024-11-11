@@ -11,7 +11,7 @@ library(xml2)
 
 ::: {.panel-tabset}
 
-## Unedited Mess
+## Transcription
 
 ```{r results='asis'}
 # Read the XML content
@@ -96,7 +96,7 @@ formatted_text <- paste(c("<div class='column-break'>", processed_lines, "</div>
 cat(formatted_text, sep = "")
 ```
 
-## Expanded Abbreviations Mess
+## Expanded Abbreviations
 
 ```{r results='asis'}
 # Read the XML content
@@ -190,7 +190,7 @@ formatted_text <- paste(c("<div class='column-break'>", processed_lines, "</div>
 cat(formatted_text, sep = "")
 ```
 
-## Editor's Choice Mess
+## Regularized Text
 
 ```{r results='asis'}
 # Read the XML content

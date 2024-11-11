@@ -3,7 +3,7 @@
   margin-left: 70px; /* Space for folio numbers and line numbers*/
   position: relative; /* Enable positioning context */
   line-height: 1.2;
-  background-color: lightgray; /* Temporary background to check if column break is appearing */
+  background-color: transparent
 }
 
 .folio-number {
