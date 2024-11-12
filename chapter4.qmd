@@ -97,7 +97,9 @@ formatted_text <- paste(c("<div class='column-break'>", processed_lines, "</div>
 cat(formatted_text, sep = "")
 ```
 
-</div> <div class="edition-column" id="expanded"> <h2>Expanded Abbreviations</h2>
+</div> 
+<div class="edition-column" id="expanded"> 
+<h2>Expanded Abbreviations</h2>
 
 ```{r results='asis'}
 # Read the XML content
@@ -191,7 +193,9 @@ formatted_text <- paste(c("<div class='column-break'>", processed_lines, "</div>
 cat(formatted_text, sep = "")
 ```
 
-</div> <div class="edition-column" id="regularized"> <h2>Regularized Text</h2>
+</div> 
+<div class="edition-column" id="regularized"> 
+<h2>Regularized Text</h2>
 
 ```{r results='asis'}
 # Read the XML content
@@ -276,4 +280,5 @@ formatted_text <- paste(c("<div class='column-break'>", processed_lines, "</div>
 cat(formatted_text, sep = "")
 ```
 
-</div> </div> 
+</div> 
+</div> 
