@@ -1,76 +1,75 @@
-.edition-container {
-  display: grid;
-  grid-template-columns: repeat(3, 1fr);
-  gap: 2em;
-  position: relative;
-  max-width: 100%;
-  margin: 2em auto;
-}
-
-.edition-column {
-  position: sticky;
-  top: 2em;
-  height: fit-content;
-  padding: 1em;
-  transition: opacity 0.3s ease;
+/* Container for all columns */
+.layout-row {
+  max-height: 80vh;
   overflow-y: auto;
-  max-height: 90vh;
+  position: relative;
+  margin-left: 6em;
+  width: calc(100% - 8em);
 }
 
-/* Base state */
-.edition-column {
+/* Base column styles */
+.column {
+  transition: opacity 0.3s ease;
   opacity: 0.7;
+  padding: 0.1em;
+  margin: 0 0.2em;
+  position: relative;
+  max-height: none;
+  overflow-y: visible;
 }
 
-/* Hover state */
-.edition-column:hover {
+/* Scrollbar styling for container */
+.layout-row::-webkit-scrollbar {
+  width: 8px;
+}
+
+.layout-row::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.layout-row::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.column:hover {
   opacity: 1;
 }
 
-/* Non-hovered columns when any column is hovered */
-.edition-container:hover .edition-column:not(:hover) {
-  opacity: 0.4;
-}
-
-/* Maintain existing column-break and number styling */
-.edition-column {
-  margin-left: 70px;
-  position: relative;
-  line-height: 1.2;
-}
-
-/* Headers */
-.edition-column h2 {
-  position: sticky;
-  top: 0;
-  background: white;
-  padding: 0.5em 0;
-  margin-bottom: 1em;
-  text-align: center;
-  z-index: 1;
-}
-
-.column-break {
-  margin-bottom: 2em; /* Adjust the margin to create the desired spacing */
-  margin-left: 70px; /* Space for folio numbers and line numbers*/
-  position: relative; /* Enable positioning context */
-  line-height: 1.2;
-  background-color: transparent
-}
-
-.folio-number {
+/* Numbers only in first column */
+.column:first-child .line-number {
   position: absolute;
-  left: -40px; /* Pull number left of main text */
-  font-family: "Palatino", serif; /* Example fancy font */
+  left: -35px;
+  font-family: "Helvetica", sans-serif;
+  color: #999;
+  font-size: 0.8em;
+}
+
+.column:first-child .folio-number {
+  position: absolute;
+  left: -30px;
+  font-family: "Palatino", serif;
   font-style: italic;
   color: #666;
   font-size: 0.9em;
 }
 
-.line-number {
-  position: absolute;
-  left: -60px; /* Further left than folio numbers */
-  font-family: "Helvetica", sans-serif;
-  color: #999;
-  font-size: 0.8em;
+/* Hide numbers in other columns */
+.column:not(:first-child) .line-number,
+.column:not(:first-child) .folio-number {
+  display: none;
+}
+
+/* Content spacing */
+.edition-text {
+  margin-left: 25px;
+  line-height: 1.2;
+}
+
+.column-break {
+  margin-bottom: 2em;
+  margin-left: 25px;
+  position: relative;
+  line-height: 1.2;
+  background-color: transparent;
 }

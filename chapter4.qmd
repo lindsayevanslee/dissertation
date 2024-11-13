@@ -9,10 +9,11 @@ This is the fourth chapter of my Quarto book.
 library(xml2)
 ```
 
-<div class="edition-container">
+::: {.column-body-outset}
+::: {layout="[[15,15,15]]"}
 
-<div class="edition-column" id="transcription">
-<h2>Transcription</h2>
+::: {.column}
+## Transcription
 
 ```{r results='asis'}
 # Read the XML content
@@ -90,16 +91,16 @@ for (line in lines) {
   }
 }
 
-# Wrap the entire content with <div class='column-break'> tags
-formatted_text <- paste(c("<div class='column-break'>", processed_lines, "</div>"), collapse = "\n")
+# Process lines and wrap in edition-text div
+formatted_text <- paste(c("<div class='edition-text'>", processed_lines, "</div>"), collapse = "\n")
+cat(formatted_text)
 
-# Print the formatted text content as a block of text, preserving line breaks
-cat(formatted_text, sep = "")
 ```
 
-</div> 
-<div class="edition-column" id="expanded"> 
-<h2>Expanded Abbreviations</h2>
+:::
+
+::: {.column}
+## Expanded Abbreviations
 
 ```{r results='asis'}
 # Read the XML content
@@ -186,16 +187,16 @@ for (line in lines) {
   }
 }
 
-# Wrap the entire content with <div class='column-break'> tags
-formatted_text <- paste(c("<div class='column-break'>", processed_lines, "</div>"), collapse = "\n")
+# Process lines and wrap in edition-text div
+formatted_text <- paste(c("<div class='edition-text'>", processed_lines, "</div>"), collapse = "\n")
+cat(formatted_text)
 
-# Print the formatted text content as a block of text, preserving line breaks
-cat(formatted_text, sep = "")
 ```
 
-</div> 
-<div class="edition-column" id="regularized"> 
-<h2>Regularized Text</h2>
+:::
+
+::: {.column}
+## Regularized Text
 
 ```{r results='asis'}
 # Read the XML content
@@ -273,12 +274,12 @@ for (line in lines) {
   }
 }
 
-# Wrap the entire content with <div class='column-break'> tags
-formatted_text <- paste(c("<div class='column-break'>", processed_lines, "</div>"), collapse = "\n")
+# Process lines and wrap in edition-text div
+formatted_text <- paste(c("<div class='edition-text'>", processed_lines, "</div>"), collapse = "\n")
+cat(formatted_text)
 
-# Print the formatted text content as a block of text, preserving line breaks
-cat(formatted_text, sep = "")
 ```
 
-</div> 
-</div> 
+:::
+
+::: :::
