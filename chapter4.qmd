@@ -10,7 +10,7 @@ library(xml2)
 ```
 
 ::: {.column-body-outset}
-::: {layout="[[15,15,15]]"}
+::: {layout="[[3,3,3]]"}
 
 ::: {.column}
 ## Transcription
