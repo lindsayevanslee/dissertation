@@ -1,0 +1,107 @@
+/* Navigation styling */
+.sidebar {
+  position: fixed;
+  width: 200px;
+  left: 10;
+  top: 0;
+  height: 100vh;
+  overflow-y: auto;
+  border-right: 1px solid #eee;
+  z-index: 1000;
+}
+
+/* Main content adjustment */
+.column-body-outset {
+  margin-left: 200px;  /* sidebar width + padding */
+  width: calc(100% - 210px);
+}
+
+/* Container for all columns */
+.layout-row {
+  max-height: 80vh;
+  overflow-y: auto;
+  position: relative;
+  margin-left: 2em;
+  width: calc(100% - 1.5em);
+}
+
+/* Base column styles */
+.column {
+  transition: opacity 0.3s ease;
+  opacity: 0.5;
+  padding: 0.01em;
+  width: 2.5%;
+  margin: 0 0.05em;
+  left: 30px;
+  position: relative;
+  max-height: none;
+  overflow-y: visible;
+}
+
+/* Scrollbar styling for container */
+.layout-row::-webkit-scrollbar {
+  width: 8px;
+}
+
+.layout-row::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+.layout-row::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 4px;
+}
+
+.column:hover {
+  opacity: 1;
+}
+
+/* Container positioning */
+.column:first-child {
+  position: relative; /* Ensure absolute positioning context */
+  margin-left: 40px; /* Space for numbers */
+}
+
+/* Numbers only in first column */
+.column:first-child .line-number {
+  position: absolute;
+  margin-left: 0;
+  left: -35px !important;
+  z-index: 1;
+  font-family: "Helvetica", sans-serif;
+  color: #999;
+  font-size: 0.8em;
+}
+
+.column:first-child .folio-number {
+  position: absolute;
+  margin-left: 0;
+  left: -30px !important;
+  font-family: "Palatino", serif;
+  font-style: italic;
+  color: #666;
+  font-size: 0.9em;
+}
+
+/* Hide numbers in other columns */
+.column:not(:first-child) .line-number,
+.column:not(:first-child) .folio-number {
+  display: none;
+}
+
+/* Content spacing */
+.edition-text {
+  margin-left: 40px !important; 
+  position: relative;
+  line-height: 1.2;
+}
+
+.column-break {
+  display: block;
+  margin-bottom: 1em !important;
+  margin-top: 1em !important;
+  margin-left: 40px !important;
+  position: relative;
+  line-height: 1.2;
+  background-color: transparent;
+}
