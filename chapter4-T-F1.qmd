@@ -1,0 +1,285 @@
+---
+title: "T-F^1^"
+---
+
+This is the edition for Manchester, John Rylands Library, French 6.
+
+```{r setup, include=FALSE}
+# Load the xml2 package
+library(xml2)
+```
+
+::: {.column-body-outset}
+::: {layout="[[6,6,6]]"}
+
+::: {.column}
+## Transcription
+
+```{r results='asis'}
+# Read the XML content
+xml_file <- read_xml("data/T-F1.xml")
+
+# Extract both <l>, <cb>, and <pb> elements
+lines <- xml_find_all(xml_file, "//text//l | //text//cb | //text//pb")
+
+# Initialize an empty list to store the processed lines
+processed_lines <- list()
+
+# Initialize line counter
+line_count <- 0
+
+# Function to process each element
+process_line <- function(line) {
+  # Handle page breaks differently
+  if (xml_name(line) == "pb") {
+    # Get folio number and format as standalone line
+    folio_num <- xml_attr(line, "n")
+    return(sprintf("<div class='folio-number'>%s</div>", folio_num))
+}
+  
+  # Only increment line count for verse lines
+  if (xml_name(line) == "l") {
+    line_count <<- line_count + 1
+    # Add line number div every 5th line
+    line_number <- if (line_count %% 5 == 0) {
+      sprintf("<div class='line-number'>%d</div>", line_count)
+    } else {
+      ""
+    }
+  } else {
+    line_number <- ""
+  }
+  
+  # Find all <choice> elements within the line
+  choices <- xml_find_all(line, ".//choice")
+  for (choice in choices) {
+    # Extract the text from the <orig> tag
+    orig_text <- xml_text(xml_find_first(choice, ".//orig"))
+    # Remove the <choice> element and replace it with the text from the <orig> tag
+    xml_set_text(choice, orig_text)
+  }
+  
+  # Now we want to remove any <reg> elements entirely
+  reg_elements <- xml_find_all(line, ".//reg")
+  xml_remove(reg_elements)
+  
+  # Replace <lb/> tags with HTML line break
+  lb_elements <- xml_find_all(line, ".//lb")
+  for (lb in lb_elements) {
+    xml_set_text(lb, "")
+  }
+  
+  # Get the text of the line and wrap in a div with line-height control
+  line_text <- sprintf("<div style='line-height: 1.2;'>%s</div>", as.character(line))
+  
+  # Return line with number if applicable
+  line_text <- sprintf("<div style='line-height: 1.2;'>%s%s</div>", 
+                      line_number, as.character(line))
+  
+  # Return the processed text of the line
+  return(line_text)
+}
+
+# Process each line and wrap with <div class='column-break'> at each <cb/>
+for (line in lines) {
+  if (xml_name(line) == "cb") {
+    # Add a closing </div> for the previous column and an opening <div> for the new column
+    processed_lines <- c(processed_lines, "</div>", "<div class='column-break'>")
+  } else {
+    # Process the line and add it to the current column
+    processed_lines <- c(processed_lines, process_line(line))
+  }
+}
+
+# Process lines and wrap in edition-text div
+formatted_text <- paste(c("<div class='edition-text'>", processed_lines, "</div>"), collapse = "\n")
+cat(formatted_text)
+
+```
+
+:::
+
+::: {.column}
+## Expanded Abbreviations
+
+```{r results='asis'}
+# Read the XML content
+xml_file <- read_xml("data/T-F1.xml")
+
+# Extract the <l>, <cb>, and <pb> elements inside the <text> element
+lines <- xml_find_all(xml_file, "//text//l | //text//cb | //text//pb")
+
+# Initialize an empty list to store the processed lines
+processed_lines <- list()
+
+# Initialize line counter
+line_count <- 0
+
+# Function to process each element
+process_line <- function(line) {
+  # Handle page breaks differently
+  if (xml_name(line) == "pb") {
+    # Get folio number and format as standalone line
+    folio_num <- xml_attr(line, "n")
+    return(sprintf("<div class='folio-number'>%s</div>", folio_num))
+  }
+  
+  # Only increment line count for verse lines
+  if (xml_name(line) == "l") {
+    line_count <<- line_count + 1
+    # Add line number div every 5th line
+    line_number <- if (line_count %% 5 == 0) {
+      sprintf("<div class='line-number'>%d</div>", line_count)
+    } else {
+      ""
+    }
+  } else {
+    line_number <- ""
+  }
+  
+  # Find all <choice> elements within the line
+  choices <- xml_find_all(line, ".//choice")
+  for (choice in choices) {
+    # Check if the <choice> element contains <abbr> and <expan>
+    abbr_exists <- xml_find_first(choice, ".//abbr")
+    expan_exists <- xml_find_first(choice, ".//expan")
+    
+    if (!is.na(abbr_exists) && !is.na(expan_exists)) {
+      # If <abbr> and <expan> tags exist, extract only the <reg> text from <expan>
+      reg_text <- xml_text(xml_find_first(choice, ".//expan/reg"))
+      xml_set_text(choice, reg_text)
+    } else {
+      # For non-abbreviation choices, keep original behavior
+      orig_text <- xml_text(xml_find_first(choice, ".//orig"))
+      xml_set_text(choice, orig_text)
+    }
+  }
+  
+  # Now we want to remove any <reg> elements entirely
+  reg_elements <- xml_find_all(line, ".//reg")
+  xml_remove(reg_elements)
+  
+  # Replace <lb/> tags with HTML line break
+  lb_elements <- xml_find_all(line, ".//lb")
+  for (lb in lb_elements) {
+    xml_set_text(lb, "")
+  }
+  
+  # Get the text of the line and wrap in a div with line-height control
+  line_text <- sprintf("<div style='line-height: 1.2;'>%s</div>", as.character(line))
+  
+  # Return line with number if applicable
+  line_text <- sprintf("<div style='line-height: 1.2;'>%s%s</div>", 
+                      line_number, as.character(line))
+  
+  # Return the processed text of the line
+  return(line_text)
+}
+
+# Process each line and wrap with <div class='column-break'> at each <cb/>
+for (line in lines) {
+  if (xml_name(line) == "cb") {
+    # Add a closing </div> for the previous column and an opening <div> for the new column
+    processed_lines <- c(processed_lines, "</div>", "<div class='column-break'>")
+  } else {
+    # Process the line and add it to the current column
+    processed_lines <- c(processed_lines, process_line(line))
+  }
+}
+
+# Process lines and wrap in edition-text div
+formatted_text <- paste(c("<div class='edition-text'>", processed_lines, "</div>"), collapse = "\n")
+cat(formatted_text)
+
+```
+
+:::
+
+::: {.column}
+## Regularized Text
+
+```{r results='asis'}
+# Read the XML content
+xml_file <- read_xml("data/T-F1.xml")
+
+# Extract the <l>, <cb>, and <pb> elements inside the <text> element
+lines <- xml_find_all(xml_file, "//text//l | //text//cb | //text//pb")
+
+# Initialize an empty list to store the processed lines
+processed_lines <- list()
+
+# Initialize line counter
+line_count <- 0
+
+# Function to process each element
+process_line <- function(line) {
+  # Handle page breaks differently
+  if (xml_name(line) == "pb") {
+    # Get folio number and format as standalone line
+    folio_num <- xml_attr(line, "n")
+    return(sprintf("<div class='folio-number'>%s</div>", folio_num))
+  }
+  
+  # Only increment line count for verse lines
+  if (xml_name(line) == "l") {
+    line_count <<- line_count + 1
+    # Add line number div every 5th line
+    line_number <- if (line_count %% 5 == 0) {
+      sprintf("<div class='line-number'>%d</div>", line_count)
+    } else {
+      ""
+    }
+  } else {
+    line_number <- ""
+  }
+  
+  # Find all <choice> elements within the line
+  choices <- xml_find_all(line, ".//choice")
+  for (choice in choices) {
+    # Extract the text from the <reg> tag
+    reg_text <- xml_text(xml_find_first(choice, ".//reg"))
+    # Replace the <choice> element with the text from the <reg> tag
+    xml_set_text(choice, reg_text)
+  }
+  
+  # Now we want to remove any <orig> elements entirely
+  orig_elements <- xml_find_all(line, ".//orig")
+  xml_remove(orig_elements)
+  
+  # Replace <lb/> tags with HTML line break
+  lb_elements <- xml_find_all(line, ".//lb")
+  for (lb in lb_elements) {
+    xml_set_text(lb, "")
+  }
+  
+  # Get the text of the line and wrap in a div with line-height control
+  line_text <- sprintf("<div style='line-height: 1.2;'>%s</div>", as.character(line))
+  
+  # Return line with number if applicable
+  line_text <- sprintf("<div style='line-height: 1.2;'>%s%s</div>", 
+                      line_number, as.character(line))
+  
+  # Return the processed text of the line
+  return(line_text)
+}
+
+# Process each line and wrap with <div class='column-break'> at each <cb/>
+for (line in lines) {
+  if (xml_name(line) == "cb") {
+    # Add a closing </div> for the previous column and an opening <div> for the new column
+    processed_lines <- c(processed_lines, "</div>", "<div class='column-break'>")
+  } else {
+    # Process the line and add it to the current column
+    processed_lines <- c(processed_lines, process_line(line))
+  }
+}
+
+# Process lines and wrap in edition-text div
+formatted_text <- paste(c("<div class='edition-text'>", processed_lines, "</div>"), collapse = "\n")
+cat(formatted_text)
+
+```
+
+:::
+
+::: :::

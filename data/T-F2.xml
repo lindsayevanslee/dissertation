@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE TEI PUBLIC "http://www.tei-c.org/release/xml/tei/custom/schema/dtd/tei_lite.dtd" "../schema/tei_lite.dtd">
+<TEI xml:id="T-F2" n="Berlin simulata orientalia 6">
+    
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title></title>
+                <respStmt><name>Loren Lee</name><resp><date>2023-11-15</date>scribe</resp></respStmt>
+            </titleStmt>
+            <publicationStmt><p></p></publicationStmt>
+            <sourceDesc><p></p></sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    
+    <!-- LL: I'll need to go back over this one. It's really difficult to judge what is written on the fragment and how best to tag and "correct" it. -->
+    
+    <text>
+        <body>
+            <div>
+                
+                <pb n="???r"/> <!-- LL: How should I label the folios? -->
+                    <l><choice><orig>Mas</orig><reg>Mais</reg></choice> <choice><abbr><orig>sete</orig></abbr><expan><reg>seinte</reg></expan></choice> eglese a <choice><abbr><orig>grat</orig></abbr><expan><reg>grant</reg></expan></choice> <choice><abbr><orig>besu</orig></abbr><expan><reg>besong</reg></expan></choice><lb/></l>
+                    <l>que per le faces oresun<lb/></l>
+                    <l>e <name type="god"><choice><orig>dis</orig><reg>Dix</reg></choice></name> li otreit pas durable<lb/></l>
+                    <l>e la desfende deable<lb/></l>
+                    <l><name type="saint">Marie</name> <choice><orig>lia</orig><reg>li a</reg></choice> respundu<lb/></l>
+                    <l><name type="god">Dex</name> la goert per <choice><abbr><orig>savtu</orig></abbr><expan><reg>sa vertu</reg></expan></choice><lb/></l>
+                    <l>el agarde <choice><abbr><orig>vrs</orig></abbr><expan><reg>vers</reg></expan></choice> orient<lb/></l>
+                    <l>Ses <choice><abbr><orig>mins</orig></abbr><expan><reg>mains</reg></expan></choice> drecet au <choice><orig>ceo</orig><reg>ciel</reg></choice> <choice><abbr><orig>leste</orig></abbr><expan><reg>les tent</reg></expan></choice><lb/></l>
+                    <l>e pree de <name type="god"><choice><orig>locriator</orig><reg>lo Criator</reg></choice></name><lb/></l>
+                    <l><choice><orig>Mot</orig><reg>Molt</reg></choice> <choice><abbr><orig>piemt</orig></abbr><expan><reg>piement</reg></expan></choice> per sa docor<lb/></l>
+                    <l>Si que la boche <choice><orig>limovet</orig><reg>li movet</reg></choice><lb/></l>
+                    <l>Mas nulle voiz ne se eset<lb/></l>
+                    <l>de <choice><abbr><orig>tre</orig></abbr><expan><reg>tere</reg></expan></choice> <choice><abbr><orig>fusepre</orig></abbr><expan><reg>fu sempres</reg></expan></choice> ravie<lb/></l>
+                    <l>Si <choice><orig>que elle</orig><reg>qu'elle</reg></choice> <choice><orig>ni</orig><reg>n'i</reg></choice> tochot mie<lb/></l>
+                    <l><name type="character"><choice><orig>sosmas</orig><reg>Zosimas</reg></choice></name> ot paor <choice><orig>mot</orig><reg>molt</reg></choice> grant<lb/></l>
+                    <l><name type="god">Jesu crist</name> en trait a garant<lb/></l>
+                    <l>Lai o elle fist sa preere<lb/></l>
+                    <l>[<!-- HOLE -->] <name type="god"><choice><orig>tre</orig><reg>Nostre</reg></choice> sires</name> <choice><orig>laveit</orig><reg>l'aveit</reg></choice> si chere<lb/></l>
+                    <l>[<!-- HOLE -->] <choice><orig>ue</orig><reg>Que</reg></choice> plus <choice><abbr><orig>q</orig></abbr><expan><reg>que</reg></expan></choice> dos <choice><orig>peiz</orig><reg>piez</reg></choice> e demie<lb/></l>
+                    <l>[<!-- HOLE -->] <choice><orig>veit</orig><reg>Aveit</reg></choice> entre la <choice><abbr><orig>tre</orig></abbr><expan><reg>tere</reg></expan></choice> e le<lb/></l>
+                <cb/>
+
+                <pb n="???v"/>
+                    <l>de la paor <choice><orig>qot</orig><reg>q'ot</reg></choice> <name type="character">Zosimas</name><lb/></l>
+                    <l><choice><abbr><orig>se</orig></abbr><expan><reg>s'en</reg></expan></choice> <choice><abbr><orig>comca</orig></abbr><expan><reg>commenca</reg></expan></choice> aleir <choice><abbr><orig>su</orig></abbr><expan><reg>sun</reg></expan></choice> pas<lb/></l>
+                    <l><choice><orig>cuda</orig><reg>cuida</reg></choice> fantome aveir <choice><abbr><orig>troe</orig></abbr><expan><reg>trove</reg></expan></choice><lb/></l>
+                    <l>areres <choice><orig>sesteit</orig><reg>s'esteit</reg></choice> reuse<lb/></l>
+                    <l>qant <name type="saint">Marie</name> <choice><orig>lenvit</orig><reg>l'en vit</reg></choice> torneir<lb/></l>
+                    <l>Comenca lo a apeleir<lb/></l>
+                    <l>Chelles dist elle <name type="character">Zosimas</name><lb/></l>
+                    <l>beau <choice><orig>pereschers</orig><reg>peres chers</reg></choice> per <choice><abbr><orig>q</orig></abbr><expan><reg>quoi</reg></expan></choice> dotas<lb/></l>
+                    <l>Per <choice><orig>que</orig><reg>quoi</reg></choice> dotas per une <choice><abbr><orig>fene</orig></abbr><expan><reg>femne</reg></expan></choice><lb/></l>
+                    <l>Saches que je <choice><orig>se</orig><reg>seo</reg></choice> crestienne<lb/></l>
+                    <l><choice><orig>baee</orig><reg>batisie</reg></choice> fui en <choice><abbr><orig>menface</orig></abbr><expan><reg>m'enfance</reg></expan></choice><lb/></l>
+                    <l>en <name type="god"><choice><orig>deai</orig><reg>De ai</reg></choice></name> tote <choice><abbr><orig>mafiace</orig></abbr><expan><reg>ma fiance</reg></expan></choice><lb/></l>
+                    <l>Ici <choice><orig>see</orig><reg>seo</reg></choice> per espenier<lb/></l>
+                    <l><choice><orig>Nen</orig><reg>N'en</reg></choice> partirai <choice><abbr><orig>iusqe</orig></abbr><expan><reg>iusque</reg></expan></choice> <choice><orig>aumorir</orig><reg>au morir</reg></choice><lb/></l>
+                    <l><choice><orig>Laseinte</orig><reg>La seinte</reg></choice> croiz fist en <choice><abbr><orig>su</orig></abbr><expan><reg>sun</reg></expan></choice> frunt<lb/></l>
+                    <l><choice><orig>Sadestre</orig><reg>Sa destre</reg></choice> <choice><abbr><orig>mei</orig></abbr><expan><reg>mein</reg></expan></choice> leva amunt<lb/></l>
+                    <l>Li sens hermites co <choice><abbr><orig>bei</orig></abbr><expan><reg>bein</reg></expan></choice> vit<lb/></l>
+                    <l>aus peiz <choice><orig>aladome</orig><reg>a la dome</reg></choice> cheit<lb/></l>
+                <cb/>
+                
+            </div>
+        </body>
+    </text>
+</TEI>

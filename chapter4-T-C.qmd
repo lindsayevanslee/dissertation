@@ -1,8 +1,8 @@
 ---
-title: "The Edition"
+title: "T-C"
 ---
 
-This is the fourth chapter of my Quarto book.
+This is the edition for Oxford, Corpus Christi College, 232.
 
 ```{r setup, include=FALSE}
 # Load the xml2 package
@@ -17,7 +17,7 @@ library(xml2)
 
 ```{r results='asis'}
 # Read the XML content
-xml_file <- read_xml("data/T-E.xml")
+xml_file <- read_xml("data/T-C.xml")
 
 # Extract both <l>, <cb>, and <pb> elements
 lines <- xml_find_all(xml_file, "//text//l | //text//cb | //text//pb")
@@ -104,7 +104,7 @@ cat(formatted_text)
 
 ```{r results='asis'}
 # Read the XML content
-xml_file <- read_xml("data/T-E.xml")
+xml_file <- read_xml("data/T-C.xml")
 
 # Extract the <l>, <cb>, and <pb> elements inside the <text> element
 lines <- xml_find_all(xml_file, "//text//l | //text//cb | //text//pb")
@@ -200,7 +200,7 @@ cat(formatted_text)
 
 ```{r results='asis'}
 # Read the XML content
-xml_file <- read_xml("data/T-E.xml")
+xml_file <- read_xml("data/T-C.xml")
 
 # Extract the <l>, <cb>, and <pb> elements inside the <text> element
 lines <- xml_find_all(xml_file, "//text//l | //text//cb | //text//pb")
