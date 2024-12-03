@@ -13,7 +13,7 @@ library(xml2)
 ::: {layout="[[6,6,6]]"}
 
 ::: {.column}
-## Transcription
+## Minimal
 
 ```{r results='asis'}
 # Read the XML content
@@ -100,7 +100,7 @@ cat(formatted_text)
 :::
 
 ::: {.column}
-## Expanded Abbreviations
+## Intermediate
 
 ```{r results='asis'}
 # Read the XML content
@@ -196,7 +196,7 @@ cat(formatted_text)
 :::
 
 ::: {.column}
-## Regularized Text
+## Extensive
 
 ```{r results='asis'}
 # Read the XML content
