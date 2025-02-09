@@ -3,11 +3,12 @@ project:
   output-dir: docs
 
 book:
-  title: "dissertation"
+  title: "The Life of Saint Mary the Egyptian: A Digital Critical Edition of the Old French Version T with English Translations"
   author: "Loren Lee"
-  date: "10/15/2024"
+  date: "02/09/2025"
   chapters:
     - index.qmd
+    - acknowledgements.qmd
     - intro.qmd
     - chapter1.qmd
     - chapter2.qmd

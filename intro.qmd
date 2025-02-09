@@ -1,9 +1,6 @@
-# Introduction
+---
+title: "Introduction"
+---
 
-This is a book created from markdown and executable code.
+This is where my introdcution will go....
 
-See @knuth84 for additional discussion of literate programming.
-
-```{r}
-1 + 1
-```

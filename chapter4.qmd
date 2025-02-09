@@ -2,6 +2,4 @@
 title: "The Digtial Edition"
 ---
 
-# The Digtial Edition
-
 This page will feature the edition/translation of the T portraits...

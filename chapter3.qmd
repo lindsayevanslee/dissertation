@@ -2,7 +2,5 @@
 title: "The Manuscripts"
 ---
 
-# The Manuscripts
-
 This is the third chapter of my Quarto book....
 In this chapter, I describe the corpus of T-manuscripts in detail.

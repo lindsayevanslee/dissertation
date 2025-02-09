@@ -2,6 +2,4 @@
 title: "On Digital Editing"
 ---
 
-# On Digital Editing
-
 This is the first chapter of my Quarto book...
