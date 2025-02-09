@@ -2,10 +2,7 @@
 title: "The Manuscripts"
 ---
 
-# Chapter 3
+# The Manuscripts
 
-This is the third chapter of my Quarto book.
+This is the third chapter of my Quarto book....
 In this chapter, I describe the corpus of T-manuscripts in detail.
-
-```{r}
-# R code goes here

@@ -12,14 +12,14 @@ book:
     - chapter1.qmd
     - chapter2.qmd
     - chapter3.qmd
-    - chapter4-Intro.qmd
-    - chapter4-T-A.qmd
-    - chapter4-T-B.qmd
-    - chapter4-T-C.qmd
-    - chapter4-T-D.qmd
-    - chapter4-T-E.qmd
-    - chapter4-T-F1.qmd
-    - chapter4-T-F2.qmd
+    - chapter4.qmd
+    - appendix-T-A.qmd
+    - appendix-T-B.qmd
+    - appendix-T-C.qmd
+    - appendix-T-D.qmd
+    - appendix-T-E.qmd
+    - appendix-T-F1.qmd
+    - appendix-T-F2.qmd
     - conclusion.qmd
     - references.qmd
 

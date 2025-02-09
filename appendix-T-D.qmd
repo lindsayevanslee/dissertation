@@ -2,7 +2,7 @@
 title: "T-D"
 ---
 
-This is the edition for Paris, BnF Français 19525.
+# Paris, BnF Français 19525
 
 ```{r setup, include=FALSE}
 # Load the xml2 package

@@ -1,10 +1,8 @@
 ---
-title: "Chapter 2"
+title: "Editing Version T"
 ---
 
-# Chapter 2
+# Editing Version T
 
-This is the second chapter of my Quarto book.
+This is the second chapter of my Quarto book...
 
-```{r}
-# R code goes here
