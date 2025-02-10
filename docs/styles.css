@@ -59,13 +59,14 @@
 /* Container positioning */
 .column:first-child {
   position: relative; /* Ensure absolute positioning context */
-  margin-left: 40px; /* Space for numbers */
+  margin-left: 70px; /* Space for numbers */
 }
 
 /* Numbers only in first column */
 .column:first-child .line-number {
   position: absolute;
   margin-left: -2em;
+  left: -10px; 
   margin-top: 0.25em;
   z-index: 1;
   font-family: "Helvetica", sans-serif;
@@ -76,7 +77,7 @@
 .column:first-child .folio-number {
   position: absolute;
   margin-left: 0;
-  left: -30px !important;
+  left: -65px !important;
   font-family: "Palatino", serif;
   font-style: italic;
   color: #666;
