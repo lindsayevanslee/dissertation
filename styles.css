@@ -62,8 +62,8 @@
   margin-left: 70px; /* Space for numbers */
 }
 
-/* Numbers only in first column */
-.column:first-child .line-number {
+/* Line numbers */
+.column .line-number {
   position: absolute;
   margin-left: -2em;
   left: -10px; 
@@ -74,7 +74,8 @@
   font-size: 0.8em;
 }
 
-.column:first-child .folio-number {
+/* Folio numbers */
+.column .folio-number {
   position: absolute;
   margin-left: 0;
   left: -65px !important;
@@ -82,12 +83,6 @@
   font-style: italic;
   color: #666;
   font-size: 0.9em;
-}
-
-/* Hide numbers in other columns */
-.column:not(:first-child) .line-number,
-.column:not(:first-child) .folio-number {
-  display: none;
 }
 
 /* Content spacing */
