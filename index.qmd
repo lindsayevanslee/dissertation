@@ -1,5 +1,10 @@
-# Abstract {.unnumbered}
+---
+title: "Home"  # This appears in navigation
+---
+![](images/shesasheep.jpeg){width=100% fig-align="center"}
 
-This is where my abstract will go...
+A Dissertation presented to the Graduate Faculty of the University of Virginia in Candidacy for the Degree of Doctor of Philosophy
 
-
+##### Department of French
+##### University of Virginia
+##### April 2025
