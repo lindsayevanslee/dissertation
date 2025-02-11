@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE TEI PUBLIC "http://www.tei-c.org/release/xml/tei/custom/schema/dtd/tei_lite.dtd" "../schema/tei_lite.dtd">
+<TEI xml:id="T-F1" n="Manchester John Rylands French 6">
+    
+    <teiHeader>
+        <fileDesc>
+            <titleStmt>
+                <title></title>
+                <respStmt><name>Loren Lee</name><resp><date>2025-02-10</date>scribe</resp></respStmt>
+            </titleStmt>
+            <publicationStmt><p></p></publicationStmt>
+            <sourceDesc><p></p></sourceDesc>
+        </fileDesc>
+    </teiHeader>
+    
+    
+    
+    <text>
+        <body>
+            <div>
+                
+                <pb n="8r"/>
+                       <l><emph n="2" rend="floriate">O</emph>ez <choice><abbr><orig>seigns</orig></abbr><expan><reg>seignors</reg></expan></choice> une raisun . U il ni ad si <choice><abbr><orig>vite</orig></abbr><expan><reg>verite</reg></expan></choice> nun . <lb/></l>
+                       <l>Tuite est faite de <choice><abbr><orig>vrite</orig></abbr><expan><reg>verite</reg></expan></choice> . <choice><orig>ni</orig><reg>n'i</reg></choice> ad un mot de fal <lb/> </l>
+                       <l>sete .<choice><abbr><orig>Bn</orig></abbr><expan><reg>Bien</reg></expan></choice> crei <choice><abbr><orig>q</orig></abbr><expan><reg>que</reg></expan></choice> <choice><abbr><orig>volents</orig></abbr><expan><reg>volentiers</reg></expan></choice> orrunt . Cil <choice><abbr><orig>q</orig></abbr><expan><reg>qui</reg></expan></choice> <name type="god"><choice><abbr><orig>dapnedeu</orig></abbr><expan><reg>Dampnedeu</reg></expan></choice></name> <lb/> </l>
+                       <l>amerunt . kar a cels <choice><abbr><orig>q</orig></abbr><expan><reg>qui</reg></expan></choice> de lui <choice><orig>nut</orig><reg>n'unt</reg></choice> cure . <choice><abbr><orig>Sap</orig></abbr><expan><reg>Sa par</reg></expan></choice> <lb/> </l>
+                       <l>ole <choice><abbr><orig>÷</orig></abbr><expan><reg>est</reg></expan></choice> aspre &amp; dure . Tuit cil <choice><abbr><orig>q</orig></abbr><expan><reg>qui</reg></expan></choice> lui <choice><abbr><orig>volet</orig></abbr><expan><reg>volent</reg></expan></choice> amer .  <lb/> </l>
+                       <l>e <choice><abbr><orig>p</orig></abbr><expan><reg>por</reg></expan></choice> <choice><abbr><orig>sa am</orig></abbr><expan><reg>s'amor</reg></expan></choice> mei <choice><abbr><orig>escot</orig></abbr><expan><reg>escoter</reg></expan></choice> . De ma dame seinte Ma <lb/> </l> <!-- LL: Removed a <name> tag here because it causes a nesting problem with the tagging. -->
+                       <l>rie .<choice><orig>legypciene</orig><reg>l'Egypciene</reg></choice> <choice><abbr><orig>orrut</orig></abbr><expan><reg>orrunt</reg></expan></choice> la vie .<choice><abbr><orig>K</orig></abbr><expan><reg>Ke</reg></expan></choice> co <choice><abbr><orig>sacet</orig></abbr><expan><reg>sacent</reg></expan></choice> tuit <lb/> </l>
+                       <l>peccheur .<choice><abbr><orig>Q</orig></abbr><expan><reg>Qui</reg></expan></choice> forfet <choice><abbr><orig>st</orig></abbr><expan><reg>sont</reg></expan></choice> alur seignur . <choice><abbr><orig>Qnul</orig></abbr><expan><reg>Que nul</reg></expan></choice> <lb/> </l>
+                       <l>pecche <choice><abbr><orig>÷</orig></abbr><expan><reg>est</reg></expan></choice> tant <choice><abbr><orig>gnt</orig></abbr><expan><reg>granz</reg></expan></choice> . Ne tant horible ne <choice><abbr><orig>tat</orig></abbr><expan><reg>tant</reg></expan></choice> <lb/> </l>
+                       <l>pesant . Dunt ne face veir pardun .<choice><abbr><orig>p</orig></abbr><expan><reg>par</reg></expan></choice> fei e <lb/> </l>
+                       <l><choice><abbr><orig>p</orig></abbr><expan><reg>par</reg></expan></choice> confessiun .A ces <choice><abbr><orig>q</orig></abbr><expan><reg>qui</reg></expan></choice> <choice><abbr><orig>pernet</orig></abbr><expan><reg>pernent</reg></expan></choice> penitance .<choice><orig>Mai</orig><reg>Mais</reg></choice> <lb/> </l>
+                       <l>gardent sei de mescreance .Si <choice><abbr><orig>ho</orig></abbr><expan><reg>hom</reg></expan></choice> guerpist <lb/> </l>
+                       <l>la <choice><abbr><orig>mci</orig></abbr><expan><reg>merci</reg></expan></choice> <name type="god">De</name> .cil pecche <choice><orig>nert</orig><reg>n'ert</reg></choice> ja <choice><abbr><orig>pdone</orig></abbr><expan><reg>pardone</reg></expan></choice> .pecche <lb/> </l>
+                       <l><choice><orig>nest</orig><reg>n'est</reg></choice> mie creature .ainz <choice><abbr><orig>÷</orig></abbr><expan><reg>est</reg></expan></choice> un <choice><abbr><orig>mahain</orig></abbr><expan><reg>mahains</reg></expan></choice> de na <lb/> </l>
+                       <l>ture .Une <name type="god">Deus</name> ne <choice><abbr><orig>ca</orig></abbr><expan><reg>cria</reg></expan></choice> pecche .e nepuroc si ad <lb/> </l>
+                       <l>sun sie .en tuz homes ad sun ostal .e force <lb/> </l>
+                       <l>les de fere mal .Nuls <choice><abbr><orig>ho</orig></abbr><expan><reg>hom</reg></expan></choice> <choice><abbr><orig>÷</orig></abbr><expan><reg>est</reg></expan></choice> en ceste vie .Tant <lb/> </l>
+                       <l>seit sages u <choice><orig>neit</orig><reg>n'eit</reg></choice> folie .<choice><abbr><orig>p</orig></abbr><expan><reg>par</reg></expan></choice> mutes feiz pecche <lb/> </l>
+                       <l><choice><abbr><orig>ret</orig></abbr><expan><reg>rent</reg></expan></choice> .Li apostle <choice><abbr><orig>q</orig></abbr><expan><reg>qui</reg></expan></choice> <name type="god">Deu</name> <choice><abbr><orig>serviret</orig></abbr><expan><reg>servirent</reg></expan></choice> .<choice><abbr><orig>p</orig></abbr><expan><reg>por</reg></expan></choice> co ne me <choice><orig>pui</orig><reg>puis</reg></choice> <lb/></l>
+                <cb/>
+                        
+               <pb n="8v"/>
+                       <l><choice><abbr><orig>mveiller</orig></abbr><expan><reg>merveiller</reg></expan></choice> .del dolent <choice><abbr><orig>qat</orig></abbr><expan><reg>quant</reg></expan></choice> <choice><orig>loi</orig><reg>l'oi</reg></choice> peccher .mais de <lb/> </l>
+                       <l>celui ai <choice><abbr><orig>gat</orig></abbr><expan><reg>grant</reg></expan></choice> <choice><abbr><orig>mveille</orig></abbr><expan><reg>merveille</reg></expan></choice> .<choice><abbr><orig>Q</orig></abbr><expan><reg>Qui</reg></expan></choice> tuz jurz dort &amp; <choice><abbr><orig>net</orig></abbr><expan><reg>n'ent</reg></expan></choice> <choice><orig>se</orig><reg>s'e</reg></choice> <lb/> </l>
+                       <l>veille .en ses ordz pecchez se dort . <choice><abbr><orig>desql</orig></abbr><expan><reg>Desqu'il</reg></expan></choice> sent <lb/> </l>
+                       <l>al quer la mort .<choice><abbr><orig>Qnt</orig></abbr><expan><reg>Quant</reg></expan></choice> il se muert &amp; il se sent .<lb/></l>
+                       <l><choice><abbr><orig>Duc</orig></abbr><expan><reg>Dunc</reg></expan></choice> dist il jo men repent .a tart ad <choice><abbr><orig>ps</orig></abbr><expan><reg>pris</reg></expan></choice> le rep <lb/> </l>
+                       <l>entir .<choice><abbr><orig>Qnt</orig></abbr><expan><reg>Quant</reg></expan></choice> <choice><abbr><orig>÷</orig></abbr><expan><reg>est</reg></expan></choice> venu al murir . Sulunc les diz <lb/> </l>
+                       <l>seint <name type="saint"><choice><abbr><orig>austin</orig></abbr><expan><reg>Augustin</reg></expan></choice></name> .<choice><orig>Nest</orig><reg>N'est</reg></choice> mie bone icele fin .<choice><abbr><orig>Qnt</orig></abbr><expan><reg>Quant</reg></expan></choice> <lb/> </l>
+                       <l>le chaitis sent la mort .Ne pot fere dreit ne <lb/> </l>
+                       <l>tort .Guerpist la mal iniquite .<choice><orig>Nen</orig><reg>N'en</reg></choice> ad mes <lb/> </l>
+                       <l>de poeste .Si plus i eust de sa vie .uncore fese <lb/> </l>
+                       <l>it de folie .<choice><abbr><orig>Qnt</orig></abbr><expan><reg>Quant</reg></expan></choice> <choice><orig>lalme</orig><reg>l'alme</reg></choice> <choice><orig>sen</orig><reg>s'en</reg></choice> vait miserine .<choice><abbr><orig>Q</orig></abbr><expan><reg>Qui</reg></expan></choice> <lb/> </l>
+                       <l>li pot fere mescine .Fors cil <name type="god">Deu</name> <choice><abbr><orig>q</orig></abbr><expan><reg>qui</reg></expan></choice> la <choice><abbr><orig>ca</orig></abbr><expan><reg>cria</reg></expan></choice> .co <choice><abbr><orig>q</orig></abbr><expan><reg>que</reg></expan></choice> <lb/> </l>
+                       <l>ad fet co <choice><abbr><orig>tvera</orig></abbr><expan><reg>trovera</reg></expan></choice> .<lb/></l>
+                       <l><emph n="2" rend="floriate">C</emph>este dame dunt voil parler .<name type="saint">Marie</name> le <choice><orig></orig><reg>l'oi</reg></choice> voil no <lb/> </l>
+                       <l>mer . <!-- LL: The "loi" is inserted as a correction in superscript. How could I best indicate this? -->Egyptiene est <choice><orig>par</orig><reg>pur</reg></choice> co dite . <!-- LL: The "par" has been correct by the scribe with "pur". --><choice><orig>Quele</orig><reg>Qu'ele</reg></choice> fu ne <lb/> </l>
+                       <l>en Egipte .Ileu fu ne &amp; baptize .Mais <choice><abbr><orig>malemet</orig></abbr><expan><reg>malement</reg></expan></choice> <lb/> </l>
+                       <l>fu enseigne .Legere <choice><abbr><orig>devit</orig></abbr><expan><reg>devint</reg></expan></choice> en sun enfance .hun <lb/> </l>
+                       <l>te <choice><abbr><orig>pdi</orig></abbr><expan><reg>perdi</reg></expan></choice> &amp; amance .Tant ert <choice><abbr><orig>espse</orig></abbr><expan><reg>esprise</reg></expan></choice> de luxure .<choice><abbr><orig>Q</orig></abbr><expan><reg>Que</reg></expan></choice><lb/></l>
+                       <l><choice><orig>daltre</orig><reg>d'altre</reg></choice> chose <choice><orig>naveit</orig><reg>n'aveit</reg></choice> cure .<choice><abbr><orig>P</orig></abbr><expan><reg>Por</reg></expan></choice> co <choice><abbr><orig>q ele</orig></abbr><expan><reg>qu'ele</reg></expan></choice> esteit bele <lb/> </l>
+                       <l>&amp; gente .<choice><orig>Safiout</orig><reg>S'afiout</reg></choice> tant en sa juvente . <choice><abbr><orig>Qle</orig></abbr><expan><reg>Qu'ele</reg></expan></choice> fe <lb/> </l>
+                       <l>seit tot sun pleisir .Ne li menbrout pas de m <lb/> </l>
+                       <l>orir .De <choice><abbr><orig>do</orig></abbr><expan><reg>dous</reg></expan></choice> parenz ne se gardout .A tuz <choice><orig>home</orig><reg>homes</reg></choice> <lb/> </l>
+                       <l><choice><orig>sabandonout</orig><reg>s'abandonout</reg></choice> .<choice><orig>Nespeir</orig><reg>N'espeir</reg></choice> <choice><abbr><orig>q</orig></abbr><expan><reg>que</reg></expan></choice> fust en ceste vie .<lb/></l>
+                       <l><choice><abbr><orig>feme</orig></abbr><expan><reg>fenme</reg></expan></choice> de <choice><abbr><orig>greign</orig></abbr><expan><reg>greignor</reg></expan></choice> lecherie .Sis <choice><abbr><orig>pe</orig></abbr><expan><reg>peres</reg></expan></choice> &amp; sa <choice><abbr><orig>mre</orig></abbr><expan><reg>mere</reg></expan></choice> viv <lb/> </l>
+                       <l><choice><abbr><orig>eiet</orig></abbr><expan><reg>eient</reg></expan></choice> .<choice><abbr><orig>P</orig></abbr><expan><reg>Por</reg></expan></choice> poi de dol ne moroient .Il la <choice><abbr><orig>voleiet</orig></abbr><expan><reg>voleient</reg></expan></choice> ch <lb/> </l>
+                       <l>astier .Mais nel <choice><abbr><orig>pisout</orig></abbr><expan><reg>prisout</reg></expan></choice> un dener .Ne <choice><abbr><orig>pisout</orig></abbr><expan><reg>prisout</reg></expan></choice><lb/></l>
+                       <l>chasti de <choice><abbr><orig>pent</orig></abbr><expan><reg>parent</reg></expan></choice> .Plus <choice><abbr><orig>q</orig></abbr><expan><reg>que</reg></expan></choice> feseit trespas de <choice><abbr><orig>vet</orig></abbr><expan><reg>vent</reg></expan></choice> .<lb/></l>
+                       <l>Fille co li diseit sa mere .kar creez le <choice><abbr><orig>&#xA76F;seil</orig></abbr><expan><reg>conseil</reg></expan></choice> da <lb/> </l>
+                       <l>tun pe . <!-- LL: The "eil da" seems to have been added later. The ink doesn't match the surrounding writing. Dembowski says the end of this line is missing. What's going on here and how should I present this? -->Si <choice><abbr><orig>lungemet</orig></abbr><expan><reg>lungement</reg></expan></choice> <choice><abbr><orig>tens</orig></abbr><expan><reg>tiens</reg></expan></choice> cest mester .<choice><abbr><orig>N</orig></abbr><expan><reg>Nos</reg></expan></choice> en <lb/> </l>
+                       <l><choice><abbr><orig>averu</orig></abbr><expan><reg>averuns</reg></expan></choice> <choice><abbr><orig>gnt</orig></abbr><expan><reg>grant</reg></expan></choice> <choice><orig>destu</orig><reg></reg></choice> reprover .Pur <name type="god">Deu</name> te pri fi <lb/> </l>
+                       <l>le <name type="saint">Marie</name> .Guerpis ceste lecherie .<choice><abbr><orig>Qnt</orig></abbr><expan><reg>Quant</reg></expan></choice> cest <lb/> </l>
+                       <l><choice><abbr><orig>mest</orig></abbr><expan><reg>mestier</reg></expan></choice> auras guerpi .Nus te durrum riche <lb/> </l>
+                       <l>mari .<choice><orig>Nest</orig><reg>N'est</reg></choice> dreit <choice><abbr><orig>q</orig></abbr><expan><reg>que</reg></expan></choice> tu seies <choice><abbr><orig>pdue</orig></abbr><expan><reg>perdue</reg></expan></choice> .<choice><abbr><orig>P</orig></abbr><expan><reg>Por</reg></expan></choice> suffrai <lb/> </l>
+                       <l>te de <choice><abbr><orig>nre</orig></abbr><expan><reg>nostre</reg></expan></choice> auue .Fille tu es de <choice><abbr><orig>gnt</orig></abbr><expan><reg>grant</reg></expan></choice> parage . <lb/></l>
+                       <l><choice><abbr><orig>Mlt</orig></abbr><expan><reg>Molt</reg></expan></choice> <choice><abbr><orig>÷</orig></abbr><expan><reg>est</reg></expan></choice> <choice><abbr><orig>gnt</orig></abbr><expan><reg>grant</reg></expan></choice> dol &amp; damage .<choice><abbr><orig>Q</orig></abbr><expan><reg>Que</reg></expan></choice> tu seies issi <choice><abbr><orig>pie</orig></abbr><expan><reg>perie</reg></expan></choice> . <lb/></l>
+                       <l><choice><abbr><orig>p</orig></abbr><expan><reg>per</reg></expan></choice> ta malvaise lecherie .Tis <choice><abbr><orig>pes</orig></abbr><expan><reg>peres</reg></expan></choice> <choice><abbr><orig>÷</orig></abbr><expan><reg>est</reg></expan></choice> issi irez . <lb/></l>
+                       <l>Ja mais a nul jur <choice><orig>nert</orig><reg>n'ert</reg></choice> il lez .E maldit <lb/> </l>
+                       <l>tote <choice><orig>saventure</orig><reg>s'aventure</reg></choice> .<choice><abbr><orig>Qnt</orig></abbr><expan><reg>Quant</reg></expan></choice> ad fait tel engendru <lb/> </l>
+                       <l>re .<choice><abbr><orig>Qnt</orig></abbr><expan><reg>Quant</reg></expan></choice> <name type="saint">Marie</name> <choice><orig>loit</orig><reg>l'oit</reg></choice> <choice><abbr><orig>pler</orig></abbr><expan><reg>parler</reg></expan></choice> .Ne la pout sule <lb/> </l>
+                       <l><choice><abbr><orig>met</orig></abbr><expan><reg>ment</reg></expan></choice> <choice><abbr><orig>escot</orig></abbr><expan><reg>escoter</reg></expan></choice> .<choice><abbr><orig>Desqle</orig></abbr><expan><reg>Desqu'ele</reg></expan></choice> out passe duze anz .A <lb/> </l>
+                       <l>tuz volt fere lur talanz .<choice><abbr><orig>P</orig></abbr><expan><reg>Por</reg></expan></choice> <choice><abbr><orig>pfere</orig></abbr><expan><reg>perfere</reg></expan></choice> sa volen<lb/></l>
+                 <cb/> 
+                        
+                       <l>te .<choice><orig>Sen</orig><reg>S'en</reg></choice> fui en altre regne .Tuit sun <choice><abbr><orig>pen</orig></abbr><expan><reg>paren</reg></expan></choice> <lb/> </l>
+                       <l>te deguerpit .Unc puis un dels ne la vit . <lb/></l>
+                       <l>e issue est cume lere .Senz sou de pere ne <lb/> </l>
+                       <l>de mere .el chemin entra <name type="saint">Marie</name> .Unc ne <lb/> </l>
+                       <l>demanda <choice><abbr><orig>&#xA76F;paignie</orig></abbr><expan><reg>compaignie</reg></expan></choice> .en Alisandre <choice><abbr><orig>÷</orig></abbr><expan><reg>est</reg></expan></choice> venue . <lb/></l>
+                       <l>desconseille &amp; mal seue .Chef le <choice><abbr><orig>meretce</orig></abbr><expan><reg>meretrice</reg></expan></choice> <lb/> </l>
+                       <l><choice><abbr><orig>pst</orig></abbr><expan><reg>prist</reg></expan></choice> ostal .Iloc ad fet sun curs venal .ele <lb/> </l>
+                       <l>esteit blanche come flur .Des <choice><orig>juvencel</orig><reg>juvencels</reg></choice> <lb/> </l>
+                       <l>aveit <choice><orig>lamur</orig><reg>l'amur</reg></choice> .Tuit <choice><abbr><orig>enveneiet</orig></abbr><expan><reg>en veneient</reg></expan></choice> al bordal . <lb/></l>
+                       <l><choice><abbr><orig>p</orig></abbr><expan><reg>por</reg></expan></choice> sue <choice><abbr><orig>am</orig></abbr><expan><reg>amor</reg></expan></choice> li juvencel .Mes <choice><abbr><orig>p</orig></abbr><expan><reg>por</reg></expan></choice> fere tuit <choice><abbr><orig>su</orig></abbr><expan><reg>sun</reg></expan></choice> <lb/> </l>
+                       <l>deduit .Les out od sei jur &amp; nuit .A sun <lb/> </l>
+                       <l>delit ert ententive .De jur &amp; de nui la <lb/> </l>
+                       <l>chaitive .Kar beuire &amp; <choice><abbr><orig>mang</orig></abbr><expan><reg>mangier</reg></expan></choice> &amp; luxure . <lb/></l>
+                       <l>co ert tote la sue cure .<choice><abbr><orig>Qnt</orig></abbr><expan><reg>Quant</reg></expan></choice> levout del <lb/> </l>
+                       <l>soper .od les garcuns alout juer .Si par <lb/> </l>
+                       <l>amout od els burdir .ne tendeit <choice><abbr><orig>guere</orig></abbr><expan><reg>gueres</reg></expan></choice> <lb/> </l>
+                       <l>al dormir .Li juvencel tuit li plusur .e <lb/> </l>
+                       <l><choice><abbr><orig>ret</orig></abbr><expan><reg>rent</reg></expan></choice> si <choice><abbr><orig>esps</orig></abbr><expan><reg>espris</reg></expan></choice> de <choice><abbr><orig>sam</orig></abbr><expan><reg>s'amor</reg></expan></choice> . <choice><abbr><orig>Q</orig></abbr><expan><reg>Que</reg></expan></choice> devant sun us en <lb/> </l>
+                       <l><choice><orig>lentre</orig><reg>l'entre</reg></choice> .<choice><abbr><orig>Ileu</orig></abbr><expan><reg>Ileuc</reg></expan></choice> <choice><abbr><orig>feseit</orig></abbr><expan><reg>feseient</reg></expan></choice> meinte melle .<choice><abbr><orig>p</orig></abbr><expan><reg>por</reg></expan></choice> co <choice><abbr><orig>ql</orig></abbr><expan><reg>qu'il</reg></expan></choice> <lb/> </l>
+                       <l><choice><abbr><orig>eret</orig></abbr><expan><reg>erent</reg></expan></choice> si ami .Se feseient ileuc hardi .De <lb/> </l>
+                       <l>gisarmes &amp; des espees .<choice><abbr><orig>sentdonouet</orig></abbr><expan><reg>s'entredonouent</reg></expan></choice> dono <lb/> </l>
+                       <l>vent <choice><abbr><orig>gnt</orig></abbr><expan><reg>grant</reg></expan></choice> colees .Del sanc <choice><abbr><orig>q</orig></abbr><expan><reg>qui</reg></expan></choice> esteit espan <lb/> </l>
+                       <l>du .se coreit aval la palu .La chative <choice><abbr><orig>q</orig></abbr><expan><reg>qui</reg></expan></choice> se <lb/> </l>
+                       <l>veeit .Nule pour <choice><orig>nen</orig><reg>n'en</reg></choice> <choice><abbr><orig>enpneit</orig></abbr><expan><reg>en perneit</reg></expan></choice> .Si <choice><orig>unmo</orig><reg>un mo</reg></choice> <lb/> </l>
+                       <l>reit de ses amis .ele en aveit <choice><abbr><orig>qrante</orig></abbr><expan><reg>quarante</reg></expan></choice> vifs . <lb/></l>
+                       <l><choice><abbr><orig>Qnt</orig></abbr><expan><reg>Quant</reg></expan></choice> ele veeit les <choice><abbr><orig>do</orig></abbr><expan><reg>dous</reg></expan></choice> occis . Ja plus tart ne <lb/> </l>
+                       <l>feist un ris .Ja cil <choice><abbr><orig>q</orig></abbr><expan><reg>qui</reg></expan></choice> pur lui fust naffre . <lb/></l>
+                       <l>pur lui <choice><abbr><orig>n</orig></abbr><expan><reg>ne</reg></expan></choice> fust il esgarde .plus ama od <lb/> </l>
+                       <l>les seins juer .<choice><abbr><orig>Q</orig></abbr><expan><reg>Que</reg></expan></choice> les malades <choice><abbr><orig>visit</orig></abbr><expan><reg>visiter</reg></expan></choice> . en <lb/> </l>
+                       <l>Alisandre esteit <name type="saint">Marie</name> .U ele demenout <lb/> </l>
+                       <l>ceste vie .e ileuc demena ses talenz . La chai <lb/> </l>
+                       <l>tive dis &amp; set anz .La vile ert de li enpei <lb/> </l>
+                       <l>re .<choice><abbr><orig>alqs</orig></abbr><expan><reg>alques</reg></expan></choice> en ert mahaine .e le pais tut <choice><abbr><orig>e</orig></abbr><expan><reg>en</reg></expan></choice> <lb/></l>
+                       <l>virun .esteit en <choice><abbr><orig>gnt</orig></abbr><expan><reg>grant</reg></expan></choice> <choice><abbr><orig>pdiciun</orig></abbr><expan><reg>perdiciun</reg></expan></choice> . <lb/></l>
+                       <l><emph n="2" rend="floriate">D</emph>e sa bealte &amp; de sa figure .Si cum <choice><abbr><orig>÷</orig></abbr><expan><reg>est</reg></expan></choice> en <lb/> </l>
+                       <l><choice><abbr><orig>lescpture</orig></abbr><expan><reg>l'escripture</reg></expan></choice> .Voil un poi dire le <choice><abbr><orig>seblat</orig></abbr><expan><reg>semblant</reg></expan></choice> . <lb/></l>
+                       <l>ainz <choice><abbr><orig>q</orig></abbr><expan><reg>que</reg></expan></choice> jo pas <choice><abbr><orig>avat</orig></abbr><expan><reg>avant</reg></expan></choice> .en cel tens en icel <lb/> </l>
+                       <l>regne .ne vit un home <choice><abbr><orig>pl</orig></abbr><expan><reg>plus</reg></expan></choice> bele <choice><abbr><orig>feme</orig></abbr><expan><reg>fenme</reg></expan></choice> .ne <lb/> </l>
+                       <l>cuntesse ne reine .<choice><orig>nout</orig><reg>n'out</reg></choice> el chef <choice><abbr><orig>pl</orig></abbr><expan><reg>plus</reg></expan></choice> bele <lb/> </l>
+                       <l>crine .Rundes aveit les oreilles .Mes bl <lb/> </l>
+                       <l>anches erent a <choice><abbr><orig>mveilles</orig></abbr><expan><reg>merveilles</reg></expan></choice> .les surciz <choice><abbr><orig>neir</orig></abbr><expan><reg>neirs</reg></expan></choice> <lb/></l>
+                <cb/>
+                
+            </div>
+        </body>
+    </text>
+</TEI>
