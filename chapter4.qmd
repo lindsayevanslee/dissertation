@@ -1,5 +1,774 @@
 ---
-title: "The Digtial Edition"
+title: "The Portraits"
+format:
+  html:
+    page-layout: full
 ---
 
 This page will feature the edition/translation of the T portraits...
+
+::: {.column-page-outset}
+::: {layout="[[20,20,20,20,20]]"}
+
+::: {.portrait-column}
+## A
+.....<br>
+De se biaute de se figure<br>
+Si com ele est en escriture<br>
+Vueil -i- peu dire le samblant<br>
+Anchois que je trespas avant<br>
+Car a cel tans en icel regne<br>
+Ne vit nus hom plus bele feme<br>
+Ne onc contesse ne roine<br>
+Nen ot el front plus bele crine<br>
+Reondes avoit les oreilles<br>
+Mais blanches erent a merveilles<br>
+Les iex clers & sosrians<br>
+les sorchix noir & avenans<br>
+bouche petite par mesure<br>
+& pie le regardeiue<br>
+Le face tenrre & coloree<br>
+Com le rose qui sempre est nee<br>
+Ja el nes ne el menton<br>
+N'aperceussies mesfaichon<br>
+En som le col blanc com ermine<br>
+li undoit le bloie crine<br>
+Les mameles de cele dame<br>
+N'estoient menrres d'une pome<br>
+Desous le goule en le poitrine<br>
+Ert blanche conme flor d'espine<br>
+blans bras avoit & blances mains<br>
+Les dois reons grailles & plains<br>
+Gent cors avoit & bien molle<br>
+Sous l'aissele lonc le coste<br>
+El n'iert trop grant no trop petite<br>
+Ja se faichon n'en iert escrite<br>
+Ja le biaute de ceste dame<br>
+Nen iert escrite par nul home<br>
+Tant iert cortoise de parler<br>
+Riens n'i avoit que amender<br>
+A plaindre fait tel criaature<br>
+Quant del Creator n'avoit cure<br>
+El recevoit plusors presens<br>
+S'en acatoit bons vestemens<br>
+Bons dras avoit . & avenans<br>
+Por mix plaisir a ses amans<br>
+Ele n'avoit soing de dras de lainne<br>
+Au pior jor de le semainne<br>
+Bon bliaut avoit d'ostorin<br>
+& affubloit mantel d'ermin<br>
+Soullers bien pains de cordouam<br>
+Cauchoit a tous les jors de l'an<br>
+Le citoien de le cite<br>
+L'amoient tout por se biaute<br>
+Li anchien home & li saige<br>
+disoient tout Dex quel damage<br>
+Com mar fu onc ceste dolante<br>
+Tant fait a plaindre se jovente<br>
+Tant mar fu onques le siue vie<br>
+Quant si est plainne de folie<br>
+Tout disoient par le cite<br>
+Qu'ele estoit de haut parente<br>
+Car a tos respondoit raison<br>
+& tant iert bele de fachon<br>
+ke li fix d'un empereor<br>
+Le peust prendre a grant honor<br>
+.....<br>
+Tant ala par jor & par nuit<br>
+A faim & a soif & a dur lit<br>
+Que tant parfont fu el boscaige<br>
+Toute devint illuec salvaige<br>
+Mais ele ne s'oublioit mie<br>
+De deprier sainte Marie<br>
+Sovent li menbroit de l'ymaige<br>
+Que ele avoit mis en ostaige<br>
+Si souller furent tout use<br>
+& tout si drapel deschire<br>
+Li cors de li remaint tout nu<br>
+N'avoit drapel ne fust rompu<br>
+Li chars de li mua coulor<br>
+Qui ains iert blance conme flor<br>
+Que por yver que por este<br>
+Tout li noircirent li coste<br>
+Coulor mua se bloie crine<br>
+Blanche devint com une hermine<br>
+Le bouce li fu tenevie<br>
+& environ toute noirchie<br>
+& avoit tant noir le menton<br>
+Conme s'il fust taint de carbon<br>
+Atenerge furent li oel<br>
+N'i avoit ore point d'orguel<br>
+Se vos veissies les oreilles<br>
+Molt par vos presist grans merveilles<br>
+Car noire estoit & decrevee<br>
+Le blanche char toute muee<br>
+Noire & muee ert le poitrine<br>
+A escorce samblant d'espine<br>
+N'avoit plus char en ses traians<br>
+Ne mais com il a en uns gans<br>
+Les bras les mains & les lons dois<br>
+Avoit plus noirs que nule pois<br>
+Ongles avoit longes & grans<br>
+Ele les retailloit a ses dens<br>
+Li ventres li estoit caoit<br>
+Petit de despensse i metoit<br>
+Li pie li erent decreve<br>
+En plusors lius erent navre<br>
+Car ele ne se gardoit d'espine<br>
+Quant ele aloit par le gastine<br>
+Che li ert vis sien esciant<br>
+Que ele n'i failloit nient<br>
+C'uns de ses pekies li caoit<br>
+Quant une espine le pongnoit<br>
+Por chou estoit ele molt lie<br>
+Quant ele souffroit le hasquie<br>
+N'est merveille se iert noirchie<br>
+Car molt demenoit aspee vie<br>
+Plus de xl. ans ala nue<br>
+N'iert merveille se iert moussue<br>
+Povre despense avoit o li<br>
+Or ait Jhesus de li merchi<br>
+.ii. pains avoit ne gaires grans<br>
+De chiaus vesqui par plusors ans<br>
+El premier an devinrrent dur<br>
+Com se fust pierre de mur<br>
+Cascun jor en usoit Marie<br>
+Mais che iert petite partie<br>
+Quant ele ot tot son pain use<br>
+Puis esrachoit l'erbe del pre<br>
+Quant autre beste le mengoit<br>
+de rien ne se confortoit<br>
+As mains buvoit l'iaue el ruissel<br>
+Quant ele n'avoit autre vaissel<br>
+Ne font a plaindre li pechie<br>
+Dont li cors fu si castie<br>
+D'erbe vesqui & de rachines<br>
+Xvii. ans. par les gastines<br>
+Puis fu .xxx. ans onc ne menga<br>
+Se angeles ne li aporta<br>
+Li diables le an premier<br>
+Le soloit sovent essaier<br>
+Tout che li faisoit remembrer<br>
+Qu'ele soloit tos jors amer<br>
+Les bons mengiers & les biax lieus<br>
+Ou ele soloit faire les geus<br>
+Or fu ichi boneuree<br>
+Qu'ele de tout fu obliee<br>
+Onques puis en toute se vie<br>
+Ne li souvint mais de folie<br>
+Ne ainc en trestot le boscaige<br>
+Ne li vint puis beste salvaige<br>
+Ne autre vive creature<br>
+Par le gaut va toute seure<br>
+En plusors lius prist son ostel<br>
+Se vie ert tote esperitel<br>
+.....<br>
+:::
+
+::: {.portrait-column}
+## B
+.....<br>
+de sa biate de sa figure.<br>
+si com ele est en l'escriture<br>
+Vos vuel dire de se senblant.<br>
+ancois que je trespas avant<br>
+Ans en cest mont ne en cest regne.<br>
+Ne vit nuz hom plus bele feme<br>
+Onques ducoise ne roine.<br>
+ne n'ot el cief plus bele crine<br>
+Reondes avoit les orelhes.<br>
+Mais blanches erent a mervelhes<br>
+Les sorciz noirs & avenanz.<br>
+& les olz clers & sorrianz<br>
+La face tenre en celee.ee.<br>
+Com la rose ki or est nee<br>
+Les dens ot blans & bien menuz.<br>
+plus bele boce ne vit nuz<br>
+mut avoit piue regardure.<br>
+& cler le vis & le faiture<br>
+Je cui el neis ne el menton.<br>
+n'avoit un point de mesfacon<br>
+Soz la boce sor le poitrine.<br>
+ert plus blanche ke flors d'espine<br>
+& si avoit beles mameles.<br>
+mut bien seans petiz & beles<br>
+blans bras avoit & blanches mains.<br>
+& les dois grailes lons & plains<br>
+Gent cors avoit & bien moleit.<br>
+desoz l'aisselle & le costeit<br>
+tant ert cortoise de parler<br>
+n'i avoit rien ke amendeir<br>
+N'ert pas trop grant ne trop petite.<br>
+Ja se facons n'en iert descrite<br>
+Ja le beate de ceste toise.<br>
+N'iert descrite se n'i at proise<br>
+a plendre fait tel creature.<br>
+cant de se Creator n'at cure<br>
+ele recivoit grans presenz.<br>
+s'en achatoit chier garnimenz<br>
+bon dras avoit & avenanz.<br>
+por miez plaissir a ses amanz<br>
+& ne vestoit pas dras de laine.<br>
+Le peior jor de la samaine<br>
+Vestoit bon bliat d'osterlin.<br>
+& affiebloit mantel d'ermin<br>
+Solers biens poins de corduan.<br>
+chacoit par toz les jors de l'an<br>
+Li citain de la citeit.<br>
+L'amoient tuit por sa bialteie<br>
+& li viel home & li sage.<br>
+disoient tuit Deus kel damage<br>
+tant mar fut iceste dolente.<br>
+mut fait a plendre sa jovente<br>
+mar fut onques la sue vie.<br>
+que tant est plane de folie<br>
+car a toz respondoit raison.<br>
+tant ert de bele afaitison<br>
+Que li fiz d'un empereor.<br>
+la poist prendre par honor<br>
+.....<br>
+tant errat par nuiz & par dis.<br>
+a fain a soit & a durs lis<br>
+Que tant i fut en le boscage.<br>
+qu'ele devint tote salvage<br>
+Senpres furent si drap useit.<br>
+& soi soler tot depaneit<br>
+tant par l'iver tant par l'esteit.<br>
+tot li noicirent li costeit<br>
+Se tenre car muat color.<br>
+qui ans eret blance cum florr<br>
+Color muat sa bele crine.<br>
+blance devint conme l'ermine<br>
+desoz la face eret bruleee.<br>
+del soloilh & de la jalee<br>
+La boche li ert atenevie.<br>
+& environ la cars norcie<br>
+& tant avoit noir le menton.<br>
+com se fuist li chies d'un tison<br>
+atenevit erent li oilh.<br>
+or n'i avoit il point d'orgoilh<br>
+se vos en veissiez l'orelhe<br>
+mut vos venist a grant mervelhe<br>
+car maigre ert mut & degregue.<br>
+& de blanc poilh tote mossue<br>
+Noire & polhue ert la poitrine.<br>
+sembloit scorce de noire spine<br>
+Li ventres li ert toz caoiz.<br>
+nient ne manjoit & si ert droiz<br>
+Les ongles avoit ele granz.<br>
+ele les retalloit az danz<br>
+Les piez maigres & decrevez.<br>
+& par plusors lius mut navrez<br>
+car ele nes gardoit d'espine.<br>
+cant el aloit par le gastine<br>
+Ans li ert vis son escient.<br>
+& ele ni faloit nient<br>
+cant une spine li poindoit.<br>
+uns des pechiez jus li chaoit<br>
+Ne fat a plaindre li pechiez.<br>
+dont li cors est si castoiez<br>
+N'ert mervelhe s'ele ert mossue.<br>
+karante ans alat tote nue<br>
+Dous pains avoit ne gaire granz.<br>
+de ces viscat par plusors anz<br>
+Le premier an devinrent dur.<br>
+com ce fust piere de mur<br>
+cascun jor en usoit Marie.<br>
+mais ce astoit mut povre vie<br>
+cant ele ot toz ses pains useiz.<br>
+puis esragat herbes des prez<br>
+com altre beste le manjoit.<br>
+de rien ne se desconfortoit<br>
+Ades bevoit ens el ruisel.<br>
+ele n'avoit altre vaissel<br>
+d'erbes vivoit & de racines.<br>
+dis & uit ans par la gastines<br>
+Puis fut vint ans que ne manja.<br>
+sel angeles Deu ne li porta<br>
+Diables li vint devant premier.<br>
+que mut le soloit anoier<br>
+que li faissoit ramembrer.<br>
+kanque soloit jadis ameir<br>
+Les biaz deliz & les biaz giuz.<br>
+u soloit faire ses deduiz<br>
+Mut fut bieneuree.<br>
+ki de tot ce fut obliee<br>
+unques puis en la sue vie.<br>
+Ne li menbra jor de folie<br>
+Marie vat par le boscage.<br>
+Onques n'i vit beste salvage<br>
+Ne nule vive creature.<br>
+par le forest vat bien segure<br>
+en plusors lius fut ses ostaz.<br>
+sa vie astoit spirituaz<br>
+.....<br>
+:::
+
+::: {.portrait-column}
+## C
+.....<br>
+De sa beaute de sa figure<br>
+Si cum il est en escripture .<br>
+Voil un poi dire le semblant<br>
+Ainz co ke jo pas avant .<br>
+A iceu tens n'ert si bele femme<br>
+kar ele estoit sur tutes gemme .<br>
+Onke cuntesse ne reine<br>
+N'ot el chief si bele crine .<br>
+Rondes avoit les oreilles<br>
+Tres blanches erent a merveilles .<br>
+Les surcius noirs e avenanz<br>
+e les oils clers e suz rianz .<br>
+La buche petite par mesure<br>
+e simple avoit la regardure .<br>
+La face tendre e coluree<br>
+Cum rose qui sempres est nee .<br>
+Ne ja au nes n'au mentun<br>
+N'aparceussez meffacon .<br>
+Par sum le col blanc com ermine<br>
+Lui undoit la bloie crine .<br>
+Chascun des traianz la dame<br>
+N'iert pas maire d'une pome .<br>
+Suz la gule en la peitrine<br>
+ert blanche come fleur d'espine .<br>
+Lung braz avoit e blanche mains<br>
+Les dois ronz.greilles e pleins .<br>
+Gent cors avoit e bien moullez<br>
+Desuz l'essele les long costez .<br>
+Ne feut trop grant ne trop petite<br>
+Sa facon n'iert ja descrite .<br>
+Ne la beaute de ceste dame<br>
+N'iert ja descrite pur nul aume .<br>
+Tant ert cortoise de parler<br>
+Riens n'i avoit kamender .<br>
+A pleindre fist teu creature<br>
+Quant de sun Creatur n'ot cure .<br>
+ele recevrit mut presenz<br>
+S'en achatot beau vestemenz .<br>
+Bons dras avoit e avenanz<br>
+Pur menz pleire a ses amanz .<br>
+ele n'avoit soign de dras de leine<br>
+Par nul des jurs de la sumeine .<br>
+Ainz vesteit bliauz de osterin<br>
+e affublout mantel d'ermin .<br>
+Sollers bien peinz de cordewan<br>
+Chaucot trestuz les jurs del an .<br>
+Trestuz cous de la cite<br>
+L'amoient pur la beaute .<br>
+Li ancien hom e li sage<br>
+Disoient. hai. queu damage .<br>
+Tant mar fu nee la dolente<br>
+Tant fet a pleindre sa juvente .<br>
+Mar feut onke la sue vie<br>
+Quant si est pleine de folie .<br>
+Tuz diseient par la citez<br>
+k'ele estoit de grant parentez .<br>
+kar a tuz respont par reison<br>
+e tant ert bele de fascon .<br>
+ke li fiz d'un empereur<br>
+La peust prendre a gran honur .<br>
+.....<br>
+Tant alad ke jurs ke nuiz<br>
+Od feims od seifs & od dur liz .<br>
+ke tant parfond feut en boscage<br>
+Tote devint illoec salvage .<br>
+mes ele ne s'obliat mie<br>
+De deprier saincte Marie .<br>
+sovent li membre de l'ymage<br>
+k'ele avoit mis en hostage .<br>
+si drapel furent tost usez<br>
+e si souler tut deramez .<br>
+kant li drapel erent rumpu<br>
+Le cors de lui remist tut nu .<br>
+La char de lui mua colur<br>
+k'einz ert blanche come flur .<br>
+ke de l'yver ke de l'este<br>
+Tut li nercirent li coste .<br>
+Colur muat la bloie crine<br>
+Blanche devint com ermine .<br>
+La face lui estoit bruillee<br>
+Del grant soleil e de gelee .<br>
+La buche li ert entenvie<br>
+e d'environ tote en nercie .<br>
+e tant avoit neir le menton<br>
+come co feust chief d'un tison .<br>
+Teint e nerci erent li oil<br>
+Rien n'i ot ore d'orgoil .<br>
+se vos regardisez s'oreille<br>
+mut vos serroit grant merveille .<br>
+car megres estoit e descrue<br>
+e de blanc peil tote mossue<br>
+Noire e mossue ert la peitrine<br>
+L'escorce semblout d'espine .<br>
+N'avoit plus char en sa triant<br>
+Ne mes ke n'ad en un gant .<br>
+Les braz les mains e les lung dois<br>
+Avoit plus noirs ke nule poiz .<br>
+Les ungles avoit ele mut grenz<br>
+Si les retaillot de ses denz .<br>
+Li ventre tut lui ert caeiz<br>
+Guere ne mangot. co ert droiz .<br>
+Les piez lui erent escrevez<br>
+en plusur lius furent nafrez .<br>
+k'ele ne se gardoit d'espine<br>
+kant ele alot par la guastine .<br>
+Co lui ert vis son escient<br>
+Pur voir de co ne failli nient .<br>
+k'un de ses pechiez chaeit<br>
+kant une espine la puigneit .<br>
+Pur co feut ele mut lee<br>
+kant ele suffri teu haschee .<br>
+N'ert merveille se feust nercie<br>
+ke mut demenot aspre vie .<br>
+plus de quarante anz ala nue<br>
+Ne fu merveille s'ert mossue .<br>
+Povre despense avoit od lui<br>
+Ore ait de lui Jhesu merci .<br>
+Dous pains avoit ne guere granz<br>
+De ces se garit plusurs anz .<br>
+Tut al premor devindrent dur<br>
+Cum s'il feusent fet de mur .<br>
+Chescun jor en usout Marie<br>
+mes co ert petite partie .<br>
+kant ele out son pain use<br>
+Doncs arracot l'erbe du pre .<br>
+Com autre beste la mangot<br>
+De rien ne se desconfortout .<br>
+Adenz leveit un rosel<br>
+Dont beut n'ot autre vessel .<br>
+Ne fet a pleindre le pechie<br>
+Dont le cors fu si chastie .<br>
+D'erbe vesquit e de racine<br>
+Dis e ut. anz en la gastine .<br>
+pus fu trente anz onc ne manga<br>
+si l'angle Deu ne lui porta .<br>
+Diables la veneient esprimer<br>
+Sovent la soleient assaer .<br>
+Tut co lui firent remembrer<br>
+k'ele soleit ja dis amer .<br>
+Les bons mangers e les beau lius<br>
+Ou ele soleit fere ses gius .<br>
+Lors feut ele si bonureie<br>
+ke de rien n'ert attameie .<br>
+unk en tote soue vie<br>
+Ne lui sovint puis de folie .<br>
+Ne puis en trestut le boscage<br>
+Ne vit guere beste sauvage .<br>
+N'autre vive creature<br>
+Par la forest vait tute sure .<br>
+en plusur lius prent son hostal<br>
+Sa vie est tute espirital .<br>
+.....<br>
+:::
+
+::: {.portrait-column}
+## D
+.....<br>
+De sa bealte & de sa figure<br>
+Si cum est en l'escripture<br>
+voil un poi dire le semblant<br>
+einz que jeo trespas avant<br>
+en cel tens ne en cel regne<br>
+Ne vit unc home plus bele femme<br>
+Ne cuntesse ne raine.<br>
+N'out onkes tele meschine<br>
+roundes avoit les oreilles<br>
+Mais blanches erent a merveilles<br>
+les sorciz neirs & avenanz<br>
+les oilz neirs & sorianz<br>
+la bouche brieve & par mesure<br>
+& pie la regardeure<br>
+la face tendre & coloree<br>
+cumme rose qui senpres est nee<br>
+ja el nes ne el mentun<br>
+N'i veist l'un mesfacun<br>
+par sun le col blanc cum ermine<br>
+li undout la bloie crine<br>
+chascun des traianz a la dune<br>
+N'ert mie greignor d'une pume<br>
+Soz la gorge en la poitrine<br>
+ere blanche cumme flor d'espine<br>
+blans bras aveit & beles mains<br>
+& les deis luncs gresles & pleins<br>
+N'ert trop grande ne trop petite<br>
+ja sa facun n'iert deserite<br>
+ja la bealte de ceste dune<br>
+N'iert escrite por nul home<br>
+tant ert corteise de parler<br>
+rien n'i aveit que amender<br>
+a plaindre fait tel creature<br>
+Quant del Creator n'aveit cure<br>
+ele recevoit or & argent<br>
+Si achatout bons garnemenz<br>
+bons dras aveit & avenanz<br>
+por miex plesir a ses amanz<br>
+ele n'out cure de dras de leine<br>
+al peor jor de la semeine<br>
+Vesteit bons bliaus d'osturin<br>
+& afubla mantel hermin<br>
+Soulers bien pains de cordouen<br>
+chaucout a toz les jors de l'an<br>
+li citeen de la cite<br>
+l'amouent tuit por sa bealte<br>
+li anciem home & li sage<br>
+disoient tuit Deus quel damage<br>
+Mar fu unques la dolente<br>
+tant fait a plaindre sa jovente<br>
+Mar fu unques la soue vie<br>
+Quant si est pleine de folie<br>
+tuit disoient par la cite<br>
+Que ele ert de mult halt parente<br>
+car a toz rosponeit raisun<br>
+& tant ert bele de facun<br>
+ke le fiz d'un enpereor<br>
+la peust prendre par honor<br>
+.....<br>
+tant erra par jor. & par nuit<br>
+o faim. & o sei. & o dur lit<br>
+& tant fu en cel boscage<br>
+tote devint iloc salvage<br>
+mais ele ne s'oublia mie<br>
+de deprier sainte Marie<br>
+sovent lui membre de l'ymage<br>
+Que ele aveit mis en ostage<br>
+Ses soulers furent tuit uses<br>
+& si drapel tuit descires<br>
+Quant si drapel furent rumpu<br>
+le cors de lui remist tot nu<br>
+la char de lui mua color<br>
+Qui ainz ert blanche cumme flor<br>
+Que o l'ivern. ke o l'este<br>
+tuit li nercirent li coste<br>
+color mua sa bloie crigne<br>
+blanche devint cumme ermigne<br>
+la face out desus bruslee<br>
+del soleil. & de la gelee<br>
+la bouche li fu atenvie<br>
+& envirun la char nercie<br>
+tant par esteit noir sun mentun.<br>
+cum ceo fust le chief d'un tisun<br>
+& nerci erent si oil<br>
+N'i aveit ore point d'orguil<br>
+Se vous veisses sa oreille<br>
+mult vous semblast grant merveille<br>
+car mesgre esteit. & detrevee<br>
+& de blanc peil avirunee<br>
+N'aveit plus char en sun traiant<br>
+Ne mais cum il a en un gant<br>
+les bras. les mains. & les deiz<br>
+aveit plus neirs que nule peiz<br>
+les ongles aveit ele grenz<br>
+ele les taillout o les denz<br>
+le ventre lui ert tot dechaet<br>
+car povre despense i meteit<br>
+les piez li erent decrevez<br>
+en plusors lieus erent nafrez<br>
+car ele ne se gardout de espine<br>
+Quant ele alout par la gastine<br>
+mais ceo li ert vis son encient<br>
+& ele n'i failli de nient<br>
+ke un peche de lui chaeit<br>
+Quant une espine la poingneit<br>
+por ceo esteit ele lee<br>
+Quant ele soffri une haschee<br>
+N'ert pas merveille s'ele ert nercie<br>
+car ele demenout aspre vie<br>
+plus de quarante ans ala nue<br>
+N'ert merveille s'ele ert mossue<br>
+povre despense aveit o lui<br>
+ore ait Jesus de lui merci<br>
+deus pains aveit ne gueres granz<br>
+de cels vesqui plusors anz<br>
+el premier en devindrent dur<br>
+cumme ceo fussent pieres de mur<br>
+chascun jor en usout Marie<br>
+mais ceo ert petite partie<br>
+& quant ele out son pain use<br>
+Si esracout l'erbe del pre<br>
+cumme altre beste la manjout<br>
+& de rien ne se desconfortout<br>
+a denz beveit del ruissel<br>
+ele naveit altre vaissel<br>
+Ne fait a plaindre le pechie<br>
+dunt le cors fu si chastie<br>
+d'erbes viveit. & de racines<br>
+dis. & set anz. en la gastine<br>
+puis fu trente anz unc ne manja<br>
+Se li angres Deu ne lui porta<br>
+deable lui vint de premier<br>
+Sovent la soloit essaier<br>
+tot ceo lui faisoit remembrer<br>
+Que ele soloit jadis amer<br>
+les bons mangiers. & les lieus<br>
+ou ele sout faire ses gieus<br>
+ore fu issi beneuree<br>
+Que de tot ceo fu obliee<br>
+& en tote la soue vie<br>
+Ne lui sovint puis de la folie<br>
+& unc puis en tot le boscage<br>
+Ne vit beste salvage<br>
+Ne altre vive creature<br>
+par la forest vait tote seure<br>
+en plusors lieus prent son ostal<br>
+Sa vie esteit esperital<br>
+.....<br>
+:::
+
+::: {.portrait-column}
+## E
+.....<br>
+de sa bieute de sa figure<br>
+Si com il est en escripture<br>
+Voil -i- poi dire le samblant<br>
+ancois que jo trespas avant<br>
+En icel tans ne en cel regne<br>
+N'en ot onques plus bele feme<br>
+onques comtesse ne roine<br>
+Nen ot el chief plus bele crigne<br>
+rondes avoit les oreilles<br>
+& blances erent a merveilles<br>
+les sorcils nois & avenans<br>
+& les ioex vairs & molt rians<br>
+La bouche bele & par mesure<br>
+& pieue la regardeure<br>
+la face tenre & coloree<br>
+comme rose novele nee<br>
+Ne ja el nes ne el menton<br>
+Ne parceuscies mesfacon<br>
+Le col avoit blanc com ermine<br>
+Loiet estoit sa blonde crine<br>
+N'iert mie greindres d'une pome<br>
+L'un des traians de cele domme<br>
+desus la boce en la poitrine<br>
+Ert si blance com flor d'espine<br>
+blans bras avoit & blances mains<br>
+les dois reons greilles & plains<br>
+Gent cors avoit & bien molle<br>
+Sus l'asoele lanc le coste<br>
+Ne trop grande ne trop petite<br>
+Ja sa facon n'en ert descrite<br>
+la grans biautes de ceste dame<br>
+N'iert toute escrite par nul homme<br>
+Tant ert cortoise de parler<br>
+Rien n'i avoit que amender<br>
+a plaindre fait tel creature<br>
+Quant de son Creator n'a cure<br>
+Ele recevoit grans presens<br>
+S'en achatoit biaus garnemens<br>
+biaus dras avoit & avenans<br>
+por bien plaisir a ses amans<br>
+N'avoit pas soing de dras de laine<br>
+Al pior jor de la semaine<br>
+vestoit bon bliaut ostorin<br>
+Si afubloit mantel ermin<br>
+Sollers bien pains de cordoan<br>
+chaucoit a tus les jors del an<br>
+li citeain de la cite<br>
+l'amoient tot por sa biaute<br>
+li ancien home & li sage<br>
+disoient tot que cert damage<br>
+tant par mar fu ceste dolente<br>
+molt fait a plaindre sa jovente<br>
+mar fu onques la soie vie<br>
+Quant si est plaine de folie<br>
+tot disoient par la cite<br>
+Qu'ele ert de haut parente<br>
+Car a tos respondoit raison<br>
+& molt ert de bele facon<br>
+li fiex a -i- empereor<br>
+Le peust prendre par honor<br>
+.....<br>
+tant ala par jor & par nuis<br>
+par bos par plains & par larris<br>
+& tant par font vint el boscage<br>
+Que tot devint iluec salvage<br>
+mais ele ne s'oblioit mie<br>
+de proier a sainte Marie<br>
+Sovent li menbroit del image<br>
+Que ele avoit mis en ostage<br>
+Si drapel furent tost use<br>
+& si sollers tost desrame<br>
+Quant si drapel furent ronpu<br>
+li cors de li remest tot nu<br>
+la sieue char mua color<br>
+devant ert blance comme flor<br>
+Quant .i. iver i ot este<br>
+tot li noircirent li coste<br>
+molt li mua la blonde crine<br>
+blance devint com .i. ermine<br>
+del soleil & de la gelee<br>
+li fu la face molt bruslee<br>
+Sa bouche fu atenevie<br>
+& environ sa char noircie<br>
+itant avoit noir le menton<br>
+comme ce fust chies d'un tison<br>
+tot li erent noir oi li oil<br>
+N'avoit ore .i. point d'orgoil<br>
+Se vos en veiscies l'oreille<br>
+molt vos venist a grant merveille<br>
+Qui maigre estoit & decreue<br>
+& de blanc poil tote molsue<br>
+Noire & molsue ert sa poitrine<br>
+bien resambloit escorce d'espine<br>
+N'avoit de char en ses traians<br>
+Nient plus qu'il est en .i. gans<br>
+les bras les mains & les lons dois<br>
+Avoit plus noirs que n'en est pois<br>
+molt par avoit les ongles grans<br>
+as dens les ront qu'ele ot trencans<br>
+li ventres li ert agaris<br>
+car n'avoit nul de ses delis<br>
+li pie li erent decreve<br>
+& environ tot denavre<br>
+Ele ne se gardoit d'espine<br>
+Quant ele aloit par la gastine<br>
+Ce li ert vis son escient<br>
+del bien faisoit petit u nient<br>
+Quant une espine le poignoit<br>
+En un de ses pies li chaoit<br>
+de co estoit ele molt lie<br>
+Quant ele avoit la grant hascie<br>
+N'estoit merveille s'iert noircie<br>
+car molt demenoit aspre vie<br>
+plus de .xl. ans a la nue<br>
+N'iert par merveille s'iert mossue<br>
+povre despens avoit od li<br>
+Damedex ait de li merci<br>
+.ii. pains avoit ne gaires grans<br>
+de ces vesqui par pluisors ans<br>
+le premer an devindrent dur<br>
+com ce fuissent pieres de mur<br>
+chascun jor en usoit Marie<br>
+mais co ert petite partie<br>
+Quant ele ot tot son pain use<br>
+donques aquelt l'erbe del pre<br>
+com autre beste le mangoit<br>
+de rien ne se recomfortoit<br>
+as dens bevoit dou ruissel<br>
+Car n'i avoit autre vaiscel<br>
+Ne fait a plaindre li pechiet<br>
+dont li cors est si castiet<br>
+d'erbe vesqui & de racine<br>
+dis & set anz en la gastine<br>
+puis fu .xxx. anz que ne manga<br>
+Se l'angles Deu ne l'aporta<br>
+dyable vint a li de premier<br>
+Sovent le soloit assaier<br>
+tot ce li faisoit ramenbrer<br>
+Qu'ele ja dis soloit amer<br>
+les biaus delis & les bels lieus<br>
+ou ele seut faire ses gieus<br>
+ore fu ele boneuree<br>
+Quant de tot ce fu obliee<br>
+Ainc gaires puis en tote sa vie<br>
+Ne li sovint puis de folie<br>
+Ne ainc en trestot le boscage<br>
+Ne vit gaires beste salvage<br>
+Ne autre vive creature<br>
+par la forest vait tote nue<br>
+En pluisors lieus prist son ostal<br>
+Sa vie estoit esperital<br>
+.....<br>
+:::
+
+::: :::

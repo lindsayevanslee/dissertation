@@ -101,3 +101,37 @@
   line-height: 1.2;
   background-color: transparent;
 }
+
+/* Specific styling for portrait columns */
+/* Container for full-width layout */
+.column-page-outset {
+  max-width: 100vw;
+  margin: 0;
+  padding: 0 1em;
+  overflow-x: auto;
+}
+
+.portrait-column {
+  padding: 0.5em;
+  margin-left: 0;
+  min-width: 300px;
+  width: 100%;
+  transition: opacity 0.3s ease;
+  opacity: 0.7;
+}
+
+/* Ensure text has room to breathe */
+.portrait-column p {
+  line-height: 1.5;
+  white-space: nowrap;
+}
+
+.portrait-column:hover {
+  opacity: 1;
+}
+
+/* Container for portrait layout */
+.portrait-column-container {
+  margin-left: 220px;
+  width: calc(100% - 240px);
+}
