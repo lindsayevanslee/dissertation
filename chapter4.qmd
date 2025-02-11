@@ -12,6 +12,8 @@ This page will feature the edition/translation of the T portraits...
 
 ::: {.portrait-column}
 ## A
+<div class="text-container">
+  <div class="default-text">
 .....<br>
 De se biaute de se figure<br>
 Si com ele est en escriture<br>
@@ -163,10 +165,167 @@ Par le gaut va toute seure<br>
 En plusors lius prist son ostel<br>
 Se vie ert tote esperitel<br>
 .....<br>
+  </div>
+  <div class="hover-text">
+.....<br>
+Of her beauty, of her figure<br>
+as it is in the written source<br>
+I want to say a little about her appearance<br>
+before I go too far.<br>
+For at that time in that reign,<br>
+no man saw a more beautiful woman.<br>
+Never countess nor queen<br>
+had over her brow more beautiful hair.<br>
+She had round ears.<br>
+What's more, they were marvelously white,<br>
+her eyes bright and smiling,<br>
+her eyebrows black and becoming,<br>
+her little mouth mild,<br>
+and pious her gaze,<br>
+her face tender and blushing<br>
+like the rose that is always in bloom.<br>
+Indeed neither on her nose nor on her chin<br>
+would you be aware of any defect.<br>
+Her neck was white like ermine too.<br>
+There flowed her blonde hair.<br>
+The breasts of this lady<br>
+were no smaller than apples.<br>
+Above the cleavage of her chest,<br>
+it was white like hawthorn flower.<br>
+She had white arms and white hands,<br>
+her fingers shapely, slender, and smooth.<br>
+She had a fine body and well molded<br>
+from her underarm along her rib.<br>
+She was neither too big nor too small.<br>
+Her frame could never be written.<br>
+The beauty of this lady<br>
+could never be written by any man.<br>
+She was so courteous of speech.<br>
+There was nothing to improve.<br>
+Such a creature makes one lament<br>
+when she does not care about the Creator.<br>
+She received many presents<br>
+and bought herself good garments.<br>
+She had good and fitting clothes<br>
+to better please her lovers.<br>
+She did not care for woollen cloth.<br>
+On the worst day of the week,<br>
+she had a fine purple silk bliaut<br>
+and adorned herself with an ermine mantle.<br>
+Well-painted shoes of Cordovan leather<br>
+she put these on all the days of the year.<br>
+The citizens of the city<br>
+loved her entirely for her beauty.<br>
+The old men and the wise<br>
+would all say, "God, what a shame!<br>
+Oh alas evermore for this suffering!<br>
+There is much to bemoan of her youth.<br>
+Alas evermore for her life<br>
+as it is so full of folly."<br>
+Everyone in the city would say<br>
+that she was of high parentage<br>
+for she answered all with reason<br>
+and had such a beautiful frame<br>
+that the son of an emperor<br>
+could have taken her with great honor.<br>
+.....<br>
+So she went by day and by night<br>
+hungry, thirsty, and on hard beds.<br>
+She was so deep in the wood<br>
+that she became entirely wild there,<br>
+but she never forgot<br>
+to pray to saint May.<br>
+Often she remembered the image<br>
+on which she had made her pledge.<br>
+Soon her shoes were worn out,<br>
+and soon her clothes were all torn up.<br>
+Her body was left totally naked.<br>
+She did not have clothing that was not in tatters.<br>
+Her own flesh changed color,<br>
+that which before was white like a flower.<br>
+From winter as from summer,<br>
+her sides blackened entirely.<br>
+The color of her blonde hair changed.<br>
+It turned white like an ermine.<br>
+Her mouth was thinned,<br>
+and all around it blackened,<br>
+and her chin was so black<br>
+as though it were dyed with charcoal.<br>
+Thinned were her eyes.<br>
+There was not a shred of pride now.<br>
+If you saw her ears,<br>
+you would really take in a great marvel.<br>
+for they were black and cracked.<br>
+Her white flesh changed entirely<br>
+Black and changed was her chest.<br>
+It seemed like thorny bark.<br>
+There was no more flesh in her breasts,<br>
+no more than there is in a glove.<br>
+Her arms, her hands, and her long fingers<br>
+were blacker than any pitch.<br>
+She had long and large nails.<br>
+She reshaped them with her teeth.<br>
+Her stomach was sunken.<br>
+She put little provisions in there.<br>
+Her feet were split.<br>
+In many places, they were wounded<br>
+for she did not protect herself from thorns<br>
+as she went through the wilderness.<br>
+It seemed to her, in her mind,<br>
+she was not wrong about this at all,<br>
+that one of her sins fell away<br>
+when a thorn pricked her.<br>
+For this, she was so pleased<br>
+as she suffered hardship.<br>
+It was no marvel that she was blackened<br>
+for she led such a severe life.<br>
+After more than forty years in the nude,<br>
+it was no marvel she was wooly.<br>
+She had poor provisions with her.<br>
+Pray, may Jesus have mercy on her.<br>
+She had two breads of no great size.<br>
+On these, she lived for many years.<br>
+In the first year, they became hard<br>
+as though they were building stones.<br>
+Each day, Mary ate some,<br>
+but this was a small portion.<br>
+As soon as she had eaten up all her bread,<br>
+then she plucked the grass nearby.<br>
+Like other beasts she ate it.<br>
+She provided herself with nothing else.<br>
+On her hands, she drank the water from the stream<br>
+as she had no other vessel.<br>
+She does not bemoan her sins<br>
+as her body is so chastised.<br>
+On grass she lived and on roots<br>
+for seventeen years in the wilderness.<br>
+Then for thirty years, she never ate<br>
+but what the angel brought to her.<br>
+In the first year, the devil<br>
+often used to tempt her,<br>
+making her remember all<br>
+that she used to always love.<br>
+The good eats and the beautiful places<br>
+where she was used to playing games.<br>
+Now, she was so blissful<br>
+that she had forgotten all.<br>
+Never then in all her life<br>
+did she think more of folly.<br>
+Never in all the wood<br>
+did any wild beast come to her then<br>
+nor any other living creature.<br>
+Through the glen, she goes totally sure.<br>
+In many places, she took shelter.<br>
+Her life was entirely spiritual.<br>
+.....<br>
+  </div>
+</div>
 :::
 
 ::: {.portrait-column}
 ## B
+<div class="text-container">
+  <div class="default-text">
 .....<br>
 de sa biate de sa figure.<br>
 si com ele est en l'escriture<br>
@@ -302,10 +461,151 @@ par le forest vat bien segure<br>
 en plusors lius fut ses ostaz.<br>
 sa vie astoit spirituaz<br>
 .....<br>
+  </div>
+  <div class="hover-text">
+.....<br>
+Of her beauty, of her figure<br>
+as it is in the written source<br>
+I want to tell you about her appearance.<br>
+before I go too far.<br>
+In this world and in this reign,<br>
+no man saw a more beautiful woman.<br>
+Never duchess nor queen<br>
+had on her head more beautiful hair.<br>
+She had round ears.<br>
+What's more, they were marvelously white,<br>
+her eyebrows black and becoming,<br>
+and her eyes bright and smiling,<br>
+her face tender and covered<br>
+like the rose that has only just bloomed.<br>
+Her teeth were white and quite small.<br>
+A more beautiful mouth no one ever saw.<br>
+She had such a pious gaze,<br>
+and her look and her features bright.<br>
+I believe on her nose and on her chin<br>
+there was no defect at all.<br>
+Above the bump on her chest,<br>
+it was whiter than hawthorn flower,<br>
+and of course she had beautiful breasts,<br>
+so well set, small, and beautiful.<br>
+She had white arms and white hands,<br>
+and her fingers slender, long, and smooth.<br>
+She had a fine body and was well molded<br>
+beneath her underarm and her rib.<br>
+She was so courteous of speech.<br>
+There was nothing to improve.<br>
+She was neither too big nor too small.<br>
+Her frame could never be described.<br>
+The beauty of these proportions<br>
+could neither be described nor appraised<br>
+Such a creature makes one lament<br>
+when she does not care about her Creator.<br>
+She received great presents<br>
+and bought herself expensive garments.<br>
+She had good and fitting clothes<br>
+to better please her lovers,<br>
+and she did not wear woollen cloth.<br>
+The worst day of the week,<br>
+she wore a fine purple silk bliaut<br>
+and adorned herself with an ermine mantle.<br>
+Well-painted shoes of Cordovan leather<br>
+she put these on all the days of the year.<br>
+The citizens of the city<br>
+loved her entirely for her beauty,<br>
+and the old men and the wise<br>
+would all say, "God, what a shame!<br>
+Alas for this suffering!<br>
+There is much to bemoan of her youth.<br>
+Alas evermore for her life<br>
+is so full of folly."<br>
+As she answered all with reason<br>
+and had such a beautiful frame,<br>
+the son of an emperor<br>
+could have taken her with honor.<br>
+.....<br>
+So she roamed by night and by day<br>
+hungry, thirsty, and on hard beds.<br>
+Like that, there she was in the wood,<br>
+and so, she became entirely wild.<br>
+Soon, her clothes were worn out,<br>
+and soon her soles were torn up.<br>
+As much from winter as from summer,<br>
+her sides blackened entirely.<br>
+Her tender flesh changed color,<br>
+which before was white like a flower.<br>
+The color of her beautiful hair changed.<br>
+It turned white like the ermine.<br>
+Under that, her face was burned<br>
+from the sun and from the frost.<br>
+Her mouth was thinned,<br>
+and her flesh around it blackened,<br>
+and her chin was so black<br>
+as if it were the head of a firebrand.<br>
+Thinned were her eyes.<br>
+There was not a shred of pride now.<br>
+If you saw her ears,<br>
+you would come upon a great marvel<br>
+for they were so skinny and degraded<br>
+and all wooly with white hairs.<br>
+Black and hairy was her chest.<br>
+It seemed like black thorny bark.<br>
+Her stomach was all sunken.<br>
+She ate nothing and so that was right.<br>
+She had large nails.<br>
+She reshaped them with her teeth.<br>
+Her feet were skinny and split,<br>
+and in many places were so wounded<br>
+for she did not protect them from thorns<br>
+as she went through the wilderness.<br>
+So it seemed to her, in her mind,<br>
+and she was not wrong about this at all,<br>
+as a thorn pricked her,<br>
+one of her sins fell down from her.<br>
+She does not bemoan her sins<br>
+as her body is so chastised.<br>
+It was no marvel that she was wooly;<br>
+for forty years, she went totally nude.<br>
+She had two breads of no great size.<br>
+On these, she lived for many years.<br>
+The first year they became hard<br>
+as though they were building stone.<br>
+Every day, Mary ate some,<br>
+but this was a very poor life.<br>
+As soon as she had eaten up all her bread,<br>
+then she went wild for the grasses nearby<br>
+Like other beasts, she ate them.<br>
+She provided herself with nothing else.<br>
+She drank from the stream all the time.<br>
+She had no other vessel.<br>
+On grasses she lived and on roots<br> 
+for eighteen years in the wilderness.<br>
+Then for twenty years, she only ate<br>
+what the angel of God brought to her.<br>
+The devil came before her first<br>
+He used to annoy her so much<br>
+making her remember<br>
+whatever she once used to love,<br>
+the beautiful delights and the beautiful games<br>
+in which she used to take pleasure.<br>
+She was so blissful<br>
+that she had fogotten all of this.<br>
+Never again in her life<br>
+did she bring to mind a day of folly.<br>
+Mary goes through the wood.<br>
+Never did she see a wild beast<br>
+nor any living creature.<br>
+Through the forest, she goes so secure.<br>
+In many places, she was sheltered.<br>
+Her life was spriitual.<br>
+.....<br>
+  </div>
+</div>
 :::
 
 ::: {.portrait-column}
 ## C
+<div class="text-container">
+  <div class="default-text">
 .....<br>
 De sa beaute de sa figure<br>
 Si cum il est en escripture .<br>
@@ -459,10 +759,169 @@ Par la forest vait tute sure .<br>
 en plusur lius prent son hostal<br>
 Sa vie est tute espirital .<br>
 .....<br>
+  </div>
+  <div class="hover-text">
+.....<br>
+Of her beauty, of her figure<br>
+as it is in the written source<br>
+I want to say a little about her appearance<br>
+before I go on.<br>
+At that time, there was no woman so beautiful<br>
+for she was gem above them all.<br>
+Never countess nor queen<br>
+had on her head such beautiful hair.<br>
+She had round ears.<br>
+They were very marvelously white,<br>
+her eyebrows black and becoming,<br>
+and her eyes bright and overjoyed,<br>
+her little mouth mild,<br>
+and she had a simple gaze,<br>
+her face tender and blushing<br>
+like a rose that is always in bloom.<br>
+Indeed neither on her nose nor on her chin<br>
+would you be aware of any defect.<br>
+Along her neck was white like ermine.<br>
+There flowed her blonde hair.<br>
+Each of the breasts of the lady<br>
+was no more than an apple.<br>
+Above the cleavage of her chest,<br>
+it was white like hawthorn flower.<br>
+She had long arms and white hands,<br>
+her fingers shapely, slender, and smooth.<br>
+She had a fine body and was well molded<br>
+from her underarm along her rib.<br>
+She was neither too big nor too small.<br>
+Her frame could never be described.<br>
+Nor could the beauty of this lady<br>
+ever be described by any man.<br>
+She was so courteous of speech.<br>
+There was nothing to improve.<br>
+Such a creature makes one lament<br>
+when she does not care about her Creator.<br>
+She received many presents<br>
+and bought herself beautiful garments.<br>
+She had good and fitting clothes<br>
+to better please her lovers.<br>
+She did not care for woollen cloth.<br>
+On any of the days of the week,<br>
+she wore her own bliaut of fine purple silk<br>
+and adorned herself with an ermine mantle.<br>
+Well-painted shoes of Cordovan leather,<br>
+she put these on all the days of the year.<br>
+Every man of the city<br>
+loved her for her beauty.<br>
+The old men and the wise<br>
+would say, "Ah! What a shame!<br>
+Alas was born suffering!<br>
+There is much to bemoan of her youth.<br>
+Alas evermore, her life<br>
+is so full of folly."<br>
+Everyone in the city would say<br>
+that she was of great parentage<br>
+for she answered all with reason<br>
+and had such a beautiful frame<br>
+that the son of an emperor<br>
+could have taken her with great honor.<br>
+.....<br>
+So she went in the day as in the night<br>
+hungry, thirsty, and on hard beds.<br>
+She was so deep in the wood<br>
+that she became entirely wild there,<br>
+but she never forgot<br>
+to pray to saint Mary.<br>
+Often she remembered the image<br>
+on which she had made her pledge.<br>
+Soon her clothes were worn out<br>
+and soon her soles were stripped.<br>
+As her clothes were in tatters,<br>
+her body was left totally naked.<br>
+Her own flesh changed color,<br>
+that which before was white like a flower.<br>
+From the winter and from the summer<br>
+her sides blackened entirely.<br>
+The color of her blonde hair changed.<br>
+It turned white like ermine.<br>
+Her face was burned<br>
+by the blazing sun and by the frost.<br>
+Her mouth was thinned<br>
+and all around it blackened,<br>
+and her chin was so black<br>
+it was like the head of a firebrand.<br>
+Tinted and blackened were her eyes.<br>
+There was not any pride there now.<br>
+If you saw her ears,<br>
+they would really be to you a great marvel<br>
+for they were skinny and cracked<br>
+and all wooly with white hairs.<br>
+Black and wooly was her chest.<br>
+It seemed like thorny bark.<br>
+She had no more flesh in her breast,<br>
+no more than there is in a glove.<br>
+Her arms, her hands, and her long fingers<br>
+were blacker than any pitch.<br>
+She had such large nails.<br>
+So she reshaped them with her teeth.<br>
+Her stomach was all sunken.<br>
+She hardly ate, so that was right.<br>
+Her feet were split.<br>
+In many places, they were wounded<br>
+for she did not protect herself from thorns<br>
+as she went through the wilderness.<br>
+It seemed to her, in her mind,<br>
+for truly, about this, she was not wrong at all,<br>
+that one of her sins fell away<br>
+when a thorn pricked her.<br>
+For this, she was so pleased.<br>
+As she suffered such hardship,<br>
+it was no wonder that she was blackened<br>
+for she led such a severe life.<br>
+After more than forty years in the nude,<br>
+it was no wonder she was wooly.<br>
+She had poor provisions with her.<br>
+Pray, may Jesus have mercy on her.<br>
+She had two breads of no great size.<br>
+On these she sustained herself for many years.<br>
+They all became hard in the first year<br>
+as though they were made from a wall.<br>
+Each day, Mary ate some,<br>
+but this was a small portion.<br>
+As soon as she had eaten up her bread,<br>
+then she gathered the grass nearby.<br>
+Like other beasts she ate it.<br>
+She provided herself with nothing else.<br>
+Prone, she drew from a stream.<br>
+Like so, she drank. She had no other vessel.<br>
+She does not bemoan her sins<br>
+as her body was so chastised.<br>
+On grass she lived and on roots<br>
+for eighteen years in the wilderness.<br>
+Then for thirty years, she never ate<br>
+but what the angel of God brought to her.<br>
+Devils came to approach her.<br>
+Often they used to tempt her,<br>
+making her remember all<br>
+that she once used to love.<br>
+The good eats and the beautiful places<br>
+where she was used to playing her games.<br>
+Now, she was so blissful<br>
+that nothing hurt her.<br>
+Never, in all her life,<br>
+did she think, then, of folly.<br>
+Nor, then, in all the wood,<br>
+did she see wild beasts at all.<br>
+nor any other living creature.<br>
+Through the forest, she goes totally sure.<br>
+In many places, she takes shelter.<br>
+Her life is entirely spiritual.<br>
+.....<br>
+  </div>
+</div>
 :::
 
 ::: {.portrait-column}
 ## D
+<div class="text-container">
+  <div class="default-text">
 .....<br>
 De sa bealte & de sa figure<br>
 Si cum est en l'escripture<br>
@@ -612,10 +1071,165 @@ par la forest vait tote seure<br>
 en plusors lieus prent son ostal<br>
 Sa vie esteit esperital<br>
 .....<br>
+  </div>
+  <div class="hover-text">
+.....<br>
+Of her beauty and of her figure<br>
+as it is in the written source<br>
+I want to say a little about her appearance<br>
+before I go too far.<br>
+At that time and in that reign,<br>
+no man ever saw a more beautiful woman.<br>
+No countess or queen<br>
+ever had such a daughter.<br>
+She had round ears,<br>
+what's more, they were marvelously white,<br>
+her eyebrows black and becoming,<br>
+her eyes black and smiling,<br>
+her mouth small and mild,<br>
+and pious her gaze,<br>
+her face tender and blushing<br>
+like a rose that is always in bloom.<br>
+Indeed neither on her nose nor on her chin<br>
+was seen a defect.<br>
+Along her neck was white like ermine.<br>
+There flowed her blonde hair.<br>
+Each of the breasts of the lady<br>
+was not a bit bigger than an apple.<br>
+Above the cleavage of her chest,<br>
+it was white like hawthorn flower.<br>
+She had white arms and white hands,<br>
+and long, slender, and smooth fingers.<br>
+She was neither too big nor too small.<br>
+Her frame could never be described.<br>
+The beauty of this lady<br>
+could never be written by any man.<br>
+She was so courteous in speech.<br>
+There was nothing to improve.<br>
+Such a creature makes one lament<br>
+when she does not care about the Creator.<br>
+She received gold and silver<br>
+and bought good garments.<br>
+She had good and fitting clothes<br>
+to better please her lovers.<br>
+She did not care for woollen cloth.<br>
+On the worst day of the week,<br>
+she wore a fine purple silk bliaut<br>
+and adorned herself with an ermine mantle.<br>
+Well-painted shoes of Cordovan leather,<br>
+she put these on all the days of the year.<br>
+The citizens of the city<br>
+loved her entirely for her beauty.<br>
+The old men and the wise<br>
+all would say, "God, what a shame!<br>
+Alas evermore, the suffering!<br>
+There is much to bemoan of her youth.<br>
+Alas evermore, her life<br>
+is so full of folly."<br>
+Everyone in the city would say<br>
+that she was of such high parentage<br>
+for she answered all with reason<br>
+and had such a beautiful frame<br>
+that the son of an emperor<br>
+could have taken her with honor.<br>
+.....<br>
+So she roamed by day and by night,<br>
+hungry and thirsty and on hard beds,<br>
+and so she was in this wood.<br>
+She became entirely wild there,<br>
+but she never forgot<br>
+to pray to saint Mary.<br>
+Often, she remembers the image<br>
+on which she had made her pledge.<br>
+Her soles were all worn out,<br>
+and soon her clothes were torn up.<br>
+As her clothes were in tatters,<br>
+her body was left totally naked.<br>
+Her own flesh changed color,<br>
+that which before was white like a flower.<br>
+From the winter and from the summer<br>
+her sides blackened entirely.<br>
+The color of her blonde hair changed.<br>
+It turned white like ermine.<br>
+Her face was burned up<br>
+from the sun and from the frost.<br>
+Her mouth was thinned,<br>
+and her flesh around it blackened.<br>
+Her chin was so black all over.<br>
+It was like the head of a firebrand,<br>
+and black were her eyes.<br>
+There was not a shred of pride now.<br>
+If you saw her ears,<br>
+they would really seem to you a great marvel<br>
+for they were skinny and cracked<br>
+and covered in white hair.<br>
+She had no more flesh in her breast,<br>
+no more than there is in a glove.<br>
+Her arms, her hands, and her fingers<br>
+were blacker than any pitch.<br>
+She had large nails.<br>
+She shaped them with her teeth.<br>
+Her stomach was all sunken<br>
+for she put poor provisions in there.<br>
+Her feet were split<br>
+and, in many places, were wounded<br>
+for she did not protect herself from thorns<br>
+as she went through the wilderness.<br>
+But it seemed to her, in her mind,<br>
+and she was not wrong about this at all,<br>
+that a sin fell away from her<br>
+when a thorn pricked her.<br>
+For this, she was pleased.<br>
+As she suffered hardship,<br>
+it was no wonder she was blackened<br>
+for she led a severe life.<br>
+After more than forty years in the nude,<br>
+it was no wonder she was wooly.<br>
+She had poor provisions with her.<br>
+Pray, may Jesus have mercy on her.<br>
+She had two breads of no great size.<br>
+On these, she lived for many years.<br>
+In the first year, they became hard<br>
+as though they were building stones.<br>
+Each day, Mary ate some,<br>
+but this was a small portion.<br>
+And as soon as she had eaten up her bread,<br>
+then she plucked the grass nearby.<br>
+Like other beasts, she ate it.<br>
+And she provided herself with nothing else.<br>
+Prone, she drank from the stream.<br>
+She had no other vessel.<br>
+She does not bemoan her sins<br>
+as her body was so chastised.<br>
+On grasses she lived and on roots<br>
+for seventeen years in the wilderness.<br>
+Then, for thirty years, she never ate<br>
+but what the angel of God brought to her.<br>
+The devil came to her first.<br>
+Often he used to tempt her,<br>
+making her remember all<br>
+that she once used to love.<br>
+The good eats and the places<br>
+where she was used to playing her games.<br>
+Now, she was so blissful<br>
+as she had forgotten all of this.<br>
+And in all her life,<br>
+she never thought of folly.<br>
+And never then in all the wood<br>
+did she see any wild beast<br>
+nor any other living creature<br>
+Through the forest, she goes totally sure.<br>
+In many places, she takes shelter.<br>
+Her life was spiritual.<br>
+.....<br>
+  </div>
+</div>
 :::
 
 ::: {.portrait-column}
 ## E
+<div class="text-container">
+  <div class="default-text">
 .....<br>
 de sa bieute de sa figure<br>
 Si com il est en escripture<br>
@@ -769,6 +1383,163 @@ par la forest vait tote nue<br>
 En pluisors lieus prist son ostal<br>
 Sa vie estoit esperital<br>
 .....<br>
+  </div>
+  <div class="hover-text">
+.....<br>
+Of her beauty and of her figure<br>
+as it is in the written source<br>
+I want to say a little about her appearance<br>
+before I go too far.<br>
+At that time and in that reign,<br>
+there was never a more beautiful woman.<br>
+Never countess nor queen<br>
+had on her head more beautiful hair.<br>
+She had round ears,<br>
+and they were marvelously white,<br>
+her eyebrows black and becoming,<br>
+and her eyes sparkling and joyful,<br>
+her mouth beautiful and mild,<br>
+and pious her gaze,<br>
+her face tender and blushing<br>
+like a freshly-bloomed rose.<br>
+Indeed neither on her nose nor on her chin<br>
+might you perceive any defect.<br>
+Her neck was white like ermine.<br>
+Long was her blonde hair.<br>
+Not a bit bigger than an apple were<br>
+either of the breasts of this lady.<br>
+Above the bump of her chest,<br>
+it was as white as hawthorn flower.<br>
+She had white arms and white hands,<br>
+her fingers shapely, slender, and smooth.<br>
+She had a fine body and was well molded<br>
+from her underarm along her rib.<br>
+Neither too big nor too small,<br>
+her frame could never be described.<br>
+The great beauty of this lady<br>
+could not be written fully by any man<br>
+She was so courteous in speech.<br>
+There was nothing to improve.<br>
+Such a creature makes one lament<br>
+when she does not care about her Creator.<br>
+She received great presents,<br>
+and bought herself beautiful garments.<br>
+She had beautiful and fitting clothes<br>
+to please her lovers well.<br>
+She did not care for woollen cloth.<br>
+On the worst day of the week,<br>
+she wore a fine purple silk bliaut<br>
+and adorned herself with an ermine mantle.<br>
+Well-painted shoes of Cordovan leather,<br>
+she put these on all the days of the year.<br>
+The citizens of the city<br>
+loved her entirely for her beauty.<br>
+The old men and the wise<br>
+all would say that it was a shame.<br>
+"Alas for this suffering!<br>
+There is much to bemoan of her youth.<br>
+Alas evermore, her life<br>
+is so full of folly."<br>
+Everyone in the city would say<br>
+that she was of high parentage<br>
+for she answered all with reason<br>
+and had such a beautiful frame.<br>
+The son of an emperor<br>
+could have taken her with honor.<br>
+.....<br>
+So she went by day and by night<br>
+through woods, through plains, and through hills,<br>
+and so deeply she went into the wood<br>
+that she became entirely wild there,<br>
+but she never forgot<br>
+to pray to saint Mary.<br>
+Often she remembered the image<br>
+on which she had made her pledge.<br>
+Soon her clothes were worn out,<br>
+and soon her soles were stripped.<br>
+As her clothes were in tatters,<br>
+her body was left totally naked.<br>
+Her own flesh changed color.<br>
+Before, it was white like a flower.<br>
+In winter as in summer,<br>
+her sides blackened entirely.<br>
+Her blonde hair changed greatly.<br>
+It turned white like an ermine<br>
+from the sun and from the frost.<br>
+Her face was so burned.<br>
+Her mouth was thinned,<br>
+and her flesh around it blackened.<br>
+Her chin was so black.<br>
+It was like the head of a firebrand.<br>
+All black were her eyes now.<br>
+She had, now, not a shred of pride.<br>
+If you saw her ears,<br>
+you would come upon a great marvel<br>
+that was skinny and cracked<br>
+and all wooly with white hairs.<br>
+Black and wooly was her chest.<br>
+It so ressembled thorny bark.<br>
+She did not have flesh in her breasts,<br>
+nothing more than there is in a glove.<br>
+Her arms, her hands, and her long fingers<br>
+were blacker than pitch.<br>
+She had such large nails<br>
+on her slicing teeth she made them round.<br>
+Her stomach was sunken<br>
+for she had none of her delights.<br>
+Her feet were split<br>
+and wounded all over.<br>
+She did not protect herself from thorns<br>
+as she went through the wilderness.<br>
+It seemed to her, in her mind,<br>
+that it would do little or no good<br>
+for as a thorn pricked her<br>
+in one of her feet, it would fall away.<br>
+For this, she was so pleased.<br>
+As she bore great hardship,<br>
+it was no wonder she was blackened<br>
+for she led a very severe life.<br>
+After more than forty years in the nude,<br>
+it was no wonder she was wooly.<br>
+She had poor provisions with her.<br>
+May God have mercy on her.<br>
+She had two breads of no great size.<br>
+On these she lived for many years.<br>
+The first year, they became hard<br>
+as though they were building stones.<br>
+Each day, Mary ate some,<br>
+but this was a small portion.<br>
+As soon as she had eaten up all her bread,<br>
+then she gathered the grass nearby.<br>
+Like other beasts, she ate it.<br>
+She provided herself with nothing else.<br>
+Prone, she drank from the stream<br>
+for there was no other vessel.<br>
+She does not bemoan her sins<br>
+as her body is so chastised.<br>
+On grass she lived and on roots<br>
+for seventeen years in the wilderness.<br>
+Then, for thirty years, she ate only<br>
+what the angel of God brought to her.<br>
+The devil came to her first.<br>
+Often he used to tempt her,<br>
+making her remember all<br>
+that she once used to love.<br>
+The beautiful delights and the beautiful places<br>
+where she was used to playing her games.<br>
+Now, she was blissful<br>
+as she had forgotten all of this<br>
+before long. Then for all her life,<br>
+she never thought of folly.<br>
+Never in all the wood<br>
+did she see any wild beasts at all<br>
+nor any other living creature.<br>
+Through the forest, she goes utterly naked.<br>
+In many places, she took shelter.<br>
+Her life was spiritual.<br>
+.....<br>
+  </div>
+</div>
 :::
 
 ::: :::
