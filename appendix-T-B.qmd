@@ -10,7 +10,55 @@ library(xml2)
 ```
 
 ::: {.column-body-outset}
-::: {layout="[[6,6,6]]"}
+::: {layout="[[6,6,6,6]]"}
+
+::: {.column}
+## Enjambed
+
+```{r results='asis'}
+# Read the XML content
+xml_file <- read_xml("data/T-B-enjambed.xml")
+
+# Extract <l>, <cb>, and <pb> elements
+lines <- xml_find_all(xml_file, "//text//l | //text//cb | //text//pb")
+
+# Initialize an empty list to store the processed lines
+processed_lines <- list()
+
+# Function to process each element
+process_line <- function(line) {
+  
+  # Handle column breaks
+  if (xml_name(line) == "cb") {
+    return("<div class='column-break'></div>")
+  }
+  
+  # Process choice elements
+  choices <- xml_find_all(line, ".//choice")
+  for (choice in choices) {
+    orig_text <- xml_text(xml_find_first(choice, ".//orig"))
+    xml_set_text(choice, orig_text)
+  }
+  
+  # Remove reg elements
+  reg_elements <- xml_find_all(line, ".//reg")
+  xml_remove(reg_elements)
+  
+  # Return processed line text
+  return(sprintf("<div style='line-height: 1.2;'>%s</div>", xml_text(line)))
+}
+
+# Process each line
+for (line in lines) {
+  processed_lines <- c(processed_lines, process_line(line))
+}
+
+# Format and print
+formatted_text <- paste(processed_lines, collapse = "\n")
+cat(formatted_text)
+
+```
+:::
 
 ::: {.column}
 ## Minimal
