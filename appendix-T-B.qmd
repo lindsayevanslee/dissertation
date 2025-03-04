@@ -13,11 +13,11 @@ library(xml2)
 ::: {layout="[[6,6,6,6]]"}
 
 ::: {.column}
-## Enjambed
+## Nearly Diplomatic
 
 ```{r results='asis'}
 # Read the XML content
-xml_file <- read_xml("data/T-B-enjambed.xml")
+xml_file <- read_xml("data/T-B-nearly_diplomatic.xml")
 
 # Extract <l>, <cb>, and <pb> elements
 lines <- xml_find_all(xml_file, "//text//l | //text//cb | //text//pb")
