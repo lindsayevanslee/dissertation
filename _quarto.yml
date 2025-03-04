@@ -14,7 +14,8 @@ book:
     - chapter1.qmd
     - chapter2.qmd
     - chapter3.qmd
-    - chapter4.qmd
+    - chapter4-1.qmd
+    - chapter4-2.qmd
     - appendix-T-A.qmd
     - appendix-T-B.qmd
     - appendix-T-C.qmd

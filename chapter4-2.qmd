@@ -1,11 +1,11 @@
 ---
-title: "The Portraits"
+title: "The Portraits (with Visualizations)"
 format:
   html:
     page-layout: full
 ---
 
-Each of these columns features an edited transcription and English translation of the two portraits of Mary the Egyptian as they appear in each of the T manuscripts. Copy T-L is not included on this page due to lack of access to the original manuscript at the British Library. The two fragmentary copies of Version T (T-F^1^ and T-F^2^) do not offer any lines of either portrait, and so, they have also been excluded from this page.
+ADD EXPLANATION OF VISUALIZATIONS
 
 To read these passages in translation, hover over each column with your cursor.
 
@@ -33,6 +33,8 @@ bouche petite par mesure<br>
 & pie le regardeiue<br>
 Le face tenrre & coloree<br>
 Com le rose qui sempre est nee<br>
+<br>
+<br>
 Ja el nes ne el menton<br>
 N'aperceussies mesfaichon<br>
 En som le col blanc com ermine<br>
@@ -96,6 +98,8 @@ Que por yver que por este<br>
 Tout li noircirent li coste<br>
 Coulor mua se bloie crine<br>
 Blanche devint com une hermine<br>
+<br>
+<br>
 Le bouce li fu tenevie<br>
 & environ toute noirchie<br>
 & avoit tant noir le menton<br>
@@ -186,6 +190,8 @@ her little mouth mild,<br>
 and pious her gaze,<br>
 her face tender and blushing<br>
 like the rose that is always in bloom.<br>
+<br>
+<br>
 Indeed neither on her nose nor on her chin<br>
 would you be aware of any defect.<br>
 Her neck was white like ermine too.<br>
@@ -236,7 +242,7 @@ hungry, thirsty, and on hard beds.<br>
 She was so deep in the wood<br>
 that she became entirely wild there,<br>
 but she never forgot<br>
-to pray to saint May.<br>
+to pray to saint Mary.<br>
 Often she remembered the image<br>
 on which she had made her pledge.<br>
 Soon her shoes were worn out,<br>
@@ -249,6 +255,8 @@ From winter as from summer,<br>
 her sides blackened entirely.<br>
 The color of her blonde hair changed.<br>
 It turned white like an ermine.<br>
+<br>
+<br>
 Her mouth was thinned,<br>
 and all around it blackened,<br>
 and her chin was so black<br>
@@ -349,6 +357,8 @@ mut avoit piue regardure.<br>
 & cler le vis & le faiture<br>
 Je cui el neis ne el menton.<br>
 n'avoit un point de mesfacon<br>
+<br>
+<br>
 Soz la boce sor le poitrine.<br>
 ert plus blanche ke flors d'espine<br>
 & si avoit beles mameles.<br>
@@ -383,6 +393,8 @@ tant mar fut iceste dolente.<br>
 mut fait a plendre sa jovente<br>
 mar fut onques la sue vie.<br>
 que tant est plane de folie<br>
+<br>
+<br>
 car a toz respondoit raison.<br>
 tant ert de bele afaitison<br>
 Que li fiz d'un empereor.<br>
@@ -392,8 +404,14 @@ tant errat par nuiz & par dis.<br>
 a fain a soit & a durs lis<br>
 Que tant i fut en le boscage.<br>
 qu'ele devint tote salvage<br>
+<br>
+<br>
+<br>
+<br>
 Senpres furent si drap useit.<br>
 & soi soler tot depaneit<br>
+<br>
+<br>
 tant par l'iver tant par l'esteit.<br>
 tot li noicirent li costeit<br>
 Se tenre car muat color.<br>
@@ -414,6 +432,10 @@ car maigre ert mut & degregue.<br>
 & de blanc poilh tote mossue<br>
 Noire & polhue ert la poitrine.<br>
 sembloit scorce de noire spine<br>
+<br>
+<br>
+<br>
+<br>
 Li ventres li ert toz caoiz.<br>
 nient ne manjoit & si ert droiz<br>
 Les ongles avoit ele granz.<br>
@@ -426,10 +448,16 @@ Ans li ert vis son escient.<br>
 & ele ni faloit nient<br>
 cant une spine li poindoit.<br>
 uns des pechiez jus li chaoit<br>
+<br>
+<br>
+<br>
+<br>
 Ne fat a plaindre li pechiez.<br>
 dont li cors est si castoiez<br>
 N'ert mervelhe s'ele ert mossue.<br>
 karante ans alat tote nue<br>
+<br>
+<br>
 Dous pains avoit ne gaire granz.<br>
 de ces viscat par plusors anz<br>
 Le premier an devinrent dur.<br>
@@ -486,6 +514,8 @@ She had such a pious gaze,<br>
 and her look and her features bright.<br>
 I believe on her nose and on her chin<br>
 there was no defect at all.<br>
+<br>
+<br>
 Above the bump on her chest,<br>
 it was whiter than hawthorn flower,<br>
 and of course she had beautiful breasts,<br>
@@ -520,6 +550,8 @@ Alas for this suffering!<br>
 There is much to bemoan of her youth.<br>
 Alas evermore for her life<br>
 is so full of folly."<br>
+<br>
+<br>
 As she answered all with reason<br>
 and had such a beautiful frame,<br>
 the son of an emperor<br>
@@ -529,8 +561,14 @@ So she roamed by night and by day<br>
 hungry, thirsty, and on hard beds.<br>
 Like that, there she was in the wood,<br>
 and so, she became entirely wild.<br>
+<br>
+<br>
+<br>
+<br>
 Soon, her clothes were worn out,<br>
 and soon her soles were torn up.<br>
+<br>
+<br>
 As much from winter as from summer,<br>
 her sides blackened entirely.<br>
 Her tender flesh changed color,<br>
@@ -551,6 +589,10 @@ for they were so skinny and degraded<br>
 and all wooly with white hairs.<br>
 Black and hairy was her chest.<br>
 It seemed like black thorny bark.<br>
+<br>
+<br>
+<br>
+<br>
 Her stomach was all sunken.<br>
 She ate nothing and so that was right.<br>
 She had large nails.<br>
@@ -563,10 +605,16 @@ So it seemed to her, in her mind,<br>
 and she was not wrong about this at all,<br>
 as a thorn pricked her,<br>
 one of her sins fell down from her.<br>
+<br>
+<br>
+<br>
+<br>
 She does not bemoan her sins<br>
 as her body is so chastised.<br>
 It was no marvel that she was wooly;<br>
 for forty years, she went totally nude.<br>
+<br>
+<br>
 She had two breads of no great size.<br>
 On these, she lived for many years.<br>
 The first year they became hard<br>
@@ -625,6 +673,8 @@ La buche petite par mesure<br>
 e simple avoit la regardure .<br>
 La face tendre e coluree<br>
 Cum rose qui sempres est nee .<br>
+<br>
+<br>
 Ne ja au nes n'au mentun<br>
 N'aparceussez meffacon .<br>
 Par sum le col blanc com ermine<br>
@@ -780,6 +830,8 @@ her little mouth mild,<br>
 and she had a simple gaze,<br>
 her face tender and blushing<br>
 like a rose that is always in bloom.<br>
+<br>
+<br>
 Indeed neither on her nose nor on her chin<br>
 would you be aware of any defect.<br>
 Along her neck was white like ermine.<br>
@@ -941,6 +993,8 @@ la bouche brieve & par mesure<br>
 & pie la regardeure<br>
 la face tendre & coloree<br>
 cumme rose qui senpres est nee<br>
+<br>
+<br>
 ja el nes ne el mentun<br>
 N'i veist l'un mesfacun<br>
 par sun le col blanc cum ermine<br>
@@ -951,6 +1005,8 @@ Soz la gorge en la poitrine<br>
 ere blanche cumme flor d'espine<br>
 blans bras aveit & beles mains<br>
 & les deis luncs gresles & pleins<br>
+<br>
+<br>
 N'ert trop grande ne trop petite<br>
 ja sa facun n'iert deserite<br>
 ja la bealte de ceste dune<br>
@@ -1014,6 +1070,8 @@ Se vous veisses sa oreille<br>
 mult vous semblast grant merveille<br>
 car mesgre esteit. & detrevee<br>
 & de blanc peil avirunee<br>
+<br>
+<br>
 N'aveit plus char en sun traiant<br>
 Ne mais cum il a en un gant<br>
 les bras. les mains. & les deiz<br>
@@ -1092,6 +1150,8 @@ her mouth small and mild,<br>
 and pious her gaze,<br>
 her face tender and blushing<br>
 like a rose that is always in bloom.<br>
+<br>
+<br>
 Indeed neither on her nose nor on her chin<br>
 was seen a defect.<br>
 Along her neck was white like ermine.<br>
@@ -1102,6 +1162,8 @@ Above the cleavage of her chest,<br>
 it was white like hawthorn flower.<br>
 She had white arms and white hands,<br>
 and long, slender, and smooth fingers.<br>
+<br>
+<br>
 She was neither too big nor too small.<br>
 Her frame could never be described.<br>
 The beauty of this lady<br>
@@ -1165,6 +1227,8 @@ If you saw her ears,<br>
 they would really seem to you a great marvel<br>
 for they were skinny and cracked<br>
 and covered in white hair.<br>
+<br>
+<br>
 She had no more flesh in her breast,<br>
 no more than there is in a glove.<br>
 Her arms, her hands, and her fingers<br>
@@ -1249,6 +1313,8 @@ La bouche bele & par mesure<br>
 & pieue la regardeure<br>
 la face tenre & coloree<br>
 comme rose novele nee<br>
+<br>
+<br>
 Ne ja el nes ne el menton<br>
 Ne parceuscies mesfacon<br>
 Le col avoit blanc com ermine<br>
@@ -1404,6 +1470,8 @@ her mouth beautiful and mild,<br>
 and pious her gaze,<br>
 her face tender and blushing<br>
 like a freshly-bloomed rose.<br>
+<br>
+<br>
 Indeed neither on her nose nor on her chin<br>
 might you perceive any defect.<br>
 Her neck was white like ermine.<br>
