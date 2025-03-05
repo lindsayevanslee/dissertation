@@ -161,3 +161,30 @@
 .text-container:hover .hover-text {
   opacity: 1;
 }
+
+/* Specific styling for portrait columns with visualizations */
+.empty-line {
+  display: block;
+  background-color: rgba(248, 134, 134, 0.3); /* light red */
+  height: 1.5em;
+  width: 100%;
+}
+
+.unique-verse {
+  background-color: rgba(144, 238, 144, 0.3); /* light green */
+}
+
+.negation {
+  background-color: rgba(173, 216, 230, 0.3); /* light blue */
+}
+
+.color-word {
+  background-color: rgba(221, 160, 221, 0.3); /* light purple */
+}
+
+.sequence-change {
+  display: block;
+  background-color: rgba(228, 232, 134, 0.3); /* light yellow */
+  height: 1.5em;
+  width: 100%;
+}
