@@ -4,7 +4,7 @@ title: "T-F^1^"
 
 # Manchester, John Rylands Library, French 6
 
-Digitization available via The University of Manchester [HERE](https://luna.manchester.ac.uk/luna/servlet/s/b1r057).
+Digitization available via The University of Manchester [HERE](https://luna.manchester.ac.uk/luna/servlet/detail/Man4MedievalVC~4~4~994331~227074?sort=reference_number%2Cimage_sequence_number%2Cparent_work_title%2Cdate_created&qvq=q:French%206;sort:reference_number%2Cimage_sequence_number%2Cparent_work_title%2Cdate_created;lc:Man4MedievalVC~4~4&mi=1&trs=4).
 
 ```{r setup, include=FALSE}
 # Load the xml2 package
@@ -34,6 +34,24 @@ process_line <- function(line) {
   # Handle column breaks
   if (xml_name(line) == "cb") {
     return("<div class='column-break'></div>")
+  }
+  
+    # Process emph elements (decorative initials)
+  emph_elements <- xml_find_all(line, ".//emph")
+  for (emph in emph_elements) {
+    # Get the initial letter text
+    initial_letter <- xml_text(emph)
+    
+    # Get the size attribute (n) and style attribute (rend)
+    size_attr <- xml_attr(emph, "n")
+    style_attr <- xml_attr(emph, "rend")
+    
+    # Create the HTML for the styled initial
+    styled_initial <- sprintf('<span class="decorative-initial %s" data-size="%s">%s</span>', 
+                             style_attr, size_attr, initial_letter)
+    
+    # Replace the emph element with the styled HTML
+    xml_text(emph) <- styled_initial
   }
   
   # Process choice elements
@@ -87,7 +105,7 @@ process_line <- function(line) {
     # Get folio number and format as standalone line
     folio_num <- xml_attr(line, "n")
     return(sprintf("<div class='folio-number'>%s</div>", folio_num))
-}
+  }
   
   # Only increment line count for verse lines
   if (xml_name(line) == "l") {
@@ -100,6 +118,24 @@ process_line <- function(line) {
     }
   } else {
     line_number <- ""
+  }
+  
+  # Process emph elements (decorative initials)
+  emph_elements <- xml_find_all(line, ".//emph")
+  for (emph in emph_elements) {
+    # Get the initial letter text
+    initial_letter <- xml_text(emph)
+    
+    # Get the size attribute (n) and style attribute (rend)
+    size_attr <- xml_attr(emph, "n")
+    style_attr <- xml_attr(emph, "rend")
+    
+    # Create the HTML for the styled initial
+    styled_initial <- sprintf('<span class="decorative-initial %s" data-size="%s">%s</span>', 
+                             style_attr, size_attr, initial_letter)
+    
+    # Replace the emph element with the styled HTML
+    xml_text(emph) <- styled_initial
   }
   
   # Find all <choice> elements within the line
@@ -121,15 +157,9 @@ process_line <- function(line) {
     xml_set_text(lb, "")
   }
   
-  # Get the text of the line and wrap in a div with line-height control
-  line_text <- sprintf("<div style='line-height: 1.2;'>%s</div>", as.character(line))
-  
-  # Return line with number if applicable
-  line_text <- sprintf("<div style='line-height: 1.2;'>%s%s</div>", 
-                      line_number, as.character(line))
-  
-  # Return the processed text of the line
-  return(line_text)
+  # Return line with number if applicable - using xml_text() instead of as.character()
+  return(sprintf("<div style='line-height: 1.2;'>%s%s</div>", 
+                line_number, xml_text(line)))
 }
 
 # Process each line and wrap with <div class='column-break'> at each <cb/>
@@ -190,6 +220,24 @@ process_line <- function(line) {
     line_number <- ""
   }
   
+  # Process emph elements (decorative initials)
+  emph_elements <- xml_find_all(line, ".//emph")
+  for (emph in emph_elements) {
+    # Get the initial letter text
+    initial_letter <- xml_text(emph)
+    
+    # Get the size attribute (n) and style attribute (rend)
+    size_attr <- xml_attr(emph, "n")
+    style_attr <- xml_attr(emph, "rend")
+    
+    # Create the HTML for the styled initial
+    styled_initial <- sprintf('<span class="decorative-initial %s" data-size="%s">%s</span>', 
+                             style_attr, size_attr, initial_letter)
+    
+    # Replace the emph element with the styled HTML
+    xml_text(emph) <- styled_initial
+  }
+  
   # Find all <choice> elements within the line
   choices <- xml_find_all(line, ".//choice")
   for (choice in choices) {
@@ -218,15 +266,9 @@ process_line <- function(line) {
     xml_set_text(lb, "")
   }
   
-  # Get the text of the line and wrap in a div with line-height control
-  line_text <- sprintf("<div style='line-height: 1.2;'>%s</div>", as.character(line))
-  
-  # Return line with number if applicable
-  line_text <- sprintf("<div style='line-height: 1.2;'>%s%s</div>", 
-                      line_number, as.character(line))
-  
-  # Return the processed text of the line
-  return(line_text)
+  # Return line with number if applicable - using xml_text() instead of as.character()
+  return(sprintf("<div style='line-height: 1.2;'>%s%s</div>", 
+                line_number, xml_text(line)))
 }
 
 # Process each line and wrap with <div class='column-break'> at each <cb/>
@@ -287,6 +329,24 @@ process_line <- function(line) {
     line_number <- ""
   }
   
+  # Process emph elements (decorative initials)
+  emph_elements <- xml_find_all(line, ".//emph")
+  for (emph in emph_elements) {
+    # Get the initial letter text
+    initial_letter <- xml_text(emph)
+    
+    # Get the size attribute (n) and style attribute (rend)
+    size_attr <- xml_attr(emph, "n")
+    style_attr <- xml_attr(emph, "rend")
+    
+    # Create the HTML for the styled initial
+    styled_initial <- sprintf('<span class="decorative-initial %s" data-size="%s">%s</span>', 
+                             style_attr, size_attr, initial_letter)
+    
+    # Replace the emph element with the styled HTML
+    xml_text(emph) <- styled_initial
+  }
+  
   # Find all <choice> elements within the line
   choices <- xml_find_all(line, ".//choice")
   for (choice in choices) {
@@ -306,15 +366,9 @@ process_line <- function(line) {
     xml_set_text(lb, "")
   }
   
-  # Get the text of the line and wrap in a div with line-height control
-  line_text <- sprintf("<div style='line-height: 1.2;'>%s</div>", as.character(line))
-  
-  # Return line with number if applicable
-  line_text <- sprintf("<div style='line-height: 1.2;'>%s%s</div>", 
-                      line_number, as.character(line))
-  
-  # Return the processed text of the line
-  return(line_text)
+  # Return line with number if applicable - using xml_text() instead of as.character()
+  return(sprintf("<div style='line-height: 1.2;'>%s%s</div>", 
+                line_number, xml_text(line)))
 }
 
 # Process each line and wrap with <div class='column-break'> at each <cb/>

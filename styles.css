@@ -102,6 +102,46 @@
   background-color: transparent;
 }
 
+/* Decorative initials styling for appendix */
+.decorative-initial {
+  float: left;
+  font-family: "Palatino", "Georgia", serif; /* A font with nice capitals */
+  margin-right: 0.1em;
+  line-height: 0.8;
+  color: #8B0000; /* Dark red - typical for medieval manuscripts */
+  position: relative;
+}
+
+.decorative-initial[data-size="2"] {
+  font-size: 2em;  /* Twice regular text size */
+  top: 0.05em;
+}
+
+.decorative-initial[data-size="3"] {
+  font-size: 3em;  /* Three times regular text size */
+  top: 0.1em;
+}
+
+.decorative-initial[data-size="4"] {
+  font-size: 4em;  /* Four times regular text size */
+  top: 0.15em;
+}
+
+.decorative-initial[data-size="5"] {
+  font-size: 5em;  /* Five times regular text size */
+  top: 0.2em;
+}
+
+.decorative-initial[data-size="6"] {
+  font-size: 6em;  /* Six times regular text size */
+  margin-top: 0.25em;
+}
+
+/* Floriate style */
+.decorative-initial.floriate {
+  color: #8B0000; /* Dark red */
+}
+
 /* Specific styling for portrait columns */
 /* Container for full-width layout */
 .column-page-outset {
