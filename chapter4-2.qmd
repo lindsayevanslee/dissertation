@@ -5,7 +5,18 @@ format:
     page-layout: full
 ---
 
-ADD EXPLANATION OF VISUALIZATIONS
+Here the T portraits are again laid out side by side but now with the addition of visual aids that make it easier to more immediately recognize the continuities and variances across each of the copies. Each color highlights specific features that are discussed extensively in Chapter 2 of this dissertation: the red blocks indicate where couplets are lacking from each copy; the yellow sections mark alterations in sequence; green highlights particularly unique verse construction or word choice; blue denotes the use of negation; and purple draws attention to mentions of color. These color-coded annotations draw on data visualization techniques to facilitate cross-copy close reading.
+
+<div class="visualization-legend">
+  <h3>Key</h3>
+  <ul>
+    <li><span class="legend-swatch empty-line"></span> Lacking verses</li>
+    <li><span class="legend-swatch sequence-change"></span> Sequence changes</li>
+    <li><span class="legend-swatch unique-verse"></span> Unique features</li>
+    <li><span class="legend-swatch negation"></span> Negated phrasing</li>
+    <li><span class="legend-swatch color-word"></span> Color imagery</li>
+  </ul>
+</div>
 
 To read these passages in translation, hover over each column with your cursor.
 

@@ -4,6 +4,8 @@ title: "T-F^1^"
 
 # Manchester, John Rylands Library, French 6
 
+Digitization available via The University of Manchester [HERE](https://luna.manchester.ac.uk/luna/servlet/s/b1r057).
+
 ```{r setup, include=FALSE}
 # Load the xml2 package
 library(xml2)
@@ -16,6 +18,7 @@ library(xml2)
 ## Nearly Diplomatic
 
 ```{r results='asis'}
+# START OF "NEARLY DIPLOMATIC" CODE
 # Read the XML content
 xml_file <- read_xml("data/T-F1-nearly_diplomatic.xml")
 
@@ -64,6 +67,7 @@ cat(formatted_text)
 ## Minimal
 
 ```{r results='asis'}
+# START OF "MINIMAL" CODE
 # Read the XML content
 xml_file <- read_xml("data/T-F1.xml")
 
@@ -151,6 +155,7 @@ cat(formatted_text)
 ## Intermediate
 
 ```{r results='asis'}
+# START OF "INTERMEDIATE" CODE
 # Read the XML content
 xml_file <- read_xml("data/T-F1.xml")
 
@@ -247,6 +252,7 @@ cat(formatted_text)
 ## Extensive
 
 ```{r results='asis'}
+# START OF "EXTENSIVE" CODE
 # Read the XML content
 xml_file <- read_xml("data/T-F1.xml")
 

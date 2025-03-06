@@ -165,26 +165,51 @@
 /* Specific styling for portrait columns with visualizations */
 .empty-line {
   display: block;
-  background-color: rgba(248, 134, 134, 0.3); /* light red */
+  background-color: rgba(245, 171, 171, 0.5); /* pale red base */
+  background-image: linear-gradient(135deg, 
+                    rgba(245, 171, 171, 0.7) 25%, 
+                    rgba(245, 171, 171, 0.5) 25%, 
+                    rgba(245, 171, 171, 0.5) 50%, 
+                    rgba(245, 171, 171, 0.7) 50%, 
+                    rgba(245, 171, 171, 0.7) 75%, 
+                    rgba(245, 171, 171, 0.5) 75%, 
+                    rgba(245, 171, 171, 0.5));
+  background-size: 15px 15px; /* Smaller pattern */
   height: 1.5em;
   width: 100%;
 }
 
 .unique-verse {
-  background-color: rgba(144, 238, 144, 0.3); /* light green */
+  background-color: rgba(173, 216, 173, 0.5); /* pale green */
 }
 
 .negation {
-  background-color: rgba(173, 216, 230, 0.3); /* light blue */
+  background-color: rgba(135, 206, 250, 0.5); /* sky blue */
 }
 
 .color-word {
-  background-color: rgba(221, 160, 221, 0.3); /* light purple */
+  background-color: rgba(218, 112, 214, 0.4); /* orchid */
 }
 
 .sequence-change {
   display: block;
-  background-color: rgba(228, 232, 134, 0.3); /* light yellow */
+  background-color: rgba(240, 230, 140, 0.5); /* khaki yellow */
   height: 1.5em;
   width: 100%;
+}
+
+.visualization-legend {
+  margin: 1em 0;
+  padding: 1em;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+.legend-swatch {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 8px;
+  vertical-align: middle;
+  border: 1px solid #ccc;
 }

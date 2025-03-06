@@ -4,6 +4,8 @@ title: "T-E"
 
 # Paris, BnF Arsenal, 3516
 
+Digitization available via Gallica [HERE](https://gallica.bnf.fr/ark:/12148/btv1b55000507q/f232.item).
+
 ```{r setup, include=FALSE}
 # Load the xml2 package
 library(xml2)
@@ -16,6 +18,7 @@ library(xml2)
 ## Minimal
 
 ```{r results='asis'}
+# START OF "MINIMAL" CODE
 # Read the XML content
 xml_file <- read_xml("data/T-E.xml")
 
@@ -103,6 +106,7 @@ cat(formatted_text)
 ## Intermediate
 
 ```{r results='asis'}
+# START OF "INTERMEDIATE" CODE
 # Read the XML content
 xml_file <- read_xml("data/T-E.xml")
 
@@ -199,6 +203,7 @@ cat(formatted_text)
 ## Extensive
 
 ```{r results='asis'}
+# START OF "EXTENSIVE" CODE
 # Read the XML content
 xml_file <- read_xml("data/T-E.xml")
 

@@ -5,7 +5,7 @@ format:
     page-layout: full
 ---
 
-Each of these columns features an edited transcription and English translation of the two portraits of Mary the Egyptian as they appear in each of the T manuscripts. Copy T-L is not included on this page due to lack of access to the original manuscript at the British Library. The two fragmentary copies of Version T (T-F^1^ and T-F^2^) do not offer any lines of either portrait, and so, they have also been excluded from this page.
+Each of these columns features an edited transcription and English translation of the two portraits of Mary the Egyptian as they appear in each of the T manuscripts. Copy T-L is not included on this page due to lack of access to the original manuscript at the British Library. The fragmentary copy T-F^1^ only offers the first 10.5 verses of the first portrait, and fragment T-F^2^ does not offer any verses of either portrait, and so, these two copies have also been excluded from this page.
 
 To read these passages in translation, hover over each column with your cursor.
 

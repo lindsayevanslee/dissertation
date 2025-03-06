@@ -16,6 +16,7 @@ library(xml2)
 ## Minimal
 
 ```{r results='asis'}
+# START OF "MINIMAL" CODE
 # Read the XML content
 xml_file <- read_xml("data/T-C.xml")
 
@@ -103,6 +104,7 @@ cat(formatted_text)
 ## Intermediate
 
 ```{r results='asis'}
+# START OF "INTERMEDIATE" CODE
 # Read the XML content
 xml_file <- read_xml("data/T-C.xml")
 
@@ -199,6 +201,7 @@ cat(formatted_text)
 ## Extensive
 
 ```{r results='asis'}
+# START OF "EXTENSIVE" CODE
 # Read the XML content
 xml_file <- read_xml("data/T-C.xml")
 
