@@ -1,0 +1,12 @@
+cff-version: 1.2.0
+message: "If you use this repository, please cite it as below."
+authors:
+- family-names: "Lee"
+  given-names: "Loren"
+  orcid: "https://orcid.org/0009-0001-2153-9991"
+
+title: "dissertation"
+version: 1.0.0
+doi: 
+date-released: 2025-03-10
+url: "https://github.com/leeloren/dissertation"
