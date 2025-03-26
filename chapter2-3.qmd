@@ -1,0 +1,5 @@
+---
+title: "A Cross-Copy Close Read"
+---
+
+This is the end of the second chapter of my Quarto book...

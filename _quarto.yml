@@ -5,26 +5,28 @@ project:
 book:
   title: "The Life of Saint Mary the Egyptian: A Digital Critical Edition of the Old French Version T with English Translations"
   author: "Loren Easterday Lee"
-  date: "03/11/2025"
+  date: "03/26/2025"
   chapters:
     - index.qmd
     - abstract.qmd
     - acknowledgements.qmd
     - intro.qmd
     - chapter1.qmd
-    - chapter2.qmd
-    - chapter3.qmd
-    - chapter4-1.qmd
-    - chapter4-2.qmd
-    - appendix-intro.qmd
-    - appendix-T-A.qmd
-    - appendix-T-B.qmd
-    - appendix-T-C.qmd
-    - appendix-T-D.qmd
-    - appendix-T-E.qmd
-    - appendix-T-F1.qmd
-    - appendix-T-F2.qmd
+    - chapter2-1.qmd
+    - chapter2-2.qmd
+    - portraits.qmd
+    - portraits-viz.qmd
+    - chapter2-3.qmd
     - conclusion.qmd
+    - appendix1.qmd
+    - appendix2-intro.qmd
+    - appendix2-T-A.qmd
+    - appendix2-T-B.qmd
+    - appendix2-T-C.qmd
+    - appendix2-T-D.qmd
+    - appendix2-T-E.qmd
+    - appendix2-T-F1.qmd
+    - appendix2-T-F2.qmd
     - references.qmd
 
 bibliography: references.bib

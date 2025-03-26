@@ -2,5 +2,5 @@
 title: "Introduction"
 ---
 
-This is where my introdcution will go....
+This is where my introduction will go....
 

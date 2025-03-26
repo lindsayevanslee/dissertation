@@ -1,5 +1,5 @@
 ---
-title: "Home"  # This appears in navigation
+title: "Front Matter"  # This appears in navigation
 ---
 ![](images/shesasheep.jpeg){width=100% fig-align="center"}
 
@@ -7,4 +7,4 @@ A Dissertation presented to the Graduate Faculty of the University of Virginia i
 
 ##### Department of French
 ##### University of Virginia
-##### April 2025
+##### April, 2025
