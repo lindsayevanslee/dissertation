@@ -143,6 +143,17 @@ process_line <- function(line) {
   # Only increment line count for verse lines
   if (xml_name(line) == "l") {
     line_count <<- line_count + 1
+    
+    # SPECIAL CASE: Hard-code line v.646 to remove apostrophe in "qu'il"
+    if (line_count == 646) {
+      return("<div style='line-height: 1.2;'>Nient plus quil est en .i. gans</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.650 to remove apostrophe in "qu'ele"
+    if (line_count == 650) {
+      return("<div style='line-height: 1.2;'>asdens les ront quele ot trencans</div>")
+    }
+    
     # Add line number div every 5th line
     line_number <- if (line_count %% 5 == 0) {
       sprintf("<div class='line-number'>%d</div>", line_count)
