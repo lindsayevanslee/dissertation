@@ -340,7 +340,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Extract the text from the &lt;orig&gt; tag</span></span>
 <span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>    orig_text <span class="ot">&lt;-</span> <span class="fu">xml_text</span>(<span class="fu">xml_find_first</span>(choice, <span class="st">".//orig"</span>))</span>
 <span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Remove the &lt;choice&gt; element and replace it with the text from the &lt;orig&gt; tag</span></span>
-<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>    <span class="fu">xml_set_text</span>(choice, orig_text)</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>    <span class="fu">xml_set_text</span>(choice, <span class="fu">paste0</span>(orig_text, <span class="st">" "</span>))</span>
 <span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>  }</span>
 <span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>  </span>
 <span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Now we want to remove any &lt;reg&gt; elements entirely</span></span>
@@ -435,11 +435,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="sc">!</span><span class="fu">is.na</span>(abbr_exists) <span class="sc">&amp;&amp;</span> <span class="sc">!</span><span class="fu">is.na</span>(expan_exists)) {</span>
 <span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a>      <span class="co"># If &lt;abbr&gt; and &lt;expan&gt; tags exist, extract only the &lt;reg&gt; text from &lt;expan&gt;</span></span>
 <span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a>      reg_text <span class="ot">&lt;-</span> <span class="fu">xml_text</span>(<span class="fu">xml_find_first</span>(choice, <span class="st">".//expan/reg"</span>))</span>
-<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a>      <span class="fu">xml_set_text</span>(choice, reg_text)</span>
+<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a>      <span class="fu">xml_set_text</span>(choice, <span class="fu">paste0</span>(reg_text, <span class="st">" "</span>))</span>
 <span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> {</span>
 <span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a>      <span class="co"># For non-abbreviation choices, keep original behavior</span></span>
 <span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a>      orig_text <span class="ot">&lt;-</span> <span class="fu">xml_text</span>(<span class="fu">xml_find_first</span>(choice, <span class="st">".//orig"</span>))</span>
-<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a>      <span class="fu">xml_set_text</span>(choice, orig_text)</span>
+<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a>      <span class="fu">xml_set_text</span>(choice, <span class="fu">paste0</span>(orig_text, <span class="st">" "</span>))</span>
 <span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a>    }</span>
 <span id="cb1-161"><a href="#cb1-161" aria-hidden="true" tabindex="-1"></a>  }</span>
 <span id="cb1-162"><a href="#cb1-162" aria-hidden="true" tabindex="-1"></a>  </span>
@@ -525,18 +525,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-242"><a href="#cb1-242" aria-hidden="true" tabindex="-1"></a>    <span class="fu">xml_text</span>(emph) <span class="ot">&lt;-</span> styled_initial</span>
 <span id="cb1-243"><a href="#cb1-243" aria-hidden="true" tabindex="-1"></a>  }</span>
 <span id="cb1-244"><a href="#cb1-244" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb1-245"><a href="#cb1-245" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Find all &lt;choice&gt; elements within the line</span></span>
-<span id="cb1-246"><a href="#cb1-246" aria-hidden="true" tabindex="-1"></a>  choices <span class="ot">&lt;-</span> <span class="fu">xml_find_all</span>(line, <span class="st">".//choice"</span>)</span>
-<span id="cb1-247"><a href="#cb1-247" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (choice <span class="cf">in</span> choices) {</span>
-<span id="cb1-248"><a href="#cb1-248" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Extract the text from the &lt;reg&gt; tag</span></span>
-<span id="cb1-249"><a href="#cb1-249" aria-hidden="true" tabindex="-1"></a>    reg_text <span class="ot">&lt;-</span> <span class="fu">xml_text</span>(<span class="fu">xml_find_first</span>(choice, <span class="st">".//reg"</span>))</span>
-<span id="cb1-250"><a href="#cb1-250" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Replace the &lt;choice&gt; element with the text from the &lt;reg&gt; tag</span></span>
-<span id="cb1-251"><a href="#cb1-251" aria-hidden="true" tabindex="-1"></a>    <span class="fu">xml_set_text</span>(choice, reg_text)</span>
-<span id="cb1-252"><a href="#cb1-252" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb1-253"><a href="#cb1-253" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb1-254"><a href="#cb1-254" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Now we want to remove any &lt;orig&gt; elements entirely</span></span>
-<span id="cb1-255"><a href="#cb1-255" aria-hidden="true" tabindex="-1"></a>  orig_elements <span class="ot">&lt;-</span> <span class="fu">xml_find_all</span>(line, <span class="st">".//orig"</span>)</span>
-<span id="cb1-256"><a href="#cb1-256" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xml_remove</span>(orig_elements)</span>
+<span id="cb1-245"><a href="#cb1-245" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Now we want to remove any &lt;orig&gt; elements entirely</span></span>
+<span id="cb1-246"><a href="#cb1-246" aria-hidden="true" tabindex="-1"></a>  orig_elements <span class="ot">&lt;-</span> <span class="fu">xml_find_all</span>(line, <span class="st">".//orig"</span>)</span>
+<span id="cb1-247"><a href="#cb1-247" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xml_remove</span>(orig_elements)</span>
+<span id="cb1-248"><a href="#cb1-248" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-249"><a href="#cb1-249" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Find all &lt;choice&gt; elements within the line</span></span>
+<span id="cb1-250"><a href="#cb1-250" aria-hidden="true" tabindex="-1"></a>  choices <span class="ot">&lt;-</span> <span class="fu">xml_find_all</span>(line, <span class="st">".//choice"</span>)</span>
+<span id="cb1-251"><a href="#cb1-251" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (choice <span class="cf">in</span> choices) {</span>
+<span id="cb1-252"><a href="#cb1-252" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Extract the text from the &lt;reg&gt; tag</span></span>
+<span id="cb1-253"><a href="#cb1-253" aria-hidden="true" tabindex="-1"></a>    reg_text <span class="ot">&lt;-</span> <span class="fu">xml_text</span>(<span class="fu">xml_find_first</span>(choice, <span class="st">".//reg"</span>))</span>
+<span id="cb1-254"><a href="#cb1-254" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Replace the &lt;choice&gt; element with the text from the &lt;reg&gt; tag</span></span>
+<span id="cb1-255"><a href="#cb1-255" aria-hidden="true" tabindex="-1"></a>    <span class="fu">xml_set_text</span>(choice, <span class="fu">paste0</span>(<span class="st">" "</span>, reg_text, <span class="st">" "</span>))</span>
+<span id="cb1-256"><a href="#cb1-256" aria-hidden="true" tabindex="-1"></a>  }</span>
 <span id="cb1-257"><a href="#cb1-257" aria-hidden="true" tabindex="-1"></a>  </span>
 <span id="cb1-258"><a href="#cb1-258" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Replace &lt;lb/&gt; tags with HTML line break</span></span>
 <span id="cb1-259"><a href="#cb1-259" aria-hidden="true" tabindex="-1"></a>  lb_elements <span class="ot">&lt;-</span> <span class="fu">xml_find_all</span>(line, <span class="st">".//lb"</span>)</span>
@@ -711,7 +711,7 @@ Qui toz jors dort. &amp; ne sesveille
 en ses ors pechier sendort
 </div>
 <div style="line-height: 1.2;">
-desquilseut al cuer la mort
+desquil seut al cuer la mort
 </div>
 <div style="line-height: 1.2;">
 Qnt il se muert . &amp; il le sent
@@ -1797,7 +1797,7 @@ Mais il la gari bien de mort
 &amp; si la fist venir a dreit port
 </div>
 <div style="line-height: 1.2;">
-<span class="decorative-initial floriate" data-size="2">Q</span>ntntMarie fu arivee
+<span class="decorative-initial floriate" data-size="2">Q</span>nt ntMarie fu arivee
 </div>
 <div style="line-height: 1.2;">
 dolente fu . &amp; esgaree
@@ -2303,7 +2303,7 @@ mais diverse est nostre vie
 tu amas tot teus chastee.
 </div>
 <div style="line-height: 1.2;">
-&amp; jeo luxure . &amp;. chastee. ordee
+&amp; jeo luxure . &amp;. chastee . ordee
 </div>
 <div style="line-height: 1.2;">
 deable eus a enemi
@@ -2544,7 +2544,7 @@ Si cumme jeo crei ceo q je di
 Si aies ui de mei merci.
 </div>
 <div style="line-height: 1.2;">
-<span class="decorative-initial floriate" data-size="2">Q</span>ntnt ele out faite sen oreisun
+<span class="decorative-initial floriate" data-size="2">Q</span>nt nt ele out faite sen oreisun
 </div>
 <div style="line-height: 1.2;">
 &amp; Deu lui out fait pardun
@@ -2901,7 +2901,7 @@ la char de lui mua color
 Qui ainz ert blanche cume flor
 </div>
 <div style="line-height: 1.2;">
-Que o livern. ke o leste
+Que o livern . ke o leste
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -3246,7 +3246,7 @@ fors sol a oure de manger
 Il viveient mult povrement
 </div>
 <div style="line-height: 1.2;">
-ceo ert de pain dorge. &amp; de pulment
+ceo ert de pain dorge . &amp; de pulment
 </div>
 <div style="line-height: 1.2;">
 &amp; toz les vendresdiz del an
@@ -4177,7 +4177,7 @@ la ou ele faisoit sa proiere
 tant laveit Nostre Sire ciere
 </div>
 <div style="line-height: 1.2;">
-de la poour qout Zozimas
+de la poour q out Zozimas
 </div>
 <div style="line-height: 1.2;">
 Si cunmence aler le pas
@@ -5177,7 +5177,7 @@ Ses mains croisa suz sa poitrine
 &amp; senvolepa dedens sa crigne
 </div>
 <div style="line-height: 1.2;">
-lalmesen vait en pais durable
+lalme sen vait en pais durable
 </div>
 <div style="line-height: 1.2;">
 Unc ni osa venir deable
@@ -5674,7 +5674,7 @@ Zozimas fu lie qui ceo vit
 devers le chief le cors saisist
 </div>
 <div style="line-height: 1.2;">
-le leun la a piez ps.
+le leun la a piez ps .
 </div>
 <div style="line-height: 1.2;">
 en tre lut els deus mis.
@@ -6068,7 +6068,7 @@ Qui toz jors dort. &amp; ne sesveille
 en ses ors pechier sendort
 </div>
 <div style="line-height: 1.2;">
-desquilseut al cuer la mort
+desquil seut al cuer la mort
 </div>
 <div style="line-height: 1.2;">
 Quant il se muert . &amp; il le sent
@@ -7154,7 +7154,7 @@ Mais il la gari bien de mort
 &amp; si la fist venir a dreit port
 </div>
 <div style="line-height: 1.2;">
-<span class="decorative-initial floriate" data-size="2">Q</span>uantntMarie fu arivee
+<span class="decorative-initial floriate" data-size="2">Q</span>uant ntMarie fu arivee
 </div>
 <div style="line-height: 1.2;">
 dolente fu . &amp; esgaree
@@ -7660,7 +7660,7 @@ mais diverse est nostre vie
 tu amas tot teus chastee.
 </div>
 <div style="line-height: 1.2;">
-&amp; jeo luxure . &amp;. chastee. ordee
+&amp; jeo luxure . &amp;. chastee . ordee
 </div>
 <div style="line-height: 1.2;">
 deable eus a enemi
@@ -7901,7 +7901,7 @@ Si cumme jeo crei ceo que je di
 Si aies ui de mei merci.
 </div>
 <div style="line-height: 1.2;">
-<span class="decorative-initial floriate" data-size="2">Q</span>uantnt ele out faite sen oreisun
+<span class="decorative-initial floriate" data-size="2">Q</span>uant nt ele out faite sen oreisun
 </div>
 <div style="line-height: 1.2;">
 &amp; Deu lui out fait pardun
@@ -8258,7 +8258,7 @@ la char de lui mua color
 Qui ainz ert blanche cumme flor
 </div>
 <div style="line-height: 1.2;">
-Que o livern. ke o leste
+Que o livern . ke o leste
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -8603,7 +8603,7 @@ fors sol a oure de manger
 Il viveient mult povrement
 </div>
 <div style="line-height: 1.2;">
-ceo ert de pain dorge. &amp; de pulment
+ceo ert de pain dorge . &amp; de pulment
 </div>
 <div style="line-height: 1.2;">
 &amp; toz les vendresdiz del an
@@ -9534,7 +9534,7 @@ la ou ele faisoit sa proiere
 tant laveit Nostre Sire ciere
 </div>
 <div style="line-height: 1.2;">
-de la poour qu’out Zozimas
+de la poour qu’ out Zozimas
 </div>
 <div style="line-height: 1.2;">
 Si cunmence aler le pas
@@ -10534,7 +10534,7 @@ Ses mains croisa suz sa poitrine
 &amp; senvolepa dedens sa crigne
 </div>
 <div style="line-height: 1.2;">
-lalmesen vait en pais durable
+lalme sen vait en pais durable
 </div>
 <div style="line-height: 1.2;">
 Unc ni osa venir deable
@@ -11031,7 +11031,7 @@ Zozimas fu lie qui ceo vit
 devers le chief le cors saisist
 </div>
 <div style="line-height: 1.2;">
-le leun la as piez pris.
+le leun la as piez pris .
 </div>
 <div style="line-height: 1.2;">
 en terre l’unt els deus mis.
@@ -11425,7 +11425,7 @@ Qui toz jors dort. &amp; ne s’esveille
 en ses ors pechier s’endort
 </div>
 <div style="line-height: 1.2;">
-desqu’ilsent al cuer la mort
+desqu’il sent al cuer la mort
 </div>
 <div style="line-height: 1.2;">
 Quant il se muert . &amp; il le sent
@@ -11491,7 +11491,7 @@ ceo que a fait ceo trovera
 <span class="decorative-initial floriate" data-size="2">C</span>este dame dunt voil parler
 </div>
 <div style="line-height: 1.2;">
-Mariel’oi apeler
+Marie l’oi apeler
 </div>
 <div style="line-height: 1.2;">
 Egipciane est por ceo dite
@@ -12511,7 +12511,7 @@ Mais il la gari bien de mort
 &amp; si la fist venir a dreit port
 </div>
 <div style="line-height: 1.2;">
-<span class="decorative-initial floriate" data-size="2">Q</span>uantMarie fu arivee
+<span class="decorative-initial floriate" data-size="2">Q</span>uant uantMarie fu arivee
 </div>
 <div style="line-height: 1.2;">
 dolente fu . &amp; esgaree
@@ -13258,7 +13258,7 @@ Si cumme jeo crei ceo que je di
 Si aies ui de mei merci.
 </div>
 <div style="line-height: 1.2;">
-<span class="decorative-initial floriate" data-size="2">Q</span>uant ele out faite sen oreisun
+<span class="decorative-initial floriate" data-size="2">Q</span>uant uant ele out faite sen oreisun
 </div>
 <div style="line-height: 1.2;">
 &amp; Deu lui out fait pardun
@@ -13615,7 +13615,7 @@ la char de lui mua color
 Qui ainz ert blanche cumme flor
 </div>
 <div style="line-height: 1.2;">
-Que o l’ivern. ke o l’este
+Que o l’ivern . ke o l’este
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -13960,7 +13960,7 @@ fors sol a oure de manger
 Il viveient mult povrement
 </div>
 <div style="line-height: 1.2;">
-ceo ert de pain d’orge. &amp; de pulment
+ceo ert de pain d’orge . &amp; de pulment
 </div>
 <div style="line-height: 1.2;">
 &amp; toz les vendresdiz de l’an
@@ -14350,7 +14350,7 @@ Qui esteit de home. ou de femme
 mes ceo esteit la Egiptiene
 </div>
 <div style="line-height: 1.2;">
-Deul’aveit iloc amenee
+Deu l’aveit iloc amenee
 </div>
 <div style="line-height: 1.2;">
 Ne voloit mes que fust celee
@@ -14844,7 +14844,7 @@ Marie lui a respundu
 <div class="line-number">
 960
 </div>
-Deul’otrit par sa vertu
+Deu l’otrit par sa vertu
 </div>
 </div>
 <div class="column-break">
@@ -14891,7 +14891,7 @@ la ou ele faisoit sa proiere
 tant l’aveit Nostre Sire ciere
 </div>
 <div style="line-height: 1.2;">
-de la poour qu’out Zozimas
+de la poour qu’ out Zozimas
 </div>
 <div style="line-height: 1.2;">
 Si cunmence aler le pas
@@ -15891,7 +15891,7 @@ Ses mains croisa suz sa poitrine
 &amp; s’envolepa dedens sa crigne
 </div>
 <div style="line-height: 1.2;">
-l’almes’en vait en pais durable
+l’alme s’en vait en pais durable
 </div>
 <div style="line-height: 1.2;">
 Unc n’i osa venir deable
@@ -16388,7 +16388,7 @@ Zozimas fu lie qui ceo vit
 devers le chief le cors saisist
 </div>
 <div style="line-height: 1.2;">
-le leun l’a as piez pris.
+le leun l’a as piez pris .
 </div>
 <div style="line-height: 1.2;">
 en terre l’unt els deus mis.
@@ -16405,7 +16405,7 @@ Quant en terre unt mis le cors
 <div class="line-number">
 1380
 </div>
-Zozimass’en est issu fors
+Zozimas s’en est issu fors
 </div>
 <div style="line-height: 1.2;">
 &amp; fist la cunmendatiun

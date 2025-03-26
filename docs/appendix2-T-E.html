@@ -340,7 +340,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Extract the text from the &lt;orig&gt; tag</span></span>
 <span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>    orig_text <span class="ot">&lt;-</span> <span class="fu">xml_text</span>(<span class="fu">xml_find_first</span>(choice, <span class="st">".//orig"</span>))</span>
 <span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Remove the &lt;choice&gt; element and replace it with the text from the &lt;orig&gt; tag</span></span>
-<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>    <span class="fu">xml_set_text</span>(choice, orig_text)</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>    <span class="fu">xml_set_text</span>(choice, <span class="fu">paste0</span>(orig_text, <span class="st">" "</span>))</span>
 <span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>  }</span>
 <span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>  </span>
 <span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Now we want to remove any &lt;reg&gt; elements entirely</span></span>
@@ -435,11 +435,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="sc">!</span><span class="fu">is.na</span>(abbr_exists) <span class="sc">&amp;&amp;</span> <span class="sc">!</span><span class="fu">is.na</span>(expan_exists)) {</span>
 <span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a>      <span class="co"># If &lt;abbr&gt; and &lt;expan&gt; tags exist, extract only the &lt;reg&gt; text from &lt;expan&gt;</span></span>
 <span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a>      reg_text <span class="ot">&lt;-</span> <span class="fu">xml_text</span>(<span class="fu">xml_find_first</span>(choice, <span class="st">".//expan/reg"</span>))</span>
-<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a>      <span class="fu">xml_set_text</span>(choice, reg_text)</span>
+<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a>      <span class="fu">xml_set_text</span>(choice, <span class="fu">paste0</span>(reg_text, <span class="st">" "</span>))</span>
 <span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> {</span>
 <span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a>      <span class="co"># For non-abbreviation choices, keep original behavior</span></span>
 <span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a>      orig_text <span class="ot">&lt;-</span> <span class="fu">xml_text</span>(<span class="fu">xml_find_first</span>(choice, <span class="st">".//orig"</span>))</span>
-<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a>      <span class="fu">xml_set_text</span>(choice, orig_text)</span>
+<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a>      <span class="fu">xml_set_text</span>(choice, <span class="fu">paste0</span>(orig_text, <span class="st">" "</span>))</span>
 <span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a>    }</span>
 <span id="cb1-161"><a href="#cb1-161" aria-hidden="true" tabindex="-1"></a>  }</span>
 <span id="cb1-162"><a href="#cb1-162" aria-hidden="true" tabindex="-1"></a>  </span>
@@ -525,18 +525,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-242"><a href="#cb1-242" aria-hidden="true" tabindex="-1"></a>    <span class="fu">xml_text</span>(emph) <span class="ot">&lt;-</span> styled_initial</span>
 <span id="cb1-243"><a href="#cb1-243" aria-hidden="true" tabindex="-1"></a>  }</span>
 <span id="cb1-244"><a href="#cb1-244" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb1-245"><a href="#cb1-245" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Find all &lt;choice&gt; elements within the line</span></span>
-<span id="cb1-246"><a href="#cb1-246" aria-hidden="true" tabindex="-1"></a>  choices <span class="ot">&lt;-</span> <span class="fu">xml_find_all</span>(line, <span class="st">".//choice"</span>)</span>
-<span id="cb1-247"><a href="#cb1-247" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (choice <span class="cf">in</span> choices) {</span>
-<span id="cb1-248"><a href="#cb1-248" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Extract the text from the &lt;reg&gt; tag</span></span>
-<span id="cb1-249"><a href="#cb1-249" aria-hidden="true" tabindex="-1"></a>    reg_text <span class="ot">&lt;-</span> <span class="fu">xml_text</span>(<span class="fu">xml_find_first</span>(choice, <span class="st">".//reg"</span>))</span>
-<span id="cb1-250"><a href="#cb1-250" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Replace the &lt;choice&gt; element with the text from the &lt;reg&gt; tag</span></span>
-<span id="cb1-251"><a href="#cb1-251" aria-hidden="true" tabindex="-1"></a>    <span class="fu">xml_set_text</span>(choice, reg_text)</span>
-<span id="cb1-252"><a href="#cb1-252" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb1-253"><a href="#cb1-253" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb1-254"><a href="#cb1-254" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Now we want to remove any &lt;orig&gt; elements entirely</span></span>
-<span id="cb1-255"><a href="#cb1-255" aria-hidden="true" tabindex="-1"></a>  orig_elements <span class="ot">&lt;-</span> <span class="fu">xml_find_all</span>(line, <span class="st">".//orig"</span>)</span>
-<span id="cb1-256"><a href="#cb1-256" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xml_remove</span>(orig_elements)</span>
+<span id="cb1-245"><a href="#cb1-245" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Now we want to remove any &lt;orig&gt; elements entirely</span></span>
+<span id="cb1-246"><a href="#cb1-246" aria-hidden="true" tabindex="-1"></a>  orig_elements <span class="ot">&lt;-</span> <span class="fu">xml_find_all</span>(line, <span class="st">".//orig"</span>)</span>
+<span id="cb1-247"><a href="#cb1-247" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xml_remove</span>(orig_elements)</span>
+<span id="cb1-248"><a href="#cb1-248" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-249"><a href="#cb1-249" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Find all &lt;choice&gt; elements within the line</span></span>
+<span id="cb1-250"><a href="#cb1-250" aria-hidden="true" tabindex="-1"></a>  choices <span class="ot">&lt;-</span> <span class="fu">xml_find_all</span>(line, <span class="st">".//choice"</span>)</span>
+<span id="cb1-251"><a href="#cb1-251" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (choice <span class="cf">in</span> choices) {</span>
+<span id="cb1-252"><a href="#cb1-252" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Extract the text from the &lt;reg&gt; tag</span></span>
+<span id="cb1-253"><a href="#cb1-253" aria-hidden="true" tabindex="-1"></a>    reg_text <span class="ot">&lt;-</span> <span class="fu">xml_text</span>(<span class="fu">xml_find_first</span>(choice, <span class="st">".//reg"</span>))</span>
+<span id="cb1-254"><a href="#cb1-254" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Replace the &lt;choice&gt; element with the text from the &lt;reg&gt; tag</span></span>
+<span id="cb1-255"><a href="#cb1-255" aria-hidden="true" tabindex="-1"></a>    <span class="fu">xml_set_text</span>(choice, <span class="fu">paste0</span>(<span class="st">" "</span>, reg_text, <span class="st">" "</span>))</span>
+<span id="cb1-256"><a href="#cb1-256" aria-hidden="true" tabindex="-1"></a>  }</span>
 <span id="cb1-257"><a href="#cb1-257" aria-hidden="true" tabindex="-1"></a>  </span>
 <span id="cb1-258"><a href="#cb1-258" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Replace &lt;lb/&gt; tags with HTML line break</span></span>
 <span id="cb1-259"><a href="#cb1-259" aria-hidden="true" tabindex="-1"></a>  lb_elements <span class="ot">&lt;-</span> <span class="fu">xml_find_all</span>(line, <span class="st">".//lb"</span>)</span>
@@ -637,7 +637,7 @@ dont Dex ne face vrai pdon
 p foi &amp; p confession
 </div>
 <div style="line-height: 1.2;">
-acelsq prendent penitance
+acels q prendent penitance
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -661,7 +661,7 @@ Car honte fait al Creator
 <div class="line-number">
 25
 </div>
-Qmlt est fel &amp; en vieus
+Q mlt est fel &amp; en vieus
 </div>
 <div style="line-height: 1.2;">
 &amp; de mal faire covoiteus
@@ -670,7 +670,7 @@ Qmlt est fel &amp; en vieus
 devant nos vient souvent est
 </div>
 <div style="line-height: 1.2;">
-Qn volroit aluy torn
+Q n volroit aluy torn
 </div>
 <div style="line-height: 1.2;">
 Il nest nus hom enceste vie
@@ -685,7 +685,7 @@ Q tant soit sage u nait folie
 Li apostle q Deu sievoient
 </div>
 <div style="line-height: 1.2;">
-pmlt de foies pechoient
+p mlt de foies pechoient
 </div>
 <div style="line-height: 1.2;">
 p co ne me puis mveill
@@ -759,10 +759,10 @@ Encore fesist il folie
 114r
 </div>
 <div style="line-height: 1.2;">
-Qntlameenvaꝯme caitive
+Qnt lame enva ꝯme caitive
 </div>
 <div style="line-height: 1.2;">
-Qliferadonqs aide
+Qlifera donqs aide
 </div>
 <div style="line-height: 1.2;">
 N hom soseies nelifera
@@ -774,7 +774,7 @@ Se nest cil sires ql cria
 <div class="line-number">
 55
 </div>
-<span class="decorative-initial floriate" data-size="2">C</span>eladameeladamedt doi ꝯt
+<span class="decorative-initial floriate" data-size="2">C</span>eladame eladamedt doi ꝯt
 </div>
 <div style="line-height: 1.2;">
 Marieloi apeler
@@ -831,7 +831,7 @@ de -ii- parens ne se gardoit
 A tos homes sabandonoit
 </div>
 <div style="line-height: 1.2;">
-Nespoirq fust en ceste vie
+Nespoir q fust en ceste vie
 </div>
 <div style="line-height: 1.2;">
 Feme de pl gnt legerie
@@ -873,7 +873,7 @@ Selongemt tiens cest mest
 Mlt en arons gnt reprov
 </div>
 <div style="line-height: 1.2;">
-PDeu te proi fille Marie
+P Deu te proi fille Marie
 </div>
 <div style="line-height: 1.2;">
 Guerpis mais ceste legerie
@@ -912,7 +912,7 @@ porta malvaise legerie
 tes peres en est si iries
 </div>
 <div style="line-height: 1.2;">
-Jamaisanul jor ne ert lies
+Jamais anul jor ne ert lies
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -921,10 +921,10 @@ Jamaisanul jor ne ert lies
 &amp; maldist tote savente
 </div>
 <div style="line-height: 1.2;">
-Qntafait tele engenieure
+Qnt afait tele engenieure
 </div>
 <div style="line-height: 1.2;">
-QntMarielooit parler
+Qnt Marielooit parler
 </div>
 <div style="line-height: 1.2;">
 Nelevoloit nes escout
@@ -941,7 +941,7 @@ del tot volt faire ses ꝯmas
 </div>
 <div class="column-break">
 <div style="line-height: 1.2;">
-pbn faire savolente
+p bn faire savolente
 </div>
 <div style="line-height: 1.2;">
 Sen fui en autre regne
@@ -1001,7 +1001,7 @@ p sa [] biaute li jovencel
 Ele les recoit volents
 </div>
 <div style="line-height: 1.2;">
-Nietseulemt por lor dens
+Niet seulemt por lor dens
 </div>
 <div style="line-height: 1.2;">
 Mais p faire lesien delit
@@ -1019,7 +1019,7 @@ A son delit ert entendive
 de jor &amp; denuit la chaitive
 </div>
 <div style="line-height: 1.2;">
-boire&amp;mang &amp; luxure
+boire&amp; mang &amp; luxure
 </div>
 <div style="line-height: 1.2;">
 Co ert tote la soie cure
@@ -1067,7 +1067,7 @@ Si se faisoient la hardi
 de Gisarmes &amp; de espees
 </div>
 <div style="line-height: 1.2;">
-Sentredonoietgnt colees
+Sentredonoiet gnt colees
 </div>
 <div style="line-height: 1.2;">
 Li sans q en ert espandus
@@ -1165,7 +1165,7 @@ En icel tans ne en cel regne
 Nen ot onqs plus bele feme
 </div>
 <div style="line-height: 1.2;">
-onqsꝯ tesse ne roine
+onqs ꝯ tesse ne roine
 </div>
 <div style="line-height: 1.2;">
 Nen ot el chief plus bele cigne
@@ -1234,7 +1234,7 @@ Ert si blance ꝯ flor despine
 blans bras avoit &amp;blaces mais
 </div>
 <div style="line-height: 1.2;">
-lesdoisreosgilles&amp;plains
+lesdoisreosgilles &amp;plains
 </div>
 <div style="line-height: 1.2;">
 Gent cors avoit &amp;bnmolle
@@ -1246,13 +1246,13 @@ Sus lasoele lonc lecoste
 <div class="line-number">
 185
 </div>
-Netropgndenetp petite
+Netrop gnde netp petite
 </div>
 <div style="line-height: 1.2;">
-Jasafaconnenertdescrite
+Jasafacon nen ertdescrite
 </div>
 <div style="line-height: 1.2;">
-lagnsbiautesdecestedame
+lagns biautesdecestedame
 </div>
 <div style="line-height: 1.2;">
 Niert toute escritepnulhome
@@ -1270,7 +1270,7 @@ Rien ni avoit qamend
 a plaindre fait tel create
 </div>
 <div style="line-height: 1.2;">
-QntdesoCreatornacure
+Qnt deso Creatornacure
 </div>
 <div style="line-height: 1.2;">
 Ele recevoit gns preses
@@ -1285,7 +1285,7 @@ Sen achatoit biaus garnems
 biaus dras avoit &amp; avenas
 </div>
 <div style="line-height: 1.2;">
-pbn plaisir a ses amans
+p bn plaisir a ses amans
 </div>
 <div style="line-height: 1.2;">
 Navoit pas soig dedsdelaine
@@ -1305,7 +1305,7 @@ Si afubloit matel ermi
 </div>
 <div class="column-break">
 <div style="line-height: 1.2;">
-Sollsbnpais de cordoan
+Solls bn pais de cordoan
 </div>
 <div style="line-height: 1.2;">
 chaucoit at les jors del an
@@ -1476,13 +1476,13 @@ Se v lor aves q doner
 Si porres bn deus aler
 </div>
 <div style="line-height: 1.2;">
-pDeu ce respont la dolente
+p Deu ce respont la dolente
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
 250
 </div>
-mltp ai bele jovente
+mlt p ai bele jovente
 </div>
 </div>
 <div class="column-break">
@@ -1505,13 +1505,13 @@ Nepuet muer qne senrie
 <div class="line-number">
 255
 </div>
-Qntaoi le covenant
+Qnt aoi le covenant
 </div>
 <div style="line-height: 1.2;">
 Guerpi la sisen vait riant
 </div>
 <div style="line-height: 1.2;">
-Eledolentesentorna
+Ele dolentesentorna
 </div>
 <div style="line-height: 1.2;">
 Ainc a lostel ne repaira
@@ -1547,7 +1547,7 @@ a aeus en vint isnelemt
 &amp; i pla mlt simplemt
 </div>
 <div style="line-height: 1.2;">
-<span class="decorative-initial floriate" data-size="2">S</span>eigneign dist ele pelerin
+<span class="decorative-initial floriate" data-size="2">S</span>eign eign dist ele pelerin
 </div>
 <div style="line-height: 1.2;">
 Dexv mete en corage fin
@@ -1559,7 +1559,7 @@ Dexv mete en corage fin
 <div class="line-number">
 270
 </div>
-Qv me fa cies carite
+Q v me fa cies carite
 </div>
 <div style="line-height: 1.2;">
 Jasui jo une povre feme
@@ -1634,7 +1634,7 @@ Sus en lanef le font mont
 Apres silevont des ancrer
 </div>
 <div style="line-height: 1.2;">
-Donqsꝯmcentanagier
+Donqs ꝯmcent anagier
 </div>
 <div style="line-height: 1.2;">
 Cil del dromont lipl leg
@@ -1675,7 +1675,7 @@ pmes les pnt atastoner
 dont les ꝯmenca a baisier
 </div>
 <div style="line-height: 1.2;">
-&amp;entsensalosengier
+&amp;entsens alosengier
 </div>
 <div style="line-height: 1.2;">
 Niot-i-seul tant fust lassez
@@ -1744,7 +1744,7 @@ p faire bn le sien delis
 Ala lanuit p tot les lis
 </div>
 <div style="line-height: 1.2;">
-Amltgnt gres les recevoit
+Amlt gnt gres les recevoit
 </div>
 <div style="line-height: 1.2;">
 lor volentes aenplisoit
@@ -1762,10 +1762,10 @@ Q pot soffrir issi gnt get
 de ce nestuet il dout mie
 </div>
 <div style="line-height: 1.2;">
-Qnaitdyable a ꝯpaignie
+Q nait dyable a ꝯpaignie
 </div>
 <div style="line-height: 1.2;">
-Qvolents la les noiast
+Q volents la les noiast
 </div>
 <div style="line-height: 1.2;">
 Se Damedex le li laissast
@@ -1780,7 +1780,7 @@ M ais il les agari demort
 &amp; si les fist venir al port
 </div>
 <div style="line-height: 1.2;">
-QntMarie fu arivee
+Qnt Marie fu arivee
 </div>
 <div style="line-height: 1.2;">
 Dolante fu &amp; esgaree
@@ -1789,7 +1789,7 @@ Dolante fu &amp; esgaree
 Sospire &amp; pleure a la rive
 </div>
 <div style="line-height: 1.2;">
-Nesetqfaire la caitive
+Neset qfaire la caitive
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -1840,7 +1840,7 @@ Ains q venist lasention
 De la sainte onoree
 </div>
 <div style="line-height: 1.2;">
-Qidevoit estre a oree
+Q idevoit estre a oree
 </div>
 <div style="line-height: 1.2;">
 ot en pirie sitot le lieu
@@ -1890,7 +1890,7 @@ des pelerins dout lemer
 Q vont altemple p orer
 </div>
 <div style="line-height: 1.2;">
-ꝯmepudome &amp; ꝯme sage
+ꝯme pudome &amp; ꝯme sage
 </div>
 <div style="line-height: 1.2;">
 Al most vot p bo corage
@@ -1908,10 +1908,10 @@ mist soi de dens la ꝯpaignie
 Entra en la procession
 </div>
 <div style="line-height: 1.2;">
-Nonpasp bone ente[]cio]cio
+Nonpas p bone ente[]cio ]cio
 </div>
 <div style="line-height: 1.2;">
-lipelerinqleveoient
+lipelerin q leveoient
 </div>
 <div style="line-height: 1.2;">
 Savolente ne conissoiet
@@ -1947,7 +1947,7 @@ celiert vis son escient
 Q ele veoit une gent
 </div>
 <div style="line-height: 1.2;">
-Qlisambloietchrs
+Q lisambloiet chrs
 </div>
 <div style="line-height: 1.2;">
 mais mlt avoiet lesvis fiers
@@ -1989,7 +1989,7 @@ A la pfin voit &amp; entent
 Q ses pechies le li deffent
 </div>
 <div style="line-height: 1.2;">
-delcuerꝯmenceasospirer
+delcuer ꝯmence asospirer
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -2031,7 +2031,7 @@ p coi fesis les ors pechies
 <div class="line-number">
 400
 </div>
-dtDex est issi corecies
+dt Dex est issi corecies
 </div>
 </div>
 <div class="column-break">
@@ -2039,13 +2039,13 @@ dtDex est issi corecies
 mal ꝯ seil ai tostans eu
 </div>
 <div style="line-height: 1.2;">
-QntmoCreator ai pdeu
+Qnt mo Creator ai pdeu
 </div>
 <div style="line-height: 1.2;">
 tant p sui plais devil orde
 </div>
 <div style="line-height: 1.2;">
-QDamledeunademoicure
+Q Damledeuna demoicure
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -2099,7 +2099,7 @@ Qnt il te dist ave Marie
 de la Deu grace raemplie
 </div>
 <div style="line-height: 1.2;">
-Entoipndra humanite
+Entoi pndra humanite
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -2108,7 +2108,7 @@ Entoipndra humanite
 Jhu de sainte maiste
 </div>
 <div style="line-height: 1.2;">
-Qntq il dist tu lotrias
+Qnt q il dist tu lotrias
 </div>
 <div style="line-height: 1.2;">
 la sieue ancele reclamas
@@ -2144,7 +2144,7 @@ Ci gpis ja la male vie
 Q od li nar ai ꝯpaignie
 </div>
 <div style="line-height: 1.2;">
-EntonFil ai jo macreance
+Enton Fil ai jo macreance
 </div>
 <div style="line-height: 1.2;">
 toi met en plege &amp; en fiace
@@ -2165,7 +2165,7 @@ tote gpis jo ceste vie
 p ma malvaise legerie
 </div>
 <div style="line-height: 1.2;">
-Jamaisniert jor naie guace
+Jamais niert jor naie guace
 </div>
 <div style="line-height: 1.2;">
 Mlt ert aspre mapenitace
@@ -2177,7 +2177,7 @@ Virgeroine jo croi bien
 <div class="line-number">
 440
 </div>
-Qonqsnest icele rien
+Q onqs nest icele rien
 </div>
 <div style="line-height: 1.2;">
 Q tant p soit fors aveng
@@ -2186,7 +2186,7 @@ Q tant p soit fors aveng
 Setu ton Fil en veus proier
 </div>
 <div style="line-height: 1.2;">
-Qmlt ne soit tost pdone
+Q mlt ne soit tost pdone
 </div>
 <div style="line-height: 1.2;">
 &amp; aton Fil lues acorde
@@ -2245,7 +2245,7 @@ Q de lespine issi larose
 &amp; delarose issi li fruis
 </div>
 <div style="line-height: 1.2;">
-pcoidyables fu destruis
+pcoi dyables fu destruis
 </div>
 <div style="line-height: 1.2;">
 Un non avons co est Marie
@@ -2308,10 +2308,10 @@ Q plus reluist q geme enor
 <div class="line-number">
 475
 </div>
-Entoipst char li Fiex al roi
+Entoi pst char li Fiex al roi
 </div>
 <div style="line-height: 1.2;">
-QS. Jehans mostra al doi
+Q S. Jehans mostra al doi
 </div>
 <div style="line-height: 1.2;">
 dist ql estoit li Aignels Dei
@@ -2332,10 +2332,10 @@ Q il jeta de paradis
 Q il devoit lemont salv
 </div>
 <div style="line-height: 1.2;">
-Selq da sempres engan
+Sel q da sempres engan
 </div>
 <div style="line-height: 1.2;">
-Si ꝯ il fist lepremhome
+Si ꝯ il fist leprem home
 </div>
 <div style="line-height: 1.2;">
 Q il fist mang delapome
@@ -2353,7 +2353,7 @@ onqs del su en rien ni tva
 Qnt si levit arme &amp; fort
 </div>
 <div style="line-height: 1.2;">
-ptisonlidona mort
+p tison lidona mort
 </div>
 <div style="line-height: 1.2;">
 mlt fu li mors bon euree
@@ -2368,10 +2368,10 @@ p coi vie fu restoree
 Se li Fiex Deu ne fust ocis
 </div>
 <div style="line-height: 1.2;">
-Jahomnen trast en paradis
+Jahom nen trast en paradis
 </div>
 <div style="line-height: 1.2;">
-plamortpst il les vtus
+p lamort pst il les vtus
 </div>
 <div style="line-height: 1.2;">
 p coi dyables fu vencus
@@ -2383,13 +2383,13 @@ p coi dyables fu vencus
 denfer brisa laserreure
 </div>
 <div style="line-height: 1.2;">
-Sienron pi tot laclosure
+Sien ron pi tot laclosure
 </div>
 <div style="line-height: 1.2;">
 Fors en jeta saꝯpaignie
 </div>
 <div style="line-height: 1.2;">
-Qdyables avoit ravie
+Q dyables avoit ravie
 </div>
 <div style="line-height: 1.2;">
 a son pre tos les mena
@@ -2406,7 +2406,7 @@ en sa glorie ou il esta
 puis vint el sepulcre ason cors
 </div>
 <div style="line-height: 1.2;">
-pgnt vertu en isci fors
+p gnt vertu en isci fors
 </div>
 <div style="line-height: 1.2;">
 as apostles puis aparut
@@ -2463,7 +2463,7 @@ A son secont avenemt
 tu seras en sa ꝯpaignie
 </div>
 <div style="line-height: 1.2;">
-ꝯmelasoie chiere amie
+ꝯme lasoie chiere amie
 </div>
 <div style="line-height: 1.2;">
 Il jugera &amp; mors &amp; vis
@@ -2502,7 +2502,7 @@ Siꝯ jo croi ce q jo di
 Si aies vos de moi merci
 </div>
 <div style="line-height: 1.2;">
-<span class="decorative-initial floriate" data-size="2">Q</span>ntnt ot finee sorison
+<span class="decorative-initial floriate" data-size="2">Q</span>nt nt ot finee sorison
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -2526,7 +2526,7 @@ El temple entra sans demace
 <div class="line-number">
 535
 </div>
-de densent sans destorbier
+de dens ent sans destorbier
 </div>
 <div style="line-height: 1.2;">
 Si va oir le Deu mestier
@@ -2565,7 +2565,7 @@ A limage sest repairie
 En li atote sesperance
 </div>
 <div style="line-height: 1.2;">
-ꝯseilreqertdepenitance
+ꝯseil reqert depenitance
 </div>
 <div style="line-height: 1.2;">
 En ql maniere le fera
@@ -2699,7 +2699,7 @@ p matin ala almost
 p la oir le Deu mest
 </div>
 <div style="line-height: 1.2;">
-larecutcorp domini
+larecut corp domini
 </div>
 <div style="line-height: 1.2;">
 A donc fu lie ainc nefusi
@@ -2753,7 +2753,7 @@ p sa mci ne le gpise
 Iluec est tote sa fiance
 </div>
 <div style="line-height: 1.2;">
-orꝯmencasapenitance
+orꝯmenca sapenitance
 </div>
 <div style="line-height: 1.2;">
 Napas talent derepetir
@@ -2908,7 +2908,7 @@ Se v en veiscies loreille
 <div class="line-number">
 640
 </div>
-mltv venist agnt mveille
+mlt v venist agnt mveille
 </div>
 <div style="line-height: 1.2;">
 Q maigre estoit &amp; de creue
@@ -2938,7 +2938,7 @@ les bras les mains &amp; les lons dois
 Avoit plus noirs q nenest pois
 </div>
 <div style="line-height: 1.2;">
-mltp avoit lesongles gns
+mlt p avoit lesongles gns
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -2952,7 +2952,7 @@ asdens les rot qle ot trencas
 115v
 </div>
 <div style="line-height: 1.2;">
-liventresliert agaris
+liventres liert agaris
 </div>
 <div style="line-height: 1.2;">
 car navoit nul deses delis
@@ -2994,7 +2994,7 @@ de co estoit ele mlt lie
 Qnt ele avoit lagnt hascie
 </div>
 <div style="line-height: 1.2;">
-Nestoitmveillesiert noircie
+Nestoit mveille siert noircie
 </div>
 <div style="line-height: 1.2;">
 car mlt de menoit aspre vie
@@ -3042,7 +3042,7 @@ mais co ert petite ptie
 Qnt ele ot tot son pai use
 </div>
 <div style="line-height: 1.2;">
-donqsaqltlerbe del pre
+donqs aqlt lerbe del pre
 </div>
 <div style="line-height: 1.2;">
 ꝯ autre beste lemangoit
@@ -3066,7 +3066,7 @@ Ne fait aplaindre lipechiet
 dont licors est si castiet
 </div>
 <div style="line-height: 1.2;">
-derbevesq &amp; de racine
+derbe vesq &amp; de racine
 </div>
 <div style="line-height: 1.2;">
 dis &amp; set anz en la gastine
@@ -3093,7 +3093,7 @@ tot ce lifaisoit ramenbrer
 <div class="line-number">
 690
 </div>
-Qlejadis soloit amer
+Qle jadis soloit amer
 </div>
 <div style="line-height: 1.2;">
 les biaus delis &amp; les bels lieus
@@ -3140,7 +3140,7 @@ Enpluisors lieus pst son ostal
 Sa vie estoit esperital
 </div>
 <div style="line-height: 1.2;">
-<span class="decorative-initial floriate" data-size="2">O</span>rlairomesrlairomes a demarie
+<span class="decorative-initial floriate" data-size="2">O</span>rlairomes rlairomes a demarie
 </div>
 <div style="line-height: 1.2;">
 Si v dirons dun abeie
@@ -3155,10 +3155,10 @@ Q ert al chief de la forest
 Si ꝯ li livres nos fait cert
 </div>
 <div style="line-height: 1.2;">
-onqsDex ne fist nule gent
+onqs Dex ne fist nule gent
 </div>
 <div style="line-height: 1.2;">
-Qvesqsent tant bonemt
+Q vesqsent tant bonemt
 </div>
 <div style="line-height: 1.2;">
 Ni miex servent lor cator
@@ -3209,7 +3209,7 @@ fors seul al eure demang
 Il vivoient mlt povremt
 </div>
 <div style="line-height: 1.2;">
-depaidorge &amp; de polmt
+depai dorge &amp; de polmt
 </div>
 <div style="line-height: 1.2;">
 &amp; tos les venredis de lan
@@ -3227,13 +3227,13 @@ Aighe bevoient q niert saine
 Car ele niert pas defontaine
 </div>
 <div style="line-height: 1.2;">
-Entrelsnestoit pas simonie
+Entrels nestoit pas simonie
 </div>
 <div style="line-height: 1.2;">
 Ne covoitise ne envie
 </div>
 <div style="line-height: 1.2;">
-Navoietsoigdarget ne dor
+Navoiet soig darget ne dor
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -3248,7 +3248,7 @@ Nul dels navoit ppete
 tot erent dune volente
 </div>
 <div style="line-height: 1.2;">
-Nestho la lor bonte v die
+Nest ho la lor bonte v die
 </div>
 <div style="line-height: 1.2;">
 tant estoiet de bone vie
@@ -3266,7 +3266,7 @@ le prem jor faisoiet caine
 li abes les a cu mencoit
 </div>
 <div style="line-height: 1.2;">
-Corpdni lor donoit
+Corp dni lor donoit
 </div>
 <div style="line-height: 1.2;">
 Qnt les avoit aꝯmchies
@@ -3311,7 +3311,7 @@ No pas p peur de larron
 <div class="line-number">
 750
 </div>
-Qlcremisset de lor maison
+Ql cremisset de lor maison
 </div>
 </div>
 <div class="column-break">
@@ -3439,7 +3439,7 @@ En la forest entel angone
 <div class="line-number">
 785
 </div>
-pescap de cel peril
+p escap de cel peril
 </div>
 <div style="line-height: 1.2;">
 estoient il entel escil
@@ -3487,13 +3487,13 @@ puis estoiet tot lan sos geu
 Ne lor estovoit cremir leu
 </div>
 <div style="line-height: 1.2;">
-Qntreviet al jor deqresme
+Qnt reviet al jor deqresme
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
 800
 </div>
-Qcasꝯ doit aler son esme
+Q casꝯ doit aler son esme
 </div>
 </div>
 <div class="column-break">
@@ -3522,7 +3522,7 @@ Adamledeu les ꝯmandoit
 Uns senva adest partie
 </div>
 <div style="line-height: 1.2;">
-Qmlt estoit de bone vie
+Q mlt estoit de bone vie
 </div>
 <div style="line-height: 1.2;">
 Il ert apeles Zosimas
@@ -3537,10 +3537,10 @@ mlt ert vestus depovresds
 miex amoit il sa povte
 </div>
 <div style="line-height: 1.2;">
-Qnqns ne fait sa ꝯte
+Q n qns ne fait sa ꝯte
 </div>
 <div style="line-height: 1.2;">
-Enlaforestp fondemt
+Enlaforest p fondemt
 </div>
 <div style="line-height: 1.2;">
 Se mist ot poi formemt
@@ -3558,7 +3558,7 @@ de Deu voloit o eus ple
 mais qnt il ot fait .xx. jornees
 </div>
 <div style="line-height: 1.2;">
-Qmlteret des mesurees
+Q mlt eret des mesurees
 </div>
 <div style="line-height: 1.2;">
 &amp; vit qnul nepot trov
@@ -3615,13 +3615,13 @@ Q plus valoit carget neor
 Li sains ho fu mlt esmaris
 </div>
 <div style="line-height: 1.2;">
-Qntalonbre torna sonvis
+Qnt alonbre torna sonvis
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
 835
 </div>
-Qdaq fust encantemt
+Qda q fust encantemt
 </div>
 <div style="line-height: 1.2;">
 Reclama Deu om ni potet
@@ -3683,16 +3683,16 @@ del soleil &amp; de la gelee
 116r
 </div>
 <div style="line-height: 1.2;">
-QntZosimas vit lafigure
+Qnt Zosimas vit lafigure
 </div>
 <div style="line-height: 1.2;">
 vers liala gnt aleure
 </div>
 <div style="line-height: 1.2;">
-ladameqntlevit venir
+ladame qnt levit venir
 </div>
 <div style="line-height: 1.2;">
-Isnelemtpstafuir
+Isnelemt pst afuir
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -3719,10 +3719,10 @@ jo te ꝯjur de Deu le gnt
 Q tu ne voises mais avant
 </div>
 <div style="line-height: 1.2;">
-Qntladame ot de Deu pl
+Qnt ladame ot de Deu pl
 </div>
 <div style="line-height: 1.2;">
-dtꝯmenca fort aplorer
+dt ꝯmenca fort aplorer
 </div>
 <div style="line-height: 1.2;">
 hez Dex dist ele Creator
@@ -3737,7 +3737,7 @@ En toi croi jo &amp; toi aor
 Xlvi. ans puis ꝯter
 </div>
 <div style="line-height: 1.2;">
-Qnoi mais de ti parler
+Q noi mais de ti parler
 </div>
 <div style="line-height: 1.2;">
 or mas .i. saint home tmis
@@ -3788,10 +3788,10 @@ dans Zosimas vint la corant
 <div class="line-number">
 880
 </div>
-duscalarive del torant
+dusca larive del torant
 </div>
 <div style="line-height: 1.2;">
-lasarestutnepot avant
+lasarestut nepot avant
 </div>
 <div style="line-height: 1.2;">
 dont se clama caitif dolant
@@ -3833,7 +3833,7 @@ puis men irai de la atoi
 Qnt tu nepues venir amoi
 </div>
 <div style="line-height: 1.2;">
-QntZosimassoi nomer
+Qnt Zosimassoi nomer
 </div>
 <div style="line-height: 1.2;">
 de pec ꝯmenca aplorer
@@ -3848,7 +3848,7 @@ Car ele ne sot pas son non
 Se p le .S. esperit non
 </div>
 <div style="line-height: 1.2;">
-dundeses dras dont li jeta
+dun deses dras dont li jeta
 </div>
 <div style="line-height: 1.2;">
 A ladame dc saproisma
@@ -3910,7 +3910,7 @@ Or en fai ci mapenitance
 Qnt li sains hom lot si pl
 </div>
 <div style="line-height: 1.2;">
-depitieꝯmenceaplorer
+depitie ꝯmence aplorer
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -3940,10 +3940,10 @@ merci licria mlt sovent
 Zosimas se gist en la place
 </div>
 <div style="line-height: 1.2;">
-laighelide cortp la face
+laighe lide cort p la face
 </div>
 <div style="line-height: 1.2;">
-mlttenremt des jo els ploroit
+mlt tenremt des jo els ploroit
 </div>
 <div style="line-height: 1.2;">
 p le pitie qil avoit
@@ -4024,7 +4024,7 @@ Q li pains devient li sens cors
 <div class="line-number">
 945
 </div>
-Dexꝯnoistbn ton sacfice
+Dexꝯnoist bn ton sacfice
 </div>
 <div style="line-height: 1.2;">
 Car te vie ma tote apse
@@ -4053,7 +4053,7 @@ dame ce respont Zosimas
 jam a beneicon navras
 </div>
 <div style="line-height: 1.2;">
-Setupmes ne lemefais
+Setu pmes ne lemefais
 </div>
 <div style="line-height: 1.2;">
 Jade ci ne leverai mais
@@ -4140,7 +4140,7 @@ Seil ont pais u il ont gre
 ꝯfaitemt il se ꝯ tienent
 </div>
 <div style="line-height: 1.2;">
-dansZosimasdt li respont
+dansZosimas dt li respont
 </div>
 <div style="line-height: 1.2;">
 Dexamis pais p tot lemot
@@ -4152,16 +4152,16 @@ N ne va itant platre
 <div class="line-number">
 980
 </div>
-Qloie mais pler degre
+Q loie mais pler degre
 </div>
 <div style="line-height: 1.2;">
 mais sainte eglise agnt beso
 </div>
 <div style="line-height: 1.2;">
-Qp li faites orison
+Q p li faites orison
 </div>
 <div style="line-height: 1.2;">
-QDex li donast pais durable
+Q Dex li donast pais durable
 </div>
 <div style="line-height: 1.2;">
 &amp; desfende delvis dyable
@@ -4188,7 +4188,7 @@ Deu en proia le Creator
 <div class="line-number">
 990
 </div>
-mltdoucemt &amp; p amor
+mlt doucemt &amp; p amor
 </div>
 <div style="line-height: 1.2;">
 Si q la bouche nemovoit
@@ -4200,7 +4200,7 @@ Ne nule vois fors nen issoit
 detre fu senps ravie
 </div>
 <div style="line-height: 1.2;">
-Qeleni aivenoit mie
+Qele ni aivenoit mie
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -4224,7 +4224,7 @@ ouele faisoit saproiere
 <div class="line-number">
 1000
 </div>
-Nostre Sireslavoitmlt chiere
+Nostre Sireslavoit mlt chiere
 </div>
 </div>
 <div class="column-break">
@@ -4232,7 +4232,7 @@ Nostre Sireslavoitmlt chiere
 de la paor cot Zosimas
 </div>
 <div style="line-height: 1.2;">
-ꝯmcasent aler lepas
+ꝯmca sent aler lepas
 </div>
 <div style="line-height: 1.2;">
 Qda fantosme avoir tve
@@ -4244,7 +4244,7 @@ Ariere sen est retorne
 <div class="line-number">
 1005
 </div>
-QntMarielen voit al
+Qnt Marielen voit al
 </div>
 <div style="line-height: 1.2;">
 Sel ꝯmenca a apel
@@ -4304,22 +4304,22 @@ apres ꝯmenca aparl
 dt est venue &amp; deql te b
 </div>
 <div style="line-height: 1.2;">
-Zosimaslipstaenqrre a
+Zosimaslipst aenqrre a
 </div>
 <div style="line-height: 1.2;">
 descuevre moi latoie vie
 </div>
 <div style="line-height: 1.2;">
-pDeu nel me celer tumie
+p Deu nel me celer tumie
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
 1025
 </div>
-dilemoipꝯ fession
+dilemoi p ꝯ fession
 </div>
 <div style="line-height: 1.2;">
-QDex te face voir pdon
+Q Dex te face voir pdon
 </div>
 <div style="line-height: 1.2;">
 Sire ce li respont Marie
@@ -4343,7 +4343,7 @@ tote le te descoverrai
 Ne ja de rien nen mtirai
 </div>
 <div style="line-height: 1.2;">
-<span class="decorative-initial floriate" data-size="2">D</span>ont ꝯmceaꝯtMarie
+<span class="decorative-initial floriate" data-size="2">D</span>ont ꝯmce aꝯt Marie
 </div>
 <div style="line-height: 1.2;">
 Rien ne coile q tot nedie
@@ -4358,7 +4358,7 @@ tote savie a aꝯtee
 des icele eure q fu nee
 </div>
 <div style="line-height: 1.2;">
-Endementsqleliꝯte
+Endements qle liꝯte
 </div>
 <div style="line-height: 1.2;">
 bn poes croi re qle ot hote
@@ -4370,16 +4370,16 @@ Qnt el liot ꝯte savie
 <div class="line-number">
 1040
 </div>
-Aspieslichietmcilicrie
+Aspies lichiet mci licrie
 </div>
 <div style="line-height: 1.2;">
-Qntliotꝯte ses pechies
+Qnt liot ꝯte ses pechies
 </div>
 <div style="line-height: 1.2;">
 Apres liest cheue aspies
 </div>
 <div style="line-height: 1.2;">
-Zosimasaoisavie
+Zosimasaoi savie
 </div>
 <div style="line-height: 1.2;">
 le Creator en glorefie
@@ -4388,16 +4388,16 @@ le Creator en glorefie
 <div class="line-number">
 1045
 </div>
-mci en rent nreseign
+mci en rent nre seign
 </div>
 <div style="line-height: 1.2;">
-pmltbo cuer &amp; p amor
+p mlt bo cuer &amp; p amor
 </div>
 <div style="line-height: 1.2;">
 damep coi chies ames pies
 </div>
 <div style="line-height: 1.2;">
-pDeuteproiq tu ten lies
+p Deuteproi q tu ten lies
 </div>
 <div style="line-height: 1.2;">
 Nest pas en moi ladignete
@@ -4414,7 +4414,7 @@ Ne sui de tel auctorite
 116v
 </div>
 <div style="line-height: 1.2;">
-aceq jo toi ci conter
+ace q jo toi ci conter
 </div>
 <div style="line-height: 1.2;">
 Q ne nos seul vs ci gard
@@ -4423,7 +4423,7 @@ Q ne nos seul vs ci gard
 Car onqs ton pareil ne vi
 </div>
 <div style="line-height: 1.2;">
-pDeu aies de moi merci
+p Deu aies de moi merci
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -4495,7 +4495,7 @@ Sen iront fors de lor maiso
 le jor venra del sait qresme
 </div>
 <div style="line-height: 1.2;">
-Qcasꝯs en ira son esme
+Q casꝯs en ira son esme
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -4522,7 +4522,7 @@ Garis seras si ꝯ jo croi
 dt te pri devenir a moi
 </div>
 <div style="line-height: 1.2;">
-le cors nreseign me met
+le cors nre seign me met
 </div>
 <div style="line-height: 1.2;">
 En -i- vaiscel q mlt soit net
@@ -4579,7 +4579,7 @@ desq passai leflu jorda
 deses le most -S- Jehan
 </div>
 <div style="line-height: 1.2;">
-Ne noi le cors nreseign
+Ne noi le cors nre seign
 </div>
 <div style="line-height: 1.2;">
 En q ai tote ma doucor
@@ -4656,7 +4656,7 @@ Sireꝯmce a repairier
 venus en est a sam aison
 </div>
 <div style="line-height: 1.2;">
-Ensemtst si ꝯpaigno
+Ensemt st si ꝯpaigno
 </div>
 <div style="line-height: 1.2;">
 li abes Johans fu mlt lies
@@ -4683,10 +4683,10 @@ Ne soi -i- poit glorifier
 <div class="line-number">
 1125
 </div>
-<span class="decorative-initial floriate" data-size="2">A</span>psqnt ce vit al qreme
+<span class="decorative-initial floriate" data-size="2">A</span>ps qnt ce vit al qreme
 </div>
 <div style="line-height: 1.2;">
-Qcasꝯ doit al son esme
+Q casꝯ doit al son esme
 </div>
 <div style="line-height: 1.2;">
 En son lit jut danszosima
@@ -4722,7 +4722,7 @@ tres q vit al jor de la caine
 Zosimas se senti gari
 </div>
 <div style="line-height: 1.2;">
-dtapscorpdomni
+dt aps corp domni
 </div>
 <div style="line-height: 1.2;">
 le sanc pcious ensemt
@@ -4731,7 +4731,7 @@ le sanc pcious ensemt
 p faire le ꝯmandemt
 </div>
 <div style="line-height: 1.2;">
-dtladamelavoit proie
+dt ladame lavoit proie
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -4749,7 +4749,7 @@ o soi porta -i- poi de soire
 &amp; de lentilles ensemt
 </div>
 <div style="line-height: 1.2;">
-Ilotsoigdautreforniemt
+Ilot soig dautre forniemt
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -4802,7 +4802,7 @@ Ne me laisse ci esgare
 lai moi veoir en cor lafeme
 </div>
 <div style="line-height: 1.2;">
-Qna son per entot cest regne
+Q na son per entot cest regne
 </div>
 <div style="line-height: 1.2;">
 Janen vivrai si ꝯ jo croi
@@ -4874,7 +4874,7 @@ Qnt tu nen as nef ne cala
 Marielot issi parler
 </div>
 <div style="line-height: 1.2;">
-dtꝯmenca fort a plorer
+dt ꝯmenca fort a plorer
 </div>
 <div style="line-height: 1.2;">
 a Damedeu sest ꝯmandee
@@ -4895,7 +4895,7 @@ oies ꝯ fu de gnt creance
 Sor laighe roide vait gnt pa
 </div>
 <div style="line-height: 1.2;">
-mltsenmveilleZosimas
+mlt sen mveille Zosimas
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -4907,7 +4907,7 @@ outre passa de lautre pt
 onqs sa plante ni moilla
 </div>
 <div style="line-height: 1.2;">
-Qntalarive fu venue
+Qnt alarive fu venue
 </div>
 <div style="line-height: 1.2;">
 vait al -s- home sel salue
@@ -4928,7 +4928,7 @@ As pies li fait afliction
 Re qert li sa beneicon
 </div>
 <div style="line-height: 1.2;">
-li sainslaivearelever
+li sainslaive arelever
 </div>
 <div style="line-height: 1.2;">
 de pitie ꝯmce a plorer
@@ -4940,10 +4940,10 @@ de pitie ꝯmce a plorer
 No se faire sor li seignacle
 </div>
 <div style="line-height: 1.2;">
-QntDexp li fait tel miracle
+Qnt Dexp li fait tel miracle
 </div>
 <div style="line-height: 1.2;">
-Qlefait si aler sor londe
+Q lefait si aler sor londe
 </div>
 <div style="line-height: 1.2;">
 de leue q siert pfonde
@@ -4984,7 +4984,7 @@ adont lidist mlt belemt
 ladame respont aps lui
 </div>
 <div style="line-height: 1.2;">
-mltsentre gardent anbedui
+mlt sentre gardent anbedui
 </div>
 <div style="line-height: 1.2;">
 Qnt orent fait lor p lemt
@@ -4999,7 +4999,7 @@ li sains li mostre tel preset
 ꝯme le cors nre Seignor
 </div>
 <div style="line-height: 1.2;">
-pq seront sauf pecheor
+p q seront sauf pecheor
 </div>
 <div style="line-height: 1.2;">
 Zosimas le tint ensamai
@@ -5020,7 +5020,7 @@ Q li malvais pueples acist
 Enlacrois fu mis &amp; ocis
 </div>
 <div style="line-height: 1.2;">
-Jannavera paradis
+Jan navera paradis
 </div>
 <div style="line-height: 1.2;">
 Se il ne croit ce en sa vie
@@ -5071,13 +5071,13 @@ Cil est mlt fols q le tient vil
 Se tu las aporte otoi
 </div>
 <div style="line-height: 1.2;">
-pDeu te pri do ne lemoi
+p Deu te pri do ne lemoi
 </div>
 <div style="line-height: 1.2;">
 li sainslot issi des raisn
 </div>
 <div style="line-height: 1.2;">
-mltsenꝯmenceamveill
+mlt sen ꝯmence amveill
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -5256,7 +5256,7 @@ Q to as pieca aprestees
 xxx- ans erent ?????? ?????
 </div>
 <div style="line-height: 1.2;">
-Qlenavoit mangie de ble
+Qle navoit mangie de ble
 </div>
 <div style="line-height: 1.2;">
 deleve but tot sans soi
@@ -5438,7 +5438,7 @@ a toi le puisse jo livrer
 Niot beste tant p fust fier
 </div>
 <div style="line-height: 1.2;">
-Qonqslosaitaproism
+Q onqs losait aproism
 </div>
 <div style="line-height: 1.2;">
 Sor li nosa oiseaus vol
@@ -5554,7 +5554,7 @@ mostre moi co qtant ai qs
 Saches de ci ne moverai
 </div>
 <div style="line-height: 1.2;">
-Navatna rierenen irai
+Navat na riere nen irai
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -5581,13 +5581,13 @@ Ne viverai si ꝯ le croi
 Se jo en core nelavoi
 </div>
 <div style="line-height: 1.2;">
-Lai moi veir lecorsmamie
+Lai moi veir lecors mamie
 </div>
 <div style="line-height: 1.2;">
 car jo qt qle soit fenie
 </div>
 <div style="line-height: 1.2;">
-Selevesqst si ꝯ jo croi
+Sele vesqst si ꝯ jo croi
 </div>
 <div style="line-height: 1.2;">
 Ele fust ja venue amoi
@@ -5608,7 +5608,7 @@ Sire setuas demoi cure
 lai moi faire sasepulture
 </div>
 <div style="line-height: 1.2;">
-Biaus peDeu de Maiste
+Biaus pe Deu de Maiste
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -5620,7 +5620,7 @@ Ne me laisse ci esgare
 Qnt il ot sorison fenie
 </div>
 <div style="line-height: 1.2;">
-dtlimostralecorsmarie
+dt limostra lecorsmarie
 </div>
 <div style="line-height: 1.2;">
 vers destrept sest regarde
@@ -5632,7 +5632,7 @@ En -i- lieu vit une clarte
 <div class="line-number">
 1385
 </div>
-Qda q fu eust la
+Q da q fu eust la
 </div>
 <div style="line-height: 1.2;">
 a la clarte dt saproisma
@@ -5730,7 +5730,7 @@ li sains hom les a recitees
 mais qnt il ot le no trove
 </div>
 <div style="line-height: 1.2;">
-mltgntmcis en rent ade
+mlt gnt mcis en rent ade
 </div>
 <div style="line-height: 1.2;">
 p le bel non en fu mlt lie
@@ -5748,7 +5748,7 @@ Qnt il ot dit le suen mest
 puis dit ses salmes del saut
 </div>
 <div style="line-height: 1.2;">
-dtleveiscieses gare
+dt leveiscies es gare
 </div>
 <div style="line-height: 1.2;">
 car ni avoit rien aporte
@@ -5805,7 +5805,7 @@ Se Dex ne lidonast aie
 p le deserte de Marie
 </div>
 <div style="line-height: 1.2;">
-Dexlidon aboꝯpaigno
+Dexlidon a bo ꝯpaigno
 </div>
 <div style="line-height: 1.2;">
 Nient autre mais -i- lion
@@ -5835,13 +5835,13 @@ Signe lifai soit dobeir
 &amp; q il le voloit servir
 </div>
 <div style="line-height: 1.2;">
-Qntli sains ho vit le lio
+Qnt li sains ho vit le lio
 </div>
 <div style="line-height: 1.2;">
 Navait apris tel ꝯpaigno
 </div>
 <div style="line-height: 1.2;">
-Neustsoig de sa ꝯpaignie
+Neust soig de sa ꝯpaignie
 </div>
 <div style="line-height: 1.2;">
 Se Dex li donast autre aie
@@ -5850,7 +5850,7 @@ Se Dex li donast autre aie
 <div class="line-number">
 1445
 </div>
-premieremtsen vout fuir
+premieremt sen vout fuir
 </div>
 <div style="line-height: 1.2;">
 Qnt il levit al cors venir
@@ -5885,7 +5885,7 @@ Il liadit biaus dous amis
 Ceste feme a anon Marie
 </div>
 <div style="line-height: 1.2;">
-Qmltp fu de bone vie
+Q mlt p fu de bone vie
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -5894,10 +5894,10 @@ Qmltp fu de bone vie
 ma ci de mostre en -i- bef
 </div>
 <div style="line-height: 1.2;">
-Qjai ci trove a son chief
+Q jai ci trove a son chief
 </div>
 <div style="line-height: 1.2;">
-Qp moi veut estre enfoie
+Q p moi veut estre enfoie
 </div>
 <div style="line-height: 1.2;">
 mais jo ai gnt mest daie
@@ -5921,7 +5921,7 @@ del ꝯmandemt fu mlt lies
 a ce q il seut obeir
 </div>
 <div style="line-height: 1.2;">
-ꝯmencalatre a fuir
+ꝯmenca latre a fuir
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -5969,10 +5969,10 @@ devs le chief le cors saisit
 Entreus deus lont el sarcu mis
 </div>
 <div style="line-height: 1.2;">
-de denslaterre ont mis le cors []
+de dens laterre ont mis le cors []
 </div>
 <div style="line-height: 1.2;">
-Zosimasdcsen issi fors
+Zosimasdc sen issi fors
 </div>
 <div style="line-height: 1.2;">
 Or fait laꝯmandacion
@@ -6026,7 +6026,7 @@ ariere sen est retornes
 El gnt de sert en est ents
 </div>
 <div style="line-height: 1.2;">
-QntZosimaslenvittorn
+Qnt Zosimaslenvittorn
 </div>
 <div style="line-height: 1.2;">
 Deu en ꝯ menca aloer
@@ -6038,13 +6038,13 @@ Deu en ꝯ menca aloer
 SireDeus loes foiestu
 </div>
 <div style="line-height: 1.2;">
-mltp est gnde ta vertu
+mlt p est gnde ta vertu
 </div>
 <div style="line-height: 1.2;">
-bnmasde mostrepMarie
+bn mas de mostre p Marie
 </div>
 <div style="line-height: 1.2;">
-Qmltp est fols q toblie
+Q mlt p est fols q toblie
 </div>
 </div>
 <div class="column-break">
@@ -6073,13 +6073,13 @@ Nemais ne le deporterai
 <div class="line-number">
 1505
 </div>
-ꝯmencasentarepairier
+ꝯmenca sent arepairier
 </div>
 <div style="line-height: 1.2;">
 plorant senvait a son most
 </div>
 <div style="line-height: 1.2;">
-Ensemtst si ꝯpaignon
+Ensemt st si ꝯpaignon
 </div>
 <div style="line-height: 1.2;">
 tot sen repairent amaison
@@ -6097,7 +6097,7 @@ Qnt il furent enlorostal
 Zosimasꝯmence a parl
 </div>
 <div style="line-height: 1.2;">
-Ornesevolra mais cel
+Orne sevolra mais cel
 </div>
 <div style="line-height: 1.2;">
 del Egiptiene Marie
@@ -6109,7 +6109,7 @@ lor a ꝯte tote la vie
 <div class="line-number">
 1515
 </div>
-ꝯmtletrova el desert
+ꝯmt letrova el desert
 </div>
 <div style="line-height: 1.2;">
 El lieu de litable ou ele ert
@@ -6151,7 +6151,7 @@ puis lor a ꝯte del lion
 ꝯmt il lot a ꝯpaigno
 </div>
 <div style="line-height: 1.2;">
-Qntlimoine ont oi son dit
+Qnt limoine ont oi son dit
 </div>
 <div style="line-height: 1.2;">
 a Deu en ont rendu mcit
@@ -6211,7 +6211,7 @@ denos armes al juge mt
 amen amen &amp; jhu crist
 </div>
 <div style="line-height: 1.2;">
-ꝯ sautq cest romans escst
+ꝯ saut q cest romans escst
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -6415,7 +6415,7 @@ dont Dex ne face vrai pardon
 par foi &amp; par confession
 </div>
 <div style="line-height: 1.2;">
-acelsqui prendent penitance
+acels qui prendent penitance
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -6439,7 +6439,7 @@ Car honte fait al Creator
 <div class="line-number">
 25
 </div>
-Quimolt est fel &amp; en vieus
+Qui molt est fel &amp; en vieus
 </div>
 <div style="line-height: 1.2;">
 &amp; de mal faire covoiteus
@@ -6448,7 +6448,7 @@ Quimolt est fel &amp; en vieus
 devant nos vient souvent ester
 </div>
 <div style="line-height: 1.2;">
-Quinos volroit aluy torner
+Qui nos volroit aluy torner
 </div>
 <div style="line-height: 1.2;">
 Il nest nus hom enceste vie
@@ -6463,7 +6463,7 @@ Qui tant soit sage u nait folie
 Li apostle qui Deu sievoient
 </div>
 <div style="line-height: 1.2;">
-parmolt de foies pechoient
+par molt de foies pechoient
 </div>
 <div style="line-height: 1.2;">
 por co ne me puis merveiller
@@ -6537,10 +6537,10 @@ Encore fesist il folie
 114r
 </div>
 <div style="line-height: 1.2;">
-Quantlameenvaconme caitive
+Quant lame enva conme caitive
 </div>
 <div style="line-height: 1.2;">
-Qui li feradonques aide
+Qui li fera donques aide
 </div>
 <div style="line-height: 1.2;">
 Nus hom soseies nelifera
@@ -6552,7 +6552,7 @@ Se nest cil sires quil cria
 <div class="line-number">
 55
 </div>
-<span class="decorative-initial floriate" data-size="2">C</span>eladameeladamedont doi conter
+<span class="decorative-initial floriate" data-size="2">C</span>eladame eladamedont doi conter
 </div>
 <div style="line-height: 1.2;">
 Marieloi apeler
@@ -6609,7 +6609,7 @@ de -ii- parens ne se gardoit
 A tos homes sabandonoit
 </div>
 <div style="line-height: 1.2;">
-Nespoirque fust en ceste vie
+Nespoir que fust en ceste vie
 </div>
 <div style="line-height: 1.2;">
 Feme de plus grant legerie
@@ -6651,7 +6651,7 @@ Selongement tiens cest mestier
 Molt en arons grant reprovier
 </div>
 <div style="line-height: 1.2;">
-PorDeu te proi fille Marie
+Por Deu te proi fille Marie
 </div>
 <div style="line-height: 1.2;">
 Guerpis mais ceste legerie
@@ -6690,7 +6690,7 @@ porta malvaise legerie
 tes peres en est si iries
 </div>
 <div style="line-height: 1.2;">
-Jamaisanul jor n’en ert lies
+Jamais anul jor n’en ert lies
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -6699,10 +6699,10 @@ Jamaisanul jor n’en ert lies
 &amp; maldist tote s’aventure
 </div>
 <div style="line-height: 1.2;">
-Quantafait tele engenieure
+Quant afait tele engenieure
 </div>
 <div style="line-height: 1.2;">
-QuantMarielooit parler
+Quant Marielooit parler
 </div>
 <div style="line-height: 1.2;">
 Nelevoloit nes escouter
@@ -6719,7 +6719,7 @@ del tot volt faire ses conmans
 </div>
 <div class="column-break">
 <div style="line-height: 1.2;">
-porbien faire savolente
+por bien faire savolente
 </div>
 <div style="line-height: 1.2;">
 Sen fui en autre regne
@@ -6779,7 +6779,7 @@ por sa [] biaute li jovencel
 Ele les recoit volentiers
 </div>
 <div style="line-height: 1.2;">
-Nientseulement por lor deniers
+Nient seulement por lor deniers
 </div>
 <div style="line-height: 1.2;">
 Mais por faire lesien delit
@@ -6797,7 +6797,7 @@ A son delit ert entendive
 de jor &amp; denuit la chaitive
 </div>
 <div style="line-height: 1.2;">
-boire&amp;mangier &amp; luxure
+boire&amp; mangier &amp; luxure
 </div>
 <div style="line-height: 1.2;">
 Co ert tote la soie cure
@@ -6845,7 +6845,7 @@ Si se faisoient la hardi
 de Gisarmes &amp; de espees
 </div>
 <div style="line-height: 1.2;">
-S’entredonoientgrant colees
+S’entredonoient grant colees
 </div>
 <div style="line-height: 1.2;">
 Li sans qui en ert espandus
@@ -6943,7 +6943,7 @@ En icel tans ne en cel regne
 Nen ot onques plus bele feme
 </div>
 <div style="line-height: 1.2;">
-onquescomtesse ne roine
+onques comtesse ne roine
 </div>
 <div style="line-height: 1.2;">
 Nen ot el chief plus bele crigne
@@ -7012,7 +7012,7 @@ Ert si blance com flor despine
 blans bras avoit &amp; blances mains
 </div>
 <div style="line-height: 1.2;">
-les dois reons greilles&amp;plains
+les dois reons greilles &amp;plains
 </div>
 <div style="line-height: 1.2;">
 Gent cors avoit &amp; bien molle
@@ -7024,13 +7024,13 @@ Sus lasoele lonc lecoste
 <div class="line-number">
 185
 </div>
-Netropgrandene trop petite
+Netrop grande ne trop petite
 </div>
 <div style="line-height: 1.2;">
-Jasafaconnenertdescrite
+Jasafacon nen ertdescrite
 </div>
 <div style="line-height: 1.2;">
-la gransbiautesdecestedame
+la grans biautesdecestedame
 </div>
 <div style="line-height: 1.2;">
 Niert toute escrite par nul homme
@@ -7048,7 +7048,7 @@ Rien ni avoit que amender
 a plaindre fait tel creature
 </div>
 <div style="line-height: 1.2;">
-Quantde sonCreatornacure
+Quant de son Creatornacure
 </div>
 <div style="line-height: 1.2;">
 Ele recevoit grans presens
@@ -7063,7 +7063,7 @@ Sen achatoit biaus garnemens
 biaus dras avoit &amp; avenans
 </div>
 <div style="line-height: 1.2;">
-porbien plaisir a ses amans
+por bien plaisir a ses amans
 </div>
 <div style="line-height: 1.2;">
 Navoit pas soing de dras de laine
@@ -7083,7 +7083,7 @@ Si afubloit mantel ermin
 </div>
 <div class="column-break">
 <div style="line-height: 1.2;">
-Sollersbienpains de cordoan
+Sollers bien pains de cordoan
 </div>
 <div style="line-height: 1.2;">
 chaucoit a tus les jors del an
@@ -7254,13 +7254,13 @@ Se vus lor aves que doner
 Si porres bien deus aler
 </div>
 <div style="line-height: 1.2;">
-parDeu ce respont la dolente
+par Deu ce respont la dolente
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
 250
 </div>
-moltpar ai bele jovente
+molt par ai bele jovente
 </div>
 </div>
 <div class="column-break">
@@ -7283,13 +7283,13 @@ Nepuet muer que ne senrie
 <div class="line-number">
 255
 </div>
-Quantaoi le covenant
+Quant aoi le covenant
 </div>
 <div style="line-height: 1.2;">
 Guerpi la sisen vait riant
 </div>
 <div style="line-height: 1.2;">
-Eledolentesentorna
+Ele dolentesentorna
 </div>
 <div style="line-height: 1.2;">
 Ainc a lostel ne repaira
@@ -7325,7 +7325,7 @@ a aeus en vint isnelement
 &amp; i parla molt simplement
 </div>
 <div style="line-height: 1.2;">
-<span class="decorative-initial floriate" data-size="2">S</span>eigneureign dist ele pelerin
+<span class="decorative-initial floriate" data-size="2">S</span>eigneur eign dist ele pelerin
 </div>
 <div style="line-height: 1.2;">
 Dexvos mete en corage fin
@@ -7337,7 +7337,7 @@ Dexvos mete en corage fin
 <div class="line-number">
 270
 </div>
-Quivos me fa cies carite
+Qui vos me fa cies carite
 </div>
 <div style="line-height: 1.2;">
 Jasui jo une povre feme
@@ -7412,7 +7412,7 @@ Sus en lanef le font monter
 Apres silevont des ancrer
 </div>
 <div style="line-height: 1.2;">
-Donquescommencentanagier
+Donques commencent anagier
 </div>
 <div style="line-height: 1.2;">
 Cil del dromont li plus leger
@@ -7453,7 +7453,7 @@ primes les prent atastoner
 dont les commenca a baisier
 </div>
 <div style="line-height: 1.2;">
-&amp; en tus sensalosengier
+&amp; en tus sens alosengier
 </div>
 <div style="line-height: 1.2;">
 Niot-i-seul tant fust lassez
@@ -7522,7 +7522,7 @@ por faire bien le sien delis
 Ala lanuit par tot les lis
 </div>
 <div style="line-height: 1.2;">
-A moltgrant gres les recevoit
+A molt grant gres les recevoit
 </div>
 <div style="line-height: 1.2;">
 lor volentes aenplisoit
@@ -7540,10 +7540,10 @@ Qui pot soffrir issi grant gent
 de ce nestuet il douter mie
 </div>
 <div style="line-height: 1.2;">
-Quenaitdyable a compaignie
+Que nait dyable a compaignie
 </div>
 <div style="line-height: 1.2;">
-Quivolenters la les noiast
+Qui volenters la les noiast
 </div>
 <div style="line-height: 1.2;">
 Se Damedex le li laissast
@@ -7558,7 +7558,7 @@ M ais il les agari demort
 &amp; si les fist venir al port
 </div>
 <div style="line-height: 1.2;">
-QuantMarie fu arivee
+Quant Marie fu arivee
 </div>
 <div style="line-height: 1.2;">
 Dolante fu &amp; esgaree
@@ -7567,7 +7567,7 @@ Dolante fu &amp; esgaree
 Sospire &amp; pleure a la rive
 </div>
 <div style="line-height: 1.2;">
-Nesetque faire la caitive
+Neset que faire la caitive
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -7618,7 +7618,7 @@ Ains que venist lasention
 De la sainte onoree
 </div>
 <div style="line-height: 1.2;">
-Queidevoit estre a oree
+Que idevoit estre a oree
 </div>
 <div style="line-height: 1.2;">
 ot en pirie sitot le lieu
@@ -7668,7 +7668,7 @@ des pelerins d’outre lemer
 Qui vont altemple por orer
 </div>
 <div style="line-height: 1.2;">
-commepreudome &amp; comme sage
+comme preudome &amp; comme sage
 </div>
 <div style="line-height: 1.2;">
 Al moster vont par bon corage
@@ -7686,10 +7686,10 @@ mist soi de dens la compaignie
 Entra en la procession
 </div>
 <div style="line-height: 1.2;">
-Nonpaspar bone enten[]cion]cio
+Nonpas par bone enten[]cion ]cio
 </div>
 <div style="line-height: 1.2;">
-lipelerinquileveoient
+lipelerin qui leveoient
 </div>
 <div style="line-height: 1.2;">
 Savolente ne conissoient
@@ -7725,7 +7725,7 @@ celiert vis son escient
 Que ele veoit une gent
 </div>
 <div style="line-height: 1.2;">
-Queli sambloientchevaliers
+Que li sambloient chevaliers
 </div>
 <div style="line-height: 1.2;">
 mais molt avoient lesvis fiers
@@ -7767,7 +7767,7 @@ A la parfin voit &amp; entent
 Que ses pechies le li deffent
 </div>
 <div style="line-height: 1.2;">
-delcuercommenceasospirer
+delcuer commence asospirer
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -7809,7 +7809,7 @@ por coi fesis les ors pechies
 <div class="line-number">
 400
 </div>
-dontDex est issi corecies
+dont Dex est issi corecies
 </div>
 </div>
 <div class="column-break">
@@ -7817,13 +7817,13 @@ dontDex est issi corecies
 mal conseil ai tostans eu
 </div>
 <div style="line-height: 1.2;">
-QuantmonCreator ai pardeu
+Quant mon Creator ai pardeu
 </div>
 <div style="line-height: 1.2;">
 tant par sui plains devil ordure
 </div>
 <div style="line-height: 1.2;">
-QueDamledeunademoicure
+Que Damledeuna demoicure
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -7877,7 +7877,7 @@ Quant il te dist ave Marie
 de la Deu grace raemplie
 </div>
 <div style="line-height: 1.2;">
-Entoiprendra humanite
+Entoi prendra humanite
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -7886,7 +7886,7 @@ Entoiprendra humanite
 Jhesus de sainte maiste
 </div>
 <div style="line-height: 1.2;">
-Quantque il dist tu lotrias
+Quant que il dist tu lotrias
 </div>
 <div style="line-height: 1.2;">
 la sieue ancele reclamas
@@ -7922,7 +7922,7 @@ Ci gerpis ja la male vie
 Que od li nar ai compaignie
 </div>
 <div style="line-height: 1.2;">
-EntonFil ai jo macreance
+Enton Fil ai jo macreance
 </div>
 <div style="line-height: 1.2;">
 toi met en plege &amp; en fiance
@@ -7943,7 +7943,7 @@ tote gerpis jo ceste vie
 por ma malvaise legerie
 </div>
 <div style="line-height: 1.2;">
-Jamaisniert jor naie gervance
+Jamais niert jor naie gervance
 </div>
 <div style="line-height: 1.2;">
 Molt ert aspre ma penitance
@@ -7955,7 +7955,7 @@ Virgeroine jo croi bien
 <div class="line-number">
 440
 </div>
-Queonquesnest icele rien
+Que onques nest icele rien
 </div>
 <div style="line-height: 1.2;">
 Que tant par soit fors a venger
@@ -7964,7 +7964,7 @@ Que tant par soit fors a venger
 Setu ton Fil en veus proier
 </div>
 <div style="line-height: 1.2;">
-Quemolt ne soit tost pardone
+Que molt ne soit tost pardone
 </div>
 <div style="line-height: 1.2;">
 &amp; aton Fil lues acorde
@@ -8023,7 +8023,7 @@ Que de lespine issi larose
 &amp; delarose issi li fruis
 </div>
 <div style="line-height: 1.2;">
-par coidyables fu destruis
+par coi dyables fu destruis
 </div>
 <div style="line-height: 1.2;">
 Un non avons co est Marie
@@ -8086,10 +8086,10 @@ Qui plus reluist que geme enor
 <div class="line-number">
 475
 </div>
-Entoiprist char li Fiex al roi
+Entoi prist char li Fiex al roi
 </div>
 <div style="line-height: 1.2;">
-QuiSains Jehans mostra al doi
+Qui Sains Jehans mostra al doi
 </div>
 <div style="line-height: 1.2;">
 dist qu’il estoit li Aignels Dei
@@ -8110,10 +8110,10 @@ Que il jeta de paradis
 Que il devoit lemont salver
 </div>
 <div style="line-height: 1.2;">
-Selqui da sempres enganer
+Sel qui da sempres enganer
 </div>
 <div style="line-height: 1.2;">
-Si com il fist le premerhomme
+Si com il fist le premer homme
 </div>
 <div style="line-height: 1.2;">
 Que il fist manger de la pomme
@@ -8131,7 +8131,7 @@ onques del su en rien ni trova
 Quant si levit arme &amp; fort
 </div>
 <div style="line-height: 1.2;">
-partraisonlidona mort
+par traison lidona mort
 </div>
 <div style="line-height: 1.2;">
 molt fu li mors bon euree
@@ -8146,10 +8146,10 @@ par coi vie fu restoree
 Se li Fiex Deu ne fust ocis
 </div>
 <div style="line-height: 1.2;">
-Jahomnen trast en paradis
+Jahom nen trast en paradis
 </div>
 <div style="line-height: 1.2;">
-parlamortprist il les vertus
+par lamort prist il les vertus
 </div>
 <div style="line-height: 1.2;">
 par coi dyables fu vencus
@@ -8161,13 +8161,13 @@ par coi dyables fu vencus
 denfer brisa laserreure
 </div>
 <div style="line-height: 1.2;">
-Sienron pi tot laclosure
+Sien ron pi tot laclosure
 </div>
 <div style="line-height: 1.2;">
 Fors en jeta sa compaignie
 </div>
 <div style="line-height: 1.2;">
-Quedyables avoit ravie
+Que dyables avoit ravie
 </div>
 <div style="line-height: 1.2;">
 a son Pare tos les mena
@@ -8184,7 +8184,7 @@ en sa glorie ou il esta
 puis vint el sepulcre ason cors
 </div>
 <div style="line-height: 1.2;">
-pargrant vertu en isci fors
+par grant vertu en isci fors
 </div>
 <div style="line-height: 1.2;">
 as apostles puis aparut
@@ -8241,7 +8241,7 @@ A son secont avenement
 tu seras en sa compaignie
 </div>
 <div style="line-height: 1.2;">
-commelasoie chiere amie
+comme lasoie chiere amie
 </div>
 <div style="line-height: 1.2;">
 Il jugera &amp; mors &amp; vis
@@ -8280,7 +8280,7 @@ Si com jo croi ce que jo di
 Si aies vos de moi merci
 </div>
 <div style="line-height: 1.2;">
-<span class="decorative-initial floriate" data-size="2">Q</span>uantnt ot finee sorison
+<span class="decorative-initial floriate" data-size="2">Q</span>uant nt ot finee sorison
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -8304,7 +8304,7 @@ El temple entra sans demorance
 <div class="line-number">
 535
 </div>
-de densentra sans destorbier
+de dens entra sans destorbier
 </div>
 <div style="line-height: 1.2;">
 Si va oir le Deu mestier
@@ -8343,7 +8343,7 @@ A limage sest repairie
 En li atote sesperance
 </div>
 <div style="line-height: 1.2;">
-conseilrequiertdepenitance
+conseil requiert depenitance
 </div>
 <div style="line-height: 1.2;">
 En quel maniere le fera
@@ -8477,7 +8477,7 @@ par matin ala al moster
 por la oir le Deu mester
 </div>
 <div style="line-height: 1.2;">
-larecutcorpus domini
+larecut corpus domini
 </div>
 <div style="line-height: 1.2;">
 A donc fu lie ainc nefusi
@@ -8531,7 +8531,7 @@ par sa merci ne le gerpise
 Iluec est tote sa fiance
 </div>
 <div style="line-height: 1.2;">
-or commencasapenitance
+or commenca sapenitance
 </div>
 <div style="line-height: 1.2;">
 Napas talent de repentir
@@ -8686,7 +8686,7 @@ Se vos en veiscies loreille
 <div class="line-number">
 640
 </div>
-moltvos venist a grant merveille
+molt vos venist a grant merveille
 </div>
 <div style="line-height: 1.2;">
 Qui maigre estoit &amp; de creue
@@ -8716,7 +8716,7 @@ les bras les mains &amp; les lons dois
 Avoit plus noirs que nenest pois
 </div>
 <div style="line-height: 1.2;">
-moltpar avoit lesongles grans
+molt par avoit lesongles grans
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -8730,7 +8730,7 @@ asdens les ront qu’ele ot trencans
 115v
 </div>
 <div style="line-height: 1.2;">
-liventresliert agaris
+liventres liert agaris
 </div>
 <div style="line-height: 1.2;">
 car navoit nul deses delis
@@ -8772,7 +8772,7 @@ de co estoit ele molt lie
 Quant ele avoit la grant hascie
 </div>
 <div style="line-height: 1.2;">
-Nestoitmerveillesiert noircie
+Nestoit merveille siert noircie
 </div>
 <div style="line-height: 1.2;">
 car molt de menoit aspre vie
@@ -8820,7 +8820,7 @@ mais co ert petite partie
 Quant ele ot tot son pain use
 </div>
 <div style="line-height: 1.2;">
-donquesaqueltlerbe del pre
+donques aquelt lerbe del pre
 </div>
 <div style="line-height: 1.2;">
 com autre beste lemangoit
@@ -8844,7 +8844,7 @@ Ne fait aplaindre lipechiet
 dont licors est si castiet
 </div>
 <div style="line-height: 1.2;">
-derbevesqui &amp; de racine
+derbe vesqui &amp; de racine
 </div>
 <div style="line-height: 1.2;">
 dis &amp; set anz en la gastine
@@ -8871,7 +8871,7 @@ tot ce lifaisoit ramenbrer
 <div class="line-number">
 690
 </div>
-Qu’elejadis soloit amer
+Qu’ele jadis soloit amer
 </div>
 <div style="line-height: 1.2;">
 les biaus delis &amp; les bels lieus
@@ -8918,7 +8918,7 @@ Enpluisors lieus prist son ostal
 Sa vie estoit esperital
 </div>
 <div style="line-height: 1.2;">
-<span class="decorative-initial floriate" data-size="2">O</span>r lairommesrlairomes a demarie
+<span class="decorative-initial floriate" data-size="2">O</span>r lairommes rlairomes a demarie
 </div>
 <div style="line-height: 1.2;">
 Si vos dirons dun abeie
@@ -8933,10 +8933,10 @@ Qui ert al chief de la forest
 Si com li livres nos fait cert
 </div>
 <div style="line-height: 1.2;">
-onquesDex ne fist nule gent
+onques Dex ne fist nule gent
 </div>
 <div style="line-height: 1.2;">
-Quivesquisent tant bonement
+Qui vesquisent tant bonement
 </div>
 <div style="line-height: 1.2;">
 Ni miex servent lor Creator
@@ -8987,7 +8987,7 @@ fors seul al eure de manger
 Il vivoient molt povrement
 </div>
 <div style="line-height: 1.2;">
-de paindorge &amp; de polment
+de pain dorge &amp; de polment
 </div>
 <div style="line-height: 1.2;">
 &amp; tos les venredis de lan
@@ -9005,13 +9005,13 @@ Aighe bevoient que niert saine
 Car ele niert pas defontaine
 </div>
 <div style="line-height: 1.2;">
-Entrelsnestoit pas simonie
+Entrels nestoit pas simonie
 </div>
 <div style="line-height: 1.2;">
 Ne covoitise ne envie
 </div>
 <div style="line-height: 1.2;">
-N’avoientsoigd’argent ne dor
+N’avoient soig d’argent ne dor
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -9026,7 +9026,7 @@ Nul dels navoit propriete
 tot erent dune volente
 </div>
 <div style="line-height: 1.2;">
-Nesthom la lor bonte vos die
+Nest hom la lor bonte vos die
 </div>
 <div style="line-height: 1.2;">
 tant estoient de bone vie
@@ -9044,7 +9044,7 @@ le premer jor faisoient caine
 li abes les a cu mencoit
 </div>
 <div style="line-height: 1.2;">
-Corpusdomini lor donoit
+Corpus domini lor donoit
 </div>
 <div style="line-height: 1.2;">
 Quant les avoit acommenchies
@@ -9089,7 +9089,7 @@ Non pas por peur de larron
 <div class="line-number">
 750
 </div>
-Qu’ilcremissent de lor maison
+Qu’il cremissent de lor maison
 </div>
 </div>
 <div class="column-break">
@@ -9217,7 +9217,7 @@ En la forest entel angone
 <div class="line-number">
 785
 </div>
-porescaparescaper de cel peril
+por escaparescaper de cel peril
 </div>
 <div style="line-height: 1.2;">
 estoient il entel escil
@@ -9265,13 +9265,13 @@ puis estoient tot lan sos geu
 Ne lor estovoit cremir leu
 </div>
 <div style="line-height: 1.2;">
-Quantrevient al jor de quaresme
+Quant revient al jor de quaresme
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
 800
 </div>
-Quecascun doit aler son esme
+Que cascun doit aler son esme
 </div>
 </div>
 <div class="column-break">
@@ -9300,7 +9300,7 @@ Adamledeu les commandoit
 Uns senva a destre partie
 </div>
 <div style="line-height: 1.2;">
-Quimolt estoit de bone vie
+Qui molt estoit de bone vie
 </div>
 <div style="line-height: 1.2;">
 Il ert apeles Zosimas
@@ -9315,10 +9315,10 @@ molt ert vestus de povres dras
 miex amoit il sa poverte
 </div>
 <div style="line-height: 1.2;">
-Quenusquens ne fait sa conte
+Que nus quens ne fait sa conte
 </div>
 <div style="line-height: 1.2;">
-Enlaforestparfondement
+Enlaforest parfondement
 </div>
 <div style="line-height: 1.2;">
 Se mist ot poi formement
@@ -9336,7 +9336,7 @@ de Deu voloit o eus parle
 mais quant il ot fait .xx. jornees
 </div>
 <div style="line-height: 1.2;">
-Quimolterent des mesurees
+Qui molt erent des mesurees
 </div>
 <div style="line-height: 1.2;">
 &amp; vit que nul n’en pot trover
@@ -9393,13 +9393,13 @@ Qui plus valoit c’argent neor
 Li sains hom fu molt esmaris
 </div>
 <div style="line-height: 1.2;">
-Quantalonbre torna sonvis
+Quant alonbre torna sonvis
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
 835
 </div>
-Quidaque fust encantement
+Quida que fust encantement
 </div>
 <div style="line-height: 1.2;">
 Reclama Deu omnipotent
@@ -9461,16 +9461,16 @@ del soleil &amp; de la gelee
 116r
 </div>
 <div style="line-height: 1.2;">
-QuantZosimas vit lafigure
+Quant Zosimas vit lafigure
 </div>
 <div style="line-height: 1.2;">
 vers liala grant aleure
 </div>
 <div style="line-height: 1.2;">
-ladamequantlevit venir
+ladame quant levit venir
 </div>
 <div style="line-height: 1.2;">
-Isnelementpristafuir
+Isnelement prist afuir
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -9497,10 +9497,10 @@ jo te conjur de Deu le grant
 Que tu ne voises mais avant
 </div>
 <div style="line-height: 1.2;">
-Quantladame ot de Deu parler
+Quant ladame ot de Deu parler
 </div>
 <div style="line-height: 1.2;">
-dontcommenca fort aplorer
+dont commenca fort aplorer
 </div>
 <div style="line-height: 1.2;">
 hez Dex dist ele Creator
@@ -9515,7 +9515,7 @@ En toi croi jo &amp; toi aor
 Xlvi. ans puis conter
 </div>
 <div style="line-height: 1.2;">
-Quenoi mais de ti parler
+Que noi mais de ti parler
 </div>
 <div style="line-height: 1.2;">
 or mas .i. saint home tramis
@@ -9566,10 +9566,10 @@ dans Zosimas vint la corant
 <div class="line-number">
 880
 </div>
-duscalarive del torant
+dusca larive del torant
 </div>
 <div style="line-height: 1.2;">
-lasarestutnepot avant
+lasarestut nepot avant
 </div>
 <div style="line-height: 1.2;">
 dont se clama caitif dolant
@@ -9611,7 +9611,7 @@ puis men irai de la atoi
 Quant tu nepues venir amoi
 </div>
 <div style="line-height: 1.2;">
-QuantZosimassoi nomer
+Quant Zosimassoi nomer
 </div>
 <div style="line-height: 1.2;">
 de pec commenca aplorer
@@ -9626,7 +9626,7 @@ Car ele ne sot pas son non
 Se par le Saint esperit non
 </div>
 <div style="line-height: 1.2;">
-dundeses dras dont li jeta
+dun deses dras dont li jeta
 </div>
 <div style="line-height: 1.2;">
 A ladame donc saproisma
@@ -9688,7 +9688,7 @@ Or en fai ci mapenitance
 Quant li sains hom lot si parler
 </div>
 <div style="line-height: 1.2;">
-depitiecommenceaplorer
+depitie commence aplorer
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -9718,10 +9718,10 @@ merci licria molt sovent
 Zosimas se gist en la place
 </div>
 <div style="line-height: 1.2;">
-laighelide cortpar la face
+laighe lide cort par la face
 </div>
 <div style="line-height: 1.2;">
-molttenrement des jo els ploroit
+molt tenrement des jo els ploroit
 </div>
 <div style="line-height: 1.2;">
 por le pitie que il avoit
@@ -9802,7 +9802,7 @@ Que li pains devient li sens cors
 <div class="line-number">
 945
 </div>
-Dexconnoistbien ton sacrefice
+Dexconnoist bien ton sacrefice
 </div>
 <div style="line-height: 1.2;">
 Car te vie ma tote aprise
@@ -9831,7 +9831,7 @@ dame ce respont Zosimas
 jam a beneicon navras
 </div>
 <div style="line-height: 1.2;">
-Setuprimes ne lemefais
+Setu primes ne lemefais
 </div>
 <div style="line-height: 1.2;">
 Jade ci ne leverai mais
@@ -9918,7 +9918,7 @@ Seil ont pais u il ont gerre
 confaitement il se contienent
 </div>
 <div style="line-height: 1.2;">
-dansZosimasdont li respont
+dansZosimas dont li respont
 </div>
 <div style="line-height: 1.2;">
 Dexamis pais par tot le mont
@@ -9930,16 +9930,16 @@ Nus ne va itant par la terre
 <div class="line-number">
 980
 </div>
-Quiloie mais parler de gerre
+Qui loie mais parler de gerre
 </div>
 <div style="line-height: 1.2;">
 mais sainte eglise a grant beson
 </div>
 <div style="line-height: 1.2;">
-Quepor li faites orison
+Que por li faites orison
 </div>
 <div style="line-height: 1.2;">
-QueDex li donast pais durable
+Que Dex li donast pais durable
 </div>
 <div style="line-height: 1.2;">
 &amp; desfende delvis dyable
@@ -9966,7 +9966,7 @@ Deu en proia le Creator
 <div class="line-number">
 990
 </div>
-moltdoucement &amp; par amor
+molt doucement &amp; par amor
 </div>
 <div style="line-height: 1.2;">
 Si que la bouche nemovoit
@@ -9978,7 +9978,7 @@ Ne nule vois fors nen issoit
 de terre fu senpers ravie
 </div>
 <div style="line-height: 1.2;">
-Que eleni aivenoit mie
+Que ele ni aivenoit mie
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -10002,7 +10002,7 @@ ouele faisoit saproiere
 <div class="line-number">
 1000
 </div>
-Nostre Sireslavoitmolt chiere
+Nostre Sireslavoit molt chiere
 </div>
 </div>
 <div class="column-break">
@@ -10010,7 +10010,7 @@ Nostre Sireslavoitmolt chiere
 de la paor cot Zosimas
 </div>
 <div style="line-height: 1.2;">
-commencasent aler lepas
+commenca sent aler lepas
 </div>
 <div style="line-height: 1.2;">
 Quida fantosme avoir trover
@@ -10022,7 +10022,7 @@ Ariere sen est retorne
 <div class="line-number">
 1005
 </div>
-QuantMarielen voit aler
+Quant Marielen voit aler
 </div>
 <div style="line-height: 1.2;">
 Sel commenca a apeler
@@ -10082,22 +10082,22 @@ apres commenca a parler
 dont est venue &amp; de quel tere b
 </div>
 <div style="line-height: 1.2;">
-Zosimasli prista enquerre a
+Zosimasli prist a enquerre a
 </div>
 <div style="line-height: 1.2;">
 descuevre moi latoie vie
 </div>
 <div style="line-height: 1.2;">
-porDeu nel me celer tumie
+por Deu nel me celer tumie
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
 1025
 </div>
-dilemoiparconfession
+dilemoi par confession
 </div>
 <div style="line-height: 1.2;">
-QueDex te face voir pardon
+Que Dex te face voir pardon
 </div>
 <div style="line-height: 1.2;">
 Sire ce li respont Marie
@@ -10121,7 +10121,7 @@ tote le te descoverrai
 Ne ja de rien nen mentirai
 </div>
 <div style="line-height: 1.2;">
-<span class="decorative-initial floriate" data-size="2">D</span>ont commencea conterMarie
+<span class="decorative-initial floriate" data-size="2">D</span>ont commence a conter Marie
 </div>
 <div style="line-height: 1.2;">
 Rien ne coile que tot nedie
@@ -10136,7 +10136,7 @@ tote savie a acontee
 des icele eure que fu nee
 </div>
 <div style="line-height: 1.2;">
-Endementresqu’eleli conte
+Endementres qu’ele li conte
 </div>
 <div style="line-height: 1.2;">
 bien poes croi re qu’ele ot honte
@@ -10148,16 +10148,16 @@ Quant el liot conte savie
 <div class="line-number">
 1040
 </div>
-Aspieslichietmercilicrie
+Aspies lichiet merci licrie
 </div>
 <div style="line-height: 1.2;">
-Quantliotconte ses pechies
+Quant liot conte ses pechies
 </div>
 <div style="line-height: 1.2;">
 Apres liest cheue aspies
 </div>
 <div style="line-height: 1.2;">
-Zosimasaoisavie
+Zosimasaoi savie
 </div>
 <div style="line-height: 1.2;">
 le Creator en glorefie
@@ -10166,16 +10166,16 @@ le Creator en glorefie
 <div class="line-number">
 1045
 </div>
-merci en rent NostreSeignor
+merci en rent Nostre Seignor
 </div>
 <div style="line-height: 1.2;">
-parmoltbon cuer &amp; par amor
+par molt bon cuer &amp; par amor
 </div>
 <div style="line-height: 1.2;">
 damepor coi chies ames pies
 </div>
 <div style="line-height: 1.2;">
-porDeuteproique tu ten lies
+por Deuteproi que tu ten lies
 </div>
 <div style="line-height: 1.2;">
 Nest pas en moi ladignete
@@ -10192,7 +10192,7 @@ Ne sui de tel auctorite
 116v
 </div>
 <div style="line-height: 1.2;">
-aceque jo toi ci conter
+ace que jo toi ci conter
 </div>
 <div style="line-height: 1.2;">
 Que ne nos seul vers ci garder
@@ -10201,7 +10201,7 @@ Que ne nos seul vers ci garder
 Car onques ton pareil ne vi
 </div>
 <div style="line-height: 1.2;">
-porDeu aies de moi merci
+por Deu aies de moi merci
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -10273,7 +10273,7 @@ Sen iront fors de lor maison
 le jor venra del saint quaresme
 </div>
 <div style="line-height: 1.2;">
-Quecascuns en ira son esme
+Que cascuns en ira son esme
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -10300,7 +10300,7 @@ Garis seras si com jo croi
 dont te pri devenir a moi
 </div>
 <div style="line-height: 1.2;">
-le cors NostreSeignor me met
+le cors Nostre Seignor me met
 </div>
 <div style="line-height: 1.2;">
 En -i- vaiscel qui molt soit net
@@ -10357,7 +10357,7 @@ desque passai le flun Jordan
 deses le moster Saint Jehan
 </div>
 <div style="line-height: 1.2;">
-Ne noi le cors NostreSeignor
+Ne noi le cors Nostre Seignor
 </div>
 <div style="line-height: 1.2;">
 En qui ai tote ma doucor
@@ -10434,7 +10434,7 @@ Sirecommence a repairier
 venus en est a sam aison
 </div>
 <div style="line-height: 1.2;">
-Ensementsont si compaignon
+Ensement sont si compaignon
 </div>
 <div style="line-height: 1.2;">
 li abes Johans fu molt lies
@@ -10461,10 +10461,10 @@ Ne soi -i- point glorifier
 <div class="line-number">
 1125
 </div>
-<span class="decorative-initial floriate" data-size="2">A</span>presquant ce vint al quareme
+<span class="decorative-initial floriate" data-size="2">A</span>pres quant ce vint al quareme
 </div>
 <div style="line-height: 1.2;">
-Quecascun doit aler son esme
+Que cascun doit aler son esme
 </div>
 <div style="line-height: 1.2;">
 En son lit jut dans Zosimas
@@ -10500,7 +10500,7 @@ tres que vint al jor de la caine
 Zosimas se senti gari
 </div>
 <div style="line-height: 1.2;">
-donta priscorpusdomni
+dont a pris corpus domni
 </div>
 <div style="line-height: 1.2;">
 le sanc precious ensement
@@ -10509,7 +10509,7 @@ le sanc precious ensement
 por faire le commandement
 </div>
 <div style="line-height: 1.2;">
-dontladamelavoit proie
+dont ladame lavoit proie
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -10527,7 +10527,7 @@ o soi porta -i- poi de soire
 &amp; de lentilles ensement
 </div>
 <div style="line-height: 1.2;">
-Ilotsoingdautreforniement
+Ilot soing dautre forniement
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -10580,7 +10580,7 @@ Ne me laisse ci esgare
 lai moi veoir en cor lafeme
 </div>
 <div style="line-height: 1.2;">
-Quina son per entot cest regne
+Qui na son per entot cest regne
 </div>
 <div style="line-height: 1.2;">
 Janen vivrai si com jo croi
@@ -10652,7 +10652,7 @@ Quant tu nen as nef ne calan
 Marielot issi parler
 </div>
 <div style="line-height: 1.2;">
-dontcommenca fort a plorer
+dont commenca fort a plorer
 </div>
 <div style="line-height: 1.2;">
 a Damedeu sest commandee
@@ -10673,7 +10673,7 @@ oies com fu de grant creance
 Sor laighe roide vait grant pas
 </div>
 <div style="line-height: 1.2;">
-moltsenmerveilleZosimas
+molt sen merveille Zosimas
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -10685,7 +10685,7 @@ outre passa de lautre part
 onques sa plante ni moilla
 </div>
 <div style="line-height: 1.2;">
-Quantalarive fu venue
+Quant alarive fu venue
 </div>
 <div style="line-height: 1.2;">
 vait al saint home sel salue
@@ -10706,7 +10706,7 @@ As pies li fait afliction
 Requiert li sa beneicon
 </div>
 <div style="line-height: 1.2;">
-li sainslaivearelever
+li sainslaive arelever
 </div>
 <div style="line-height: 1.2;">
 de pitie commence a plorer
@@ -10718,10 +10718,10 @@ de pitie commence a plorer
 No se faire sor li seignacle
 </div>
 <div style="line-height: 1.2;">
-QuantDexpor li fait tel miracle
+Quant Dexpor li fait tel miracle
 </div>
 <div style="line-height: 1.2;">
-Quilefait si aler sor londe
+Qui lefait si aler sor londe
 </div>
 <div style="line-height: 1.2;">
 de leue que siert parfonde
@@ -10762,7 +10762,7 @@ adont lidist molt belement
 ladame respont apres lui
 </div>
 <div style="line-height: 1.2;">
-moltsentre gardent anbedui
+molt sentre gardent anbedui
 </div>
 <div style="line-height: 1.2;">
 Quant orent fait lor parlement
@@ -10777,7 +10777,7 @@ li sains li mostre tel present
 comme le cors Nostre Seignor
 </div>
 <div style="line-height: 1.2;">
-parqui seront sauf pecheor
+par qui seront sauf pecheor
 </div>
 <div style="line-height: 1.2;">
 Zosimas le tint en sa main
@@ -10798,7 +10798,7 @@ Que li malvais pueples acist
 Enlacrois fu mis &amp; ocis
 </div>
 <div style="line-height: 1.2;">
-Ja nusnavera paradis
+Ja nus navera paradis
 </div>
 <div style="line-height: 1.2;">
 Se il ne croit ce en sa vie
@@ -10849,13 +10849,13 @@ Cil est molt fols qui le tient vil
 Se tu las aporte otoi
 </div>
 <div style="line-height: 1.2;">
-porDeu te pri do ne lemoi
+por Deu te pri do ne lemoi
 </div>
 <div style="line-height: 1.2;">
 li sainslot issi desraisner
 </div>
 <div style="line-height: 1.2;">
-moltsencommencea merveiller
+molt sen commence a merveiller
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -11034,7 +11034,7 @@ Que to as pieca aprestees
 xxx- ans erent ?????? ?????
 </div>
 <div style="line-height: 1.2;">
-Qu’elenavoit mangie de ble
+Qu’ele navoit mangie de ble
 </div>
 <div style="line-height: 1.2;">
 deleve but tot sans soi
@@ -11216,7 +11216,7 @@ a toi le puisse jo livrer
 Niot beste tant par fust fier
 </div>
 <div style="line-height: 1.2;">
-Quionqueslosaitaproismer
+Qui onques losait aproismer
 </div>
 <div style="line-height: 1.2;">
 Sor li nosa oiseaus voler
@@ -11332,7 +11332,7 @@ mostre moi co que tant ai quis
 Saches de ci ne moverai
 </div>
 <div style="line-height: 1.2;">
-N’avantna rierenen irai
+N’avant na riere nen irai
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -11359,13 +11359,13 @@ Ne viverai si com le croi
 Se jo en core nelavoi
 </div>
 <div style="line-height: 1.2;">
-Lai moi veir lecorsmamie
+Lai moi veir lecors mamie
 </div>
 <div style="line-height: 1.2;">
 car jo quit quele soit fenie
 </div>
 <div style="line-height: 1.2;">
-Selevesquist si com jo croi
+Sele vesquist si com jo croi
 </div>
 <div style="line-height: 1.2;">
 Ele fust ja venue amoi
@@ -11386,7 +11386,7 @@ Sire setuas demoi cure
 lai moi faire sasepulture
 </div>
 <div style="line-height: 1.2;">
-Biaus PareDeu de Maiste
+Biaus Pare Deu de Maiste
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -11398,7 +11398,7 @@ Ne me laisse ci esgare
 Quant il ot sorison fenie
 </div>
 <div style="line-height: 1.2;">
-dontlimostralecorsmarie
+dont limostra lecorsmarie
 </div>
 <div style="line-height: 1.2;">
 vers destre part sest regarde
@@ -11410,7 +11410,7 @@ En -i- lieu vit une clarte
 <div class="line-number">
 1385
 </div>
-Quida que fu eust la
+Qui da que fu eust la
 </div>
 <div style="line-height: 1.2;">
 a la clarte dont saproisma
@@ -11508,7 +11508,7 @@ li sains hom les a recitees
 mais quant il ot le non trove
 </div>
 <div style="line-height: 1.2;">
-moltgrantmercis en rent ade
+molt grant mercis en rent ade
 </div>
 <div style="line-height: 1.2;">
 par le bel non en fu molt lie
@@ -11526,7 +11526,7 @@ Quant il ot dit le suen mester
 puis dit ses salmes del sauter
 </div>
 <div style="line-height: 1.2;">
-dontleveiscieses gare
+dont leveiscies es gare
 </div>
 <div style="line-height: 1.2;">
 car ni avoit rien aporte
@@ -11583,7 +11583,7 @@ Se Dex ne lidonast aie
 par le deserte de Marie
 </div>
 <div style="line-height: 1.2;">
-Dexlidon aboncompaignon
+Dexlidon a bon compaignon
 </div>
 <div style="line-height: 1.2;">
 Nient autre mais -i- lion
@@ -11613,13 +11613,13 @@ Signe lifai soit dobeir
 &amp; que il le voloit servir
 </div>
 <div style="line-height: 1.2;">
-Quantli sains hom vit le lion
+Quant li sains hom vit le lion
 </div>
 <div style="line-height: 1.2;">
 Navait apris tel compaignon
 </div>
 <div style="line-height: 1.2;">
-Neustsoig de sa compaignie
+Neust soig de sa compaignie
 </div>
 <div style="line-height: 1.2;">
 Se Dex li donast autre aie
@@ -11628,7 +11628,7 @@ Se Dex li donast autre aie
 <div class="line-number">
 1445
 </div>
-premierementsen vout fuir
+premierement sen vout fuir
 </div>
 <div style="line-height: 1.2;">
 Quant il levit al cors venir
@@ -11663,7 +11663,7 @@ Il liadit biaus dous amis
 Ceste feme a anon Marie
 </div>
 <div style="line-height: 1.2;">
-Quimoltpar fu de bone vie
+Qui molt par fu de bone vie
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -11672,10 +11672,10 @@ Quimoltpar fu de bone vie
 ma ci de mostre en -i- brief
 </div>
 <div style="line-height: 1.2;">
-Quejai ci trove a son chief
+Que jai ci trove a son chief
 </div>
 <div style="line-height: 1.2;">
-Quepar moi veut estre enfoie
+Que par moi veut estre enfoie
 </div>
 <div style="line-height: 1.2;">
 mais jo ai grant mester daie
@@ -11699,7 +11699,7 @@ del commandement fu molt lies
 a ce que il seut obeir
 </div>
 <div style="line-height: 1.2;">
-commencala terre a fuir
+commenca la terre a fuir
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -11747,10 +11747,10 @@ devers le chief le cors saisit
 Entreus deus lont el sarcu mis
 </div>
 <div style="line-height: 1.2;">
-de denslaterre ont mis le cors []
+de dens laterre ont mis le cors []
 </div>
 <div style="line-height: 1.2;">
-Zosimasdoncsen issi fors
+Zosimasdonc sen issi fors
 </div>
 <div style="line-height: 1.2;">
 Or fait la commandacion
@@ -11804,7 +11804,7 @@ ariere sen est retornes
 El grant de sert en est entres
 </div>
 <div style="line-height: 1.2;">
-QuantZosimasl’en vit torner
+Quant Zosimasl’en vit torner
 </div>
 <div style="line-height: 1.2;">
 Deu en commenca aloer
@@ -11816,13 +11816,13 @@ Deu en commenca aloer
 SireDeus loes foiestu
 </div>
 <div style="line-height: 1.2;">
-moltpar est grande ta vertu
+molt par est grande ta vertu
 </div>
 <div style="line-height: 1.2;">
-bienmasde mostreparMarie
+bien mas de mostre par Marie
 </div>
 <div style="line-height: 1.2;">
-Quemoltpar est fols qui toblie
+Que molt par est fols qui toblie
 </div>
 </div>
 <div class="column-break">
@@ -11851,13 +11851,13 @@ Nemais ne le deporterai
 <div class="line-number">
 1505
 </div>
-commencasentarepairier
+commenca sent arepairier
 </div>
 <div style="line-height: 1.2;">
 plorant senvait a son moster
 </div>
 <div style="line-height: 1.2;">
-Ensementsont si compaignon
+Ensement sont si compaignon
 </div>
 <div style="line-height: 1.2;">
 tot sen repairent amaison
@@ -11875,7 +11875,7 @@ Quant il furent enlorostal
 Zosimascommence a parler
 </div>
 <div style="line-height: 1.2;">
-Ornesevolra mais celer
+Orne sevolra mais celer
 </div>
 <div style="line-height: 1.2;">
 del Egiptiene Marie
@@ -11887,7 +11887,7 @@ lor a conte tote la vie
 <div class="line-number">
 1515
 </div>
-commentletrova el desert
+comment letrova el desert
 </div>
 <div style="line-height: 1.2;">
 El lieu de litable ou ele ert
@@ -11929,7 +11929,7 @@ puis lor a conte del lion
 comment il lot a compaignon
 </div>
 <div style="line-height: 1.2;">
-Quantlimoine ont oi son dit
+Quant limoine ont oi son dit
 </div>
 <div style="line-height: 1.2;">
 a Deu en ont rendu mercit
@@ -11989,7 +11989,7 @@ denos armes al jugement
 amen amen &amp; Jhesu crist
 </div>
 <div style="line-height: 1.2;">
-consautqui cest romans escrist
+consaut qui cest romans escrist
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -12193,7 +12193,7 @@ dont Dex ne face vrai pardon
 par foi &amp; par confession
 </div>
 <div style="line-height: 1.2;">
-a celsqui prendent penitance
+a cels qui prendent penitance
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -12217,7 +12217,7 @@ Car honte fait al Creator
 <div class="line-number">
 25
 </div>
-Quimolt est fel &amp; envieus
+Qui molt est fel &amp; envieus
 </div>
 <div style="line-height: 1.2;">
 &amp; de mal faire covoiteus
@@ -12226,7 +12226,7 @@ Quimolt est fel &amp; envieus
 devant nos vient souvent ester
 </div>
 <div style="line-height: 1.2;">
-Quinos volroit a luy torner
+Qui nos volroit a luy torner
 </div>
 <div style="line-height: 1.2;">
 Il n’est nus hom en ceste vie
@@ -12241,7 +12241,7 @@ Qui tant soit sage u n’ait folie
 Li apostle qui Deu sievoient
 </div>
 <div style="line-height: 1.2;">
-parmolt de foies pechoient
+par molt de foies pechoient
 </div>
 <div style="line-height: 1.2;">
 por co ne me puis merveiller
@@ -12315,10 +12315,10 @@ Encore fesist il folie
 114r
 </div>
 <div style="line-height: 1.2;">
-Quantl’ameen vaconme caitive
+Quant l’ame en va conme caitive
 </div>
 <div style="line-height: 1.2;">
-Qui li feradonques aide
+Qui li fera donques aide
 </div>
 <div style="line-height: 1.2;">
 Nus hom sos eies ne li fera
@@ -12330,10 +12330,10 @@ Se n’est cil sires quil cria
 <div class="line-number">
 55
 </div>
-<span class="decorative-initial floriate" data-size="2">C</span>ela damedont doi conter
+<span class="decorative-initial floriate" data-size="2">C</span>ela dame ela dame dont doi conter
 </div>
 <div style="line-height: 1.2;">
-Mariel’oi apeler
+Marie l’oi apeler
 </div>
 <div style="line-height: 1.2;">
 Egiptiene est por ce dite
@@ -12387,7 +12387,7 @@ de -ii- parens ne se gardoit
 A tos homes s’abandonoit
 </div>
 <div style="line-height: 1.2;">
-N’espoirque fust en ceste vie
+N’espoir que fust en ceste vie
 </div>
 <div style="line-height: 1.2;">
 Feme de plus grant legerie
@@ -12420,7 +12420,7 @@ Fille ce li disoit la mere
 <div class="line-number">
 80
 </div>
-Car croi le conseil de ton pere
+Car croi le conseil de ton pere pere
 </div>
 <div style="line-height: 1.2;">
 Selongement tiens cest mestier
@@ -12429,7 +12429,7 @@ Selongement tiens cest mestier
 Molt en arons grant reprovier
 </div>
 <div style="line-height: 1.2;">
-PorDeu te proi fille Marie
+Por Deu te proi fille Marie
 </div>
 <div style="line-height: 1.2;">
 Guerpis mais ceste legerie
@@ -12450,7 +12450,7 @@ N’est drois que tu soies perie
 Por soffraite de nostre aie
 </div>
 <div style="line-height: 1.2;">
-Filletu es de haut parage
+Fille tu es de haut parage
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -12468,7 +12468,7 @@ por ta malvaise legerie
 tes peres en est si iries
 </div>
 <div style="line-height: 1.2;">
-Ja maisa nul jor n’en ert lies
+Ja mais a nul jor n’en ert lies
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -12477,10 +12477,10 @@ Ja maisa nul jor n’en ert lies
 &amp; maldist tote s’aventure
 </div>
 <div style="line-height: 1.2;">
-Quanta fait tele engenieure
+Quant a fait tele engenieure
 </div>
 <div style="line-height: 1.2;">
-QuantMariel’ooit parler
+Quant Marie l’ooit parler
 </div>
 <div style="line-height: 1.2;">
 Ne le voloit nes escouter
@@ -12497,7 +12497,7 @@ del tot volt faire ses conmans
 </div>
 <div class="column-break">
 <div style="line-height: 1.2;">
-porbien faire sa volente
+por bien faire sa volente
 </div>
 <div style="line-height: 1.2;">
 S’en fui en autre regne
@@ -12557,7 +12557,7 @@ por sa [] biaute li jovencel
 Ele les recoit volentiers
 </div>
 <div style="line-height: 1.2;">
-Nientseulement por lor deniers
+Nient seulement por lor deniers
 </div>
 <div style="line-height: 1.2;">
 Mais por faire le sien delit
@@ -12575,7 +12575,7 @@ A son delit ert entendive
 de jor &amp; de nuit la chaitive
 </div>
 <div style="line-height: 1.2;">
-boire &amp;mangier &amp; luxure
+boire &amp; mangier &amp; luxure
 </div>
 <div style="line-height: 1.2;">
 Co ert tote la soie cure
@@ -12623,7 +12623,7 @@ Si se faisoient la hardi
 de Gisarmes &amp; de espees
 </div>
 <div style="line-height: 1.2;">
-S’entredonoientgrant colees
+S’entredonoient grant colees
 </div>
 <div style="line-height: 1.2;">
 Li sans qui en ert espandus
@@ -12721,7 +12721,7 @@ En icel tans ne en cel regne
 N’en ot onques plus bele feme
 </div>
 <div style="line-height: 1.2;">
-onquescomtesse ne roine
+onques comtesse ne roine
 </div>
 <div style="line-height: 1.2;">
 Nen ot el chief plus bele crigne
@@ -12790,7 +12790,7 @@ Ert si blance com flor d’espine
 blans bras avoit &amp; blances mains
 </div>
 <div style="line-height: 1.2;">
-les dois reons greilles&amp; plains
+les dois reons greilles &amp; plains
 </div>
 <div style="line-height: 1.2;">
 Gent cors avoit &amp; bien molle
@@ -12802,13 +12802,13 @@ Sus l’asoele lonc le coste
 <div class="line-number">
 185
 </div>
-Ne tropgrandene trop petite
+Ne trop grande ne trop petite
 </div>
 <div style="line-height: 1.2;">
-Ja sa faconn’enert descrite
+Ja sa facon n’en ert descrite
 </div>
 <div style="line-height: 1.2;">
-la gransbiautes de ceste dame
+la grans biautes de ceste dame
 </div>
 <div style="line-height: 1.2;">
 N’iert toute escrite par nul homme
@@ -12826,7 +12826,7 @@ Rien n’i avoit que amender
 a plaindre fait tel creature
 </div>
 <div style="line-height: 1.2;">
-Quantde sonCreatorn’a cure
+Quant de son Creator n’a cure
 </div>
 <div style="line-height: 1.2;">
 Ele recevoit grans presens
@@ -12841,7 +12841,7 @@ S’en achatoit biaus garnemens
 biaus dras avoit &amp; avenans
 </div>
 <div style="line-height: 1.2;">
-porbien plaisir a ses amans
+por bien plaisir a ses amans
 </div>
 <div style="line-height: 1.2;">
 N’avoit pas soing de dras de laine
@@ -12861,7 +12861,7 @@ Si afubloit mantel ermin
 </div>
 <div class="column-break">
 <div style="line-height: 1.2;">
-Sollersbienpains de cordoan
+Sollers bien pains de cordoan
 </div>
 <div style="line-height: 1.2;">
 chaucoit a tus les jors del an
@@ -12939,7 +12939,7 @@ ariver vit une galee
 Qui de tos biens ert escipee
 </div>
 <div style="line-height: 1.2;">
-tote ert plaine de pelerins
+tote ert plaine de pelerins pelerins
 </div>
 <div style="line-height: 1.2;">
 de viex homes &amp; de mescins
@@ -13032,13 +13032,13 @@ Se vus lor aves que doner
 Si porres bien deus aler
 </div>
 <div style="line-height: 1.2;">
-parDeu ce respont la dolente
+par Deu ce respont la dolente
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
 250
 </div>
-moltpar ai bele jovente
+molt par ai bele jovente
 </div>
 </div>
 <div class="column-break">
@@ -13061,13 +13061,13 @@ Ne puet muer que ne s’en rie
 <div class="line-number">
 255
 </div>
-Quanta oi le covenant
+Quant a oi le covenant
 </div>
 <div style="line-height: 1.2;">
 Guerpi la si s’en vait riant
 </div>
 <div style="line-height: 1.2;">
-E ledolentes’en torna
+E le dolente s’en torna
 </div>
 <div style="line-height: 1.2;">
 Ainc a l’ostel ne repaira
@@ -13103,10 +13103,10 @@ a aeus en vint isnelement
 &amp; i parla molt simplement
 </div>
 <div style="line-height: 1.2;">
-<span class="decorative-initial floriate" data-size="2">S</span>eigneur dist ele pelerin
+<span class="decorative-initial floriate" data-size="2">S</span>eigneur eigneur dist ele pelerin
 </div>
 <div style="line-height: 1.2;">
-Dexvos mete en corage fin
+Dex vos mete en corage fin
 </div>
 <div style="line-height: 1.2;">
 &amp; vos doinst icel volente
@@ -13115,7 +13115,7 @@ Dexvos mete en corage fin
 <div class="line-number">
 270
 </div>
-Quivos me facies carite
+Qui vos me facies carite
 </div>
 <div style="line-height: 1.2;">
 Ja sui jo une povre feme
@@ -13190,7 +13190,7 @@ Sus en la nef le font monter
 Apres si le vont desancrer
 </div>
 <div style="line-height: 1.2;">
-Donquescommencenta nagier
+Donques commencent a nagier
 </div>
 <div style="line-height: 1.2;">
 Cil del dromont li plus leger
@@ -13231,7 +13231,7 @@ primes les prent a tastoner
 dont les commenca a baisier
 </div>
 <div style="line-height: 1.2;">
-&amp; en tus sensa losengier
+&amp; en tus sens a losengier
 </div>
 <div style="line-height: 1.2;">
 N’i ot -i- seul tant fust lassez
@@ -13300,7 +13300,7 @@ por faire bien le sien delis
 Ala la nuit par tot les lis
 </div>
 <div style="line-height: 1.2;">
-A moltgrant gres les recevoit
+A molt grant gres les recevoit
 </div>
 <div style="line-height: 1.2;">
 lor volentes aenplisoit
@@ -13318,10 +13318,10 @@ Qui pot soffrir issi grant gent
 de ce n’estuet il douter mie
 </div>
 <div style="line-height: 1.2;">
-Quen’aitdyable a compaignie
+Que n’ait dyable a compaignie
 </div>
 <div style="line-height: 1.2;">
-Quivolenters la les noiast
+Qui volenters la les noiast
 </div>
 <div style="line-height: 1.2;">
 Se Damedex le li laissast
@@ -13336,7 +13336,7 @@ Mais il les a gari de mort
 &amp; si les fist venir al port
 </div>
 <div style="line-height: 1.2;">
-QuantMarie fu arivee
+Quant Marie fu arivee
 </div>
 <div style="line-height: 1.2;">
 Dolante fu &amp; esgaree
@@ -13345,7 +13345,7 @@ Dolante fu &amp; esgaree
 Sospire &amp; pleure a la rive
 </div>
 <div style="line-height: 1.2;">
-Ne setque faire la caitive
+Ne set que faire la caitive
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -13396,7 +13396,7 @@ Ains que venist l’Assention
 De la sainte crois onoree
 </div>
 <div style="line-height: 1.2;">
-Quei devoit estre aoree
+Que i devoit estre aoree
 </div>
 <div style="line-height: 1.2;">
 ot enpirie si tot le lieu
@@ -13446,7 +13446,7 @@ des pelerins d’outre le mer
 Qui vont al temple por orer
 </div>
 <div style="line-height: 1.2;">
-commepreudome &amp; comme sage
+comme preudome &amp; comme sage
 </div>
 <div style="line-height: 1.2;">
 Al moster vont par bon corage
@@ -13464,10 +13464,10 @@ mist soi dedens la compaignie
 Entra en la procession
 </div>
 <div style="line-height: 1.2;">
-Non paspar bone enten[]cion
+Non pas par bone enten[]cion ]cion
 </div>
 <div style="line-height: 1.2;">
-li pelerinquile veoient
+li pelerin qui le veoient
 </div>
 <div style="line-height: 1.2;">
 Sa volente ne conissoient
@@ -13503,7 +13503,7 @@ ce li ert vis son escient
 Que ele veoit une gent
 </div>
 <div style="line-height: 1.2;">
-Queli sambloientchevaliers
+Que li sambloient chevaliers
 </div>
 <div style="line-height: 1.2;">
 mais molt avoient les vis fiers
@@ -13545,7 +13545,7 @@ A la parfin voit &amp; entent
 Que ses pechies le li deffent
 </div>
 <div style="line-height: 1.2;">
-del cuercommencea sospirer
+del cuer commence a sospirer
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -13587,7 +13587,7 @@ por coi fesis les ors pechies
 <div class="line-number">
 400
 </div>
-dontDex est issi corecies
+dont Dex est issi corecies
 </div>
 </div>
 <div class="column-break">
@@ -13595,13 +13595,13 @@ dontDex est issi corecies
 mal conseil ai tos tans eu
 </div>
 <div style="line-height: 1.2;">
-QuantmonCreator ai pardeu
+Quant mon Creator ai pardeu
 </div>
 <div style="line-height: 1.2;">
 tant par sui plains de vil ordure
 </div>
 <div style="line-height: 1.2;">
-QueDamledeun’ade moi cure
+Que Damledeu n’a de moi cure
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -13655,7 +13655,7 @@ Quant il te dist ave Marie
 de la Deu grace raemplie
 </div>
 <div style="line-height: 1.2;">
-En toiprendra humanite
+En toi prendra humanite
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -13664,7 +13664,7 @@ En toiprendra humanite
 Jhesus de sainte maiste
 </div>
 <div style="line-height: 1.2;">
-Quantque il dist tu l’otrias
+Quant que il dist tu l’otrias
 </div>
 <div style="line-height: 1.2;">
 la sieue ancele reclamas
@@ -13700,7 +13700,7 @@ Ci gerpis ja la male vie
 Que od li n’arai compaignie
 </div>
 <div style="line-height: 1.2;">
-En tonFil ai jo ma creance
+En ton Fil ai jo ma creance
 </div>
 <div style="line-height: 1.2;">
 toi met en plege &amp; en fiance
@@ -13721,7 +13721,7 @@ tote gerpis jo ceste vie
 por ma malvaise legerie
 </div>
 <div style="line-height: 1.2;">
-Ja maisn’iert jor n’aie gervance
+Ja mais n’iert jor n’aie gervance
 </div>
 <div style="line-height: 1.2;">
 Molt ert aspre ma penitance
@@ -13733,7 +13733,7 @@ Virgeroine jo croi bien
 <div class="line-number">
 440
 </div>
-Queonquesn’est icele rien
+Que onques n’est icele rien
 </div>
 <div style="line-height: 1.2;">
 Que tant par soit fors a venger
@@ -13742,7 +13742,7 @@ Que tant par soit fors a venger
 Se tu ton Fil en veus proier
 </div>
 <div style="line-height: 1.2;">
-Quemolt ne soit tost pardone
+Que molt ne soit tost pardone
 </div>
 <div style="line-height: 1.2;">
 &amp; a ton Fil lues acorde
@@ -13763,13 +13763,13 @@ En toi mist il virginite
 &amp; enapres sa deite
 </div>
 <div style="line-height: 1.2;">
-molt fu grant merveille del Pere
+molt fu grant merveille del Pere Pere
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
 450
 </div>
-Quant de sa fille fist sa Mere
+Quant de sa fille fille fist sa Mere Mere
 </div>
 </div>
 <div class="column-break">
@@ -13783,10 +13783,10 @@ Il prist en toi humanite
 Ainc n’i pardis virginite
 </div>
 <div style="line-height: 1.2;">
-Il fu tes Fiex &amp; fu tes Pere
+Il fu tes Fiex &amp; fu tes Pere Pere
 </div>
 <div style="line-height: 1.2;">
-Tu fus sa Fille &amp; sa Mere
+Tu fus sa Fille &amp; sa Mere Mere
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -13801,7 +13801,7 @@ Que de l’espine issi la rose
 &amp; de la rose issi li fruis
 </div>
 <div style="line-height: 1.2;">
-par coidyables fu destruis
+par coi dyables fu destruis
 </div>
 <div style="line-height: 1.2;">
 Un non avons co est Marie
@@ -13864,10 +13864,10 @@ Qui plus reluist que geme en or
 <div class="line-number">
 475
 </div>
-En toiprist char li Fiex al roi
+En toi prist char li Fiex al roi
 </div>
 <div style="line-height: 1.2;">
-QuiSains Jehans mostra al doi
+Qui Sains Jehans mostra al doi
 </div>
 <div style="line-height: 1.2;">
 dist qu’il estoit li Aignels Dei
@@ -13888,10 +13888,10 @@ Que il jeta de paradis
 Que il devoit le mont salver
 </div>
 <div style="line-height: 1.2;">
-S’elqui da sempres enganer
+S’el qui da sempres enganer
 </div>
 <div style="line-height: 1.2;">
-Si com il fist le premerhomme
+Si com il fist le premer homme
 </div>
 <div style="line-height: 1.2;">
 Que il fist manger de la pomme
@@ -13909,7 +13909,7 @@ onques del suen rien n’i trova
 Quant si le vit arme &amp; fort
 </div>
 <div style="line-height: 1.2;">
-partraisonli dona mort
+par traison li dona mort
 </div>
 <div style="line-height: 1.2;">
 molt fu li mors boneuree
@@ -13924,10 +13924,10 @@ par coi vie fu restoree
 Se li Fiex Deu ne fust ocis
 </div>
 <div style="line-height: 1.2;">
-Ja homn’entrast en paradis
+Ja hom n’entrast en paradis
 </div>
 <div style="line-height: 1.2;">
-parla mortprist il les vertus
+par la mort prist il les vertus
 </div>
 <div style="line-height: 1.2;">
 par coi dyables fu vencus
@@ -13939,13 +13939,13 @@ par coi dyables fu vencus
 d’enfer brisa la serreure
 </div>
 <div style="line-height: 1.2;">
-Si enronpi tot la closure
+Si en ronpi tot la closure
 </div>
 <div style="line-height: 1.2;">
 Fors en jeta sa compaignie
 </div>
 <div style="line-height: 1.2;">
-Quedyables avoit ravie
+Que dyables avoit ravie
 </div>
 <div style="line-height: 1.2;">
 a son Pare tos les mena
@@ -13962,7 +13962,7 @@ en sa glorie ou il esta
 puis vint el sepulcre a son cors
 </div>
 <div style="line-height: 1.2;">
-pargrant vertu en isci fors
+par grant vertu en isci fors
 </div>
 <div style="line-height: 1.2;">
 as apostles puis aparut
@@ -14019,7 +14019,7 @@ A son secont avenement
 tu seras en sa compaignie
 </div>
 <div style="line-height: 1.2;">
-commela soie chiere amie
+comme la soie chiere amie
 </div>
 <div style="line-height: 1.2;">
 Il jugera &amp; mors &amp; vis
@@ -14058,7 +14058,7 @@ Si com jo croi ce que jo di
 Si aies vos de moi merci
 </div>
 <div style="line-height: 1.2;">
-<span class="decorative-initial floriate" data-size="2">Q</span>uant ot finee s’orison
+<span class="decorative-initial floriate" data-size="2">Q</span>uant uant ot finee s’orison
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -14082,7 +14082,7 @@ El temple entra sans demorance
 <div class="line-number">
 535
 </div>
-dedensentra sans destorbier
+dedens entra sans destorbier
 </div>
 <div style="line-height: 1.2;">
 Si va oir le Deu mestier
@@ -14121,7 +14121,7 @@ A l’image s’est repairie
 En li a tote s’esperance
 </div>
 <div style="line-height: 1.2;">
-conseilrequiertde penitance
+conseil requiert de penitance
 </div>
 <div style="line-height: 1.2;">
 En quel maniere le fera
@@ -14255,7 +14255,7 @@ par matin ala al moster
 por la oir le Deu mester
 </div>
 <div style="line-height: 1.2;">
-la recutcorpus domini
+la recut corpus domini
 </div>
 <div style="line-height: 1.2;">
 Adonc fu lie ainc ne fu si
@@ -14309,7 +14309,7 @@ par sa merci ne le gerpise
 Iluec est tote sa fiance
 </div>
 <div style="line-height: 1.2;">
-or commencasa penitance
+or commenca sa penitance
 </div>
 <div style="line-height: 1.2;">
 N’a pas talent de repentir
@@ -14464,7 +14464,7 @@ Se vos en veiscies l’oreille
 <div class="line-number">
 640
 </div>
-moltvos venist a grant merveille
+molt vos venist a grant merveille
 </div>
 <div style="line-height: 1.2;">
 Qui maigre estoit &amp; decreue
@@ -14494,7 +14494,7 @@ les bras les mains &amp; les lons dois
 Avoit plus noirs que n’en est pois
 </div>
 <div style="line-height: 1.2;">
-moltpar avoit les ongles grans
+molt par avoit les ongles grans
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -14508,7 +14508,7 @@ as dens les ront qu’ele ot trencans
 115v
 </div>
 <div style="line-height: 1.2;">
-li ventresli ert agaris
+li ventres li ert agaris
 </div>
 <div style="line-height: 1.2;">
 car n’avoit nul de ses delis
@@ -14550,7 +14550,7 @@ de co estoit ele molt lie
 Quant ele avoit la grant hascie
 </div>
 <div style="line-height: 1.2;">
-N’estoitmerveilles’iert noircie
+N’estoit merveille s’iert noircie
 </div>
 <div style="line-height: 1.2;">
 car molt demenoit aspre vie
@@ -14598,7 +14598,7 @@ mais co ert petite partie
 Quant ele ot tot son pain use
 </div>
 <div style="line-height: 1.2;">
-donquesaqueltl’erbe del pre
+donques aquelt l’erbe del pre
 </div>
 <div style="line-height: 1.2;">
 com autre beste le mangoit
@@ -14622,7 +14622,7 @@ Ne fait a plaindre li pechiet
 dont li cors est si castiet
 </div>
 <div style="line-height: 1.2;">
-d’erbevesqui &amp; de racine
+d’erbe vesqui &amp; de racine
 </div>
 <div style="line-height: 1.2;">
 dis &amp; set anz en la gastine
@@ -14649,7 +14649,7 @@ tot ce li faisoit ramenbrer
 <div class="line-number">
 690
 </div>
-Qu’eleja dis soloit amer
+Qu’ele ja dis soloit amer
 </div>
 <div style="line-height: 1.2;">
 les biaus delis &amp; les bels lieus
@@ -14696,7 +14696,7 @@ En pluisors lieus prist son ostal
 Sa vie estoit esperital
 </div>
 <div style="line-height: 1.2;">
-<span class="decorative-initial floriate" data-size="2">O</span>r lairommes a de Marie
+<span class="decorative-initial floriate" data-size="2">O</span>r lairommes r lairommes a de Marie Marie
 </div>
 <div style="line-height: 1.2;">
 Si vos dirons d’un abeie
@@ -14711,10 +14711,10 @@ Qui ert al chief de la forest
 Si com li livres nos fait cert
 </div>
 <div style="line-height: 1.2;">
-onquesDex ne fist nule gent
+onques Dex ne fist nule gent
 </div>
 <div style="line-height: 1.2;">
-Quivesquisent tant bonement
+Qui vesquisent tant bonement
 </div>
 <div style="line-height: 1.2;">
 Ni miex servent lor Creator
@@ -14765,7 +14765,7 @@ fors seul a l’eure de manger
 Il vivoient molt povrement
 </div>
 <div style="line-height: 1.2;">
-de paind’orge &amp; de polment
+de pain d’orge &amp; de polment
 </div>
 <div style="line-height: 1.2;">
 &amp; tos les venredis de l’an
@@ -14783,13 +14783,13 @@ Aighe bevoient que n’iert saine
 Car ele n’iert pas de fontaine
 </div>
 <div style="line-height: 1.2;">
-Entr’elsn’estoit pas simonie
+Entr’els n’estoit pas simonie
 </div>
 <div style="line-height: 1.2;">
 Ne covoitise ne envie
 </div>
 <div style="line-height: 1.2;">
-N’avoientsoingd’argent ne d’or
+N’avoient soing d’argent ne d’or
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -14804,7 +14804,7 @@ Nul dels n’avoit propriete
 tot erent d’une volente
 </div>
 <div style="line-height: 1.2;">
-N’esthom la lor bonte vos die
+N’est hom la lor bonte vos die
 </div>
 <div style="line-height: 1.2;">
 tant estoient de bone vie
@@ -14822,7 +14822,7 @@ le premer jor faisoient caine
 li abes les acumencoit
 </div>
 <div style="line-height: 1.2;">
-Corpusdomini lor donoit
+Corpus domini lor donoit
 </div>
 <div style="line-height: 1.2;">
 Quant les avoit acommenchies
@@ -14867,7 +14867,7 @@ Non pas por peur de larron
 <div class="line-number">
 750
 </div>
-Qu’ilcremissent de lor maison
+Qu’il cremissent de lor maison
 </div>
 </div>
 <div class="column-break">
@@ -14881,7 +14881,7 @@ Remanoient cil el moster
 Car n’est pas bon de sainte eglise
 </div>
 <div style="line-height: 1.2;">
-Que soit laissie le Deu service
+Que soit laissie le Deu Deu service
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -14995,7 +14995,7 @@ En la forest en tel angone
 <div class="line-number">
 785
 </div>
-porescaper de cel peril
+por escaper de cel peril
 </div>
 <div style="line-height: 1.2;">
 estoient il en tel escil
@@ -15043,13 +15043,13 @@ puis estoient tot l’an sos geu
 Ne lor estovoit cremir leu
 </div>
 <div style="line-height: 1.2;">
-Quantrevient al jor de quaresme
+Quant revient al jor de quaresme
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
 800
 </div>
-Quecascun doit aler son esme
+Que cascun doit aler son esme
 </div>
 </div>
 <div class="column-break">
@@ -15072,13 +15072,13 @@ puis lor ovri luis del moster
 En la forest les envoioit
 </div>
 <div style="line-height: 1.2;">
-A Damledeu les commandoit
+A Damledeu Damledeu les commandoit
 </div>
 <div style="line-height: 1.2;">
 Uns s’en va a destre partie
 </div>
 <div style="line-height: 1.2;">
-Quimolt estoit de bone vie
+Qui molt estoit de bone vie
 </div>
 <div style="line-height: 1.2;">
 Il ert apeles Zosimas
@@ -15093,10 +15093,10 @@ molt ert vestus de povres dras
 miex amoit il sa poverte
 </div>
 <div style="line-height: 1.2;">
-Quenusquens ne fait sa conte
+Que nus quens ne fait sa conte
 </div>
 <div style="line-height: 1.2;">
-En la forestparfondement
+En la forest parfondement
 </div>
 <div style="line-height: 1.2;">
 Se mist ot poi formement
@@ -15114,7 +15114,7 @@ de Deu voloit o eus parle
 mais quant il ot fait .xx. jornees
 </div>
 <div style="line-height: 1.2;">
-Quimolterent des mesurees
+Qui molt erent des mesurees
 </div>
 <div style="line-height: 1.2;">
 &amp; vit que nul n’en pot trover
@@ -15153,7 +15153,7 @@ Qui estoit de home u de feme
 &amp; c’estoit de l’Egiptiene
 </div>
 <div style="line-height: 1.2;">
-Dexl’avoit iluec amenee
+Dex l’avoit iluec amenee
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -15171,13 +15171,13 @@ Qui plus valoit c’argent ne or
 Li sains hom fu molt esmaris
 </div>
 <div style="line-height: 1.2;">
-Quanta l’onbre torna son vis
+Quant a l’onbre torna son vis
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
 835
 </div>
-Quidaque fust encantement
+Quida que fust encantement
 </div>
 <div style="line-height: 1.2;">
 Reclama Deu omnipotent
@@ -15195,7 +15195,7 @@ Quant il ot s’orison fenie
 <div class="line-number">
 840
 </div>
-la figure vit de Marie
+la figure vit de Marie Marie
 </div>
 <div style="line-height: 1.2;">
 apartement vit la figure
@@ -15239,16 +15239,16 @@ del soleil &amp; de la gelee
 116r
 </div>
 <div style="line-height: 1.2;">
-QuantZosimas vit la figure
+Quant Zosimas vit la figure
 </div>
 <div style="line-height: 1.2;">
 vers li ala grant aleure
 </div>
 <div style="line-height: 1.2;">
-la damequantle vit venir
+la dame quant le vit venir
 </div>
 <div style="line-height: 1.2;">
-Isnelementprista fuir
+Isnelement prist a fuir
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -15275,10 +15275,10 @@ jo te conjur de Deu le grant
 Que tu ne voises mais avant
 </div>
 <div style="line-height: 1.2;">
-Quantla dame ot de Deu parler
+Quant la dame ot de Deu parler
 </div>
 <div style="line-height: 1.2;">
-dontcommenca fort a plorer
+dont commenca fort a plorer
 </div>
 <div style="line-height: 1.2;">
 hez Dex dist ele Creator
@@ -15293,7 +15293,7 @@ En toi croi jo &amp; toi aor
 Xlvi. ans puis conter
 </div>
 <div style="line-height: 1.2;">
-Quen’oi mais de ti parler
+Que n’oi mais de ti parler
 </div>
 <div style="line-height: 1.2;">
 or m’as .i. saint home tramis
@@ -15344,10 +15344,10 @@ dans Zosimas vint la corant
 <div class="line-number">
 880
 </div>
-dusc’ala rive del torant
+dusc’a la rive del torant
 </div>
 <div style="line-height: 1.2;">
-la s’arestutne pot avant
+la s’arestut ne pot avant
 </div>
 <div style="line-height: 1.2;">
 dont se clama caitif dolant
@@ -15389,7 +15389,7 @@ puis m’en irai de la a toi
 Quant tu ne pues venir a moi
 </div>
 <div style="line-height: 1.2;">
-QuantZosimass’oi nomer
+Quant Zosimas s’oi nomer
 </div>
 <div style="line-height: 1.2;">
 de pec commenca a plorer
@@ -15404,7 +15404,7 @@ Car ele ne sot pas son non
 Se par le Saint esperit non
 </div>
 <div style="line-height: 1.2;">
-d’unde ses dras dont li jeta
+d’un de ses dras dont li jeta
 </div>
 <div style="line-height: 1.2;">
 A la dame donc s’aproisma
@@ -15466,7 +15466,7 @@ Or en fai ci ma penitance
 Quant li sains hom l’ot si parler
 </div>
 <div style="line-height: 1.2;">
-de pitiecommencea plorer
+de pitie commence a plorer
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -15496,10 +15496,10 @@ merci li cria molt sovent
 Zosimas se gist en la place
 </div>
 <div style="line-height: 1.2;">
-l’aigheli decortpar la face
+l’aighe li decort par la face
 </div>
 <div style="line-height: 1.2;">
-molttenrement des jo els ploroit
+molt tenrement des jo els ploroit
 </div>
 <div style="line-height: 1.2;">
 por le pitie que il avoit
@@ -15580,7 +15580,7 @@ Que li pains devient li sens cors
 <div class="line-number">
 945
 </div>
-Dexconnoistbien ton sacrefice
+Dex connoist bien ton sacrefice
 </div>
 <div style="line-height: 1.2;">
 Car te vie m’a tote aprise
@@ -15609,7 +15609,7 @@ dame ce respont Zosimas
 ja ma beneicon n’avras
 </div>
 <div style="line-height: 1.2;">
-Se tuprimes ne le me fais
+Se tu primes ne le me fais
 </div>
 <div style="line-height: 1.2;">
 Ja de ci ne leverai mais
@@ -15696,10 +15696,10 @@ Se il ont pais u il ont gerre
 confaitement il se contienent
 </div>
 <div style="line-height: 1.2;">
-dans Zosimasdont li respont
+dans Zosimas Zosimas dont li respont
 </div>
 <div style="line-height: 1.2;">
-Dexa mis pais par tot le mont
+Dex a mis pais par tot le mont
 </div>
 <div style="line-height: 1.2;">
 Nus ne va itant par la terre
@@ -15708,16 +15708,16 @@ Nus ne va itant par la terre
 <div class="line-number">
 980
 </div>
-Quil’oie mais parler de gerre
+Qui l’oie mais parler de gerre
 </div>
 <div style="line-height: 1.2;">
 mais sainte eglise a grant beson
 </div>
 <div style="line-height: 1.2;">
-Quepor li faites orison
+Que por li faites orison
 </div>
 <div style="line-height: 1.2;">
-QueDex li donast pais durable
+Que Dex li donast pais durable
 </div>
 <div style="line-height: 1.2;">
 &amp; desfende del vis dyable
@@ -15726,7 +15726,7 @@ QueDex li donast pais durable
 <div class="line-number">
 985
 </div>
-Marieli a respondu
+Marie li a respondu
 </div>
 <div style="line-height: 1.2;">
 Jhesus le gart par sa vertu
@@ -15744,7 +15744,7 @@ Deu en proia le Creator
 <div class="line-number">
 990
 </div>
-moltdoucement &amp; par amor
+molt doucement &amp; par amor
 </div>
 <div style="line-height: 1.2;">
 Si que la bouche ne movoit
@@ -15756,7 +15756,7 @@ Ne nule vois fors n’en issoit
 de terre fu senpers ravie
 </div>
 <div style="line-height: 1.2;">
-Que elen’i aivenoit mie
+Que ele n’i aivenoit mie
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -15780,7 +15780,7 @@ ou ele faisoit sa proiere
 <div class="line-number">
 1000
 </div>
-Nostre Siresl’avoitmolt chiere
+Nostre Sires l’avoit molt chiere
 </div>
 </div>
 <div class="column-break">
@@ -15788,7 +15788,7 @@ Nostre Siresl’avoitmolt chiere
 de la paor c’ot Zosimas
 </div>
 <div style="line-height: 1.2;">
-commencas’ent aler le pas
+commenca s’ent aler le pas
 </div>
 <div style="line-height: 1.2;">
 Quida fantosme avoir trover
@@ -15800,7 +15800,7 @@ Ariere s’en est retorne
 <div class="line-number">
 1005
 </div>
-QuantMariel’en voit aler
+Quant Marie l’en voit aler
 </div>
 <div style="line-height: 1.2;">
 Sel commenca a apeler
@@ -15824,7 +15824,7 @@ Saches que jo sui crestiene
 baptisie fui en m’enfance
 </div>
 <div style="line-height: 1.2;">
-En Deu ai tote ma creance
+En Deu Deu ai tote ma creance
 </div>
 <div style="line-height: 1.2;">
 Jo sui ci por espeneir
@@ -15860,22 +15860,22 @@ apres commenca a parler
 dont est venue &amp; de quel tere b
 </div>
 <div style="line-height: 1.2;">
-Zosimasli prista enquerre a
+Zosimas li prist a enquerre a
 </div>
 <div style="line-height: 1.2;">
 descuevre moi la toie vie
 </div>
 <div style="line-height: 1.2;">
-porDeu nel me celer tu mie
+por Deu nel me celer tu mie
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
 1025
 </div>
-di le moiparconfession
+di le moi par confession
 </div>
 <div style="line-height: 1.2;">
-QueDex te face voir pardon
+Que Dex te face voir pardon
 </div>
 <div style="line-height: 1.2;">
 Sire ce li respont Marie
@@ -15899,7 +15899,7 @@ tote le te descoverrai
 Ne ja de rien n’en mentirai
 </div>
 <div style="line-height: 1.2;">
-<span class="decorative-initial floriate" data-size="2">D</span>ont commencea conterMarie
+<span class="decorative-initial floriate" data-size="2">D</span>ont commence a conter Marie
 </div>
 <div style="line-height: 1.2;">
 Rien ne coile que tot ne die
@@ -15914,7 +15914,7 @@ tote sa vie a acontee
 des icele eure que fu nee
 </div>
 <div style="line-height: 1.2;">
-Endementresqu’eleli conte
+Endementres qu’ele li conte
 </div>
 <div style="line-height: 1.2;">
 bien poes croire qu’ele ot honte
@@ -15926,16 +15926,16 @@ Quant el li ot conte sa vie
 <div class="line-number">
 1040
 </div>
-As piesli chietmercili crie
+As pies li chiet merci li crie
 </div>
 <div style="line-height: 1.2;">
-Quantli otconte ses pechies
+Quant li ot conte ses pechies
 </div>
 <div style="line-height: 1.2;">
 Apres li est cheue as pies
 </div>
 <div style="line-height: 1.2;">
-Zosimasa oisa vie
+Zosimas a oi sa vie
 </div>
 <div style="line-height: 1.2;">
 le Creator en glorefie
@@ -15944,16 +15944,16 @@ le Creator en glorefie
 <div class="line-number">
 1045
 </div>
-merci en rent NostreSeignor
+merci en rent Nostre Seignor
 </div>
 <div style="line-height: 1.2;">
-parmoltbon cuer &amp; par amor
+par molt bon cuer &amp; par amor
 </div>
 <div style="line-height: 1.2;">
-damepor coi chies a mes pies
+dame por coi chies a mes pies
 </div>
 <div style="line-height: 1.2;">
-porDeute proique tu t’en lies
+por Deu te proi que tu t’en lies
 </div>
 <div style="line-height: 1.2;">
 N’est pas en moi la dignete
@@ -15970,7 +15970,7 @@ Ne sui de tel auctorite
 116v
 </div>
 <div style="line-height: 1.2;">
-a ceque jo t’oi ci conter
+a ce que jo t’oi ci conter
 </div>
 <div style="line-height: 1.2;">
 Que ne n’os seul vers ci garder
@@ -15979,7 +15979,7 @@ Que ne n’os seul vers ci garder
 Car onques ton pareil ne vi
 </div>
 <div style="line-height: 1.2;">
-porDeu aies de moi merci
+por Deu aies de moi merci
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -16051,7 +16051,7 @@ S’en iront fors de lor maison
 le jor venra del saint quaresme
 </div>
 <div style="line-height: 1.2;">
-Quecascuns en ira son esme
+Que cascuns en ira son esme
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -16078,7 +16078,7 @@ Garis seras si com jo croi
 dont te pri devenir a moi
 </div>
 <div style="line-height: 1.2;">
-le cors NostreSeignor me met
+le cors Nostre Seignor me met
 </div>
 <div style="line-height: 1.2;">
 En -i- vaiscel qui molt soit net
@@ -16093,7 +16093,7 @@ mais ce garde que molt soit bel
 <div class="line-number">
 1085
 </div>
-perequant tu m’aporteras
+pere quant tu m’aporteras
 </div>
 <div style="line-height: 1.2;">
 plus fort de toi me traveras
@@ -16135,7 +16135,7 @@ desque passai le flun Jordan
 deses le moster Saint Jehan
 </div>
 <div style="line-height: 1.2;">
-Ne n’oi le cors NostreSeignor
+Ne n’oi le cors Nostre Seignor
 </div>
 <div style="line-height: 1.2;">
 En qui ai tote ma doucor
@@ -16206,13 +16206,13 @@ Qui le me deignas demostrer
 puis li menbra de son moster
 </div>
 <div style="line-height: 1.2;">
-Sirecommence a repairier
+Sire commence a repairier
 </div>
 <div style="line-height: 1.2;">
 venus en est a sa maison
 </div>
 <div style="line-height: 1.2;">
-Ensementsont si compaignon
+Ensement sont si compaignon
 </div>
 <div style="line-height: 1.2;">
 li abes Johans fu molt lies
@@ -16239,13 +16239,13 @@ Ne soi -i- point glorifier
 <div class="line-number">
 1125
 </div>
-<span class="decorative-initial floriate" data-size="2">A</span>presquant ce vint al quareme
+<span class="decorative-initial floriate" data-size="2">A</span> pres quant ce vint al quareme
 </div>
 <div style="line-height: 1.2;">
-Quecascun doit aler son esme
+Que cascun doit aler son esme
 </div>
 <div style="line-height: 1.2;">
-En son lit jut dans Zosimas
+En son lit jut dans Zosimas Zosimas
 </div>
 <div style="line-height: 1.2;">
 malades fu n’i ala pas
@@ -16278,7 +16278,7 @@ tres que vint al jor de la caine
 Zosimas se senti gari
 </div>
 <div style="line-height: 1.2;">
-donta priscorpusdomini
+dont a pris corpus domini
 </div>
 <div style="line-height: 1.2;">
 le sanc precious ensement
@@ -16287,7 +16287,7 @@ le sanc precious ensement
 por faire le commandement
 </div>
 <div style="line-height: 1.2;">
-dontla damel’avoit proie
+dont la dame l’avoit proie
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -16296,7 +16296,7 @@ dontla damel’avoit proie
 Quant ele prist a lui congie
 </div>
 <div style="line-height: 1.2;">
-Zosimasa enpris son oire
+Zosimas a enpris son oire
 </div>
 <div style="line-height: 1.2;">
 o soi porta -i- poi de soire
@@ -16305,7 +16305,7 @@ o soi porta -i- poi de soire
 &amp; de lentilles ensement
 </div>
 <div style="line-height: 1.2;">
-Il otsoingd’autreforniement
+Il ot soing d’autre forniement
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -16358,7 +16358,7 @@ Ne me laisse ci esgare
 lai moi veoir encor la feme
 </div>
 <div style="line-height: 1.2;">
-Quin’a son per en tot cest regne
+Qui n’a son per en tot cest regne
 </div>
 <div style="line-height: 1.2;">
 Ja n’en vivrai si com jo croi
@@ -16415,7 +16415,7 @@ commenca le a apeler
 dame ce a dit Zosimas
 </div>
 <div style="line-height: 1.2;">
-merecomment or le feras
+mere comment or le feras
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -16427,10 +16427,10 @@ dont passeras le flun Jordan
 Quant tu n’en as nef ne calan
 </div>
 <div style="line-height: 1.2;">
-Mariel’ot issi parler
+Marie l’ot issi parler
 </div>
 <div style="line-height: 1.2;">
-dontcommenca fort a plorer
+dont commenca fort a plorer
 </div>
 <div style="line-height: 1.2;">
 a Damedeu s’est commandee
@@ -16451,7 +16451,7 @@ oies com fu de grant creance
 Sor l’aighe roide vait grant pas
 </div>
 <div style="line-height: 1.2;">
-molts’enmerveilleZosimas
+molt s’en merveille Zosimas
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -16463,7 +16463,7 @@ outre passa de l’autre part
 onques sa plante n’i moilla
 </div>
 <div style="line-height: 1.2;">
-Quanta la rive fu venue
+Quant a la rive fu venue
 </div>
 <div style="line-height: 1.2;">
 vait al saint home sel salue
@@ -16484,7 +16484,7 @@ As pies li fait afliction
 Requiert li sa beneicon
 </div>
 <div style="line-height: 1.2;">
-li sainsl’ai veta relever
+li sains l’ai vet a relever
 </div>
 <div style="line-height: 1.2;">
 de pitie commence a plorer
@@ -16496,10 +16496,10 @@ de pitie commence a plorer
 N’ose faire sor li seignacle
 </div>
 <div style="line-height: 1.2;">
-QuantDexpor li fait tel miracle
+Quant Dex por li fait tel miracle
 </div>
 <div style="line-height: 1.2;">
-Quile fait si aler sor l’onde
+Qui le fait si aler sor l’onde
 </div>
 <div style="line-height: 1.2;">
 de l’eue que si ert parfonde
@@ -16540,7 +16540,7 @@ adont li dist molt belement
 la dame respont apres lui
 </div>
 <div style="line-height: 1.2;">
-molts’entregardent anbedui
+molt s’entregardent anbedui
 </div>
 <div style="line-height: 1.2;">
 Quant orent fait lor parlement
@@ -16555,7 +16555,7 @@ li sains li mostre tel present
 comme le cors Nostre Seignor
 </div>
 <div style="line-height: 1.2;">
-parqui seront sauf pecheor
+par qui seront sauf pecheor
 </div>
 <div style="line-height: 1.2;">
 Zosimas le tint en sa main
@@ -16576,7 +16576,7 @@ Que li malvais pueples acist
 En la crois fu mis &amp; ocis
 </div>
 <div style="line-height: 1.2;">
-Ja nusn’avera paradis
+Ja nus n’avera paradis
 </div>
 <div style="line-height: 1.2;">
 Se il ne croit ce en sa vie
@@ -16627,13 +16627,13 @@ Cil est molt fols qui le tient vil
 Se tu l’as aporte o toi
 </div>
 <div style="line-height: 1.2;">
-porDeu te pri done le moi
+por Deu te pri done le moi
 </div>
 <div style="line-height: 1.2;">
-li sainsl’ot issi desraisner
+li sains l’ot issi desraisner
 </div>
 <div style="line-height: 1.2;">
-molts’encommencea merveiller
+molt s’en commence a merveiller
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -16642,7 +16642,7 @@ molts’encommencea merveiller
 le sacrefice li mostra
 </div>
 <div style="line-height: 1.2;">
-la sainte damel’aora
+la sainte dame l’aora
 </div>
 <div style="line-height: 1.2;">
 Il li dona el le recut
@@ -16812,7 +16812,7 @@ Que to as pieca aprestees
 xxx- ans erent ?????? ?????
 </div>
 <div style="line-height: 1.2;">
-Qu’elen’avoit mangie de ble
+Qu’ele n’avoit mangie de ble
 </div>
 <div style="line-height: 1.2;">
 de l’eve but tot sans soi
@@ -16994,7 +16994,7 @@ a toi le puisse jo livrer
 N’i ot beste tant par fust fier
 </div>
 <div style="line-height: 1.2;">
-Quionquesl’osaitaproismer
+Qui onques l’osait aproismer
 </div>
 <div style="line-height: 1.2;">
 Sor li n’osa oiseaus voler
@@ -17027,7 +17027,7 @@ Tant fu li cors desenterres
 Que li ans fu trestos passes
 </div>
 <div style="line-height: 1.2;">
-Zosimasne s’oblia mie
+Zosimas ne s’oblia mie
 </div>
 <div style="line-height: 1.2;">
 Repaire s’ent en s’abeie
@@ -17036,7 +17036,7 @@ Repaire s’ent en s’abeie
 mais d’une rien fu molt iries
 </div>
 <div style="line-height: 1.2;">
-li sainsquant il fu repairies
+li sains quant il fu repairies
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -17098,7 +17098,7 @@ Il fait grant duel &amp; plore &amp; crie
 <div class="line-number">
 1360
 </div>
-pres ert del cors n’en veoit mie
+pres ert del cors cors n’en veoit mie
 </div>
 <div style="line-height: 1.2;">
 Pere dist il qui me fesir
@@ -17110,7 +17110,7 @@ mostre moi co que tant ai quis
 Saches de ci ne moverai
 </div>
 <div style="line-height: 1.2;">
-N’avantn’arieren’en irai
+N’avant n’ariere n’en irai
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -17137,13 +17137,13 @@ Ne viverai si com le croi
 Se jo encore ne la voi
 </div>
 <div style="line-height: 1.2;">
-Lai moi veir le corsm’amie
+Lai moi veir le cors m’amie
 </div>
 <div style="line-height: 1.2;">
 car jo quit quele soit fenie
 </div>
 <div style="line-height: 1.2;">
-S’elevesquist si com jo croi
+S’ele vesquist si com jo croi
 </div>
 <div style="line-height: 1.2;">
 Ele fust ja venue amoi
@@ -17164,7 +17164,7 @@ Sire se tu as de moi cure
 lai moi faire sa sepulture
 </div>
 <div style="line-height: 1.2;">
-Biaus PareDeu de Maiste
+Biaus Pare Deu de Maiste
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -17176,7 +17176,7 @@ Ne me laisse ci esgare
 Quant il ot s’orison fenie
 </div>
 <div style="line-height: 1.2;">
-dontli mostrale cors Marie
+dont li mostra le cors Marie
 </div>
 <div style="line-height: 1.2;">
 vers destre part s’est regarde
@@ -17188,7 +17188,7 @@ En -i- lieu vit une clarte
 <div class="line-number">
 1385
 </div>
-Quida que fu eust la
+Qui da que fu eust la
 </div>
 <div style="line-height: 1.2;">
 a la clarte dont s’aproisma
@@ -17286,7 +17286,7 @@ li sains hom les a recitees
 mais quant il ot le non trove
 </div>
 <div style="line-height: 1.2;">
-moltgrantmercis en rent a De
+molt grant mercis en rent a De De
 </div>
 <div style="line-height: 1.2;">
 par le bel non en fu molt lie
@@ -17304,7 +17304,7 @@ Quant il ot dit le suen mester
 puis dit ses salmes del sauter
 </div>
 <div style="line-height: 1.2;">
-dontle veisciesesgare
+dont le veiscies esgare
 </div>
 <div style="line-height: 1.2;">
 car n’i avoit rien aporte
@@ -17361,7 +17361,7 @@ Se Dex ne li donast aie
 par le deserte de Marie
 </div>
 <div style="line-height: 1.2;">
-Dexli donaboncompaignon
+Dex li dona bon compaignon
 </div>
 <div style="line-height: 1.2;">
 Nient autre mais -i- lion
@@ -17391,13 +17391,13 @@ Signe li faisoit d’obeir
 &amp; que il le voloit servir
 </div>
 <div style="line-height: 1.2;">
-Quantli sains hom vit le lion
+Quant li sains hom vit le lion
 </div>
 <div style="line-height: 1.2;">
 N’avoit apris tel compaignon
 </div>
 <div style="line-height: 1.2;">
-N’eustsoing de sa compaignie
+N’eust soing de sa compaignie
 </div>
 <div style="line-height: 1.2;">
 Se Dex li donast autre aie
@@ -17406,7 +17406,7 @@ Se Dex li donast autre aie
 <div class="line-number">
 1445
 </div>
-premierements’en vout fuir
+premierement s’en vout fuir
 </div>
 <div style="line-height: 1.2;">
 Quant il le vit al cors venir
@@ -17441,7 +17441,7 @@ Il li a dit biaus dous amis
 Ceste feme a a non Marie
 </div>
 <div style="line-height: 1.2;">
-Quimoltpar fu de bone vie
+Qui molt par fu de bone vie
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -17450,10 +17450,10 @@ Quimoltpar fu de bone vie
 m’a ci demostre en -i- brief
 </div>
 <div style="line-height: 1.2;">
-Quej’ai ci trove a son chief
+Que j’ai ci trove a son chief
 </div>
 <div style="line-height: 1.2;">
-Quepar moi veut estre enfoie
+Que par moi veut estre enfoie
 </div>
 <div style="line-height: 1.2;">
 mais jo ai grant mester d’aie
@@ -17477,7 +17477,7 @@ del commandement fu molt lies
 a ce que il seut obeir
 </div>
 <div style="line-height: 1.2;">
-commencala terre a fuir
+commenca la terre a fuir
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -17486,7 +17486,7 @@ commencala terre a fuir
 li lions fuet la terre dure
 </div>
 <div style="line-height: 1.2;">
-li sainsli mostre la mesure
+li sains li mostre la mesure
 </div>
 <div style="line-height: 1.2;">
 aspies devant il le fooit
@@ -17525,10 +17525,10 @@ devers le chief le cors saisit
 Entr’eus deus l’ont el sarcu mis
 </div>
 <div style="line-height: 1.2;">
-dedensla terre ont mis le cors []
+dedens la terre ont mis le cors []
 </div>
 <div style="line-height: 1.2;">
-Zosimasdoncs’en issi fors
+Zosimas donc s’en issi fors
 </div>
 <div style="line-height: 1.2;">
 Or fait la commandacion
@@ -17582,7 +17582,7 @@ ariere s’en est retornes
 El grant desert en est entres
 </div>
 <div style="line-height: 1.2;">
-QuantZosimasl’en vit torner
+Quant Zosimas l’en vit torner
 </div>
 <div style="line-height: 1.2;">
 Deu en commenca a loer
@@ -17594,13 +17594,13 @@ Deu en commenca a loer
 SireDeus loes soies tu
 </div>
 <div style="line-height: 1.2;">
-moltpar est grande ta vertu
+molt par est grande ta vertu
 </div>
 <div style="line-height: 1.2;">
-bienm’asdemostreparMarie
+bien m’as demostre par Marie
 </div>
 <div style="line-height: 1.2;">
-Quemoltpar est fols qui t’oblie
+Que molt par est fols qui t’oblie
 </div>
 </div>
 <div class="column-break">
@@ -17629,13 +17629,13 @@ Ne mais ne le deporterai
 <div class="line-number">
 1505
 </div>
-commencas’enta repairier
+commenca s’ent a repairier
 </div>
 <div style="line-height: 1.2;">
 plorant s’en vait a son moster
 </div>
 <div style="line-height: 1.2;">
-Ensementsont si compaignon
+Ensement sont si compaignon
 </div>
 <div style="line-height: 1.2;">
 tot s’en repairent a maison
@@ -17650,10 +17650,10 @@ Quant il furent en lor ostal
 &amp; en capitle communal
 </div>
 <div style="line-height: 1.2;">
-Zosimascommence a parler
+Zosimas commence a parler
 </div>
 <div style="line-height: 1.2;">
-Or nese volra mais celer
+Or ne se volra mais celer
 </div>
 <div style="line-height: 1.2;">
 del Egiptiene Marie
@@ -17665,7 +17665,7 @@ lor a conte tote la vie
 <div class="line-number">
 1515
 </div>
-commentle trova el desert
+comment le trova el desert
 </div>
 <div style="line-height: 1.2;">
 El lieu delitable ou ele ert
@@ -17707,7 +17707,7 @@ puis lor a conte del lion
 comment il l’ot a compaignon
 </div>
 <div style="line-height: 1.2;">
-Quantli moine ont oi son dit
+Quant li moine ont oi son dit
 </div>
 <div style="line-height: 1.2;">
 a Deu en ont rendu mercit
@@ -17767,7 +17767,7 @@ de nos armes al jugement
 amen amen &amp; Jhesu crist
 </div>
 <div style="line-height: 1.2;">
-consautqui cest romans escrist
+consaut qui cest romans escrist
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">

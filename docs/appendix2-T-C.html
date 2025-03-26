@@ -339,7 +339,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-57"><a href="#cb1-57" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Extract the text from the &lt;orig&gt; tag</span></span>
 <span id="cb1-58"><a href="#cb1-58" aria-hidden="true" tabindex="-1"></a>    orig_text <span class="ot">&lt;-</span> <span class="fu">xml_text</span>(<span class="fu">xml_find_first</span>(choice, <span class="st">".//orig"</span>))</span>
 <span id="cb1-59"><a href="#cb1-59" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Remove the &lt;choice&gt; element and replace it with the text from the &lt;orig&gt; tag</span></span>
-<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>    <span class="fu">xml_set_text</span>(choice, orig_text)</span>
+<span id="cb1-60"><a href="#cb1-60" aria-hidden="true" tabindex="-1"></a>    <span class="fu">xml_set_text</span>(choice, <span class="fu">paste0</span>(orig_text, <span class="st">" "</span>))</span>
 <span id="cb1-61"><a href="#cb1-61" aria-hidden="true" tabindex="-1"></a>  }</span>
 <span id="cb1-62"><a href="#cb1-62" aria-hidden="true" tabindex="-1"></a>  </span>
 <span id="cb1-63"><a href="#cb1-63" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Now we want to remove any &lt;reg&gt; elements entirely</span></span>
@@ -434,11 +434,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="sc">!</span><span class="fu">is.na</span>(abbr_exists) <span class="sc">&amp;&amp;</span> <span class="sc">!</span><span class="fu">is.na</span>(expan_exists)) {</span>
 <span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a>      <span class="co"># If &lt;abbr&gt; and &lt;expan&gt; tags exist, extract only the &lt;reg&gt; text from &lt;expan&gt;</span></span>
 <span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a>      reg_text <span class="ot">&lt;-</span> <span class="fu">xml_text</span>(<span class="fu">xml_find_first</span>(choice, <span class="st">".//expan/reg"</span>))</span>
-<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a>      <span class="fu">xml_set_text</span>(choice, reg_text)</span>
+<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a>      <span class="fu">xml_set_text</span>(choice, <span class="fu">paste0</span>(reg_text, <span class="st">" "</span>))</span>
 <span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> {</span>
 <span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a>      <span class="co"># For non-abbreviation choices, keep original behavior</span></span>
 <span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a>      orig_text <span class="ot">&lt;-</span> <span class="fu">xml_text</span>(<span class="fu">xml_find_first</span>(choice, <span class="st">".//orig"</span>))</span>
-<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a>      <span class="fu">xml_set_text</span>(choice, orig_text)</span>
+<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a>      <span class="fu">xml_set_text</span>(choice, <span class="fu">paste0</span>(orig_text, <span class="st">" "</span>))</span>
 <span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a>    }</span>
 <span id="cb1-161"><a href="#cb1-161" aria-hidden="true" tabindex="-1"></a>  }</span>
 <span id="cb1-162"><a href="#cb1-162" aria-hidden="true" tabindex="-1"></a>  </span>
@@ -524,18 +524,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-242"><a href="#cb1-242" aria-hidden="true" tabindex="-1"></a>    <span class="fu">xml_text</span>(emph) <span class="ot">&lt;-</span> styled_initial</span>
 <span id="cb1-243"><a href="#cb1-243" aria-hidden="true" tabindex="-1"></a>  }</span>
 <span id="cb1-244"><a href="#cb1-244" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb1-245"><a href="#cb1-245" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Find all &lt;choice&gt; elements within the line</span></span>
-<span id="cb1-246"><a href="#cb1-246" aria-hidden="true" tabindex="-1"></a>  choices <span class="ot">&lt;-</span> <span class="fu">xml_find_all</span>(line, <span class="st">".//choice"</span>)</span>
-<span id="cb1-247"><a href="#cb1-247" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (choice <span class="cf">in</span> choices) {</span>
-<span id="cb1-248"><a href="#cb1-248" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Extract the text from the &lt;reg&gt; tag</span></span>
-<span id="cb1-249"><a href="#cb1-249" aria-hidden="true" tabindex="-1"></a>    reg_text <span class="ot">&lt;-</span> <span class="fu">xml_text</span>(<span class="fu">xml_find_first</span>(choice, <span class="st">".//reg"</span>))</span>
-<span id="cb1-250"><a href="#cb1-250" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Replace the &lt;choice&gt; element with the text from the &lt;reg&gt; tag</span></span>
-<span id="cb1-251"><a href="#cb1-251" aria-hidden="true" tabindex="-1"></a>    <span class="fu">xml_set_text</span>(choice, reg_text)</span>
-<span id="cb1-252"><a href="#cb1-252" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb1-253"><a href="#cb1-253" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb1-254"><a href="#cb1-254" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Now we want to remove any &lt;orig&gt; elements entirely</span></span>
-<span id="cb1-255"><a href="#cb1-255" aria-hidden="true" tabindex="-1"></a>  orig_elements <span class="ot">&lt;-</span> <span class="fu">xml_find_all</span>(line, <span class="st">".//orig"</span>)</span>
-<span id="cb1-256"><a href="#cb1-256" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xml_remove</span>(orig_elements)</span>
+<span id="cb1-245"><a href="#cb1-245" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Now we want to remove any &lt;orig&gt; elements entirely</span></span>
+<span id="cb1-246"><a href="#cb1-246" aria-hidden="true" tabindex="-1"></a>  orig_elements <span class="ot">&lt;-</span> <span class="fu">xml_find_all</span>(line, <span class="st">".//orig"</span>)</span>
+<span id="cb1-247"><a href="#cb1-247" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xml_remove</span>(orig_elements)</span>
+<span id="cb1-248"><a href="#cb1-248" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-249"><a href="#cb1-249" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Find all &lt;choice&gt; elements within the line</span></span>
+<span id="cb1-250"><a href="#cb1-250" aria-hidden="true" tabindex="-1"></a>  choices <span class="ot">&lt;-</span> <span class="fu">xml_find_all</span>(line, <span class="st">".//choice"</span>)</span>
+<span id="cb1-251"><a href="#cb1-251" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (choice <span class="cf">in</span> choices) {</span>
+<span id="cb1-252"><a href="#cb1-252" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Extract the text from the &lt;reg&gt; tag</span></span>
+<span id="cb1-253"><a href="#cb1-253" aria-hidden="true" tabindex="-1"></a>    reg_text <span class="ot">&lt;-</span> <span class="fu">xml_text</span>(<span class="fu">xml_find_first</span>(choice, <span class="st">".//reg"</span>))</span>
+<span id="cb1-254"><a href="#cb1-254" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Replace the &lt;choice&gt; element with the text from the &lt;reg&gt; tag</span></span>
+<span id="cb1-255"><a href="#cb1-255" aria-hidden="true" tabindex="-1"></a>    <span class="fu">xml_set_text</span>(choice, <span class="fu">paste0</span>(<span class="st">" "</span>, reg_text, <span class="st">" "</span>))</span>
+<span id="cb1-256"><a href="#cb1-256" aria-hidden="true" tabindex="-1"></a>  }</span>
 <span id="cb1-257"><a href="#cb1-257" aria-hidden="true" tabindex="-1"></a>  </span>
 <span id="cb1-258"><a href="#cb1-258" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Replace &lt;lb/&gt; tags with HTML line break</span></span>
 <span id="cb1-259"><a href="#cb1-259" aria-hidden="true" tabindex="-1"></a>  lb_elements <span class="ot">&lt;-</span> <span class="fu">xml_find_all</span>(line, <span class="st">".//lb"</span>)</span>
@@ -573,7 +573,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 35r
 </div>
 <div style="line-height: 1.2;">
-<span class="decorative-initial floriate" data-size="2">S</span>eignurs pur lamurjhucst
+<span class="decorative-initial floriate" data-size="2">S</span>eignurs pur lamur jhucst
 </div>
 <div style="line-height: 1.2;">
 kar mescutez un petit .
@@ -623,7 +623,7 @@ Orrunt ceste verite .
 De ma dame Sancte Marie
 </div>
 <div style="line-height: 1.2;">
-Legypcieneorruntla vie .
+Legypciene orruntla vie .
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -671,7 +671,7 @@ pur co que nest gin creature
 ainz est meins ke nest nate .
 </div>
 <div style="line-height: 1.2;">
-kuncDeus ne criad pechie
+kunc Deus ne criad pechie
 </div>
 <div style="line-height: 1.2;">
 e nepurkant si ad son sie .
@@ -704,7 +704,7 @@ Li apostres ke Deu siwirent .
 pur co ne me pus mveiller
 </div>
 <div style="line-height: 1.2;">
-Duncheitifkant le voi pecher .
+Dun cheitifkant le voi pecher .
 </div>
 <div style="line-height: 1.2;">
 mes de celui est gnt merveille
@@ -724,7 +724,7 @@ en ses orz pechiez se dort
 <div class="line-number">
 40
 </div>
-Deskatantkil sent la mort .
+Deskatant kil sent la mort .
 </div>
 <div style="line-height: 1.2;">
 kant la mort viet eilla sent
@@ -1090,7 +1090,7 @@ Feseient de eus meite mellee
 e de gisarines e des espeies
 </div>
 <div style="line-height: 1.2;">
-Sentre doneientgnz coleies
+Sentre doneient gnz coleies
 </div>
 <div style="line-height: 1.2;">
 Li sancs ki iert espanduz
@@ -1203,7 +1203,7 @@ Not el chief si bele crine .
 Rondes avoit les oreilles
 </div>
 <div style="line-height: 1.2;">
-Tresblancheseretamveilles .
+Tresblanches eret amveilles .
 </div>
 </div>
 <div class="column-break">
@@ -1981,7 +1981,7 @@ Lui pelerin ki la voient
 Sa volente point ne savoiet .
 </div>
 <div style="line-height: 1.2;">
-ksil seussent la soue vie
+k sil seussent la soue vie
 </div>
 <div style="line-height: 1.2;">
 Ja od eus neust compaignie .
@@ -2230,7 +2230,7 @@ Bien erent sanees mes plaies .
 Ci guepi jo la male vie
 </div>
 <div style="line-height: 1.2;">
-Jamesni averai ꝯpaignie .
+James ni averai ꝯpaignie .
 </div>
 <div style="line-height: 1.2;">
 en ton Fiz met ma creance
@@ -2622,7 +2622,7 @@ Al chievement del ureiso
 Li fesoit Jhesus le pardon .
 </div>
 <div style="line-height: 1.2;">
-<span class="decorative-initial floriate" data-size="1">D</span>el ureisonel ureison leva Marie
+<span class="decorative-initial floriate" data-size="1">D</span>el ureison el ureison leva Marie
 </div>
 <div style="line-height: 1.2;">
 De sun novel Seignor se fie .
@@ -3077,7 +3077,7 @@ Si les retaillot de ses denz .
 Li ventre tut lui ert caeiz
 </div>
 <div style="line-height: 1.2;">
-Guere ne magot.co ert droiz .
+Guere ne magot .co ert droiz .
 </div>
 </div>
 <div class="column-break">
@@ -3121,7 +3121,7 @@ Pur co feut ele mut lee
 kant ele suffri teu haschee .
 </div>
 <div style="line-height: 1.2;">
-Nertmveille se feust ncie
+Nert mveille se feust ncie
 </div>
 <div style="line-height: 1.2;">
 ke mut demenot aspre vie .
@@ -3362,7 +3362,7 @@ ewe beveient non pas seigne
 kar pas nestoit de fontaigne .
 </div>
 <div style="line-height: 1.2;">
-entrousnert pas symonie
+entrous nert pas symonie
 </div>
 <div style="line-height: 1.2;">
 Ne coveitise ne envie .
@@ -3665,7 +3665,7 @@ A Dampnedeu les comandot .
 ki nuit estoit de seinte vie
 </div>
 <div style="line-height: 1.2;">
-Lenlapelout dan Zozimas
+Len lapelout dan Zozimas
 </div>
 <div style="line-height: 1.2;">
 mut ert vestu de poure dras .
@@ -3994,7 +3994,7 @@ pur ses pechez e se mesfez
 Tant les seit orribles e leiz .
 </div>
 <div style="line-height: 1.2;">
-Nestho les seust ne eust pesace
+Nest ho les seust ne eust pesace
 </div>
 <div style="line-height: 1.2;">
 Ore faz ici la penance .
@@ -4270,7 +4270,7 @@ Deus ad mis peis p tut le mud .
 <div class="line-number">
 975
 </div>
-Nesthome tant alast par tre
+Nest home tant alast par tre
 </div>
 <div style="line-height: 1.2;">
 ke riens oist parler de guerre .
@@ -4612,7 +4612,7 @@ Tu languiras si com jo pens .
 kant ti per e ti compaigno
 </div>
 <div style="line-height: 1.2;">
-senistrut fors de lur meiso .
+sen istrut fors de lur meiso .
 </div>
 <div style="line-height: 1.2;">
 e li jurs venrad de qreme
@@ -4689,7 +4689,7 @@ Contre toi au flum Jordan .
 Illenc sachiez aprismerai
 </div>
 <div style="line-height: 1.2;">
-Purcoka cumengie serrai .
+Purco ka cumengie serrai .
 </div>
 <div style="line-height: 1.2;">
 Deske passai le flum Jordan
@@ -5357,7 +5357,7 @@ ke le rei chantad Salomun .
 Ici nele puis jo chanter
 </div>
 <div style="line-height: 1.2;">
-kentendremesteut a plurer .
+kentendre mesteut a plurer .
 </div>
 <div style="line-height: 1.2;">
 kar la joie de ceste vie
@@ -5435,7 +5435,7 @@ e la dame manga trois gins .
 Trente anz erent ja passe
 </div>
 <div style="line-height: 1.2;">
-kelenavoit ainz ces guste .
+kele navoit ainz ces guste .
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -5559,7 +5559,7 @@ Son nes e sa buche ensement .
 <div class="line-number">
 1315
 </div>
-Lalmesen vait el ciel durable
+Lalme sen vait el ciel durable
 </div>
 <div style="line-height: 1.2;">
 Unc ni osa venir diable .
@@ -5598,7 +5598,7 @@ Ce sachent li puisant du reame .
 ki povre ne sunt a la mort
 </div>
 <div style="line-height: 1.2;">
-kaNostre Seignurfotgnt tort .
+ka Nostre Seignurfot gnt tort .
 </div>
 <div style="line-height: 1.2;">
 Li povre serrunt bonure
@@ -5785,7 +5785,7 @@ k jo croi kele soit finie .
 <div class="line-number">
 1375
 </div>
-Selevesqst si cum jo croi
+Sele vesqst si cum jo croi
 </div>
 <div style="line-height: 1.2;">
 ele feust ja venue a moi .
@@ -5880,7 +5880,7 @@ Les piez sempres li vait beiser
 <div class="line-number">
 1400
 </div>
-Al autrenoseit apprimer .
+Al autre noseit apprimer .
 </div>
 <div style="line-height: 1.2;">
 Il regarde amunt au chief
@@ -6195,7 +6195,7 @@ Devers le chief le cors saisit .
 e li leuns as piez lad prise
 </div>
 <div style="line-height: 1.2;">
-entroudouslunt el sarcu mise .
+entroudous lunt el sarcu mise .
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -6225,7 +6225,7 @@ kar il ert une beste mue .
 mes qnt il vint al entrer
 </div>
 <div style="line-height: 1.2;">
-Deriensnestouetamonest .
+Deriens nestouet amonest .
 </div>
 <div style="line-height: 1.2;">
 Tute la terre lors aunat
@@ -6395,7 +6395,7 @@ konur funt al egypciene . Amen.
 35r
 </div>
 <div style="line-height: 1.2;">
-<span class="decorative-initial floriate" data-size="2">S</span>eignurs pur lamurJhesu Crist
+<span class="decorative-initial floriate" data-size="2">S</span>eignurs pur lamur Jhesu Crist
 </div>
 <div style="line-height: 1.2;">
 kar mescutez un petit .
@@ -6445,7 +6445,7 @@ Orrunt ceste verite .
 De ma dame Sancte Marie
 </div>
 <div style="line-height: 1.2;">
-Legypcieneorruntla vie .
+Legypciene orruntla vie .
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -6493,7 +6493,7 @@ pur co que nest gin creature
 ainz est meins ke nest nature .
 </div>
 <div style="line-height: 1.2;">
-kuncDeus ne criad pechie
+kunc Deus ne criad pechie
 </div>
 <div style="line-height: 1.2;">
 e nepurkant si ad son sie .
@@ -6526,7 +6526,7 @@ Li apostres ke Deu siwirent .
 pur co ne me pus merveiller
 </div>
 <div style="line-height: 1.2;">
-Duncheitifkant le voi pecher .
+Dun cheitifkant le voi pecher .
 </div>
 <div style="line-height: 1.2;">
 mes de celui est grant merveille
@@ -6546,7 +6546,7 @@ en ses orz pechiez se dort
 <div class="line-number">
 40
 </div>
-Deskatantkil sent la mort .
+Deskatant kil sent la mort .
 </div>
 <div style="line-height: 1.2;">
 kant la mort vient eilla sent
@@ -6912,7 +6912,7 @@ Feseient de eus meinte mellee
 e de gisarines e des espeies
 </div>
 <div style="line-height: 1.2;">
-Sentre doneientgranz coleies
+Sentre doneient granz coleies
 </div>
 <div style="line-height: 1.2;">
 Li sancs ki iert espanduz
@@ -7025,7 +7025,7 @@ Not el chief si bele crine .
 Rondes avoit les oreilles
 </div>
 <div style="line-height: 1.2;">
-Tresblancheserenta merveilles .
+Tresblanches erent a merveilles .
 </div>
 </div>
 <div class="column-break">
@@ -7803,7 +7803,7 @@ Lui pelerin ki la voient
 Sa volente point ne savoient .
 </div>
 <div style="line-height: 1.2;">
-karsil seussent la soue vie
+kar sil seussent la soue vie
 </div>
 <div style="line-height: 1.2;">
 Ja od eus neust compaignie .
@@ -8052,7 +8052,7 @@ Bien erent sanees mes plaies .
 Ci guerpi jo la male vie
 </div>
 <div style="line-height: 1.2;">
-Jamesni averai compaignie .
+James ni averai compaignie .
 </div>
 <div style="line-height: 1.2;">
 en ton Fiz met ma creance
@@ -8444,7 +8444,7 @@ Al chievement de l’ureison
 Li fesoit Jhesus le pardon .
 </div>
 <div style="line-height: 1.2;">
-<span class="decorative-initial floriate" data-size="1">D</span>el ureisonel ureison leva Marie
+<span class="decorative-initial floriate" data-size="1">D</span>el ureison el ureison leva Marie
 </div>
 <div style="line-height: 1.2;">
 De sun novel Seignor se fie .
@@ -8899,7 +8899,7 @@ Si les retaillot de ses denz .
 Li ventre tut lui ert caeiz
 </div>
 <div style="line-height: 1.2;">
-Guere ne mangot.co ert droiz .
+Guere ne mangot .co ert droiz .
 </div>
 </div>
 <div class="column-break">
@@ -8943,7 +8943,7 @@ Pur co feut ele mut lee
 kant ele suffri teu haschee .
 </div>
 <div style="line-height: 1.2;">
-Nertmerveille se feust nercie
+Nert merveille se feust nercie
 </div>
 <div style="line-height: 1.2;">
 ke mut demenot aspre vie .
@@ -9184,7 +9184,7 @@ ewe beveient non pas seigne
 kar pas nestoit de fontaigne .
 </div>
 <div style="line-height: 1.2;">
-entrousnert pas symonie
+entrous nert pas symonie
 </div>
 <div style="line-height: 1.2;">
 Ne coveitise ne envie .
@@ -9487,7 +9487,7 @@ A Dampnedeu les comandot .
 ki nuit estoit de seinte vie
 </div>
 <div style="line-height: 1.2;">
-Lenlapelout dan Zozimas
+Len lapelout dan Zozimas
 </div>
 <div style="line-height: 1.2;">
 mut ert vestu de poure dras .
@@ -9816,7 +9816,7 @@ pur ses pechez e ses mesfez
 Tant les seit orribles e leiz .
 </div>
 <div style="line-height: 1.2;">
-Nesthom les seust n’en eust pesance
+Nest hom les seust n’en eust pesance
 </div>
 <div style="line-height: 1.2;">
 Ore faz ici la penance .
@@ -10092,7 +10092,7 @@ Deus ad mis peis par tut le mund .
 <div class="line-number">
 975
 </div>
-Nesthomme tant alast par terre
+Nest homme tant alast par terre
 </div>
 <div style="line-height: 1.2;">
 ke riens oist parler de guerre .
@@ -10434,7 +10434,7 @@ Tu languiras si com jo pens .
 kant ti per e ti compaignon
 </div>
 <div style="line-height: 1.2;">
-senistrunt fors de lur meison .
+sen istrunt fors de lur meison .
 </div>
 <div style="line-height: 1.2;">
 e li jurs venrad de quaremme
@@ -10511,7 +10511,7 @@ Contre toi au flum Jordan .
 Illenc sachiez aprismerai
 </div>
 <div style="line-height: 1.2;">
-Purcoka cumengie serrai .
+Purco ka cumengie serrai .
 </div>
 <div style="line-height: 1.2;">
 Deske passai le flum Jordan
@@ -11179,7 +11179,7 @@ ke le rei chantad Salomun .
 Ici nele puis jo chanter
 </div>
 <div style="line-height: 1.2;">
-kentendremesteut a plurer .
+kentendre mesteut a plurer .
 </div>
 <div style="line-height: 1.2;">
 kar la joie de ceste vie
@@ -11257,7 +11257,7 @@ e la dame manga trois grains .
 Trente anz erent ja passe
 </div>
 <div style="line-height: 1.2;">
-kelenavoit ainz ces guste .
+kele navoit ainz ces guste .
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -11381,7 +11381,7 @@ Son nes e sa buche ensement .
 <div class="line-number">
 1315
 </div>
-Lalmesen vait el ciel durable
+Lalme sen vait el ciel durable
 </div>
 <div style="line-height: 1.2;">
 Unc ni osa venir diable .
@@ -11420,7 +11420,7 @@ Ce sachent li puisant du reame .
 ki povre ne sunt a la mort
 </div>
 <div style="line-height: 1.2;">
-kaNostre Seignurfontgrant tort .
+ka Nostre Seignurfont grant tort .
 </div>
 <div style="line-height: 1.2;">
 Li povre serrunt bonure
@@ -11607,7 +11607,7 @@ kar jo croi kele soit finie .
 <div class="line-number">
 1375
 </div>
-Selevesquist si cum jo croi
+Sele vesquist si cum jo croi
 </div>
 <div style="line-height: 1.2;">
 ele feust ja venue a moi .
@@ -11702,7 +11702,7 @@ Les piez sempres li vait beiser
 <div class="line-number">
 1400
 </div>
-Al autrenoseit apprimer .
+Al autre noseit apprimer .
 </div>
 <div style="line-height: 1.2;">
 Il regarde amunt au chief
@@ -12017,7 +12017,7 @@ Devers le chief le cors saisit .
 e li leuns as piez lad prise
 </div>
 <div style="line-height: 1.2;">
-entroudouslunt el sarcu mise .
+entroudous lunt el sarcu mise .
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -12047,7 +12047,7 @@ kar il ert une beste mue .
 mes quant il vint a l’enterrer
 </div>
 <div style="line-height: 1.2;">
-Deriensnestouetamonester .
+Deriens nestouet amonester .
 </div>
 <div style="line-height: 1.2;">
 Tute la terre lors aunat
@@ -12217,7 +12217,7 @@ konur funt al egypciene . Amen.
 35r
 </div>
 <div style="line-height: 1.2;">
-<span class="decorative-initial floriate" data-size="2">S</span>eignurs pur l’amurJhesu Crist
+<span class="decorative-initial floriate" data-size="2">S</span>eignurs pur l’amur Jhesu Crist
 </div>
 <div style="line-height: 1.2;">
 kar m’escutez un petit .
@@ -12267,7 +12267,7 @@ Orrunt ceste verite .
 De ma dame Sancte Marie
 </div>
 <div style="line-height: 1.2;">
-L’Egypcieneorrunt la vie .
+L’Egypciene orrunt la vie .
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -12315,7 +12315,7 @@ pur co que n’est gin creature
 ainz est meins ke n’est nature .
 </div>
 <div style="line-height: 1.2;">
-k’uncDeus ne criad pechie
+k’unc Deus ne criad pechie
 </div>
 <div style="line-height: 1.2;">
 e nepurkant si ad son sie .
@@ -12348,7 +12348,7 @@ Li apostres ke Deu siwirent .
 pur co ne me pus merveiller
 </div>
 <div style="line-height: 1.2;">
-D’uncheitif kant le voi pecher .
+D’un cheitif kant le voi pecher .
 </div>
 <div style="line-height: 1.2;">
 mes de celui est grant merveille
@@ -12368,7 +12368,7 @@ en ses orz pechiez se dort
 <div class="line-number">
 40
 </div>
-Desk atantk’il sent la mort .
+Desk atant k’il sent la mort .
 </div>
 <div style="line-height: 1.2;">
 kant la mort vient e il la sent
@@ -12431,7 +12431,7 @@ mes co qu’a fet si troverad .
 <span class="decorative-initial floriate" data-size="2">C</span>este dame dont voil conter
 </div>
 <div style="line-height: 1.2;">
-MarieL’oi appeler .
+Marie L’oi appeler .
 </div>
 <div style="line-height: 1.2;">
 Egypciene est pur co dite
@@ -12734,7 +12734,7 @@ Feseient de eus meinte mellee
 e de gisarines e des espeies
 </div>
 <div style="line-height: 1.2;">
-S’entredoneientgranz coleies
+S’entredoneient granz coleies
 </div>
 <div style="line-height: 1.2;">
 Li sancs ki iert espanduz
@@ -12847,7 +12847,7 @@ N’ot el chief si bele crine .
 Rondes avoit les oreilles
 </div>
 <div style="line-height: 1.2;">
-Tres blancheserenta merveilles .
+Tres blanches erent a merveilles .
 </div>
 </div>
 <div class="column-break">
@@ -13625,7 +13625,7 @@ Lui pelerin ki la voient
 Sa volente point ne savoient .
 </div>
 <div style="line-height: 1.2;">
-kars’il seussent la soue vie
+kar s’il seussent la soue vie
 </div>
 <div style="line-height: 1.2;">
 Ja od eus n’eust compaignie .
@@ -13874,7 +13874,7 @@ Bien erent sanees mes plaies .
 Ci guerpi jo la male vie
 </div>
 <div style="line-height: 1.2;">
-Ja mesn’i averai compaignie .
+Ja mes n’i averai compaignie .
 </div>
 <div style="line-height: 1.2;">
 en ton Fiz met ma creance
@@ -14721,7 +14721,7 @@ Si les retaillot de ses denz .
 Li ventre tut lui ert caeiz
 </div>
 <div style="line-height: 1.2;">
-Guere ne mangot.co ert droiz .
+Guere ne mangot .co ert droiz .
 </div>
 </div>
 <div class="column-break">
@@ -14765,7 +14765,7 @@ Pur co feut ele mut lee
 kant ele suffri teu haschee .
 </div>
 <div style="line-height: 1.2;">
-N’ertmerveille se feust nercie
+N’ert merveille se feust nercie
 </div>
 <div style="line-height: 1.2;">
 ke mut demenot aspre vie .
@@ -15006,7 +15006,7 @@ ewe beveient non pas seigne
 kar pas n’estoit de fontaigne .
 </div>
 <div style="line-height: 1.2;">
-entr’ousn’ert pas symonie
+entr’ous n’ert pas symonie
 </div>
 <div style="line-height: 1.2;">
 Ne coveitise ne envie .
@@ -15309,7 +15309,7 @@ A Dampnedeu les comandot .
 ki nuit estoit de seinte vie
 </div>
 <div style="line-height: 1.2;">
-L’enl’apelout dan Zozimas
+L’en l’apelout dan Zozimas
 </div>
 <div style="line-height: 1.2;">
 mut ert vestu de poure dras .
@@ -15386,7 +15386,7 @@ ki d’omme estoit u de femme
 mes ele ert de l’Egipciene .
 </div>
 <div style="line-height: 1.2;">
-Deusl’avoit illoc menee
+Deus l’avoit illoc menee
 </div>
 <div style="line-height: 1.2;">
 Ne vout mes k’ele feust celee .
@@ -15638,7 +15638,7 @@ pur ses pechez e ses mesfez
 Tant les seit orribles e leiz .
 </div>
 <div style="line-height: 1.2;">
-N’esthom les seust n’en eust pesance
+N’est hom les seust n’en eust pesance
 </div>
 <div style="line-height: 1.2;">
 Ore faz ici la penance .
@@ -15914,7 +15914,7 @@ Deus ad mis peis par tut le mund .
 <div class="line-number">
 975
 </div>
-N’esthomme tant alast par terre
+N’est homme tant alast par terre
 </div>
 <div style="line-height: 1.2;">
 ke riens oist parler de guerre .
@@ -15974,7 +15974,7 @@ Si k’ele n’i attocha mie .
 Zozimas ot pour mut grant
 </div>
 <div style="line-height: 1.2;">
-Dampnedeutrait a garant .
+Dampnedeu trait a garant .
 </div>
 <div style="line-height: 1.2;">
 ke plus ke dou piez e demi
@@ -15989,7 +15989,7 @@ ert entre la terre e lui .
 Ou ele feseit sa priere
 </div>
 <div style="line-height: 1.2;">
-Nostre Sirel’out tant chiere .
+Nostre Sire l’out tant chiere .
 </div>
 <div style="line-height: 1.2;">
 De la pour k’out Zozimas
@@ -16021,7 +16021,7 @@ Souef le comence appeler .
 Cheles dist ele Zozimas
 </div>
 <div style="line-height: 1.2;">
-Beau cher peredont te dotas .
+Beau cher pere dont te dotas .
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -16256,7 +16256,7 @@ Tu languiras si com jo pens .
 kant ti per e ti compaignon
 </div>
 <div style="line-height: 1.2;">
-s’enistrunt fors de lur meison .
+s’en istrunt fors de lur meison .
 </div>
 <div style="line-height: 1.2;">
 e li jurs venrad de quaremme
@@ -16333,7 +16333,7 @@ Contre toi au flum Jordan .
 Illenc sachiez aprismerai
 </div>
 <div style="line-height: 1.2;">
-Pur cok’acumengie serrai .
+Pur co k’acumengie serrai .
 </div>
 <div style="line-height: 1.2;">
 Deske passai le flum Jordan
@@ -17001,7 +17001,7 @@ ke le rei chantad Salomun .
 Ici ne le puis jo chanter
 </div>
 <div style="line-height: 1.2;">
-k’entendrem’esteut a plurer .
+k’entendre m’esteut a plurer .
 </div>
 <div style="line-height: 1.2;">
 kar la joie de ceste vie
@@ -17079,7 +17079,7 @@ e la dame manga trois grains .
 Trente anz erent ja passe
 </div>
 <div style="line-height: 1.2;">
-k’elen’avoit ainz ces guste .
+k’ele n’avoit ainz ces guste .
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -17203,7 +17203,7 @@ Son nes e sa buche ensement .
 <div class="line-number">
 1315
 </div>
-L’almes’en vait el ciel durable
+L’alme s’en vait el ciel durable
 </div>
 <div style="line-height: 1.2;">
 Unc n’i osa venir diable .
@@ -17242,7 +17242,7 @@ Ce sachent li puisant du reame .
 ki povre ne sunt a la mort
 </div>
 <div style="line-height: 1.2;">
-k’aNostre Seignurfontgrant tort .
+k’a Nostre Seignur font grant tort .
 </div>
 <div style="line-height: 1.2;">
 Li povre serrunt bonure
@@ -17429,7 +17429,7 @@ kar jo croi k’ele soit finie .
 <div class="line-number">
 1375
 </div>
-S’elevesquist si cum jo croi
+S’ele vesquist si cum jo croi
 </div>
 <div style="line-height: 1.2;">
 ele feust ja venue a moi .
@@ -17524,7 +17524,7 @@ Les piez sempres li vait beiser
 <div class="line-number">
 1400
 </div>
-A l’autren’oseit apprimer .
+A l’autre n’oseit apprimer .
 </div>
 <div style="line-height: 1.2;">
 Il regarde amunt au chief
@@ -17839,7 +17839,7 @@ Devers le chief le cors saisit .
 e li leuns as piez l’ad prise
 </div>
 <div style="line-height: 1.2;">
-entrou dousl’unt el sarcu mise .
+entrou dous l’unt el sarcu mise .
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -17848,7 +17848,7 @@ entrou dousl’unt el sarcu mise .
 Dedenz la terre ont mis le cors
 </div>
 <div style="line-height: 1.2;">
-Zozimass’en est issu fors .
+Zozimas s’en est issu fors .
 </div>
 <div style="line-height: 1.2;">
 Lors fist la commendaciun
@@ -17869,7 +17869,7 @@ kar il ert une beste mue .
 mes quant il vint a l’enterrer
 </div>
 <div style="line-height: 1.2;">
-De riensn’estouetamonester .
+De riens n’estouet amonester .
 </div>
 <div style="line-height: 1.2;">
 Tute la terre lors aunat

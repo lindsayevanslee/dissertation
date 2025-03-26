@@ -75,7 +75,7 @@ process_line <- function(line) {
     # Extract the text from the <orig> tag
     orig_text <- xml_text(xml_find_first(choice, ".//orig"))
     # Remove the <choice> element and replace it with the text from the <orig> tag
-    xml_set_text(choice, orig_text)
+    xml_set_text(choice, paste0(orig_text, " "))
   }
   
   # Now we want to remove any <reg> elements entirely
@@ -179,11 +179,11 @@ process_line <- function(line) {
     if (!is.na(abbr_exists) && !is.na(expan_exists)) {
       # If <abbr> and <expan> tags exist, extract only the <reg> text from <expan>
       reg_text <- xml_text(xml_find_first(choice, ".//expan/reg"))
-      xml_set_text(choice, reg_text)
+      xml_set_text(choice, paste0(reg_text, " "))
     } else {
       # For non-abbreviation choices, keep original behavior
       orig_text <- xml_text(xml_find_first(choice, ".//orig"))
-      xml_set_text(choice, orig_text)
+      xml_set_text(choice, paste0(orig_text, " "))
     }
   }
   
@@ -278,18 +278,18 @@ process_line <- function(line) {
     xml_text(emph) <- styled_initial
   }
   
+  # Now we want to remove any <orig> elements entirely
+  orig_elements <- xml_find_all(line, ".//orig")
+  xml_remove(orig_elements)
+  
   # Find all <choice> elements within the line
   choices <- xml_find_all(line, ".//choice")
   for (choice in choices) {
     # Extract the text from the <reg> tag
     reg_text <- xml_text(xml_find_first(choice, ".//reg"))
     # Replace the <choice> element with the text from the <reg> tag
-    xml_set_text(choice, reg_text)
+    xml_set_text(choice, paste0(" ", reg_text, " "))
   }
-  
-  # Now we want to remove any <orig> elements entirely
-  orig_elements <- xml_find_all(line, ".//orig")
-  xml_remove(orig_elements)
   
   # Replace <lb/> tags with HTML line break
   lb_elements <- xml_find_all(line, ".//lb")

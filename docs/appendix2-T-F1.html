@@ -399,7 +399,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-116"><a href="#cb1-116" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Extract the text from the &lt;orig&gt; tag</span></span>
 <span id="cb1-117"><a href="#cb1-117" aria-hidden="true" tabindex="-1"></a>    orig_text <span class="ot">&lt;-</span> <span class="fu">xml_text</span>(<span class="fu">xml_find_first</span>(choice, <span class="st">".//orig"</span>))</span>
 <span id="cb1-118"><a href="#cb1-118" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Remove the &lt;choice&gt; element and replace it with the text from the &lt;orig&gt; tag</span></span>
-<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a>    <span class="fu">xml_set_text</span>(choice, orig_text)</span>
+<span id="cb1-119"><a href="#cb1-119" aria-hidden="true" tabindex="-1"></a>    <span class="fu">xml_set_text</span>(choice, <span class="fu">paste0</span>(orig_text, <span class="st">" "</span>))</span>
 <span id="cb1-120"><a href="#cb1-120" aria-hidden="true" tabindex="-1"></a>  }</span>
 <span id="cb1-121"><a href="#cb1-121" aria-hidden="true" tabindex="-1"></a>  </span>
 <span id="cb1-122"><a href="#cb1-122" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Now we want to remove any &lt;reg&gt; elements entirely</span></span>
@@ -494,11 +494,11 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-211"><a href="#cb1-211" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="sc">!</span><span class="fu">is.na</span>(abbr_exists) <span class="sc">&amp;&amp;</span> <span class="sc">!</span><span class="fu">is.na</span>(expan_exists)) {</span>
 <span id="cb1-212"><a href="#cb1-212" aria-hidden="true" tabindex="-1"></a>      <span class="co"># If &lt;abbr&gt; and &lt;expan&gt; tags exist, extract only the &lt;reg&gt; text from &lt;expan&gt;</span></span>
 <span id="cb1-213"><a href="#cb1-213" aria-hidden="true" tabindex="-1"></a>      reg_text <span class="ot">&lt;-</span> <span class="fu">xml_text</span>(<span class="fu">xml_find_first</span>(choice, <span class="st">".//expan/reg"</span>))</span>
-<span id="cb1-214"><a href="#cb1-214" aria-hidden="true" tabindex="-1"></a>      <span class="fu">xml_set_text</span>(choice, reg_text)</span>
+<span id="cb1-214"><a href="#cb1-214" aria-hidden="true" tabindex="-1"></a>      <span class="fu">xml_set_text</span>(choice, <span class="fu">paste0</span>(reg_text, <span class="st">" "</span>))</span>
 <span id="cb1-215"><a href="#cb1-215" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> {</span>
 <span id="cb1-216"><a href="#cb1-216" aria-hidden="true" tabindex="-1"></a>      <span class="co"># For non-abbreviation choices, keep original behavior</span></span>
 <span id="cb1-217"><a href="#cb1-217" aria-hidden="true" tabindex="-1"></a>      orig_text <span class="ot">&lt;-</span> <span class="fu">xml_text</span>(<span class="fu">xml_find_first</span>(choice, <span class="st">".//orig"</span>))</span>
-<span id="cb1-218"><a href="#cb1-218" aria-hidden="true" tabindex="-1"></a>      <span class="fu">xml_set_text</span>(choice, orig_text)</span>
+<span id="cb1-218"><a href="#cb1-218" aria-hidden="true" tabindex="-1"></a>      <span class="fu">xml_set_text</span>(choice, <span class="fu">paste0</span>(orig_text, <span class="st">" "</span>))</span>
 <span id="cb1-219"><a href="#cb1-219" aria-hidden="true" tabindex="-1"></a>    }</span>
 <span id="cb1-220"><a href="#cb1-220" aria-hidden="true" tabindex="-1"></a>  }</span>
 <span id="cb1-221"><a href="#cb1-221" aria-hidden="true" tabindex="-1"></a>  </span>
@@ -584,18 +584,18 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-301"><a href="#cb1-301" aria-hidden="true" tabindex="-1"></a>    <span class="fu">xml_text</span>(emph) <span class="ot">&lt;-</span> styled_initial</span>
 <span id="cb1-302"><a href="#cb1-302" aria-hidden="true" tabindex="-1"></a>  }</span>
 <span id="cb1-303"><a href="#cb1-303" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb1-304"><a href="#cb1-304" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Find all &lt;choice&gt; elements within the line</span></span>
-<span id="cb1-305"><a href="#cb1-305" aria-hidden="true" tabindex="-1"></a>  choices <span class="ot">&lt;-</span> <span class="fu">xml_find_all</span>(line, <span class="st">".//choice"</span>)</span>
-<span id="cb1-306"><a href="#cb1-306" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (choice <span class="cf">in</span> choices) {</span>
-<span id="cb1-307"><a href="#cb1-307" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Extract the text from the &lt;reg&gt; tag</span></span>
-<span id="cb1-308"><a href="#cb1-308" aria-hidden="true" tabindex="-1"></a>    reg_text <span class="ot">&lt;-</span> <span class="fu">xml_text</span>(<span class="fu">xml_find_first</span>(choice, <span class="st">".//reg"</span>))</span>
-<span id="cb1-309"><a href="#cb1-309" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Replace the &lt;choice&gt; element with the text from the &lt;reg&gt; tag</span></span>
-<span id="cb1-310"><a href="#cb1-310" aria-hidden="true" tabindex="-1"></a>    <span class="fu">xml_set_text</span>(choice, reg_text)</span>
-<span id="cb1-311"><a href="#cb1-311" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb1-312"><a href="#cb1-312" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb1-313"><a href="#cb1-313" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Now we want to remove any &lt;orig&gt; elements entirely</span></span>
-<span id="cb1-314"><a href="#cb1-314" aria-hidden="true" tabindex="-1"></a>  orig_elements <span class="ot">&lt;-</span> <span class="fu">xml_find_all</span>(line, <span class="st">".//orig"</span>)</span>
-<span id="cb1-315"><a href="#cb1-315" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xml_remove</span>(orig_elements)</span>
+<span id="cb1-304"><a href="#cb1-304" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Now we want to remove any &lt;orig&gt; elements entirely</span></span>
+<span id="cb1-305"><a href="#cb1-305" aria-hidden="true" tabindex="-1"></a>  orig_elements <span class="ot">&lt;-</span> <span class="fu">xml_find_all</span>(line, <span class="st">".//orig"</span>)</span>
+<span id="cb1-306"><a href="#cb1-306" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xml_remove</span>(orig_elements)</span>
+<span id="cb1-307"><a href="#cb1-307" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-308"><a href="#cb1-308" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Find all &lt;choice&gt; elements within the line</span></span>
+<span id="cb1-309"><a href="#cb1-309" aria-hidden="true" tabindex="-1"></a>  choices <span class="ot">&lt;-</span> <span class="fu">xml_find_all</span>(line, <span class="st">".//choice"</span>)</span>
+<span id="cb1-310"><a href="#cb1-310" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (choice <span class="cf">in</span> choices) {</span>
+<span id="cb1-311"><a href="#cb1-311" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Extract the text from the &lt;reg&gt; tag</span></span>
+<span id="cb1-312"><a href="#cb1-312" aria-hidden="true" tabindex="-1"></a>    reg_text <span class="ot">&lt;-</span> <span class="fu">xml_text</span>(<span class="fu">xml_find_first</span>(choice, <span class="st">".//reg"</span>))</span>
+<span id="cb1-313"><a href="#cb1-313" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Replace the &lt;choice&gt; element with the text from the &lt;reg&gt; tag</span></span>
+<span id="cb1-314"><a href="#cb1-314" aria-hidden="true" tabindex="-1"></a>    <span class="fu">xml_set_text</span>(choice, <span class="fu">paste0</span>(<span class="st">" "</span>, reg_text, <span class="st">" "</span>))</span>
+<span id="cb1-315"><a href="#cb1-315" aria-hidden="true" tabindex="-1"></a>  }</span>
 <span id="cb1-316"><a href="#cb1-316" aria-hidden="true" tabindex="-1"></a>  </span>
 <span id="cb1-317"><a href="#cb1-317" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Replace &lt;lb/&gt; tags with HTML line break</span></span>
 <span id="cb1-318"><a href="#cb1-318" aria-hidden="true" tabindex="-1"></a>  lb_elements <span class="ot">&lt;-</span> <span class="fu">xml_find_all</span>(line, <span class="st">".//lb"</span>)</span>
@@ -995,7 +995,7 @@ e p sa am mei escot .
 De ma dame seinte Ma rie .
 </div>
 <div style="line-height: 1.2;">
-legypcieneorrut la vie .
+legypciene orrut la vie .
 </div>
 <div style="line-height: 1.2;">
 K co sacet tuit peccheur .
@@ -1108,7 +1108,7 @@ Duc dist il jo men repent .
 a tart ad ps le rep entir .
 </div>
 <div style="line-height: 1.2;">
-Qnt÷ venu al murir .
+Qnt ÷ venu al murir .
 </div>
 <div style="line-height: 1.2;">
 Sulunc les diz seint austin .
@@ -1141,7 +1141,7 @@ Si plus i eust de sa vie .
 uncore fese it de folie .
 </div>
 <div style="line-height: 1.2;">
-Qntlalmesen vait miserine .
+Qnt lalme sen vait miserine .
 </div>
 <div style="line-height: 1.2;">
 Q li pot fere mescine .
@@ -1186,7 +1186,7 @@ hun te pdi &amp; amance .
 Tant ert espse de luxure .
 </div>
 <div style="line-height: 1.2;">
-Qdaltre chose naveit cure .
+Q daltre chose naveit cure .
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -1213,7 +1213,7 @@ De do parenz ne se gardout .
 A tuz home sabandonout .
 </div>
 <div style="line-height: 1.2;">
-Nespeirq fust en ceste vie .
+Nespeir q fust en ceste vie .
 </div>
 <div style="line-height: 1.2;">
 feme de greign lecherie .
@@ -1282,7 +1282,7 @@ Fille tu es de gnt parage .
 <div class="line-number">
 90
 </div>
-Mlt÷gnt dol &amp; damage .
+Mlt ÷ gnt dol &amp; damage .
 </div>
 <div style="line-height: 1.2;">
 Q tu seies issi pie .
@@ -1306,7 +1306,7 @@ E maldit tote saventure .
 Qnt ad fait tel engendru re .
 </div>
 <div style="line-height: 1.2;">
-QntMarieloitpler .
+Qnt Marieloit pler .
 </div>
 <div style="line-height: 1.2;">
 Ne la pout sule met escot .
@@ -1321,7 +1321,7 @@ Desqle out passe duze anz .
 A tuz volt fere lur talanz .
 </div>
 <div style="line-height: 1.2;">
-Ppfere sa volente .
+P pfere sa volente .
 </div>
 </div>
 <div class="column-break">
@@ -1428,7 +1428,7 @@ Q devant sun us en lentre .
 <div class="line-number">
 130
 </div>
-Ileufeseit meinte melle .
+Ileu feseit meinte melle .
 </div>
 <div style="line-height: 1.2;">
 p co ql eret si ami .
@@ -1609,7 +1609,7 @@ e por s’amor mei escoter .
 De ma dame seinte Ma rie .
 </div>
 <div style="line-height: 1.2;">
-legypcieneorrunt la vie .
+legypciene orrunt la vie .
 </div>
 <div style="line-height: 1.2;">
 Ke co sacent tuit peccheur .
@@ -1722,7 +1722,7 @@ Dunc dist il jo men repent .
 a tart ad pris le rep entir .
 </div>
 <div style="line-height: 1.2;">
-Quantest venu al murir .
+Quant est venu al murir .
 </div>
 <div style="line-height: 1.2;">
 Sulunc les diz seint Augustin .
@@ -1755,7 +1755,7 @@ Si plus i eust de sa vie .
 uncore fese it de folie .
 </div>
 <div style="line-height: 1.2;">
-Quantlalmesen vait miserine .
+Quant lalme sen vait miserine .
 </div>
 <div style="line-height: 1.2;">
 Qui li pot fere mescine .
@@ -1800,7 +1800,7 @@ hun te perdi &amp; amance .
 Tant ert esprise de luxure .
 </div>
 <div style="line-height: 1.2;">
-Quedaltre chose naveit cure .
+Que daltre chose naveit cure .
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -1827,7 +1827,7 @@ De dous parenz ne se gardout .
 A tuz home sabandonout .
 </div>
 <div style="line-height: 1.2;">
-Nespeirque fust en ceste vie .
+Nespeir que fust en ceste vie .
 </div>
 <div style="line-height: 1.2;">
 fenme de greignor lecherie .
@@ -1896,7 +1896,7 @@ Fille tu es de grant parage .
 <div class="line-number">
 90
 </div>
-Moltestgrant dol &amp; damage .
+Molt est grant dol &amp; damage .
 </div>
 <div style="line-height: 1.2;">
 Que tu seies issi perie .
@@ -1920,7 +1920,7 @@ E maldit tote saventure .
 Quant ad fait tel engendru re .
 </div>
 <div style="line-height: 1.2;">
-QuantMarieloitparler .
+Quant Marieloit parler .
 </div>
 <div style="line-height: 1.2;">
 Ne la pout sule ment escoter .
@@ -1935,7 +1935,7 @@ Desqu’ele out passe duze anz .
 A tuz volt fere lur talanz .
 </div>
 <div style="line-height: 1.2;">
-Porperfere sa volente .
+Por perfere sa volente .
 </div>
 </div>
 <div class="column-break">
@@ -2042,7 +2042,7 @@ Que devant sun us en lentre .
 <div class="line-number">
 130
 </div>
-Ileucfeseient meinte melle .
+Ileuc feseient meinte melle .
 </div>
 <div style="line-height: 1.2;">
 por co qu’il erent si ami .
@@ -2223,7 +2223,7 @@ e por s’amor mei escoter .
 De ma dame seinte Ma rie .
 </div>
 <div style="line-height: 1.2;">
-l’Egypcieneorrunt la vie .
+l’Egypciene orrunt la vie .
 </div>
 <div style="line-height: 1.2;">
 Ke co sacent tuit peccheur .
@@ -2336,7 +2336,7 @@ Dunc dist il jo men repent .
 a tart ad pris le rep entir .
 </div>
 <div style="line-height: 1.2;">
-Quantest venu al murir .
+Quant est venu al murir .
 </div>
 <div style="line-height: 1.2;">
 Sulunc les diz seint Augustin .
@@ -2369,7 +2369,7 @@ Si plus i eust de sa vie .
 uncore fese it de folie .
 </div>
 <div style="line-height: 1.2;">
-Quantl’almes’en vait miserine .
+Quant l’alme s’en vait miserine .
 </div>
 <div style="line-height: 1.2;">
 Qui li pot fere mescine .
@@ -2414,7 +2414,7 @@ hun te perdi &amp; amance .
 Tant ert esprise de luxure .
 </div>
 <div style="line-height: 1.2;">
-Qued’altre chose n’aveit cure .
+Que d’altre chose n’aveit cure .
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -2441,7 +2441,7 @@ De dous parenz ne se gardout .
 A tuz homes s’abandonout .
 </div>
 <div style="line-height: 1.2;">
-N’espeirque fust en ceste vie .
+N’espeir que fust en ceste vie .
 </div>
 <div style="line-height: 1.2;">
 fenme de greignor lecherie .
@@ -2510,7 +2510,7 @@ Fille tu es de grant parage .
 <div class="line-number">
 90
 </div>
-Moltestgrant dol &amp; damage .
+Molt est grant dol &amp; damage .
 </div>
 <div style="line-height: 1.2;">
 Que tu seies issi perie .
@@ -2534,7 +2534,7 @@ E maldit tote s’aventure .
 Quant ad fait tel engendru re .
 </div>
 <div style="line-height: 1.2;">
-QuantMariel’oitparler .
+Quant Marie l’oit parler .
 </div>
 <div style="line-height: 1.2;">
 Ne la pout sule ment escoter .
@@ -2549,7 +2549,7 @@ Desqu’ele out passe duze anz .
 A tuz volt fere lur talanz .
 </div>
 <div style="line-height: 1.2;">
-Porperfere sa volente .
+Por perfere sa volente .
 </div>
 </div>
 <div class="column-break">
@@ -2656,7 +2656,7 @@ Que devant sun us en l’entre .
 <div class="line-number">
 130
 </div>
-Ileucfeseient meinte melle .
+Ileuc feseient meinte melle .
 </div>
 <div style="line-height: 1.2;">
 por co qu’il erent si ami .
