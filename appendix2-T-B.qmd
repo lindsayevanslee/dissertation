@@ -317,6 +317,12 @@ process_line <- function(line) {
   # Only increment line count for verse lines
   if (xml_name(line) == "l") {
     line_count <<- line_count + 1
+    
+    # SPECIAL CASE: Hard-code line v.184 to correct double "Creator"
+    if (line_count == 184) {
+      return("<div style='line-height: 1.2;'>cant de se Creator n'at cure</div>")
+    }
+    
     # Add line number div every 5th line
     line_number <- if (line_count %% 5 == 0) {
       sprintf("<div class='line-number'>%d</div>", line_count)

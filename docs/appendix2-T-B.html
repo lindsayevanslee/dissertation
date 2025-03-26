@@ -555,72 +555,78 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-273"><a href="#cb1-273" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Only increment line count for verse lines</span></span>
 <span id="cb1-274"><a href="#cb1-274" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">xml_name</span>(line) <span class="sc">==</span> <span class="st">"l"</span>) {</span>
 <span id="cb1-275"><a href="#cb1-275" aria-hidden="true" tabindex="-1"></a>    line_count <span class="ot">&lt;&lt;-</span> line_count <span class="sc">+</span> <span class="dv">1</span></span>
-<span id="cb1-276"><a href="#cb1-276" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Add line number div every 5th line</span></span>
-<span id="cb1-277"><a href="#cb1-277" aria-hidden="true" tabindex="-1"></a>    line_number <span class="ot">&lt;-</span> <span class="cf">if</span> (line_count <span class="sc">%%</span> <span class="dv">5</span> <span class="sc">==</span> <span class="dv">0</span>) {</span>
-<span id="cb1-278"><a href="#cb1-278" aria-hidden="true" tabindex="-1"></a>      <span class="fu">sprintf</span>(<span class="st">"&lt;div class='line-number'&gt;%d&lt;/div&gt;"</span>, line_count)</span>
-<span id="cb1-279"><a href="#cb1-279" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> {</span>
-<span id="cb1-280"><a href="#cb1-280" aria-hidden="true" tabindex="-1"></a>      <span class="st">""</span></span>
-<span id="cb1-281"><a href="#cb1-281" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb1-282"><a href="#cb1-282" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
-<span id="cb1-283"><a href="#cb1-283" aria-hidden="true" tabindex="-1"></a>    line_number <span class="ot">&lt;-</span> <span class="st">""</span></span>
-<span id="cb1-284"><a href="#cb1-284" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb1-285"><a href="#cb1-285" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb1-286"><a href="#cb1-286" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Process emph elements (decorative initials)</span></span>
-<span id="cb1-287"><a href="#cb1-287" aria-hidden="true" tabindex="-1"></a>  emph_elements <span class="ot">&lt;-</span> <span class="fu">xml_find_all</span>(line, <span class="st">".//emph"</span>)</span>
-<span id="cb1-288"><a href="#cb1-288" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (emph <span class="cf">in</span> emph_elements) {</span>
-<span id="cb1-289"><a href="#cb1-289" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Get the initial letter text</span></span>
-<span id="cb1-290"><a href="#cb1-290" aria-hidden="true" tabindex="-1"></a>    initial_letter <span class="ot">&lt;-</span> <span class="fu">xml_text</span>(emph)</span>
-<span id="cb1-291"><a href="#cb1-291" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-292"><a href="#cb1-292" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Get the size attribute (n) and style attribute (rend)</span></span>
-<span id="cb1-293"><a href="#cb1-293" aria-hidden="true" tabindex="-1"></a>    size_attr <span class="ot">&lt;-</span> <span class="fu">xml_attr</span>(emph, <span class="st">"n"</span>)</span>
-<span id="cb1-294"><a href="#cb1-294" aria-hidden="true" tabindex="-1"></a>    style_attr <span class="ot">&lt;-</span> <span class="fu">xml_attr</span>(emph, <span class="st">"rend"</span>)</span>
-<span id="cb1-295"><a href="#cb1-295" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-296"><a href="#cb1-296" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Create the HTML for the styled initial</span></span>
-<span id="cb1-297"><a href="#cb1-297" aria-hidden="true" tabindex="-1"></a>    styled_initial <span class="ot">&lt;-</span> <span class="fu">sprintf</span>(<span class="st">'&lt;span class="decorative-initial %s" data-size="%s"&gt;%s&lt;/span&gt;'</span>, </span>
-<span id="cb1-298"><a href="#cb1-298" aria-hidden="true" tabindex="-1"></a>                             style_attr, size_attr, initial_letter)</span>
-<span id="cb1-299"><a href="#cb1-299" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-300"><a href="#cb1-300" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Replace the emph element with the styled HTML</span></span>
-<span id="cb1-301"><a href="#cb1-301" aria-hidden="true" tabindex="-1"></a>    <span class="fu">xml_text</span>(emph) <span class="ot">&lt;-</span> styled_initial</span>
-<span id="cb1-302"><a href="#cb1-302" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb1-303"><a href="#cb1-303" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb1-304"><a href="#cb1-304" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Now we want to remove any &lt;orig&gt; elements entirely</span></span>
-<span id="cb1-305"><a href="#cb1-305" aria-hidden="true" tabindex="-1"></a>  orig_elements <span class="ot">&lt;-</span> <span class="fu">xml_find_all</span>(line, <span class="st">".//orig"</span>)</span>
-<span id="cb1-306"><a href="#cb1-306" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xml_remove</span>(orig_elements)</span>
-<span id="cb1-307"><a href="#cb1-307" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb1-308"><a href="#cb1-308" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Find all &lt;choice&gt; elements within the line</span></span>
-<span id="cb1-309"><a href="#cb1-309" aria-hidden="true" tabindex="-1"></a>  choices <span class="ot">&lt;-</span> <span class="fu">xml_find_all</span>(line, <span class="st">".//choice"</span>)</span>
-<span id="cb1-310"><a href="#cb1-310" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (choice <span class="cf">in</span> choices) {</span>
-<span id="cb1-311"><a href="#cb1-311" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Extract the text from the &lt;reg&gt; tag</span></span>
-<span id="cb1-312"><a href="#cb1-312" aria-hidden="true" tabindex="-1"></a>    reg_text <span class="ot">&lt;-</span> <span class="fu">xml_text</span>(<span class="fu">xml_find_first</span>(choice, <span class="st">".//reg"</span>))</span>
-<span id="cb1-313"><a href="#cb1-313" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Replace the &lt;choice&gt; element with the text from the &lt;reg&gt; tag</span></span>
-<span id="cb1-314"><a href="#cb1-314" aria-hidden="true" tabindex="-1"></a>    <span class="fu">xml_set_text</span>(choice, <span class="fu">paste0</span>(<span class="st">" "</span>, reg_text, <span class="st">" "</span>))</span>
-<span id="cb1-315"><a href="#cb1-315" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb1-316"><a href="#cb1-316" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb1-317"><a href="#cb1-317" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Replace &lt;lb/&gt; tags with HTML line break</span></span>
-<span id="cb1-318"><a href="#cb1-318" aria-hidden="true" tabindex="-1"></a>  lb_elements <span class="ot">&lt;-</span> <span class="fu">xml_find_all</span>(line, <span class="st">".//lb"</span>)</span>
-<span id="cb1-319"><a href="#cb1-319" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (lb <span class="cf">in</span> lb_elements) {</span>
-<span id="cb1-320"><a href="#cb1-320" aria-hidden="true" tabindex="-1"></a>    <span class="fu">xml_set_text</span>(lb, <span class="st">""</span>)</span>
+<span id="cb1-276"><a href="#cb1-276" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-277"><a href="#cb1-277" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.184 to correct double "Creator"</span></span>
+<span id="cb1-278"><a href="#cb1-278" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">184</span>) {</span>
+<span id="cb1-279"><a href="#cb1-279" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;cant de se Creator n'at cure&lt;/div&gt;"</span>)</span>
+<span id="cb1-280"><a href="#cb1-280" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb1-281"><a href="#cb1-281" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-282"><a href="#cb1-282" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Add line number div every 5th line</span></span>
+<span id="cb1-283"><a href="#cb1-283" aria-hidden="true" tabindex="-1"></a>    line_number <span class="ot">&lt;-</span> <span class="cf">if</span> (line_count <span class="sc">%%</span> <span class="dv">5</span> <span class="sc">==</span> <span class="dv">0</span>) {</span>
+<span id="cb1-284"><a href="#cb1-284" aria-hidden="true" tabindex="-1"></a>      <span class="fu">sprintf</span>(<span class="st">"&lt;div class='line-number'&gt;%d&lt;/div&gt;"</span>, line_count)</span>
+<span id="cb1-285"><a href="#cb1-285" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> {</span>
+<span id="cb1-286"><a href="#cb1-286" aria-hidden="true" tabindex="-1"></a>      <span class="st">""</span></span>
+<span id="cb1-287"><a href="#cb1-287" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb1-288"><a href="#cb1-288" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="cb1-289"><a href="#cb1-289" aria-hidden="true" tabindex="-1"></a>    line_number <span class="ot">&lt;-</span> <span class="st">""</span></span>
+<span id="cb1-290"><a href="#cb1-290" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb1-291"><a href="#cb1-291" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-292"><a href="#cb1-292" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Process emph elements (decorative initials)</span></span>
+<span id="cb1-293"><a href="#cb1-293" aria-hidden="true" tabindex="-1"></a>  emph_elements <span class="ot">&lt;-</span> <span class="fu">xml_find_all</span>(line, <span class="st">".//emph"</span>)</span>
+<span id="cb1-294"><a href="#cb1-294" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (emph <span class="cf">in</span> emph_elements) {</span>
+<span id="cb1-295"><a href="#cb1-295" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Get the initial letter text</span></span>
+<span id="cb1-296"><a href="#cb1-296" aria-hidden="true" tabindex="-1"></a>    initial_letter <span class="ot">&lt;-</span> <span class="fu">xml_text</span>(emph)</span>
+<span id="cb1-297"><a href="#cb1-297" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-298"><a href="#cb1-298" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Get the size attribute (n) and style attribute (rend)</span></span>
+<span id="cb1-299"><a href="#cb1-299" aria-hidden="true" tabindex="-1"></a>    size_attr <span class="ot">&lt;-</span> <span class="fu">xml_attr</span>(emph, <span class="st">"n"</span>)</span>
+<span id="cb1-300"><a href="#cb1-300" aria-hidden="true" tabindex="-1"></a>    style_attr <span class="ot">&lt;-</span> <span class="fu">xml_attr</span>(emph, <span class="st">"rend"</span>)</span>
+<span id="cb1-301"><a href="#cb1-301" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-302"><a href="#cb1-302" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Create the HTML for the styled initial</span></span>
+<span id="cb1-303"><a href="#cb1-303" aria-hidden="true" tabindex="-1"></a>    styled_initial <span class="ot">&lt;-</span> <span class="fu">sprintf</span>(<span class="st">'&lt;span class="decorative-initial %s" data-size="%s"&gt;%s&lt;/span&gt;'</span>, </span>
+<span id="cb1-304"><a href="#cb1-304" aria-hidden="true" tabindex="-1"></a>                             style_attr, size_attr, initial_letter)</span>
+<span id="cb1-305"><a href="#cb1-305" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-306"><a href="#cb1-306" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Replace the emph element with the styled HTML</span></span>
+<span id="cb1-307"><a href="#cb1-307" aria-hidden="true" tabindex="-1"></a>    <span class="fu">xml_text</span>(emph) <span class="ot">&lt;-</span> styled_initial</span>
+<span id="cb1-308"><a href="#cb1-308" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb1-309"><a href="#cb1-309" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-310"><a href="#cb1-310" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Now we want to remove any &lt;orig&gt; elements entirely</span></span>
+<span id="cb1-311"><a href="#cb1-311" aria-hidden="true" tabindex="-1"></a>  orig_elements <span class="ot">&lt;-</span> <span class="fu">xml_find_all</span>(line, <span class="st">".//orig"</span>)</span>
+<span id="cb1-312"><a href="#cb1-312" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xml_remove</span>(orig_elements)</span>
+<span id="cb1-313"><a href="#cb1-313" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-314"><a href="#cb1-314" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Find all &lt;choice&gt; elements within the line</span></span>
+<span id="cb1-315"><a href="#cb1-315" aria-hidden="true" tabindex="-1"></a>  choices <span class="ot">&lt;-</span> <span class="fu">xml_find_all</span>(line, <span class="st">".//choice"</span>)</span>
+<span id="cb1-316"><a href="#cb1-316" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (choice <span class="cf">in</span> choices) {</span>
+<span id="cb1-317"><a href="#cb1-317" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Extract the text from the &lt;reg&gt; tag</span></span>
+<span id="cb1-318"><a href="#cb1-318" aria-hidden="true" tabindex="-1"></a>    reg_text <span class="ot">&lt;-</span> <span class="fu">xml_text</span>(<span class="fu">xml_find_first</span>(choice, <span class="st">".//reg"</span>))</span>
+<span id="cb1-319"><a href="#cb1-319" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Replace the &lt;choice&gt; element with the text from the &lt;reg&gt; tag</span></span>
+<span id="cb1-320"><a href="#cb1-320" aria-hidden="true" tabindex="-1"></a>    <span class="fu">xml_set_text</span>(choice, <span class="fu">paste0</span>(<span class="st">" "</span>, reg_text, <span class="st">" "</span>))</span>
 <span id="cb1-321"><a href="#cb1-321" aria-hidden="true" tabindex="-1"></a>  }</span>
 <span id="cb1-322"><a href="#cb1-322" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb1-323"><a href="#cb1-323" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Return line with number if applicable - using xml_text() instead of as.character()</span></span>
-<span id="cb1-324"><a href="#cb1-324" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(<span class="fu">sprintf</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;%s%s&lt;/div&gt;"</span>, </span>
-<span id="cb1-325"><a href="#cb1-325" aria-hidden="true" tabindex="-1"></a>                line_number, <span class="fu">xml_text</span>(line)))</span>
-<span id="cb1-326"><a href="#cb1-326" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb1-327"><a href="#cb1-327" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-328"><a href="#cb1-328" aria-hidden="true" tabindex="-1"></a><span class="co"># Process each line and wrap with &lt;div class='column-break'&gt; at each &lt;cb/&gt;</span></span>
-<span id="cb1-329"><a href="#cb1-329" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (line <span class="cf">in</span> lines) {</span>
-<span id="cb1-330"><a href="#cb1-330" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">xml_name</span>(line) <span class="sc">==</span> <span class="st">"cb"</span>) {</span>
-<span id="cb1-331"><a href="#cb1-331" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Add a closing &lt;/div&gt; for the previous column and an opening &lt;div&gt; for the new column</span></span>
-<span id="cb1-332"><a href="#cb1-332" aria-hidden="true" tabindex="-1"></a>    processed_lines <span class="ot">&lt;-</span> <span class="fu">c</span>(processed_lines, <span class="st">"&lt;/div&gt;"</span>, <span class="st">"&lt;div class='column-break'&gt;"</span>)</span>
-<span id="cb1-333"><a href="#cb1-333" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
-<span id="cb1-334"><a href="#cb1-334" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Process the line and add it to the current column</span></span>
-<span id="cb1-335"><a href="#cb1-335" aria-hidden="true" tabindex="-1"></a>    processed_lines <span class="ot">&lt;-</span> <span class="fu">c</span>(processed_lines, <span class="fu">process_line</span>(line))</span>
-<span id="cb1-336"><a href="#cb1-336" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb1-337"><a href="#cb1-337" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb1-338"><a href="#cb1-338" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-339"><a href="#cb1-339" aria-hidden="true" tabindex="-1"></a><span class="co"># Process lines and wrap in edition-text div</span></span>
-<span id="cb1-340"><a href="#cb1-340" aria-hidden="true" tabindex="-1"></a>formatted_text <span class="ot">&lt;-</span> <span class="fu">paste</span>(<span class="fu">c</span>(<span class="st">"&lt;div class='edition-text'&gt;"</span>, processed_lines, <span class="st">"&lt;/div&gt;"</span>), <span class="at">collapse =</span> <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span>
-<span id="cb1-341"><a href="#cb1-341" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(formatted_text)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-323"><a href="#cb1-323" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Replace &lt;lb/&gt; tags with HTML line break</span></span>
+<span id="cb1-324"><a href="#cb1-324" aria-hidden="true" tabindex="-1"></a>  lb_elements <span class="ot">&lt;-</span> <span class="fu">xml_find_all</span>(line, <span class="st">".//lb"</span>)</span>
+<span id="cb1-325"><a href="#cb1-325" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (lb <span class="cf">in</span> lb_elements) {</span>
+<span id="cb1-326"><a href="#cb1-326" aria-hidden="true" tabindex="-1"></a>    <span class="fu">xml_set_text</span>(lb, <span class="st">""</span>)</span>
+<span id="cb1-327"><a href="#cb1-327" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb1-328"><a href="#cb1-328" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-329"><a href="#cb1-329" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Return line with number if applicable - using xml_text() instead of as.character()</span></span>
+<span id="cb1-330"><a href="#cb1-330" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(<span class="fu">sprintf</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;%s%s&lt;/div&gt;"</span>, </span>
+<span id="cb1-331"><a href="#cb1-331" aria-hidden="true" tabindex="-1"></a>                line_number, <span class="fu">xml_text</span>(line)))</span>
+<span id="cb1-332"><a href="#cb1-332" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-333"><a href="#cb1-333" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-334"><a href="#cb1-334" aria-hidden="true" tabindex="-1"></a><span class="co"># Process each line and wrap with &lt;div class='column-break'&gt; at each &lt;cb/&gt;</span></span>
+<span id="cb1-335"><a href="#cb1-335" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (line <span class="cf">in</span> lines) {</span>
+<span id="cb1-336"><a href="#cb1-336" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">xml_name</span>(line) <span class="sc">==</span> <span class="st">"cb"</span>) {</span>
+<span id="cb1-337"><a href="#cb1-337" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Add a closing &lt;/div&gt; for the previous column and an opening &lt;div&gt; for the new column</span></span>
+<span id="cb1-338"><a href="#cb1-338" aria-hidden="true" tabindex="-1"></a>    processed_lines <span class="ot">&lt;-</span> <span class="fu">c</span>(processed_lines, <span class="st">"&lt;/div&gt;"</span>, <span class="st">"&lt;div class='column-break'&gt;"</span>)</span>
+<span id="cb1-339"><a href="#cb1-339" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="cb1-340"><a href="#cb1-340" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Process the line and add it to the current column</span></span>
+<span id="cb1-341"><a href="#cb1-341" aria-hidden="true" tabindex="-1"></a>    processed_lines <span class="ot">&lt;-</span> <span class="fu">c</span>(processed_lines, <span class="fu">process_line</span>(line))</span>
+<span id="cb1-342"><a href="#cb1-342" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb1-343"><a href="#cb1-343" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-344"><a href="#cb1-344" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-345"><a href="#cb1-345" aria-hidden="true" tabindex="-1"></a><span class="co"># Process lines and wrap in edition-text div</span></span>
+<span id="cb1-346"><a href="#cb1-346" aria-hidden="true" tabindex="-1"></a>formatted_text <span class="ot">&lt;-</span> <span class="fu">paste</span>(<span class="fu">c</span>(<span class="st">"&lt;div class='edition-text'&gt;"</span>, processed_lines, <span class="st">"&lt;/div&gt;"</span>), <span class="at">collapse =</span> <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span>
+<span id="cb1-347"><a href="#cb1-347" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(formatted_text)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="quarto-layout-panel page-columns page-full" data-layout="[[6,6,6,6]]">
 <div class="quarto-layout-row page-full">
@@ -631,7 +637,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 
 </div>
 <div style="line-height: 1.2;">
-<span class="decorative-initial floriate" data-size="3">O</span>iez sagnor une cancon. v il nen at severtet non
+<span class="decorative-initial floriate" data-size="3">O</span>iez sagnor une cancon. u il nen at severtet non
 </div>
 <div style="line-height: 1.2;">
 tote est faite deverteit. Niat un mot defalseteit
@@ -2770,7 +2776,7 @@ Amen. amen. amen. amen.
 <span class="decorative-initial floriate" data-size="3">O</span>iez sagnor une cancon.
 </div>
 <div style="line-height: 1.2;">
-v il nen at severtet non
+u il nen at severtet non
 </div>
 <div style="line-height: 1.2;">
 tote est faite deverteit .
@@ -7669,7 +7675,7 @@ Amen. amen. amen. amen.
 <span class="decorative-initial floriate" data-size="3">O</span>iez sagnor une cancon.
 </div>
 <div style="line-height: 1.2;">
-v il nen at severtet non
+u il nen at severtet non
 </div>
 <div style="line-height: 1.2;">
 tote est faite deverteit .
@@ -12568,7 +12574,7 @@ Amen. amen. amen. amen.
 <span class="decorative-initial floriate" data-size="3">O</span>iez sagnor une cancon.
 </div>
 <div style="line-height: 1.2;">
-v il n’en at se vertet non
+u il n’en at se vertet non
 </div>
 <div style="line-height: 1.2;">
 tote est faite de verteit .
@@ -13237,7 +13243,7 @@ N’iert descrite se n’i at proise
 a plendre fait tel creature.
 </div>
 <div style="line-height: 1.2;">
-cant de se Creator Creator n’at cure
+cant de se Creator n’at cure
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
