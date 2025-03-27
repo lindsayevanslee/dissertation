@@ -170,7 +170,7 @@ Zubillaga, Carina. “Categorías espaciales y dicotomías jerárquicas en la de
 
 ---. “Pecados de juventud: inicios y desvíos de la leyenda medieval de Santa María Egipcíaca en Francia y España.” *Diálogos medievales: Estudios argentinos de literatura francesa*. Eds. Artal Maillie, Susana and Dumas, María. Buenos Aires: Universidad Nacional de General Sarmiento, 2017. pp. 101-106.
 
-## Medievalist Digital Humanities Scholarship, Project, & Repositories
+## Medievalist Digital Humanities Scholarship, Projects, & Repositories
 Lee, Loren. *dissertation* (Version 1.0.0), GitHub, 2025. https://github.com/leeloren/dissertation. [repository]
 
 ---. *marie-legyptienne* (Version 1.0.0), GitHub, 2024. https://github.com/leeloren/marie-legyptienne. [repository]
@@ -318,6 +318,8 @@ Radiciotti, Paolo, and Arianna D’Ottone. “I frammenti della Qubbat al-hazna 
 *Anglo-Norman Dictionary (AND2 Online Edition)*, Aberystwyth University, 2021. https://anglo-norman.net/.
 
 *Dictionnaire du Moyen Français*, version 2020 (DMF 2020). ATILF - CNRS & Université de Lorraine. http://www.atilf.fr/dmf.
+
+Foulet, Alfred and Mary Blakely Speer. *On Editing Old French Texts*. Regents Press of Kansas, 1979.
 
 Godefroy, Frédéric. *Dictionnaire de l’ancienne langue française, et de tous ses dialectes du IXe au XVe siècle*. F. Vieweg, 1881.
 
