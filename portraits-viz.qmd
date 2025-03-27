@@ -858,7 +858,7 @@ from her underarm along her rib.<br>
 <span class="negation">She was neither too big nor too small.<br></span>
 Her frame could <span class="negation">never</span> be described.<br>
 <span class="negation">Nor</span> could the beauty of this lady<br>
-<span class="negation">ever</span> be described by <span class="negation">any</span> man.<br>
+<span class="negation">ever</span> be described by <span class="negation">any</span> <span class="unique-verse">soul</span>.<br>
 She was so courteous of speech.<br>
 There was <span class="negation">nothing</span> to improve.<br>
 Such a creature makes one lament<br>
