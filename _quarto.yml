@@ -30,6 +30,7 @@ book:
     - references.qmd
 
 bibliography: references.bib
+csl: modern-language-association.csl
 
 format:
   html:
