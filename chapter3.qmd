@@ -1,0 +1,5 @@
+---
+title: "3. A Cross-Copy Close Read"
+---
+
+This is the THIRD chapter of my Quarto book...

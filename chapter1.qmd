@@ -1,5 +1,5 @@
 ---
-title: "On Digital Editing"
+title: "1. On Digital Editing"
 ---
 
 This is the first chapter of my dissertation...
