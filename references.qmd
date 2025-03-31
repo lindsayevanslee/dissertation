@@ -173,20 +173,70 @@ Zubillaga, Carina. “Categorías espaciales y dicotomías jerárquicas en la de
 ---. “Pecados de juventud: inicios y desvíos de la leyenda medieval de Santa María Egipcíaca en Francia y España.” *Diálogos medievales: Estudios argentinos de literatura francesa*. Eds. Artal Maillie, Susana and Dumas, María. Buenos Aires: Universidad Nacional de General Sarmiento, 2017. pp. 101-106.
 
 ## Medievalist Digital Humanities Scholarship, Projects, & Repositories
+Bahr, Arthur. “Miscellaneity and Variance in the Medieval Book.” *The Medieval Manuscript Book*, Cambridge University Press, 2015, pp.181-198. [scholarship]
+
+Bamford, Heather and Emily C. Francomano. “On Digital-Medieval Manuscript Culture: A Tentative Manifesto.” *Digital Philology: A Journal of Medieval Cultures*, vol. 7, no.1, Spring 2018, pp. 29-45. [scholarship]
+
+Busch, Hannah and Philipp Hegel. “Automatic Layout Analysis and Storage of Digitized Medieval Books.” *Digital Philology: A Journal of Medieval Cultures*, vol. 6, no. 2, Fall 2017, pp. 196-212. [scholarship]
+
+*Digital Scriptorium 2.0*. https://digital-scriptorium.org/. [repository] 
+
+Drimmer, Sonja. “Introduction: The Manuscript Copy and the Printed Original in the Digital Present.” *Digital Philology: A Journal of Medieval Cultures*, vol. 9, no. 2, Fall 2020, pp. 93-119. [scholarship]
+
+Echard, Siân. “The Ghost in the Machine: Digital Avatars of Medieval Manuscripts.” *Printing the Middle Ages*, University of Pennsylvania Press, 2008, pp.198-216. [scholarship]
+
+Fafinski, Mateusz. “Facsimile Narratives: Researching the Past in the Age of Digital Reproduction.” *Digital Scholarship in the Humanities*, vol. 37, no. 1, April 2022, pp. 94-108. [scholarship]
+
+Foys, Martin, et al. *Old English Poetry in Facsimile 3.0*. Center for the History of Print and Digital Culture, University of Wisconsin-Madison, 2019-present, https://oepoetryfacsimile.org [repository]
+
+Fritschi, Ramona. “e-codices – Virtual Manuscript Library of Switzerland: Great Achievements and Even Greater Challenges to Come.” *Digital Philology: A Journal of Medieval Cultures*, vol.6, no.2, Fall 2017, pp. 244-256. [scholarship]
+
+*Fragmentarium*. Manuscript Research Center - University of Fribourg, 2013-present, https://fragmentarium.ms/. [repository]
+
+Kiss, Farkas Gábor, et al. “Old Light on New Media: Medieval Practices in the Digital Age.” *Digital Philology: A Journal of Medieval Cultures*, vol. 2, no. 1, Spring 2013, pp. 16-34. [scholarship]
+
 Lee, Loren. *dissertation* (Version 1.0.0), GitHub, 2025. https://github.com/leeloren/dissertation. [repository]
 
 ---. *marie-legyptienne* (Version 1.0.0), GitHub, 2024. https://github.com/leeloren/marie-legyptienne. [repository]
 
+Lit, L. W. C. van (Lambertus Willem Cornelis). *Among Digitized Manuscripts: Philology, Codicology, Paleography In a Digital World*. Brill, 2020. [scholarship]
+
 *Lives of the Saints: The Medieval French Hagiography Project*. directed by Amy V. Ogden, The Institute for Advanced Technology in the Humanities, 2006, https://frenchsaintslives.org/. Accessed 10 March 2025. [project]
 
+Mahoney-Steel, Tamsyn. “Encoding and Decoding Machaut.” *Meeting the Medieval in a Digital World*, edited by Matthew Evan Davis, Tamsyn Mahoney-Steel, and Ece Turnator, Arc Humanities Press, 2018, pp. 123-142. [scholarship]
+
+Nafde, Aditi and Emma Gorst. “Introduction: The Trials of the Digital Medievalist.” *Digital Philology: A Journal of Medieval Cultures*, vol. 4, no. 2, Fall 2015, pp. 147-159. [scholarship]
+
+Nichols, Stephen G. *From Parchment to Cyberspace: Medieval Literature In the Digital Age*. Peter Lang Publishing, Inc, 2016. [scholarship]
+
+---. “Introduction: Philology in a Manuscript Culture.” *The New Philology*, special issue of *Speculum: A Journal of Medieval Studies*, vol. 65, no.1, 1990, pp. 1-10. [scholarship]
+
+Prescott, Andrew. “Ways of Seeing Manuscripts.” *Medieval Manuscripts in the Digital Age*, Routledge, 2020, pp.37-54. [scholarship]
+
+Robertson, Abigail G. “A Note on Technology and Functionality in Digital Manuscript Studies.” *Medieval Manuscripts in the Digital Age*, Routledge, 2020, pp. 33-36. [scholarship]
+
+Robinson, Peter. “Current issues in making digital editions of medieval texts — or, do electronic scholarly editions have a future?” *Digital Medievalist*, vol.1, no.1, 2005, http://doi.org/10.16995/dm.8. [scholarship]
+
+---. “Electronic editions which we have made and which we want to make.” *Digital Philology and Medieval Texts*, Pacini, 2007, pp. 1-12. [scholarship]
+
+---. “The Ends of Editing.” *Digital Humanities Quarterly*, vol. 3, no. 3, Summer 2009. [scholarship]
+
+---. “How we have been publishing the wrong way, and how we might publish a better way.” *E-Publishing: Politics and Pragmatics*, edited by Gabriel Egan, Medieval and Renaissance Text Series, 2010, pp. 139-155. [scholarship]
+
 *Roman de la Rose Digital Library*. directed by Tamsyn Mahoney-Steel, Stephen G. Nichols, and Sayeed Choudhury, Johns Hopkins Sheridan Libraries, 2007, https://dlmm.library.jhu.edu/romandelarose/. Accessed 10 March 2025. [project]
+
+Szpiech, Ryan. “Cracking the Code: Reflections on Manuscripts in the Age of Digital Books.” *Digital Philology: A Journal of Medieval Cultures*, vol. 3, no. 1, Spring 2014, pp. 75-100. [scholarship]
 
 Warren, Michelle R. *Holy Digital Grail: A Medieval Book on the Internet*, Redwood City: Stanford University Press, 2022. https://doi-org.proxy1.library.virginia.edu/10.1515/9781503631175 [scholarship]
 
 Whearty, Bridget. *Digital Codicology: Medieval Books and Modern Labor*, Redwood City: Stanford University Press, 2022. https://doi-org.proxy1.library.virginia.edu/10.1515/9781503634190 [scholarship]
 
+---. “Adam Scriveyn in Cyberspace: Loss, Labour, Ideology, and Infrastructure in Interoperable Reuse of Digital Manuscript Metadata.” *Meeting the Medieval in a Digital World*, edited by Matthew Evan Davis, Tamsyn Mahoney-Steel, and Ece Turnator, Arc Humanities Press, 2018, pp. 157-201. [scholarship]
+
 ## Other Digital Humanities References (Tools & Scholarship)
 Allaire, J.J., et al. *Quarto*. Posit, PBC, 2022, https://quarto.org/. [tool]
+
+Bolter, J. David, and Richard Grusin. *Remediation: Understanding New Media*. MIT Press, 1999. [scholarship]
 
 Bryant, John. *The Fluid Text: A Theory of Revision and Editing for Book and Screen*. University of Michigan Press, 2002. [scholarship]
 
@@ -319,6 +369,12 @@ Radiciotti, Paolo, and Arianna D’Ottone. “I frammenti della Qubbat al-hazna 
 ## Old & Middle French Reference Texts
 *Anglo-Norman Dictionary (AND2 Online Edition)*, Aberystwyth University, 2021. https://anglo-norman.net/.
 
+Campion, Edmund J. “Early Modern French Literature.” *Scholarly Editing: A Guide to Research*, MLA, 1995, pp. 417-437.
+
+Cerquiglini, Bernard. *Éloge de la variante: Histoire critique de la philologie*. Éditions du Seuil, 1989.
+
+Derolez, Albert. *The Paleography of Gothic Manuscripts*. Cambridge University Press, 2001.
+
 *Dictionnaire du Moyen Français*, version 2020 (DMF 2020). ATILF - CNRS & Université de Lorraine. http://www.atilf.fr/dmf.
 
 Foulet, Alfred and Mary Blakely Speer. *On Editing Old French Texts*. Regents Press of Kansas, 1979.
@@ -326,6 +382,8 @@ Foulet, Alfred and Mary Blakely Speer. *On Editing Old French Texts*. Regents Pr
 Godefroy, Frédéric. *Dictionnaire de l’ancienne langue française, et de tous ses dialectes du IXe au XVe siècle*. F. Vieweg, 1881.
 
 Matsumura, Takeshi, and Michel Zink, editor. *Dictionnaire du français médiéval*. Les Belles Lettres, 2015.
+
+Speer, Mary B. “Old French Literature.” *Scholarly Editing: A Guide to Research*, MLA, 1995, pp. 382-416.
 
 ## Epigraph
 Thomas. “Le Roman de Tristan.” *Tristan et Iseut: Les poèmes français et La saga norroise*. Edited and translated by Philippe Walter, Lettres gothiques, 1989, pp. 329-481.
