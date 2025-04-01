@@ -17,7 +17,7 @@ The “Minimal” column, offers a transcription with a low level of editorial i
 In the “Intermediate” column, scribal abbreviations — such as &#xA76F; for “con/com” — are expanded to improve readability. However, all “et” symbols have been left unexpanded as ampersands (“&”) since this abbreviation is still widely used today. Similarly, numbering is presented as written by the scribe either as Roman numerals or spelled out in words.
 
 ### Extensive
-The “Extensive” column presents the transcription with further regularized spacing and spelling, including the addition of apostrophes to indicate contractions.
+The “Extensive” column presents the transcription with further regularized spacing and spelling, including the addition of apostrophes to indicate contractions. Diacritical marks have not been added in the interests of improving searchability.
 
 ### Nearly Diplomatic
 In all but two of the T manuscripts (T-B and T-F^1^), the text was copied with line breaks in alignment with each verse, and so for copies T-B and T-F^1^, an additional column to the far left has been added labeled “Nearly Diplomatic.” These columns present a transcription with the “Minimal” level of intervention but also reflect the particular style in which the text was copied in each of these manuscripts. The T-B scribe copied two verses per line, indicating verse separation with a punctus, and the T-F^1^ scribe copied the verses in the style of prose, also using a punctus to separate each verse but otherwise paying no mind to the ends of verses or words to fill the writing space.
