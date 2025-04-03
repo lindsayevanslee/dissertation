@@ -205,17 +205,21 @@ Lit, L. W. C. van (Lambertus Willem Cornelis). *Among Digitized Manuscripts: Phi
 
 Mahoney-Steel, Tamsyn. “Encoding and Decoding Machaut.” *Meeting the Medieval in a Digital World*, edited by Matthew Evan Davis, Tamsyn Mahoney-Steel, and Ece Turnator, Arc Humanities Press, 2018, pp. 123-142. [scholarship]
 
+McGrady, Deborah. “Textual Bodies, the Digital Surrogate, and Desire: Guillaume de Machaut’s Judgment Cycle and his Protean Corpus.” *Digital Philology: A Journal of Medieval Cultures*, vol. 5, no. 1, Spring 2016, pp. 8-27. [scholarship]
+
 Nafde, Aditi and Emma Gorst. “Introduction: The Trials of the Digital Medievalist.” *Digital Philology: A Journal of Medieval Cultures*, vol. 4, no. 2, Fall 2015, pp. 147-159. [scholarship]
 
 Nichols, Stephen G. *From Parchment to Cyberspace: Medieval Literature In the Digital Age*. Peter Lang Publishing, Inc, 2016. [scholarship]
 
 ---. “Introduction: Philology in a Manuscript Culture.” *The New Philology*, special issue of *Speculum: A Journal of Medieval Studies*, vol. 65, no.1, 1990, pp. 1-10. [scholarship]
 
+Porter, Dot. “The Uncanny Valley and the Ghost in the Machine: a discussion of analogies for thinking about digitized medieval manuscripts.” *Dot Porter Digital: Development in Production*. http://www.dotporterdigital.org/the-uncanny-valley-and-the-ghost-in-the-machine-a-discussion-of-analogies-for-thinking-about-digitized-medieval-manuscripts/. Accessed April 2023. [scholarship]
+
 Prescott, Andrew. “Ways of Seeing Manuscripts.” *Medieval Manuscripts in the Digital Age*, Routledge, 2020, pp.37-54. [scholarship]
 
 Robertson, Abigail G. “A Note on Technology and Functionality in Digital Manuscript Studies.” *Medieval Manuscripts in the Digital Age*, Routledge, 2020, pp. 33-36. [scholarship]
 
-Robinson, Peter. “Current issues in making digital editions of medieval texts — or, do electronic scholarly editions have a future?” *Digital Medievalist*, vol.1, no.1, 2005, http://doi.org/10.16995/dm.8. [scholarship]
+Robinson, Peter. “Current issues in making digital editions of medieval texts — or, do electronic scholarly editions have a future?” *Digital Medievalist*, vol. 1, no. 1, 2005, http://doi.org/10.16995/dm.8. [scholarship]
 
 ---. “Electronic editions which we have made and which we want to make.” *Digital Philology and Medieval Texts*, Pacini, 2007, pp. 1-12. [scholarship]
 
@@ -363,6 +367,8 @@ Tyson, Moses. “Hand-list of the Collections of French and Italian Manuscripts 
 
 ## Berlin, Staatsbibliothek, MSS Simulata Orientalia 6 (T-F^2^)
 Giannini, Gabriele and Laura Minervini. “The Old French Texts of the Damascus Qubba.” *The Damascus Fragments: Towards a History of the Qubbat al-khazna Corpus of Manuscripts and Documents*. edited by Arianna d’Ottone Rambach, Konrad Hirschler, and Ronny Vollandt, Ergon Verlag, 2020, pp. 331-362.
+
+Margoliouth, David Samuel and Walter Spencer-Stanhope Tyrwhitt. *Cairo, Jerusalem, and Damascus: Three Chief Cities of the Egyptian Sultans*. Dodd, Mead, and Company, 1907.
 
 Radiciotti, Paolo, and Arianna D’Ottone. “I frammenti della Qubbat al-hazna di Damasco: A proposito di una scoperta sottovalutata.” *Nea Rhome*, vol. 5, 2008, pp. 45-74.
 
