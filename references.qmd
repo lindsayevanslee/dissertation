@@ -11,7 +11,7 @@
 
 > At least folios 1-8 of French 6 were originally part of London, British Library, Egerton 2710. Second half of the 13th century, provenance pre-15th century unknown.
 
-**T-F^2^**: Location of the original fragment — dated to the second half of the 12th century and most likely originating in Europe — is unknown, but a photographic copy may be found here:\
+**T-F^2^**: The location of the original fragment — dated to the second half of the 12th century and most likely originating in Europe — is unknown, but a photographic copy may be found here:\
 
 > Berlin, Staatsbibliothek, *Photographien von ausgewählten Fragmenten aus der Omayyaden-Moschee in Damaskus in verschiedenen Sprachen*, 1908. Mss simulata orientalia 6, Orientalische Handschriften digital, Photographs 89 (verso) & 101 (recto), http://resolver.staatsbibliothek-berlin.de/SBB000074F100000000.
 
@@ -310,7 +310,7 @@ Delisle, Léopold. *Le Cabinet des manuscrits de la Bibliothèque nationale: Ét
 
 Omont, Henri. *Catalogue général des manuscrits français. Ancien Saint-Germain français*, vol. 3, Bibliothèque nationale, 1900, Manuscript 19525, pp. 339-341. https://archive.org/details/CatalogueGeneralDesManuscritsAncStGermFr3/page/n353/mode/2up. 
 
-Rankka, Erik. *Li ver del juïse: Sermon en vers du XIIe siècle*. University of Uppsala, 1982.
+Rankka, Erik. *Li ver del juïse: Sermon en vers du XIIe siècle*. University of Uppsala, 1982, pp. 39-41.
 
 Guillaume le Clerc de Normandie. *Le Besant de Dieu*. edited by Pierre Ruelle, Éditions de l’Université de Bruxelles, 1973, pp. 12-13.
 
@@ -370,7 +370,7 @@ Ker, Neil Ripley. *Medieval manuscripts in British Libraries*. Oxford Clarendon 
 
 Marie-Laure Savoye, notice de “LONDON, British Library, Egerton MS 2710; MANCHESTER, John Rylands University Library, French MS 6” dans la base Jonas-IRHT/CNRS (permalink : http://jonas.irht.cnrs.fr/manuscrit/30588).
 
-Rankka, Erik. *Li ver del juïse: Sermon en vers du XIIe siècle*. University of Uppsala, 1982.
+Rankka, Erik. *Li ver del juïse: Sermon en vers du XIIe siècle*. University of Uppsala, 1982, pp. 41-43.
 
 Russell, D. W. and Clive D. Field. “The Manuscript Source of the Fragment, Rylands French MS 6.” *Bulletin of the John Rylands University Library of Manchester*, vol. 71, no. 1, 1989, pp. 41-47. https://luna.manchester.ac.uk/luna/servlet/detail/Manchester~25~25~2057~199917.
 
