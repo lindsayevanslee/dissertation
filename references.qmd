@@ -1,5 +1,20 @@
 # Bibliography {.unnumbered}
 
+## Manuscripts
+**T-A**: Paris, Bibliothèque nationale de France (hereafter BnF), Français 23112, ff.334v-344r. Late 13th century, provenance pre-17th century unknown.  
+**T-B**: Oxford, Bodleian, Canonici Miscellaneous 74, ff.109r-120r. Early 13th century, provenance pre-18th century unknown.  
+**T-C**: Oxford, Corpus Christi College, 232, ff.35r-64v. Early 14th century, from Canterbury.  
+**T-D**: Paris, BnF, Français 19525, ff.15r-26v. Second half of 13th century, from Oxford.  
+**T-E**: Paris, BnF, Arsenal, 3516, ff.113v-117v. 1267/1268, from Artois.  
+**T-L**: London, British Library, Additional 36614, ff.271v-282v. Second half of 13th century, provenance pre-19th century unknown.  
+**T-F^1^**: Manchester, John Rylands Library, French 6, ff.8r-8v. Second half of 13th century, provenance pre-19th century unknown.  
+
+> At least folios 1-8 of French 6 were originally part of London, British Library, Egerton 2710. Second half of the 13th century, provenance pre-15th century unknown.
+
+**T-F^2^**: Location of the original fragment — dated to the second half of the 12th century and most likely originating in Europe — is unknown, but a photographic copy may be found here:\
+
+> Berlin, Staatsbibliothek, *Photographien von ausgewählten Fragmenten aus der Omayyaden-Moschee in Damaskus in verschiedenen Sprachen*, 1908. Mss simulata orientalia 6, Orientalische Handschriften digital, Photographs 89 (verso) & 101 (recto), http://resolver.staatsbibliothek-berlin.de/SBB000074F100000000.
+
 ## Editions & Translations {.unnumbered}
 Baker, Alfred Thomas. “Vie de Sainte Marie L’Egyptienne,” *Revue des langues romanes*, LIX (1916-1917), pp. 145-401. [edition]
 
@@ -172,10 +187,16 @@ Zubillaga, Carina. “Categorías espaciales y dicotomías jerárquicas en la de
 
 ---. “Pecados de juventud: inicios y desvíos de la leyenda medieval de Santa María Egipcíaca en Francia y España.” *Diálogos medievales: Estudios argentinos de literatura francesa*. Eds. Artal Maillie, Susana and Dumas, María. Buenos Aires: Universidad Nacional de General Sarmiento, 2017. pp. 101-106.
 
-## Medievalist Digital Humanities Scholarship, Projects, & Repositories
+## Digital Humanities Scholarship, Projects, Repositories, & Tools
+Allaire, J.J., et al. *Quarto*. Posit, PBC, 2022, https://quarto.org/. [tool]
+
 Bahr, Arthur. “Miscellaneity and Variance in the Medieval Book.” *The Medieval Manuscript Book*, Cambridge University Press, 2015, pp.181-198. [scholarship]
 
 Bamford, Heather and Emily C. Francomano. “On Digital-Medieval Manuscript Culture: A Tentative Manifesto.” *Digital Philology: A Journal of Medieval Cultures*, vol. 7, no.1, Spring 2018, pp. 29-45. [scholarship]
+
+Bolter, J. David, and Richard Grusin. *Remediation: Understanding New Media*. MIT Press, 1999. [scholarship]
+
+Bryant, John. *The Fluid Text: A Theory of Revision and Editing for Book and Screen*. University of Michigan Press, 2002. [scholarship]
 
 Busch, Hannah and Philipp Hegel. “Automatic Layout Analysis and Storage of Digitized Medieval Books.” *Digital Philology: A Journal of Medieval Cultures*, vol. 6, no. 2, Fall 2017, pp. 196-212. [scholarship]
 
@@ -194,10 +215,6 @@ Fritschi, Ramona. “e-codices – Virtual Manuscript Library of Switzerland: Gr
 *Fragmentarium*. Manuscript Research Center - University of Fribourg, 2013-present, https://fragmentarium.ms/. [repository]
 
 Kiss, Farkas Gábor, et al. “Old Light on New Media: Medieval Practices in the Digital Age.” *Digital Philology: A Journal of Medieval Cultures*, vol. 2, no. 1, Spring 2013, pp. 16-34. [scholarship]
-
-Lee, Loren. *dissertation* (Version 1.0.0), GitHub, 2025. https://github.com/leeloren/dissertation. [repository]
-
----. *marie-legyptienne* (Version 1.0.0), GitHub, 2024. https://github.com/leeloren/marie-legyptienne. [repository]
 
 Lit, L. W. C. van (Lambertus Willem Cornelis). *Among Digitized Manuscripts: Philology, Codicology, Paleography In a Digital World*. Brill, 2020. [scholarship]
 
@@ -231,24 +248,18 @@ Robinson, Peter. “Current issues in making digital editions of medieval texts 
 
 Szpiech, Ryan. “Cracking the Code: Reflections on Manuscripts in the Age of Digital Books.” *Digital Philology: A Journal of Medieval Cultures*, vol. 3, no. 1, Spring 2014, pp. 75-100. [scholarship]
 
+Tufte, Edward. *Seeing With Fresh Eyes: Meaning, Space, Data, Truth*. Graphis Press LLc, 2020. [scholarship]
+
 Warren, Michelle R. *Holy Digital Grail: A Medieval Book on the Internet*, Redwood City: Stanford University Press, 2022. https://doi-org.proxy1.library.virginia.edu/10.1515/9781503631175 [scholarship]
 
 Whearty, Bridget. *Digital Codicology: Medieval Books and Modern Labor*, Redwood City: Stanford University Press, 2022. https://doi-org.proxy1.library.virginia.edu/10.1515/9781503634190 [scholarship]
 
 ---. “Adam Scriveyn in Cyberspace: Loss, Labour, Ideology, and Infrastructure in Interoperable Reuse of Digital Manuscript Metadata.” *Meeting the Medieval in a Digital World*, edited by Matthew Evan Davis, Tamsyn Mahoney-Steel, and Ece Turnator, Arc Humanities Press, 2018, pp. 157-201. [scholarship]
 
-## Other Digital Humanities References (Tools & Scholarship)
-Allaire, J.J., et al. *Quarto*. Posit, PBC, 2022, https://quarto.org/. [tool]
-
-Bolter, J. David, and Richard Grusin. *Remediation: Understanding New Media*. MIT Press, 1999. [scholarship]
-
-Bryant, John. *The Fluid Text: A Theory of Revision and Editing for Book and Screen*. University of Michigan Press, 2002. [scholarship]
-
-Tufte, Edward. *Seeing With Fresh Eyes: Meaning, Space, Data, Truth*. Graphis Press LLc, 2020. [scholarship]
-
 Xie, Yihui. *bookdown: Authoring Books and Technical Documents with R Markdown*. Chapman & Hall, 2021. https://bookdown.org/yihui/bookdown/. [tool]
 
-## Paris, BnF, Français 23112 (T-A)
+## Manuscript Scholarship
+### Paris, BnF, Français 23112 (T-A)
 Cloetta, Wilhelm. “Poème moral.” *Romanische Forschungen*, vol. 3, edited by Karl Vollmöller, Deichert, 1887, pp. i-x; 1-268. https://resolver.sub.uni-goettingen.de/purl?PPN345572629_0003.
 
 Ginguené, Pierre-Louis. “Poètes français, Thibaut de Vernon, Alfrius et Lambert de Liège.” *Histoire littéraire de la France*, vol. 13, 1814, pp. 112-114. https://gallica.bnf.fr/ark:/12148/bpt6k6269361v/f146.item.r=Histoire%20litteraire%20de%20la%20France%201814%20Ginguene.
@@ -264,7 +275,7 @@ Rouse, Richard, and Mary Rouse. *Manuscripts and Their Makers: Commercial Book P
 Section romane, notice de “Paris, Bibliothèque nationale de France, Manuscrits, fr. 23112” dans la base Jonas-IRHT/CNRS (permalink : http://jonas.irht.cnrs.fr/manuscrit/71291).
 
 
-## Oxford, Bodleian, Canonici Misc. 74 (T-B)
+### Oxford, Bodleian, Canonici Misc. 74 (T-B)
 Campbell, Emma. *Medieval Saints’ Lives: The Gift, Kinship and Community in Old French Hagiography*. Boydell & Brewer, 2008, pp. 205-222; 236-237; 240-241.
 
 “Canonici.” Digital Bodleian, https://digital.bodleian.ox.ac.uk/collections/canonici/.
@@ -279,7 +290,7 @@ Section romane, notice de “OXFORD, Bodleian Library, Canonici misc. 074” dan
 
 *The Life of Saint Eufrosine: In Old French Verse, with English Translation*. edited by Amy V. Ogden, MLA Texts & Translations, 2021.
 
-## Oxford, Corpus Christi College, 232 (T-C)
+### Oxford, Corpus Christi College, 232 (T-C)
 Coxe, Henry Octavius. *Catalogus codicum mss. qui in collegiis aulisque Oxoniensibus hodic adservantur*, vol. 2, Oxonii, 1852, Manuscript 232, pp. 94-95. https://archive.org/details/cataloguscodicummssquiincoll2/page/n225/mode/2up.
 
 Dee, John. *John Dee’s Diary, Catalogue of Manuscripts and Selected Letters*. edited by James Orchard Halliwell, et al. Cambridge University Press, 2013. https://doi-org.proxy1.library.virginia.edu/10.1017/CBO9781139245791.
@@ -292,7 +303,7 @@ Section romane, notice de “OXFORD, Corpus Christi College, 232” dans la base
 
 Thomson, Rodney M. *A Descriptive Catalogue of the Medieval Manuscripts of Corpus Christi College, Oxford*. D.S. Brewer, 2011, Manuscript 232, pp. 116-117.
 
-## Paris, BnF, Français 19525 (T-D)
+### Paris, BnF, Français 19525 (T-D)
 Avril, François, and Patricia Danz Stirnemann. *Manuscrits enluminés d’origine insulaire: VIIe-XXe siècle*. Bibliothèque nationale, 1987, no. 107, Manuscript 19525, pp. 67-68.
 
 Delisle, Léopold. *Le Cabinet des manuscrits de la Bibliothèque nationale: Étude sur la formation de ce dépôt comprenant les éléments d’une histoire de la calligraphie de la miniature, de la reliure, et du commerce des livres à Paris avant l’invention de l’imprimerie*, vol. 2, Imprimerie Nationale, 1874, pp. 40-58; 78-99. https://hdl.handle.net/2027/gri.ark:/13960/t7mp83h82.
@@ -311,7 +322,7 @@ Söderhjelm, Werner. *De Saint Laurent: Poème Anglo-Normand du XIIe siècle*. H
 
 Wace. *La vie de Sainte Marguerite, poème inédit de Wace précédé de l’histoire de ses transformations et suivi de divers textes inédits et autres et de l’analyse détaillée du mystère de Sainte Marguerite*. edited by Aristide Joy, Vieweg, 1879, pp. 10-12. https://archive.org/details/laviedesaintemar00waceuoft/page/10/mode/2up.
 
-## Paris, BnF, Arsenal 3516 (T-E)
+### Paris, BnF, Arsenal 3516 (T-E)
 Benedeit. *The Anglo-Norman Voyage of St. Brendan, a Poem of the Early Twelfth Century*. edited by Edwin George Ross Waters, Oxford Clarendon Press, 1928, pp. xviii-xix.
 
 Blacker, Jean, et al. *Wace, the Hagiographical Works: The Conception Nostre Dame and the Lives of St. Margaret and St. Nicholas*. translated with introduction and notes by Jean Blacker, Glyn S. Burgess, and Amy V. Ogden, with original texts included, Brill, 2013. https://ebookcentral-proquest-com.proxy1.library.virginia.edu/lib/uva/detail.action?docID=1214278.
@@ -331,7 +342,7 @@ Rouse, Richard, and Mary Rouse. *Manuscripts and Their Makers: Commercial Book P
 Section romane, notice de “Paris, Bibliothèque de l'Arsenal, 3516” dans la base Jonas-IRHT/CNRS (permalink : http://jonas.irht.cnrs.fr/manuscrit/43012).
 
 
-## London, British Library, Add. 36614 (T-L)
+### London, British Library, Add. 36614 (T-L)
 Ashburnham Library. *Catalogue of the Portion of the Famous Collection of Manuscripts, the Property of the Right Honorable the Earl of Ashburnham, known as The Barrois Collection, which Will Be Sold by Auction*. Sotheby, Wilkinson, & Hodge, 1901, Lot 463, pp. 171-172 with an image of the ivory cover tipped in between pp. 170-171. https://archive.org/details/ashburnhamlibrar00ashbuoft/page/n197/mode/2up.
 
 *Catalogue of Additions to the Manuscripts in the British Museum in the Years MDCCCC - MDCCCCV [1900-1905]*. British Museum, 1907. Manuscript 36614, pp. 156-157. https://archive.org/details/CatalogueOfAdditionsToTheMSS19005/page/n177/mode/2up.
@@ -350,7 +361,7 @@ Unknown artist. *panel; casket*. c.10th-11th century, The British Museum, London
 
 Williman, Daniel and Karen Corsano. “In the British Royal Library.” *The World Chronicle of Guillaume de Nangis: A Manuscript’s Journey from Saint-Denis to St. Pancras*. New edition ed. Medieval Institute Publications, 2020, pp. 167-173. https://muse.jhu.edu/book/77966. 
 
-## Manchester, John Rylands Library, French 6 (T-F^1^)
+### Manchester, John Rylands Library, French 6 (T-F^1^)
 Brun, Laurent. “Manuscrit: United Kingdom / London / British Library / Egerton 2710.” *Arlima: Archives de littérature du Moyen Âge*, https://arlima.net/no/4668. 2 June 2024.
 
 Fawtier, R. and E. C. Fawtier-Jones. “Notice du manuscrit *French 6* de la John Rylands Library, Manchester.” *Romania*, vol. 49, 1923, pp. 321-342.
@@ -365,7 +376,7 @@ Russell, D. W. and Clive D. Field. “The Manuscript Source of the Fragment, Ryl
 
 Tyson, Moses. “Hand-list of the Collections of French and Italian Manuscripts in the John Rylands Library.” *Bulletin of the John Rylands University Library of Manchester*, vol. 14, no. 2, 1930, Manuscript 6, pp.572-573.
 
-## Berlin, Staatsbibliothek, MSS Simulata Orientalia 6 (T-F^2^)
+### Berlin, Staatsbibliothek, MSS Simulata Orientalia 6 (T-F^2^)
 Giannini, Gabriele and Laura Minervini. “The Old French Texts of the Damascus Qubba.” *The Damascus Fragments: Towards a History of the Qubbat al-khazna Corpus of Manuscripts and Documents*. edited by Arianna d’Ottone Rambach, Konrad Hirschler, and Ronny Vollandt, Ergon Verlag, 2020, pp. 331-362.
 
 Margoliouth, David Samuel and Walter Spencer-Stanhope Tyrwhitt. *Cairo, Jerusalem, and Damascus: Three Chief Cities of the Egyptian Sultans*. Dodd, Mead, and Company, 1907.

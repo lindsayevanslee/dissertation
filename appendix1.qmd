@@ -13,14 +13,17 @@ This appendix aims to bridge gaps in accessibility by providing detailed informa
 ## The Corpus of Version T Manuscripts^[The initials used to identify each of these manuscript copies were assigned by Alfred Baker in the fourth chapter (“Les manuscrits de la vie rimée” pp. 182-187) of his edition. At the time however, Baker was unaware of the Manchester fragment as it would not be uncovered until 1923, and so, he labeled the Damascus fragment simply F. Dembowski adopted Baker’s use of these identifying initials, adding superscript numbers to distinguish between the two fragments.]  
 There are, in all, eight known manuscripts of Version T, including two fragments:  
 
-* **T-A**: Paris, Bibliothèque nationale de France (hereafter BnF), Français 23112, ff.334v-344r. Late 13th century, provenance pre-17th century unknown.  
-* **T-B**: Oxford, Bodleian, Canonici Miscellaneous 74, ff.109r-120r. Early 13th century, provenance pre-18th century unknown.  
-* **T-C**: Oxford, Corpus Christi College, 232, ff.35r-64v. Early 14th century, from Canterbury.  
-* **T-D**: Paris, BnF, Français 19525, ff.15r-26v. Second half of 13th century, from Oxford.  
-* **T-E**: Paris, BnF, Arsenal, 3516, ff.113v-117v. 1267/1268, from Artois.  
-* **T-L**: London, British Library, Additional 36614, ff.271v-282v. Second half of 13th century, provenance pre-19th century unknown.  
-* **T-F^1^**: Manchester, John Rylands Library, French 6, ff.8r-8v. Second half of 13th century, provenance pre-19th century unknown.  
-* **T-F^2^**: Location of the original fragment — dated to the second half of the 12th century and most likely originating in Europe — is unknown, but a photographic copy may be found here:\
+**T-A**: Paris, Bibliothèque nationale de France (hereafter BnF), Français 23112, ff.334v-344r. Late 13th century, provenance pre-17th century unknown.  
+**T-B**: Oxford, Bodleian, Canonici Miscellaneous 74, ff.109r-120r. Early 13th century, provenance pre-18th century unknown.  
+**T-C**: Oxford, Corpus Christi College, 232, ff.35r-64v. Early 14th century, from Canterbury.  
+**T-D**: Paris, BnF, Français 19525, ff.15r-26v. Second half of 13th century, from Oxford.  
+**T-E**: Paris, BnF, Arsenal, 3516, ff.113v-117v. 1267/1268, from Artois.  
+**T-L**: London, British Library, Additional 36614, ff.271v-282v. Second half of 13th century, provenance pre-19th century unknown.  
+**T-F^1^**: Manchester, John Rylands Library, French 6, ff.8r-8v. Second half of 13th century, provenance pre-19th century unknown.  
+
+> At least folios 1-8 of French 6 were originally part of London, British Library, Egerton 2710. Second half of the 13th century, provenance pre-15th century unknown.
+
+**T-F^2^**: Location of the original fragment — dated to the second half of the 12th century and most likely originating in Europe — is unknown, but a photographic copy may be found here:\
 
 > Berlin, Staatsbibliothek, *Photographien von ausgewählten Fragmenten aus der Omayyaden-Moschee in Damaskus in verschiedenen Sprachen*, 1908. Mss simulata orientalia 6, Orientalische Handschriften digital, Photographs 89 (verso) & 101 (recto), http://resolver.staatsbibliothek-berlin.de/SBB000074F100000000.  
 
