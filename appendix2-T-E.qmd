@@ -43,15 +43,26 @@ process_line <- function(line) {
   # Only increment line count for verse lines
   if (xml_name(line) == "l") {
     line_count <<- line_count + 1
-    # Add line number div every 5th line
-    line_number <- if (line_count %% 5 == 0) {
-      sprintf("<div class='line-number'>%d</div>", line_count)
-    } else {
+      
+    # SPECIAL CASE: Hard-code line v.366 to fix "]cio(n)" repetition
+    if (line_count == 366) {
+      return("<div style='line-height: 1.2;'>Nonpas p bone ente [] cio</div>")
+    }  
       
     # SPECIAL CASE: Hard-code line v.703 to correct nesting/repetition issue
     if (line_count == 703) {
       return("<div style='line-height: 1.2;'><span class='decorative-initial' data-size='2'>O</span>rlairomes ci demarie</div>")
     }
+    
+    # SPECIAL CASE: Hard-code line v.1495 to fix "Sire Deus" spacing
+    if (line_count == 1495) {
+      return("<div style='line-height: 1.2;'>Sire Deus loes foiestu</div>")
+    }
+    
+    # Add line number div every 5th line
+    line_number <- if (line_count %% 5 == 0) {
+      sprintf("<div class='line-number'>%d</div>", line_count)
+    } else {
       ""
     }
   } else {
@@ -149,6 +160,11 @@ process_line <- function(line) {
   if (xml_name(line) == "l") {
     line_count <<- line_count + 1
     
+    # SPECIAL CASE: Hard-code line v.366 to fix "]cio(n)" repetition
+    if (line_count == 366) {
+      return("<div style='line-height: 1.2;'>Nonpas par bone enten [] cion</div>")
+    }
+    
     # SPECIAL CASE: Hard-code line v.646 to remove apostrophe in "qu'il"
     if (line_count == 646) {
       return("<div style='line-height: 1.2;'>Nient plus quil est en .i. gans</div>")
@@ -167,6 +183,11 @@ process_line <- function(line) {
     # SPECIAL CASE: Hard-code line v.703 to correct nesting/repetition issue
     if (line_count == 703) {
       return("<div style='line-height: 1.2;'><span class='decorative-initial' data-size='2'>O</span>r lairommes ci demarie</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.1495 to fix "Sire Deus" spacing
+    if (line_count == 1495) {
+      return("<div style='line-height: 1.2;'>Sire Deus loes foiestu</div>")
     }
     
     # Add line number div every 5th line
@@ -278,15 +299,81 @@ process_line <- function(line) {
   # Only increment line count for verse lines
   if (xml_name(line) == "l") {
     line_count <<- line_count + 1
-    # Add line number div every 5th line
-    line_number <- if (line_count %% 5 == 0) {
-      sprintf("<div class='line-number'>%d</div>", line_count)
-    } else {
+    
+    # SPECIAL CASE: Hard-code line v.223 to fix "pelerins" repetition
+    if (line_count == 223) {
+      return("<div style='line-height: 1.2;'>tote ert plaine de pelerins</div>")
+    }  
+    
+    # SPECIAL CASE: Hard-code line v.366 to fix "]cio(n)" repetition
+    if (line_count == 366) {
+      return("<div style='line-height: 1.2;'>Non pas par bone enten [] cion</div>")
+    }
+        
+    # SPECIAL CASE: Hard-code line v.449 to fix "Pere" repetition
+    if (line_count == 449) {
+      return("<div style='line-height: 1.2;'>molt fu grant merveille del Pere</div>")
+    }
+      
+    # SPECIAL CASE: Hard-code line v.450 to fix "fille" and "Mere" repetition
+    if (line_count == 450) {
+      return("<div style='line-height: 1.2;'>Quant de sa fille fist sa Mere</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.453 to fix "Pere" repetition
+    if (line_count == 453) {
+      return("<div style='line-height: 1.2;'>Il fu tes Fiex & fu tes Pere</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.454 to fix "Mere" repetition
+    if (line_count == 454) {
+      return("<div style='line-height: 1.2;'>Tu fus sa Fille & sa Mere</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.523 to fix "Virge Roine" spacing
+    if (line_count == 523) {
+      return("<div style='line-height: 1.2;'>Virge Roine coronee</div>")
+    }
       
     # SPECIAL CASE: Hard-code line v.703 to correct nesting/repetition issue
     if (line_count == 703) {
       return("<div style='line-height: 1.2;'><span class='decorative-initial' data-size='2'>O</span>r lairommes ci de Marie</div>")
     }
+    
+    # SPECIAL CASE: Hard-code line v.754 to fix "Deu" repetition
+    if (line_count == 754) {
+      return("<div style='line-height: 1.2;'>Que soit laissie le Deu service</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.806 to fix "Damledeu" repetition
+    if (line_count == 806) {
+      return("<div style='line-height: 1.2;'>A Damledeu les commandoit</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.840 to fix "Marie" repetition
+    if (line_count == 840) {
+      return("<div style='line-height: 1.2;'>la figure vit de Marie</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.977 to fix "Zosimas" repetition
+    if (line_count == 977) {
+      return("<div style='line-height: 1.2;'>dans Zosimas dont li respont</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.1127 to fix "Zosimas" repetition
+    if (line_count == 1127) {
+      return("<div style='line-height: 1.2;'>En son lit jut dans Zosimas</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.1495 to fix "Sire Deus" spacing
+    if (line_count == 1495) {
+      return("<div style='line-height: 1.2;'>Sire Deus loes soies tu</div>")
+    }
+    
+    # Add line number div every 5th line
+    line_number <- if (line_count %% 5 == 0) {
+      sprintf("<div class='line-number'>%d</div>", line_count)
+    } else {
       ""
     }
   } else {
