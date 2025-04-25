@@ -424,223 +424,368 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-141"><a href="#cb1-141" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">xml_name</span>(line) <span class="sc">==</span> <span class="st">"l"</span>) {</span>
 <span id="cb1-142"><a href="#cb1-142" aria-hidden="true" tabindex="-1"></a>    line_count <span class="ot">&lt;&lt;-</span> line_count <span class="sc">+</span> <span class="dv">1</span></span>
 <span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.445 to correct spacing</span></span>
-<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">445</span>) {</span>
-<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;Virgine Roine je croi bien&lt;/div&gt;"</span>)</span>
+<span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.5 to correct apostrophe</span></span>
+<span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">5</span>) {</span>
+<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;Bien croi que volentiers lorront&lt;/div&gt;"</span>)</span>
 <span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a>    }</span>
 <span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.531 to correct spacing</span></span>
-<span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">531</span>) {</span>
-<span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;Virge Roine coronee&lt;/div&gt;"</span>)</span>
+<span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.7 to correct apostrophe</span></span>
+<span id="cb1-150"><a href="#cb1-150" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">7</span>) {</span>
+<span id="cb1-151"><a href="#cb1-151" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;Car a chiaus qui de lui nont cure&lt;/div&gt;"</span>)</span>
 <span id="cb1-152"><a href="#cb1-152" aria-hidden="true" tabindex="-1"></a>    }</span>
 <span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.1365 to correct spacing</span></span>
-<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">1365</span>) {</span>
-<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;Biax Peres Rois de majeste&lt;/div&gt;"</span>)</span>
+<span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.144 to correct apostrophe</span></span>
+<span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">144</span>) {</span>
+<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;Ja plus tart nen faisoit -i- ris&lt;/div&gt;"</span>)</span>
 <span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a>    }</span>
 <span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.1367 to correct nesting/repetition issue</span></span>
-<span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">1367</span>) {</span>
-<span id="cb1-161"><a href="#cb1-161" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;&lt;span class='decorative-initial' data-size='2'&gt;Q&lt;/span&gt;uant il ot sorison fenie&lt;/div&gt;"</span>)</span>
+<span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.174 to correct apostrophe</span></span>
+<span id="cb1-160"><a href="#cb1-160" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">174</span>) {</span>
+<span id="cb1-161"><a href="#cb1-161" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;Naperceussies mesfaichon&lt;/div&gt;"</span>)</span>
 <span id="cb1-162"><a href="#cb1-162" aria-hidden="true" tabindex="-1"></a>    }</span>
 <span id="cb1-163"><a href="#cb1-163" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-164"><a href="#cb1-164" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.1425 to correct nesting/repetition issue</span></span>
-<span id="cb1-165"><a href="#cb1-165" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">1425</span>) {</span>
-<span id="cb1-166"><a href="#cb1-166" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;&lt;span class='decorative-initial' data-size='2'&gt;Q&lt;/span&gt;uant li sains hom vit le lion&lt;/div&gt;"</span>)</span>
+<span id="cb1-164"><a href="#cb1-164" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.186 to correct apostrophe</span></span>
+<span id="cb1-165"><a href="#cb1-165" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">186</span>) {</span>
+<span id="cb1-166"><a href="#cb1-166" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;Ja se faichon nen iert escrite&lt;/div&gt;"</span>)</span>
 <span id="cb1-167"><a href="#cb1-167" aria-hidden="true" tabindex="-1"></a>    }</span>
 <span id="cb1-168"><a href="#cb1-168" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-169"><a href="#cb1-169" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Add line number div every 5th line</span></span>
-<span id="cb1-170"><a href="#cb1-170" aria-hidden="true" tabindex="-1"></a>    line_number <span class="ot">&lt;-</span> <span class="cf">if</span> (line_count <span class="sc">%%</span> <span class="dv">5</span> <span class="sc">==</span> <span class="dv">0</span>) {</span>
-<span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a>      <span class="fu">sprintf</span>(<span class="st">"&lt;div class='line-number'&gt;%d&lt;/div&gt;"</span>, line_count)</span>
-<span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> {</span>
-<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a>      <span class="st">""</span></span>
-<span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
-<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a>    line_number <span class="ot">&lt;-</span> <span class="st">""</span></span>
-<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Process emph elements (decorative initials)</span></span>
-<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a>  emph_elements <span class="ot">&lt;-</span> <span class="fu">xml_find_all</span>(line, <span class="st">".//emph"</span>)</span>
-<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (emph <span class="cf">in</span> emph_elements) {</span>
-<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Get the initial letter text</span></span>
-<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a>    initial_letter <span class="ot">&lt;-</span> <span class="fu">xml_text</span>(emph)</span>
-<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Get the size attribute (n) and style attribute (rend)</span></span>
-<span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a>    size_attr <span class="ot">&lt;-</span> <span class="fu">xml_attr</span>(emph, <span class="st">"n"</span>)</span>
-<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a>    style_attr <span class="ot">&lt;-</span> <span class="fu">xml_attr</span>(emph, <span class="st">"rend"</span>)</span>
+<span id="cb1-169"><a href="#cb1-169" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.350 to correct apostrophe</span></span>
+<span id="cb1-170"><a href="#cb1-170" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">350</span>) {</span>
+<span id="cb1-171"><a href="#cb1-171" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;Miex vaussist qui courust li fus&lt;/div&gt;"</span>)</span>
+<span id="cb1-172"><a href="#cb1-172" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb1-173"><a href="#cb1-173" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-174"><a href="#cb1-174" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.387 to correct apostrophe</span></span>
+<span id="cb1-175"><a href="#cb1-175" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">387</span>) {</span>
+<span id="cb1-176"><a href="#cb1-176" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;Quant vit que [] nient ert de lentree&lt;/div&gt;"</span>)</span>
+<span id="cb1-177"><a href="#cb1-177" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb1-178"><a href="#cb1-178" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-179"><a href="#cb1-179" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.410 to correct apostrophe</span></span>
+<span id="cb1-180"><a href="#cb1-180" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">410</span>) {</span>
+<span id="cb1-181"><a href="#cb1-181" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;Chou li poise quele est vive&lt;/div&gt;"</span>)</span>
+<span id="cb1-182"><a href="#cb1-182" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.445 to correct spacing</span></span>
+<span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">445</span>) {</span>
+<span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;Virgine Roine je croi bien&lt;/div&gt;"</span>)</span>
+<span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a>    }</span>
 <span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Create the HTML for the styled initial</span></span>
-<span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a>    styled_initial <span class="ot">&lt;-</span> <span class="fu">sprintf</span>(<span class="st">'&lt;span class="decorative-initial %s" data-size="%s"&gt;%s&lt;/span&gt;'</span>, </span>
-<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a>                             style_attr, size_attr, initial_letter)</span>
-<span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Replace the emph element with the styled HTML</span></span>
-<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a>    <span class="fu">xml_text</span>(emph) <span class="ot">&lt;-</span> styled_initial</span>
-<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Find all &lt;choice&gt; elements within the line</span></span>
-<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a>  choices <span class="ot">&lt;-</span> <span class="fu">xml_find_all</span>(line, <span class="st">".//choice"</span>)</span>
-<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (choice <span class="cf">in</span> choices) {</span>
-<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Check if the &lt;choice&gt; element contains &lt;abbr&gt; and &lt;expan&gt;</span></span>
-<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a>    abbr_exists <span class="ot">&lt;-</span> <span class="fu">xml_find_first</span>(choice, <span class="st">".//abbr"</span>)</span>
-<span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a>    expan_exists <span class="ot">&lt;-</span> <span class="fu">xml_find_first</span>(choice, <span class="st">".//expan"</span>)</span>
+<span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.518 to correct apostrophe</span></span>
+<span id="cb1-190"><a href="#cb1-190" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">518</span>) {</span>
+<span id="cb1-191"><a href="#cb1-191" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;Conques puis ne cremirent mort&lt;/div&gt;"</span>)</span>
+<span id="cb1-192"><a href="#cb1-192" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.531 to correct spacing</span></span>
+<span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">531</span>) {</span>
+<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;Virge Roine coronee&lt;/div&gt;"</span>)</span>
+<span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.725 to correct apostrophe</span></span>
+<span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">725</span>) {</span>
+<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;Entriax navoit pas symonie&lt;/div&gt;"</span>)</span>
+<span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a>    }</span>
 <span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="sc">!</span><span class="fu">is.na</span>(abbr_exists) <span class="sc">&amp;&amp;</span> <span class="sc">!</span><span class="fu">is.na</span>(expan_exists)) {</span>
-<span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a>      <span class="co"># If &lt;abbr&gt; and &lt;expan&gt; tags exist, extract only the &lt;reg&gt; text from &lt;expan&gt;</span></span>
-<span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a>      reg_text <span class="ot">&lt;-</span> <span class="fu">xml_text</span>(<span class="fu">xml_find_first</span>(choice, <span class="st">".//expan/reg"</span>))</span>
-<span id="cb1-207"><a href="#cb1-207" aria-hidden="true" tabindex="-1"></a>      <span class="fu">xml_set_text</span>(choice, <span class="fu">paste0</span>(reg_text, <span class="st">" "</span>))</span>
-<span id="cb1-208"><a href="#cb1-208" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> {</span>
-<span id="cb1-209"><a href="#cb1-209" aria-hidden="true" tabindex="-1"></a>      <span class="co"># For non-abbreviation choices, keep original behavior</span></span>
-<span id="cb1-210"><a href="#cb1-210" aria-hidden="true" tabindex="-1"></a>      orig_text <span class="ot">&lt;-</span> <span class="fu">xml_text</span>(<span class="fu">xml_find_first</span>(choice, <span class="st">".//orig"</span>))</span>
-<span id="cb1-211"><a href="#cb1-211" aria-hidden="true" tabindex="-1"></a>      <span class="fu">xml_set_text</span>(choice, <span class="fu">paste0</span>(orig_text, <span class="st">" "</span>))</span>
+<span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.810 to correct apostrophe</span></span>
+<span id="cb1-205"><a href="#cb1-205" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">810</span>) {</span>
+<span id="cb1-206"><a href="#cb1-206" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;Que nus quens naimme se conte&lt;/div&gt;"</span>)</span>
+<span id="cb1-207"><a href="#cb1-207" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb1-208"><a href="#cb1-208" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-209"><a href="#cb1-209" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.817 to correct apostrophe</span></span>
+<span id="cb1-210"><a href="#cb1-210" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">817</span>) {</span>
+<span id="cb1-211"><a href="#cb1-211" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;&amp; vit que nul nen peut trover&lt;/div&gt;"</span>)</span>
 <span id="cb1-212"><a href="#cb1-212" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb1-213"><a href="#cb1-213" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb1-214"><a href="#cb1-214" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb1-215"><a href="#cb1-215" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Now we want to remove any &lt;reg&gt; elements entirely</span></span>
-<span id="cb1-216"><a href="#cb1-216" aria-hidden="true" tabindex="-1"></a>  reg_elements <span class="ot">&lt;-</span> <span class="fu">xml_find_all</span>(line, <span class="st">".//reg"</span>)</span>
-<span id="cb1-217"><a href="#cb1-217" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xml_remove</span>(reg_elements)</span>
-<span id="cb1-218"><a href="#cb1-218" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb1-219"><a href="#cb1-219" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Replace &lt;lb/&gt; tags with HTML line break</span></span>
-<span id="cb1-220"><a href="#cb1-220" aria-hidden="true" tabindex="-1"></a>  lb_elements <span class="ot">&lt;-</span> <span class="fu">xml_find_all</span>(line, <span class="st">".//lb"</span>)</span>
-<span id="cb1-221"><a href="#cb1-221" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (lb <span class="cf">in</span> lb_elements) {</span>
-<span id="cb1-222"><a href="#cb1-222" aria-hidden="true" tabindex="-1"></a>    <span class="fu">xml_set_text</span>(lb, <span class="st">""</span>)</span>
-<span id="cb1-223"><a href="#cb1-223" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb1-224"><a href="#cb1-224" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb1-225"><a href="#cb1-225" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Return line with number if applicable - using xml_text() instead of as.character()</span></span>
-<span id="cb1-226"><a href="#cb1-226" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(<span class="fu">sprintf</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;%s%s&lt;/div&gt;"</span>, </span>
-<span id="cb1-227"><a href="#cb1-227" aria-hidden="true" tabindex="-1"></a>                line_number, <span class="fu">xml_text</span>(line)))</span>
-<span id="cb1-228"><a href="#cb1-228" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb1-229"><a href="#cb1-229" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-230"><a href="#cb1-230" aria-hidden="true" tabindex="-1"></a><span class="co"># Process each line and wrap with &lt;div class='column-break'&gt; at each &lt;cb/&gt;</span></span>
-<span id="cb1-231"><a href="#cb1-231" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (line <span class="cf">in</span> lines) {</span>
-<span id="cb1-232"><a href="#cb1-232" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">xml_name</span>(line) <span class="sc">==</span> <span class="st">"cb"</span>) {</span>
-<span id="cb1-233"><a href="#cb1-233" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Add a closing &lt;/div&gt; for the previous column and an opening &lt;div&gt; for the new column</span></span>
-<span id="cb1-234"><a href="#cb1-234" aria-hidden="true" tabindex="-1"></a>    processed_lines <span class="ot">&lt;-</span> <span class="fu">c</span>(processed_lines, <span class="st">"&lt;/div&gt;"</span>, <span class="st">"&lt;div class='column-break'&gt;"</span>)</span>
-<span id="cb1-235"><a href="#cb1-235" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
-<span id="cb1-236"><a href="#cb1-236" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Process the line and add it to the current column</span></span>
-<span id="cb1-237"><a href="#cb1-237" aria-hidden="true" tabindex="-1"></a>    processed_lines <span class="ot">&lt;-</span> <span class="fu">c</span>(processed_lines, <span class="fu">process_line</span>(line))</span>
-<span id="cb1-238"><a href="#cb1-238" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb1-239"><a href="#cb1-239" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb1-240"><a href="#cb1-240" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-241"><a href="#cb1-241" aria-hidden="true" tabindex="-1"></a><span class="co"># Process lines and wrap in edition-text div</span></span>
-<span id="cb1-242"><a href="#cb1-242" aria-hidden="true" tabindex="-1"></a>formatted_text <span class="ot">&lt;-</span> <span class="fu">paste</span>(<span class="fu">c</span>(<span class="st">"&lt;div class='edition-text'&gt;"</span>, processed_lines, <span class="st">"&lt;/div&gt;"</span>), <span class="at">collapse =</span> <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span>
-<span id="cb1-243"><a href="#cb1-243" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(formatted_text)</span>
-<span id="cb1-244"><a href="#cb1-244" aria-hidden="true" tabindex="-1"></a><span class="co"># START OF "EXTENSIVE" CODE</span></span>
-<span id="cb1-245"><a href="#cb1-245" aria-hidden="true" tabindex="-1"></a><span class="co"># Read the XML content</span></span>
-<span id="cb1-246"><a href="#cb1-246" aria-hidden="true" tabindex="-1"></a>xml_file <span class="ot">&lt;-</span> <span class="fu">read_xml</span>(<span class="st">"data/T-A.xml"</span>)</span>
-<span id="cb1-247"><a href="#cb1-247" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-248"><a href="#cb1-248" aria-hidden="true" tabindex="-1"></a><span class="co"># Extract the &lt;l&gt;, &lt;cb&gt;, and &lt;pb&gt; elements inside the &lt;text&gt; element</span></span>
-<span id="cb1-249"><a href="#cb1-249" aria-hidden="true" tabindex="-1"></a>lines <span class="ot">&lt;-</span> <span class="fu">xml_find_all</span>(xml_file, <span class="st">"//text//l | //text//cb | //text//pb"</span>)</span>
-<span id="cb1-250"><a href="#cb1-250" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-251"><a href="#cb1-251" aria-hidden="true" tabindex="-1"></a><span class="co"># Initialize an empty list to store the processed lines</span></span>
-<span id="cb1-252"><a href="#cb1-252" aria-hidden="true" tabindex="-1"></a>processed_lines <span class="ot">&lt;-</span> <span class="fu">list</span>()</span>
-<span id="cb1-253"><a href="#cb1-253" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-254"><a href="#cb1-254" aria-hidden="true" tabindex="-1"></a><span class="co"># Initialize line counter</span></span>
-<span id="cb1-255"><a href="#cb1-255" aria-hidden="true" tabindex="-1"></a>line_count <span class="ot">&lt;-</span> <span class="dv">0</span></span>
-<span id="cb1-256"><a href="#cb1-256" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-257"><a href="#cb1-257" aria-hidden="true" tabindex="-1"></a><span class="co"># Function to process each element</span></span>
-<span id="cb1-258"><a href="#cb1-258" aria-hidden="true" tabindex="-1"></a>process_line <span class="ot">&lt;-</span> <span class="cf">function</span>(line) {</span>
-<span id="cb1-259"><a href="#cb1-259" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Handle page breaks differently</span></span>
-<span id="cb1-260"><a href="#cb1-260" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">xml_name</span>(line) <span class="sc">==</span> <span class="st">"pb"</span>) {</span>
-<span id="cb1-261"><a href="#cb1-261" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Get folio number and format as standalone line</span></span>
-<span id="cb1-262"><a href="#cb1-262" aria-hidden="true" tabindex="-1"></a>    folio_num <span class="ot">&lt;-</span> <span class="fu">xml_attr</span>(line, <span class="st">"n"</span>)</span>
-<span id="cb1-263"><a href="#cb1-263" aria-hidden="true" tabindex="-1"></a>    <span class="fu">return</span>(<span class="fu">sprintf</span>(<span class="st">"&lt;div class='folio-number'&gt;%s&lt;/div&gt;"</span>, folio_num))</span>
-<span id="cb1-264"><a href="#cb1-264" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb1-265"><a href="#cb1-265" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb1-266"><a href="#cb1-266" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Only increment line count for verse lines</span></span>
-<span id="cb1-267"><a href="#cb1-267" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">xml_name</span>(line) <span class="sc">==</span> <span class="st">"l"</span>) {</span>
-<span id="cb1-268"><a href="#cb1-268" aria-hidden="true" tabindex="-1"></a>    line_count <span class="ot">&lt;&lt;-</span> line_count <span class="sc">+</span> <span class="dv">1</span></span>
-<span id="cb1-269"><a href="#cb1-269" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-270"><a href="#cb1-270" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.445 to correct spacing</span></span>
-<span id="cb1-271"><a href="#cb1-271" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">445</span>) {</span>
-<span id="cb1-272"><a href="#cb1-272" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;Virgine Roine je croi bien&lt;/div&gt;"</span>)</span>
-<span id="cb1-273"><a href="#cb1-273" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb1-274"><a href="#cb1-274" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-275"><a href="#cb1-275" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.531 to correct spacing</span></span>
-<span id="cb1-276"><a href="#cb1-276" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">531</span>) {</span>
-<span id="cb1-277"><a href="#cb1-277" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;Virge Roine coronee&lt;/div&gt;"</span>)</span>
-<span id="cb1-278"><a href="#cb1-278" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb1-279"><a href="#cb1-279" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-280"><a href="#cb1-280" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.1365 to correct spacing</span></span>
-<span id="cb1-281"><a href="#cb1-281" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">1365</span>) {</span>
-<span id="cb1-282"><a href="#cb1-282" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;Biax Peres Rois de majeste&lt;/div&gt;"</span>)</span>
-<span id="cb1-283"><a href="#cb1-283" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb1-284"><a href="#cb1-284" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-285"><a href="#cb1-285" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.1367 to correct nesting/repetition issue</span></span>
-<span id="cb1-286"><a href="#cb1-286" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">1367</span>) {</span>
-<span id="cb1-287"><a href="#cb1-287" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;&lt;span class='decorative-initial' data-size='2'&gt;Q&lt;/span&gt;uant il ot s’orison fenie&lt;/div&gt;"</span>)</span>
-<span id="cb1-288"><a href="#cb1-288" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb1-289"><a href="#cb1-289" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-290"><a href="#cb1-290" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.1425 to correct nesting/repetition issue</span></span>
-<span id="cb1-291"><a href="#cb1-291" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">1425</span>) {</span>
-<span id="cb1-292"><a href="#cb1-292" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;&lt;span class='decorative-initial' data-size='2'&gt;Q&lt;/span&gt;uant li sains hom vit le lion&lt;/div&gt;"</span>)</span>
-<span id="cb1-293"><a href="#cb1-293" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb1-294"><a href="#cb1-294" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-295"><a href="#cb1-295" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Add line number div every 5th line</span></span>
-<span id="cb1-296"><a href="#cb1-296" aria-hidden="true" tabindex="-1"></a>    line_number <span class="ot">&lt;-</span> <span class="cf">if</span> (line_count <span class="sc">%%</span> <span class="dv">5</span> <span class="sc">==</span> <span class="dv">0</span>) {</span>
-<span id="cb1-297"><a href="#cb1-297" aria-hidden="true" tabindex="-1"></a>      <span class="fu">sprintf</span>(<span class="st">"&lt;div class='line-number'&gt;%d&lt;/div&gt;"</span>, line_count)</span>
-<span id="cb1-298"><a href="#cb1-298" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> {</span>
-<span id="cb1-299"><a href="#cb1-299" aria-hidden="true" tabindex="-1"></a>      <span class="st">""</span></span>
-<span id="cb1-300"><a href="#cb1-300" aria-hidden="true" tabindex="-1"></a>    }</span>
-<span id="cb1-301"><a href="#cb1-301" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
-<span id="cb1-302"><a href="#cb1-302" aria-hidden="true" tabindex="-1"></a>    line_number <span class="ot">&lt;-</span> <span class="st">""</span></span>
-<span id="cb1-303"><a href="#cb1-303" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb1-304"><a href="#cb1-304" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb1-305"><a href="#cb1-305" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Process emph elements (decorative initials)</span></span>
-<span id="cb1-306"><a href="#cb1-306" aria-hidden="true" tabindex="-1"></a>  emph_elements <span class="ot">&lt;-</span> <span class="fu">xml_find_all</span>(line, <span class="st">".//emph"</span>)</span>
-<span id="cb1-307"><a href="#cb1-307" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (emph <span class="cf">in</span> emph_elements) {</span>
-<span id="cb1-308"><a href="#cb1-308" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Get the initial letter text</span></span>
-<span id="cb1-309"><a href="#cb1-309" aria-hidden="true" tabindex="-1"></a>    initial_letter <span class="ot">&lt;-</span> <span class="fu">xml_text</span>(emph)</span>
-<span id="cb1-310"><a href="#cb1-310" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-311"><a href="#cb1-311" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Get the size attribute (n) and style attribute (rend)</span></span>
-<span id="cb1-312"><a href="#cb1-312" aria-hidden="true" tabindex="-1"></a>    size_attr <span class="ot">&lt;-</span> <span class="fu">xml_attr</span>(emph, <span class="st">"n"</span>)</span>
-<span id="cb1-313"><a href="#cb1-313" aria-hidden="true" tabindex="-1"></a>    style_attr <span class="ot">&lt;-</span> <span class="fu">xml_attr</span>(emph, <span class="st">"rend"</span>)</span>
-<span id="cb1-314"><a href="#cb1-314" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-315"><a href="#cb1-315" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Create the HTML for the styled initial</span></span>
-<span id="cb1-316"><a href="#cb1-316" aria-hidden="true" tabindex="-1"></a>    styled_initial <span class="ot">&lt;-</span> <span class="fu">sprintf</span>(<span class="st">'&lt;span class="decorative-initial %s" data-size="%s"&gt;%s&lt;/span&gt;'</span>, </span>
-<span id="cb1-317"><a href="#cb1-317" aria-hidden="true" tabindex="-1"></a>                             style_attr, size_attr, initial_letter)</span>
-<span id="cb1-318"><a href="#cb1-318" aria-hidden="true" tabindex="-1"></a>    </span>
-<span id="cb1-319"><a href="#cb1-319" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Replace the emph element with the styled HTML</span></span>
-<span id="cb1-320"><a href="#cb1-320" aria-hidden="true" tabindex="-1"></a>    <span class="fu">xml_text</span>(emph) <span class="ot">&lt;-</span> styled_initial</span>
-<span id="cb1-321"><a href="#cb1-321" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb1-322"><a href="#cb1-322" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb1-323"><a href="#cb1-323" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Now we want to remove any &lt;orig&gt; elements entirely</span></span>
-<span id="cb1-324"><a href="#cb1-324" aria-hidden="true" tabindex="-1"></a>  orig_elements <span class="ot">&lt;-</span> <span class="fu">xml_find_all</span>(line, <span class="st">".//orig"</span>)</span>
-<span id="cb1-325"><a href="#cb1-325" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xml_remove</span>(orig_elements)</span>
-<span id="cb1-326"><a href="#cb1-326" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb1-327"><a href="#cb1-327" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Find all &lt;choice&gt; elements within the line</span></span>
-<span id="cb1-328"><a href="#cb1-328" aria-hidden="true" tabindex="-1"></a>  choices <span class="ot">&lt;-</span> <span class="fu">xml_find_all</span>(line, <span class="st">".//choice"</span>)</span>
-<span id="cb1-329"><a href="#cb1-329" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (choice <span class="cf">in</span> choices) {</span>
-<span id="cb1-330"><a href="#cb1-330" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Extract the text from the &lt;reg&gt; tag</span></span>
-<span id="cb1-331"><a href="#cb1-331" aria-hidden="true" tabindex="-1"></a>    reg_text <span class="ot">&lt;-</span> <span class="fu">xml_text</span>(<span class="fu">xml_find_first</span>(choice, <span class="st">".//reg"</span>))</span>
-<span id="cb1-332"><a href="#cb1-332" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Replace the &lt;choice&gt; element with the text from the &lt;reg&gt; tag</span></span>
-<span id="cb1-333"><a href="#cb1-333" aria-hidden="true" tabindex="-1"></a>    <span class="fu">xml_set_text</span>(choice, <span class="fu">paste0</span>(<span class="st">" "</span>, reg_text, <span class="st">" "</span>))</span>
-<span id="cb1-334"><a href="#cb1-334" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb1-335"><a href="#cb1-335" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb1-336"><a href="#cb1-336" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Replace &lt;lb/&gt; tags with HTML line break</span></span>
-<span id="cb1-337"><a href="#cb1-337" aria-hidden="true" tabindex="-1"></a>  lb_elements <span class="ot">&lt;-</span> <span class="fu">xml_find_all</span>(line, <span class="st">".//lb"</span>)</span>
-<span id="cb1-338"><a href="#cb1-338" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (lb <span class="cf">in</span> lb_elements) {</span>
-<span id="cb1-339"><a href="#cb1-339" aria-hidden="true" tabindex="-1"></a>    <span class="fu">xml_set_text</span>(lb, <span class="st">""</span>)</span>
-<span id="cb1-340"><a href="#cb1-340" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb1-341"><a href="#cb1-341" aria-hidden="true" tabindex="-1"></a>  </span>
-<span id="cb1-342"><a href="#cb1-342" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Return line with number if applicable - using xml_text() instead of as.character()</span></span>
-<span id="cb1-343"><a href="#cb1-343" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(<span class="fu">sprintf</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;%s%s&lt;/div&gt;"</span>, </span>
-<span id="cb1-344"><a href="#cb1-344" aria-hidden="true" tabindex="-1"></a>                line_number, <span class="fu">xml_text</span>(line)))</span>
-<span id="cb1-345"><a href="#cb1-345" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb1-346"><a href="#cb1-346" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-347"><a href="#cb1-347" aria-hidden="true" tabindex="-1"></a><span class="co"># Process each line and wrap with &lt;div class='column-break'&gt; at each &lt;cb/&gt;</span></span>
-<span id="cb1-348"><a href="#cb1-348" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (line <span class="cf">in</span> lines) {</span>
-<span id="cb1-349"><a href="#cb1-349" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">xml_name</span>(line) <span class="sc">==</span> <span class="st">"cb"</span>) {</span>
-<span id="cb1-350"><a href="#cb1-350" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Add a closing &lt;/div&gt; for the previous column and an opening &lt;div&gt; for the new column</span></span>
-<span id="cb1-351"><a href="#cb1-351" aria-hidden="true" tabindex="-1"></a>    processed_lines <span class="ot">&lt;-</span> <span class="fu">c</span>(processed_lines, <span class="st">"&lt;/div&gt;"</span>, <span class="st">"&lt;div class='column-break'&gt;"</span>)</span>
-<span id="cb1-352"><a href="#cb1-352" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
-<span id="cb1-353"><a href="#cb1-353" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Process the line and add it to the current column</span></span>
-<span id="cb1-354"><a href="#cb1-354" aria-hidden="true" tabindex="-1"></a>    processed_lines <span class="ot">&lt;-</span> <span class="fu">c</span>(processed_lines, <span class="fu">process_line</span>(line))</span>
-<span id="cb1-355"><a href="#cb1-355" aria-hidden="true" tabindex="-1"></a>  }</span>
-<span id="cb1-356"><a href="#cb1-356" aria-hidden="true" tabindex="-1"></a>}</span>
-<span id="cb1-357"><a href="#cb1-357" aria-hidden="true" tabindex="-1"></a></span>
-<span id="cb1-358"><a href="#cb1-358" aria-hidden="true" tabindex="-1"></a><span class="co"># Process lines and wrap in edition-text div</span></span>
-<span id="cb1-359"><a href="#cb1-359" aria-hidden="true" tabindex="-1"></a>formatted_text <span class="ot">&lt;-</span> <span class="fu">paste</span>(<span class="fu">c</span>(<span class="st">"&lt;div class='edition-text'&gt;"</span>, processed_lines, <span class="st">"&lt;/div&gt;"</span>), <span class="at">collapse =</span> <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span>
-<span id="cb1-360"><a href="#cb1-360" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(formatted_text)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
+<span id="cb1-213"><a href="#cb1-213" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-214"><a href="#cb1-214" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.918 to correct apostrophe</span></span>
+<span id="cb1-215"><a href="#cb1-215" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">918</span>) {</span>
+<span id="cb1-216"><a href="#cb1-216" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;Je nentent pas que soit raison&lt;/div&gt;"</span>)</span>
+<span id="cb1-217"><a href="#cb1-217" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb1-218"><a href="#cb1-218" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-219"><a href="#cb1-219" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.929 to correct apostrophe</span></span>
+<span id="cb1-220"><a href="#cb1-220" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">929</span>) {</span>
+<span id="cb1-221"><a href="#cb1-221" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;Li vins . le sanc quen issi hors&lt;/div&gt;"</span>)</span>
+<span id="cb1-222"><a href="#cb1-222" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb1-223"><a href="#cb1-223" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-224"><a href="#cb1-224" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.982 to correct apostrophe</span></span>
+<span id="cb1-225"><a href="#cb1-225" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">982</span>) {</span>
+<span id="cb1-226"><a href="#cb1-226" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;Si quele ni avenoit mie&lt;/div&gt;"</span>)</span>
+<span id="cb1-227"><a href="#cb1-227" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb1-228"><a href="#cb1-228" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-229"><a href="#cb1-229" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.1007 to correct apostrophe</span></span>
+<span id="cb1-230"><a href="#cb1-230" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">1007</span>) {</span>
+<span id="cb1-231"><a href="#cb1-231" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;Ele lemprist a lever&lt;/div&gt;"</span>)</span>
+<span id="cb1-232"><a href="#cb1-232" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb1-233"><a href="#cb1-233" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-234"><a href="#cb1-234" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.1020 to correct apostrophe</span></span>
+<span id="cb1-235"><a href="#cb1-235" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">1020</span>) {</span>
+<span id="cb1-236"><a href="#cb1-236" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;Si que ja rien nen celerai&lt;/div&gt;"</span>)</span>
+<span id="cb1-237"><a href="#cb1-237" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb1-238"><a href="#cb1-238" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-239"><a href="#cb1-239" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.1135 to correct apostrophe</span></span>
+<span id="cb1-240"><a href="#cb1-240" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">1135</span>) {</span>
+<span id="cb1-241"><a href="#cb1-241" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;Ou quel i eust ja este&lt;/div&gt;"</span>)</span>
+<span id="cb1-242"><a href="#cb1-242" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb1-243"><a href="#cb1-243" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-244"><a href="#cb1-244" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.1158 to correct apostrophe</span></span>
+<span id="cb1-245"><a href="#cb1-245" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">1158</span>) {</span>
+<span id="cb1-246"><a href="#cb1-246" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;Bele mere quil le feras&lt;/div&gt;"</span>)</span>
+<span id="cb1-247"><a href="#cb1-247" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb1-248"><a href="#cb1-248" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-249"><a href="#cb1-249" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.1271 to correct apostrophe</span></span>
+<span id="cb1-250"><a href="#cb1-250" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">1271</span>) {</span>
+<span id="cb1-251"><a href="#cb1-251" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;Trente ans avoit sierent passe&lt;/div&gt;"</span>)</span>
+<span id="cb1-252"><a href="#cb1-252" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb1-253"><a href="#cb1-253" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-254"><a href="#cb1-254" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.1308 to correct apostrophe</span></span>
+<span id="cb1-255"><a href="#cb1-255" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">1308</span>) {</span>
+<span id="cb1-256"><a href="#cb1-256" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;Fores dun drapel tot desrompu&lt;/div&gt;"</span>)</span>
+<span id="cb1-257"><a href="#cb1-257" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb1-258"><a href="#cb1-258" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-259"><a href="#cb1-259" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.1324 to correct apostrophe</span></span>
+<span id="cb1-260"><a href="#cb1-260" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">1324</span>) {</span>
+<span id="cb1-261"><a href="#cb1-261" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;Conques se chars ne li malmist&lt;/div&gt;"</span>)</span>
+<span id="cb1-262"><a href="#cb1-262" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb1-263"><a href="#cb1-263" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-264"><a href="#cb1-264" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.1348 to correct apostrophe</span></span>
+<span id="cb1-265"><a href="#cb1-265" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">1348</span>) {</span>
+<span id="cb1-266"><a href="#cb1-266" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;Pres iere del cors nen savoit mie&lt;/div&gt;"</span>)</span>
+<span id="cb1-267"><a href="#cb1-267" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb1-268"><a href="#cb1-268" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-269"><a href="#cb1-269" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.1365 to correct spacing</span></span>
+<span id="cb1-270"><a href="#cb1-270" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">1365</span>) {</span>
+<span id="cb1-271"><a href="#cb1-271" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;Biax Peres Rois de majeste&lt;/div&gt;"</span>)</span>
+<span id="cb1-272"><a href="#cb1-272" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb1-273"><a href="#cb1-273" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-274"><a href="#cb1-274" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.1367 to correct nesting/repetition issue</span></span>
+<span id="cb1-275"><a href="#cb1-275" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">1367</span>) {</span>
+<span id="cb1-276"><a href="#cb1-276" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;&lt;span class='decorative-initial' data-size='2'&gt;Q&lt;/span&gt;uant il ot sorison fenie&lt;/div&gt;"</span>)</span>
+<span id="cb1-277"><a href="#cb1-277" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb1-278"><a href="#cb1-278" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-279"><a href="#cb1-279" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.1374 to correct apostrophe</span></span>
+<span id="cb1-280"><a href="#cb1-280" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">1374</span>) {</span>
+<span id="cb1-281"><a href="#cb1-281" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;Par un peu quil nestoit tot nus&lt;/div&gt;"</span>)</span>
+<span id="cb1-282"><a href="#cb1-282" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb1-283"><a href="#cb1-283" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-284"><a href="#cb1-284" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.1420 to correct apostrophe</span></span>
+<span id="cb1-285"><a href="#cb1-285" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">1420</span>) {</span>
+<span id="cb1-286"><a href="#cb1-286" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;la saproisma ou li cors ert&lt;/div&gt;"</span>)</span>
+<span id="cb1-287"><a href="#cb1-287" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb1-288"><a href="#cb1-288" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-289"><a href="#cb1-289" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.1425 to correct nesting/repetition issue</span></span>
+<span id="cb1-290"><a href="#cb1-290" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">1425</span>) {</span>
+<span id="cb1-291"><a href="#cb1-291" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;&lt;span class='decorative-initial' data-size='2'&gt;Q&lt;/span&gt;uant li sains hom vit le lion&lt;/div&gt;"</span>)</span>
+<span id="cb1-292"><a href="#cb1-292" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb1-293"><a href="#cb1-293" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-294"><a href="#cb1-294" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.1466 to correct apostrophe</span></span>
+<span id="cb1-295"><a href="#cb1-295" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">1466</span>) {</span>
+<span id="cb1-296"><a href="#cb1-296" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;El sarcus lont entriax -ii- mis&lt;/div&gt;"</span>)</span>
+<span id="cb1-297"><a href="#cb1-297" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb1-298"><a href="#cb1-298" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-299"><a href="#cb1-299" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.1483 to correct apostrophe</span></span>
+<span id="cb1-300"><a href="#cb1-300" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">1483</span>) {</span>
+<span id="cb1-301"><a href="#cb1-301" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;Quant Zosimaslen vit torner&lt;/div&gt;"</span>)</span>
+<span id="cb1-302"><a href="#cb1-302" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb1-303"><a href="#cb1-303" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-304"><a href="#cb1-304" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.1515 to correct apostrophe</span></span>
+<span id="cb1-305"><a href="#cb1-305" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">1515</span>) {</span>
+<span id="cb1-306"><a href="#cb1-306" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;Ni ot nul qui namendast se vie&lt;/div&gt;"</span>)</span>
+<span id="cb1-307"><a href="#cb1-307" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb1-308"><a href="#cb1-308" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-309"><a href="#cb1-309" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Add line number div every 5th line</span></span>
+<span id="cb1-310"><a href="#cb1-310" aria-hidden="true" tabindex="-1"></a>    line_number <span class="ot">&lt;-</span> <span class="cf">if</span> (line_count <span class="sc">%%</span> <span class="dv">5</span> <span class="sc">==</span> <span class="dv">0</span>) {</span>
+<span id="cb1-311"><a href="#cb1-311" aria-hidden="true" tabindex="-1"></a>      <span class="fu">sprintf</span>(<span class="st">"&lt;div class='line-number'&gt;%d&lt;/div&gt;"</span>, line_count)</span>
+<span id="cb1-312"><a href="#cb1-312" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> {</span>
+<span id="cb1-313"><a href="#cb1-313" aria-hidden="true" tabindex="-1"></a>      <span class="st">""</span></span>
+<span id="cb1-314"><a href="#cb1-314" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb1-315"><a href="#cb1-315" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="cb1-316"><a href="#cb1-316" aria-hidden="true" tabindex="-1"></a>    line_number <span class="ot">&lt;-</span> <span class="st">""</span></span>
+<span id="cb1-317"><a href="#cb1-317" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb1-318"><a href="#cb1-318" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-319"><a href="#cb1-319" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Process emph elements (decorative initials)</span></span>
+<span id="cb1-320"><a href="#cb1-320" aria-hidden="true" tabindex="-1"></a>  emph_elements <span class="ot">&lt;-</span> <span class="fu">xml_find_all</span>(line, <span class="st">".//emph"</span>)</span>
+<span id="cb1-321"><a href="#cb1-321" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (emph <span class="cf">in</span> emph_elements) {</span>
+<span id="cb1-322"><a href="#cb1-322" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Get the initial letter text</span></span>
+<span id="cb1-323"><a href="#cb1-323" aria-hidden="true" tabindex="-1"></a>    initial_letter <span class="ot">&lt;-</span> <span class="fu">xml_text</span>(emph)</span>
+<span id="cb1-324"><a href="#cb1-324" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-325"><a href="#cb1-325" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Get the size attribute (n) and style attribute (rend)</span></span>
+<span id="cb1-326"><a href="#cb1-326" aria-hidden="true" tabindex="-1"></a>    size_attr <span class="ot">&lt;-</span> <span class="fu">xml_attr</span>(emph, <span class="st">"n"</span>)</span>
+<span id="cb1-327"><a href="#cb1-327" aria-hidden="true" tabindex="-1"></a>    style_attr <span class="ot">&lt;-</span> <span class="fu">xml_attr</span>(emph, <span class="st">"rend"</span>)</span>
+<span id="cb1-328"><a href="#cb1-328" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-329"><a href="#cb1-329" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Create the HTML for the styled initial</span></span>
+<span id="cb1-330"><a href="#cb1-330" aria-hidden="true" tabindex="-1"></a>    styled_initial <span class="ot">&lt;-</span> <span class="fu">sprintf</span>(<span class="st">'&lt;span class="decorative-initial %s" data-size="%s"&gt;%s&lt;/span&gt;'</span>, </span>
+<span id="cb1-331"><a href="#cb1-331" aria-hidden="true" tabindex="-1"></a>                             style_attr, size_attr, initial_letter)</span>
+<span id="cb1-332"><a href="#cb1-332" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-333"><a href="#cb1-333" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Replace the emph element with the styled HTML</span></span>
+<span id="cb1-334"><a href="#cb1-334" aria-hidden="true" tabindex="-1"></a>    <span class="fu">xml_text</span>(emph) <span class="ot">&lt;-</span> styled_initial</span>
+<span id="cb1-335"><a href="#cb1-335" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb1-336"><a href="#cb1-336" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-337"><a href="#cb1-337" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Find all &lt;choice&gt; elements within the line</span></span>
+<span id="cb1-338"><a href="#cb1-338" aria-hidden="true" tabindex="-1"></a>  choices <span class="ot">&lt;-</span> <span class="fu">xml_find_all</span>(line, <span class="st">".//choice"</span>)</span>
+<span id="cb1-339"><a href="#cb1-339" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (choice <span class="cf">in</span> choices) {</span>
+<span id="cb1-340"><a href="#cb1-340" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Check if the &lt;choice&gt; element contains &lt;abbr&gt; and &lt;expan&gt;</span></span>
+<span id="cb1-341"><a href="#cb1-341" aria-hidden="true" tabindex="-1"></a>    abbr_exists <span class="ot">&lt;-</span> <span class="fu">xml_find_first</span>(choice, <span class="st">".//abbr"</span>)</span>
+<span id="cb1-342"><a href="#cb1-342" aria-hidden="true" tabindex="-1"></a>    expan_exists <span class="ot">&lt;-</span> <span class="fu">xml_find_first</span>(choice, <span class="st">".//expan"</span>)</span>
+<span id="cb1-343"><a href="#cb1-343" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-344"><a href="#cb1-344" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (<span class="sc">!</span><span class="fu">is.na</span>(abbr_exists) <span class="sc">&amp;&amp;</span> <span class="sc">!</span><span class="fu">is.na</span>(expan_exists)) {</span>
+<span id="cb1-345"><a href="#cb1-345" aria-hidden="true" tabindex="-1"></a>      <span class="co"># If &lt;abbr&gt; and &lt;expan&gt; tags exist, extract only the &lt;reg&gt; text from &lt;expan&gt;</span></span>
+<span id="cb1-346"><a href="#cb1-346" aria-hidden="true" tabindex="-1"></a>      reg_text <span class="ot">&lt;-</span> <span class="fu">xml_text</span>(<span class="fu">xml_find_first</span>(choice, <span class="st">".//expan/reg"</span>))</span>
+<span id="cb1-347"><a href="#cb1-347" aria-hidden="true" tabindex="-1"></a>      <span class="fu">xml_set_text</span>(choice, <span class="fu">paste0</span>(reg_text, <span class="st">" "</span>))</span>
+<span id="cb1-348"><a href="#cb1-348" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> {</span>
+<span id="cb1-349"><a href="#cb1-349" aria-hidden="true" tabindex="-1"></a>      <span class="co"># For non-abbreviation choices, keep original behavior</span></span>
+<span id="cb1-350"><a href="#cb1-350" aria-hidden="true" tabindex="-1"></a>      orig_text <span class="ot">&lt;-</span> <span class="fu">xml_text</span>(<span class="fu">xml_find_first</span>(choice, <span class="st">".//orig"</span>))</span>
+<span id="cb1-351"><a href="#cb1-351" aria-hidden="true" tabindex="-1"></a>      <span class="fu">xml_set_text</span>(choice, <span class="fu">paste0</span>(orig_text, <span class="st">" "</span>))</span>
+<span id="cb1-352"><a href="#cb1-352" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb1-353"><a href="#cb1-353" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb1-354"><a href="#cb1-354" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-355"><a href="#cb1-355" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Now we want to remove any &lt;reg&gt; elements entirely</span></span>
+<span id="cb1-356"><a href="#cb1-356" aria-hidden="true" tabindex="-1"></a>  reg_elements <span class="ot">&lt;-</span> <span class="fu">xml_find_all</span>(line, <span class="st">".//reg"</span>)</span>
+<span id="cb1-357"><a href="#cb1-357" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xml_remove</span>(reg_elements)</span>
+<span id="cb1-358"><a href="#cb1-358" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-359"><a href="#cb1-359" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Replace &lt;lb/&gt; tags with HTML line break</span></span>
+<span id="cb1-360"><a href="#cb1-360" aria-hidden="true" tabindex="-1"></a>  lb_elements <span class="ot">&lt;-</span> <span class="fu">xml_find_all</span>(line, <span class="st">".//lb"</span>)</span>
+<span id="cb1-361"><a href="#cb1-361" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (lb <span class="cf">in</span> lb_elements) {</span>
+<span id="cb1-362"><a href="#cb1-362" aria-hidden="true" tabindex="-1"></a>    <span class="fu">xml_set_text</span>(lb, <span class="st">""</span>)</span>
+<span id="cb1-363"><a href="#cb1-363" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb1-364"><a href="#cb1-364" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-365"><a href="#cb1-365" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Return line with number if applicable - using xml_text() instead of as.character()</span></span>
+<span id="cb1-366"><a href="#cb1-366" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(<span class="fu">sprintf</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;%s%s&lt;/div&gt;"</span>, </span>
+<span id="cb1-367"><a href="#cb1-367" aria-hidden="true" tabindex="-1"></a>                line_number, <span class="fu">xml_text</span>(line)))</span>
+<span id="cb1-368"><a href="#cb1-368" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-369"><a href="#cb1-369" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-370"><a href="#cb1-370" aria-hidden="true" tabindex="-1"></a><span class="co"># Process each line and wrap with &lt;div class='column-break'&gt; at each &lt;cb/&gt;</span></span>
+<span id="cb1-371"><a href="#cb1-371" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (line <span class="cf">in</span> lines) {</span>
+<span id="cb1-372"><a href="#cb1-372" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">xml_name</span>(line) <span class="sc">==</span> <span class="st">"cb"</span>) {</span>
+<span id="cb1-373"><a href="#cb1-373" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Add a closing &lt;/div&gt; for the previous column and an opening &lt;div&gt; for the new column</span></span>
+<span id="cb1-374"><a href="#cb1-374" aria-hidden="true" tabindex="-1"></a>    processed_lines <span class="ot">&lt;-</span> <span class="fu">c</span>(processed_lines, <span class="st">"&lt;/div&gt;"</span>, <span class="st">"&lt;div class='column-break'&gt;"</span>)</span>
+<span id="cb1-375"><a href="#cb1-375" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="cb1-376"><a href="#cb1-376" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Process the line and add it to the current column</span></span>
+<span id="cb1-377"><a href="#cb1-377" aria-hidden="true" tabindex="-1"></a>    processed_lines <span class="ot">&lt;-</span> <span class="fu">c</span>(processed_lines, <span class="fu">process_line</span>(line))</span>
+<span id="cb1-378"><a href="#cb1-378" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb1-379"><a href="#cb1-379" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-380"><a href="#cb1-380" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-381"><a href="#cb1-381" aria-hidden="true" tabindex="-1"></a><span class="co"># Process lines and wrap in edition-text div</span></span>
+<span id="cb1-382"><a href="#cb1-382" aria-hidden="true" tabindex="-1"></a>formatted_text <span class="ot">&lt;-</span> <span class="fu">paste</span>(<span class="fu">c</span>(<span class="st">"&lt;div class='edition-text'&gt;"</span>, processed_lines, <span class="st">"&lt;/div&gt;"</span>), <span class="at">collapse =</span> <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span>
+<span id="cb1-383"><a href="#cb1-383" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(formatted_text)</span>
+<span id="cb1-384"><a href="#cb1-384" aria-hidden="true" tabindex="-1"></a><span class="co"># START OF "EXTENSIVE" CODE</span></span>
+<span id="cb1-385"><a href="#cb1-385" aria-hidden="true" tabindex="-1"></a><span class="co"># Read the XML content</span></span>
+<span id="cb1-386"><a href="#cb1-386" aria-hidden="true" tabindex="-1"></a>xml_file <span class="ot">&lt;-</span> <span class="fu">read_xml</span>(<span class="st">"data/T-A.xml"</span>)</span>
+<span id="cb1-387"><a href="#cb1-387" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-388"><a href="#cb1-388" aria-hidden="true" tabindex="-1"></a><span class="co"># Extract the &lt;l&gt;, &lt;cb&gt;, and &lt;pb&gt; elements inside the &lt;text&gt; element</span></span>
+<span id="cb1-389"><a href="#cb1-389" aria-hidden="true" tabindex="-1"></a>lines <span class="ot">&lt;-</span> <span class="fu">xml_find_all</span>(xml_file, <span class="st">"//text//l | //text//cb | //text//pb"</span>)</span>
+<span id="cb1-390"><a href="#cb1-390" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-391"><a href="#cb1-391" aria-hidden="true" tabindex="-1"></a><span class="co"># Initialize an empty list to store the processed lines</span></span>
+<span id="cb1-392"><a href="#cb1-392" aria-hidden="true" tabindex="-1"></a>processed_lines <span class="ot">&lt;-</span> <span class="fu">list</span>()</span>
+<span id="cb1-393"><a href="#cb1-393" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-394"><a href="#cb1-394" aria-hidden="true" tabindex="-1"></a><span class="co"># Initialize line counter</span></span>
+<span id="cb1-395"><a href="#cb1-395" aria-hidden="true" tabindex="-1"></a>line_count <span class="ot">&lt;-</span> <span class="dv">0</span></span>
+<span id="cb1-396"><a href="#cb1-396" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-397"><a href="#cb1-397" aria-hidden="true" tabindex="-1"></a><span class="co"># Function to process each element</span></span>
+<span id="cb1-398"><a href="#cb1-398" aria-hidden="true" tabindex="-1"></a>process_line <span class="ot">&lt;-</span> <span class="cf">function</span>(line) {</span>
+<span id="cb1-399"><a href="#cb1-399" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Handle page breaks differently</span></span>
+<span id="cb1-400"><a href="#cb1-400" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">xml_name</span>(line) <span class="sc">==</span> <span class="st">"pb"</span>) {</span>
+<span id="cb1-401"><a href="#cb1-401" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Get folio number and format as standalone line</span></span>
+<span id="cb1-402"><a href="#cb1-402" aria-hidden="true" tabindex="-1"></a>    folio_num <span class="ot">&lt;-</span> <span class="fu">xml_attr</span>(line, <span class="st">"n"</span>)</span>
+<span id="cb1-403"><a href="#cb1-403" aria-hidden="true" tabindex="-1"></a>    <span class="fu">return</span>(<span class="fu">sprintf</span>(<span class="st">"&lt;div class='folio-number'&gt;%s&lt;/div&gt;"</span>, folio_num))</span>
+<span id="cb1-404"><a href="#cb1-404" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb1-405"><a href="#cb1-405" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-406"><a href="#cb1-406" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Only increment line count for verse lines</span></span>
+<span id="cb1-407"><a href="#cb1-407" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">xml_name</span>(line) <span class="sc">==</span> <span class="st">"l"</span>) {</span>
+<span id="cb1-408"><a href="#cb1-408" aria-hidden="true" tabindex="-1"></a>    line_count <span class="ot">&lt;&lt;-</span> line_count <span class="sc">+</span> <span class="dv">1</span></span>
+<span id="cb1-409"><a href="#cb1-409" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-410"><a href="#cb1-410" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.410 to correct spacing</span></span>
+<span id="cb1-411"><a href="#cb1-411" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">410</span>) {</span>
+<span id="cb1-412"><a href="#cb1-412" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;Chou li poise qu'ele est vive&lt;/div&gt;"</span>)</span>
+<span id="cb1-413"><a href="#cb1-413" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb1-414"><a href="#cb1-414" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-415"><a href="#cb1-415" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.445 to correct spacing</span></span>
+<span id="cb1-416"><a href="#cb1-416" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">445</span>) {</span>
+<span id="cb1-417"><a href="#cb1-417" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;Virgine Roine je croi bien&lt;/div&gt;"</span>)</span>
+<span id="cb1-418"><a href="#cb1-418" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb1-419"><a href="#cb1-419" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-420"><a href="#cb1-420" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.531 to correct spacing</span></span>
+<span id="cb1-421"><a href="#cb1-421" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">531</span>) {</span>
+<span id="cb1-422"><a href="#cb1-422" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;Virge Roine coronee&lt;/div&gt;"</span>)</span>
+<span id="cb1-423"><a href="#cb1-423" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb1-424"><a href="#cb1-424" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-425"><a href="#cb1-425" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.1365 to correct spacing</span></span>
+<span id="cb1-426"><a href="#cb1-426" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">1365</span>) {</span>
+<span id="cb1-427"><a href="#cb1-427" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;Biax Peres Rois de majeste&lt;/div&gt;"</span>)</span>
+<span id="cb1-428"><a href="#cb1-428" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb1-429"><a href="#cb1-429" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-430"><a href="#cb1-430" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.1367 to correct nesting/repetition issue</span></span>
+<span id="cb1-431"><a href="#cb1-431" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">1367</span>) {</span>
+<span id="cb1-432"><a href="#cb1-432" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;&lt;span class='decorative-initial' data-size='2'&gt;Q&lt;/span&gt;uant il ot s’orison fenie&lt;/div&gt;"</span>)</span>
+<span id="cb1-433"><a href="#cb1-433" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb1-434"><a href="#cb1-434" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-435"><a href="#cb1-435" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.1425 to correct nesting/repetition issue</span></span>
+<span id="cb1-436"><a href="#cb1-436" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">1425</span>) {</span>
+<span id="cb1-437"><a href="#cb1-437" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;&lt;span class='decorative-initial' data-size='2'&gt;Q&lt;/span&gt;uant li sains hom vit le lion&lt;/div&gt;"</span>)</span>
+<span id="cb1-438"><a href="#cb1-438" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb1-439"><a href="#cb1-439" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-440"><a href="#cb1-440" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Add line number div every 5th line</span></span>
+<span id="cb1-441"><a href="#cb1-441" aria-hidden="true" tabindex="-1"></a>    line_number <span class="ot">&lt;-</span> <span class="cf">if</span> (line_count <span class="sc">%%</span> <span class="dv">5</span> <span class="sc">==</span> <span class="dv">0</span>) {</span>
+<span id="cb1-442"><a href="#cb1-442" aria-hidden="true" tabindex="-1"></a>      <span class="fu">sprintf</span>(<span class="st">"&lt;div class='line-number'&gt;%d&lt;/div&gt;"</span>, line_count)</span>
+<span id="cb1-443"><a href="#cb1-443" aria-hidden="true" tabindex="-1"></a>    } <span class="cf">else</span> {</span>
+<span id="cb1-444"><a href="#cb1-444" aria-hidden="true" tabindex="-1"></a>      <span class="st">""</span></span>
+<span id="cb1-445"><a href="#cb1-445" aria-hidden="true" tabindex="-1"></a>    }</span>
+<span id="cb1-446"><a href="#cb1-446" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="cb1-447"><a href="#cb1-447" aria-hidden="true" tabindex="-1"></a>    line_number <span class="ot">&lt;-</span> <span class="st">""</span></span>
+<span id="cb1-448"><a href="#cb1-448" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb1-449"><a href="#cb1-449" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-450"><a href="#cb1-450" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Process emph elements (decorative initials)</span></span>
+<span id="cb1-451"><a href="#cb1-451" aria-hidden="true" tabindex="-1"></a>  emph_elements <span class="ot">&lt;-</span> <span class="fu">xml_find_all</span>(line, <span class="st">".//emph"</span>)</span>
+<span id="cb1-452"><a href="#cb1-452" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (emph <span class="cf">in</span> emph_elements) {</span>
+<span id="cb1-453"><a href="#cb1-453" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Get the initial letter text</span></span>
+<span id="cb1-454"><a href="#cb1-454" aria-hidden="true" tabindex="-1"></a>    initial_letter <span class="ot">&lt;-</span> <span class="fu">xml_text</span>(emph)</span>
+<span id="cb1-455"><a href="#cb1-455" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-456"><a href="#cb1-456" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Get the size attribute (n) and style attribute (rend)</span></span>
+<span id="cb1-457"><a href="#cb1-457" aria-hidden="true" tabindex="-1"></a>    size_attr <span class="ot">&lt;-</span> <span class="fu">xml_attr</span>(emph, <span class="st">"n"</span>)</span>
+<span id="cb1-458"><a href="#cb1-458" aria-hidden="true" tabindex="-1"></a>    style_attr <span class="ot">&lt;-</span> <span class="fu">xml_attr</span>(emph, <span class="st">"rend"</span>)</span>
+<span id="cb1-459"><a href="#cb1-459" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-460"><a href="#cb1-460" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Create the HTML for the styled initial</span></span>
+<span id="cb1-461"><a href="#cb1-461" aria-hidden="true" tabindex="-1"></a>    styled_initial <span class="ot">&lt;-</span> <span class="fu">sprintf</span>(<span class="st">'&lt;span class="decorative-initial %s" data-size="%s"&gt;%s&lt;/span&gt;'</span>, </span>
+<span id="cb1-462"><a href="#cb1-462" aria-hidden="true" tabindex="-1"></a>                             style_attr, size_attr, initial_letter)</span>
+<span id="cb1-463"><a href="#cb1-463" aria-hidden="true" tabindex="-1"></a>    </span>
+<span id="cb1-464"><a href="#cb1-464" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Replace the emph element with the styled HTML</span></span>
+<span id="cb1-465"><a href="#cb1-465" aria-hidden="true" tabindex="-1"></a>    <span class="fu">xml_text</span>(emph) <span class="ot">&lt;-</span> styled_initial</span>
+<span id="cb1-466"><a href="#cb1-466" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb1-467"><a href="#cb1-467" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-468"><a href="#cb1-468" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Now we want to remove any &lt;orig&gt; elements entirely</span></span>
+<span id="cb1-469"><a href="#cb1-469" aria-hidden="true" tabindex="-1"></a>  orig_elements <span class="ot">&lt;-</span> <span class="fu">xml_find_all</span>(line, <span class="st">".//orig"</span>)</span>
+<span id="cb1-470"><a href="#cb1-470" aria-hidden="true" tabindex="-1"></a>  <span class="fu">xml_remove</span>(orig_elements)</span>
+<span id="cb1-471"><a href="#cb1-471" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-472"><a href="#cb1-472" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Find all &lt;choice&gt; elements within the line</span></span>
+<span id="cb1-473"><a href="#cb1-473" aria-hidden="true" tabindex="-1"></a>  choices <span class="ot">&lt;-</span> <span class="fu">xml_find_all</span>(line, <span class="st">".//choice"</span>)</span>
+<span id="cb1-474"><a href="#cb1-474" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (choice <span class="cf">in</span> choices) {</span>
+<span id="cb1-475"><a href="#cb1-475" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Extract the text from the &lt;reg&gt; tag</span></span>
+<span id="cb1-476"><a href="#cb1-476" aria-hidden="true" tabindex="-1"></a>    reg_text <span class="ot">&lt;-</span> <span class="fu">xml_text</span>(<span class="fu">xml_find_first</span>(choice, <span class="st">".//reg"</span>))</span>
+<span id="cb1-477"><a href="#cb1-477" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Replace the &lt;choice&gt; element with the text from the &lt;reg&gt; tag</span></span>
+<span id="cb1-478"><a href="#cb1-478" aria-hidden="true" tabindex="-1"></a>    <span class="fu">xml_set_text</span>(choice, <span class="fu">paste0</span>(<span class="st">" "</span>, reg_text, <span class="st">" "</span>))</span>
+<span id="cb1-479"><a href="#cb1-479" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb1-480"><a href="#cb1-480" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-481"><a href="#cb1-481" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Replace &lt;lb/&gt; tags with HTML line break</span></span>
+<span id="cb1-482"><a href="#cb1-482" aria-hidden="true" tabindex="-1"></a>  lb_elements <span class="ot">&lt;-</span> <span class="fu">xml_find_all</span>(line, <span class="st">".//lb"</span>)</span>
+<span id="cb1-483"><a href="#cb1-483" aria-hidden="true" tabindex="-1"></a>  <span class="cf">for</span> (lb <span class="cf">in</span> lb_elements) {</span>
+<span id="cb1-484"><a href="#cb1-484" aria-hidden="true" tabindex="-1"></a>    <span class="fu">xml_set_text</span>(lb, <span class="st">""</span>)</span>
+<span id="cb1-485"><a href="#cb1-485" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb1-486"><a href="#cb1-486" aria-hidden="true" tabindex="-1"></a>  </span>
+<span id="cb1-487"><a href="#cb1-487" aria-hidden="true" tabindex="-1"></a>  <span class="co"># Return line with number if applicable - using xml_text() instead of as.character()</span></span>
+<span id="cb1-488"><a href="#cb1-488" aria-hidden="true" tabindex="-1"></a>  <span class="fu">return</span>(<span class="fu">sprintf</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;%s%s&lt;/div&gt;"</span>, </span>
+<span id="cb1-489"><a href="#cb1-489" aria-hidden="true" tabindex="-1"></a>                line_number, <span class="fu">xml_text</span>(line)))</span>
+<span id="cb1-490"><a href="#cb1-490" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-491"><a href="#cb1-491" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-492"><a href="#cb1-492" aria-hidden="true" tabindex="-1"></a><span class="co"># Process each line and wrap with &lt;div class='column-break'&gt; at each &lt;cb/&gt;</span></span>
+<span id="cb1-493"><a href="#cb1-493" aria-hidden="true" tabindex="-1"></a><span class="cf">for</span> (line <span class="cf">in</span> lines) {</span>
+<span id="cb1-494"><a href="#cb1-494" aria-hidden="true" tabindex="-1"></a>  <span class="cf">if</span> (<span class="fu">xml_name</span>(line) <span class="sc">==</span> <span class="st">"cb"</span>) {</span>
+<span id="cb1-495"><a href="#cb1-495" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Add a closing &lt;/div&gt; for the previous column and an opening &lt;div&gt; for the new column</span></span>
+<span id="cb1-496"><a href="#cb1-496" aria-hidden="true" tabindex="-1"></a>    processed_lines <span class="ot">&lt;-</span> <span class="fu">c</span>(processed_lines, <span class="st">"&lt;/div&gt;"</span>, <span class="st">"&lt;div class='column-break'&gt;"</span>)</span>
+<span id="cb1-497"><a href="#cb1-497" aria-hidden="true" tabindex="-1"></a>  } <span class="cf">else</span> {</span>
+<span id="cb1-498"><a href="#cb1-498" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Process the line and add it to the current column</span></span>
+<span id="cb1-499"><a href="#cb1-499" aria-hidden="true" tabindex="-1"></a>    processed_lines <span class="ot">&lt;-</span> <span class="fu">c</span>(processed_lines, <span class="fu">process_line</span>(line))</span>
+<span id="cb1-500"><a href="#cb1-500" aria-hidden="true" tabindex="-1"></a>  }</span>
+<span id="cb1-501"><a href="#cb1-501" aria-hidden="true" tabindex="-1"></a>}</span>
+<span id="cb1-502"><a href="#cb1-502" aria-hidden="true" tabindex="-1"></a></span>
+<span id="cb1-503"><a href="#cb1-503" aria-hidden="true" tabindex="-1"></a><span class="co"># Process lines and wrap in edition-text div</span></span>
+<span id="cb1-504"><a href="#cb1-504" aria-hidden="true" tabindex="-1"></a>formatted_text <span class="ot">&lt;-</span> <span class="fu">paste</span>(<span class="fu">c</span>(<span class="st">"&lt;div class='edition-text'&gt;"</span>, processed_lines, <span class="st">"&lt;/div&gt;"</span>), <span class="at">collapse =</span> <span class="st">"</span><span class="sc">\n</span><span class="st">"</span>)</span>
+<span id="cb1-505"><a href="#cb1-505" aria-hidden="true" tabindex="-1"></a><span class="fu">cat</span>(formatted_text)</span></code><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></pre></div>
 </details>
 <div class="quarto-layout-panel page-columns page-full" data-layout="[[6,6,6]]">
 <div class="quarto-layout-row page-full">
@@ -1847,7 +1992,7 @@ Ki pooit souffrir si gnt foule
 <div class="line-number">
 325
 </div>
-Mais de chou n’estoit nul ni
+Mais de chou nestoit nul ni
 </div>
 <div style="line-height: 1.2;">
 Que diales ne fust en li
@@ -4993,7 +5138,7 @@ Li sains len aie a lever
 De pitie ꝯmenche a plorer
 </div>
 <div style="line-height: 1.2;">
-N’osa seur li faire signacle
+Nosa seur li faire signacle
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -6294,16 +6439,13 @@ faite est &amp; tote de verte
 Ni a -i- mot de faussete
 </div>
 <div style="line-height: 1.2;">
-<div class="line-number">
-5
-</div>
-Bien croi que volentiers l’orront
+Bien croi que volentiers lorront
 </div>
 <div style="line-height: 1.2;">
 Cil qui Dameldui ameront
 </div>
 <div style="line-height: 1.2;">
-Car a chiaus qui de lui n’ont cure
+Car a chiaus qui de lui nont cure
 </div>
 <div style="line-height: 1.2;">
 Molt est se parole aspre &amp; dure
@@ -6809,7 +6951,7 @@ Ele en ravoit xl- vis
 Quant ele en avoit -ii- ocis
 </div>
 <div style="line-height: 1.2;">
-Ja plus tart n’en faisoit -i- ris
+Ja plus tart nen faisoit -i- ris
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -6919,7 +7061,7 @@ Ja el nes ne el menton
 </div>
 <div class="column-break">
 <div style="line-height: 1.2;">
-N’aperceussies mesfaichon
+Naperceussies mesfaichon
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -6964,7 +7106,7 @@ Sous laissele lonc le coste
 El niert trop grant ne trop petite
 </div>
 <div style="line-height: 1.2;">
-Ja se faichon n’en iert escrite
+Ja se faichon nen iert escrite
 </div>
 <div style="line-height: 1.2;">
 Ja le biaute de ceste dame
@@ -7477,7 +7619,7 @@ Ki pooit souffrir si grant foule
 <div class="line-number">
 325
 </div>
-Mais de chou n’estoit nul ni
+Mais de chou nestoit nul ni
 </div>
 <div style="line-height: 1.2;">
 Que diales ne fust en li
@@ -7566,10 +7708,7 @@ Qui devoit estre honoree
 Ot empirie si cel liu
 </div>
 <div style="line-height: 1.2;">
-<div class="line-number">
-350
-</div>
-Miex vaussist qu’i courust li fus
+Miex vaussist qui courust li fus
 </div>
 <div style="line-height: 1.2;">
 Car ele decevoit le jovencente
@@ -7706,7 +7845,7 @@ Quant ele aloit un peu avant
 Des espees cremoit le brant
 </div>
 <div style="line-height: 1.2;">
-Quant vit que [] nient ert de l’entree
+Quant vit que [] nient ert de lentree
 </div>
 <div style="line-height: 1.2;">
 En un angle [] ses reculee
@@ -7787,10 +7926,7 @@ Ne Dameldiu nos apeler
 Que fera ore le caitive
 </div>
 <div style="line-height: 1.2;">
-<div class="line-number">
-410
-</div>
-Chou li poise qu’ ele est vive
+Chou li poise quele est vive
 </div>
 <div style="line-height: 1.2;">
 Del cuer li issent li souspir
@@ -8183,7 +8319,7 @@ Puis monta es ciex a sen Pere
 Del ciel lor tramist tel confort
 </div>
 <div style="line-height: 1.2;">
-C’onques puis ne cremirent mort
+Conques puis ne cremirent mort
 </div>
 <div style="line-height: 1.2;">
 Saint Esprit lor tramist
@@ -8946,10 +9082,7 @@ Iaue buvoient nient saine
 Car ele niert pas de fontaine
 </div>
 <div style="line-height: 1.2;">
-<div class="line-number">
-725
-</div>
-Entr’iax navoit pas symonie
+Entriax navoit pas symonie
 </div>
 <div style="line-height: 1.2;">
 Ne covoitise ne envie
@@ -9259,10 +9392,7 @@ Vestus iert de molt povres dras
 Miex ama il se povrete
 </div>
 <div style="line-height: 1.2;">
-<div class="line-number">
-810
-</div>
-Que nus quens n’aimme se conte
+Que nus quens naimme se conte
 </div>
 <div style="line-height: 1.2;">
 En le forest parfondement
@@ -9288,7 +9418,7 @@ Mais quant il ot fait .xx. jornees
 Qui molt erent desmesurees
 </div>
 <div style="line-height: 1.2;">
-&amp; vit que nul n’en peut trover
+&amp; vit que nul nen peut trover
 </div>
 <div style="line-height: 1.2;">
 Na coraige davant aler
@@ -9658,7 +9788,7 @@ Sire dist ele dous amis
 Tu mas beneichon requis
 </div>
 <div style="line-height: 1.2;">
-Je n’entent pas que soit raison
+Je nentent pas que soit raison
 </div>
 <div style="line-height: 1.2;">
 Ke te doigne beneichon
@@ -9697,7 +9827,7 @@ Fait Dex sor son autel miracle
 Que li pains devient le sien cors
 </div>
 <div style="line-height: 1.2;">
-Li vins . le sanc qu’en issi hors
+Li vins . le sanc quen issi hors
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -9896,7 +10026,7 @@ Mais nule vois ne sen issoit
 De tere fu sempres ravie
 </div>
 <div style="line-height: 1.2;">
-Si qu’ele ni avenoit mie
+Si quele ni avenoit mie
 </div>
 <div style="line-height: 1.2;">
 Zosimas ot paor molt grant
@@ -9986,7 +10116,7 @@ Li sains hermite bien le vit
 As pies de le dame cai
 </div>
 <div style="line-height: 1.2;">
-Ele l’emprist a lever
+Ele lemprist a lever
 </div>
 <div style="line-height: 1.2;">
 Derekies se prist aplorer
@@ -10036,10 +10166,7 @@ Ja me vie ne tiert celee
 Trestoute le te conterai
 </div>
 <div style="line-height: 1.2;">
-<div class="line-number">
-1020
-</div>
-Si que ja rien n’en celerai
+Si que ja rien nen celerai
 </div>
 <div style="line-height: 1.2;">
 <span class="decorative-initial floriate" data-size="2">O</span>R conmence a conter Marie
@@ -10459,10 +10586,7 @@ Crient de le rien que plus covoite
 Que ses pecies li ait toloite
 </div>
 <div style="line-height: 1.2;">
-<div class="line-number">
-1135
-</div>
-Ou qu’el i eust ja este
+Ou quel i eust ja este
 </div>
 <div style="line-height: 1.2;">
 &amp; il eust trop demore
@@ -10543,7 +10667,7 @@ Dont le comence a apeler
 Dame chou li dist Zosimas
 </div>
 <div style="line-height: 1.2;">
-Bele mere qu’il le feras
+Bele mere quil le feras
 </div>
 <div style="line-height: 1.2;">
 Conment passeras tu a moi
@@ -10623,7 +10747,7 @@ Li sains len aie a lever
 De pitie conmenche a plorer
 </div>
 <div style="line-height: 1.2;">
-N’osa seur li faire signacle
+Nosa seur li faire signacle
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -10963,7 +11087,7 @@ Il lentendi en ses -ii- mains
 &amp; le dame en menga -iii- grains
 </div>
 <div style="line-height: 1.2;">
-Trente ans avoit s’ierent passe
+Trente ans avoit sierent passe
 </div>
 <div style="line-height: 1.2;">
 Qel navoit mais de riens goste
@@ -11097,7 +11221,7 @@ Sen ala lame de Marie
 Li cors de li remest tot nu
 </div>
 <div style="line-height: 1.2;">
-Fores d’un drapel tot desrompu
+Fores dun drapel tot desrompu
 </div>
 <div style="line-height: 1.2;">
 ki encovroit une partie
@@ -11154,7 +11278,7 @@ Tant le voloit Dex honorer
 Tant grant miracle por li fist
 </div>
 <div style="line-height: 1.2;">
-C’onques se chars ne li malmist
+Conques se chars ne li malmist
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -11246,7 +11370,7 @@ Le veissies molt esgare
 Duel fait molt grant &amp; pleure &amp; crie
 </div>
 <div style="line-height: 1.2;">
-Pres iere del cors n’en savoit mie
+Pres iere del cors nen savoit mie
 </div>
 <div style="line-height: 1.2;">
 Pere dist il qui me fesis
@@ -11338,7 +11462,7 @@ le cors trova molt se fist lies
 A le tere estoit estendus
 </div>
 <div style="line-height: 1.2;">
-Par un peu qu’il nestoit tot nus
+Par un peu quil nestoit tot nus
 </div>
 <div style="line-height: 1.2;">
 <div class="line-number">
@@ -11508,10 +11632,7 @@ Noient altre mais -i- lion
 Un lion issi del desert
 </div>
 <div style="line-height: 1.2;">
-<div class="line-number">
-1420
-</div>
-la s’aproisma ou li cors ert
+la saproisma ou li cors ert
 </div>
 <div style="line-height: 1.2;">
 les pies li conmence a lechier
@@ -11675,7 +11796,7 @@ Devers le chief le cors si prist
 &amp; li lions la as pies pris
 </div>
 <div style="line-height: 1.2;">
-El sarcus lont entr’iax -ii- mis
+El sarcus lont entriax -ii- mis
 </div>
 <div style="line-height: 1.2;">
 Quant en le tere ont mis le cors
@@ -11735,7 +11856,7 @@ Dont sen est arriere torne
 El grant desert sen est ale
 </div>
 <div style="line-height: 1.2;">
-Quant Zosimasl’en vit torner
+Quant Zosimaslen vit torner
 </div>
 <div style="line-height: 1.2;">
 Damedieuconmence a loer
@@ -11854,10 +11975,7 @@ Li abes pleure tenrrement
 &amp; li autre moine ensement
 </div>
 <div style="line-height: 1.2;">
-<div class="line-number">
-1515
-</div>
-Ni ot nul qui n’amendast se vie
+Ni ot nul qui namendast se vie
 </div>
 <div style="line-height: 1.2;">
 Por les miracles de Marie
@@ -13417,10 +13535,7 @@ Ne Dameldiu nos apeler
 Que fera ore le caitive
 </div>
 <div style="line-height: 1.2;">
-<div class="line-number">
-410
-</div>
-Chou li poise qu’ ele est vive
+Chou li poise qu’ele est vive
 </div>
 <div style="line-height: 1.2;">
 Del cuer li issent li souspir
