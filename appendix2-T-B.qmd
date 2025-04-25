@@ -215,9 +215,349 @@ process_line <- function(line) {
   if (xml_name(line) == "l") {
     line_count <<- line_count + 1
     
+    # SPECIAL CASE: Hard-code line v.5 to correct apostrophe
+    if (line_count == 5) {
+      return("<div style='line-height: 1.2;'>bien croi que volentiers lorunt .</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.15 to correct apostrophe
+    if (line_count == 15) {
+      return("<div style='line-height: 1.2;'>Que nuz pechiez nen est tant granz.</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.23 to correct apostrophe
+    if (line_count == 23) {
+      return("<div style='line-height: 1.2;'>pechiez nen est pas creature .</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.36 to correct apostrophe
+    if (line_count == 36) {
+      return("<div style='line-height: 1.2;'>tros quil sent el cors le mort</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.52 to correct apostrophe
+    if (line_count == 52) {
+      return("<div style='line-height: 1.2;'>kanquele at fait tot trovera</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.56 to correct apostrophe
+    if (line_count == 56) {
+      return("<div style='line-height: 1.2;'>quele fut nee enegypte</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.59 to correct apostrophe
+    if (line_count == 59) {
+      return("<div style='line-height: 1.2;'>legiere devint en senfance .</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.97 to correct apostrophe
+    if (line_count == 97) {
+      return("<div style='line-height: 1.2;'>Pus quele ot passez doze ans.</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.100 to correct apostrophe
+    if (line_count == 100) {
+      return("<div style='line-height: 1.2;'>si konques puis nuz nela vit</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.104 to correct apostrophe
+    if (line_count == 104) {
+      return("<div style='line-height: 1.2;'>anc ni demandat compagnie</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.130 to correct apostrophe
+    if (line_count == 130) {
+      return("<div style='line-height: 1.2;'>sentredonoient grant colees</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.134 to correct apostrophe
+    if (line_count == 134) {
+      return("<div style='line-height: 1.2;'>Nule pitiet ne len prendroit</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.138 to correct apostrophe
+    if (line_count == 138) {
+      return("<div style='line-height: 1.2;'>ja nen fesist plus tart un ris</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.180 to correct apostrophe
+    if (line_count == 180) {
+      return("<div style='line-height: 1.2;'>Jasefacons nen iert descrite</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.208 to correct apostrophe
+    if (line_count == 208) {
+      return("<div style='line-height: 1.2;'>quele ert amurs dele cite</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.220 to correct apostrophe
+    if (line_count == 220) {
+      return("<div style='line-height: 1.2;'>sen salhoient fors el gravier</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.224 to correct apostrophe
+    if (line_count == 224) {
+      return("<div style='line-height: 1.2;'>Nepuet muer que ne sen rie</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.269 to correct apostrophe
+    if (line_count == 269) {
+      return("<div style='line-height: 1.2;'>o moi nen ai argent ne or.</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.275 to correct apostrophe
+    if (line_count == 275) {
+      return("<div style='line-height: 1.2;'>si men voroie ovos aler.</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.334 to correct apostrophe
+    if (line_count == 334) {
+      return("<div style='line-height: 1.2;'>por ce quele astoit bele & gente</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.359 to correct apostrophe
+    if (line_count == 359) {
+      return("<div style='line-height: 1.2;'>chascuns tenoit vers li sespee .</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.384 to correct apostrophe
+    if (line_count == 384) {
+      return("<div style='line-height: 1.2;'>celi poise qu ele est vive</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.439 to correct apostrophe
+    if (line_count == 439) {
+      return("<div style='line-height: 1.2;'>Il dist quil ert li agniaz de.</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.562 to correct apostrophe
+    if (line_count == 562) {
+      return("<div style='line-height: 1.2;'>puis fut illuc juskal demains</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.563 to correct apostrophe
+    if (line_count == 563) {
+      return("<div style='line-height: 1.2;'>Lendemain levat par matin.</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.570 to correct apostrophe
+    if (line_count == 570) {
+      return("<div style='line-height: 1.2;'>quele devint tote salvage</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.573 to correct apostrophe
+    if (line_count == 573) {
+      return("<div style='line-height: 1.2;'>tant par liver tant par lesteit .</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.649 to correct apostrophe
+    if (line_count == 649) {
+      return("<div style='line-height: 1.2;'>entres nen astoit convoitie .</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.651 to correct apostrophe
+    if (line_count == 651) {
+      return("<div style='line-height: 1.2;'>Navoient soig de mal affaire.</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.654 to correct apostrophe
+    if (line_count == 654) {
+      return("<div style='line-height: 1.2;'>Navoient soig delastamine</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.665 to correct apostrophe
+    if (line_count == 665) {
+      return("<div style='line-height: 1.2;'>Navoient soig dargent nedor .</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.687 to correct apostrophe
+    if (line_count == 687) {
+      return("<div style='line-height: 1.2;'>Lialtre sen issoient tuit.</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.692 to correct apostrophe
+    if (line_count == 692) {
+      return("<div style='line-height: 1.2;'>si sen fuioient encovert</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.762 to correct apostrophe
+    if (line_count == 762) {
+      return("<div style='line-height: 1.2;'>qui miez valoit dargent nedor</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.787 to correct apostrophe
+    if (line_count == 787) {
+      return("<div style='line-height: 1.2;'>Il nesparne miesa viellece .</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.840 to correct apostrophe
+    if (line_count == 840) {
+      return("<div style='line-height: 1.2;'>par le barbe quest chenue</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.847 to correct apostrophe
+    if (line_count == 847) {
+      return("<div style='line-height: 1.2;'>Je nenten pas que soit raison.</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.860 to correct apostrophe
+    if (line_count == 860) {
+      return("<div style='line-height: 1.2;'>& li vins sans quen issit fors</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.888 to correct apostrophe
+    if (line_count == 888) {
+      return("<div style='line-height: 1.2;'>si sentregardent ambe dui</div>")
+    }
+    
     # SPECIAL CASE: Hard-code line v.895 to correct spacing
     if (line_count == 895) {
       return("<div style='line-height: 1.2;'>Dame Zosimas li respont .</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.910 to correct apostrophe
+    if (line_count == 910) {
+      return("<div style='line-height: 1.2;'>Mais nule vois fors nen issoit</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.931 to correct apostrophe
+    if (line_count == 931) {
+      return("<div style='line-height: 1.2;'>batisie fui en menfance .</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.934 to correct apostrophe
+    if (line_count == 934) {
+      return("<div style='line-height: 1.2;'>nen partirai juskal morir</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.954 to correct apostrophe
+    if (line_count == 954) {
+      return("<div style='line-height: 1.2;'>poez savoir quele en ot honte</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.1014 to correct apostrophe
+    if (line_count == 1014) {
+      return("<div style='line-height: 1.2;'>mut est dolans quil lepert</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.1015 to correct apostrophe
+    if (line_count == 1015) {
+      return("<div style='line-height: 1.2;'>A terre sest engenolhiez.</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.1030 to correct apostrophe
+    if (line_count == 1030) {
+      return("<div style='line-height: 1.2;'>dece quil orent veu</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.1038 to correct apostrophe
+    if (line_count == 1038) {
+      return("<div style='line-height: 1.2;'>que loit dire Marie</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.1054 to correct apostrophe
+    if (line_count == 1054) {
+      return("<div style='line-height: 1.2;'>mais encor nen i at il mie</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.1057 to correct apostrophe
+    if (line_count == 1057) {
+      return("<div style='line-height: 1.2;'>u quele iait ja esteit.</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.1059 to correct apostrophe
+    if (line_count == 1059) {
+      return("<div style='line-height: 1.2;'>de latendre soit anoie.</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.1060 to correct apostrophe
+    if (line_count == 1060) {
+      return("<div style='line-height: 1.2;'>& por ce sen soit repairie</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.1065 to correct apostrophe
+    if (line_count == 1065) {
+      return("<div style='line-height: 1.2;'>Ja nen vivrai si qum jespoir .</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.1090 to correct apostrophe
+    if (line_count == 1090) {
+      return("<div style='line-height: 1.2;'>mut sen mervelhe Zozimas</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.1103 to correct apostrophe
+    if (line_count == 1103) {
+      return("<div style='line-height: 1.2;'>Nose sor li faire signacle.</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.1110 to correct apostrophe
+    if (line_count == 1110) {
+      return("<div style='line-height: 1.2;'>quil la li die pordeu</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.1114 to correct apostrophe
+    if (line_count == 1114) {
+      return("<div style='line-height: 1.2;'>mut sentregardent anbedui</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.1145 to correct apostrophe
+    if (line_count == 1145) {
+      return("<div style='line-height: 1.2;'>Biaz Sireoroies morison .</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.1200 to correct apostrophe
+    if (line_count == 1200) {
+      return("<div style='line-height: 1.2;'>fors dun drapel tot de rompuz</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.1215 to correct apostrophe
+    if (line_count == 1215) {
+      return("<div style='line-height: 1.2;'>tant la quise par ledesert .</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.1216 to correct apostrophe
+    if (line_count == 1216) {
+      return("<div style='line-height: 1.2;'>quil vint la u li cors ert</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.1240 to correct apostrophe
+    if (line_count == 1240) {
+      return("<div style='line-height: 1.2;'>& se ni pot nule rien faire</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.1265 to correct apostrophe
+    if (line_count == 1265) {
+      return("<div style='line-height: 1.2;'>& lileons apiez lat prise .</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.1266 to correct apostrophe
+    if (line_count == 1266) {
+      return("<div style='line-height: 1.2;'>entriaz dous lont en terre mise</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.1274 to correct apostrophe
+    if (line_count == 1274) {
+      return("<div style='line-height: 1.2;'>ne len covint somunse feir</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.1303 to correct apostrophe
+    if (line_count == 1303) {
+      return("<div style='line-height: 1.2;'>com ele alat desore lunde .</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.1307 to correct apostrophe
+    if (line_count == 1307) {
+      return("<div style='line-height: 1.2;'>& del non quil trovat escrit.</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.1308 to correct apostrophe
+    if (line_count == 1308) {
+      return("<div style='line-height: 1.2;'>& del servise quil i fit</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.1315 to correct apostrophe
+    if (line_count == 1315) {
+      return("<div style='line-height: 1.2;'>Niot un namendast savie .</div>")
     }
     
     # Add line number div every 5th line
@@ -330,6 +670,11 @@ process_line <- function(line) {
   if (xml_name(line) == "l") {
     line_count <<- line_count + 1
     
+    # SPECIAL CASE: Hard-code line v.36 to correct spacing
+    if (line_count == 36) {
+      return("<div style='line-height: 1.2;'>tros qu'il sent el cors le mort</div>")
+    }
+    
     # SPECIAL CASE: Hard-code line v.184 to correct double "Creator"
     if (line_count == 184) {
       return("<div style='line-height: 1.2;'>cant de se Creator n'at cure</div>")
@@ -348,6 +693,11 @@ process_line <- function(line) {
     # SPECIAL CASE: Hard-code line v.378 to correct double "Creator"
     if (line_count == 378) {
       return("<div style='line-height: 1.2;'>cant men Creator ai perdu</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.384 to correct spacing
+    if (line_count == 384) {
+      return("<div style='line-height: 1.2;'>celi poise qu'ele est vive</div>")
     }
     
     # SPECIAL CASE: Hard-code line v.393 to correct double "Marie"
@@ -443,6 +793,11 @@ process_line <- function(line) {
     # SPECIAL CASE: Hard-code line v.795 to correct double "Deu"
     if (line_count == 795) {
       return("<div style='line-height: 1.2;'>cant la dame ot de Deu parler .</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.840 to correct spacing
+    if (line_count == 840) {
+      return("<div style='line-height: 1.2;'>par le barbe qu’est chenue</div>")
     }
     
     # SPECIAL CASE: Hard-code line v.895 to correct spacing
