@@ -47,6 +47,16 @@ process_line <- function(line) {
     line_number <- if (line_count %% 5 == 0) {
       sprintf("<div class='line-number'>%d</div>", line_count)
     } else {
+      
+    # SPECIAL CASE: Hard-code line v.331 to fix nesting tags issue
+    if (line_count == 331) {
+      return("<div style='line-height: 1.2;'><span class='decorative-initial' data-size='2'>Q</span>nt Marie fu arivee</div>")
+    } 
+      
+    # SPECIAL CASE: Hard-code line v.533 to fix nesting tags issue
+    if (line_count == 533) {
+      return("<div style='line-height: 1.2;'><span class='decorative-initial' data-size='2'>Q</span>nt ele out faite sen oreisun</div>")
+    }
       ""
     }
   } else {
@@ -147,6 +157,16 @@ process_line <- function(line) {
     line_number <- if (line_count %% 5 == 0) {
       sprintf("<div class='line-number'>%d</div>", line_count)
     } else {
+      
+    # SPECIAL CASE: Hard-code line v.331 to fix nesting tags issue
+    if (line_count == 331) {
+      return("<div style='line-height: 1.2;'><span class='decorative-initial' data-size='2'>Q</span>uant Marie fu arivee</div>")
+    } 
+      
+    # SPECIAL CASE: Hard-code line v.533 to fix nesting tags issue
+    if (line_count == 533) {
+      return("<div style='line-height: 1.2;'><span class='decorative-initial' data-size='2'>Q</span>uant ele out faite sen oreisun</div>")
+    }
       ""
     }
   } else {
@@ -256,6 +276,16 @@ process_line <- function(line) {
     line_number <- if (line_count %% 5 == 0) {
       sprintf("<div class='line-number'>%d</div>", line_count)
     } else {
+      
+    # SPECIAL CASE: Hard-code line v.331 to fix nesting tags issue
+    if (line_count == 331) {
+      return("<div style='line-height: 1.2;'><span class='decorative-initial' data-size='2'>Q</span>uant Marie fu arivee</div>")
+    } 
+      
+    # SPECIAL CASE: Hard-code line v.533 to fix nesting tags issue
+    if (line_count == 533) {
+      return("<div style='line-height: 1.2;'><span class='decorative-initial' data-size='2'>Q</span>uant ele out faite sen oreisun</div>")
+    }
       ""
     }
   } else {
