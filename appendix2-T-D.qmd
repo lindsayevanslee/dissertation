@@ -43,20 +43,26 @@ process_line <- function(line) {
   # Only increment line count for verse lines
   if (xml_name(line) == "l") {
     line_count <<- line_count + 1
-    # Add line number div every 5th line
-    line_number <- if (line_count %% 5 == 0) {
-      sprintf("<div class='line-number'>%d</div>", line_count)
-    } else {
-      
+    
     # SPECIAL CASE: Hard-code line v.331 to fix nesting tags issue
     if (line_count == 331) {
       return("<div style='line-height: 1.2;'><span class='decorative-initial' data-size='2'>Q</span>nt Marie fu arivee</div>")
     } 
+    
+    # SPECIAL CASE: Hard-code line v.527 to correct spacing
+    if (line_count == 527) {
+      return("<div style='line-height: 1.2;'>Virge Reine corunee</div>")
+    }
       
     # SPECIAL CASE: Hard-code line v.533 to fix nesting tags issue
     if (line_count == 533) {
       return("<div style='line-height: 1.2;'><span class='decorative-initial' data-size='2'>Q</span>nt ele out faite sen oreisun</div>")
     }
+    
+    # Add line number div every 5th line
+    line_number <- if (line_count %% 5 == 0) {
+      sprintf("<div class='line-number'>%d</div>", line_count)
+    } else {
       ""
     }
   } else {
@@ -153,20 +159,71 @@ process_line <- function(line) {
   # Only increment line count for verse lines
   if (xml_name(line) == "l") {
     line_count <<- line_count + 1
-    # Add line number div every 5th line
-    line_number <- if (line_count %% 5 == 0) {
-      sprintf("<div class='line-number'>%d</div>", line_count)
-    } else {
       
+    # SPECIAL CASE: Hard-code line v.65 to correct apostrophe
+    if (line_count == 65) {
+      return("<div style='line-height: 1.2;'>Por ceo quele estoit bele . & gente</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.131 to correct apostrophe
+    if (line_count == 131) {
+      return("<div style='line-height: 1.2;'>Por ceo quil erent si ami</div>")
+    }
+    
     # SPECIAL CASE: Hard-code line v.331 to fix nesting tags issue
     if (line_count == 331) {
       return("<div style='line-height: 1.2;'><span class='decorative-initial' data-size='2'>Q</span>uant Marie fu arivee</div>")
     } 
+    
+    # SPECIAL CASE: Hard-code line v.350 to correct apostrophe
+    if (line_count == 350) {
+      return("<div style='line-height: 1.2;'>Miex fust quil i corust feu</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.388 to correct apostrophe
+    if (line_count == 388) {
+      return("<div style='line-height: 1.2;'>ke deit quele ni puet entrer</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.483 to correct apostrophe
+    if (line_count == 483) {
+      return("<div style='line-height: 1.2;'>dist lui quil ert langre De</div>")
+    }
+      
+    # SPECIAL CASE: Hard-code line v.527 to correct spacing
+    if (line_count == 527) {
+      return("<div style='line-height: 1.2;'>Virge Reine corunee</div>")
+    }
       
     # SPECIAL CASE: Hard-code line v.533 to fix nesting tags issue
     if (line_count == 533) {
       return("<div style='line-height: 1.2;'><span class='decorative-initial' data-size='2'>Q</span>uant ele out faite sen oreisun</div>")
     }
+    
+    # SPECIAL CASE: Hard-code line v.750 to correct apostrophe
+    if (line_count == 750) {
+      return("<div style='line-height: 1.2;'>Quil cremoient de lor maisun</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.973 to correct apostrophe
+    if (line_count == 973) {
+      return("<div style='line-height: 1.2;'>de la poour quout Zozimas</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.1378 to correct apostrophe
+    if (line_count == 1378) {
+      return("<div style='line-height: 1.2;'>en terre lunt els deus mis.</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.1419 to correct apostrophe
+    if (line_count == 1419) {
+      return("<div style='line-height: 1.2;'>del nun quil trova estrit</div>")
+    }
+    
+    # Add line number div every 5th line
+    line_number <- if (line_count %% 5 == 0) {
+      sprintf("<div class='line-number'>%d</div>", line_count)
+    } else {
       ""
     }
   } else {
@@ -272,20 +329,31 @@ process_line <- function(line) {
   # Only increment line count for verse lines
   if (xml_name(line) == "l") {
     line_count <<- line_count + 1
-    # Add line number div every 5th line
-    line_number <- if (line_count %% 5 == 0) {
-      sprintf("<div class='line-number'>%d</div>", line_count)
-    } else {
       
     # SPECIAL CASE: Hard-code line v.331 to fix nesting tags issue
     if (line_count == 331) {
       return("<div style='line-height: 1.2;'><span class='decorative-initial' data-size='2'>Q</span>uant Marie fu arivee</div>")
     } 
       
+    # SPECIAL CASE: Hard-code line v.527 to correct spacing
+    if (line_count == 527) {
+      return("<div style='line-height: 1.2;'>Virge Reine corunee</div>")
+    }
+      
     # SPECIAL CASE: Hard-code line v.533 to fix nesting tags issue
     if (line_count == 533) {
       return("<div style='line-height: 1.2;'><span class='decorative-initial' data-size='2'>Q</span>uant ele out faite sen oreisun</div>")
     }
+    
+    # SPECIAL CASE: Hard-code line v.973 to correct spacing
+    if (line_count == 973) {
+      return("<div style='line-height: 1.2;'>de la poour qu’out Zozimas</div>")
+    }
+    
+    # Add line number div every 5th line
+    line_number <- if (line_count %% 5 == 0) {
+      sprintf("<div class='line-number'>%d</div>", line_count)
+    } else {
       ""
     }
   } else {
