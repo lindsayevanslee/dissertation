@@ -321,7 +321,7 @@
                     <l>Unc ne fina <choice><orig>treskau</orig><reg>tresk'au</reg></choice> vessel<lb/></l>
                     <l>Ou estoient lui juvencel .<lb/></l>
                     <l>mes a cous parla premer<lb/></l>
-                    <l>ki <choice><orig>sesbanoient</orig><reg>s'esbanoient</reg></choice> el grauer .<lb/></l>
+                    <l>ki <choice><orig>sesbanoient</orig><reg>s'esbanoient</reg></choice> el graver .<lb/></l>
                     <l>A ous parlat auke <choice><abbr><orig>brefmet</orig></abbr><expan><reg>brefment</reg></expan></choice><lb/></l>
                     <l>Teu sen com ad lur en <choice><abbr><orig>despet</orig></abbr><expan><reg>despent</reg></expan></choice> .<lb/></l>
                     <l><name type="character">Seignur</name> dist ele <name type="character">pelerin</name><lb/></l>
@@ -672,7 +672,7 @@
                     <l>Un des pains manga demi  .<lb/></l>
                     <l>Beut <choice><orig>del ewe</orig><reg>de l'ewe</reg></choice> seintifiee<lb/></l>
                     <l>kant en ot beuz <choice><orig>sestoi</orig><reg>s'estoi</reg></choice> <choice><abbr><orig>plulee</orig></abbr><expan><reg>plus lee</reg></expan></choice>  .<lb/></l>
-                    <l>Sun chief laua <choice><orig>dela</orig><reg>de la</reg></choice> <choice><abbr><orig>pe</orig></abbr><expan><reg>pure</reg></expan></choice> unde<lb/></l>
+                    <l>Sun chief lava <choice><orig>dela</orig><reg>de la</reg></choice> <choice><abbr><orig>pe</orig></abbr><expan><reg>pure</reg></expan></choice> unde<lb/></l>
                     <l>De tuz ses pechez <choice><abbr><orig>devit</orig></abbr><expan><reg>devint</reg></expan></choice> munde  .<lb/></l>
                 <cb/>
                     
@@ -1563,7 +1563,7 @@
                     <l><choice><orig>Sele</orig><reg>S'ele</reg></choice> me seust en cest guast .<lb/></l>
                     <l><name type="god">Sire</name> se tu de moi as cure<lb/></l>
                     <l>Lai me fere sa sepulture .<lb/></l>
-                    <l><name type="god">Beau Pere</name> <name type="god">Rei de magestez</name><lb/></l>
+                    <l><name type="god">Beau Pere</name> <name type="god"> <name type="god">Rei de magestez</name></name><lb/></l>
                     <l>Ne me lessez si esgarez .<lb/></l>
                     <l>kant il out <choice><orig>soreison</orig><reg>s'oreison</reg></choice> finie<lb/></l>
                     <l><name type="god">Deus</name> li <choice><abbr><orig>mustr</orig></abbr><expan><reg>mustras</reg></expan></choice> le cors <name type="saint">Marie</name> .<lb/></l>

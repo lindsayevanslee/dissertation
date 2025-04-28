@@ -41,15 +41,21 @@ process_line <- function(line) {
   # Only increment line count for verse lines
   if (xml_name(line) == "l") {
     line_count <<- line_count + 1
-    # Add line number div every 5th line
-    line_number <- if (line_count %% 5 == 0) {
-      sprintf("<div class='line-number'>%d</div>", line_count)
-    } else {
       
     # SPECIAL CASE: Hard-code line v.541 to fix repetition nesting issue
     if (line_count == 541) {
       return("<div style='line-height: 1.2;'><span class='decorative-initial' data-size='1'>D</span>el ureison leva Marie</div>")
     }
+      
+    # SPECIAL CASE: Hard-code line v.1381 to correct spacing
+    if (line_count == 1381) {
+      return("<div style='line-height: 1.2;'>Beau Pere Rei de magestez</div>")
+    }
+    
+    # Add line number div every 5th line
+    line_number <- if (line_count %% 5 == 0) {
+      sprintf("<div class='line-number'>%d</div>", line_count)
+    } else {
       ""
     }
   } else {
@@ -256,6 +262,11 @@ process_line <- function(line) {
     if (line_count == 1338) {
       return("<div style='line-height: 1.2;'>kunc sa char rien ne blemist .</div>")
     }
+    
+    # SPECIAL CASE: Hard-code line v.1381 to correct spacing
+    if (line_count == 1381) {
+      return("<div style='line-height: 1.2;'>Beau Pere Rei de magestez</div>")
+    }
       
     # SPECIAL CASE: Hard-code line v.1491 to correct apostrophe
     if (line_count == 1491) {
@@ -372,15 +383,21 @@ process_line <- function(line) {
   # Only increment line count for verse lines
   if (xml_name(line) == "l") {
     line_count <<- line_count + 1
-    # Add line number div every 5th line
-    line_number <- if (line_count %% 5 == 0) {
-      sprintf("<div class='line-number'>%d</div>", line_count)
-    } else {
       
     # SPECIAL CASE: Hard-code line v.541 to fix repetition nesting issue
     if (line_count == 541) {
       return("<div style='line-height: 1.2;'><span class='decorative-initial' data-size='1'>D</span>e l'ureison leva Marie</div>")
     }
+      
+    # SPECIAL CASE: Hard-code line v.1381 to correct spacing
+    if (line_count == 1381) {
+      return("<div style='line-height: 1.2;'>Beau Pere Rei de magestez</div>")
+    }
+    
+    # Add line number div every 5th line
+    line_number <- if (line_count %% 5 == 0) {
+      sprintf("<div class='line-number'>%d</div>", line_count)
+    } else {
       ""
     }
   } else {
