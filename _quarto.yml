@@ -5,7 +5,7 @@ project:
 book:
   title: "The Life of Saint Mary the Egyptian: Toward a Digital Critical Edition of the Old French Version T with English Translations"
   author: "Loren Easterday Lee"
-  date: "04/22/2025"
+  date: "05/3/2025"
   chapters:
     - index.qmd
     - abstract.qmd

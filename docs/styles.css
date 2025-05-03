@@ -1,3 +1,25 @@
+/* MUFI-compatible font declarations */
+@font-face {
+  font-family: 'Junicode';
+  src: url('fonts/JunicodeVF-Roman.woff2') format('woff2-variations');
+  font-weight: 300 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Junicode';
+  src: url('fonts/JunicodeVF-Italic.woff2') format('woff2-variations');
+  font-weight: 300 700;
+  font-style: italic;
+  font-display: swap;
+}
+
+/* Set Junicode as the default font for the entire book */
+body {
+  font-family: 'Junicode', serif;
+}
+
 /* Navigation styling */
 .sidebar {
   position: fixed;
