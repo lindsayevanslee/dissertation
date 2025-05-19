@@ -214,6 +214,8 @@ Fritschi, Ramona. “e-codices – Virtual Manuscript Library of Switzerland: Gr
 
 *Fragmentarium*. Manuscript Research Center - University of Fribourg, 2013-present, https://fragmentarium.ms/. [repository]
 
+Honkapohja, Alpo. “Digital Approaches to Manuscript Abbreviations: Where Are We at the Beginning of the 2020s?” *Digital Medievalist*, vol. 14, 2021. [scholarship]
+
 Kiss, Farkas Gábor, et al. “Old Light on New Media: Medieval Practices in the Digital Age.” *Digital Philology: A Journal of Medieval Cultures*, vol. 2, no. 1, Spring 2013, pp. 16-34. [scholarship]
 
 Lit, L. W. C. van (Lambertus Willem Cornelis). *Among Digitized Manuscripts: Philology, Codicology, Paleography In a Digital World*. Brill, 2020. [scholarship]
@@ -390,6 +392,8 @@ Campion, Edmund J. “Early Modern French Literature.” *Scholarly Editing: A G
 
 Cerquiglini, Bernard. *Éloge de la variante: Histoire critique de la philologie*. Éditions du Seuil, 1989.
 
+Colby, Alice M. *The Portrait in Twelfth-Century French Literature: An Example of the Stylistic Originality of Chrétien de Troyes*. Droz, 1965.
+
 Derolez, Albert. *The Paleography of Gothic Manuscripts*. Cambridge University Press, 2001.
 
 *Dictionnaire du Moyen Français*, version 2020 (DMF 2020). ATILF - CNRS & Université de Lorraine. http://www.atilf.fr/dmf.
@@ -401,6 +405,8 @@ Godefroy, Frédéric. *Dictionnaire de l’ancienne langue française, et de tou
 Matsumura, Takeshi, and Michel Zink, editor. *Dictionnaire du français médiéval*. Les Belles Lettres, 2015.
 
 Speer, Mary B. “Old French Literature.” *Scholarly Editing: A Guide to Research*, MLA, 1995, pp. 382-416.
+
+Vieillard, Françoise and Olivier Guyotjeannin. *Conseils pour l’édition des textes médiévaux, Fascicule I: Conseils généraux*. École nationale des chartes, 2001.
 
 ## Epigraph
 Thomas. “Le Roman de Tristan.” *Tristan et Iseut: Les poèmes français et La saga norroise*. Edited and translated by Philippe Walter, Lettres gothiques, 1989, pp. 329-481.
