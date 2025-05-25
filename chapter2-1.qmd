@@ -7,7 +7,7 @@ This is the first part of the second chapter of my Quarto book...
 
 
 ### Excerpt of T-E (Portrait 2, vv.613-702)
-Paris, BnF Arsenal, 3516, ff.115r-115v \
+Paris, BnF Arsenal, 3516, ff.115r, col.d, line 13 - 115v, col.b, line 2 \
 Digitization available via Gallica [HERE](https://gallica.bnf.fr/ark:/12148/btv1b55000507q/f232.item).
 
 ```{r setup, include=FALSE}
