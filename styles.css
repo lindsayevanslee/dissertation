@@ -84,7 +84,7 @@ body {
   margin-left: 70px; /* Space for numbers */
 }
 
-/* Line numbers */
+/* Appendix Line numbers */
 .column .line-number {
   position: absolute;
   margin-left: -2em;
@@ -279,4 +279,21 @@ body {
   margin-right: 8px;
   vertical-align: middle;
   border: 1px solid #ccc;
+}
+
+/* Line Numbers styling for Portraits Pages */
+.verse-line {
+  display: block;
+  position: relative;
+}
+
+.line-number {
+  display: inline-block;
+  position: absolute;
+  left: -28px;
+  width: 25px;
+  text-align: right;
+  font-size: 0.8em;
+  color: #999;
+  font-family: "Helvetica", sans-serif;
 }
