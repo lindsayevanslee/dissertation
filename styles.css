@@ -66,12 +66,12 @@ body {
   max-height: 80vh;
   overflow-y: auto;
   position: relative;
-  display: flex;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(minmax(fit-content, 300px), 500px));
   gap: 2em;
   width: 100%;
   justify-content: center;
-  flex-wrap: wrap;
-  background: transparent;
+  padding: 0 1em;
 }
 
 /* Base column styles */
@@ -79,8 +79,8 @@ body {
   transition: all 0.3s ease;
   opacity: 0.5;
   flex: 1;
-  min-width: 300px; /* Minimum width before wrapping */
-  max-width: 500px; /* Maximum width to prevent too wide columns */
+  min-width: minmax(fit-content, 300px); /* Dynamic minimum width based on content */
+  max-width: 500px;
   position: relative;
   max-height: none;
   overflow-y: visible;
