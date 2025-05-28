@@ -32,18 +32,33 @@ body {
   z-index: 1000;
 }
 
+/* Make sidebar background transparent in all states */
+.sidebar.sidebar-navigation.rollup.quarto-sidebar-toggle-contents,
+.sidebar.sidebar-navigation:not(.rollup),
+.quarto-sidebar-collapse-item.collapse:not(.show) {
+  background-color: transparent !important;
+}
+
+/* Remove border when collapsed */
+.quarto-sidebar-collapse-item.collapse:not(.show) {
+  border-right: none !important;
+}
+
 /* Main content adjustment */
 .column-body-outset {
   margin-left: 220px;  /* sidebar width + padding */
   width: calc(100% - 240px);
   padding: 0 1em;
-  transition: margin-left 0.3s ease;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
 }
 
 /* When sidebar is collapsed */
 .quarto-sidebar-collapse-item.collapse:not(.show) ~ .column-body-outset {
   margin-left: 0;
   width: 100%;
+  background-color: transparent !important;
 }
 
 /* Container for all columns */
@@ -56,11 +71,12 @@ body {
   width: 100%;
   justify-content: center;
   flex-wrap: wrap;
+  background: transparent;
 }
 
 /* Base column styles */
 .column {
-  transition: opacity 0.3s ease;
+  transition: all 0.3s ease;
   opacity: 0.5;
   flex: 1;
   min-width: 300px; /* Minimum width before wrapping */
@@ -68,6 +84,7 @@ body {
   position: relative;
   max-height: none;
   overflow-y: visible;
+  background: transparent;
 }
 
 /* Scrollbar styling for container */
@@ -287,11 +304,6 @@ body {
   margin-right: 8px;
   vertical-align: middle;
   border: 1px solid #ccc;
-}
-
-/* Remove sidebar border when collapsed */
-.quarto-sidebar-collapse-item.collapse:not(.show) {
-  border-right: none;
 }
 
 /* Ensure proper spacing between columns when wrapped */
