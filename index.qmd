@@ -5,6 +5,3 @@ title: "Front Matter"  # This appears in navigation
 
 A Dissertation presented to the Graduate Faculty of the University of Virginia in Candidacy for the Degree of Doctor of Philosophy
 
-##### Department of French
-##### University of Virginia
-##### June, 2025

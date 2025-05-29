@@ -4,7 +4,10 @@ project:
 
 book:
   title: "The Life of Saint Mary the Egyptian: Toward a Digital Critical Edition of the Old French Version T with English Translations"
-  author: "Loren Easterday Lee"
+  author:
+    - name: "Loren Easterday Lee"
+      affiliation: 
+        name: "Department of French, University of Virginia"
   date: "05/3/2025"
   chapters:
     - index.qmd
