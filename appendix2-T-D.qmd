@@ -1,5 +1,8 @@
 ---
 title: "T-D"
+format:
+  html:
+    page-layout: full
 ---
 
 # Paris, BnF Français 19525
@@ -11,7 +14,7 @@ Digitization available via Gallica [HERE](https://gallica.bnf.fr/ark:/12148/btv1
 library(xml2)
 ```
 
-::: {.column-body-outset}
+::: {.column-page-outset}
 ::: {layout="[[6,6,6]]"}
 
 ::: {.column}
@@ -421,4 +424,6 @@ cat(formatted_text)
 
 :::
 
-::: :::
+:::
+
+:::

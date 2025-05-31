@@ -1,5 +1,8 @@
 ---
 title: "2.1 An Approach to Editing Version T, Part 1"
+format:
+  html:
+    page-layout: full
 ---
 
 This is the first part of the second chapter of my Quarto book...
@@ -15,7 +18,7 @@ Digitization available via Gallica [HERE](https://gallica.bnf.fr/ark:/12148/btv1
 library(xml2)
 ```
 
-::: {.column-body-outset}
+::: {.column-page-outset}
 ::: {layout="[[6,6,6]]"}
 
 ::: {.column}
@@ -408,5 +411,7 @@ cat(formatted_text)
 
 :::
 
-::: :::
+:::
+
+:::
 

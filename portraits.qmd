@@ -1544,4 +1544,5 @@ To read these passages in translation, hover over each column with your cursor.
 </div>
 :::
 
-::: :::
+::: 
+:::

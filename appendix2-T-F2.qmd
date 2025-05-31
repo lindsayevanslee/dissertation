@@ -1,5 +1,8 @@
 ---
 title: "T-F^2^"
+format:
+  html:
+    page-layout: full
 ---
 
 # Berlin, Staatsbibliothek, MSS Simulata Orientalia 6
@@ -13,7 +16,7 @@ Photograph no.101 (featured upside down online) is the recto, and photograph no.
 library(xml2)
 ```
 
-::: {.column-body-outset}
+::: {.column-page-outset}
 ::: {layout="[[6,6,6]]"}
 
 ::: {.column}
@@ -318,4 +321,6 @@ cat(formatted_text)
 
 :::
 
-::: :::
+:::
+
+:::
