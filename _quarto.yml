@@ -47,8 +47,8 @@ format:
     code-fold: true
     code-summary: "show the code"
 
-  pdf:
-    documentclass: scrreprt
+  docx:
+    toc: true
 
 
 
