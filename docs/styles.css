@@ -32,10 +32,33 @@ body {
   z-index: 1000;
 }
 
+/* Make sidebar background transparent in all states */
+.sidebar.sidebar-navigation.rollup.quarto-sidebar-toggle-contents,
+.sidebar.sidebar-navigation:not(.rollup),
+.quarto-sidebar-collapse-item.collapse:not(.show) {
+  background-color: transparent !important;
+}
+
+/* Remove border when collapsed */
+.quarto-sidebar-collapse-item.collapse:not(.show) {
+  border-right: none !important;
+}
+
 /* Main content adjustment */
 .column-body-outset {
-  margin-left: 200px;  /* sidebar width + padding */
-  width: calc(100% - 210px);
+  margin-left: 220px;  /* sidebar width + padding */
+  width: calc(100% - 240px);
+  padding: 0 1em;
+  transition: all 0.3s ease;
+  position: relative;
+  z-index: 1;
+}
+
+/* When sidebar is collapsed */
+.quarto-sidebar-collapse-item.collapse:not(.show) ~ .column-body-outset {
+  margin-left: 0;
+  width: 100%;
+  background-color: transparent !important;
 }
 
 /* Container for all columns */
@@ -43,21 +66,25 @@ body {
   max-height: 80vh;
   overflow-y: auto;
   position: relative;
-  margin-left: 2em;
-  width: calc(100% - 1.5em);
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(minmax(fit-content, 300px), 500px));
+  gap: 2em;
+  width: 100%;
+  justify-content: center;
+  padding: 0 1em;
 }
 
 /* Base column styles */
 .column {
-  transition: opacity 0.3s ease;
+  transition: all 0.3s ease;
   opacity: 0.5;
-  padding: 0.01em;
-  width: 2.5%;
-  margin: 0 0.05em;
-  left: 30px;
+  flex: 1;
+  min-width: minmax(fit-content, 300px); /* Dynamic minimum width based on content */
+  max-width: 500px;
   position: relative;
   max-height: none;
   overflow-y: visible;
+  background: transparent;
 }
 
 /* Scrollbar styling for container */
@@ -80,15 +107,14 @@ body {
 
 /* Container positioning */
 .column:first-child {
-  position: relative; /* Ensure absolute positioning context */
-  margin-left: 70px; /* Space for numbers */
+  position: relative;
+  margin-left: 0;
 }
 
 /* Appendix Line numbers */
 .column .line-number {
   position: absolute;
-  margin-left: -2em;
-  left: -10px; 
+  left: -2.5em;
   margin-top: 0.25em;
   z-index: 1;
   font-family: "Helvetica", sans-serif;
@@ -99,8 +125,7 @@ body {
 /* Folio numbers */
 .column .folio-number {
   position: absolute;
-  margin-left: 0;
-  left: -65px !important;
+  left: -4em;
   font-family: "Palatino", serif;
   font-style: italic;
   color: #666;
@@ -109,7 +134,7 @@ body {
 
 /* Content spacing */
 .edition-text {
-  margin-left: 40px !important;
+  margin-left: 3em !important;
   position: relative;
   line-height: 1.2;
 }
@@ -118,7 +143,7 @@ body {
   display: block;
   margin-bottom: 1em !important;
   margin-top: 1em !important;
-  margin-left: 40px !important;
+  margin-left: 3em !important;
   position: relative;
   line-height: 1.2;
   background-color: transparent;
@@ -281,6 +306,20 @@ body {
   border: 1px solid #ccc;
 }
 
+
+/* Ensure proper spacing between columns when wrapped */
+@media (max-width: 1200px) {
+  .column {
+    flex: 0 0 calc(50% - 2em);
+  }
+}
+
+@media (max-width: 768px) {
+  .column {
+    flex: 0 0 100%;
+  }
+}
+
 /* Line Numbers styling for Portraits Pages */
 .verse-line {
   display: block;
@@ -297,3 +336,4 @@ body {
   color: #999;
   font-family: "Helvetica", sans-serif;
 }
+
