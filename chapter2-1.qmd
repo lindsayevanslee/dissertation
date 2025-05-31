@@ -167,6 +167,26 @@ process_line <- function(line) {
       return(NULL) # Skip lines outside our range
     }
     
+    # SPECIAL CASE: Hard-code line v.634 to correct spacing
+    if (line_count == 634) {
+      return("<div style='line-height: 1.2;'>& en v iron sachar noircie</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.635 to correct spacing
+    if (line_count == 635) {
+      return("<div style='line-height: 1.2;'>itant avoit noir lementon</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.640 to correct spacing
+    if (line_count == 640) {
+      return("<div style='line-height: 1.2;'>molt vos venist agrant merveille</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.643 to correct spacing
+    if (line_count == 643) {
+      return("<div style='line-height: 1.2;'>Noire & molsue ert sapoitrine</div>")
+    }
+    
     # SPECIAL CASE: Hard-code line v.646 to remove apostrophe in "qu'il"
     if (line_count == 646) {
       return("<div style='line-height: 1.2;'>Nient plus quil est en .i. gans</div>")
@@ -175,6 +195,16 @@ process_line <- function(line) {
     # SPECIAL CASE: Hard-code line v.650 to remove apostrophe in "qu'ele"
     if (line_count == 650) {
       return("<div style='line-height: 1.2;'>asdens les ront quele ot trencans</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.662 to correct spacing
+    if (line_count == 662) {
+      return("<div style='line-height: 1.2;'>Quant ele avoit lagrant hascie</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.672 to correct spacing
+    if (line_count == 672) {
+      return("<div style='line-height: 1.2;'>com ce fuissent pieres demur</div>")
     }
     
     # SPECIAL CASE: Hard-code line v.690 to remove apostrophe in "qu'ele"

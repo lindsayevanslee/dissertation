@@ -17,308 +17,308 @@ To read these passages in translation, hover over each column with your cursor.
 <div class="text-container">
   <div class="default-text">
 .....<br>
-De se biaute de se figure<br>
-Si com ele est en escriture<br>
-Vueil -i- peu dire le samblant<br>
-Anchois que je trespas avant<br>
-Car a cel tans en icel regne<br>
-Ne vit nus hom plus bele feme<br>
-Ne onc contesse ne roine<br>
-Nen ot el front plus bele crine<br>
-Reondes avoit les oreilles<br>
-Mais blanches erent a merveilles<br>
-Les iex clers & sosrians<br>
-les sorchix noir & avenans<br>
-bouche petite par mesure<br>
-& pie le regardeiue<br>
-Le face tenrre & coloree<br>
-Com le rose qui sempre est nee<br>
-Ja el nes ne el menton<br>
-N'aperceussies mesfaichon<br>
-En som le col blanc com ermine<br>
-li undoit le bloie crine<br>
-Les mameles de cele dame<br>
-N'estoient menrres d'une pome<br>
-Desous le goule en le poitrine<br>
-Ert blanche conme flor d'espine<br>
-blans bras avoit & blances mains<br>
-Les dois reons grailles & plains<br>
-Gent cors avoit & bien molle<br>
-Sous l'aissele lonc le coste<br>
-El n'iert trop grant no trop petite<br>
-Ja se faichon n'en iert escrite<br>
-Ja le biaute de ceste dame<br>
-Nen iert escrite par nul home<br>
-Tant iert cortoise de parler<br>
-Riens n'i avoit que amender<br>
-A plaindre fait tel criaature<br>
-Quant del Creator n'avoit cure<br>
-El recevoit plusors presens<br>
-S'en acatoit bons vestemens<br>
-Bons dras avoit . & avenans<br>
-Por mix plaisir a ses amans<br>
-Ele n'avoit soing de dras de lainne<br>
-Au pior jor de le semainne<br>
-Bon bliaut avoit d'ostorin<br>
-& affubloit mantel d'ermin<br>
-Soullers bien pains de cordouam<br>
-Cauchoit a tous les jors de l'an<br>
-Le citoien de le cite<br>
-L'amoient tout por se biaute<br>
-Li anchien home & li saige<br>
-disoient tout Dex quel damage<br>
-Com mar fu onc ceste dolante<br>
-Tant fait a plaindre se jovente<br>
-Tant mar fu onques le siue vie<br>
-Quant si est plainne de folie<br>
-Tout disoient par le cite<br>
-Qu'ele estoit de haut parente<br>
-Car a tos respondoit raison<br>
-& tant iert bele de fachon<br>
-ke li fix d'un empereor<br>
-Le peust prendre a grant honor<br>
+<span class="verse-line"><span class="line-number">157</span>De se biaute de se figure<br></span>
+<span class="verse-line">Si com ele est en escriture<br></span>
+<span class="verse-line">Vueil -i- peu dire le samblant<br></span>
+<span class="verse-line">Anchois que je trespas avant<br></span>
+<span class="verse-line">Car a cel tans en icel regne<br></span>
+<span class="verse-line"><span class="line-number">162</span>Ne vit nus hom plus bele feme<br></span>
+<span class="verse-line">Ne onc contesse ne roine<br></span>
+<span class="verse-line">Nen ot el front plus bele crine<br></span>
+<span class="verse-line">Reondes avoit les oreilles<br></span>
+<span class="verse-line">Mais blanches erent a merveilles<br></span>
+<span class="verse-line"><span class="line-number">167</span>Les iex clers & sosrians<br></span>
+<span class="verse-line">les sorchix noir & avenans<br></span>
+<span class="verse-line">bouche petite par mesure<br></span>
+<span class="verse-line">& pie le regardeiue<br></span>
+<span class="verse-line">Le face tenrre & coloree<br></span>
+<span class="verse-line"><span class="line-number">172</span>Com le rose qui sempre est nee<br></span>
+<span class="verse-line">Ja el nes ne el menton<br></span>
+<span class="verse-line">N'aperceussies mesfaichon<br></span>
+<span class="verse-line">En som le col blanc com ermine<br></span>
+<span class="verse-line">li undoit le bloie crine<br></span>
+<span class="verse-line"><span class="line-number">177</span>Les mameles de cele dame<br></span>
+<span class="verse-line">N'estoient menrres d'une pome<br></span>
+<span class="verse-line">Desous le goule en le poitrine<br></span>
+<span class="verse-line">Ert blanche conme flor d'espine<br></span>
+<span class="verse-line">blans bras avoit & blances mains<br></span>
+<span class="verse-line"><span class="line-number">182</span>Les dois reons grailles & plains<br></span>
+<span class="verse-line">Gent cors avoit & bien molle<br></span>
+<span class="verse-line">Sous l'aissele lonc le coste<br></span>
+<span class="verse-line">El n'iert trop grant no trop petite<br></span>
+<span class="verse-line">Ja se faichon n'en iert escrite<br></span>
+<span class="verse-line"><span class="line-number">187</span>Ja le biaute de ceste dame<br></span>
+<span class="verse-line">Nen iert escrite par nul home<br></span>
+<span class="verse-line">Tant iert cortoise de parler<br></span>
+<span class="verse-line">Riens n'i avoit que amender<br></span>
+<span class="verse-line">A plaindre fait tel criaature<br></span>
+<span class="verse-line"><span class="line-number">192</span>Quant del Creator n'avoit cure<br></span>
+<span class="verse-line">El recevoit plusors presens<br></span>
+<span class="verse-line">S'en acatoit bons vestemens<br></span>
+<span class="verse-line">Bons dras avoit . & avenans<br></span>
+<span class="verse-line">Por mix plaisir a ses amans<br></span>
+<span class="verse-line"><span class="line-number">197</span>Ele n'avoit soing de dras de lainne<br></span>
+<span class="verse-line">Au pior jor de le semainne<br></span>
+<span class="verse-line">Bon bliaut avoit d'ostorin<br></span>
+<span class="verse-line">& affubloit mantel d'ermin<br></span>
+<span class="verse-line">Soullers bien pains de cordouam<br></span>
+<span class="verse-line"><span class="line-number">202</span>Cauchoit a tous les jors de l'an<br></span>
+<span class="verse-line">Le citoien de le cite<br></span>
+<span class="verse-line">L'amoient tout por se biaute<br></span>
+<span class="verse-line">Li anchien home & li saige<br></span>
+<span class="verse-line">disoient tout Dex quel damage<br></span>
+<span class="verse-line"><span class="line-number">207</span>Com mar fu onc ceste dolante<br></span>
+<span class="verse-line">Tant fait a plaindre se jovente<br></span>
+<span class="verse-line">Tant mar fu onques le siue vie<br></span>
+<span class="verse-line">Quant si est plainne de folie<br></span>
+<span class="verse-line">Tout disoient par le cite<br></span>
+<span class="verse-line"><span class="line-number">212</span>Qu'ele estoit de haut parente<br></span>
+<span class="verse-line">Car a tos respondoit raison<br></span>
+<span class="verse-line">& tant iert bele de fachon<br></span>
+<span class="verse-line">ke li fix d'un empereor<br></span>
+<span class="verse-line">Le peust prendre a grant honor<br></span>
 .....<br>
-Tant ala par jor & par nuit<br>
-A faim & a soif & a dur lit<br>
-Que tant parfont fu el boscaige<br>
-Toute devint illuec salvaige<br>
-Mais ele ne s'oublioit mie<br>
-De deprier sainte Marie<br>
-Sovent li menbroit de l'ymaige<br>
-Que ele avoit mis en ostaige<br>
-Si souller furent tout use<br>
-& tout si drapel deschire<br>
-Li cors de li remaint tout nu<br>
-N'avoit drapel ne fust rompu<br>
-Li chars de li mua coulor<br>
-Qui ains iert blance conme flor<br>
-Que por yver que por este<br>
-Tout li noircirent li coste<br>
-Coulor mua se bloie crine<br>
-Blanche devint com une hermine<br>
-Le bouce li fu tenevie<br>
-& environ toute noirchie<br>
-& avoit tant noir le menton<br>
-Conme s'il fust taint de carbon<br>
-Atenerge furent li oel<br>
-N'i avoit ore point d'orguel<br>
-Se vos veissies les oreilles<br>
-Molt par vos presist grans merveilles<br>
-Car noire estoit & decrevee<br>
-Le blanche char toute muee<br>
-Noire & muee ert le poitrine<br>
-A escorce samblant d'espine<br>
-N'avoit plus char en ses traians<br>
-Ne mais com il a en uns gans<br>
-Les bras les mains & les lons dois<br>
-Avoit plus noirs que nule pois<br>
-Ongles avoit longes & grans<br>
-Ele les retailloit a ses dens<br>
-Li ventres li estoit caoit<br>
-Petit de despensse i metoit<br>
-Li pie li erent decreve<br>
-En plusors lius erent navre<br>
-Car ele ne se gardoit d'espine<br>
-Quant ele aloit par le gastine<br>
-Che li ert vis sien esciant<br>
-Que ele n'i failloit nient<br>
-C'uns de ses pekies li caoit<br>
-Quant une espine le pongnoit<br>
-Por chou estoit ele molt lie<br>
-Quant ele souffroit le hasquie<br>
-N'est merveille se iert noirchie<br>
-Car molt demenoit aspee vie<br>
-Plus de xl. ans ala nue<br>
-N'iert merveille se iert moussue<br>
-Povre despense avoit o li<br>
-Or ait Jhesus de li merchi<br>
-.ii. pains avoit ne gaires grans<br>
-De chiaus vesqui par plusors ans<br>
-El premier an devinrrent dur<br>
-Com se fust pierre de mur<br>
-Cascun jor en usoit Marie<br>
-Mais che iert petite partie<br>
-Quant ele ot tot son pain use<br>
-Puis esrachoit l'erbe del pre<br>
-Quant autre beste le mengoit<br>
-de rien ne se confortoit<br>
-As mains buvoit l'iaue el ruissel<br>
-Quant ele n'avoit autre vaissel<br>
-Ne font a plaindre li pechie<br>
-Dont li cors fu si castie<br>
-D'erbe vesqui & de rachines<br>
-Xvii. ans. par les gastines<br>
-Puis fu .xxx. ans onc ne menga<br>
-Se angeles ne li aporta<br>
-Li diables le an premier<br>
-Le soloit sovent essaier<br>
-Tout che li faisoit remembrer<br>
-Qu'ele soloit tos jors amer<br>
-Les bons mengiers & les biax lieus<br>
-Ou ele soloit faire les geus<br>
-Or fu ichi boneuree<br>
-Qu'ele de tout fu obliee<br>
-Onques puis en toute se vie<br>
-Ne li souvint mais de folie<br>
-Ne ainc en trestot le boscaige<br>
-Ne li vint puis beste salvaige<br>
-Ne autre vive creature<br>
-Par le gaut va toute seure<br>
-En plusors lius prist son ostel<br>
-Se vie ert tote esperitel<br>
+<span class="verse-line"><span class="line-number">613</span>Tant ala par jor & par nuit<br></span>
+<span class="verse-line">A faim & a soif & a dur lit<br></span>
+<span class="verse-line">Que tant parfont fu el boscaige<br></span>
+<span class="verse-line">Toute devint illuec salvaige<br></span>
+<span class="verse-line">Mais ele ne s'oublioit mie<br></span>
+<span class="verse-line"><span class="line-number">618</span>De deprier sainte Marie<br></span>
+<span class="verse-line">Sovent li menbroit de l'ymaige<br></span>
+<span class="verse-line">Que ele avoit mis en ostaige<br></span>
+<span class="verse-line">Si souller furent tout use<br></span>
+<span class="verse-line">& tout si drapel deschire<br></span>
+<span class="verse-line"><span class="line-number">623</span>Li cors de li remaint tout nu<br></span>
+<span class="verse-line">N'avoit drapel ne fust rompu<br></span>
+<span class="verse-line">Li chars de li mua coulor<br></span>
+<span class="verse-line">Qui ains iert blance conme flor<br></span>
+<span class="verse-line">Que por yver que por este<br></span>
+<span class="verse-line"><span class="line-number">628</span>Tout li noircirent li coste<br></span>
+<span class="verse-line">Coulor mua se bloie crine<br></span>
+<span class="verse-line">Blanche devint com une hermine<br></span>
+<span class="verse-line">Le bouce li fu tenevie<br></span>
+<span class="verse-line">& environ toute noirchie<br></span>
+<span class="verse-line"><span class="line-number">633</span>& avoit tant noir le menton<br></span>
+<span class="verse-line">Conme s'il fust taint de carbon<br></span>
+<span class="verse-line">Atenerge furent li oel<br></span>
+<span class="verse-line">N'i avoit ore point d'orguel<br></span>
+<span class="verse-line">Se vos veissies les oreilles<br></span>
+<span class="verse-line"><span class="line-number">638</span>Molt par vos presist grans merveilles<br></span>
+<span class="verse-line">Car noire estoit & decrevee<br></span>
+<span class="verse-line">Le blanche char toute muee<br></span>
+<span class="verse-line">Noire & muee ert le poitrine<br></span>
+<span class="verse-line">A escorce samblant d'espine<br></span>
+<span class="verse-line"><span class="line-number">643</span>N'avoit plus char en ses traians<br></span>
+<span class="verse-line">Ne mais com il a en uns gans<br></span>
+<span class="verse-line">Les bras les mains & les lons dois<br></span>
+<span class="verse-line">Avoit plus noirs que nule pois<br></span>
+<span class="verse-line">Ongles avoit longes & grans<br></span>
+<span class="verse-line"><span class="line-number">648</span>Ele les retailloit a ses dens<br></span>
+<span class="verse-line">Li ventres li estoit caoit<br></span>
+<span class="verse-line">Petit de despensse i metoit<br></span>
+<span class="verse-line">Li pie li erent decreve<br></span>
+<span class="verse-line">En plusors lius erent navre<br></span>
+<span class="verse-line"><span class="line-number">653</span>Car ele ne se gardoit d'espine<br></span>
+<span class="verse-line">Quant ele aloit par le gastine<br></span>
+<span class="verse-line">Che li ert vis sien esciant<br></span>
+<span class="verse-line">Que ele n'i failloit nient<br></span>
+<span class="verse-line">C'uns de ses pekies li caoit<br></span>
+<span class="verse-line"><span class="line-number">658</span>Quant une espine le pongnoit<br></span>
+<span class="verse-line">Por chou estoit ele molt lie<br></span>
+<span class="verse-line">Quant ele souffroit le hasquie<br></span>
+<span class="verse-line">N'est merveille se iert noirchie<br></span>
+<span class="verse-line">Car molt demenoit aspee vie<br></span>
+<span class="verse-line"><span class="line-number">663</span>Plus de xl. ans ala nue<br></span>
+<span class="verse-line">N'iert merveille se iert moussue<br></span>
+<span class="verse-line">Povre despense avoit o li<br></span>
+<span class="verse-line">Or ait Jhesus de li merchi<br></span>
+<span class="verse-line">.ii. pains avoit ne gaires grans<br></span>
+<span class="verse-line"><span class="line-number">668</span>De chiaus vesqui par plusors ans<br></span>
+<span class="verse-line">El premier an devinrrent dur<br></span>
+<span class="verse-line">Com se fust pierre de mur<br></span>
+<span class="verse-line">Cascun jor en usoit Marie<br></span>
+<span class="verse-line">Mais che iert petite partie<br></span>
+<span class="verse-line"><span class="line-number">673</span>Quant ele ot tot son pain use<br></span>
+<span class="verse-line">Puis esrachoit l'erbe del pre<br></span>
+<span class="verse-line">Quant autre beste le mengoit<br></span>
+<span class="verse-line">de rien ne se confortoit<br></span>
+<span class="verse-line">As mains buvoit l'iaue el ruissel<br></span>
+<span class="verse-line"><span class="line-number">678</span>Quant ele n'avoit autre vaissel<br></span>
+<span class="verse-line">Ne font a plaindre li pechie<br></span>
+<span class="verse-line">Dont li cors fu si castie<br></span>
+<span class="verse-line">D'erbe vesqui & de rachines<br></span>
+<span class="verse-line">Xvii. ans. par les gastines<br></span>
+<span class="verse-line"><span class="line-number">683</span>Puis fu .xxx. ans onc ne menga<br></span>
+<span class="verse-line">Se angeles ne li aporta<br></span>
+<span class="verse-line">Li diables le an premier<br></span>
+<span class="verse-line">Le soloit sovent essaier<br></span>
+<span class="verse-line">Tout che li faisoit remembrer<br></span>
+<span class="verse-line"><span class="line-number">688</span>Qu'ele soloit tos jors amer<br></span>
+<span class="verse-line">Les bons mengiers & les biax lieus<br></span>
+<span class="verse-line">Ou ele soloit faire les geus<br></span>
+<span class="verse-line">Or fu ichi boneuree<br></span>
+<span class="verse-line">Qu'ele de tout fu obliee<br></span>
+<span class="verse-line"><span class="line-number">693</span>Onques puis en toute se vie<br></span>
+<span class="verse-line">Ne li souvint mais de folie<br></span>
+<span class="verse-line">Ne ainc en trestot le boscaige<br></span>
+<span class="verse-line">Ne li vint puis beste salvaige<br></span>
+<span class="verse-line">Ne autre vive creature<br></span>
+<span class="verse-line"><span class="line-number">698</span>Par le gaut va toute seure<br></span>
+<span class="verse-line">En plusors lius prist son ostel<br></span>
+<span class="verse-line">Se vie ert tote esperitel<br></span>
 .....<br>
   </div>
   <div class="hover-text">
 .....<br>
-Of her beauty, of her figure<br>
-as it is in the written source<br>
-I want to say a little about her appearance<br>
-before I go too far.<br>
-For at that time in that reign,<br>
-no man saw a more beautiful woman.<br>
-Never countess nor queen<br>
-had over her brow more beautiful hair.<br>
-She had round ears.<br>
-What's more, they were marvelously white,<br>
-her eyes bright and smiling,<br>
-her eyebrows black and becoming,<br>
-her little mouth mild,<br>
-and pious her gaze,<br>
-her face tender and blushing<br>
-like the rose that is always in bloom.<br>
-Indeed neither on her nose nor on her chin<br>
-would you be aware of any defect.<br>
-Her neck was white like ermine too.<br>
-There flowed her blonde hair.<br>
-The breasts of this lady<br>
-were no smaller than apples.<br>
-Above the cleavage of her chest,<br>
-it was white like hawthorn flower.<br>
-She had white arms and white hands,<br>
-her fingers shapely, slender, and smooth.<br>
-She had a fine body and well molded<br>
-from her underarm along her rib.<br>
-She was neither too big nor too small.<br>
-Her frame could never be written.<br>
-The beauty of this lady<br>
-could never be written by any man.<br>
-She was so courteous of speech.<br>
-There was nothing to improve.<br>
-Such a creature makes one lament<br>
-when she does not care about the Creator.<br>
-She received many presents<br>
-and bought herself good garments.<br>
-She had good and fitting clothes<br>
-to better please her lovers.<br>
-She did not care for woollen cloth.<br>
-On the worst day of the week,<br>
-she had a fine purple silk bliaut<br>
-and adorned herself with an ermine mantle.<br>
-Well-painted shoes of Cordovan leather<br>
-she put these on all the days of the year.<br>
-The citizens of the city<br>
-loved her entirely for her beauty.<br>
-The old men and the wise<br>
-would all say, "God, what a shame!<br>
-Oh alas evermore for this suffering!<br>
-There is much to bemoan of her youth.<br>
-Alas evermore for her life<br>
-as it is so full of folly."<br>
-Everyone in the city would say<br>
-that she was of high parentage<br>
-for she answered all with reason<br>
-and had such a beautiful frame<br>
-that the son of an emperor<br>
-could have taken her with great honor.<br>
+<span class="verse-line"><span class="line-number">157</span>Of her beauty, of her figure<br></span>
+<span class="verse-line">as it is in the written source<br></span>
+<span class="verse-line">I want to say a little about her appearance<br></span>
+<span class="verse-line">before I go too far.<br></span>
+<span class="verse-line">For at that time in that reign,<br></span>
+<span class="verse-line"><span class="line-number">162</span>no man saw a more beautiful woman.<br></span>
+<span class="verse-line">Never countess nor queen<br></span>
+<span class="verse-line">had over her brow more beautiful hair.<br></span>
+<span class="verse-line">She had round ears.<br></span>
+<span class="verse-line">What's more, they were marvelously white,<br></span>
+<span class="verse-line"><span class="line-number">167</span>her eyes bright and smiling,<br></span>
+<span class="verse-line">her eyebrows black and becoming,<br></span>
+<span class="verse-line">her little mouth mild,<br></span>
+<span class="verse-line">and pious her gaze,<br></span>
+<span class="verse-line">her face tender and blushing<br></span>
+<span class="verse-line"><span class="line-number">172</span>like the rose that is always in bloom.<br></span>
+<span class="verse-line">Indeed neither on her nose nor on her chin<br></span>
+<span class="verse-line">would you be aware of any defect.<br></span>
+<span class="verse-line">Her neck was white like ermine too.<br></span>
+<span class="verse-line">There flowed her blonde hair.<br></span>
+<span class="verse-line"><span class="line-number">177</span>The breasts of this lady<br></span>
+<span class="verse-line">were no smaller than apples.<br></span>
+<span class="verse-line">Above the cleavage of her chest,<br></span>
+<span class="verse-line">it was white like hawthorn flower.<br></span>
+<span class="verse-line">She had white arms and white hands,<br></span>
+<span class="verse-line"><span class="line-number">182</span>her fingers shapely, slender, and smooth.<br></span>
+<span class="verse-line">She had a fine body and well molded<br></span>
+<span class="verse-line">from her underarm along her rib.<br></span>
+<span class="verse-line">She was neither too big nor too small.<br></span>
+<span class="verse-line">Her frame could never be written.<br></span>
+<span class="verse-line"><span class="line-number">187</span>The beauty of this lady<br></span>
+<span class="verse-line">could never be written by any man.<br></span>
+<span class="verse-line">She was so courteous of speech.<br></span>
+<span class="verse-line">There was nothing to improve.<br></span>
+<span class="verse-line">Such a creature makes one lament<br></span>
+<span class="verse-line"><span class="line-number">192</span>when she does not care about the Creator.<br></span>
+<span class="verse-line">She received many presents<br></span>
+<span class="verse-line">and bought herself good garments.<br></span>
+<span class="verse-line">She had good and fitting clothes<br></span>
+<span class="verse-line">to better please her lovers.<br></span>
+<span class="verse-line"><span class="line-number">197</span>She did not care for woollen cloth.<br></span>
+<span class="verse-line">On the worst day of the week,<br></span>
+<span class="verse-line">she had a fine purple silk bliaut<br></span>
+<span class="verse-line">and adorned herself with an ermine mantle.<br></span>
+<span class="verse-line">Well-painted shoes of Cordovan leather<br></span>
+<span class="verse-line"><span class="line-number">202</span>she put these on all the days of the year.<br></span>
+<span class="verse-line">The citizens of the city<br></span>
+<span class="verse-line">loved her entirely for her beauty.<br></span>
+<span class="verse-line">The old men and the wise<br></span>
+<span class="verse-line">would all say, "God, what a shame!<br></span>
+<span class="verse-line"><span class="line-number">207</span>Oh alas evermore for this suffering!<br></span>
+<span class="verse-line">There is much to bemoan of her youth.<br></span>
+<span class="verse-line">Alas evermore for her life<br></span>
+<span class="verse-line">as it is so full of folly."<br></span>
+<span class="verse-line">Everyone in the city would say<br></span>
+<span class="verse-line"><span class="line-number">212</span>that she was of high parentage<br></span>
+<span class="verse-line">for she answered all with reason<br></span>
+<span class="verse-line">and had such a beautiful frame<br></span>
+<span class="verse-line">that the son of an emperor<br></span>
+<span class="verse-line">could have taken her with great honor.<br></span>
 .....<br>
-So she went by day and by night<br>
-hungry, thirsty, and on hard beds.<br>
-She was so deep in the wood<br>
-that she became entirely wild there,<br>
-but she never forgot<br>
-to pray to saint Mary.<br>
-Often she remembered the image<br>
-on which she had made her pledge.<br>
-Soon her shoes were worn out,<br>
-and soon her clothes were all torn up.<br>
-Her body was left totally naked.<br>
-She did not have clothing that was not in tatters.<br>
-Her own flesh changed color,<br>
-that which before was white like a flower.<br>
-From winter as from summer,<br>
-her sides blackened entirely.<br>
-The color of her blonde hair changed.<br>
-It turned white like an ermine.<br>
-Her mouth was thinned,<br>
-and all around it blackened,<br>
-and her chin was so black<br>
-as though it were tainted with charcoal.<br>
-Thinned were her eyes.<br>
-There was not a shred of pride now.<br>
-If you saw her ears,<br>
-you would really take in a great marvel.<br>
-for they were black and cracked.<br>
-Her white flesh changed entirely<br>
-Black and changed was her chest.<br>
-It seemed like thorny bark.<br>
-There was no more flesh in her breasts,<br>
-no more than there is in a glove.<br>
-Her arms, her hands, and her long fingers<br>
-were blacker than any pitch.<br>
-She had long and large nails.<br>
-She reshaped them with her teeth.<br>
-Her stomach was sunken.<br>
-She put little provisions in there.<br>
-Her feet were split.<br>
-In many places, they were wounded<br>
-for she did not protect herself from thorns<br>
-as she went through the wilderness.<br>
-It seemed to her, in her mind,<br>
-she was not wrong about this at all,<br>
-that one of her sins fell away<br>
-when a thorn pricked her.<br>
-For this, she was so pleased<br>
-as she suffered hardship.<br>
-It was no marvel that she was blackened<br>
-for she led such a severe life.<br>
-After more than forty years in the nude,<br>
-it was no marvel she was wooly.<br>
-She had poor provisions with her.<br>
-Pray, may Jesus have mercy on her.<br>
-She had two breads of no great size.<br>
-On these, she lived for many years.<br>
-In the first year, they became hard<br>
-as though they were building stones.<br>
-Each day, Mary ate some,<br>
-but this was a small portion.<br>
-As soon as she had eaten up all her bread,<br>
-then she plucked the grass nearby.<br>
-Like other beasts she ate it.<br>
-She provided herself with nothing else.<br>
-On her hands, she drank the water from the stream<br>
-as she had no other vessel.<br>
-She does not bemoan her sins<br>
-as her body is so chastised.<br>
-On grass she lived and on roots<br>
-for seventeen years in the wilderness.<br>
-Then for thirty years, she ate nothing<br>
-unless an angel brought it to her.<br>
-In the first year, the devil<br>
-often used to tempt her,<br>
-making her remember all<br>
-that she used to always love.<br>
-The good eats and the beautiful places<br>
-where she was used to playing games.<br>
-Now, she was so blissful<br>
-that she had forgotten all.<br>
-Never then in all her life<br>
-did she think more of folly.<br>
-Never in all the wood<br>
-did any wild beast come to her thereafter<br>
-nor any other living creature.<br>
-Through the forest, she goes completely safe.<br>
-In many places, she took shelter.<br>
-Her life was entirely spiritual.<br>
+<span class="verse-line"><span class="line-number">613</span>So she went by day and by night<br></span>
+<span class="verse-line">hungry, thirsty, and on hard beds.<br></span>
+<span class="verse-line">She was so deep in the wood<br></span>
+<span class="verse-line">that she became entirely wild there,<br></span>
+<span class="verse-line">but she never forgot<br></span>
+<span class="verse-line"><span class="line-number">618</span>to pray to saint Mary.<br></span>
+<span class="verse-line">Often she remembered the image<br></span>
+<span class="verse-line">on which she had made her pledge.<br></span>
+<span class="verse-line">Soon her shoes were worn out,<br></span>
+<span class="verse-line">and soon her clothes were all torn up.<br></span>
+<span class="verse-line"><span class="line-number">623</span>Her body was left totally naked.<br></span>
+<span class="verse-line">She did not have clothing that was not in tatters.<br></span>
+<span class="verse-line">Her own flesh changed color,<br></span>
+<span class="verse-line">that which before was white like a flower.<br></span>
+<span class="verse-line">From winter as from summer,<br></span>
+<span class="verse-line"><span class="line-number">628</span>her sides blackened entirely.<br></span>
+<span class="verse-line">The color of her blonde hair changed.<br></span>
+<span class="verse-line">It turned white like an ermine.<br></span>
+<span class="verse-line">Her mouth was thinned,<br></span>
+<span class="verse-line">and all around it blackened,<br></span>
+<span class="verse-line"><span class="line-number">633</span>and her chin was so black<br></span>
+<span class="verse-line">as though it were tainted with charcoal.<br></span>
+<span class="verse-line">Thinned were her eyes.<br></span>
+<span class="verse-line">There was not a shred of pride now.<br></span>
+<span class="verse-line">If you saw her ears,<br></span>
+<span class="verse-line"><span class="line-number">638</span>you would really take in a great marvel.<br></span>
+<span class="verse-line">for they were black and cracked.<br></span>
+<span class="verse-line">Her white flesh changed entirely<br></span>
+<span class="verse-line">Black and changed was her chest.<br></span>
+<span class="verse-line">It seemed like thorny bark.<br></span>
+<span class="verse-line"><span class="line-number">643</span>There was no more flesh in her breasts,<br></span>
+<span class="verse-line">no more than there is in a glove.<br></span>
+<span class="verse-line">Her arms, her hands, and her long fingers<br></span>
+<span class="verse-line">were blacker than any pitch.<br></span>
+<span class="verse-line">She had long and large nails.<br></span>
+<span class="verse-line"><span class="line-number">648</span>She reshaped them with her teeth.<br></span>
+<span class="verse-line">Her stomach was sunken.<br></span>
+<span class="verse-line">She put little provisions in there.<br></span>
+<span class="verse-line">Her feet were split.<br></span>
+<span class="verse-line">In many places, they were wounded<br></span>
+<span class="verse-line"><span class="line-number">653</span>for she did not protect herself from thorns<br></span>
+<span class="verse-line">as she went through the wilderness.<br></span>
+<span class="verse-line">It seemed to her, in her mind,<br></span>
+<span class="verse-line">she was not wrong about this at all,<br></span>
+<span class="verse-line">that one of her sins fell away<br></span>
+<span class="verse-line"><span class="line-number">658</span>when a thorn pricked her.<br></span>
+<span class="verse-line">For this, she was so pleased<br></span>
+<span class="verse-line">as she suffered hardship.<br></span>
+<span class="verse-line">It was no marvel that she was blackened<br></span>
+<span class="verse-line">for she led such a severe life.<br></span>
+<span class="verse-line"><span class="line-number">663</span>After more than forty years in the nude,<br></span>
+<span class="verse-line">it was no marvel she was wooly.<br></span>
+<span class="verse-line">She had poor provisions with her.<br></span>
+<span class="verse-line">Pray, may Jesus have mercy on her.<br></span>
+<span class="verse-line">She had two breads of no great size.<br></span>
+<span class="verse-line"><span class="line-number">668</span>On these, she lived for many years.<br></span>
+<span class="verse-line">In the first year, they became hard<br></span>
+<span class="verse-line">as though they were building stones.<br></span>
+<span class="verse-line">Each day, Mary ate some,<br></span>
+<span class="verse-line">but this was a small portion.<br></span>
+<span class="verse-line"><span class="line-number">673</span>As soon as she had eaten up all her bread,<br></span>
+<span class="verse-line">then she plucked the grass nearby.<br></span>
+<span class="verse-line">Like other beasts she ate it.<br></span>
+<span class="verse-line">She provided herself with nothing else.<br></span>
+<span class="verse-line">On her hands, she drank the water from the stream<br></span>
+<span class="verse-line"><span class="line-number">678</span>as she had no other vessel.<br></span>
+<span class="verse-line">She does not bemoan her sins<br></span>
+<span class="verse-line">as her body is so chastised.<br></span>
+<span class="verse-line">On grass she lived and on roots<br></span>
+<span class="verse-line">for seventeen years in the wilderness.<br></span>
+<span class="verse-line"><span class="line-number">683</span>Then for thirty years, she ate nothing<br></span>
+<span class="verse-line">unless an angel brought it to her.<br></span>
+<span class="verse-line">In the first year, the devil<br></span>
+<span class="verse-line">often used to tempt her,<br></span>
+<span class="verse-line">making her remember all<br></span>
+<span class="verse-line"><span class="line-number">688</span>that she used to always love.<br></span>
+<span class="verse-line">The good eats and the beautiful places<br></span>
+<span class="verse-line">where she was used to playing games.<br></span>
+<span class="verse-line">Now, she was so blissful<br></span>
+<span class="verse-line">that she had forgotten all.<br></span>
+<span class="verse-line"><span class="line-number">693</span>Never then in all her life<br></span>
+<span class="verse-line">did she think more of folly.<br></span>
+<span class="verse-line">Never in all the wood<br></span>
+<span class="verse-line">did any wild beast come to her thereafter<br></span>
+<span class="verse-line">nor any other living creature.<br></span>
+<span class="verse-line"><span class="line-number">698</span>Through the forest, she goes completely safe.<br></span>
+<span class="verse-line">In many places, she took shelter.<br></span>
+<span class="verse-line">Her life was entirely spiritual.<br></span>
 .....<br>
   </div>
 </div>
@@ -329,276 +329,276 @@ Her life was entirely spiritual.<br>
 <div class="text-container">
   <div class="default-text">
 .....<br>
-de sa biate de sa figure.<br>
-si com ele est en l'escriture<br>
-Vos vuel dire de se senblant.<br>
-ancois que je trespas avant<br>
-Ans en cest mont ne en cest regne.<br>
-Ne vit nuz hom plus bele feme<br>
-Onques ducoise ne roine.<br>
-ne n'ot el cief plus bele crine<br>
-Reondes avoit les orelhes.<br>
-Mais blanches erent a mervelhes<br>
-Les sorciz noirs & avenanz.<br>
-& les olz clers & sorrianz<br>
-La face tenre en celee.ee.<br>
-Com la rose ki or est nee<br>
-Les dens ot blans & bien menuz.<br>
-plus bele boce ne vit nuz<br>
-mut avoit piue regardure.<br>
-& cler le vis & le faiture<br>
-Je cui el neis ne el menton.<br>
-n'avoit un point de mesfacon<br>
-Soz la boce sor le poitrine.<br>
-ert plus blanche ke flors d'espine<br>
-& si avoit beles mameles.<br>
-mut bien seans petiz & beles<br>
-blans bras avoit & blanches mains.<br>
-& les dois grailes lons & plains<br>
-Gent cors avoit & bien moleit.<br>
-desoz l'aisselle & le costeit<br>
-tant ert cortoise de parler<br>
-n'i avoit rien ke amendeir<br>
-N'ert pas trop grant ne trop petite.<br>
-Ja se facons n'en iert descrite<br>
-Ja le beate de ceste toise.<br>
-N'iert descrite se n'i at proise<br>
-a plendre fait tel creature.<br>
-cant de se Creator n'at cure<br>
-ele recivoit grans presenz.<br>
-s'en achatoit chier garnimenz<br>
-bon dras avoit & avenanz.<br>
-por miez plaissir a ses amanz<br>
-& ne vestoit pas dras de laine.<br>
-Le peior jor de la samaine<br>
-Vestoit bon bliat d'osterlin.<br>
-& affiebloit mantel d'ermin<br>
-Solers biens poins de corduan.<br>
-chacoit par toz les jors de l'an<br>
-Li citain de la citeit.<br>
-L'amoient tuit por sa bialteie<br>
-& li viel home & li sage.<br>
-disoient tuit Deus kel damage<br>
-tant mar fut iceste dolente.<br>
-mut fait a plendre sa jovente<br>
-mar fut onques la sue vie.<br>
-que tant est plane de folie<br>
-car a toz respondoit raison.<br>
-tant ert de bele afaitison<br>
-Que li fiz d'un empereor.<br>
-la poist prendre par honor<br>
+<span class="verse-line"><span class="line-number">149</span>de sa biate de sa figure.<br></span>
+<span class="verse-line">si com ele est en l'escriture<br></span>
+<span class="verse-line">Vos vuel dire de se senblant.<br></span>
+<span class="verse-line">ancois que je trespas avant<br></span>
+<span class="verse-line">Ans en cest mont ne en cest regne.<br></span>
+<span class="verse-line"><span class="line-number">154</span>Ne vit nuz hom plus bele feme<br></span>
+<span class="verse-line">Onques ducoise ne roine.<br></span>
+<span class="verse-line">ne n'ot el cief plus bele crine<br></span>
+<span class="verse-line">Reondes avoit les orelhes.<br></span>
+<span class="verse-line">Mais blanches erent a mervelhes<br></span>
+<span class="verse-line"><span class="line-number">159</span>Les sorciz noirs & avenanz.<br></span>
+<span class="verse-line">& les olz clers & sorrianz<br></span>
+<span class="verse-line">La face tenre en celee.ee.<br></span>
+<span class="verse-line">Com la rose ki or est nee<br></span>
+<span class="verse-line">Les dens ot blans & bien menuz.<br></span>
+<span class="verse-line"><span class="line-number">164</span>plus bele boce ne vit nuz<br></span>
+<span class="verse-line">mut avoit piue regardure.<br></span>
+<span class="verse-line">& cler le vis & le faiture<br></span>
+<span class="verse-line">Je cui el neis ne el menton.<br></span>
+<span class="verse-line">n'avoit un point de mesfacon<br></span>
+<span class="verse-line"><span class="line-number">169</span>Soz la boce sor le poitrine.<br></span>
+<span class="verse-line">ert plus blanche ke flors d'espine<br></span>
+<span class="verse-line">& si avoit beles mameles.<br></span>
+<span class="verse-line">mut bien seans petiz & beles<br></span>
+<span class="verse-line">blans bras avoit & blanches mains.<br></span>
+<span class="verse-line"><span class="line-number">174</span>& les dois grailes lons & plains<br></span>
+<span class="verse-line">Gent cors avoit & bien moleit.<br></span>
+<span class="verse-line">desoz l'aisselle & le costeit<br></span>
+<span class="verse-line">tant ert cortoise de parler<br></span>
+<span class="verse-line">n'i avoit rien ke amendeir<br></span>
+<span class="verse-line"><span class="line-number">179</span>N'ert pas trop grant ne trop petite.<br></span>
+<span class="verse-line">Ja se facons n'en iert descrite<br></span>
+<span class="verse-line">Ja le beate de ceste toise.<br></span>
+<span class="verse-line">N'iert descrite se n'i at proise<br></span>
+<span class="verse-line">a plendre fait tel creature.<br></span>
+<span class="verse-line"><span class="line-number">184</span>cant de se Creator n'at cure<br></span>
+<span class="verse-line">ele recivoit grans presenz.<br></span>
+<span class="verse-line">s'en achatoit chier garnimenz<br></span>
+<span class="verse-line">bon dras avoit & avenanz.<br></span>
+<span class="verse-line">por miez plaissir a ses amanz<br></span>
+<span class="verse-line"><span class="line-number">189</span>& ne vestoit pas dras de laine.<br></span>
+<span class="verse-line">Le peior jor de la samaine<br></span>
+<span class="verse-line">Vestoit bon bliat d'osterlin.<br></span>
+<span class="verse-line">& affiebloit mantel d'ermin<br></span>
+<span class="verse-line">Solers biens poins de corduan.<br></span>
+<span class="verse-line"><span class="line-number">194</span>chacoit par toz les jors de l'an<br></span>
+<span class="verse-line">Li citain de la citeit.<br></span>
+<span class="verse-line">L'amoient tuit por sa bialteie<br></span>
+<span class="verse-line">& li viel home & li sage.<br></span>
+<span class="verse-line">disoient tuit Deus kel damage<br></span>
+<span class="verse-line"><span class="line-number">199</span>tant mar fut iceste dolente.<br></span>
+<span class="verse-line">mut fait a plendre sa jovente<br></span>
+<span class="verse-line">mar fut onques la sue vie.<br></span>
+<span class="verse-line">que tant est plane de folie<br></span>
+<span class="verse-line">car a toz respondoit raison.<br></span>
+<span class="verse-line"><span class="line-number">204</span>tant ert de bele afaitison<br></span>
+<span class="verse-line">Que li fiz d'un empereor.<br></span>
+<span class="verse-line">la poist prendre par honor<br></span>
 .....<br>
-tant errat par nuiz & par dis.<br>
-a fain a soit & a durs lis<br>
-Que tant i fut en le boscage.<br>
-qu'ele devint tote salvage<br>
-Senpres furent si drap useit.<br>
-& soi soler tot depaneit<br>
-tant par l'iver tant par l'esteit.<br>
-tot li noicirent li costeit<br>
-Se tenre car muat color.<br>
-qui ans eret blance cum florr<br>
-Color muat sa bele crine.<br>
-blance devint conme l'ermine<br>
-desoz la face eret brulee.<br>
-del soloilh & de la jalee<br>
-La boche li ert atenevie.<br>
-& environ la cars norcie<br>
-& tant avoit noir le menton.<br>
-com se fuist li chies d'un tison<br>
-atenevit erent li oilh.<br>
-or n'i avoit il point d'orgoilh<br>
-se vos en veissiez l'orelhe<br>
-mut vos venist a grant mervelhe<br>
-car maigre ert mut & degregue.<br>
-& de blanc poilh tote mossue<br>
-Noire & polhue ert la poitrine.<br>
-sembloit scorce de noire spine<br>
-Li ventres li ert toz caoiz.<br>
-nient ne manjoit & si ert droiz<br>
-Les ongles avoit ele granz.<br>
-ele les retalloit az danz<br>
-Les piez maigres & decrevez.<br>
-& par plusors lius mut navrez<br>
-car ele nes gardoit d'espine.<br>
-cant el aloit par le gastine<br>
-Ans li ert vis son escient.<br>
-& ele ni faloit nient<br>
-cant une spine li poindoit.<br>
-uns des pechiez jus li chaoit<br>
-Ne fat a plaindre li pechiez.<br>
-dont li cors est si castoiez<br>
-N'ert mervelhe s'ele ert mossue.<br>
-karante ans alat tote nue<br>
-Dous pains avoit ne gaire granz.<br>
-de ces viscat par plusors anz<br>
-Le premier an devinrent dur.<br>
-com ce fust piere de mur<br>
-cascun jor en usoit Marie.<br>
-mais ce astoit mut povre vie<br>
-cant ele ot toz ses pains useiz.<br>
-puis esragat herbes des prez<br>
-com altre beste le manjoit.<br>
-de rien ne se desconfortoit<br>
-Ades bevoit ens el ruisel.<br>
-ele n'avoit altre vaissel<br>
-d'erbes vivoit & de racines.<br>
-dis & uit ans par la gastines<br>
-Puis fut vint ans que ne manja.<br>
-sel angeles Deu ne li porta<br>
-Diables li vint devant premier.<br>
-que mut le soloit anoier<br>
-que li faissoit ramembrer.<br>
-kanque soloit jadis ameir<br>
-Les biaz deliz & les biaz giuz.<br>
-u soloit faire ses deduiz<br>
-Mut fut bieneuree.<br>
-ki de tot ce fut obliee<br>
-unques puis en la sue vie.<br>
-Ne li menbra jor de folie<br>
-Marie vat par le boscage.<br>
-Onques n'i vit beste salvage<br>
-Ne nule vive creature.<br>
-par le forest vat bien segure<br>
-en plusors lius fut ses ostaz.<br>
-sa vie astoit spirituaz<br>
+<span class="verse-line"><span class="line-number">567</span>tant errat par nuiz & par dis.<br></span>
+<span class="verse-line">a fain a soit & a durs lis<br></span>
+<span class="verse-line">Que tant i fut en le boscage.<br></span>
+<span class="verse-line">qu'ele devint tote salvage<br></span>
+<span class="verse-line">Senpres furent si drap useit.<br></span>
+<span class="verse-line"><span class="line-number">572</span>& soi soler tot depaneit<br></span>
+<span class="verse-line">tant par l'iver tant par l'esteit.<br></span>
+<span class="verse-line">tot li noicirent li costeit<br></span>
+<span class="verse-line">Se tenre car muat color.<br></span>
+<span class="verse-line">qui ans eret blance cum florr<br></span>
+<span class="verse-line"><span class="line-number">577</span>Color muat sa bele crine.<br></span>
+<span class="verse-line">blance devint conme l'ermine<br></span>
+<span class="verse-line">desoz la face eret brulee.<br></span>
+<span class="verse-line">del soloilh & de la jalee<br></span>
+<span class="verse-line">La boche li ert atenevie.<br></span>
+<span class="verse-line"><span class="line-number">582</span>& environ la cars norcie<br></span>
+<span class="verse-line">& tant avoit noir le menton.<br></span>
+<span class="verse-line">com se fuist li chies d'un tison<br></span>
+<span class="verse-line">atenevit erent li oilh.<br></span>
+<span class="verse-line">or n'i avoit il point d'orgoilh<br></span>
+<span class="verse-line"><span class="line-number">587</span>se vos en veissiez l'orelhe<br></span>
+<span class="verse-line">mut vos venist a grant mervelhe<br></span>
+<span class="verse-line">car maigre ert mut & degregue.<br></span>
+<span class="verse-line">& de blanc poilh tote mossue<br></span>
+<span class="verse-line">Noire & polhue ert la poitrine.<br></span>
+<span class="verse-line"><span class="line-number">592</span>sembloit scorce de noire spine<br></span>
+<span class="verse-line">Li ventres li ert toz caoiz.<br></span>
+<span class="verse-line">nient ne manjoit & si ert droiz<br></span>
+<span class="verse-line">Les ongles avoit ele granz.<br></span>
+<span class="verse-line">ele les retalloit az danz<br></span>
+<span class="verse-line"><span class="line-number">597</span>Les piez maigres & decrevez.<br></span>
+<span class="verse-line">& par plusors lius mut navrez<br></span>
+<span class="verse-line">car ele nes gardoit d'espine.<br></span>
+<span class="verse-line">cant el aloit par le gastine<br></span>
+<span class="verse-line">Ans li ert vis son escient.<br></span>
+<span class="verse-line"><span class="line-number">602</span>& ele ni faloit nient<br></span>
+<span class="verse-line">cant une spine li poindoit.<br></span>
+<span class="verse-line">uns des pechiez jus li chaoit<br></span>
+<span class="verse-line">Ne fat a plaindre li pechiez.<br></span>
+<span class="verse-line">dont li cors est si castoiez<br></span>
+<span class="verse-line"><span class="line-number">607</span>N'ert mervelhe s'ele ert mossue.<br></span>
+<span class="verse-line">karante ans alat tote nue<br></span>
+<span class="verse-line">Dous pains avoit ne gaire granz.<br></span>
+<span class="verse-line">de ces viscat par plusors anz<br></span>
+<span class="verse-line">Le premier an devinrent dur.<br></span>
+<span class="verse-line"><span class="line-number">612</span>com ce fust piere de mur<br></span>
+<span class="verse-line">cascun jor en usoit Marie.<br></span>
+<span class="verse-line">mais ce astoit mut povre vie<br></span>
+<span class="verse-line">cant ele ot toz ses pains useiz.<br></span>
+<span class="verse-line">puis esragat herbes des prez<br></span>
+<span class="verse-line"><span class="line-number">617</span>com altre beste le manjoit.<br></span>
+<span class="verse-line">de rien ne se desconfortoit<br></span>
+<span class="verse-line">Ades bevoit ens el ruisel.<br></span>
+<span class="verse-line">ele n'avoit altre vaissel<br></span>
+<span class="verse-line">d'erbes vivoit & de racines.<br></span>
+<span class="verse-line"><span class="line-number">622</span>dis & uit ans par la gastines<br></span>
+<span class="verse-line">Puis fut vint ans que ne manja.<br></span>
+<span class="verse-line">sel angeles Deu ne li porta<br></span>
+<span class="verse-line">Diables li vint devant premier.<br></span>
+<span class="verse-line">que mut le soloit anoier<br></span>
+<span class="verse-line"><span class="line-number">627</span>que li faissoit ramembrer.<br></span>
+<span class="verse-line">kanque soloit jadis ameir<br></span>
+<span class="verse-line">Les biaz deliz & les biaz giuz.<br></span>
+<span class="verse-line">u soloit faire ses deduiz<br></span>
+<span class="verse-line">Mut fut bieneuree.<br></span>
+<span class="verse-line"><span class="line-number">632</span>ki de tot ce fut obliee<br></span>
+<span class="verse-line">unques puis en la sue vie.<br></span>
+<span class="verse-line">Ne li menbra jor de folie<br></span>
+<span class="verse-line">Marie vat par le boscage.<br></span>
+<span class="verse-line">Onques n'i vit beste salvage<br></span>
+<span class="verse-line"><span class="line-number">637</span>Ne nule vive creature.<br></span>
+<span class="verse-line">par le forest vat bien segure<br></span>
+<span class="verse-line">en plusors lius fut ses ostaz.<br></span>
+<span class="verse-line">sa vie astoit spirituaz<br></span>
 .....<br>
   </div>
   <div class="hover-text">
 .....<br>
-Of her beauty, of her figure<br>
-as it is in the written source<br>
-I want to tell you about her appearance.<br>
-before I go too far.<br>
-In this world and in this reign,<br>
-no man saw a more beautiful woman.<br>
-Never duchess nor queen<br>
-had on her head more beautiful hair.<br>
-She had round ears.<br>
-What's more, they were marvelously white,<br>
-her eyebrows black and becoming,<br>
-and her eyes bright and smiling,<br>
-her face tender and covered<br>
-like the rose that has only just bloomed.<br>
-Her teeth were white and quite small.<br>
-A more beautiful mouth no one ever saw.<br>
-She had such a pious gaze,<br>
-and her look and her features bright.<br>
-I believe on her nose and on her chin<br>
-there was no defect at all.<br>
-Above the bump on her chest,<br>
-it was whiter than hawthorn flower,<br>
-and of course she had beautiful breasts,<br>
-so well set, small, and beautiful.<br>
-She had white arms and white hands,<br>
-and her fingers slender, long, and smooth.<br>
-She had a fine body and was well molded<br>
-beneath her underarm and her rib.<br>
-She was so courteous of speech.<br>
-There was nothing to improve.<br>
-She was neither too big nor too small.<br>
-Her frame could never be described.<br>
-The beauty of these proportions<br>
-could neither be described nor appraised<br>
-Such a creature makes one lament<br>
-when she does not care about her Creator.<br>
-She received great presents<br>
-and bought herself expensive garments.<br>
-She had good and fitting clothes<br>
-to better please her lovers,<br>
-and she did not wear woollen cloth.<br>
-The worst day of the week,<br>
-she wore a fine purple silk bliaut<br>
-and adorned herself with an ermine mantle.<br>
-Well-painted shoes of Cordovan leather<br>
-she put these on all the days of the year.<br>
-The citizens of the city<br>
-loved her entirely for her beauty,<br>
-and the old men and the wise<br>
-would all say, "God, what a shame!<br>
-Alas for this suffering!<br>
-There is much to bemoan of her youth.<br>
-Alas evermore for her life<br>
-is so full of folly."<br>
-As she answered all with reason<br>
-and had such a beautiful frame,<br>
-the son of an emperor<br>
-could have taken her with honor.<br>
+<span class="verse-line"><span class="line-number">149</span>Of her beauty, of her figure<br></span>
+<span class="verse-line">as it is in the written source<br></span>
+<span class="verse-line">I want to tell you about her appearance.<br></span>
+<span class="verse-line">before I go too far.<br></span>
+<span class="verse-line">In this world and in this reign,<br></span>
+<span class="verse-line"><span class="line-number">154</span>no man saw a more beautiful woman.<br></span>
+<span class="verse-line">Never duchess nor queen<br></span>
+<span class="verse-line">had on her head more beautiful hair.<br></span>
+<span class="verse-line">She had round ears.<br></span>
+<span class="verse-line">What's more, they were marvelously white,<br></span>
+<span class="verse-line"><span class="line-number">159</span>her eyebrows black and becoming,<br></span>
+<span class="verse-line">and her eyes bright and smiling,<br></span>
+<span class="verse-line">her face tender and covered<br></span>
+<span class="verse-line">like the rose that has only just bloomed.<br></span>
+<span class="verse-line">Her teeth were white and quite small.<br></span>
+<span class="verse-line"><span class="line-number">164</span>A more beautiful mouth no one ever saw.<br></span>
+<span class="verse-line">She had such a pious gaze,<br></span>
+<span class="verse-line">and her look and her features bright.<br></span>
+<span class="verse-line">I believe on her nose and on her chin<br></span>
+<span class="verse-line">there was no defect at all.<br></span>
+<span class="verse-line"><span class="line-number">169</span>Above the bump on her chest,<br></span>
+<span class="verse-line">it was whiter than hawthorn flower,<br></span>
+<span class="verse-line">and of course she had beautiful breasts,<br></span>
+<span class="verse-line">so well set, small, and beautiful.<br></span>
+<span class="verse-line">She had white arms and white hands,<br></span>
+<span class="verse-line"><span class="line-number">174</span>and her fingers slender, long, and smooth.<br></span>
+<span class="verse-line">She had a fine body and was well molded<br></span>
+<span class="verse-line">beneath her underarm and her rib.<br></span>
+<span class="verse-line">She was so courteous of speech.<br></span>
+<span class="verse-line">There was nothing to improve.<br></span>
+<span class="verse-line"><span class="line-number">179</span>She was neither too big nor too small.<br></span>
+<span class="verse-line">Her frame could never be described.<br></span>
+<span class="verse-line">The beauty of these proportions<br></span>
+<span class="verse-line">could neither be described nor appraised<br></span>
+<span class="verse-line">Such a creature makes one lament<br></span>
+<span class="verse-line"><span class="line-number">184</span>when she does not care about her Creator.<br></span>
+<span class="verse-line">She received great presents<br></span>
+<span class="verse-line">and bought herself expensive garments.<br></span>
+<span class="verse-line">She had good and fitting clothes<br></span>
+<span class="verse-line">to better please her lovers,<br></span>
+<span class="verse-line"><span class="line-number">189</span>and she did not wear woollen cloth.<br></span>
+<span class="verse-line">The worst day of the week,<br></span>
+<span class="verse-line">she wore a fine purple silk bliaut<br></span>
+<span class="verse-line">and adorned herself with an ermine mantle.<br></span>
+<span class="verse-line">Well-painted shoes of Cordovan leather<br></span>
+<span class="verse-line"><span class="line-number">194</span>she put these on all the days of the year.<br></span>
+<span class="verse-line">The citizens of the city<br></span>
+<span class="verse-line">loved her entirely for her beauty,<br></span>
+<span class="verse-line">and the old men and the wise<br></span>
+<span class="verse-line">would all say, "God, what a shame!<br></span>
+<span class="verse-line"><span class="line-number">199</span>Alas for this suffering!<br></span>
+<span class="verse-line">There is much to bemoan of her youth.<br></span>
+<span class="verse-line">Alas evermore for her life<br></span>
+<span class="verse-line">is so full of folly."<br></span>
+<span class="verse-line">As she answered all with reason<br></span>
+<span class="verse-line"><span class="line-number">204</span>and had such a beautiful frame,<br></span>
+<span class="verse-line">the son of an emperor<br></span>
+<span class="verse-line">could have taken her with honor.<br></span>
 .....<br>
-So she roamed by night and by day<br>
-hungry, thirsty, and on hard beds.<br>
-Like that, there she was in the wood,<br>
-and so, she became entirely wild.<br>
-Soon, her clothes were worn out,<br>
-and soon her soles were torn up.<br>
-As much from winter as from summer,<br>
-her sides blackened entirely.<br>
-Her tender flesh changed color,<br>
-which before was white like a flower.<br>
-The color of her beautiful hair changed.<br>
-It turned white like the ermine.<br>
-Under that, her face was burned<br>
-from the sun and from the frost.<br>
-Her mouth was thinned,<br>
-and her flesh around it blackened,<br>
-and her chin was so black<br>
-as if it were the head of a firebrand.<br>
-Thinned were her eyes.<br>
-There was not a shred of pride now.<br>
-If you saw her ears,<br>
-you would come upon a great marvel<br>
-for they were so skinny and degraded<br>
-and all wooly with white hairs.<br>
-Black and hairy was her chest.<br>
-It seemed like black thorny bark.<br>
-Her stomach was all sunken.<br>
-She ate nothing and so that was right.<br>
-She had large nails.<br>
-She reshaped them with her teeth.<br>
-Her feet were skinny and split,<br>
-and in many places were so wounded<br>
-for she did not protect them from thorns<br>
-as she went through the wilderness.<br>
-So it seemed to her, in her mind,<br>
-and she was not wrong about this at all,<br>
-as a thorn pricked her,<br>
-one of her sins fell down from her.<br>
-She does not bemoan her sins<br>
-as her body is so chastised.<br>
-It was no marvel that she was wooly;<br>
-for forty years, she went totally nude.<br>
-She had two breads of no great size.<br>
-On these, she lived for many years.<br>
-The first year they became hard<br>
-as though they were building stone.<br>
-Every day, Mary ate some,<br>
-but this was a very poor life.<br>
-As soon as she had eaten up all her bread,<br>
-then she went wild for the grasses nearby<br>
-Like other beasts, she ate them.<br>
-She provided herself with nothing else.<br>
-She drank from the stream all the time.<br>
-She had no other vessel.<br>
-On grasses she lived and on roots<br> 
-for eighteen years in the wilderness.<br>
-Then for twenty years, she only ate<br>
-what the angel of God brought to her.<br>
-The devil came before her first.<br>
-He used to annoy her so much<br>
-making her remember<br>
-whatever she once used to love,<br>
-the beautiful delights and the beautiful games<br>
-in which she used to take pleasure.<br>
-She was so blissful<br>
-that she had fogotten all of this.<br>
-Never again in her life<br>
-did she bring to mind a day of folly.<br>
-Mary goes through the wood.<br>
-Never did she see a wild beast<br>
-nor any living creature.<br>
-Through the forest, she goes so secure.<br>
-In many places, she was sheltered.<br>
-Her life was spiritual.<br>
+<span class="verse-line"><span class="line-number">567</span>So she roamed by night and by day<br></span>
+<span class="verse-line">hungry, thirsty, and on hard beds.<br></span>
+<span class="verse-line">Like that, there she was in the wood,<br></span>
+<span class="verse-line">and so, she became entirely wild.<br></span>
+<span class="verse-line">Soon, her clothes were worn out,<br></span>
+<span class="verse-line"><span class="line-number">572</span>and soon her soles were torn up.<br></span>
+<span class="verse-line">As much from winter as from summer,<br></span>
+<span class="verse-line">her sides blackened entirely.<br></span>
+<span class="verse-line">Her tender flesh changed color,<br></span>
+<span class="verse-line">which before was white like a flower.<br></span>
+<span class="verse-line"><span class="line-number">577</span>The color of her beautiful hair changed.<br></span>
+<span class="verse-line">It turned white like the ermine.<br></span>
+<span class="verse-line">Under that, her face was burned<br></span>
+<span class="verse-line">from the sun and from the frost.<br></span>
+<span class="verse-line">Her mouth was thinned,<br></span>
+<span class="verse-line"><span class="line-number">582</span>and her flesh around it blackened,<br></span>
+<span class="verse-line">and her chin was so black<br></span>
+<span class="verse-line">as if it were the head of a firebrand.<br></span>
+<span class="verse-line">Thinned were her eyes.<br></span>
+<span class="verse-line">There was not a shred of pride now.<br></span>
+<span class="verse-line"><span class="line-number">587</span>If you saw her ears,<br></span>
+<span class="verse-line">you would come upon a great marvel<br></span>
+<span class="verse-line">for they were so skinny and degraded<br></span>
+<span class="verse-line">and all wooly with white hairs.<br></span>
+<span class="verse-line">Black and hairy was her chest.<br></span>
+<span class="verse-line"><span class="line-number">592</span>It seemed like black thorny bark.<br></span>
+<span class="verse-line">Her stomach was all sunken.<br></span>
+<span class="verse-line">She ate nothing and so that was right.<br></span>
+<span class="verse-line">She had large nails.<br></span>
+<span class="verse-line">She reshaped them with her teeth.<br></span>
+<span class="verse-line"><span class="line-number">597</span>Her feet were skinny and split,<br></span>
+<span class="verse-line">and in many places were so wounded<br></span>
+<span class="verse-line">for she did not protect them from thorns<br></span>
+<span class="verse-line">as she went through the wilderness.<br></span>
+<span class="verse-line">So it seemed to her, in her mind,<br></span>
+<span class="verse-line"><span class="line-number">602</span>and she was not wrong about this at all,<br></span>
+<span class="verse-line">as a thorn pricked her,<br></span>
+<span class="verse-line">one of her sins fell down from her.<br></span>
+<span class="verse-line">She does not bemoan her sins<br></span>
+<span class="verse-line">as her body is so chastised.<br></span>
+<span class="verse-line"><span class="line-number">607</span>It was no marvel that she was wooly;<br></span>
+<span class="verse-line">for forty years, she went totally nude.<br></span>
+<span class="verse-line">She had two breads of no great size.<br></span>
+<span class="verse-line">On these, she lived for many years.<br></span>
+<span class="verse-line">The first year they became hard<br></span>
+<span class="verse-line"><span class="line-number">612</span>as though they were building stone.<br></span>
+<span class="verse-line">Every day, Mary ate some,<br></span>
+<span class="verse-line">but this was a very poor life.<br></span>
+<span class="verse-line">As soon as she had eaten up all her bread,<br></span>
+<span class="verse-line">then she went wild for the grasses nearby<br></span>
+<span class="verse-line"><span class="line-number">617</span>Like other beasts, she ate them.<br></span>
+<span class="verse-line">She provided herself with nothing else.<br></span>
+<span class="verse-line">She drank from the stream all the time.<br></span>
+<span class="verse-line">She had no other vessel.<br></span>
+<span class="verse-line">On grasses she lived and on roots<br></span> 
+<span class="verse-line"><span class="line-number">622</span>for eighteen years in the wilderness.<br></span>
+<span class="verse-line">Then for twenty years, she only ate<br></span>
+<span class="verse-line">what the angel of God brought to her.<br></span>
+<span class="verse-line">The devil came before her first.<br></span>
+<span class="verse-line">He used to annoy her so much<br></span>
+<span class="verse-line"><span class="line-number">627</span>making her remember<br></span>
+<span class="verse-line">whatever she once used to love,<br></span>
+<span class="verse-line">the beautiful delights and the beautiful games<br></span>
+<span class="verse-line">in which she used to take pleasure.<br></span>
+<span class="verse-line">She was so blissful<br></span>
+<span class="verse-line"><span class="line-number">632</span>that she had fogotten all of this.<br></span>
+<span class="verse-line">Never again in her life<br></span>
+<span class="verse-line">did she bring to mind a day of folly.<br></span>
+<span class="verse-line">Mary goes through the wood.<br></span>
+<span class="verse-line">Never did she see a wild beast<br></span>
+<span class="verse-line"><span class="line-number">637</span>nor any living creature.<br></span>
+<span class="verse-line">Through the forest, she goes so secure.<br></span>
+<span class="verse-line">In many places, she was sheltered.<br></span>
+<span class="verse-line">Her life was spiritual.<br></span>
 .....<br>
   </div>
 </div>
@@ -609,312 +609,312 @@ Her life was spiritual.<br>
 <div class="text-container">
   <div class="default-text">
 .....<br>
-De sa beaute de sa figure<br>
-Si cum il est en escripture .<br>
-Voil un poi dire le semblant<br>
-Ainz co ke jo pas avant .<br>
-A iceu tens n'ert si bele femme<br>
-kar ele estoit sur tutes gemme .<br>
-Onke cuntesse ne reine<br>
-N'ot el chief si bele crine .<br>
-Rondes avoit les oreilles<br>
-Tres blanches erent a merveilles .<br>
-Les surcius noirs e avenanz<br>
-e les oils clers e suz rianz .<br>
-La buche petite par mesure<br>
-e simple avoit la regardure .<br>
-La face tendre e coluree<br>
-Cum rose qui sempres est nee .<br>
-Ne ja au nes n'au mentun<br>
-N'aparceussez meffacon .<br>
-Par sum le col blanc com ermine<br>
-Lui undoit la bloie crine .<br>
-Chascun des traianz la dame<br>
-N'iert pas maire d'une pome .<br>
-Suz la gule en la peitrine<br>
-ert blanche come fleur d'espine .<br>
-Lung braz avoit e blanche mains<br>
-Les dois ronz.greilles e pleins .<br>
-Gent cors avoit e bien moullez<br>
-Desuz l'essele les long costez .<br>
-Ne feut trop grant ne trop petite<br>
-Sa facon n'iert ja descrite .<br>
-Ne la beaute de ceste dame<br>
-N'iert ja descrite pur nul aume .<br>
-Tant ert cortoise de parler<br>
-Riens n'i avoit k'amender .<br>
-A pleindre fist teu creature<br>
-Quant de sun Creatur n'ot cure .<br>
-ele recevrit mut presenz<br>
-S'en achatot beau vestemenz .<br>
-Bons dras avoit e avenanz<br>
-Pur menz pleire a ses amanz .<br>
-ele n'avoit soign de dras de leine<br>
-Par nul des jurs de la sumeine .<br>
-Ainz vesteit bliauz de osterin<br>
-e affublout mantel d'ermin .<br>
-Sollers bien peinz de cordewan<br>
-Chaucot trestuz les jurs del an .<br>
-Trestuz cous de la cite<br>
-L'amoient pur la beaute .<br>
-Li ancien hom e li sage<br>
-Disoient. hai. queu damage .<br>
-Tant mar fu nee la dolente<br>
-Tant fet a pleindre sa juvente .<br>
-Mar feut onke la sue vie<br>
-Quant si est pleine de folie .<br>
-Tuz diseient par la citez<br>
-k'ele estoit de grant parentez .<br>
-kar a tuz respont par reison<br>
-e tant ert bele de fascon .<br>
-ke li fiz d'un empereur<br>
-La peust prendre a gran honur .<br>
+<span class="verse-line"><span class="line-number">159</span>De sa beaute de sa figure<br></span>
+<span class="verse-line">Si cum il est en escripture .<br></span>
+<span class="verse-line">Voil un poi dire le semblant<br></span>
+<span class="verse-line">Ainz co ke jo pas avant .<br></span>
+<span class="verse-line">A iceu tens n'ert si bele femme<br></span>
+<span class="verse-line"><span class="line-number">164</span>kar ele estoit sur tutes gemme .<br></span>
+<span class="verse-line">Onke cuntesse ne reine<br></span>
+<span class="verse-line">N'ot el chief si bele crine .<br></span>
+<span class="verse-line">Rondes avoit les oreilles<br></span>
+<span class="verse-line">Tres blanches erent a merveilles .<br></span>
+<span class="verse-line"><span class="line-number">169</span>Les surcius noirs e avenanz<br></span>
+<span class="verse-line">e les oils clers e suz rianz .<br></span>
+<span class="verse-line">La buche petite par mesure<br></span>
+<span class="verse-line">e simple avoit la regardure .<br></span>
+<span class="verse-line">La face tendre e coluree<br></span>
+<span class="verse-line"><span class="line-number">174</span>Cum rose qui sempres est nee .<br></span>
+<span class="verse-line">Ne ja au nes n'au mentun<br></span>
+<span class="verse-line">N'aparceussez meffacon .<br></span>
+<span class="verse-line">Par sum le col blanc com ermine<br></span>
+<span class="verse-line">Lui undoit la bloie crine .<br></span>
+<span class="verse-line"><span class="line-number">179</span>Chascun des traianz la dame<br></span>
+<span class="verse-line">N'iert pas maire d'une pome .<br></span>
+<span class="verse-line">Suz la gule en la peitrine<br></span>
+<span class="verse-line">ert blanche come fleur d'espine .<br></span>
+<span class="verse-line">Lung braz avoit e blanche mains<br></span>
+<span class="verse-line"><span class="line-number">184</span>Les dois ronz.greilles e pleins .<br></span>
+<span class="verse-line">Gent cors avoit e bien moullez<br></span>
+<span class="verse-line">Desuz l'essele les long costez .<br></span>
+<span class="verse-line">Ne feut trop grant ne trop petite<br></span>
+<span class="verse-line">Sa facon n'iert ja descrite .<br></span>
+<span class="verse-line"><span class="line-number">189</span>Ne la beaute de ceste dame<br></span>
+<span class="verse-line">N'iert ja descrite pur nul aume .<br></span>
+<span class="verse-line">Tant ert cortoise de parler<br></span>
+<span class="verse-line">Riens n'i avoit k'amender .<br></span>
+<span class="verse-line">A pleindre fist teu creature<br></span>
+<span class="verse-line"><span class="line-number">194</span>Quant de sun Creatur n'ot cure .<br></span>
+<span class="verse-line">ele recevrit mut presenz<br></span>
+<span class="verse-line">S'en achatot beau vestemenz .<br></span>
+<span class="verse-line">Bons dras avoit e avenanz<br></span>
+<span class="verse-line">Pur menz pleire a ses amanz .<br></span>
+<span class="verse-line"><span class="line-number">199</span>ele n'avoit soign de dras de leine<br></span>
+<span class="verse-line">Par nul des jurs de la sumeine .<br></span>
+<span class="verse-line">Ainz vesteit bliauz de osterin<br></span>
+<span class="verse-line">e affublout mantel d'ermin .<br></span>
+<span class="verse-line">Sollers bien peinz de cordewan<br></span>
+<span class="verse-line"><span class="line-number">204</span>Chaucot trestuz les jurs del an .<br></span>
+<span class="verse-line">Trestuz cous de la cite<br></span>
+<span class="verse-line">L'amoient pur la beaute .<br></span>
+<span class="verse-line">Li ancien hom e li sage<br></span>
+<span class="verse-line">Disoient. hai. queu damage .<br></span>
+<span class="verse-line"><span class="line-number">209</span>Tant mar fu nee la dolente<br></span>
+<span class="verse-line">Tant fet a pleindre sa juvente .<br></span>
+<span class="verse-line">Mar feut onke la sue vie<br></span>
+<span class="verse-line">Quant si est pleine de folie .<br></span>
+<span class="verse-line">Tuz diseient par la citez<br></span>
+<span class="verse-line"><span class="line-number">214</span>k'ele estoit de grant parentez .<br></span>
+<span class="verse-line">kar a tuz respont par reison<br></span>
+<span class="verse-line">e tant ert bele de fascon .<br></span>
+<span class="verse-line">ke li fiz d'un empereur<br></span>
+<span class="verse-line">La peust prendre a gran honur .<br></span>
 .....<br>
-Tant alad ke jurs ke nuiz<br>
-Od feims od seifs & od dur liz .<br>
-ke tant parfond feut en boscage<br>
-Tote devint illoec salvage .<br>
-mes ele ne s'obliat mie<br>
-De deprier saincte Marie .<br>
-sovent li membre de l'ymage<br>
-k'ele avoit mis en hostage .<br>
-si drapel furent tost usez<br>
-e si souler tut deramez .<br>
-kant li drapel erent rumpu<br>
-Le cors de lui remist tut nu .<br>
-La char de lui mua colur<br>
-k'einz ert blanche come flur .<br>
-ke de l'yver ke de l'este<br>
-Tut li nercirent li coste .<br>
-Colur muat la bloie crine<br>
-Blanche devint com ermine .<br>
-La face lui estoit bruillee<br>
-Del grant soleil e de gelee .<br>
-La buche li ert entenvie<br>
-e d'environ tote en nercie .<br>
-e tant avoit neir le menton<br>
-come co feust chief d'un tison .<br>
-Teint e nerci erent li oil<br>
-Rien n'i ot ore d'orgoil .<br>
-se vos regardisez s'oreille<br>
-mut vos serroit grant merveille .<br>
-car megres estoit e descrue<br>
-e de blanc peil tote mossue<br>
-Noire e mossue ert la peitrine<br>
-L'escorce semblout d'espine .<br>
-N'avoit plus char en sa triant<br>
-Ne mes ke n'ad en un gant .<br>
-Les braz les mains e les lung dois<br>
-Avoit plus noirs ke nule poiz .<br>
-Les ungles avoit ele mut grenz<br>
-Si les retaillot de ses denz .<br>
-Li ventre tut lui ert caeiz<br>
-Guere ne mangot. co ert droiz .<br>
-Les piez lui erent escrevez<br>
-en plusur lius furent nafrez .<br>
-k'ele ne se gardoit d'espine<br>
-kant ele alot par la guastine .<br>
-Co lui ert vis son escient<br>
-Pur voir de co ne failli nient .<br>
-k'un de ses pechiez chaeit<br>
-kant une espine la puigneit .<br>
-Pur co feut ele mut lee<br>
-kant ele suffri teu haschee .<br>
-N'ert merveille se feust nercie<br>
-ke mut demenot aspre vie .<br>
-plus de quarante anz ala nue<br>
-Ne fu merveille s'ert mossue .<br>
-Povre despense avoit od lui<br>
-Ore ait de lui Jhesu merci .<br>
-Dous pains avoit ne guere granz<br>
-De ces se garit plusurs anz .<br>
-Tut al premor devindrent dur<br>
-Cum s'il feusent fet de mur .<br>
-Chescun jor en usout Marie<br>
-mes co ert petite partie .<br>
-kant ele out son pain use<br>
-Doncs arracot l'erbe du pre .<br>
-Com autre beste la mangot<br>
-De rien ne se desconfortout .<br>
-Adenz leveit un rosel<br>
-Dont beut n'ot autre vessel .<br>
-Ne fet a pleindre le pechie<br>
-Dont le cors fu si chastie .<br>
-D'erbe vesquit e de racine<br>
-Dis e ut. anz en la gastine .<br>
-pus fu trente anz onc ne manga<br>
-si l'angle Deu ne lui porta .<br>
-Diables la veneient esprimer<br>
-Sovent la soleient assaer .<br>
-Tut co lui firent remembrer<br>
-k'ele soleit ja dis amer .<br>
-Les bons mangers e les beau lius<br>
-Ou ele soleit fere ses gius .<br>
-Lors feut ele si bonureie<br>
-ke de rien n'ert attameie .<br>
-unk en tote soue vie<br>
-Ne lui sovint puis de folie .<br>
-Ne puis en trestut le boscage<br>
-Ne vit guere beste sauvage .<br>
-N'autre vive creature<br>
-Par la forest vait tute sure .<br>
-en plusur lius prent son hostal<br>
-Sa vie est tute espirital .<br>
+<span class="verse-line"><span class="line-number">623</span>Tant alad ke jurs ke nuiz<br></span>
+<span class="verse-line">Od feims od seifs & od dur liz .<br></span>
+<span class="verse-line">ke tant parfond feut en boscage<br></span>
+<span class="verse-line">Tote devint illoec salvage .<br></span>
+<span class="verse-line">mes ele ne s'obliat mie<br></span>
+<span class="verse-line"><span class="line-number">628</span>De deprier saincte Marie .<br></span>
+<span class="verse-line">sovent li membre de l'ymage<br></span>
+<span class="verse-line">k'ele avoit mis en hostage .<br></span>
+<span class="verse-line">si drapel furent tost usez<br></span>
+<span class="verse-line">e si souler tut deramez .<br></span>
+<span class="verse-line"><span class="line-number">633</span>kant li drapel erent rumpu<br></span>
+<span class="verse-line">Le cors de lui remist tut nu .<br></span>
+<span class="verse-line">La char de lui mua colur<br></span>
+<span class="verse-line">k'einz ert blanche come flur .<br></span>
+<span class="verse-line">ke de l'yver ke de l'este<br></span>
+<span class="verse-line"><span class="line-number">638</span>Tut li nercirent li coste .<br></span>
+<span class="verse-line">Colur muat la bloie crine<br></span>
+<span class="verse-line">Blanche devint com ermine .<br></span>
+<span class="verse-line">La face lui estoit bruillee<br></span>
+<span class="verse-line">Del grant soleil e de gelee .<br></span>
+<span class="verse-line"><span class="line-number">643</span>La buche li ert entenvie<br></span>
+<span class="verse-line">e d'environ tote en nercie .<br></span>
+<span class="verse-line">e tant avoit neir le menton<br></span>
+<span class="verse-line">come co feust chief d'un tison .<br></span>
+<span class="verse-line">Teint e nerci erent li oil<br></span>
+<span class="verse-line"><span class="line-number">648</span>Rien n'i ot ore d'orgoil .<br></span>
+<span class="verse-line">se vos regardisez s'oreille<br></span>
+<span class="verse-line">mut vos serroit grant merveille .<br></span>
+<span class="verse-line">car megres estoit e descrue<br></span>
+<span class="verse-line">e de blanc peil tote mossue<br></span>
+<span class="verse-line"><span class="line-number">653</span>Noire e mossue ert la peitrine<br></span>
+<span class="verse-line">L'escorce semblout d'espine .<br></span>
+<span class="verse-line">N'avoit plus char en sa triant<br></span>
+<span class="verse-line">Ne mes ke n'ad en un gant .<br></span>
+<span class="verse-line">Les braz les mains e les lung dois<br></span>
+<span class="verse-line"><span class="line-number">658</span>Avoit plus noirs ke nule poiz .<br></span>
+<span class="verse-line">Les ungles avoit ele mut grenz<br></span>
+<span class="verse-line">Si les retaillot de ses denz .<br></span>
+<span class="verse-line">Li ventre tut lui ert caeiz<br></span>
+<span class="verse-line">Guere ne mangot. co ert droiz .<br></span>
+<span class="verse-line"><span class="line-number">663</span>Les piez lui erent escrevez<br></span>
+<span class="verse-line">en plusur lius furent nafrez .<br></span>
+<span class="verse-line">k'ele ne se gardoit d'espine<br></span>
+<span class="verse-line">kant ele alot par la guastine .<br></span>
+<span class="verse-line">Co lui ert vis son escient<br></span>
+<span class="verse-line"><span class="line-number">668</span>Pur voir de co ne failli nient .<br></span>
+<span class="verse-line">k'un de ses pechiez chaeit<br></span>
+<span class="verse-line">kant une espine la puigneit .<br></span>
+<span class="verse-line">Pur co feut ele mut lee<br></span>
+<span class="verse-line">kant ele suffri teu haschee .<br></span>
+<span class="verse-line"><span class="line-number">673</span>N'ert merveille se feust nercie<br></span>
+<span class="verse-line">ke mut demenot aspre vie .<br></span>
+<span class="verse-line">plus de quarante anz ala nue<br></span>
+<span class="verse-line">Ne fu merveille s'ert mossue .<br></span>
+<span class="verse-line">Povre despense avoit od lui<br></span>
+<span class="verse-line"><span class="line-number">678</span>Ore ait de lui Jhesu merci .<br></span>
+<span class="verse-line">Dous pains avoit ne guere granz<br></span>
+<span class="verse-line">De ces se garit plusurs anz .<br></span>
+<span class="verse-line">Tut al premor devindrent dur<br></span>
+<span class="verse-line">Cum s'il feusent fet de mur .<br></span>
+<span class="verse-line"><span class="line-number">683</span>Chescun jor en usout Marie<br></span>
+<span class="verse-line">mes co ert petite partie .<br></span>
+<span class="verse-line">kant ele out son pain use<br></span>
+<span class="verse-line">Doncs arracot l'erbe du pre .<br></span>
+<span class="verse-line">Com autre beste la mangot<br></span>
+<span class="verse-line"><span class="line-number">688</span>De rien ne se desconfortout .<br></span>
+<span class="verse-line">Adenz leveit un rosel<br></span>
+<span class="verse-line">Dont beut n'ot autre vessel .<br></span>
+<span class="verse-line">Ne fet a pleindre le pechie<br></span>
+<span class="verse-line">Dont le cors fu si chastie .<br></span>
+<span class="verse-line"><span class="line-number">693</span>D'erbe vesquit e de racine<br></span>
+<span class="verse-line">Dis e ut. anz en la gastine .<br></span>
+<span class="verse-line">pus fu trente anz onc ne manga<br></span>
+<span class="verse-line">si l'angle Deu ne lui porta .<br></span>
+<span class="verse-line">Diables la veneient esprimer<br></span>
+<span class="verse-line"><span class="line-number">698</span>Sovent la soleient assaer .<br></span>
+<span class="verse-line">Tut co lui firent remembrer<br></span>
+<span class="verse-line">k'ele soleit ja dis amer .<br></span>
+<span class="verse-line">Les bons mangers e les beau lius<br></span>
+<span class="verse-line">Ou ele soleit fere ses gius .<br></span>
+<span class="verse-line"><span class="line-number">703</span>Lors feut ele si bonureie<br></span>
+<span class="verse-line">ke de rien n'ert attameie .<br></span>
+<span class="verse-line">unk en tote soue vie<br></span>
+<span class="verse-line">Ne lui sovint puis de folie .<br></span>
+<span class="verse-line">Ne puis en trestut le boscage<br></span>
+<span class="verse-line"><span class="line-number">708</span>Ne vit guere beste sauvage .<br></span>
+<span class="verse-line">N'autre vive creature<br></span>
+<span class="verse-line">Par la forest vait tute sure .<br></span>
+<span class="verse-line">en plusur lius prent son hostal<br></span>
+<span class="verse-line">Sa vie est tute espirital .<br></span>
 .....<br>
   </div>
   <div class="hover-text">
 .....<br>
-Of her beauty, of her figure<br>
-as it is in the written source<br>
-I want to say a little about her appearance<br>
-before I go on.<br>
-At that time, there was no woman so beautiful<br>
-for she was a gem above them all.<br>
-Never countess nor queen<br>
-had on her head such beautiful hair.<br>
-She had round ears.<br>
-They were very marvelously white,<br>
-her eyebrows black and becoming,<br>
-and her eyes bright and overjoyed,<br>
-her little mouth mild,<br>
-and she had a simple gaze,<br>
-her face tender and blushing<br>
-like a rose that is always in bloom.<br>
-Indeed neither on her nose nor on her chin<br>
-would you be aware of any defect.<br>
-Along her neck was white like ermine.<br>
-There flowed her blonde hair.<br>
-Each of the breasts of the lady<br>
-was no more than an apple.<br>
-Above the cleavage of her chest,<br>
-it was white like hawthorn flower.<br>
-She had long arms and white hands,<br>
-her fingers shapely, slender, and smooth.<br>
-She had a fine body and was well molded<br>
-from her underarm along her rib.<br>
-She was neither too big nor too small.<br>
-Her frame could never be described.<br>
-Nor could the beauty of this lady<br>
-ever be described by any soul.<br>
-She was so courteous of speech.<br>
-There was nothing to improve.<br>
-Such a creature makes one lament<br>
-when she does not care about her Creator.<br>
-She received many presents<br>
-and bought herself beautiful garments.<br>
-She had good and fitting clothes<br>
-to better please her lovers.<br>
-She did not care for woollen cloth.<br>
-On any of the days of the week,<br>
-she wore her own bliaut of fine purple silk<br>
-and adorned herself with an ermine mantle.<br>
-Well-painted shoes of Cordovan leather,<br>
-she put these on all the days of the year.<br>
-Every man of the city<br>
-loved her for her beauty.<br>
-The old men and the wise<br>
-would say, "Ah! What a shame!<br>
-Alas was born suffering!<br>
-There is much to bemoan of her youth.<br>
-Alas evermore, her life<br>
-is so full of folly."<br>
-Everyone in the city would say<br>
-that she was of great parentage<br>
-for she answered all with reason<br>
-and had such a beautiful frame<br>
-that the son of an emperor<br>
-could have taken her with great honor.<br>
+<span class="verse-line"><span class="line-number">159</span>Of her beauty, of her figure<br></span>
+<span class="verse-line">as it is in the written source<br></span>
+<span class="verse-line">I want to say a little about her appearance<br></span>
+<span class="verse-line">before I go on.<br></span>
+<span class="verse-line">At that time, there was no woman so beautiful<br></span>
+<span class="verse-line"><span class="line-number">164</span>for she was a gem above them all.<br></span>
+<span class="verse-line">Never countess nor queen<br></span>
+<span class="verse-line">had on her head such beautiful hair.<br></span>
+<span class="verse-line">She had round ears.<br></span>
+<span class="verse-line">They were very marvelously white,<br></span>
+<span class="verse-line"><span class="line-number">169</span>her eyebrows black and becoming,<br></span>
+<span class="verse-line">and her eyes bright and overjoyed,<br></span>
+<span class="verse-line">her little mouth mild,<br></span>
+<span class="verse-line">and she had a simple gaze,<br></span>
+<span class="verse-line">her face tender and blushing<br></span>
+<span class="verse-line"><span class="line-number">174</span>like a rose that is always in bloom.<br></span>
+<span class="verse-line">Indeed neither on her nose nor on her chin<br></span>
+<span class="verse-line">would you be aware of any defect.<br></span>
+<span class="verse-line">Along her neck was white like ermine.<br></span>
+<span class="verse-line">There flowed her blonde hair.<br></span>
+<span class="verse-line"><span class="line-number">179</span>Each of the breasts of the lady<br></span>
+<span class="verse-line">was no more than an apple.<br></span>
+<span class="verse-line">Above the cleavage of her chest,<br></span>
+<span class="verse-line">it was white like hawthorn flower.<br></span>
+<span class="verse-line">She had long arms and white hands,<br></span>
+<span class="verse-line"><span class="line-number">184</span>her fingers shapely, slender, and smooth.<br></span>
+<span class="verse-line">She had a fine body and was well molded<br></span>
+<span class="verse-line">from her underarm along her rib.<br></span>
+<span class="verse-line">She was neither too big nor too small.<br></span>
+<span class="verse-line">Her frame could never be described.<br></span>
+<span class="verse-line"><span class="line-number">189</span>Nor could the beauty of this lady<br></span>
+<span class="verse-line">ever be described by any soul.<br></span>
+<span class="verse-line">She was so courteous of speech.<br></span>
+<span class="verse-line">There was nothing to improve.<br></span>
+<span class="verse-line">Such a creature makes one lament<br></span>
+<span class="verse-line"><span class="line-number">194</span>when she does not care about her Creator.<br></span>
+<span class="verse-line">She received many presents<br></span>
+<span class="verse-line">and bought herself beautiful garments.<br></span>
+<span class="verse-line">She had good and fitting clothes<br></span>
+<span class="verse-line">to better please her lovers.<br></span>
+<span class="verse-line"><span class="line-number">199</span>She did not care for woollen cloth.<br></span>
+<span class="verse-line">On any of the days of the week,<br></span>
+<span class="verse-line">she wore her own bliaut of fine purple silk<br></span>
+<span class="verse-line">and adorned herself with an ermine mantle.<br></span>
+<span class="verse-line">Well-painted shoes of Cordovan leather,<br></span>
+<span class="verse-line"><span class="line-number">204</span>she put these on all the days of the year.<br></span>
+<span class="verse-line">Every man of the city<br></span>
+<span class="verse-line">loved her for her beauty.<br></span>
+<span class="verse-line">The old men and the wise<br></span>
+<span class="verse-line">would say, "Ah! What a shame!<br></span>
+<span class="verse-line"><span class="line-number">209</span>Alas was born suffering!<br></span>
+<span class="verse-line">There is much to bemoan of her youth.<br></span>
+<span class="verse-line">Alas evermore, her life<br></span>
+<span class="verse-line">is so full of folly."<br></span>
+<span class="verse-line">Everyone in the city would say<br></span>
+<span class="verse-line"><span class="line-number">214</span>that she was of great parentage<br></span>
+<span class="verse-line">for she answered all with reason<br></span>
+<span class="verse-line">and had such a beautiful frame<br></span>
+<span class="verse-line">that the son of an emperor<br></span>
+<span class="verse-line">could have taken her with great honor.<br></span>
 .....<br>
-So she went in the day as in the night<br>
-hungry, thirsty, and on hard beds.<br>
-She was so deep in the wood<br>
-that she became entirely wild there,<br>
-but she never forgot<br>
-to pray to saint Mary.<br>
-Often she remembered the image<br>
-on which she had made her pledge.<br>
-Soon her clothes were worn out<br>
-and soon her soles were stripped.<br>
-As her clothes were in tatters,<br>
-her body was left totally naked.<br>
-Her own flesh changed color,<br>
-that which before was white like a flower.<br>
-From the winter and from the summer<br>
-her sides blackened entirely.<br>
-The color of her blonde hair changed.<br>
-It turned white like ermine.<br>
-Her face was burned<br>
-by the blazing sun and by the frost.<br>
-Her mouth was thinned<br>
-and all around it blackened,<br>
-and her chin was so black<br>
-it was like the head of a firebrand.<br>
-Tinted and blackened were her eyes.<br>
-There was not any pride there now.<br>
-If you saw her ears,<br>
-they would really be to you a great marvel<br>
-for they were skinny and cracked<br>
-and all wooly with white hairs.<br>
-Black and wooly was her chest.<br>
-It seemed like thorny bark.<br>
-She had no more flesh in her breast,<br>
-no more than there is in a glove.<br>
-Her arms, her hands, and her long fingers<br>
-were blacker than any pitch.<br>
-She had such large nails.<br>
-So she reshaped them with her teeth.<br>
-Her stomach was all sunken.<br>
-She hardly ate, so that was right.<br>
-Her feet were split.<br>
-In many places, they were wounded<br>
-for she did not protect herself from thorns<br>
-as she went through the wilderness.<br>
-It seemed to her, in her mind,<br>
-for truly, about this, she was not wrong at all,<br>
-that one of her sins fell away<br>
-when a thorn pricked her.<br>
-For this, she was so pleased.<br>
-As she suffered such hardship,<br>
-it was no wonder that she was blackened<br>
-for she led such a severe life.<br>
-After more than forty years in the nude,<br>
-it was no wonder she was wooly.<br>
-She had poor provisions with her.<br>
-Pray, may Jesus have mercy on her.<br>
-She had two breads of no great size.<br>
-On these she sustained herself for many years.<br>
-They all became hard in the first year<br>
-as though they were made from a wall.<br>
-Each day, Mary ate some,<br>
-but this was a small portion.<br>
-As soon as she had eaten up her bread,<br>
-then she gathered the grass nearby.<br>
-Like other beasts she ate it.<br>
-She provided herself with nothing else.<br>
-Prone, she drew from a stream.<br>
-Like so, she drank. She had no other vessel.<br>
-She does not bemoan her sins<br>
-as her body was so chastised.<br>
-On grass she lived and on roots<br>
-for eighteen years in the wilderness.<br>
-Then for thirty years, she never ate<br>
-but what the angel of God brought to her.<br>
-Devils came to approach her.<br>
-Often they used to tempt her,<br>
-making her remember all<br>
-that she once used to love.<br>
-The good eats and the beautiful places<br>
-where she was used to playing her games.<br>
-Now, she was so blissful<br>
-that nothing hurt her.<br>
-Never, in all her life,<br>
-did she think, then, of folly.<br>
-Nor, then, in all the wood,<br>
-did she see wild beasts at all.<br>
-nor any other living creature.<br>
-Through the forest, she goes totally sure.<br>
-In many places, she takes shelter.<br>
-Her life is entirely spiritual.<br>
+<span class="verse-line"><span class="line-number">623</span>So she went in the day as in the night<br></span>
+<span class="verse-line">hungry, thirsty, and on hard beds.<br></span>
+<span class="verse-line">She was so deep in the wood<br></span>
+<span class="verse-line">that she became entirely wild there,<br></span>
+<span class="verse-line">but she never forgot<br></span>
+<span class="verse-line"><span class="line-number">628</span>to pray to saint Mary.<br></span>
+<span class="verse-line">Often she remembered the image<br></span>
+<span class="verse-line">on which she had made her pledge.<br></span>
+<span class="verse-line">Soon her clothes were worn out<br></span>
+<span class="verse-line">and soon her soles were stripped.<br></span>
+<span class="verse-line"><span class="line-number">633</span>As her clothes were in tatters,<br></span>
+<span class="verse-line">her body was left totally naked.<br></span>
+<span class="verse-line">Her own flesh changed color,<br></span>
+<span class="verse-line">that which before was white like a flower.<br></span>
+<span class="verse-line">From the winter and from the summer<br></span>
+<span class="verse-line"><span class="line-number">638</span>her sides blackened entirely.<br></span>
+<span class="verse-line">The color of her blonde hair changed.<br></span>
+<span class="verse-line">It turned white like ermine.<br></span>
+<span class="verse-line">Her face was burned<br></span>
+<span class="verse-line">by the blazing sun and by the frost.<br></span>
+<span class="verse-line"><span class="line-number">643</span>Her mouth was thinned<br></span>
+<span class="verse-line">and all around it blackened,<br></span>
+<span class="verse-line">and her chin was so black<br></span>
+<span class="verse-line">it was like the head of a firebrand.<br></span>
+<span class="verse-line">Tinted and blackened were her eyes.<br></span>
+<span class="verse-line"><span class="line-number">648</span>There was not any pride there now.<br></span>
+<span class="verse-line">If you saw her ears,<br></span>
+<span class="verse-line">they would really be to you a great marvel<br></span>
+<span class="verse-line">for they were skinny and cracked<br></span>
+<span class="verse-line">and all wooly with white hairs.<br></span>
+<span class="verse-line"><span class="line-number">653</span>Black and wooly was her chest.<br></span>
+<span class="verse-line">It seemed like thorny bark.<br></span>
+<span class="verse-line">She had no more flesh in her breast,<br></span>
+<span class="verse-line">no more than there is in a glove.<br></span>
+<span class="verse-line">Her arms, her hands, and her long fingers<br></span>
+<span class="verse-line"><span class="line-number">658</span>were blacker than any pitch.<br></span>
+<span class="verse-line">She had such large nails.<br></span>
+<span class="verse-line">So she reshaped them with her teeth.<br></span>
+<span class="verse-line">Her stomach was all sunken.<br></span>
+<span class="verse-line">She hardly ate, so that was right.<br></span>
+<span class="verse-line"><span class="line-number">663</span>Her feet were split.<br></span>
+<span class="verse-line">In many places, they were wounded<br></span>
+<span class="verse-line">for she did not protect herself from thorns<br></span>
+<span class="verse-line">as she went through the wilderness.<br></span>
+<span class="verse-line">It seemed to her, in her mind,<br></span>
+<span class="verse-line"><span class="line-number">668</span>for truly, about this, she was not wrong at all,<br></span>
+<span class="verse-line">that one of her sins fell away<br></span>
+<span class="verse-line">when a thorn pricked her.<br></span>
+<span class="verse-line">For this, she was so pleased.<br></span>
+<span class="verse-line">As she suffered such hardship,<br></span>
+<span class="verse-line"><span class="line-number">673</span>it was no wonder that she was blackened<br></span>
+<span class="verse-line">for she led such a severe life.<br></span>
+<span class="verse-line">After more than forty years in the nude,<br></span>
+<span class="verse-line">it was no wonder she was wooly.<br></span>
+<span class="verse-line">She had poor provisions with her.<br></span>
+<span class="verse-line"><span class="line-number">678</span>Pray, may Jesus have mercy on her.<br></span>
+<span class="verse-line">She had two breads of no great size.<br></span>
+<span class="verse-line">On these she sustained herself for many years.<br></span>
+<span class="verse-line">They all became hard in the first year<br></span>
+<span class="verse-line">as though they were made from a wall.<br></span>
+<span class="verse-line"><span class="line-number">683</span>Each day, Mary ate some,<br></span>
+<span class="verse-line">but this was a small portion.<br></span>
+<span class="verse-line">As soon as she had eaten up her bread,<br></span>
+<span class="verse-line">then she gathered the grass nearby.<br></span>
+<span class="verse-line">Like other beasts she ate it.<br></span>
+<span class="verse-line"><span class="line-number">688</span>She provided herself with nothing else.<br></span>
+<span class="verse-line">Prone, she drew from a stream.<br></span>
+<span class="verse-line">Like so, she drank. She had no other vessel.<br></span>
+<span class="verse-line">She does not bemoan her sins<br></span>
+<span class="verse-line">as her body was so chastised.<br></span>
+<span class="verse-line"><span class="line-number">693</span>On grass she lived and on roots<br></span>
+<span class="verse-line">for eighteen years in the wilderness.<br></span>
+<span class="verse-line">Then for thirty years, she never ate<br></span>
+<span class="verse-line">but what the angel of God brought to her.<br></span>
+<span class="verse-line">Devils came to approach her.<br></span>
+<span class="verse-line"><span class="line-number">698</span>Often they used to tempt her,<br></span>
+<span class="verse-line">making her remember all<br></span>
+<span class="verse-line">that she once used to love.<br></span>
+<span class="verse-line">The good eats and the beautiful places<br></span>
+<span class="verse-line">where she was used to playing her games.<br></span>
+<span class="verse-line"><span class="line-number">703</span>Now, she was so blissful<br></span>
+<span class="verse-line">that nothing hurt her.<br></span>
+<span class="verse-line">Never, in all her life,<br></span>
+<span class="verse-line">did she think, then, of folly.<br></span>
+<span class="verse-line">Nor, then, in all the wood,<br></span>
+<span class="verse-line"><span class="line-number">708</span>did she see wild beasts at all.<br></span>
+<span class="verse-line">nor any other living creature.<br></span>
+<span class="verse-line">Through the forest, she goes totally sure.<br></span>
+<span class="verse-line">In many places, she takes shelter.<br></span>
+<span class="verse-line">Her life is entirely spiritual.<br></span>
 .....<br>
   </div>
 </div>
@@ -925,304 +925,304 @@ Her life is entirely spiritual.<br>
 <div class="text-container">
   <div class="default-text">
 .....<br>
-De sa bealte & de sa figure<br>
-Si cum est en l'escripture<br>
-voil un poi dire le semblant<br>
-einz que jeo trespas avant<br>
-en cel tens ne en cel regne<br>
-Ne vit unc home plus bele femme<br>
-Ne cuntesse ne raine.<br>
-N'out onkes tele meschine<br>
-roundes avoit les oreilles<br>
-Mais blanches erent a merveilles<br>
-les sorciz neirs & avenanz<br>
-les oilz neirs & sorianz<br>
-la bouche brieve & par mesure<br>
-& pie la regardeure<br>
-la face tendre & coloree<br>
-cumme rose qui senpres est nee<br>
-ja el nes ne el mentun<br>
-N'i veist l'un mesfacun<br>
-par sun le col blanc cum ermine<br>
-li undout la bloie crine<br>
-chascun des traianz a la dune<br>
-N'ert mie greignor d'une pume<br>
-Soz la gorge en la poitrine<br>
-ere blanche cumme flor d'espine<br>
-blans bras aveit & beles mains<br>
-& les deis luncs gresles & pleins<br>
-N'ert trop grande ne trop petite<br>
-ja sa facun n'iert deserite<br>
-ja la bealte de ceste dune<br>
-N'iert escrite por nul home<br>
-tant ert corteise de parler<br>
-rien n'i aveit que amender<br>
-a plaindre fait tel creature<br>
-Quant del Creator n'aveit cure<br>
-ele recevoit or & argent<br>
-Si achatout bons garnemenz<br>
-bons dras aveit & avenanz<br>
-por miex plesir a ses amanz<br>
-ele n'out cure de dras de leine<br>
-al peor jor de la semeine<br>
-Vesteit bons bliaus d'osturin<br>
-& afubla mantel hermin<br>
-Soulers bien pains de cordouen<br>
-chaucout a toz les jors de l'an<br>
-li citeen de la cite<br>
-l'amouent tuit por sa bealte<br>
-li anciem home & li sage<br>
-disoient tuit Deus quel damage<br>
-Mar fu unques la dolente<br>
-tant fait a plaindre sa jovente<br>
-Mar fu unques la soue vie<br>
-Quant si est pleine de folie<br>
-tuit disoient par la cite<br>
-Que ele ert de mult halt parente<br>
-car a toz rosponeit raisun<br>
-& tant ert bele de facun<br>
-ke le fiz d'un enpereor<br>
-la peust prendre par honor<br>
+<span class="verse-line"><span class="line-number">155</span>De sa bealte & de sa figure<br></span>
+<span class="verse-line">Si cum est en l'escripture<br></span>
+<span class="verse-line">voil un poi dire le semblant<br></span>
+<span class="verse-line">einz que jeo trespas avant<br></span>
+<span class="verse-line">en cel tens ne en cel regne<br></span>
+<span class="verse-line"><span class="line-number">160</span>Ne vit unc home plus bele femme<br></span>
+<span class="verse-line">Ne cuntesse ne raine.<br></span>
+<span class="verse-line">N'out onkes tele meschine<br></span>
+<span class="verse-line">roundes avoit les oreilles<br></span>
+<span class="verse-line">Mais blanches erent a merveilles<br></span>
+<span class="verse-line"><span class="line-number">165</span>les sorciz neirs & avenanz<br></span>
+<span class="verse-line">les oilz neirs & sorianz<br></span>
+<span class="verse-line">la bouche brieve & par mesure<br></span>
+<span class="verse-line">& pie la regardeure<br></span>
+<span class="verse-line">la face tendre & coloree<br></span>
+<span class="verse-line"><span class="line-number">170</span>cumme rose qui senpres est nee<br></span>
+<span class="verse-line">ja el nes ne el mentun<br></span>
+<span class="verse-line">N'i veist l'un mesfacun<br></span>
+<span class="verse-line">par sun le col blanc cum ermine<br></span>
+<span class="verse-line">li undout la bloie crine<br></span>
+<span class="verse-line"><span class="line-number">175</span>chascun des traianz a la dune<br></span>
+<span class="verse-line">N'ert mie greignor d'une pume<br></span>
+<span class="verse-line">Soz la gorge en la poitrine<br></span>
+<span class="verse-line">ere blanche cumme flor d'espine<br></span>
+<span class="verse-line">blans bras aveit & beles mains<br></span>
+<span class="verse-line"><span class="line-number">180</span>& les deis luncs gresles & pleins<br></span>
+<span class="verse-line">N'ert trop grande ne trop petite<br></span>
+<span class="verse-line">ja sa facun n'iert deserite<br></span>
+<span class="verse-line">ja la bealte de ceste dune<br></span>
+<span class="verse-line">N'iert escrite por nul home<br></span>
+<span class="verse-line"><span class="line-number">185</span>tant ert corteise de parler<br></span>
+<span class="verse-line">rien n'i aveit que amender<br></span>
+<span class="verse-line">a plaindre fait tel creature<br></span>
+<span class="verse-line">Quant del Creator n'aveit cure<br></span>
+<span class="verse-line">ele recevoit or & argent<br></span>
+<span class="verse-line"><span class="line-number">190</span>Si achatout bons garnemenz<br></span>
+<span class="verse-line">bons dras aveit & avenanz<br></span>
+<span class="verse-line">por miex plesir a ses amanz<br></span>
+<span class="verse-line">ele n'out cure de dras de leine<br></span>
+<span class="verse-line">al peor jor de la semeine<br></span>
+<span class="verse-line"><span class="line-number">195</span>Vesteit bons bliaus d'osturin<br></span>
+<span class="verse-line">& afubla mantel hermin<br></span>
+<span class="verse-line">Soulers bien pains de cordouen<br></span>
+<span class="verse-line">chaucout a toz les jors de l'an<br></span>
+<span class="verse-line">li citeen de la cite<br></span>
+<span class="verse-line"><span class="line-number">200</span>l'amouent tuit por sa bealte<br></span>
+<span class="verse-line">li anciem home & li sage<br></span>
+<span class="verse-line">disoient tuit Deus quel damage<br></span>
+<span class="verse-line">Mar fu unques la dolente<br></span>
+<span class="verse-line">tant fait a plaindre sa jovente<br></span>
+<span class="verse-line"><span class="line-number">205</span>Mar fu unques la soue vie<br></span>
+<span class="verse-line">Quant si est pleine de folie<br></span>
+<span class="verse-line">tuit disoient par la cite<br></span>
+<span class="verse-line">Que ele ert de mult halt parente<br></span>
+<span class="verse-line">car a toz rosponeit raisun<br></span>
+<span class="verse-line"><span class="line-number">210</span>& tant ert bele de facun<br></span>
+<span class="verse-line">ke le fiz d'un enpereor<br></span>
+<span class="verse-line">la peust prendre par honor<br></span>
 .....<br>
-tant erra par jor. & par nuit<br>
-o faim. & o sei. & o dur lit<br>
-& tant fu en cel boscage<br>
-tote devint iloc salvage<br>
-mais ele ne s'oublia mie<br>
-de deprier sainte Marie<br>
-sovent lui membre de l'ymage<br>
-Que ele aveit mis en ostage<br>
-Ses soulers furent tuit uses<br>
-& si drapel tuit descires<br>
-Quant si drapel furent rumpu<br>
-le cors de lui remist tot nu<br>
-la char de lui mua color<br>
-Qui ainz ert blanche cumme flor<br>
-Que o l'ivern. ke o l'este<br>
-tuit li nercirent li coste<br>
-color mua sa bloie crigne<br>
-blanche devint cumme ermigne<br>
-la face out desus bruslee<br>
-del soleil. & de la gelee<br>
-la bouche li fu atenvie<br>
-& envirun la char nercie<br>
-tant par esteit noir sun mentun.<br>
-cum ceo fust le chief d'un tisun<br>
-& nerci erent si oil<br>
-N'i aveit ore point d'orguil<br>
-Se vous veisses sa oreille<br>
-mult vous semblast grant merveille<br>
-car mesgre esteit. & detrevee<br>
-& de blanc peil avirunee<br>
-N'aveit plus char en sun traiant<br>
-Ne mais cum il a en un gant<br>
-les bras. les mains. & les deiz<br>
-aveit plus neirs que nule peiz<br>
-les ongles aveit ele grenz<br>
-ele les taillout o les denz<br>
-le ventre lui ert tot dechaet<br>
-car povre despense i meteit<br>
-les piez li erent decrevez<br>
-en plusors lieus erent nafrez<br>
-car ele ne se gardout de espine<br>
-Quant ele alout par la gastine<br>
-mais ceo li ert vis son encient<br>
-& ele n'i failli de nient<br>
-ke un peche de lui chaeit<br>
-Quant une espine la poingneit<br>
-por ceo esteit ele lee<br>
-Quant ele soffri une haschee<br>
-N'ert pas merveille s'ele ert nercie<br>
-car ele demenout aspre vie<br>
-plus de quarante ans ala nue<br>
-N'ert merveille s'ele ert mossue<br>
-povre despense aveit o lui<br>
-ore ait Jesus de lui merci<br>
-deus pains aveit ne gueres granz<br>
-de cels vesqui plusors anz<br>
-el premier en devindrent dur<br>
-cumme ceo fussent pieres de mur<br>
-chascun jor en usout Marie<br>
-mais ceo ert petite partie<br>
-& quant ele out son pain use<br>
-Si esracout l'erbe del pre<br>
-cumme altre beste la manjout<br>
-& de rien ne se desconfortout<br>
-a denz beveit del ruissel<br>
-ele n'aveit altre vaissel<br>
-Ne fait a plaindre le pechie<br>
-dunt le cors fu si chastie<br>
-d'erbes viveit. & de racines<br>
-dis. & set anz. en la gastine<br>
-puis fu trente anz unc ne manja<br>
-Se li angres Deu ne lui porta<br>
-deable lui vint de premier<br>
-Sovent la soloit essaier<br>
-tot ceo lui faisoit remembrer<br>
-Que ele soloit jadis amer<br>
-les bons mangiers. & les lieus<br>
-ou ele sout faire ses gieus<br>
-ore fu issi beneuree<br>
-Que de tot ceo fu obliee<br>
-& en tote la soue vie<br>
-Ne lui sovint puis de la folie<br>
-& unc puis en tot le boscage<br>
-Ne vit beste salvage<br>
-Ne altre vive creature<br>
-par la forest vait tote seure<br>
-en plusors lieus prent son ostal<br>
-Sa vie esteit esperital<br>
+<span class="verse-line"><span class="line-number">615</span>tant erra par jor. & par nuit<br></span>
+<span class="verse-line">o faim. & o sei. & o dur lit<br></span>
+<span class="verse-line">& tant fu en cel boscage<br></span>
+<span class="verse-line">tote devint iloc salvage<br></span>
+<span class="verse-line">mais ele ne s'oublia mie<br></span>
+<span class="verse-line"><span class="line-number">620</span>de deprier sainte Marie<br></span>
+<span class="verse-line">sovent lui membre de l'ymage<br></span>
+<span class="verse-line">Que ele aveit mis en ostage<br></span>
+<span class="verse-line">Ses soulers furent tuit uses<br></span>
+<span class="verse-line">& si drapel tuit descires<br></span>
+<span class="verse-line"><span class="line-number">625</span>Quant si drapel furent rumpu<br></span>
+<span class="verse-line">le cors de lui remist tot nu<br></span>
+<span class="verse-line">la char de lui mua color<br></span>
+<span class="verse-line">Qui ainz ert blanche cumme flor<br></span>
+<span class="verse-line">Que o l'ivern. ke o l'este<br></span>
+<span class="verse-line"><span class="line-number">630</span>tuit li nercirent li coste<br></span>
+<span class="verse-line">color mua sa bloie crigne<br></span>
+<span class="verse-line">blanche devint cumme ermigne<br></span>
+<span class="verse-line">la face out desus bruslee<br></span>
+<span class="verse-line">del soleil. & de la gelee<br></span>
+<span class="verse-line"><span class="line-number">635</span>la bouche li fu atenvie<br></span>
+<span class="verse-line">& envirun la char nercie<br></span>
+<span class="verse-line">tant par esteit noir sun mentun.<br></span>
+<span class="verse-line">cum ceo fust le chief d'un tisun<br></span>
+<span class="verse-line">& nerci erent si oil<br></span>
+<span class="verse-line"><span class="line-number">640</span>N'i aveit ore point d'orguil<br></span>
+<span class="verse-line">Se vous veisses sa oreille<br></span>
+<span class="verse-line">mult vous semblast grant merveille<br></span>
+<span class="verse-line">car mesgre esteit. & detrevee<br></span>
+<span class="verse-line">& de blanc peil avirunee<br></span>
+<span class="verse-line"><span class="line-number">645</span>N'aveit plus char en sun traiant<br></span>
+<span class="verse-line">Ne mais cum il a en un gant<br></span>
+<span class="verse-line">les bras. les mains. & les deiz<br></span>
+<span class="verse-line">aveit plus neirs que nule peiz<br></span>
+<span class="verse-line">les ongles aveit ele grenz<br></span>
+<span class="verse-line"><span class="line-number">650</span>ele les taillout o les denz<br></span>
+<span class="verse-line">le ventre lui ert tot dechaet<br></span>
+<span class="verse-line">car povre despense i meteit<br></span>
+<span class="verse-line">les piez li erent decrevez<br></span>
+<span class="verse-line">en plusors lieus erent nafrez<br></span>
+<span class="verse-line"><span class="line-number">655</span>car ele ne se gardout de espine<br></span>
+<span class="verse-line">Quant ele alout par la gastine<br></span>
+<span class="verse-line">mais ceo li ert vis son encient<br></span>
+<span class="verse-line">& ele n'i failli de nient<br></span>
+<span class="verse-line">ke un peche de lui chaeit<br></span>
+<span class="verse-line"><span class="line-number">660</span>Quant une espine la poingneit<br></span>
+<span class="verse-line">por ceo esteit ele lee<br></span>
+<span class="verse-line">Quant ele soffri une haschee<br></span>
+<span class="verse-line">N'ert pas merveille s'ele ert nercie<br></span>
+<span class="verse-line">car ele demenout aspre vie<br></span>
+<span class="verse-line"><span class="line-number">665</span>plus de quarante ans ala nue<br></span>
+<span class="verse-line">N'ert merveille s'ele ert mossue<br></span>
+<span class="verse-line">povre despense aveit o lui<br></span>
+<span class="verse-line">ore ait Jesus de lui merci<br></span>
+<span class="verse-line">deus pains aveit ne gueres granz<br></span>
+<span class="verse-line"><span class="line-number">670</span>de cels vesqui plusors anz<br></span>
+<span class="verse-line">el premier en devindrent dur<br></span>
+<span class="verse-line">cumme ceo fussent pieres de mur<br></span>
+<span class="verse-line">chascun jor en usout Marie<br></span>
+<span class="verse-line">mais ceo ert petite partie<br></span>
+<span class="verse-line"><span class="line-number">675</span>& quant ele out son pain use<br></span>
+<span class="verse-line">Si esracout l'erbe del pre<br></span>
+<span class="verse-line">cumme altre beste la manjout<br></span>
+<span class="verse-line">& de rien ne se desconfortout<br></span>
+<span class="verse-line">a denz beveit del ruissel<br></span>
+<span class="verse-line"><span class="line-number">680</span>ele n'aveit altre vaissel<br></span>
+<span class="verse-line">Ne fait a plaindre le pechie<br></span>
+<span class="verse-line">dunt le cors fu si chastie<br></span>
+<span class="verse-line">d'erbes viveit. & de racines<br></span>
+<span class="verse-line">dis. & set anz. en la gastine<br></span>
+<span class="verse-line"><span class="line-number">685</span>puis fu trente anz unc ne manja<br></span>
+<span class="verse-line">Se li angres Deu ne lui porta<br></span>
+<span class="verse-line">deable lui vint de premier<br></span>
+<span class="verse-line">Sovent la soloit essaier<br></span>
+<span class="verse-line">tot ceo lui faisoit remembrer<br></span>
+<span class="verse-line"><span class="line-number">690</span>Que ele soloit jadis amer<br></span>
+<span class="verse-line">les bons mangiers. & les lieus<br></span>
+<span class="verse-line">ou ele sout faire ses gieus<br></span>
+<span class="verse-line">ore fu issi beneuree<br></span>
+<span class="verse-line">Que de tot ceo fu obliee<br></span>
+<span class="verse-line"><span class="line-number">695</span>& en tote la soue vie<br></span>
+<span class="verse-line">Ne lui sovint puis de la folie<br></span>
+<span class="verse-line">& unc puis en tot le boscage<br></span>
+<span class="verse-line">Ne vit beste salvage<br></span>
+<span class="verse-line">Ne altre vive creature<br></span>
+<span class="verse-line"><span class="line-number">700</span>par la forest vait tote seure<br></span>
+<span class="verse-line">en plusors lieus prent son ostal<br></span>
+<span class="verse-line">Sa vie esteit esperital<br></span>
 .....<br>
   </div>
   <div class="hover-text">
 .....<br>
-Of her beauty and of her figure<br>
-as it is in the written source<br>
-I want to say a little about her appearance<br>
-before I go too far.<br>
-At that time and in that reign,<br>
-no man ever saw a more beautiful woman.<br>
-No countess or queen<br>
-ever had such a daughter.<br>
-She had round ears,<br>
-what's more, they were marvelously white,<br>
-her eyebrows black and becoming,<br>
-her eyes black and smiling,<br>
-her mouth small and mild,<br>
-and pious her gaze,<br>
-her face tender and blushing<br>
-like a rose that is always in bloom.<br>
-Indeed neither on her nose nor on her chin<br>
-was seen a defect.<br>
-Along her neck was white like ermine.<br>
-There flowed her blonde hair.<br>
-Each of the breasts of the lady<br>
-was not a bit bigger than an apple.<br>
-Above the cleavage of her chest,<br>
-it was white like hawthorn flower.<br>
-She had white arms and beautiful hands,<br>
-and long, slender, and smooth fingers.<br>
-She was neither too big nor too small.<br>
-Her frame could never be described.<br>
-The beauty of this lady<br>
-could never be written by any man.<br>
-She was so courteous in speech.<br>
-There was nothing to improve.<br>
-Such a creature makes one lament<br>
-when she does not care about the Creator.<br>
-She received gold and silver<br>
-and bought good garments.<br>
-She had good and fitting clothes<br>
-to better please her lovers.<br>
-She did not care for woollen cloth.<br>
-On the worst day of the week,<br>
-she wore a fine purple silk bliaut<br>
-and adorned herself with an ermine mantle.<br>
-Well-painted shoes of Cordovan leather,<br>
-she put these on all the days of the year.<br>
-The citizens of the city<br>
-loved her entirely for her beauty.<br>
-The old men and the wise<br>
-all would say, "God, what a shame!<br>
-Alas evermore, the suffering!<br>
-There is much to bemoan of her youth.<br>
-Alas evermore, her life<br>
-is so full of folly."<br>
-Everyone in the city would say<br>
-that she was of such high parentage<br>
-for she answered all with reason<br>
-and had such a beautiful frame<br>
-that the son of an emperor<br>
-could have taken her with honor.<br>
+<span class="verse-line"><span class="line-number">155</span>Of her beauty and of her figure<br></span>
+<span class="verse-line">as it is in the written source<br></span>
+<span class="verse-line">I want to say a little about her appearance<br></span>
+<span class="verse-line">before I go too far.<br></span>
+<span class="verse-line">At that time and in that reign,<br></span>
+<span class="verse-line"><span class="line-number">160</span>no man ever saw a more beautiful woman.<br></span>
+<span class="verse-line">No countess or queen<br></span>
+<span class="verse-line">ever had such a daughter.<br></span>
+<span class="verse-line">She had round ears,<br></span>
+<span class="verse-line">what's more, they were marvelously white,<br></span>
+<span class="verse-line"><span class="line-number">165</span>her eyebrows black and becoming,<br></span>
+<span class="verse-line">her eyes black and smiling,<br></span>
+<span class="verse-line">her mouth small and mild,<br></span>
+<span class="verse-line">and pious her gaze,<br></span>
+<span class="verse-line">her face tender and blushing<br></span>
+<span class="verse-line"><span class="line-number">170</span>like a rose that is always in bloom.<br></span>
+<span class="verse-line">Indeed neither on her nose nor on her chin<br></span>
+<span class="verse-line">was seen a defect.<br></span>
+<span class="verse-line">Along her neck was white like ermine.<br></span>
+<span class="verse-line">There flowed her blonde hair.<br></span>
+<span class="verse-line"><span class="line-number">175</span>Each of the breasts of the lady<br></span>
+<span class="verse-line">was not a bit bigger than an apple.<br></span>
+<span class="verse-line">Above the cleavage of her chest,<br></span>
+<span class="verse-line">it was white like hawthorn flower.<br></span>
+<span class="verse-line">She had white arms and beautiful hands,<br></span>
+<span class="verse-line"><span class="line-number">180</span>and long, slender, and smooth fingers.<br></span>
+<span class="verse-line">She was neither too big nor too small.<br></span>
+<span class="verse-line">Her frame could never be described.<br></span>
+<span class="verse-line">The beauty of this lady<br></span>
+<span class="verse-line">could never be written by any man.<br></span>
+<span class="verse-line"><span class="line-number">185</span>She was so courteous in speech.<br></span>
+<span class="verse-line">There was nothing to improve.<br></span>
+<span class="verse-line">Such a creature makes one lament<br></span>
+<span class="verse-line">when she does not care about the Creator.<br></span>
+<span class="verse-line">She received gold and silver<br></span>
+<span class="verse-line"><span class="line-number">190</span>and bought good garments.<br></span>
+<span class="verse-line">She had good and fitting clothes<br></span>
+<span class="verse-line">to better please her lovers.<br></span>
+<span class="verse-line">She did not care for woollen cloth.<br></span>
+<span class="verse-line">On the worst day of the week,<br></span>
+<span class="verse-line"><span class="line-number">195</span>she wore a fine purple silk bliaut<br></span>
+<span class="verse-line">and adorned herself with an ermine mantle.<br></span>
+<span class="verse-line">Well-painted shoes of Cordovan leather,<br></span>
+<span class="verse-line">she put these on all the days of the year.<br></span>
+<span class="verse-line">The citizens of the city<br></span>
+<span class="verse-line"><span class="line-number">200</span>loved her entirely for her beauty.<br></span>
+<span class="verse-line">The old men and the wise<br></span>
+<span class="verse-line">all would say, "God, what a shame!<br></span>
+<span class="verse-line">Alas evermore, the suffering!<br></span>
+<span class="verse-line">There is much to bemoan of her youth.<br></span>
+<span class="verse-line"><span class="line-number">205</span>Alas evermore, her life<br></span>
+<span class="verse-line">is so full of folly."<br></span>
+<span class="verse-line">Everyone in the city would say<br></span>
+<span class="verse-line">that she was of such high parentage<br></span>
+<span class="verse-line">for she answered all with reason<br></span>
+<span class="verse-line"><span class="line-number">210</span>and had such a beautiful frame<br></span>
+<span class="verse-line">that the son of an emperor<br></span>
+<span class="verse-line">could have taken her with honor.<br></span>
 .....<br>
-So she roamed by day and by night,<br>
-hungry and thirsty and on hard beds,<br>
-and so she was in this wood.<br>
-She became entirely wild there,<br>
-but she never forgot<br>
-to pray to saint Mary.<br>
-Often, she remembers the image<br>
-on which she had made her pledge.<br>
-Her soles were all worn out,<br>
-and soon her clothes were torn up.<br>
-As her clothes were in tatters,<br>
-her body was left totally naked.<br>
-Her own flesh changed color,<br>
-that which before was white like a flower.<br>
-From the winter and from the summer<br>
-her sides blackened entirely.<br>
-The color of her blonde hair changed.<br>
-It turned white like ermine.<br>
-Her face was burned up<br>
-from the sun and from the frost.<br>
-Her mouth was thinned,<br>
-and her flesh around it blackened.<br>
-Her chin was so black all over.<br>
-It was like the head of a firebrand,<br>
-and black were her eyes.<br>
-There was not a shred of pride now.<br>
-If you saw her ears,<br>
-they would really seem to you a great marvel<br>
-for they were skinny and cracked<br>
-and covered in white hair.<br>
-She had no more flesh in her breast,<br>
-no more than there is in a glove.<br>
-Her arms, her hands, and her fingers<br>
-were blacker than any pitch.<br>
-She had large nails.<br>
-She shaped them with her teeth.<br>
-Her stomach was all sunken<br>
-for she put poor provisions in there.<br>
-Her feet were split<br>
-and, in many places, were wounded<br>
-for she did not protect herself from thorns<br>
-as she went through the wilderness.<br>
-But it seemed to her, in her mind,<br>
-and she was not wrong about this at all,<br>
-that a sin fell away from her<br>
-when a thorn pricked her.<br>
-For this, she was pleased.<br>
-As she suffered hardship,<br>
-it was no wonder she was blackened<br>
-for she led a severe life.<br>
-After more than forty years in the nude,<br>
-it was no wonder she was wooly.<br>
-She had poor provisions with her.<br>
-Pray, may Jesus have mercy on her.<br>
-She had two breads of no great size.<br>
-On these, she lived for many years.<br>
-In the first year, they became hard<br>
-as though they were building stones.<br>
-Each day, Mary ate some,<br>
-but this was a small portion.<br>
-And as soon as she had eaten up her bread,<br>
-then she plucked the grass nearby.<br>
-Like other beasts, she ate it.<br>
-And she provided herself with nothing else.<br>
-Prone, she drank from the stream.<br>
-She had no other vessel.<br>
-She does not bemoan her sins<br>
-as her body was so chastised.<br>
-On grasses she lived and on roots<br>
-for seventeen years in the wilderness.<br>
-Then, for thirty years, she never ate<br>
-but what the angel of God brought to her.<br>
-The devil came to her first.<br>
-Often he used to tempt her,<br>
-making her remember all<br>
-that she once used to love.<br>
-The good eats and the places<br>
-where she was used to playing her games.<br>
-Now, she was so blissful<br>
-as she had forgotten all of this.<br>
-And in all her life,<br>
-she never thought of folly.<br>
-And never then in all the wood<br>
-did she see any wild beast<br>
-nor any other living creature<br>
-Through the forest, she goes totally sure.<br>
-In many places, she takes shelter.<br>
-Her life was spiritual.<br>
+<span class="verse-line"><span class="line-number">615</span>So she roamed by day and by night,<br></span>
+<span class="verse-line">hungry and thirsty and on hard beds,<br></span>
+<span class="verse-line">and so she was in this wood.<br></span>
+<span class="verse-line">She became entirely wild there,<br></span>
+<span class="verse-line">but she never forgot<br></span>
+<span class="verse-line"><span class="line-number">620</span>to pray to saint Mary.<br></span>
+<span class="verse-line">Often, she remembers the image<br></span>
+<span class="verse-line">on which she had made her pledge.<br></span>
+<span class="verse-line">Her soles were all worn out,<br></span>
+<span class="verse-line">and soon her clothes were torn up.<br></span>
+<span class="verse-line"><span class="line-number">625</span>As her clothes were in tatters,<br></span>
+<span class="verse-line">her body was left totally naked.<br></span>
+<span class="verse-line">Her own flesh changed color,<br></span>
+<span class="verse-line">that which before was white like a flower.<br></span>
+<span class="verse-line">From the winter and from the summer<br></span>
+<span class="verse-line"><span class="line-number">630</span>her sides blackened entirely.<br></span>
+<span class="verse-line">The color of her blonde hair changed.<br></span>
+<span class="verse-line">It turned white like ermine.<br></span>
+<span class="verse-line">Her face was burned up<br></span>
+<span class="verse-line">from the sun and from the frost.<br></span>
+<span class="verse-line"><span class="line-number">635</span>Her mouth was thinned,<br></span>
+<span class="verse-line">and her flesh around it blackened.<br></span>
+<span class="verse-line">Her chin was so black all over.<br></span>
+<span class="verse-line">It was like the head of a firebrand,<br></span>
+<span class="verse-line">and black were her eyes.<br></span>
+<span class="verse-line"><span class="line-number">640</span>There was not a shred of pride now.<br></span>
+<span class="verse-line">If you saw her ears,<br></span>
+<span class="verse-line">they would really seem to you a great marvel<br></span>
+<span class="verse-line">for they were skinny and cracked<br></span>
+<span class="verse-line">and covered in white hair.<br></span>
+<span class="verse-line"><span class="line-number">645</span>She had no more flesh in her breast,<br></span>
+<span class="verse-line">no more than there is in a glove.<br></span>
+<span class="verse-line">Her arms, her hands, and her fingers<br></span>
+<span class="verse-line">were blacker than any pitch.<br></span>
+<span class="verse-line">She had large nails.<br></span>
+<span class="verse-line"><span class="line-number">650</span>She shaped them with her teeth.<br></span>
+<span class="verse-line">Her stomach was all sunken<br></span>
+<span class="verse-line">for she put poor provisions in there.<br></span>
+<span class="verse-line">Her feet were split<br></span>
+<span class="verse-line">and, in many places, were wounded<br></span>
+<span class="verse-line"><span class="line-number">655</span>for she did not protect herself from thorns<br></span>
+<span class="verse-line">as she went through the wilderness.<br></span>
+<span class="verse-line">But it seemed to her, in her mind,<br></span>
+<span class="verse-line">and she was not wrong about this at all,<br></span>
+<span class="verse-line">that a sin fell away from her<br></span>
+<span class="verse-line"><span class="line-number">660</span>when a thorn pricked her.<br></span>
+<span class="verse-line">For this, she was pleased.<br></span>
+<span class="verse-line">As she suffered hardship,<br></span>
+<span class="verse-line">it was no wonder she was blackened<br></span>
+<span class="verse-line">for she led a severe life.<br></span>
+<span class="verse-line"><span class="line-number">665</span>After more than forty years in the nude,<br></span>
+<span class="verse-line">it was no wonder she was wooly.<br></span>
+<span class="verse-line">She had poor provisions with her.<br></span>
+<span class="verse-line">Pray, may Jesus have mercy on her.<br></span>
+<span class="verse-line">She had two breads of no great size.<br></span>
+<span class="verse-line"><span class="line-number">670</span>On these, she lived for many years.<br></span>
+<span class="verse-line">In the first year, they became hard<br></span>
+<span class="verse-line">as though they were building stones.<br></span>
+<span class="verse-line">Each day, Mary ate some,<br></span>
+<span class="verse-line">but this was a small portion.<br></span>
+<span class="verse-line"><span class="line-number">675</span>And as soon as she had eaten up her bread,<br></span>
+<span class="verse-line">then she plucked the grass nearby.<br></span>
+<span class="verse-line">Like other beasts, she ate it.<br></span>
+<span class="verse-line">And she provided herself with nothing else.<br></span>
+<span class="verse-line">Prone, she drank from the stream.<br></span>
+<span class="verse-line"><span class="line-number">680</span>She had no other vessel.<br></span>
+<span class="verse-line">She does not bemoan her sins<br></span>
+<span class="verse-line">as her body was so chastised.<br></span>
+<span class="verse-line">On grasses she lived and on roots<br></span>
+<span class="verse-line">for seventeen years in the wilderness.<br></span>
+<span class="verse-line"><span class="line-number">685</span>Then, for thirty years, she never ate<br></span>
+<span class="verse-line">but what the angel of God brought to her.<br></span>
+<span class="verse-line">The devil came to her first.<br></span>
+<span class="verse-line">Often he used to tempt her,<br></span>
+<span class="verse-line">making her remember all<br></span>
+<span class="verse-line"><span class="line-number">690</span>that she once used to love.<br></span>
+<span class="verse-line">The good eats and the places<br></span>
+<span class="verse-line">where she was used to playing her games.<br></span>
+<span class="verse-line">Now, she was so blissful<br></span>
+<span class="verse-line">as she had forgotten all of this.<br></span>
+<span class="verse-line"><span class="line-number">695</span>And in all her life,<br></span>
+<span class="verse-line">she never thought of folly.<br></span>
+<span class="verse-line">And never then in all the wood<br></span>
+<span class="verse-line">did she see any wild beast<br></span>
+<span class="verse-line">nor any other living creature<br></span>
+<span class="verse-line"><span class="line-number">700</span>Through the forest, she goes totally sure.<br></span>
+<span class="verse-line">In many places, she takes shelter.<br></span>
+<span class="verse-line">Her life was spiritual.<br></span>
 .....<br>
   </div>
 </div>
@@ -1233,312 +1233,312 @@ Her life was spiritual.<br>
 <div class="text-container">
   <div class="default-text">
 .....<br>
-de sa bieute de sa figure<br>
-Si com il est en escripture<br>
-Voil -i- poi dire le samblant<br>
-ancois que jo trespas avant<br>
-En icel tans ne en cel regne<br>
-N'en ot onques plus bele feme<br>
-onques comtesse ne roine<br>
-Nen ot el chief plus bele crigne<br>
-rondes avoit les oreilles<br>
-& blances erent a merveilles<br>
-les sorcils nois & avenans<br>
-& les ioex vairs & molt rians<br>
-La bouche bele & par mesure<br>
-& pieue la regardeure<br>
-la face tenre & coloree<br>
-comme rose novele nee<br>
-Ne ja el nes ne el menton<br>
-Ne parceuscies mesfacon<br>
-Le col avoit blanc com ermine<br>
-Loiet estoit sa blonde crine<br>
-N'iert mie greindres d'une pome<br>
-L'un des traians de cele domme<br>
-desus la boce en la poitrine<br>
-Ert si blance com flor d'espine<br>
-blans bras avoit & blances mains<br>
-les dois reons greilles & plains<br>
-Gent cors avoit & bien molle<br>
-Sus l'asoele lanc le coste<br>
-Ne trop grande ne trop petite<br>
-Ja sa facon n'en ert descrite<br>
-la grans biautes de ceste dame<br>
-N'iert toute escrite par nul homme<br>
-Tant ert cortoise de parler<br>
-Rien n'i avoit que amender<br>
-a plaindre fait tel creature<br>
-Quant de son Creator n'a cure<br>
-Ele recevoit grans presens<br>
-S'en achatoit biaus garnemens<br>
-biaus dras avoit & avenans<br>
-por bien plaisir a ses amans<br>
-N'avoit pas soing de dras de laine<br>
-Al pior jor de la semaine<br>
-vestoit bon bliaut ostorin<br>
-Si afubloit mantel ermin<br>
-Sollers bien pains de cordoan<br>
-chaucoit a tus les jors del an<br>
-li citeain de la cite<br>
-l'amoient tot por sa biaute<br>
-li ancien home & li sage<br>
-disoient tot que cert damage<br>
-tant par mar fu ceste dolente<br>
-molt fait a plaindre sa jovente<br>
-mar fu onques la soie vie<br>
-Quant si est plaine de folie<br>
-tot disoient par la cite<br>
-Qu'ele ert de haut parente<br>
-Car a tos respondoit raison<br>
-& molt ert de bele facon<br>
-li fiex a -i- empereor<br>
-Le peust prendre par honor<br>
+<span class="verse-line"><span class="line-number">157</span>de sa bieute de sa figure<br></span>
+<span class="verse-line">Si com il est en escripture<br></span>
+<span class="verse-line">Voil -i- poi dire le samblant<br></span>
+<span class="verse-line">ancois que jo trespas avant<br></span>
+<span class="verse-line">En icel tans ne en cel regne<br></span>
+<span class="verse-line"><span class="line-number">162</span>N'en ot onques plus bele feme<br></span>
+<span class="verse-line">onques comtesse ne roine<br></span>
+<span class="verse-line">Nen ot el chief plus bele crigne<br></span>
+<span class="verse-line">rondes avoit les oreilles<br></span>
+<span class="verse-line">& blances erent a merveilles<br></span>
+<span class="verse-line"><span class="line-number">167</span>les sorcils nois & avenans<br></span>
+<span class="verse-line">& les ioex vairs & molt rians<br></span>
+<span class="verse-line">La bouche bele & par mesure<br></span>
+<span class="verse-line">& pieue la regardeure<br></span>
+<span class="verse-line">la face tenre & coloree<br></span>
+<span class="verse-line"><span class="line-number">172</span>comme rose novele nee<br></span>
+<span class="verse-line">Ne ja el nes ne el menton<br></span>
+<span class="verse-line">Ne parceuscies mesfacon<br></span>
+<span class="verse-line">Le col avoit blanc com ermine<br></span>
+<span class="verse-line">Loiet estoit sa blonde crine<br></span>
+<span class="verse-line"><span class="line-number">177</span>N'iert mie greindres d'une pome<br></span>
+<span class="verse-line">L'un des traians de cele domme<br></span>
+<span class="verse-line">desus la boce en la poitrine<br></span>
+<span class="verse-line">Ert si blance com flor d'espine<br></span>
+<span class="verse-line">blans bras avoit & blances mains<br></span>
+<span class="verse-line"><span class="line-number">182</span>les dois reons greilles & plains<br></span>
+<span class="verse-line">Gent cors avoit & bien molle<br></span>
+<span class="verse-line">Sus l'asoele lanc le coste<br></span>
+<span class="verse-line">Ne trop grande ne trop petite<br></span>
+<span class="verse-line">Ja sa facon n'en ert descrite<br></span>
+<span class="verse-line"><span class="line-number">187</span>la grans biautes de ceste dame<br></span>
+<span class="verse-line">N'iert toute escrite par nul homme<br></span>
+<span class="verse-line">Tant ert cortoise de parler<br></span>
+<span class="verse-line">Rien n'i avoit que amender<br></span>
+<span class="verse-line">a plaindre fait tel creature<br></span>
+<span class="verse-line"><span class="line-number">192</span>Quant de son Creator n'a cure<br></span>
+<span class="verse-line">Ele recevoit grans presens<br></span>
+<span class="verse-line">S'en achatoit biaus garnemens<br></span>
+<span class="verse-line">biaus dras avoit & avenans<br></span>
+<span class="verse-line">por bien plaisir a ses amans<br></span>
+<span class="verse-line"><span class="line-number">197</span>N'avoit pas soing de dras de laine<br></span>
+<span class="verse-line">Al pior jor de la semaine<br></span>
+<span class="verse-line">vestoit bon bliaut ostorin<br></span>
+<span class="verse-line">Si afubloit mantel ermin<br></span>
+<span class="verse-line">Sollers bien pains de cordoan<br></span>
+<span class="verse-line"><span class="line-number">202</span>chaucoit a tus les jors del an<br></span>
+<span class="verse-line">li citeain de la cite<br></span>
+<span class="verse-line">l'amoient tot por sa biaute<br></span>
+<span class="verse-line">li ancien home & li sage<br></span>
+<span class="verse-line">disoient tot que cert damage<br></span>
+<span class="verse-line"><span class="line-number">207</span>tant par mar fu ceste dolente<br></span>
+<span class="verse-line">molt fait a plaindre sa jovente<br></span>
+<span class="verse-line">mar fu onques la soie vie<br></span>
+<span class="verse-line">Quant si est plaine de folie<br></span>
+<span class="verse-line">tot disoient par la cite<br></span>
+<span class="verse-line"><span class="line-number">212</span>Qu'ele ert de haut parente<br></span>
+<span class="verse-line">Car a tos respondoit raison<br></span>
+<span class="verse-line">& molt ert de bele facon<br></span>
+<span class="verse-line">li fiex a -i- empereor<br></span>
+<span class="verse-line">Le peust prendre par honor<br></span>
 .....<br>
-tant ala par jor & par nuis<br>
-par bos par plains & par larris<br>
-& tant par font vint el boscage<br>
-Que tot devint iluec salvage<br>
-mais ele ne s'oblioit mie<br>
-de proier a sainte Marie<br>
-Sovent li menbroit del ymage<br>
-Que ele avoit mis en ostage<br>
-Si drapel furent tost use<br>
-& si sollers tost desrame<br>
-Quant si drapel furent ronpu<br>
-li cors de li remest tot nu<br>
-la sieue char mua color<br>
-devant ert blance comme flor<br>
-Quant .i. iver i ot este<br>
-tot li noircirent li coste<br>
-molt li mua la blonde crine<br>
-blance devint com .i. ermine<br>
-del soleil & de la gelee<br>
-li fu la face molt bruslee<br>
-Sa bouche fu atenevie<br>
-& environ sa char noircie<br>
-itant avoit noir le menton<br>
-comme ce fust chies d'un tison<br>
-tot li erent noir oi li oil<br>
-N'avoit ore .i. point d'orgoil<br>
-Se vos en veiscies l'oreille<br>
-molt vos venist a grant merveille<br>
-Qui maigre estoit & decreue<br>
-& de blanc poil tote molsue<br>
-Noire & molsue ert sa poitrine<br>
-bien resambloit escorce d'espine<br>
-N'avoit de char en ses traians<br>
-Nient plus qu'il est en .i. gans<br>
-les bras les mains & les lons dois<br>
-Avoit plus noirs que n'en est pois<br>
-molt par avoit les ongles grans<br>
-as dens les ront qu'ele ot trencans<br>
-li ventres li ert agaris<br>
-car n'avoit nul de ses delis<br>
-li pie li erent decreve<br>
-& environ tot denavre<br>
-Ele ne se gardoit d'espine<br>
-Quant ele aloit par la gastine<br>
-Ce li ert vis son escient<br>
-del bien faisoit petit u nient<br>
-Quant une espine le poignoit<br>
-En un de ses pies li chaoit<br>
-de co estoit ele molt lie<br>
-Quant ele avoit la grant hascie<br>
-N'estoit merveille si ert noircie<br>
-car molt demenoit aspre vie<br>
-plus de .xl. ans a la nue<br>
-N'iert par merveille si ert molsue<br>
-povre despens avoit od li<br>
-Damedex ait de li merci<br>
-.ii. pains avoit ne gaires grans<br>
-de ces vesqui par pluisors ans<br>
-le premer an devindrent dur<br>
-com ce fuissent pieres de mur<br>
-chascun jor en usoit Marie<br>
-mais co ert petite partie<br>
-Quant ele ot tot son pain use<br>
-donques aquelt l'erbe del pre<br>
-com autre beste le mangoit<br>
-de rien ne se recomfortoit<br>
-as dens bevoit dou ruissel<br>
-Car n'i avoit autre vaiscel<br>
-Ne fait a plaindre li pechiet<br>
-dont li cors est si castiet<br>
-d'erbe vesqui & de racine<br>
-dis & set anz en la gastine<br>
-puis fu .xxx. anz que ne manga<br>
-Se l'angles Deu ne l'aporta<br>
-dyable vint a li de premier<br>
-Sovent le soloit assaier<br>
-tot ce li faisoit ramenbrer<br>
-Qu'ele ja dis soloit amer<br>
-les biaus delis & les bels lieus<br>
-ou ele seut faire ses gieus<br>
-ore fu ele boneuree<br>
-Quant de tot ce fu obliee<br>
-Ainc gaires puis en tote sa vie<br>
-Ne li sovint puis de folie<br>
-Ne ainc en trestot le boscage<br>
-Ne vit gaires beste salvage<br>
-Ne autre vive creature<br>
-par la forest vait tote nue<br>
-En pluisors lieus prist son ostal<br>
-Sa vie estoit esperital<br>
+<span class="verse-line"><span class="line-number">613</span>tant ala par jor & par nuis<br></span>
+<span class="verse-line">par bos par plains & par larris<br></span>
+<span class="verse-line">& tant par font vint el boscage<br></span>
+<span class="verse-line">Que tot devint iluec salvage<br></span>
+<span class="verse-line">mais ele ne s'oblioit mie<br></span>
+<span class="verse-line"><span class="line-number">618</span>de proier a sainte Marie<br></span>
+<span class="verse-line">Sovent li menbroit del ymage<br></span>
+<span class="verse-line">Que ele avoit mis en ostage<br></span>
+<span class="verse-line">Si drapel furent tost use<br></span>
+<span class="verse-line">& si sollers tost desrame<br></span>
+<span class="verse-line"><span class="line-number">623</span>Quant si drapel furent ronpu<br></span>
+<span class="verse-line">li cors de li remest tot nu<br></span>
+<span class="verse-line">la sieue char mua color<br></span>
+<span class="verse-line">devant ert blance comme flor<br></span>
+<span class="verse-line">Quant .i. iver i ot este<br></span>
+<span class="verse-line"><span class="line-number">628</span>tot li noircirent li coste<br></span>
+<span class="verse-line">molt li mua la blonde crine<br></span>
+<span class="verse-line">blance devint com .i. ermine<br></span>
+<span class="verse-line">del soleil & de la gelee<br></span>
+<span class="verse-line">li fu la face molt bruslee<br></span>
+<span class="verse-line"><span class="line-number">633</span>Sa bouche fu atenevie<br></span>
+<span class="verse-line">& environ sa char noircie<br></span>
+<span class="verse-line">itant avoit noir le menton<br></span>
+<span class="verse-line">comme ce fust chies d'un tison<br></span>
+<span class="verse-line">tot li erent noir oi li oil<br></span>
+<span class="verse-line"><span class="line-number">638</span>N'avoit ore .i. point d'orgoil<br></span>
+<span class="verse-line">Se vos en veiscies l'oreille<br></span>
+<span class="verse-line">molt vos venist a grant merveille<br></span>
+<span class="verse-line">Qui maigre estoit & decreue<br></span>
+<span class="verse-line">& de blanc poil tote molsue<br></span>
+<span class="verse-line"><span class="line-number">643</span>Noire & molsue ert sa poitrine<br></span>
+<span class="verse-line">bien resambloit escorce d'espine<br></span>
+<span class="verse-line">N'avoit de char en ses traians<br></span>
+<span class="verse-line">Nient plus qu'il est en .i. gans<br></span>
+<span class="verse-line">les bras les mains & les lons dois<br></span>
+<span class="verse-line"><span class="line-number">648</span>Avoit plus noirs que n'en est pois<br></span>
+<span class="verse-line">molt par avoit les ongles grans<br></span>
+<span class="verse-line">as dens les ront qu'ele ot trencans<br></span>
+<span class="verse-line">li ventres li ert agaris<br></span>
+<span class="verse-line">car n'avoit nul de ses delis<br></span>
+<span class="verse-line"><span class="line-number">653</span>li pie li erent decreve<br></span>
+<span class="verse-line">& environ tot denavre<br></span>
+<span class="verse-line">Ele ne se gardoit d'espine<br></span>
+<span class="verse-line">Quant ele aloit par la gastine<br></span>
+<span class="verse-line">Ce li ert vis son escient<br></span>
+<span class="verse-line"><span class="line-number">658</span>del bien faisoit petit u nient<br></span>
+<span class="verse-line">Quant une espine le poignoit<br></span>
+<span class="verse-line">En un de ses pies li chaoit<br></span>
+<span class="verse-line">de co estoit ele molt lie<br></span>
+<span class="verse-line">Quant ele avoit la grant hascie<br></span>
+<span class="verse-line"><span class="line-number">663</span>N'estoit merveille si ert noircie<br></span>
+<span class="verse-line">car molt demenoit aspre vie<br></span>
+<span class="verse-line">plus de .xl. ans a la nue<br></span>
+<span class="verse-line">N'iert par merveille si ert molsue<br></span>
+<span class="verse-line">povre despens avoit od li<br></span>
+<span class="verse-line"><span class="line-number">668</span>Damedex ait de li merci<br></span>
+<span class="verse-line">.ii. pains avoit ne gaires grans<br></span>
+<span class="verse-line">de ces vesqui par pluisors ans<br></span>
+<span class="verse-line">le premer an devindrent dur<br></span>
+<span class="verse-line">com ce fuissent pieres de mur<br></span>
+<span class="verse-line"><span class="line-number">673</span>chascun jor en usoit Marie<br></span>
+<span class="verse-line">mais co ert petite partie<br></span>
+<span class="verse-line">Quant ele ot tot son pain use<br></span>
+<span class="verse-line">donques aquelt l'erbe del pre<br></span>
+<span class="verse-line">com autre beste le mangoit<br></span>
+<span class="verse-line"><span class="line-number">678</span>de rien ne se recomfortoit<br></span>
+<span class="verse-line">as dens bevoit dou ruissel<br></span>
+<span class="verse-line">Car n'i avoit autre vaiscel<br></span>
+<span class="verse-line">Ne fait a plaindre li pechiet<br></span>
+<span class="verse-line">dont li cors est si castiet<br></span>
+<span class="verse-line"><span class="line-number">683</span>d'erbe vesqui & de racine<br></span>
+<span class="verse-line">dis & set anz en la gastine<br></span>
+<span class="verse-line">puis fu .xxx. anz que ne manga<br></span>
+<span class="verse-line">Se l'angles Deu ne l'aporta<br></span>
+<span class="verse-line">dyable vint a li de premier<br></span>
+<span class="verse-line"><span class="line-number">688</span>Sovent le soloit assaier<br></span>
+<span class="verse-line">tot ce li faisoit ramenbrer<br></span>
+<span class="verse-line">Qu'ele ja dis soloit amer<br></span>
+<span class="verse-line">les biaus delis & les bels lieus<br></span>
+<span class="verse-line">ou ele seut faire ses gieus<br></span>
+<span class="verse-line"><span class="line-number">693</span>ore fu ele boneuree<br></span>
+<span class="verse-line">Quant de tot ce fu obliee<br></span>
+<span class="verse-line">Ainc gaires puis en tote sa vie<br></span>
+<span class="verse-line">Ne li sovint puis de folie<br></span>
+<span class="verse-line">Ne ainc en trestot le boscage<br></span>
+<span class="verse-line"><span class="line-number">698</span>Ne vit gaires beste salvage<br></span>
+<span class="verse-line">Ne autre vive creature<br></span>
+<span class="verse-line">par la forest vait tote nue<br></span>
+<span class="verse-line">En pluisors lieus prist son ostal<br></span>
+<span class="verse-line">Sa vie estoit esperital<br></span>
 .....<br>
   </div>
   <div class="hover-text">
 .....<br>
-Of her beauty, of her figure<br>
-as it is in the written source<br>
-I want to say a little about her appearance<br>
-before I go too far.<br>
-At that time and in that reign,<br>
-there was never a more beautiful woman.<br>
-Never countess nor queen<br>
-had on her head more beautiful hair.<br>
-She had round ears,<br>
-and they were marvelously white,<br>
-her eyebrows black and becoming,<br>
-and her eyes sparkling and joyful,<br>
-her mouth beautiful and mild,<br>
-and pious her gaze,<br>
-her face tender and blushing<br>
-like a freshly-bloomed rose.<br>
-Indeed neither on her nose nor on her chin<br>
-might you perceive any defect.<br>
-Her neck was white like ermine.<br>
-Long was her blonde hair.<br>
-Not a bit bigger than an apple were<br>
-either of the breasts of this lady.<br>
-Above the bump of her chest,<br>
-it was as white as hawthorn flower.<br>
-She had white arms and white hands,<br>
-her fingers shapely, slender, and smooth.<br>
-She had a fine body and was well molded<br>
-from her underarm along her rib.<br>
-Neither too big nor too small,<br>
-her frame could never be described.<br>
-The great beauty of this lady<br>
-could not be written fully by any man<br>
-She was so courteous in speech.<br>
-There was nothing to improve.<br>
-Such a creature makes one lament<br>
-when she does not care about her Creator.<br>
-She received great presents,<br>
-and bought herself beautiful garments.<br>
-She had beautiful and fitting clothes<br>
-to please her lovers well.<br>
-She did not care for woollen cloth.<br>
-On the worst day of the week,<br>
-she wore a fine purple silk bliaut<br>
-and adorned herself with an ermine mantle.<br>
-Well-painted shoes of Cordovan leather,<br>
-she put these on all the days of the year.<br>
-The citizens of the city<br>
-loved her entirely for her beauty.<br>
-The old men and the wise<br>
-all would say that it was a shame.<br>
-"Alas for this suffering!<br>
-There is much to bemoan of her youth.<br>
-Alas evermore, her life<br>
-is so full of folly."<br>
-Everyone in the city would say<br>
-that she was of high parentage<br>
-for she answered all with reason<br>
-and had such a beautiful frame.<br>
-The son of an emperor<br>
-could have taken her with honor.<br>
+<span class="verse-line"><span class="line-number">157</span>Of her beauty, of her figure<br></span>
+<span class="verse-line">as it is in the written source<br></span>
+<span class="verse-line">I want to say a little about her appearance<br></span>
+<span class="verse-line">before I go too far.<br></span>
+<span class="verse-line">At that time and in that reign,<br></span>
+<span class="verse-line"><span class="line-number">162</span>there was never a more beautiful woman.<br></span>
+<span class="verse-line">Never countess nor queen<br></span>
+<span class="verse-line">had on her head more beautiful hair.<br></span>
+<span class="verse-line">She had round ears,<br></span>
+<span class="verse-line">and they were marvelously white,<br></span>
+<span class="verse-line"><span class="line-number">167</span>her eyebrows black and becoming,<br></span>
+<span class="verse-line">and her eyes sparkling and joyful,<br></span>
+<span class="verse-line">her mouth beautiful and mild,<br></span>
+<span class="verse-line">and pious her gaze,<br></span>
+<span class="verse-line">her face tender and blushing<br></span>
+<span class="verse-line"><span class="line-number">172</span>like a freshly-bloomed rose.<br></span>
+<span class="verse-line">Indeed neither on her nose nor on her chin<br></span>
+<span class="verse-line">might you perceive any defect.<br></span>
+<span class="verse-line">Her neck was white like ermine.<br></span>
+<span class="verse-line">Long was her blonde hair.<br></span>
+<span class="verse-line"><span class="line-number">177</span>Not a bit bigger than an apple were<br></span>
+<span class="verse-line">either of the breasts of this lady.<br></span>
+<span class="verse-line">Above the bump of her chest,<br></span>
+<span class="verse-line">it was as white as hawthorn flower.<br></span>
+<span class="verse-line">She had white arms and white hands,<br></span>
+<span class="verse-line"><span class="line-number">182</span>her fingers shapely, slender, and smooth.<br></span>
+<span class="verse-line">She had a fine body and was well molded<br></span>
+<span class="verse-line">from her underarm along her rib.<br></span>
+<span class="verse-line">Neither too big nor too small,<br></span>
+<span class="verse-line">her frame could never be described.<br></span>
+<span class="verse-line"><span class="line-number">187</span>The great beauty of this lady<br></span>
+<span class="verse-line">could not be written fully by any man<br></span>
+<span class="verse-line">She was so courteous in speech.<br></span>
+<span class="verse-line">There was nothing to improve.<br></span>
+<span class="verse-line">Such a creature makes one lament<br></span>
+<span class="verse-line"><span class="line-number">192</span>when she does not care about her Creator.<br></span>
+<span class="verse-line">She received great presents,<br></span>
+<span class="verse-line">and bought herself beautiful garments.<br></span>
+<span class="verse-line">She had beautiful and fitting clothes<br></span>
+<span class="verse-line">to please her lovers well.<br></span>
+<span class="verse-line"><span class="line-number">197</span>She did not care for woollen cloth.<br></span>
+<span class="verse-line">On the worst day of the week,<br></span>
+<span class="verse-line">she wore a fine purple silk bliaut<br></span>
+<span class="verse-line">and adorned herself with an ermine mantle.<br></span>
+<span class="verse-line">Well-painted shoes of Cordovan leather,<br></span>
+<span class="verse-line"><span class="line-number">202</span>she put these on all the days of the year.<br></span>
+<span class="verse-line">The citizens of the city<br></span>
+<span class="verse-line">loved her entirely for her beauty.<br></span>
+<span class="verse-line">The old men and the wise<br></span>
+<span class="verse-line">all would say that it was a shame.<br></span>
+<span class="verse-line"><span class="line-number">207</span>"Alas for this suffering!<br></span>
+<span class="verse-line">There is much to bemoan of her youth.<br></span>
+<span class="verse-line">Alas evermore, her life<br></span>
+<span class="verse-line">is so full of folly."<br></span>
+<span class="verse-line">Everyone in the city would say<br></span>
+<span class="verse-line"><span class="line-number">212</span>that she was of high parentage<br></span>
+<span class="verse-line">for she answered all with reason<br></span>
+<span class="verse-line">and had such a beautiful frame.<br></span>
+<span class="verse-line">The son of an emperor<br></span>
+<span class="verse-line">could have taken her with honor.<br></span>
 .....<br>
-So she went by day and by night<br>
-through woods, through plains, and through hills,<br>
-and so deeply she went into the wood<br>
-that she became entirely wild there,<br>
-but she never forgot<br>
-to pray to saint Mary.<br>
-Often she remembered the image<br>
-on which she had made her pledge.<br>
-Soon her clothes were worn out,<br>
-and soon her soles were stripped.<br>
-As her clothes were in tatters,<br>
-her body was left totally naked.<br>
-Her own flesh changed color.<br>
-Before, it was white like a flower.<br>
-In winter as in summer,<br>
-her sides blackened entirely.<br>
-Her blonde hair changed greatly.<br>
-It turned white like an ermine<br>
-from the sun and from the frost.<br>
-Her face was so burned.<br>
-Her mouth was thinned,<br>
-and her flesh around it blackened.<br>
-Her chin was so black.<br>
-It was like the head of a firebrand.<br>
-All black were her eyes now.<br>
-She had, now, not a shred of pride.<br>
-If you saw her ears,<br>
-you would come upon a great marvel<br>
-that was skinny and cracked<br>
-and all wooly with white hairs.<br>
-Black and wooly was her chest.<br>
-It so ressembled thorny bark.<br>
-She did not have flesh in her breasts,<br>
-nothing more than there is in a glove.<br>
-Her arms, her hands, and her long fingers<br>
-were blacker than pitch.<br>
-She had such large nails<br>
-on her slicing teeth she made them round.<br>
-Her stomach was sunken<br>
-for she had none of her delights.<br>
-Her feet were split<br>
-and wounded all over.<br>
-She did not protect herself from thorns<br>
-as she went through the wilderness.<br>
-It seemed to her, in her mind,<br>
-that it would do little or no good<br>
-for as a thorn pricked her<br>
-in one of her feet, it would fall away.<br>
-For this, she was so pleased.<br>
-As she bore great hardship,<br>
-it was no wonder she was blackened<br>
-for she led a very severe life.<br>
-After more than forty years in the nude,<br>
-it was no wonder she was wooly.<br>
-She had poor provisions with her.<br>
-May God have mercy on her.<br>
-She had two breads of no great size.<br>
-On these she lived for many years.<br>
-The first year, they became hard<br>
-as though they were building stones.<br>
-Each day, Mary ate some,<br>
-but this was a small portion.<br>
-As soon as she had eaten up all her bread,<br>
-then she gathered the grass nearby.<br>
-Like other beasts, she ate it.<br>
-She provided herself with nothing else.<br>
-Prone, she drank from the stream<br>
-for there was no other vessel.<br>
-She does not bemoan her sins<br>
-as her body is so chastised.<br>
-On grass she lived and on roots<br>
-for seventeen years in the wilderness.<br>
-Then, for thirty years, she ate only<br>
-what the angel of God brought to her.<br>
-The devil came to her first.<br>
-Often he used to tempt her,<br>
-making her remember all<br>
-that she once used to love.<br>
-The beautiful delights and the beautiful places<br>
-where she was used to playing her games.<br>
-Now, she was blissful<br>
-as she had forgotten all of this<br>
-before long. Then for all her life,<br>
-she never thought of folly.<br>
-Never in all the wood<br>
-did she see any wild beasts at all<br>
-nor any other living creature.<br>
-Through the forest, she goes utterly naked.<br>
-In many places, she took shelter.<br>
-Her life was spiritual.<br>
+<span class="verse-line"><span class="line-number">613</span>So she went by day and by night<br></span>
+<span class="verse-line">through woods, through plains, and through hills,<br></span>
+<span class="verse-line">and so deeply she went into the wood<br></span>
+<span class="verse-line">that she became entirely wild there,<br></span>
+<span class="verse-line">but she never forgot<br></span>
+<span class="verse-line"><span class="line-number">618</span>to pray to saint Mary.<br></span>
+<span class="verse-line">Often she remembered the image<br></span>
+<span class="verse-line">on which she had made her pledge.<br></span>
+<span class="verse-line">Soon her clothes were worn out,<br></span>
+<span class="verse-line">and soon her soles were stripped.<br></span>
+<span class="verse-line"><span class="line-number">623</span>As her clothes were in tatters,<br></span>
+<span class="verse-line">her body was left totally naked.<br></span>
+<span class="verse-line">Her own flesh changed color.<br></span>
+<span class="verse-line">Before, it was white like a flower.<br></span>
+<span class="verse-line">In winter as in summer,<br></span>
+<span class="verse-line"><span class="line-number">628</span>her sides blackened entirely.<br></span>
+<span class="verse-line">Her blonde hair changed greatly.<br></span>
+<span class="verse-line">It turned white like an ermine<br></span>
+<span class="verse-line">from the sun and from the frost.<br></span>
+<span class="verse-line">Her face was so burned.<br></span>
+<span class="verse-line"><span class="line-number">633</span>Her mouth was thinned,<br></span>
+<span class="verse-line">and her flesh around it blackened.<br></span>
+<span class="verse-line">Her chin was so black.<br></span>
+<span class="verse-line">It was like the head of a firebrand.<br></span>
+<span class="verse-line">All black were her eyes now.<br></span>
+<span class="verse-line"><span class="line-number">638</span>She had, now, not a shred of pride.<br></span>
+<span class="verse-line">If you saw her ears,<br></span>
+<span class="verse-line">you would come upon a great marvel<br></span>
+<span class="verse-line">that was skinny and cracked<br></span>
+<span class="verse-line">and all wooly with white hairs.<br></span>
+<span class="verse-line"><span class="line-number">643</span>Black and wooly was her chest.<br></span>
+<span class="verse-line">It so ressembled thorny bark.<br></span>
+<span class="verse-line">She did not have flesh in her breasts,<br></span>
+<span class="verse-line">nothing more than there is in a glove.<br></span>
+<span class="verse-line">Her arms, her hands, and her long fingers<br></span>
+<span class="verse-line"><span class="line-number">648</span>were blacker than pitch.<br></span>
+<span class="verse-line">She had such large nails<br></span>
+<span class="verse-line">on her slicing teeth she made them round.<br></span>
+<span class="verse-line">Her stomach was sunken<br></span>
+<span class="verse-line">for she had none of her delights.<br></span>
+<span class="verse-line"><span class="line-number">653</span>Her feet were split<br></span>
+<span class="verse-line">and wounded all over.<br></span>
+<span class="verse-line">She did not protect herself from thorns<br></span>
+<span class="verse-line">as she went through the wilderness.<br></span>
+<span class="verse-line">It seemed to her, in her mind,<br></span>
+<span class="verse-line"><span class="line-number">658</span>that it would do little or no good<br></span>
+<span class="verse-line">for as a thorn pricked her<br></span>
+<span class="verse-line">in one of her feet, it would fall away.<br></span>
+<span class="verse-line">For this, she was so pleased.<br></span>
+<span class="verse-line">As she bore great hardship,<br></span>
+<span class="verse-line"><span class="line-number">663</span>it was no wonder she was blackened<br></span>
+<span class="verse-line">for she led a very severe life.<br></span>
+<span class="verse-line">After more than forty years in the nude,<br></span>
+<span class="verse-line">it was no wonder she was wooly.<br></span>
+<span class="verse-line">She had poor provisions with her.<br></span>
+<span class="verse-line"><span class="line-number">668</span>May God have mercy on her.<br></span>
+<span class="verse-line">She had two breads of no great size.<br></span>
+<span class="verse-line">On these she lived for many years.<br></span>
+<span class="verse-line">The first year, they became hard<br></span>
+<span class="verse-line">as though they were building stones.<br></span>
+<span class="verse-line"><span class="line-number">673</span>Each day, Mary ate some,<br></span>
+<span class="verse-line">but this was a small portion.<br></span>
+<span class="verse-line">As soon as she had eaten up all her bread,<br></span>
+<span class="verse-line">then she gathered the grass nearby.<br></span>
+<span class="verse-line">Like other beasts, she ate it.<br></span>
+<span class="verse-line"><span class="line-number">678</span>She provided herself with nothing else.<br></span>
+<span class="verse-line">Prone, she drank from the stream<br></span>
+<span class="verse-line">for there was no other vessel.<br></span>
+<span class="verse-line">She does not bemoan her sins<br></span>
+<span class="verse-line">as her body is so chastised.<br></span>
+<span class="verse-line"><span class="line-number">683</span>On grass she lived and on roots<br></span>
+<span class="verse-line">for seventeen years in the wilderness.<br></span>
+<span class="verse-line">Then, for thirty years, she ate only<br></span>
+<span class="verse-line">what the angel of God brought to her.<br></span>
+<span class="verse-line">The devil came to her first.<br></span>
+<span class="verse-line"><span class="line-number">688</span>Often he used to tempt her,<br></span>
+<span class="verse-line">making her remember all<br></span>
+<span class="verse-line">that she once used to love.<br></span>
+<span class="verse-line">The beautiful delights and the beautiful places<br></span>
+<span class="verse-line">where she was used to playing her games.<br></span>
+<span class="verse-line"><span class="line-number">693</span>Now, she was blissful<br></span>
+<span class="verse-line">as she had forgotten all of this<br></span>
+<span class="verse-line">before long. Then for all her life,<br></span>
+<span class="verse-line">she never thought of folly.<br></span>
+<span class="verse-line">Never in all the wood<br></span>
+<span class="verse-line"><span class="line-number">698</span>did she see any wild beasts at all<br></span>
+<span class="verse-line">nor any other living creature.<br></span>
+<span class="verse-line">Through the forest, she goes utterly naked.<br></span>
+<span class="verse-line">In many places, she took shelter.<br></span>
+<span class="verse-line">Her life was spiritual.<br></span>
 .....<br>
   </div>
 </div>

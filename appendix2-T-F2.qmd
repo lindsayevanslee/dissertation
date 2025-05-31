@@ -131,6 +131,21 @@ process_line <- function(line) {
   if (xml_name(line) == "l") {
     line_count <<- line_count + 1
     
+    # SPECIAL CASE: Hard-code line v.6 to correct spacing
+    if (line_count == 6) {
+      return("<div style='line-height: 1.2;'>Dex la goert per savertu</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.8 to correct spacing
+    if (line_count == 8) {
+      return("<div style='line-height: 1.2;'>Ses mains drecet au ceo lestent</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.13 to correct spacing
+    if (line_count == 13) {
+      return("<div style='line-height: 1.2;'>de tere fusempres ravie</div>")
+    }
+    
     # SPECIAL CASE: Hard-code line v.22 to correct apostrophe
     if (line_count == 22) {
       return("<div style='line-height: 1.2;'>sen commenca aleir sun pas</div>")
@@ -139,6 +154,11 @@ process_line <- function(line) {
     # SPECIAL CASE: Hard-code line v.31 to correct apostrophe
     if (line_count == 31) {
       return("<div style='line-height: 1.2;'>baee fui en menfance</div>")
+    }
+    
+    # SPECIAL CASE: Hard-code line v.32 to correct spacing
+    if (line_count == 32) {
+      return("<div style='line-height: 1.2;'>en deai tote mafiance</div>")
     }
     
     # Add line number div every 5th line
