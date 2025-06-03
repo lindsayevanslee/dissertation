@@ -5,13 +5,13 @@ format:
     page-layout: full
 ---
 
-# Berlin, Staatsbibliothek, MSS Simulata Orientalia 6
+## Berlin, Staatsbibliothek, MSS Simulata Orientalia 6
 
 Digitization available via The Digitized Collections of the Staatsbibliothek zu Berlin [HERE](http://resolver.staatsbibliothek-berlin.de/SBB000074F100000000).
 
 Photograph no.101 (featured upside down online) is the recto, and photograph no.89 is the verso.
 
-```{r setup, include=FALSE}
+```{r tf2-setup, include=FALSE}
 # Load the xml2 package
 library(xml2)
 ```
@@ -20,9 +20,9 @@ library(xml2)
 ::: {layout="[[6,6,6]]"}
 
 ::: {.column}
-## Minimal
+### Minimal
 
-```{r results='asis'}
+```{r tf2-minimal, results='asis'}
 # START OF "MINIMAL" CODE
 # Read the XML content
 xml_file <- read_xml("data/T-F2.xml")
@@ -102,9 +102,9 @@ cat(formatted_text)
 :::
 
 ::: {.column}
-## Intermediate
+### Intermediate
 
-```{r results='asis'}
+```{r tf2-intermediate, results='asis'}
 # START OF "INTERMEDIATE" CODE
 # Read the XML content
 xml_file <- read_xml("data/T-F2.xml")
@@ -224,9 +224,9 @@ cat(formatted_text)
 :::
 
 ::: {.column}
-## Extensive
+### Extensive
 
-```{r results='asis'}
+```{r tf2-extensive, results='asis'}
 # START OF "EXTENSIVE" CODE
 # Read the XML content
 xml_file <- read_xml("data/T-F2.xml")

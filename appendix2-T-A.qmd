@@ -5,11 +5,11 @@ format:
     page-layout: full
 ---
 
-# Paris, BnF, Français 23112
+## Paris, BnF, Français 23112
 
 Digitization available via Gallica [HERE](https://gallica.bnf.fr/ark:/12148/btv1b9063234c/f337.item.r=MS%2023112).
 
-```{r setup, include=FALSE}
+```{r ta-setup, include=FALSE}
 # Load the xml2 package
 library(xml2)
 ```
@@ -18,9 +18,9 @@ library(xml2)
 ::: {layout="[[6,6,6]]"}
 
 ::: {.column}
-## Minimal
+### Minimal
 
-```{r results='asis'}
+```{r ta-minimal, results='asis'}
 # START OF "MINIMAL" CODE
 # Read the XML content
 xml_file <- read_xml("data/T-A.xml")
@@ -144,9 +144,9 @@ cat(formatted_text)
 :::
 
 ::: {.column}
-## Intermediate
+### Intermediate
 
-```{r results='asis'}
+```{r ta-intermediate, results='asis'}
 # START OF "INTERMEDIATE" CODE
 # Read the XML content
 xml_file <- read_xml("data/T-A.xml")
@@ -459,9 +459,9 @@ cat(formatted_text)
 :::
 
 ::: {.column}
-## Extensive
+### Extensive
 
-```{r results='asis'}
+```{r ta-extensive, results='asis'}
 # START OF "EXTENSIVE" CODE
 # Read the XML content
 xml_file <- read_xml("data/T-A.xml")

@@ -9,11 +9,11 @@ This is the first part of the second chapter of my Quarto book...
 
 
 
-### Excerpt of T-E (Portrait 2, vv.613-702)
+## Excerpt of T-E (Portrait 2, vv.613-702)
 Paris, BnF Arsenal, 3516, ff.115r, col.d, line 13 - 115v, col.b, line 2 \
 Digitization available via Gallica [HERE](https://gallica.bnf.fr/ark:/12148/btv1b55000507q/f232.item).
 
-```{r setup, include=FALSE}
+```{r 2.1-excerpt-setup, include=FALSE}
 # Load the xml2 package
 library(xml2)
 ```
@@ -22,9 +22,9 @@ library(xml2)
 ::: {layout="[[6,6,6]]"}
 
 ::: {.column}
-## Minimal
+### Minimal
 
-```{r results='asis'}
+```{r 2.1-excerpt-minimal, results='asis'}
 # START OF "MINIMAL" CODE
 # Read the XML content
 xml_file <- read_xml("data/T-E.xml")
@@ -134,9 +134,9 @@ cat(formatted_text)
 :::
 
 ::: {.column}
-## Intermediate
+### Intermediate
 
-```{r results='asis'}
+```{r 2.1-excerpt-intermediate, results='asis'}
 # START OF "INTERMEDIATE" CODE
 # Read the XML content
 xml_file <- read_xml("data/T-E.xml")
@@ -300,9 +300,9 @@ cat(formatted_text)
 :::
 
 ::: {.column}
-## Extensive
+### Extensive
 
-```{r results='asis'}
+```{r 2.1-excerpt-extensive, results='asis'}
 # START OF "EXTENSIVE" CODE
 # Read the XML content
 xml_file <- read_xml("data/T-E.xml")

@@ -5,11 +5,11 @@ format:
     page-layout: full
 ---
 
-# Paris, BnF Arsenal, 3516
+## Paris, BnF Arsenal, 3516
 
 Digitization available via Gallica [HERE](https://gallica.bnf.fr/ark:/12148/btv1b55000507q/f232.item).
 
-```{r setup, include=FALSE}
+```{r te-setup, include=FALSE}
 # Load the xml2 package
 library(xml2)
 ```
@@ -18,9 +18,9 @@ library(xml2)
 ::: {layout="[[6,6,6]]"}
 
 ::: {.column}
-## Minimal
+### Minimal
 
-```{r results='asis'}
+```{r te-minimal, results='asis'}
 # START OF "MINIMAL" CODE
 # Read the XML content
 xml_file <- read_xml("data/T-E.xml")
@@ -144,9 +144,9 @@ cat(formatted_text)
 :::
 
 ::: {.column}
-## Intermediate
+### Intermediate
 
-```{r results='asis'}
+```{r te-intermediate, results='asis'}
 # START OF "INTERMEDIATE" CODE
 # Read the XML content
 xml_file <- read_xml("data/T-E.xml")
@@ -415,7 +415,7 @@ process_line <- function(line) {
     
     # SPECIAL CASE: Hard-code line v.323 to correct spacing
     if (line_count == 323) {
-      return("<div style='line-height: 1.2;'>Merveille fu cevoirement</div>")
+      return("<div style='line-height: 1.2;'><span class='decorative-initial' data-size='2'>M</span>erveille fu cevoirement</div>")
     }
     
     # SPECIAL CASE: Hard-code line v.334 to correct spacing
@@ -890,7 +890,7 @@ process_line <- function(line) {
     
     # SPECIAL CASE: Hard-code line v.1033 to correct spacing
     if (line_count == 1033) {
-      return("<div style='line-height: 1.2;'>Dont commence aconter Marie</div>")
+      return("<div style='line-height: 1.2;'><span class='decorative-initial' data-size='2'>D</span>ont commence aconter Marie</div>")
     }
     
     # SPECIAL CASE: Hard-code line v.1037 to correct apostrophe
@@ -1304,9 +1304,9 @@ cat(formatted_text)
 :::
 
 ::: {.column}
-## Extensive
+### Extensive
 
-```{r results='asis'}
+```{r te-extensive, results='asis'}
 # START OF "EXTENSIVE" CODE
 # Read the XML content
 xml_file <- read_xml("data/T-E.xml")

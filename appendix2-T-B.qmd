@@ -5,9 +5,9 @@ format:
     page-layout: full
 ---
 
-# Oxford, Bodleian, Canonici Misc. 74
+## Oxford, Bodleian, Canonici Misc. 74
 
-```{r setup, include=FALSE}
+```{r tb-setup, include=FALSE}
 # Load the xml2 package
 library(xml2)
 ```
@@ -16,9 +16,9 @@ library(xml2)
 ::: {layout="[[6,6,6,6]]"}
 
 ::: {.column}
-## Nearly Diplomatic
+### Nearly Diplomatic
 
-```{r results='asis'}
+```{r tb-nearly-diplomatic, results='asis'}
 # START OF "NEARLY DIPLOMATIC" CODE
 # Read the XML content
 xml_file <- read_xml("data/T-B-nearly_diplomatic.xml")
@@ -83,9 +83,9 @@ cat(formatted_text)
 :::
 
 ::: {.column}
-## Minimal
+### Minimal
 
-```{r results='asis'}
+```{r tb-minimal, results='asis'}
 # START OF "MINIMAL" CODE
 # Read the XML content
 xml_file <- read_xml("data/T-B.xml")
@@ -189,9 +189,9 @@ cat(formatted_text)
 :::
 
 ::: {.column}
-## Intermediate
+### Intermediate
 
-```{r results='asis'}
+```{r tb-intermediate, results='asis'}
 # START OF "INTERMEDIATE" CODE
 # Read the XML content
 xml_file <- read_xml("data/T-B.xml")
@@ -1889,9 +1889,9 @@ cat(formatted_text)
 :::
 
 ::: {.column}
-## Extensive
+### Extensive
 
-```{r results='asis'}
+```{r tb-extensive, results='asis'}
 # START OF "EXTENSIVE" CODE
 # Read the XML content
 xml_file <- read_xml("data/T-B.xml")

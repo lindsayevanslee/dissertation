@@ -5,9 +5,9 @@ format:
     page-layout: full
 ---
 
-# Oxford, Corpus Christi College, 232
+## Oxford, Corpus Christi College, 232
 
-```{r setup, include=FALSE}
+```{r tc-setup, include=FALSE}
 # Load the xml2 package
 library(xml2)
 ```
@@ -16,9 +16,9 @@ library(xml2)
 ::: {layout="[[6,6,6]]"}
 
 ::: {.column}
-## Minimal
+### Minimal
 
-```{r results='asis'}
+```{r tc-minimal, results='asis'}
 # START OF "MINIMAL" CODE
 # Read the XML content
 xml_file <- read_xml("data/T-C.xml")
@@ -127,9 +127,9 @@ cat(formatted_text)
 :::
 
 ::: {.column}
-## Intermediate
+### Intermediate
 
-```{r results='asis'}
+```{r tc-intermediate, results='asis'}
 # START OF "INTERMEDIATE" CODE
 # Read the XML content
 xml_file <- read_xml("data/T-C.xml")
@@ -158,7 +158,7 @@ process_line <- function(line) {
     
     # SPECIAL CASE: Hard-code line v.1 to correct spacing
     if (line_count == 1) {
-      return("<div style='line-height: 1.2;'>Seignurs pur lamur JhesuCrist</div>")
+      return("<div style='line-height: 1.2;'><span class='decorative-initial' data-size='2'>S</span>eignurs pur lamur JhesuCrist</div>")
     }
     
     # SPECIAL CASE: Hard-code line v.7 to correct apostrophe
@@ -433,9 +433,9 @@ cat(formatted_text)
 :::
 
 ::: {.column}
-## Extensive
+### Extensive
 
-```{r results='asis'}
+```{r tc-extensive, results='asis'}
 # START OF "EXTENSIVE" CODE
 # Read the XML content
 xml_file <- read_xml("data/T-C.xml")
