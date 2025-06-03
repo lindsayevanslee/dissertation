@@ -69,7 +69,7 @@ process_line <- function(line) {
     
     # SPECIAL CASE: Hard-code line v.1495 to fix "Sire Deus" spacing
     if (line_count == 1495) {
-      return("<div style='line-height: 1.2;'>Sire Deus loes foiestu</div>")
+      return("<div style='line-height: 1.2;'><span class='line-number'>1495</span>Sire Deus loes foiestu</div>")
     }
     
     # Add line number div every 5th line
@@ -175,7 +175,7 @@ process_line <- function(line) {
     
     # SPECIAL CASE: Hard-code line v.5 to correct apostrophe
     if (line_count == 5) {
-      return("<div style='line-height: 1.2;'>Bien croi que volentiers lorront</div>")
+      return("<div style='line-height: 1.2;'><span class='line-number'>5</span>Bien croi que volentiers lorront</div>")
     }
     
     # SPECIAL CASE: Hard-code line v.8 to correct spacing
@@ -200,7 +200,7 @@ process_line <- function(line) {
     
     # SPECIAL CASE: Hard-code line v.65 to correct apostrophe
     if (line_count == 65) {
-      return("<div style='line-height: 1.2;'>Por ce quel est tant bele & gente</div>")
+      return("<div style='line-height: 1.2;'><span class='line-number'>65</span>Por ce quel est tant bele & gente</div>")
     }
     
     # SPECIAL CASE: Hard-code line v.67 to correct spacing
@@ -220,7 +220,7 @@ process_line <- function(line) {
     
     # SPECIAL CASE: Hard-code line v.80 to correct spacing
     if (line_count == 80) {
-      return("<div style='line-height: 1.2;'>Car croi le conseil detonpere</div>")
+      return("<div style='line-height: 1.2;'><span class='line-number'>80</span>Car croi le conseil detonpere</div>")
     }
     
     # SPECIAL CASE: Hard-code line v.94 to correct apostrophe
@@ -230,7 +230,7 @@ process_line <- function(line) {
     
     # SPECIAL CASE: Hard-code line v.95 to correct apostrophe
     if (line_count == 95) {
-      return("<div style='line-height: 1.2;'>& maldist tote saventure</div>")
+      return("<div style='line-height: 1.2;'><span class='line-number'>95</span>& maldist tote saventure</div>")
     }
     
     # SPECIAL CASE: Hard-code line v.99 to correct apostrophe
@@ -290,7 +290,7 @@ process_line <- function(line) {
     
     # SPECIAL CASE: Hard-code line v.185 to correct spacing
     if (line_count == 185) {
-      return("<div style='line-height: 1.2;'>Netrop grande netrop petite</div>")
+      return("<div style='line-height: 1.2;'><span class='line-number'>185</span>Netrop grande netrop petite</div>")
     }
     
     # SPECIAL CASE: Hard-code line v.187 to correct spacing
@@ -310,7 +310,7 @@ process_line <- function(line) {
     
     # SPECIAL CASE: Hard-code line v.190 to correct spacing
     if (line_count == 190) {
-      return("<div style='line-height: 1.2;'>Rien ni avoit queamender</div>")
+      return("<div style='line-height: 1.2;'><span class='line-number'>190</span>Rien ni avoit queamender</div>")
     }
     
     # SPECIAL CASE: Hard-code line v.192 to correct spacing
@@ -355,7 +355,7 @@ process_line <- function(line) {
     
     # SPECIAL CASE: Hard-code line v.245 to correct spacing
     if (line_count == 245) {
-      return("<div style='line-height: 1.2;'>dont li respondi li preu dom</div>")
+      return("<div style='line-height: 1.2;'><span class='line-number'>245</span>dont li respondi li preu dom</div>")
     }
     
     # SPECIAL CASE: Hard-code line v.254 to correct spacing
@@ -365,7 +365,7 @@ process_line <- function(line) {
     
     # SPECIAL CASE: Hard-code line v.260 to correct apostrophe
     if (line_count == 260) {
-      return("<div style='line-height: 1.2;'>Si com lemenoit saventure</div>")
+      return("<div style='line-height: 1.2;'><span class='line-number'>260</span>Si com lemenoit saventure</div>")
     }
     
     # SPECIAL CASE: Hard-code line v.272 to correct apostrophe
@@ -395,7 +395,7 @@ process_line <- function(line) {
     
     # SPECIAL CASE: Hard-code line v.305 to correct spacing
     if (line_count == 305) {
-      return("<div style='line-height: 1.2;'>Quien peust prendre respit</div>")
+      return("<div style='line-height: 1.2;'><span class='line-number'>305</span>Quien peust prendre respit</div>")
     }
     
     # SPECIAL CASE: Hard-code line v.306 to correct spacing
@@ -460,7 +460,7 @@ process_line <- function(line) {
     
     # SPECIAL CASE: Hard-code line v.370 to correct apostrophe
     if (line_count == 370) {
-      return("<div style='line-height: 1.2;'>o eus neust ja compaignie</div>")
+      return("<div style='line-height: 1.2;'><span class='line-number'>370</span>o eus neust ja compaignie</div>")
     }
     
     # SPECIAL CASE: Hard-code line v.373 to correct spacing
@@ -515,7 +515,7 @@ process_line <- function(line) {
     
     # SPECIAL CASE: Hard-code line v.450 to correct spacing
     if (line_count == 450) {
-      return("<div style='line-height: 1.2;'>Quant de safille fist samere</div>")
+      return("<div style='line-height: 1.2;'><span class='line-number'>450</span>Quant de safille fist samere</div>")
     }
     
     # SPECIAL CASE: Hard-code line v.453 to correct spacing
@@ -600,7 +600,7 @@ process_line <- function(line) {
     
     # SPECIAL CASE: Hard-code line v.600 to correct spacing
     if (line_count == 600) {
-      return("<div style='line-height: 1.2;'>Ains se lairoit defaim morir</div>")
+      return("<div style='line-height: 1.2;'><span class='line-number'>600</span>Ains se lairoit defaim morir</div>")
     }
     
     # SPECIAL CASE: Hard-code line v.634 to correct spacing
@@ -610,12 +610,12 @@ process_line <- function(line) {
     
     # SPECIAL CASE: Hard-code line v.635 to correct spacing
     if (line_count == 635) {
-      return("<div style='line-height: 1.2;'>itant avoit noir lementon</div>")
+      return("<div style='line-height: 1.2;'><span class='line-number'>635</span>itant avoit noir lementon</div>")
     }
     
     # SPECIAL CASE: Hard-code line v.640 to correct spacing
     if (line_count == 640) {
-      return("<div style='line-height: 1.2;'>molt vos venist agrant merveille</div>")
+      return("<div style='line-height: 1.2;'><span class='line-number'>640</span>molt vos venist agrant merveille</div>")
     }
     
     # SPECIAL CASE: Hard-code line v.643 to correct spacing
@@ -630,7 +630,7 @@ process_line <- function(line) {
     
     # SPECIAL CASE: Hard-code line v.650 to remove apostrophe in "qu'ele"
     if (line_count == 650) {
-      return("<div style='line-height: 1.2;'>asdens les ront quele ot trencans</div>")
+      return("<div style='line-height: 1.2;'><span class='line-number'>650</span>asdens les ront quele ot trencans</div>")
     }
     
     # SPECIAL CASE: Hard-code line v.662 to correct spacing
@@ -645,7 +645,7 @@ process_line <- function(line) {
     
     # SPECIAL CASE: Hard-code line v.690 to remove apostrophe in "qu'ele"
     if (line_count == 690) {
-      return("<div style='line-height: 1.2;'>Quele jadis soloit amer</div>")
+      return("<div style='line-height: 1.2;'><span class='line-number'>690</span>Quele jadis soloit amer</div>")
     }
     
     # SPECIAL CASE: Hard-code line v.703 to correct nesting/repetition issue
@@ -670,7 +670,7 @@ process_line <- function(line) {
     
     # SPECIAL CASE: Hard-code line v.720 to correct spacing
     if (line_count == 720) {
-      return("<div style='line-height: 1.2;'>fors seul al eure demanger</div>")
+      return("<div style='line-height: 1.2;'><span class='line-number'>720</span>fors seul al eure demanger</div>")
     }
     
     # SPECIAL CASE: Hard-code line v.722 to correct spacing
@@ -690,7 +690,7 @@ process_line <- function(line) {
     
     # SPECIAL CASE: Hard-code line v.750 to correct apostrophe
     if (line_count == 750) {
-      return("<div style='line-height: 1.2;'>Quil cremissent de lor maison</div>")
+      return("<div style='line-height: 1.2;'><span class='line-number'>750</span>Quil cremissent de lor maison</div>")
     }
     
     # SPECIAL CASE: Hard-code line v.774 to correct spacing
@@ -715,7 +715,7 @@ process_line <- function(line) {
     
     # SPECIAL CASE: Hard-code line v.810 to correct spacing
     if (line_count == 810) {
-      return("<div style='line-height: 1.2;'>molt ert vestus depovresdras</div>")
+      return("<div style='line-height: 1.2;'><span class='line-number'>810</span>molt ert vestus depovresdras</div>")
     }
     
     # SPECIAL CASE: Hard-code line v.813 to correct spacing
@@ -730,7 +730,7 @@ process_line <- function(line) {
     
     # SPECIAL CASE: Hard-code line v.820 to correct apostrophe
     if (line_count == 820) {
-      return("<div style='line-height: 1.2;'>Not corage davant aler</div>")
+      return("<div style='line-height: 1.2;'><span class='line-number'>820</span>Not corage davant aler</div>")
     }
     
     # SPECIAL CASE: Hard-code line v.832 to correct apostrophe
@@ -755,7 +755,7 @@ process_line <- function(line) {
     
     # SPECIAL CASE: Hard-code line v.845 to correct apostrophe
     if (line_count == 845) {
-      return("<div style='line-height: 1.2;'>li blanc cevoil nierent trecies</div>")
+      return("<div style='line-height: 1.2;'><span class='line-number'>845</span>li blanc cevoil nierent trecies</div>")
     }
     
     # SPECIAL CASE: Hard-code line v.872 to correct apostrophe
@@ -770,7 +770,7 @@ process_line <- function(line) {
     
     # SPECIAL CASE: Hard-code line v.890 to correct spacing
     if (line_count == 890) {
-      return("<div style='line-height: 1.2;'>de mon noir cors quesiest lasques</div>")
+      return("<div style='line-height: 1.2;'><span class='line-number'>890</span>de mon noir cors quesiest lasques</div>")
     }
     
     # SPECIAL CASE: Hard-code line v.924 to correct spacing
@@ -825,7 +825,7 @@ process_line <- function(line) {
     
     # SPECIAL CASE: Hard-code line v.980 to correct spacing
     if (line_count == 980) {
-      return("<div style='line-height: 1.2;'>Qui loie mais parler degerre</div>")
+      return("<div style='line-height: 1.2;'><span class='line-number'>980</span>Qui loie mais parler degerre</div>")
     }
     
     # SPECIAL CASE: Hard-code line v.981 to correct spacing
@@ -865,12 +865,12 @@ process_line <- function(line) {
     
     # SPECIAL CASE: Hard-code line v.1010 to correct spacing
     if (line_count == 1010) {
-      return("<div style='line-height: 1.2;'>Saches quejo sui crestiene</div>")
+      return("<div style='line-height: 1.2;'><span class='line-number'>1010</span>Saches quejo sui crestiene</div>")
     }
     
     # SPECIAL CASE: Hard-code line v.1020 to correct spacing
     if (line_count == 1020) {
-      return("<div style='line-height: 1.2;'>apres commenca aparler</div>")
+      return("<div style='line-height: 1.2;'><span class='line-number'>1020</span>apres commenca aparler</div>")
     }
     
     # SPECIAL CASE: Hard-code line v.1021 to correct spacing
@@ -885,7 +885,7 @@ process_line <- function(line) {
     
     # SPECIAL CASE: Hard-code line v.1025 to correct spacing
     if (line_count == 1025) {
-      return("<div style='line-height: 1.2;'>dilemoi par con fession</div>")
+      return("<div style='line-height: 1.2;'><span class='line-number'>1025</span>dilemoi par con fession</div>")
     }
     
     # SPECIAL CASE: Hard-code line v.1033 to correct spacing
@@ -905,7 +905,7 @@ process_line <- function(line) {
     
     # SPECIAL CASE: Hard-code line v.1085 to correct apostrophe
     if (line_count == 1085) {
-      return("<div style='line-height: 1.2;'>perequant tu maporteras</div>")
+      return("<div style='line-height: 1.2;'><span class='line-number'>1085</span>perequant tu maporteras</div>")
     }
     
     # SPECIAL CASE: Hard-code line v.1086 to correct spacing
@@ -920,7 +920,7 @@ process_line <- function(line) {
     
     # SPECIAL CASE: Hard-code line v.1095 to correct spacing
     if (line_count == 1095) {
-      return("<div style='line-height: 1.2;'>desque passai leflun Jordan</div>")
+      return("<div style='line-height: 1.2;'><span class='line-number'>1095</span>desque passai leflun Jordan</div>")
     }
     
     # SPECIAL CASE: Hard-code line v.1106 to correct spacing
@@ -940,7 +940,7 @@ process_line <- function(line) {
     
     # SPECIAL CASE: Hard-code line v.1115 to correct spacing
     if (line_count == 1115) {
-      return("<div style='line-height: 1.2;'>puis li menbra de sonmoster</div>")
+      return("<div style='line-height: 1.2;'><span class='line-number'>1115</span>puis li menbra de sonmoster</div>")
     }
     
     # SPECIAL CASE: Hard-code line v.1127 to correct spacing
@@ -1040,7 +1040,7 @@ process_line <- function(line) {
     
     # SPECIAL CASE: Hard-code line v.1335 to correct spacing
     if (line_count == 1335) {
-      return("<div style='line-height: 1.2;'>Sigrant miracle Dex ifist</div>")
+      return("<div style='line-height: 1.2;'><span class='line-number'>1335</span>Sigrant miracle Dex ifist</div>")
     }
     
     # SPECIAL CASE: Hard-code line v.1337 to correct spacing
@@ -1075,7 +1075,7 @@ process_line <- function(line) {
     
     # SPECIAL CASE: Hard-code line v.1355 to correct spacing
     if (line_count == 1355) {
-      return("<div style='line-height: 1.2;'>tant laquist il par le desert</div>")
+      return("<div style='line-height: 1.2;'><span class='line-number'>1355</span>tant laquist il par le desert</div>")
     }
     
     # SPECIAL CASE: Hard-code line v.1359 to correct spacing
@@ -1085,7 +1085,7 @@ process_line <- function(line) {
     
     # SPECIAL CASE: Hard-code line v.1360 to correct apostrophe
     if (line_count == 1360) {
-      return("<div style='line-height: 1.2;'>pres ert delcors nen veoit mie</div>")
+      return("<div style='line-height: 1.2;'><span class='line-number'>1360</span>pres ert delcors nen veoit mie</div>")
     }
     
     # SPECIAL CASE: Hard-code line v.1362 to correct spacing
@@ -1100,7 +1100,7 @@ process_line <- function(line) {
     
     # SPECIAL CASE: Hard-code line v.1365 to correct spacing
     if (line_count == 1365) {
-      return("<div style='line-height: 1.2;'>des que jo voie cele feme</div>")
+      return("<div style='line-height: 1.2;'><span class='line-number'>1365</span>des que jo voie cele feme</div>")
     }
     
     # SPECIAL CASE: Hard-code line v.1367 to correct spacing
@@ -1110,7 +1110,7 @@ process_line <- function(line) {
     
     # SPECIAL CASE: Hard-code line v.1390 to correct apostrophe
     if (line_count == 1390) {
-      return("<div style='line-height: 1.2;'>poi sen faloit queniert totnu</div>")
+      return("<div style='line-height: 1.2;'><span class='line-number'>1390</span>poi sen faloit queniert totnu</div>")
     }
     
     # SPECIAL CASE: Hard-code line v.1401 to correct spacing
@@ -1155,7 +1155,7 @@ process_line <- function(line) {
     
     # SPECIAL CASE: Hard-code line v.1465 to correct spacing
     if (line_count == 1465) {
-      return("<div style='line-height: 1.2;'>li lions fuet laterre dure</div>")
+      return("<div style='line-height: 1.2;'><span class='line-number'>1465</span>li lions fuet laterre dure</div>")
     }
     
     # SPECIAL CASE: Hard-code line v.1479 to correct spacing
@@ -1170,7 +1170,7 @@ process_line <- function(line) {
     
     # SPECIAL CASE: Hard-code line v.1485 to correct spacing
     if (line_count == 1485) {
-      return("<div style='line-height: 1.2;'>tote laterre rasamble</div>")
+      return("<div style='line-height: 1.2;'><span class='line-number'>1485</span>tote laterre rasamble</div>")
     }
     
     # SPECIAL CASE: Hard-code line v.1489 to correct spacing
@@ -1180,7 +1180,7 @@ process_line <- function(line) {
     
     # SPECIAL CASE: Hard-code line v.1490 to correct spacing
     if (line_count == 1490) {
-      return("<div style='line-height: 1.2;'>Samblant fait deprandre congiet</div>")
+      return("<div style='line-height: 1.2;'><span class='line-number'>1490</span>Samblant fait deprandre congiet</div>")
     }
     
     # SPECIAL CASE: Hard-code line v.1493 to correct apostrophe
@@ -1195,7 +1195,7 @@ process_line <- function(line) {
     
     # SPECIAL CASE: Hard-code line v.1495 to fix "Sire Deus" spacing
     if (line_count == 1495) {
-      return("<div style='line-height: 1.2;'>Sire Deus loes foiestu</div>")
+      return("<div style='line-height: 1.2;'><span class='line-number'>1495</span>Sire Deus loes foiestu</div>")
     }
     
     # SPECIAL CASE: Hard-code line v.1499 to correct spacing
@@ -1210,7 +1210,7 @@ process_line <- function(line) {
     
     # SPECIAL CASE: Hard-code line v.1520 to correct spacing
     if (line_count == 1520) {
-      return("<div style='line-height: 1.2;'>de leve quetant ert parfonde</div>")
+      return("<div style='line-height: 1.2;'><span class='line-number'>1520</span>de leve quetant ert parfonde</div>")
     }
     
     # SPECIAL CASE: Hard-code line v.1542 to correct spacing
@@ -1335,7 +1335,7 @@ process_line <- function(line) {
     
     # SPECIAL CASE: Hard-code line v.80 to correct "pere" repetition
     if (line_count == 80) {
-      return("<div style='line-height: 1.2;'>Car croi le conseil de ton pere</div>")
+      return("<div style='line-height: 1.2;'><span class='line-number'>80</span>Car croi le conseil de ton pere</div>")
     }
     
     # SPECIAL CASE: Hard-code line v.223 to fix "pelerins" repetition
@@ -1360,7 +1360,7 @@ process_line <- function(line) {
       
     # SPECIAL CASE: Hard-code line v.450 to fix "fille" and "Mere" repetition
     if (line_count == 450) {
-      return("<div style='line-height: 1.2;'>Quant de sa fille fist sa Mere</div>")
+      return("<div style='line-height: 1.2;'><span class='line-number'>450</span>Quant de sa fille fist sa Mere</div>")
     }
     
     # SPECIAL CASE: Hard-code line v.453 to fix "Pere" repetition
@@ -1395,7 +1395,7 @@ process_line <- function(line) {
     
     # SPECIAL CASE: Hard-code line v.840 to fix "Marie" repetition
     if (line_count == 840) {
-      return("<div style='line-height: 1.2;'>la figure vit de Marie</div>")
+      return("<div style='line-height: 1.2;'><span class='line-number'>840</span>la figure vit de Marie</div>")
     }
     
     # SPECIAL CASE: Hard-code line v.977 to fix "Zosimas" repetition
@@ -1410,7 +1410,7 @@ process_line <- function(line) {
     
     # SPECIAL CASE: Hard-code line v.1495 to fix "Sire Deus" spacing
     if (line_count == 1495) {
-      return("<div style='line-height: 1.2;'>Sire Deus loes soies tu</div>")
+      return("<div style='line-height: 1.2;'><span class='line-number'>1495</span>Sire Deus loes soies tu</div>")
     }
     
     # Add line number div every 5th line

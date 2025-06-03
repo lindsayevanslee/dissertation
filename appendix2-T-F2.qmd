@@ -265,7 +265,7 @@ process_line <- function(line) {
     
     # SPECIAL CASE: Hard-code line v.20 to correct brackets
     if (line_count == 20) {
-      return("<div style='line-height: 1.2;'>[A] veit entre la tere e le</div>")
+      return("<div style='line-height: 1.2;'><span class='line-number'>20</span>[A] veit entre la tere e le</div>")
     }
     
     # Add line number div every 5th line

@@ -506,7 +506,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-222"><a href="#cb1-222" aria-hidden="true" tabindex="-1"></a>    </span>
 <span id="cb1-223"><a href="#cb1-223" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.20 to correct brackets</span></span>
 <span id="cb1-224"><a href="#cb1-224" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">20</span>) {</span>
-<span id="cb1-225"><a href="#cb1-225" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;[A] veit entre la tere e le&lt;/div&gt;"</span>)</span>
+<span id="cb1-225"><a href="#cb1-225" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;&lt;span class='line-number'&gt;20&lt;/span&gt;[A] veit entre la tere e le&lt;/div&gt;"</span>)</span>
 <span id="cb1-226"><a href="#cb1-226" aria-hidden="true" tabindex="-1"></a>    }</span>
 <span id="cb1-227"><a href="#cb1-227" aria-hidden="true" tabindex="-1"></a>    </span>
 <span id="cb1-228"><a href="#cb1-228" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Add line number div every 5th line</span></span>
@@ -940,7 +940,7 @@ Lai o elle fist sa preere
 [Q] ue plus que dos piez e demie
 </div>
 <div style="line-height: 1.2;">
-[A] veit entre la tere e le
+<span class="line-number">20</span>[A] veit entre la tere e le
 </div>
 </div>
 <div class="column-break">

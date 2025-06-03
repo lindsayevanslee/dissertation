@@ -174,12 +174,12 @@ process_line <- function(line) {
     
     # SPECIAL CASE: Hard-code line v.635 to correct spacing
     if (line_count == 635) {
-      return("<div style='line-height: 1.2;'>itant avoit noir lementon</div>")
+      return("<div style='line-height: 1.2;'><span class='line-number'>635</span>itant avoit noir lementon</div>")
     }
     
     # SPECIAL CASE: Hard-code line v.640 to correct spacing
     if (line_count == 640) {
-      return("<div style='line-height: 1.2;'>molt vos venist agrant merveille</div>")
+      return("<div style='line-height: 1.2;'><span class='line-number'>640</span>molt vos venist agrant merveille</div>")
     }
     
     # SPECIAL CASE: Hard-code line v.643 to correct spacing
@@ -194,7 +194,7 @@ process_line <- function(line) {
     
     # SPECIAL CASE: Hard-code line v.650 to remove apostrophe in "qu'ele"
     if (line_count == 650) {
-      return("<div style='line-height: 1.2;'>asdens les ront quele ot trencans</div>")
+      return("<div style='line-height: 1.2;'><span class='line-number'>650</span>asdens les ront quele ot trencans</div>")
     }
     
     # SPECIAL CASE: Hard-code line v.662 to correct spacing
@@ -209,7 +209,7 @@ process_line <- function(line) {
     
     # SPECIAL CASE: Hard-code line v.690 to remove apostrophe in "qu'ele"
     if (line_count == 690) {
-      return("<div style='line-height: 1.2;'>Quele jadis soloit amer</div>")
+      return("<div style='line-height: 1.2;'><span class='line-number'>690</span>Quele jadis soloit amer</div>")
     }
     
     # Add line number div every 5th line

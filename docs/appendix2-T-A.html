@@ -309,7 +309,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-26"><a href="#cb1-26" aria-hidden="true" tabindex="-1"></a>    </span>
 <span id="cb1-27"><a href="#cb1-27" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.445 to correct spacing</span></span>
 <span id="cb1-28"><a href="#cb1-28" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">445</span>) {</span>
-<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;Virgine Roine je croi bien&lt;/div&gt;"</span>)</span>
+<span id="cb1-29"><a href="#cb1-29" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;&lt;span class='line-number'&gt;445&lt;/span&gt;Virgine Roine je croi bien&lt;/div&gt;"</span>)</span>
 <span id="cb1-30"><a href="#cb1-30" aria-hidden="true" tabindex="-1"></a>    }</span>
 <span id="cb1-31"><a href="#cb1-31" aria-hidden="true" tabindex="-1"></a>    </span>
 <span id="cb1-32"><a href="#cb1-32" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.531 to correct spacing</span></span>
@@ -329,7 +329,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-46"><a href="#cb1-46" aria-hidden="true" tabindex="-1"></a>    </span>
 <span id="cb1-47"><a href="#cb1-47" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.1425 to correct nesting/repetition issue</span></span>
 <span id="cb1-48"><a href="#cb1-48" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">1425</span>) {</span>
-<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;&lt;span class='decorative-initial' data-size='2'&gt;Q&lt;/span&gt;nt li s’. hom vit le lion&lt;/div&gt;"</span>)</span>
+<span id="cb1-49"><a href="#cb1-49" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;&lt;span class='line-number'&gt;1425&lt;/span&gt;&lt;span class='decorative-initial' data-size='2'&gt;Q&lt;/span&gt;nt li s’. hom vit le lion&lt;/div&gt;"</span>)</span>
 <span id="cb1-50"><a href="#cb1-50" aria-hidden="true" tabindex="-1"></a>    }</span>
 <span id="cb1-51"><a href="#cb1-51" aria-hidden="true" tabindex="-1"></a>    </span>
 <span id="cb1-52"><a href="#cb1-52" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Add line number div every 5th line</span></span>
@@ -426,7 +426,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-143"><a href="#cb1-143" aria-hidden="true" tabindex="-1"></a>    </span>
 <span id="cb1-144"><a href="#cb1-144" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.5 to correct apostrophe</span></span>
 <span id="cb1-145"><a href="#cb1-145" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">5</span>) {</span>
-<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;Bien croi que volentiers lorront&lt;/div&gt;"</span>)</span>
+<span id="cb1-146"><a href="#cb1-146" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;&lt;span class='line-number'&gt;5&lt;/span&gt;Bien croi que volentiers lorront&lt;/div&gt;"</span>)</span>
 <span id="cb1-147"><a href="#cb1-147" aria-hidden="true" tabindex="-1"></a>    }</span>
 <span id="cb1-148"><a href="#cb1-148" aria-hidden="true" tabindex="-1"></a>    </span>
 <span id="cb1-149"><a href="#cb1-149" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.7 to correct apostrophe</span></span>
@@ -436,7 +436,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-153"><a href="#cb1-153" aria-hidden="true" tabindex="-1"></a>    </span>
 <span id="cb1-154"><a href="#cb1-154" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.65 to correct apostrophe</span></span>
 <span id="cb1-155"><a href="#cb1-155" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">65</span>) {</span>
-<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;Porche quele ele iert bele &amp; gente&lt;/div&gt;"</span>)</span>
+<span id="cb1-156"><a href="#cb1-156" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;&lt;span class='line-number'&gt;65&lt;/span&gt;Porche quele ele iert bele &amp; gente&lt;/div&gt;"</span>)</span>
 <span id="cb1-157"><a href="#cb1-157" aria-hidden="true" tabindex="-1"></a>    }</span>
 <span id="cb1-158"><a href="#cb1-158" aria-hidden="true" tabindex="-1"></a>    </span>
 <span id="cb1-159"><a href="#cb1-159" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.71 to correct spacing</span></span>
@@ -466,7 +466,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-183"><a href="#cb1-183" aria-hidden="true" tabindex="-1"></a>    </span>
 <span id="cb1-184"><a href="#cb1-184" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.350 to correct apostrophe</span></span>
 <span id="cb1-185"><a href="#cb1-185" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">350</span>) {</span>
-<span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;Miex vaussist qui courust li fus&lt;/div&gt;"</span>)</span>
+<span id="cb1-186"><a href="#cb1-186" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;&lt;span class='line-number'&gt;350&lt;/span&gt;Miex vaussist qui courust li fus&lt;/div&gt;"</span>)</span>
 <span id="cb1-187"><a href="#cb1-187" aria-hidden="true" tabindex="-1"></a>    }</span>
 <span id="cb1-188"><a href="#cb1-188" aria-hidden="true" tabindex="-1"></a>    </span>
 <span id="cb1-189"><a href="#cb1-189" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.387 to correct apostrophe</span></span>
@@ -476,12 +476,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-193"><a href="#cb1-193" aria-hidden="true" tabindex="-1"></a>    </span>
 <span id="cb1-194"><a href="#cb1-194" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.410 to correct apostrophe</span></span>
 <span id="cb1-195"><a href="#cb1-195" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">410</span>) {</span>
-<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;Chou li poise quele est vive&lt;/div&gt;"</span>)</span>
+<span id="cb1-196"><a href="#cb1-196" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;&lt;span class='line-number'&gt;410&lt;/span&gt;Chou li poise quele est vive&lt;/div&gt;"</span>)</span>
 <span id="cb1-197"><a href="#cb1-197" aria-hidden="true" tabindex="-1"></a>    }</span>
 <span id="cb1-198"><a href="#cb1-198" aria-hidden="true" tabindex="-1"></a>    </span>
 <span id="cb1-199"><a href="#cb1-199" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.445 to correct spacing</span></span>
 <span id="cb1-200"><a href="#cb1-200" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">445</span>) {</span>
-<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;Virgine Roine je croi bien&lt;/div&gt;"</span>)</span>
+<span id="cb1-201"><a href="#cb1-201" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;&lt;span class='line-number'&gt;445&lt;/span&gt;Virgine Roine je croi bien&lt;/div&gt;"</span>)</span>
 <span id="cb1-202"><a href="#cb1-202" aria-hidden="true" tabindex="-1"></a>    }</span>
 <span id="cb1-203"><a href="#cb1-203" aria-hidden="true" tabindex="-1"></a>    </span>
 <span id="cb1-204"><a href="#cb1-204" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.498 to correct spacing</span></span>
@@ -501,22 +501,22 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-218"><a href="#cb1-218" aria-hidden="true" tabindex="-1"></a>    </span>
 <span id="cb1-219"><a href="#cb1-219" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.570 to correct spacing</span></span>
 <span id="cb1-220"><a href="#cb1-220" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">570</span>) {</span>
-<span id="cb1-221"><a href="#cb1-221" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;Le nuit iprist herbegerie&lt;/div&gt;"</span>)</span>
+<span id="cb1-221"><a href="#cb1-221" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;&lt;span class='line-number'&gt;570&lt;/span&gt;Le nuit iprist herbegerie&lt;/div&gt;"</span>)</span>
 <span id="cb1-222"><a href="#cb1-222" aria-hidden="true" tabindex="-1"></a>    }</span>
 <span id="cb1-223"><a href="#cb1-223" aria-hidden="true" tabindex="-1"></a>    </span>
 <span id="cb1-224"><a href="#cb1-224" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.645 to correct spacing</span></span>
 <span id="cb1-225"><a href="#cb1-225" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">645</span>) {</span>
-<span id="cb1-226"><a href="#cb1-226" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;Les bras les mains &amp; leslons dois&lt;/div&gt;"</span>)</span>
+<span id="cb1-226"><a href="#cb1-226" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;&lt;span class='line-number'&gt;645&lt;/span&gt;Les bras les mains &amp; leslons dois&lt;/div&gt;"</span>)</span>
 <span id="cb1-227"><a href="#cb1-227" aria-hidden="true" tabindex="-1"></a>    }</span>
 <span id="cb1-228"><a href="#cb1-228" aria-hidden="true" tabindex="-1"></a>    </span>
 <span id="cb1-229"><a href="#cb1-229" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.725 to correct apostrophe</span></span>
 <span id="cb1-230"><a href="#cb1-230" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">725</span>) {</span>
-<span id="cb1-231"><a href="#cb1-231" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;Entriax navoit pas symonie&lt;/div&gt;"</span>)</span>
+<span id="cb1-231"><a href="#cb1-231" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;&lt;span class='line-number'&gt;725&lt;/span&gt;Entriax navoit pas symonie&lt;/div&gt;"</span>)</span>
 <span id="cb1-232"><a href="#cb1-232" aria-hidden="true" tabindex="-1"></a>    }</span>
 <span id="cb1-233"><a href="#cb1-233" aria-hidden="true" tabindex="-1"></a>    </span>
 <span id="cb1-234"><a href="#cb1-234" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.810 to correct apostrophe</span></span>
 <span id="cb1-235"><a href="#cb1-235" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">810</span>) {</span>
-<span id="cb1-236"><a href="#cb1-236" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;Que nus quens naimme se conte&lt;/div&gt;"</span>)</span>
+<span id="cb1-236"><a href="#cb1-236" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;&lt;span class='line-number'&gt;810&lt;/span&gt;Que nus quens naimme se conte&lt;/div&gt;"</span>)</span>
 <span id="cb1-237"><a href="#cb1-237" aria-hidden="true" tabindex="-1"></a>    }</span>
 <span id="cb1-238"><a href="#cb1-238" aria-hidden="true" tabindex="-1"></a>    </span>
 <span id="cb1-239"><a href="#cb1-239" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.817 to correct apostrophe</span></span>
@@ -546,12 +546,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-263"><a href="#cb1-263" aria-hidden="true" tabindex="-1"></a>    </span>
 <span id="cb1-264"><a href="#cb1-264" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.1020 to correct apostrophe</span></span>
 <span id="cb1-265"><a href="#cb1-265" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">1020</span>) {</span>
-<span id="cb1-266"><a href="#cb1-266" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;Si que ja rien nen celerai&lt;/div&gt;"</span>)</span>
+<span id="cb1-266"><a href="#cb1-266" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;&lt;span class='line-number'&gt;1020&lt;/span&gt;Si que ja rien nen celerai&lt;/div&gt;"</span>)</span>
 <span id="cb1-267"><a href="#cb1-267" aria-hidden="true" tabindex="-1"></a>    }</span>
 <span id="cb1-268"><a href="#cb1-268" aria-hidden="true" tabindex="-1"></a>    </span>
 <span id="cb1-269"><a href="#cb1-269" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.1135 to correct apostrophe</span></span>
 <span id="cb1-270"><a href="#cb1-270" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">1135</span>) {</span>
-<span id="cb1-271"><a href="#cb1-271" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;Ou quel i eust ja este&lt;/div&gt;"</span>)</span>
+<span id="cb1-271"><a href="#cb1-271" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;&lt;span class='line-number'&gt;1135&lt;/span&gt;Ou quel i eust ja este&lt;/div&gt;"</span>)</span>
 <span id="cb1-272"><a href="#cb1-272" aria-hidden="true" tabindex="-1"></a>    }</span>
 <span id="cb1-273"><a href="#cb1-273" aria-hidden="true" tabindex="-1"></a>    </span>
 <span id="cb1-274"><a href="#cb1-274" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.1158 to correct apostrophe</span></span>
@@ -586,7 +586,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-303"><a href="#cb1-303" aria-hidden="true" tabindex="-1"></a>    </span>
 <span id="cb1-304"><a href="#cb1-304" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.1365 to correct spacing</span></span>
 <span id="cb1-305"><a href="#cb1-305" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">1365</span>) {</span>
-<span id="cb1-306"><a href="#cb1-306" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;Biax Peres Rois de majeste&lt;/div&gt;"</span>)</span>
+<span id="cb1-306"><a href="#cb1-306" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;&lt;span class='line-number'&gt;1365&lt;/span&gt;Biax Peres Rois de majeste&lt;/div&gt;"</span>)</span>
 <span id="cb1-307"><a href="#cb1-307" aria-hidden="true" tabindex="-1"></a>    }</span>
 <span id="cb1-308"><a href="#cb1-308" aria-hidden="true" tabindex="-1"></a>    </span>
 <span id="cb1-309"><a href="#cb1-309" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.1367 to correct nesting/repetition issue</span></span>
@@ -601,12 +601,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-318"><a href="#cb1-318" aria-hidden="true" tabindex="-1"></a>    </span>
 <span id="cb1-319"><a href="#cb1-319" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.1420 to correct apostrophe</span></span>
 <span id="cb1-320"><a href="#cb1-320" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">1420</span>) {</span>
-<span id="cb1-321"><a href="#cb1-321" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;la saproisma ou li cors ert&lt;/div&gt;"</span>)</span>
+<span id="cb1-321"><a href="#cb1-321" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;&lt;span class='line-number'&gt;1420&lt;/span&gt;la saproisma ou li cors ert&lt;/div&gt;"</span>)</span>
 <span id="cb1-322"><a href="#cb1-322" aria-hidden="true" tabindex="-1"></a>    }</span>
 <span id="cb1-323"><a href="#cb1-323" aria-hidden="true" tabindex="-1"></a>    </span>
 <span id="cb1-324"><a href="#cb1-324" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.1425 to correct nesting/repetition issue</span></span>
 <span id="cb1-325"><a href="#cb1-325" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">1425</span>) {</span>
-<span id="cb1-326"><a href="#cb1-326" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;&lt;span class='decorative-initial' data-size='2'&gt;Q&lt;/span&gt;uant li sains hom vit le lion&lt;/div&gt;"</span>)</span>
+<span id="cb1-326"><a href="#cb1-326" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;&lt;span class='line-number'&gt;1425&lt;/span&gt;&lt;span class='decorative-initial' data-size='2'&gt;Q&lt;/span&gt;uant li sains hom vit le lion&lt;/div&gt;"</span>)</span>
 <span id="cb1-327"><a href="#cb1-327" aria-hidden="true" tabindex="-1"></a>    }</span>
 <span id="cb1-328"><a href="#cb1-328" aria-hidden="true" tabindex="-1"></a>    </span>
 <span id="cb1-329"><a href="#cb1-329" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.1441 to correct spacing</span></span>
@@ -626,7 +626,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-343"><a href="#cb1-343" aria-hidden="true" tabindex="-1"></a>    </span>
 <span id="cb1-344"><a href="#cb1-344" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.1515 to correct apostrophe</span></span>
 <span id="cb1-345"><a href="#cb1-345" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">1515</span>) {</span>
-<span id="cb1-346"><a href="#cb1-346" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;Ni ot nul qui namendast se vie&lt;/div&gt;"</span>)</span>
+<span id="cb1-346"><a href="#cb1-346" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;&lt;span class='line-number'&gt;1515&lt;/span&gt;Ni ot nul qui namendast se vie&lt;/div&gt;"</span>)</span>
 <span id="cb1-347"><a href="#cb1-347" aria-hidden="true" tabindex="-1"></a>    }</span>
 <span id="cb1-348"><a href="#cb1-348" aria-hidden="true" tabindex="-1"></a>    </span>
 <span id="cb1-349"><a href="#cb1-349" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Add line number div every 5th line</span></span>
@@ -732,12 +732,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-449"><a href="#cb1-449" aria-hidden="true" tabindex="-1"></a>    </span>
 <span id="cb1-450"><a href="#cb1-450" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.410 to correct spacing</span></span>
 <span id="cb1-451"><a href="#cb1-451" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">410</span>) {</span>
-<span id="cb1-452"><a href="#cb1-452" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;Chou li poise qu'ele est vive&lt;/div&gt;"</span>)</span>
+<span id="cb1-452"><a href="#cb1-452" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;&lt;span class='line-number'&gt;410&lt;/span&gt;Chou li poise qu'ele est vive&lt;/div&gt;"</span>)</span>
 <span id="cb1-453"><a href="#cb1-453" aria-hidden="true" tabindex="-1"></a>    }</span>
 <span id="cb1-454"><a href="#cb1-454" aria-hidden="true" tabindex="-1"></a>    </span>
 <span id="cb1-455"><a href="#cb1-455" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.445 to correct spacing</span></span>
 <span id="cb1-456"><a href="#cb1-456" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">445</span>) {</span>
-<span id="cb1-457"><a href="#cb1-457" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;Virgine Roine je croi bien&lt;/div&gt;"</span>)</span>
+<span id="cb1-457"><a href="#cb1-457" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;&lt;span class='line-number'&gt;445&lt;/span&gt;Virgine Roine je croi bien&lt;/div&gt;"</span>)</span>
 <span id="cb1-458"><a href="#cb1-458" aria-hidden="true" tabindex="-1"></a>    }</span>
 <span id="cb1-459"><a href="#cb1-459" aria-hidden="true" tabindex="-1"></a>    </span>
 <span id="cb1-460"><a href="#cb1-460" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.531 to correct spacing</span></span>
@@ -747,7 +747,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-464"><a href="#cb1-464" aria-hidden="true" tabindex="-1"></a>    </span>
 <span id="cb1-465"><a href="#cb1-465" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.1365 to correct spacing</span></span>
 <span id="cb1-466"><a href="#cb1-466" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">1365</span>) {</span>
-<span id="cb1-467"><a href="#cb1-467" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;Biax Peres Rois de majeste&lt;/div&gt;"</span>)</span>
+<span id="cb1-467"><a href="#cb1-467" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;&lt;span class='line-number'&gt;1365&lt;/span&gt;Biax Peres Rois de majeste&lt;/div&gt;"</span>)</span>
 <span id="cb1-468"><a href="#cb1-468" aria-hidden="true" tabindex="-1"></a>    }</span>
 <span id="cb1-469"><a href="#cb1-469" aria-hidden="true" tabindex="-1"></a>    </span>
 <span id="cb1-470"><a href="#cb1-470" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.1367 to correct nesting/repetition issue</span></span>
@@ -757,7 +757,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <span id="cb1-474"><a href="#cb1-474" aria-hidden="true" tabindex="-1"></a>    </span>
 <span id="cb1-475"><a href="#cb1-475" aria-hidden="true" tabindex="-1"></a>    <span class="co"># SPECIAL CASE: Hard-code line v.1425 to correct nesting/repetition issue</span></span>
 <span id="cb1-476"><a href="#cb1-476" aria-hidden="true" tabindex="-1"></a>    <span class="cf">if</span> (line_count <span class="sc">==</span> <span class="dv">1425</span>) {</span>
-<span id="cb1-477"><a href="#cb1-477" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;&lt;span class='decorative-initial' data-size='2'&gt;Q&lt;/span&gt;uant li sains hom vit le lion&lt;/div&gt;"</span>)</span>
+<span id="cb1-477"><a href="#cb1-477" aria-hidden="true" tabindex="-1"></a>      <span class="fu">return</span>(<span class="st">"&lt;div style='line-height: 1.2;'&gt;&lt;span class='line-number'&gt;1425&lt;/span&gt;&lt;span class='decorative-initial' data-size='2'&gt;Q&lt;/span&gt;uant li sains hom vit le lion&lt;/div&gt;"</span>)</span>
 <span id="cb1-478"><a href="#cb1-478" aria-hidden="true" tabindex="-1"></a>    }</span>
 <span id="cb1-479"><a href="#cb1-479" aria-hidden="true" tabindex="-1"></a>    </span>
 <span id="cb1-480"><a href="#cb1-480" aria-hidden="true" tabindex="-1"></a>    <span class="co"># Add line number div every 5th line</span></span>
@@ -2470,7 +2470,7 @@ Jamais niert jors naie pesance
 Mlt iert aspre me peneance
 </div>
 <div style="line-height: 1.2;">
-Virgine Roine je croi bien
+<span class="line-number">445</span>Virgine Roine je croi bien
 </div>
 <div style="line-height: 1.2;">
 Que onqs nest icele rien
@@ -6081,7 +6081,7 @@ Signe faisoit del obeir
 &amp; q il le voloit servir
 </div>
 <div style="line-height: 1.2;">
-<span class="decorative-initial" data-size="2">Q</span>nt li s’. hom vit le lion
+<span class="line-number">1425</span><span class="decorative-initial" data-size="2">Q</span>nt li s’. hom vit le lion
 </div>
 <div style="line-height: 1.2;">
 Navoit apris tel ꝯpaignon
@@ -6479,7 +6479,7 @@ faite est &amp; tote de verte
 Ni a -i- mot de faussete
 </div>
 <div style="line-height: 1.2;">
-Bien croi que volentiers lorront
+<span class="line-number">5</span>Bien croi que volentiers lorront
 </div>
 <div style="line-height: 1.2;">
 Cil qui Dameldui ameront
@@ -6699,7 +6699,7 @@ Molt fu esprise de luxure
 De nule autre rien navoit cure
 </div>
 <div style="line-height: 1.2;">
-Porche quele ele iert bele &amp; gente
+<span class="line-number">65</span>Porche quele ele iert bele &amp; gente
 </div>
 <div style="line-height: 1.2;">
 Se fioit tant en se jovente
@@ -7745,7 +7745,7 @@ Qui devoit estre honoree
 Ot empirie si cel liu
 </div>
 <div style="line-height: 1.2;">
-Miex vaussist qui courust li fus
+<span class="line-number">350</span>Miex vaussist qui courust li fus
 </div>
 <div style="line-height: 1.2;">
 Car ele decevoit le jovencente
@@ -7963,7 +7963,7 @@ Ne Dameldiu nos apeler
 Que fera ore le caitive
 </div>
 <div style="line-height: 1.2;">
-Chou li poise quele est vive
+<span class="line-number">410</span>Chou li poise quele est vive
 </div>
 <div style="line-height: 1.2;">
 Del cuer li issent li souspir
@@ -8088,7 +8088,7 @@ Jamais niert jors naie pesance
 Molt iert aspre me peneance
 </div>
 <div style="line-height: 1.2;">
-Virgine Roine je croi bien
+<span class="line-number">445</span>Virgine Roine je croi bien
 </div>
 <div style="line-height: 1.2;">
 Que onques nest icele rien
@@ -8547,7 +8547,7 @@ Tant com el fu en penitance
 Au flun Jordain en va Marie
 </div>
 <div style="line-height: 1.2;">
-Le nuit iprist herbegerie
+<span class="line-number">570</span>Le nuit iprist herbegerie
 </div>
 <div style="line-height: 1.2;">
 Bien pres del mostier Saint Jehan
@@ -8821,7 +8821,7 @@ Navoit plus char en ses traians
 Ne mais com il a en uns gans
 </div>
 <div style="line-height: 1.2;">
-Les bras les mains &amp; leslons dois
+<span class="line-number">645</span>Les bras les mains &amp; leslons dois
 </div>
 <div style="line-height: 1.2;">
 Avoit plus noirs que nule pois
@@ -9113,7 +9113,7 @@ Iaue buvoient nient saine
 Car ele niert pas de fontaine
 </div>
 <div style="line-height: 1.2;">
-Entriax navoit pas symonie
+<span class="line-number">725</span>Entriax navoit pas symonie
 </div>
 <div style="line-height: 1.2;">
 Ne covoitise ne envie
@@ -9423,7 +9423,7 @@ Vestus iert de molt povres dras
 Miex ama il se povrete
 </div>
 <div style="line-height: 1.2;">
-Que nus quens naimme se conte
+<span class="line-number">810</span>Que nus quens naimme se conte
 </div>
 <div style="line-height: 1.2;">
 En le forest parfondement
@@ -10197,7 +10197,7 @@ Ja me vie ne tiert celee
 Trestoute le te conterai
 </div>
 <div style="line-height: 1.2;">
-Si que ja rien nen celerai
+<span class="line-number">1020</span>Si que ja rien nen celerai
 </div>
 <div style="line-height: 1.2;">
 <span class="decorative-initial floriate" data-size="2">O</span>R conmence a conter Marie
@@ -10617,7 +10617,7 @@ Crient de le rien que plus covoite
 Que ses pecies li ait toloite
 </div>
 <div style="line-height: 1.2;">
-Ou quel i eust ja este
+<span class="line-number">1135</span>Ou quel i eust ja este
 </div>
 <div style="line-height: 1.2;">
 &amp; il eust trop demore
@@ -11461,7 +11461,7 @@ Sire se tu de moi as cure
 Lai me faire se sepulture
 </div>
 <div style="line-height: 1.2;">
-Biax Peres Rois de majeste
+<span class="line-number">1365</span>Biax Peres Rois de majeste
 </div>
 <div style="line-height: 1.2;">
 Ne me laisssies chi esgare
@@ -11663,7 +11663,7 @@ Noient altre mais -i- lion
 Un lion issi del desert
 </div>
 <div style="line-height: 1.2;">
-la saproisma ou li cors ert
+<span class="line-number">1420</span>la saproisma ou li cors ert
 </div>
 <div style="line-height: 1.2;">
 les pies li conmence a lechier
@@ -11678,7 +11678,7 @@ Signe faisoit del obeir
 &amp; que il le voloit servir
 </div>
 <div style="line-height: 1.2;">
-<span class="decorative-initial" data-size="2">Q</span>uant li sains hom vit le lion
+<span class="line-number">1425</span><span class="decorative-initial" data-size="2">Q</span>uant li sains hom vit le lion
 </div>
 <div style="line-height: 1.2;">
 Navoit apris tel compaignon
@@ -12006,7 +12006,7 @@ Li abes pleure tenrrement
 &amp; li autre moine ensement
 </div>
 <div style="line-height: 1.2;">
-Ni ot nul qui namendast se vie
+<span class="line-number">1515</span>Ni ot nul qui namendast se vie
 </div>
 <div style="line-height: 1.2;">
 Por les miracles de Marie
@@ -13566,7 +13566,7 @@ Ne Dameldiu nos apeler
 Que fera ore le caitive
 </div>
 <div style="line-height: 1.2;">
-Chou li poise qu’ele est vive
+<span class="line-number">410</span>Chou li poise qu’ele est vive
 </div>
 <div style="line-height: 1.2;">
 Del cuer li issent li souspir
@@ -13691,7 +13691,7 @@ Ja mais n’iert jors n’aie pesance
 Molt iert aspre me peneance
 </div>
 <div style="line-height: 1.2;">
-Virgine Roine je croi bien
+<span class="line-number">445</span>Virgine Roine je croi bien
 </div>
 <div style="line-height: 1.2;">
 Que onques n’est icele rien
@@ -17082,7 +17082,7 @@ Sire se tu de moi as cure
 Lai me faire se sepulture
 </div>
 <div style="line-height: 1.2;">
-Biax Peres Rois de majeste
+<span class="line-number">1365</span>Biax Peres Rois de majeste
 </div>
 <div style="line-height: 1.2;">
 Ne me laisssies chi esgare
@@ -17302,7 +17302,7 @@ Signe faisoit de l’obeir
 &amp; que il le voloit servir
 </div>
 <div style="line-height: 1.2;">
-<span class="decorative-initial" data-size="2">Q</span>uant li sains hom vit le lion
+<span class="line-number">1425</span><span class="decorative-initial" data-size="2">Q</span>uant li sains hom vit le lion
 </div>
 <div style="line-height: 1.2;">
 N’avoit a pris tel compaignon
