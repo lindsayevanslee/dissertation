@@ -14,8 +14,7 @@ Digitization available via The University of Manchester [HERE](https://luna.manc
 library(xml2)
 ```
 
-::: {.column-page-outset}
-::: {layout="[[6,6,6,6]]"}
+::: {.column-page-outset layout="[[6,6,6,6]]"}
 
 ::: {.column}
 ## Nearly Diplomatic
@@ -121,8 +120,6 @@ convert_xml_to_html(xml_file = "data/T-E.xml", version_name = "intermediate")
 convert_xml_to_html(xml_file = "data/T-E.xml", version_name = "extensive")
 
 ```
-
-:::
 
 :::
 

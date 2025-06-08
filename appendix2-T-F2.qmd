@@ -16,8 +16,7 @@ Photograph no.101 (featured upside down online) is the recto, and photograph no.
 library(xml2)
 ```
 
-::: {.column-page-outset}
-::: {layout="[[6,6,6]]"}
+::: {.column-page-outset layout="[[6,6,6]]"}
 
 ::: {.column}
 ## Minimal
@@ -56,8 +55,6 @@ convert_xml_to_html(xml_file = "data/T-E.xml", version_name = "intermediate")
 convert_xml_to_html(xml_file = "data/T-E.xml", version_name = "extensive")
 
 ```
-
-:::
 
 :::
 

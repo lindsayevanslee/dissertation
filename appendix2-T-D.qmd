@@ -14,8 +14,7 @@ Digitization available via Gallica [HERE](https://gallica.bnf.fr/ark:/12148/btv1
 library(xml2)
 ```
 
-::: {.column-page-outset}
-::: {layout="[[6,6,6]]"}
+::: {.column-page-outset layout="[[6,6,6]]"}
 
 ::: {.column}
 ## Minimal
@@ -54,8 +53,6 @@ convert_xml_to_html(xml_file = "data/T-E.xml", version_name = "intermediate")
 convert_xml_to_html(xml_file = "data/T-E.xml", version_name = "extensive")
 
 ```
-
-:::
 
 :::
 

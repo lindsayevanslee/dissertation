@@ -7,8 +7,6 @@ format:
 
 This is the first part of the second chapter of my Quarto book...
 
-
-
 ### Excerpt of T-E (Portrait 2, vv.613-702)
 Paris, BnF Arsenal, 3516, ff.115r, col.d, line 13 - 115v, col.b, line 2 \
 Digitization available via Gallica [HERE](https://gallica.bnf.fr/ark:/12148/btv1b55000507q/f232.item).
@@ -18,9 +16,7 @@ Digitization available via Gallica [HERE](https://gallica.bnf.fr/ark:/12148/btv1
 library(xml2)
 ```
 
-
-::: {.column-page-outset}
-::: {layout="[[6,6,6]]"}
+::: {.column-page-outset layout="[[6,6,6]]"}
 
 ::: {.column}
 ## Minimal
@@ -29,13 +25,9 @@ library(xml2)
 source("convert-xml-to-html.R")
 ```
 
-
 ```{r results='asis'}
-
-
 # PRINT "MINIMAL" VERSION
 convert_xml_to_html(xml_file = "data/T-E.xml", version_name = "minimal", min_line = 613, max_line = 702)
-
 ```
 
 :::
@@ -46,7 +38,6 @@ convert_xml_to_html(xml_file = "data/T-E.xml", version_name = "minimal", min_lin
 ```{r results='asis'}
 # PRINT "INTERMEDIATE VERSION"
 convert_xml_to_html(xml_file = "data/T-E.xml", version_name = "intermediate", min_line = 613, max_line = 702)
-
 ```
 
 :::
@@ -57,12 +48,8 @@ convert_xml_to_html(xml_file = "data/T-E.xml", version_name = "intermediate", mi
 ```{r results='asis'}
 #PRINT "EXTENSIVE" VERSION
 convert_xml_to_html(xml_file = "data/T-E.xml", version_name = "extensive", min_line = 613, max_line = 702)
-
 ```
 
 :::
 
 :::
-
-:::
-
