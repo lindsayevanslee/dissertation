@@ -11,9 +11,8 @@ format:
 # Load the xml2 package
 library(xml2)
 ```
-
 ::: {.column-page-outset}
-::: {layout="[[6,6,6,6]]"}
+::: {layout="[[6,6,6]]"}
 
 ::: {.column}
 ## Nearly Diplomatic
@@ -2181,8 +2180,6 @@ formatted_text <- paste(c("<div class='edition-text'>", processed_lines, "</div>
 cat(formatted_text)
 
 ```
-
-:::
 
 :::
 

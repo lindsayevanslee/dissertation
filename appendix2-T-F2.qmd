@@ -59,5 +59,3 @@ convert_xml_to_html(xml_file = path_xml, version_name = "extensive")
 ```
 
 :::
-
-:::
