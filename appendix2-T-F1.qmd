@@ -89,6 +89,11 @@ cat(formatted_text)
 ::: {.column}
 ## Minimal
 
+```{r}
+source("convert-xml-to-html.R")
+```
+
+
 ```{r tf1-function, file="convert-xml-to-html.R"}
 ```
 

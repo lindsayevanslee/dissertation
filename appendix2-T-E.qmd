@@ -14,6 +14,11 @@ Digitization available via Gallica [HERE](https://gallica.bnf.fr/ark:/12148/btv1
 ::: {.column}
 ## Minimal
 
+```{r}
+source("convert-xml-to-html.R")
+```
+
+
 ```{r te-setup}
 # Load the xml2 package
 library(xml2)

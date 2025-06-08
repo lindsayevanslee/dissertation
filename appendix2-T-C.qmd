@@ -12,6 +12,11 @@ format:
 ::: {.column}
 ## Minimal
 
+```{r}
+source("convert-xml-to-html.R")
+```
+
+
 ```{r tc-setup}
 # Load the xml2 package
 library(xml2)

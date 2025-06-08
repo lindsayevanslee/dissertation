@@ -16,6 +16,11 @@ Photograph no.101 (featured upside down online) is the recto, and photograph no.
 ::: {.column}
 ## Minimal
 
+```{r}
+source("convert-xml-to-html.R")
+```
+
+
 ```{r tf2-setup}
 # Load the xml2 package
 library(xml2)
