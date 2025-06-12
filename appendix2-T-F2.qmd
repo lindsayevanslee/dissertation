@@ -151,6 +151,11 @@ process_line <- function(line) {
       return("<div style='line-height: 1.2;'>sen commenca aleir sun pas</div>")
     }
     
+    # SPECIAL CASE: Hard-code line v.23 to correct accent
+    if (line_count == 23) {
+      return("<div style='line-height: 1.2;'>cuda fantome aveir trove</div>")
+    }
+    
     # SPECIAL CASE: Hard-code line v.31 to correct apostrophe
     if (line_count == 31) {
       return("<div style='line-height: 1.2;'>baee fui en menfance</div>")
