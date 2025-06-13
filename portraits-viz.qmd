@@ -354,7 +354,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">ançois que je trespas avant<br></span>
 <span class="verse-line">Ans en cest mont ne en cest renne.<br></span>
 <span class="verse-line"><span class="line-number">154</span><span class="negation">Ne</span> vit <span class="negation">nuz</span> hom plus bele femme<br></span>
-<span class="verse-line"><span class="negation">Onques</span> ducoise <span class="negation">ne</span> roine.<br></span>
+<span class="verse-line"><span class="negation">Onques</span> duçoise <span class="negation">ne</span> roine.<br></span>
 <span class="verse-line"><span class="negation">ne n'</span>ot el cief plus bele crine<br></span>
 <span class="verse-line">Reondes avoit les orelhes.<br></span>
 <span class="verse-line">Mais <span class="color-word">blanches</span> erent a mervelhes<br></span>
@@ -507,7 +507,7 @@ To read these passages in translation, hover over each column with your cursor.
 .....<br>
 <span class="verse-line"><span class="line-number">149</span>Of her beauty, of her figure<br></span>
 <span class="verse-line">as it is in the written source<br></span>
-<span class="verse-line">I want to tell you about her appearance.<br></span>
+<span class="verse-line">I want to tell you about her appearance<br></span>
 <span class="verse-line">before I go too far.<br></span>
 <span class="verse-line">In this world and in this reign,<br></span>
 <span class="verse-line"><span class="line-number">154</span><span class="negation">no</span> man saw a more beautiful woman.<br></span>
