@@ -158,7 +158,7 @@ process_line <- function(line) {
     
     # SPECIAL CASE: Hard-code line v.1 to correct spacing
     if (line_count == 1) {
-      return("<div style='line-height: 1.2;'><span class='decorative-initial' data-size='2'>S</span>eignurs pur lamur JhesuCrist</div>")
+      return("<div style='line-height: 1.2;'><span class='decorative-initial' data-size='2'>S</span>eignurs pur lamur Jhesucrist</div>")
     }
     
     # SPECIAL CASE: Hard-code line v.7 to correct apostrophe
@@ -243,7 +243,7 @@ process_line <- function(line) {
     
     # SPECIAL CASE: Hard-code line v.577 to correct accent
     if (line_count == 577) {
-      return("<div style='line-height: 1.2;'>Bien pres du muster seint Johan</div>")
+      return("<div style='line-height: 1.2;'>Bien pres du muster Seint Johan</div>")
     }
     
     # SPECIAL CASE: Hard-code line v.582 to correct spacing
@@ -273,7 +273,7 @@ process_line <- function(line) {
     
     # SPECIAL CASE: Hard-code line v.748 to correct spacing
     if (line_count == 748) {
-      return("<div style='line-height: 1.2;'>Le cors JhesuCrist lur donout .</div>")
+      return("<div style='line-height: 1.2;'>Le cors Jhesucrist lur donout .</div>")
     }
       
     # SPECIAL CASE: Hard-code line v.835 to correct apostrophe

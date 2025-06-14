@@ -163,7 +163,7 @@ process_line <- function(line) {
     
     # SPECIAL CASE: Hard-code line v.32 to correct spacing
     if (line_count == 32) {
-      return("<div style='line-height: 1.2;'>en deai tote mafiance</div>")
+      return("<div style='line-height: 1.2;'>en Deai tote mafiance</div>")
     }
     
     # Add line number div every 5th line

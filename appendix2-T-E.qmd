@@ -64,7 +64,7 @@ process_line <- function(line) {
     
     # SPECIAL CASE: Hard-code line v.703 to correct nesting/repetition issue
     if (line_count == 703) {
-      return("<div style='line-height: 1.2;'><span class='decorative-initial' data-size='2'>O</span>rlairomes ci demarie</div>")
+      return("<div style='line-height: 1.2;'><span class='decorative-initial' data-size='2'>O</span>rlairomes ci deMarie</div>")
     }
     
     # SPECIAL CASE: Hard-code line v.1495 to fix "Sire Deus" spacing
@@ -540,22 +540,22 @@ process_line <- function(line) {
     
     # SPECIAL CASE: Hard-code line v.449 to correct spacing
     if (line_count == 449) {
-      return("<div style='line-height: 1.2;'>molt fu grant merveille delpere</div>")
+      return("<div style='line-height: 1.2;'>molt fu grant merveille delPere</div>")
     }
     
     # SPECIAL CASE: Hard-code line v.450 to correct spacing
     if (line_count == 450) {
-      return("<div style='line-height: 1.2;'><span class='line-number'>450</span>Quant de safille fist samere</div>")
+      return("<div style='line-height: 1.2;'><span class='line-number'>450</span>Quant de safille fist saMere</div>")
     }
     
     # SPECIAL CASE: Hard-code line v.453 to correct spacing
     if (line_count == 453) {
-      return("<div style='line-height: 1.2;'>Il fu tes Fiex & fu tespere</div>")
+      return("<div style='line-height: 1.2;'>Il fu tes Fiex & fu tesPere</div>")
     }
     
     # SPECIAL CASE: Hard-code line v.454 to correct spacing
     if (line_count == 454) {
-      return("<div style='line-height: 1.2;'>Tu fus sa Fille & samere</div>")
+      return("<div style='line-height: 1.2;'>Tu fus sa Fille & saMere</div>")
     }
     
     # SPECIAL CASE: Hard-code line v.458 to correct spacing
