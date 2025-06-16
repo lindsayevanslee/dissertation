@@ -83,8 +83,9 @@ convert_xml_to_html <- function(xml_file,
         for (choice in choices) {
             # Extract the text from the <orig> tag
             orig_text <- xml_text(xml_find_first(choice, ".//orig"))
-            # Remove the <choice> element and replace it with the text from the <orig> tag
-            xml_set_text(choice, paste0(orig_text, " "))
+            # Remove all children and set text directly
+            xml_remove(xml_children(choice))
+            xml_text(choice) <- paste0(orig_text, " ")
         }
 
         # Now we want to remove any <reg> elements entirely
@@ -96,18 +97,25 @@ convert_xml_to_html <- function(xml_file,
         choices <- xml_find_all(line, ".//choice")
 
         for (choice in choices) {
-            # Check if the <choice> element contains <abbr> and <expan>
             abbr_exists <- xml_find_first(choice, ".//abbr")
             expan_exists <- xml_find_first(choice, ".//expan")
             
             if (!is.na(abbr_exists) && !is.na(expan_exists)) {
-            # If <abbr> and <expan> tags exist, extract only the <reg> text from <expan>
-            reg_text <- xml_text(xml_find_first(choice, ".//expan/reg"))
-            xml_set_text(choice, paste0(reg_text, " "))
+                # First check if there's an intermediate tag
+                intermediate_node <- xml_find_first(choice, ".//expan/intermediate")
+                if (!is.na(intermediate_node)) {
+                    # If intermediate exists, use its text
+                    text_to_use <- xml_text(intermediate_node)
+                } else {
+                    # If no intermediate, use reg text
+                    text_to_use <- xml_text(xml_find_first(choice, ".//expan/reg"))
+                }
+                xml_remove(xml_children(choice))
+                xml_text(choice) <- paste0(text_to_use, " ")
             } else {
-            # For non-abbreviation choices, keep original behavior
-            orig_text <- xml_text(xml_find_first(choice, ".//orig"))
-            xml_set_text(choice, paste0(orig_text, " "))
+                orig_text <- xml_text(xml_find_first(choice, ".//orig"))
+                xml_remove(xml_children(choice))
+                xml_text(choice) <- paste0(orig_text, " ")
             }
         }
         # Now we want to remove any <reg> elements entirely
@@ -125,8 +133,9 @@ convert_xml_to_html <- function(xml_file,
         for (choice in choices) {
             # Extract the text from the <reg> tag
             reg_text <- xml_text(xml_find_first(choice, ".//reg"))
-            # Replace the <choice> element with the text from the <reg> tag
-            xml_set_text(choice, paste0(" ", reg_text, " "))
+            # Remove all children and set text directly
+            xml_remove(xml_children(choice))
+            xml_text(choice) <- paste0(" ", reg_text, " ")
         }
 
     }
