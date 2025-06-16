@@ -8,7 +8,8 @@ book:
     - name: "Loren Easterday Lee"
       affiliation: 
         name: "Department of French, University of Virginia"
-  date: "05/3/2025"
+  date: "06/13/2025"
+  date-format: long
   chapters:
     - index.qmd
     - abstract.qmd

@@ -1,5 +1,6 @@
-# Conclusion 
-## Process over Product
+---
+title: "Conclusion"
+---
 
 Numerous challenges persist that demand increasingly nuanced editorial choices to enable modern readers to appreciate the full complexity of Mary the Egyptian as she is depicted across the T corpus. First, there are many scribal choices and errors and corrections that can complicate the transcription and text encoding process described in this dissertation. For example, there is a powerful moment in which Mary the Egyptian tells Zozimas that he will find her dead or alive when next they meet (vv.1259-1260), and in copy T-B, the scribe has written these existential options on top of one another within the same ruled line like this:  
 

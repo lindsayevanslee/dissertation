@@ -2,15 +2,9 @@
 title: "Front Matter"  # This appears in navigation
 ---
 ![](images/shesasheep.jpeg){width=100% fig-align="center"}
-
+<div style="font-size: 1.1em;">
 A Dissertation presented to the Graduate Faculty of the University of Virginia in Candidacy for the Degree of Doctor of Philosophy
 
-<div style="font-size: 1.2em;">
-
-Department of French
-
-University of Virginia
-
-June, 2025
+August, 2025
 
 </div>

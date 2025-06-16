@@ -5,11 +5,11 @@ format:
     page-layout: full
 ---
 
-# Manchester, John Rylands Library, French 6
+## Manchester, John Rylands Library, French 6
 
 Digitization available via The University of Manchester [HERE](https://luna.manchester.ac.uk/luna/servlet/detail/Man4MedievalVC~4~4~994331~227074?sort=reference_number%2Cimage_sequence_number%2Cparent_work_title%2Cdate_created&qvq=q:French%206;sort:reference_number%2Cimage_sequence_number%2Cparent_work_title%2Cdate_created;lc:Man4MedievalVC~4~4&mi=1&trs=4).
 
-```{r setup, include=FALSE}
+```{r tf1-setup, include=FALSE}
 # Load the xml2 package
 library(xml2)
 ```
@@ -17,9 +17,9 @@ library(xml2)
 ::: {.column-page-outset layout="[[6,6,6,6]]"}
 
 ::: {.column}
-## Nearly Diplomatic
+### Nearly Diplomatic
 
-```{r results='asis'}
+```{r tf1-nearly-diplomatic, results='asis'}
 # START OF "NEARLY DIPLOMATIC" CODE
 # Read the XML content
 xml_file <- read_xml("data/T-F1-nearly_diplomatic.xml")
@@ -95,7 +95,7 @@ source("convert-xml-to-html.R")
 
 
 # PRINT "MINIMAL" VERSION
-convert_xml_to_html(xml_file = "data/T-E.xml", version_name = "minimal")
+convert_xml_to_html(xml_file = "data/T-F1.xml", version_name = "minimal")
 
 ```
 
@@ -106,7 +106,7 @@ convert_xml_to_html(xml_file = "data/T-E.xml", version_name = "minimal")
 
 ```{r results='asis'}
 # PRINT "INTERMEDIATE VERSION"
-convert_xml_to_html(xml_file = "data/T-E.xml", version_name = "intermediate")
+convert_xml_to_html(xml_file = "data/T-F1.xml", version_name = "intermediate")
 
 ```
 
@@ -117,7 +117,7 @@ convert_xml_to_html(xml_file = "data/T-E.xml", version_name = "intermediate")
 
 ```{r results='asis'}
 #PRINT "EXTENSIVE" VERSION
-convert_xml_to_html(xml_file = "data/T-E.xml", version_name = "extensive")
+convert_xml_to_html(xml_file = "data/T-F1.xml", version_name = "extensive")
 
 ```
 
