@@ -5,15 +5,82 @@ format:
     page-layout: full
 ---
 
-# Oxford, Bodleian, Canonici Misc. 74
+## Oxford, Bodleian, Canonici Misc. 74
 
-```{r setup, include=FALSE}
+```{r tb-setup, include=FALSE}
 # Load the xml2 package
 library(xml2)
 ```
 
 
-::: {.column-page-outset layout="[[6,6,6]]"}
+::: {.column-page-outset layout="[[6,6,6,6]]"}
+
+::: {.column}
+### Nearly Diplomatic
+
+```{r tb-nearly-diplomatic, results='asis'}
+# START OF "NEARLY DIPLOMATIC" CODE
+# Read the XML content
+xml_file <- read_xml("data/T-B-nearly_diplomatic.xml")
+
+# Extract <l>, <cb>, and <pb> elements
+lines <- xml_find_all(xml_file, "//text//l | //text//cb | //text//pb")
+
+# Initialize an empty list to store the processed lines
+processed_lines <- list()
+
+# Function to process each element
+process_line <- function(line) {
+  
+  # Handle column breaks
+  if (xml_name(line) == "cb") {
+    return("<div class='column-break'></div>")
+  }
+  
+    # Process emph elements (decorative initials)
+  emph_elements <- xml_find_all(line, ".//emph")
+  for (emph in emph_elements) {
+    # Get the initial letter text
+    initial_letter <- xml_text(emph)
+    
+    # Get the size attribute (n) and style attribute (rend)
+    size_attr <- xml_attr(emph, "n")
+    style_attr <- xml_attr(emph, "rend")
+    
+    # Create the HTML for the styled initial
+    styled_initial <- sprintf('<span class="decorative-initial %s" data-size="%s">%s</span>', 
+                             style_attr, size_attr, initial_letter)
+    
+    # Replace the emph element with the styled HTML
+    xml_text(emph) <- styled_initial
+  }
+  
+  # Process choice elements
+  choices <- xml_find_all(line, ".//choice")
+  for (choice in choices) {
+    orig_text <- xml_text(xml_find_first(choice, ".//orig"))
+    xml_set_text(choice, orig_text)
+  }
+  
+  # Remove reg elements
+  reg_elements <- xml_find_all(line, ".//reg")
+  xml_remove(reg_elements)
+  
+  # Return processed line text
+  return(sprintf("<div style='line-height: 1.2;'>%s</div>", xml_text(line)))
+}
+
+# Process each line
+for (line in lines) {
+  processed_lines <- c(processed_lines, process_line(line))
+}
+
+# Format and print
+formatted_text <- paste(processed_lines, collapse = "\n")
+cat(formatted_text)
+
+```
+:::
 
 ::: {.column}
 ## Minimal
@@ -27,7 +94,7 @@ source("convert-xml-to-html.R")
 
 
 # PRINT "MINIMAL" VERSION
-convert_xml_to_html(xml_file = "data/T-E.xml", version_name = "minimal")
+convert_xml_to_html(xml_file = "data/T-B.xml", version_name = "minimal")
 
 ```
 
@@ -38,7 +105,7 @@ convert_xml_to_html(xml_file = "data/T-E.xml", version_name = "minimal")
 
 ```{r results='asis'}
 # PRINT "INTERMEDIATE VERSION"
-convert_xml_to_html(xml_file = "data/T-E.xml", version_name = "intermediate")
+convert_xml_to_html(xml_file = "data/T-B.xml", version_name = "intermediate")
 
 ```
 
@@ -49,7 +116,7 @@ convert_xml_to_html(xml_file = "data/T-E.xml", version_name = "intermediate")
 
 ```{r results='asis'}
 #PRINT "EXTENSIVE" VERSION
-convert_xml_to_html(xml_file = "data/T-E.xml", version_name = "extensive")
+convert_xml_to_html(xml_file = "data/T-B.xml", version_name = "extensive")
 
 ```
 

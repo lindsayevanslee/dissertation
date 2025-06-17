@@ -30,7 +30,7 @@ source("convert-xml-to-html.R")
 
 
 # PRINT "MINIMAL" VERSION
-convert_xml_to_html(xml_file = "data/T-E.xml", version_name = "minimal")
+convert_xml_to_html(xml_file = "data/T-F2.xml", version_name = "minimal")
 
 ```
 
@@ -41,7 +41,7 @@ convert_xml_to_html(xml_file = "data/T-E.xml", version_name = "minimal")
 
 ```{r results='asis'}
 # PRINT "INTERMEDIATE VERSION"
-convert_xml_to_html(xml_file = "data/T-E.xml", version_name = "intermediate")
+convert_xml_to_html(xml_file = "data/T-F2.xml", version_name = "intermediate")
 
 ```
 
@@ -52,7 +52,7 @@ convert_xml_to_html(xml_file = "data/T-E.xml", version_name = "intermediate")
 
 ```{r results='asis'}
 #PRINT "EXTENSIVE" VERSION
-convert_xml_to_html(xml_file = "data/T-E.xml", version_name = "extensive")
+convert_xml_to_html(xml_file = "data/T-F2.xml", version_name = "extensive")
 
 ```
 
