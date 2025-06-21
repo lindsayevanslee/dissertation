@@ -171,26 +171,15 @@ extract_content_until_next_heading <- function(html_content, start_heading) {
             # Get ALL elements after the anchor (not just the first one)
             footnote_content_elements <- children[(anchor_pos[1] + 1):length(children)]
             
-            # Extract text from all elements
-            footnote_content_parts <- character(0)
-            for (element in footnote_content_elements) {
-              element_text <- xml_text(element)
-              if (nchar(element_text) > 0) {
-                footnote_content_parts <- c(footnote_content_parts, element_text)
-              }
-            }
-            
-            # Combine all parts
-            footnote_content <- paste(footnote_content_parts, collapse = "")
-            footnote_content <- str_squish(footnote_content)
+            # Convert footnote content to HTML with preserved formatting
+            footnote_html_content <- paste(sapply(footnote_content_elements, as.character), collapse = "")
             
             # Remove Google Docs comment references like [as], [at], [e], etc. (robust)
-            footnote_content <- str_replace_all(footnote_content, "\\[[a-zA-Z]{1,3}\\]", "")
-            footnote_content <- str_squish(footnote_content)
+            footnote_html_content <- str_replace_all(footnote_html_content, "\\[[a-zA-Z]{1,3}\\]", "")
             
-            # Create a simple footnote definition
+            # Create a simple footnote definition with preserved HTML formatting
             footnote_def <- paste0('<div class="footnote" id="ftnt', footnote_num, '_def">',
-                                 '<sup>[', footnote_num, ']</sup> ', footnote_content, '</div>')
+                                 '<sup>[', footnote_num, ']</sup> ', footnote_html_content, '</div>')
             footnote_definitions <- c(footnote_definitions, footnote_def)
           }
         }

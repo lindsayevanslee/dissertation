@@ -139,6 +139,28 @@ convert_html_to_markdown <- function(html_file) {
     }
   }
   
+  # Helper function to convert a single element (span, etc.) to markdown
+  convert_single_element <- function(element) {
+    element_name <- xml_name(element)
+    
+    if (element_name == "span") {
+      # Check for italic style
+      style <- xml_attr(element, "style")
+      text <- xml_text(element)
+      
+      if (!is.na(style) && str_detect(style, "font-style:italic")) {
+        return(paste0("*", text, "*"))
+      } else if (!is.na(style) && str_detect(style, "vertical-align:super")) {
+        return(paste0("^", text, "^"))
+      } else {
+        return(text)
+      }
+    } else {
+      # For other elements, just return the text
+      return(xml_text(element))
+    }
+  }
+
   # Look for footnote definitions in the HTML
   # Only look for footnote definitions that were extracted by the section extraction function
   footnote_def_divs <- xml_find_all(html_content, ".//div[contains(@id, '_def')]")
@@ -148,10 +170,27 @@ convert_html_to_markdown <- function(html_file) {
     if (str_detect(footnote_id, "^ftnt\\d+_def$")) {
       footnote_num <- str_extract(footnote_id, "\\d+")
       if (!is.na(footnote_num)) {
-        # Extract content from the footnote definition div
-        footnote_content <- xml_text(def_div)
-        # Remove the footnote number prefix if present
-        footnote_content <- str_replace(footnote_content, paste0("^\\[", footnote_num, "\\]\\s*"), "")
+        # Extract content from the footnote definition div, preserving HTML formatting
+        # Get all child elements of the footnote div (skip the sup element with the number)
+        footnote_children <- xml_children(def_div)
+        
+        # Convert each child element using the same logic as the main text
+        footnote_content_parts <- character(0)
+        for (child in footnote_children) {
+          if (xml_name(child) == "sup") {
+            # Skip the footnote number sup element
+            next
+          } else {
+            # Convert the element using the helper function
+            md <- convert_single_element(child)
+            if (md != "") {
+              footnote_content_parts <- c(footnote_content_parts, md)
+            }
+          }
+        }
+        
+        # Combine the footnote content
+        footnote_content <- paste(footnote_content_parts, collapse = "")
         footnote_content <- str_squish(footnote_content)
         
         # Remove Google Docs comment references like [as], [at], [e], etc. (robust)
