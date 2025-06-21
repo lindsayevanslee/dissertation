@@ -211,6 +211,9 @@ convert_html_to_markdown <- function(html_file) {
         sep_row <- paste0("| ", paste(rep("---", ncol), collapse = " | "), " |")
         current_table_md <- paste0(table_rows[1], "\n", sep_row, "\n", paste(table_rows[-1], collapse = "\n"))
         
+        # Add CSS class to the table using Quarto table attributes
+        current_table_md <- paste0("::: {.quote-table}\n", current_table_md, "\n:::")
+        
         # Add this table to the collection with its position
         table_md <- c(table_md, current_table_md)
         table_positions <- c(table_positions, table_position)
