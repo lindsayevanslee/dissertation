@@ -126,7 +126,32 @@ extract_content_until_next_heading <- function(html_content, start_heading) {
   
   # Extract the main content
   extracted_elements <- all_elements[start_index:end_index]
-  extracted_content <- paste(sapply(extracted_elements, as.character), collapse = "\n")
+  
+  # Deduplicate content to prevent the same text from appearing multiple times
+  seen_content <- character(0)
+  unique_elements <- list()
+  
+  for (element in extracted_elements) {
+    element_text <- xml_text(element)
+    element_text_clean <- str_squish(element_text)
+    
+    # Skip empty elements
+    if (element_text_clean == "") {
+      next
+    }
+    
+    # Normalize the text for better comparison (remove extra spaces, normalize quotes, etc.)
+    element_text_normalized <- str_replace_all(element_text_clean, "\\s+", " ")
+    element_text_normalized <- str_trim(element_text_normalized)
+    
+    # Check if we've seen this content before (using normalized text)
+    if (!(element_text_normalized %in% seen_content)) {
+      seen_content <- c(seen_content, element_text_normalized)
+      unique_elements <- c(unique_elements, list(element))
+    }
+  }
+  
+  extracted_content <- paste(sapply(unique_elements, as.character), collapse = "\n")
   
   # Find footnote references in the extracted content
   footnote_refs <- character(0)

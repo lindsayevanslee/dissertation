@@ -7,6 +7,9 @@ convert_html_to_markdown <- function(html_file) {
   library(xml2)
   library(stringr)
   
+  # Initialize table_seen_content at the top so it is always defined
+  table_seen_content <- character(0)
+  
   # Read HTML file with UTF-8 encoding
   html_content <- read_html(html_file, encoding = "UTF-8")
   
@@ -115,6 +118,86 @@ convert_html_to_markdown <- function(html_file) {
   # Track if we've seen the first h1
   first_h1_skipped <- FALSE
   
+  # Helper to normalize text for deduplication
+  normalize_for_dedup <- function(txt) {
+    txt <- str_replace_all(txt, "\\*|_", "") # remove asterisks and underscores
+    txt <- str_replace_all(txt, "<br>", " ") # treat <br> as space
+    txt <- str_replace_all(txt, "\\n", " ") # treat newlines as space
+    txt <- str_replace_all(txt, "\\s+", " ") # collapse whitespace
+    str_trim(txt)
+  }
+
+  # Track seen content to prevent duplicates
+  seen_content <- character(0)
+  
+  # Detect the first table and convert it to markdown table
+  table_md <- NULL
+  first_table <- xml_find_first(html_content, ".//table")
+  if (!is.na(first_table)) {
+    rows <- xml_find_all(first_table, ".//tr")
+    if (length(rows) > 0) {
+      # Get the first row (should be the only row in this case)
+      first_row <- rows[[1]]
+      cells <- xml_find_all(first_row, ".//td")
+      
+      if (length(cells) == 2) {
+        # Get all p elements from each cell
+        left_cell <- cells[[1]]
+        right_cell <- cells[[2]]
+        
+        left_ps <- xml_find_all(left_cell, ".//p")
+        right_ps <- xml_find_all(right_cell, ".//p")
+        
+        # Convert each p element to markdown
+        left_rows <- sapply(left_ps, function(p) {
+          convert_paragraph(p)
+        })
+        right_rows <- sapply(right_ps, function(p) {
+          convert_paragraph(p)
+        })
+        
+        # Clean up empty rows and normalize
+        left_rows <- str_squish(left_rows)
+        right_rows <- str_squish(right_rows)
+        
+        # Remove completely empty rows
+        left_rows <- left_rows[left_rows != ""]
+        right_rows <- right_rows[right_rows != ""]
+        
+        # Add ALL table content to seen_content for deduplication
+        all_table_content <- c(left_rows, right_rows)
+        for (content in all_table_content) {
+          if (content != "") {
+            seen_content <- c(seen_content, normalize_for_dedup(content))
+          }
+        }
+        
+        # Determine the maximum number of rows needed
+        max_rows <- max(length(left_rows), length(right_rows))
+        
+        # Pad the shorter column with empty strings
+        while (length(left_rows) < max_rows) {
+          left_rows <- c(left_rows, "")
+        }
+        while (length(right_rows) < max_rows) {
+          right_rows <- c(right_rows, "")
+        }
+        
+        # Build the markdown table
+        table_rows <- character(0)
+        for (i in 1:max_rows) {
+          table_row <- paste0("| ", left_rows[i], " | ", right_rows[i], " |")
+          table_rows <- c(table_rows, table_row)
+        }
+        
+        # Add separator row after the first row
+        ncol <- 2
+        sep_row <- paste0("| ", paste(rep("---", ncol), collapse = " | "), " |")
+        table_md <- paste0(table_rows[1], "\n", sep_row, "\n", paste(table_rows[-1], collapse = "\n"))
+      }
+    }
+  }
+  
   for (element in all_elements) {
     element_name <- xml_name(element)
     
@@ -123,7 +206,12 @@ convert_html_to_markdown <- function(html_file) {
       md <- convert_paragraph(element)
       md <- str_squish(md)
       if (md != "") {
-        text_content <- c(text_content, md)
+        # Check if we've seen this content before
+        md_normalized <- normalize_for_dedup(md)
+        if (!(md_normalized %in% seen_content)) {
+          seen_content <- c(seen_content, md_normalized)
+          text_content <- c(text_content, md)
+        }
       }
     } else if (str_detect(element_name, "^h\\d+$")) {
       # Process heading
@@ -134,7 +222,12 @@ convert_html_to_markdown <- function(html_file) {
       }
       md <- convert_heading(element)
       if (md != "") {
-        text_content <- c(text_content, md)
+        # Check if we've seen this heading before
+        md_normalized <- normalize_for_dedup(md)
+        if (!(md_normalized %in% seen_content)) {
+          seen_content <- c(seen_content, md_normalized)
+          text_content <- c(text_content, md)
+        }
       }
     }
   }
@@ -204,8 +297,13 @@ convert_html_to_markdown <- function(html_file) {
   
   # Deduplicate footnote definitions before appending
   footnote_definitions <- unique(footnote_definitions)
+  
   # Combine into markdown
   markdown_content <- paste(text_content, collapse = "\n\n")
+  # Add table at the start if present
+  if (!is.null(table_md)) {
+    markdown_content <- paste0(table_md, "\n\n", markdown_content)
+  }
   # Add footnote definitions at the end
   if (length(footnote_definitions) > 0) {
     markdown_content <- paste0(markdown_content, "\n\n", paste(footnote_definitions, collapse = "\n"))
