@@ -257,6 +257,30 @@ convert_html_to_markdown <- function(html_file) {
     }
     
     if (element_name == "p") {
+      # Check if this paragraph is part of a footnote definition
+      # If so, skip it in the main text processing
+      is_footnote_content <- FALSE
+      tryCatch({
+        parent <- xml_parent(element)
+        while (!is.na(parent)) {
+          if (xml_name(parent) == "div" && xml_attr(parent, "id") != "" && 
+              str_detect(xml_attr(parent, "id"), "^ftnt\\d+_def$")) {
+            # This paragraph is part of a footnote definition, skip it
+            is_footnote_content <- TRUE
+            break
+          }
+          parent <- xml_parent(parent)
+        }
+      }, error = function(e) {
+        # If xml_parent fails, assume it's not footnote content
+        is_footnote_content <- FALSE
+      })
+      
+      if (is_footnote_content) {
+        # Skip this paragraph as it's part of a footnote
+        next
+      }
+      
       # Check if this is a blockquote (has border styling and background color)
       style <- xml_attr(element, "style")
       is_blockquote <- FALSE
@@ -330,25 +354,120 @@ convert_html_to_markdown <- function(html_file) {
     }
   }
   
-  # Helper function to convert a single element (span, etc.) to markdown
+  # Helper function to convert a single element (span, etc.) to markdown, recursively
   convert_single_element <- function(element) {
     element_name <- xml_name(element)
+    children <- xml_children(element)
     
-    if (element_name == "span") {
-      # Check for italic style
+    # Detect blockquote style for <p> or <span> at the top level
+    if (element_name == "p" || element_name == "span") {
       style <- xml_attr(element, "style")
-      text <- xml_text(element)
-      
-      if (!is.na(style) && str_detect(style, "font-style:italic")) {
-        return(paste0("*", text, "*"))
-      } else if (!is.na(style) && str_detect(style, "vertical-align:super")) {
-        return(paste0("^", text, "^"))
-      } else {
-        return(text)
+      is_blockquote <- FALSE
+      if (!is.na(style)) {
+        has_border <- str_detect(style, "border.*solid") || 
+                     str_detect(style, "border.*style.*solid") ||
+                     str_detect(style, "border.*width.*1pt") ||
+                     str_detect(style, "border.*width.*1px")
+        has_background <- str_detect(style, "background.*color") && 
+                         !str_detect(style, "background.*color.*transparent")
+        is_blockquote <- has_border || has_background
       }
+      
+      if (is_blockquote) {
+        # Convert to blockquote
+        if (length(children) > 0) {
+          child_content <- sapply(children, convert_single_element)
+          content <- paste(child_content, collapse = "")
+          # Split into lines and prefix each with >
+          lines <- str_split(content, "\n")[[1]]
+          blockquote_lines <- sapply(lines, function(line) {
+            if (str_trim(line) == "") return("")
+            paste0("> ", line)
+          })
+          return(paste(blockquote_lines, collapse = "\n"))
+        } else {
+          text_content <- xml_text(element)
+          if (str_trim(text_content) == "") return("")
+          lines <- str_split(text_content, "\n")[[1]]
+          blockquote_lines <- sapply(lines, function(line) {
+            if (str_trim(line) == "") return("")
+            paste0("> ", line)
+          })
+          return(paste(blockquote_lines, collapse = "\n"))
+        }
+      }
+    }
+    
+    # Handle different element types
+    if (element_name == "span") {
+      style <- xml_attr(element, "style")
+      is_italic <- FALSE
+      is_bold <- FALSE
+      
+      if (!is.na(style)) {
+        is_italic <- str_detect(style, "font-style.*italic")
+        is_bold <- str_detect(style, "font-weight.*700") || str_detect(style, "font-weight.*bold")
+      }
+      
+      # Process children recursively
+      if (length(children) > 0) {
+        child_content <- sapply(children, convert_single_element)
+        content <- paste(child_content, collapse = "")
+      } else {
+        content <- xml_text(element)
+      }
+      
+      # Apply formatting
+      if (is_italic && is_bold) {
+        return(paste0("***", content, "***"))
+      } else if (is_italic) {
+        return(paste0("*", content, "*"))
+      } else if (is_bold) {
+        return(paste0("**", content, "**"))
+      } else {
+        return(content)
+      }
+    } else if (element_name == "sup") {
+      # Handle superscript
+      if (length(children) > 0) {
+        child_content <- sapply(children, convert_single_element)
+        content <- paste(child_content, collapse = "")
+      } else {
+        content <- xml_text(element)
+      }
+      return(paste0("^", content, "^"))
+    } else if (element_name == "a") {
+      # Handle links
+      href <- xml_attr(element, "href")
+      if (length(children) > 0) {
+        child_content <- sapply(children, convert_single_element)
+        content <- paste(child_content, collapse = "")
+      } else {
+        content <- xml_text(element)
+      }
+      
+      if (!is.na(href) && href != "") {
+        return(paste0("[", content, "](", href, ")"))
+      } else {
+        return(content)
+      }
+    } else if (element_name == "p") {
+      # Handle paragraphs
+      if (length(children) > 0) {
+        child_content <- sapply(children, convert_single_element)
+        content <- paste(child_content, collapse = "")
+      } else {
+        content <- xml_text(element)
+      }
+      return(content)
     } else {
-      # For other elements, just return the text
-      return(xml_text(element))
+      # For other elements, process children recursively
+      if (length(children) > 0) {
+        child_content <- sapply(children, convert_single_element)
+        return(paste(child_content, collapse = ""))
+      } else {
+        return(xml_text(element))
+      }
     }
   }
 
@@ -380,13 +499,40 @@ convert_html_to_markdown <- function(html_file) {
           }
         }
         
-        # Combine the footnote content
-        footnote_content <- paste(footnote_content_parts, collapse = "")
+        # Combine the footnote content, preserving paragraph breaks
+        footnote_content <- paste(footnote_content_parts, collapse = "\n\n")
         footnote_content <- str_squish(footnote_content)
         
         # Remove Google Docs comment references like [as], [at], [e], etc. (robust)
         footnote_content <- str_replace_all(footnote_content, "\\[[a-zA-Z]{1,3}\\]", "")
         footnote_content <- str_squish(footnote_content)
+        
+        # Remove the footnote number from the beginning if it appears there
+        # This handles cases where the number is still in the content
+        footnote_content <- str_replace(footnote_content, paste0("^\\[", footnote_num, "\\]\\s*"), "")
+        footnote_content <- str_squish(footnote_content)
+        
+        # Step 1: Remove any spaces just inside the asterisks
+        footnote_content <- str_replace_all(footnote_content, "\\*\\s+([^*]+?)\\s+\\*", "*\\1*")
+        footnote_content <- str_replace_all(footnote_content, "\\*\\s+([^*]+?)\\*", "*\\1*")
+        footnote_content <- str_replace_all(footnote_content, "\\*([^*]+?)\\s+\\*", "*\\1*")
+        # Step 2: Add a space before/after *italic* if adjacent to a letter/number
+        footnote_content <- str_replace_all(footnote_content, "([a-zA-Z0-9])\\*([^*]+)\\*", "\\1 *\\2*")
+        footnote_content <- str_replace_all(footnote_content, "\\*([^*]+)\\*([a-zA-Z0-9])", "*\\1* \\2")
+        footnote_content <- str_replace_all(footnote_content, "\\s+", " ")
+        footnote_content <- str_trim(footnote_content)
+        
+        # Blockquote formatting: detect lines that should be blockquotes (from blockquote-style <p> in footnotes)
+        # If a line starts with a quote or is indented, prefix with '> '
+        lines <- str_split(footnote_content, "\\n")[[1]]
+        blockquote_lines <- sapply(lines, function(line) {
+          if (str_detect(line, '^"|^\\s{2,}|^> ')) {
+            paste0('> ', str_trim(line))
+          } else {
+            line
+          }
+        })
+        footnote_content <- paste(blockquote_lines, collapse = "\n")
         
         footnote_definitions <- c(footnote_definitions, paste0("[^", footnote_num, "]: ", footnote_content))
       }
@@ -398,6 +544,11 @@ convert_html_to_markdown <- function(html_file) {
   
   # Combine into markdown
   markdown_content <- paste(final_content, collapse = "\n\n")
+  
+  # Remove any old-style footnote definitions that might have been included in the content
+  # These appear as [49], [50], etc. at the end of the document
+  markdown_content <- str_replace_all(markdown_content, "\\n\\[\\d+\\]\\s+[^\\n]+\\n", "\n")
+  
   # Add footnote definitions at the end
   if (length(footnote_definitions) > 0) {
     markdown_content <- paste0(markdown_content, "\n\n", paste(footnote_definitions, collapse = "\n"))

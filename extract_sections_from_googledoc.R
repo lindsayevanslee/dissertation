@@ -105,27 +105,38 @@ list_available_sections <- function(html_file) {
 #' @param start_heading The starting heading element
 #' @return HTML content as a character string
 extract_content_until_next_heading <- function(html_content, start_heading) {
-  # Get all elements after the starting heading
-  all_elements <- html_content %>% html_nodes("*")
-  
-  # Find the index of the starting heading
-  start_index <- which(sapply(all_elements, function(x) identical(x, start_heading)))
-  
+  # Get all h1 headings
+  all_headings <- html_content %>% html_nodes("h1")
+  heading_texts <- sapply(all_headings, function(h) html_text(h) %>% str_trim())
+  start_heading_text <- html_text(start_heading) %>% str_trim()
+  start_index <- which(tolower(heading_texts) == tolower(start_heading_text))
   if (length(start_index) == 0) {
     return(as.character(start_heading))
   }
-  
   # Find the next h1 heading
-  end_index <- length(all_elements)
-  for (i in (start_index + 1):length(all_elements)) {
-    if (html_name(all_elements[i]) == "h1") {
-      end_index <- i - 1
+  end_index <- if (start_index < length(all_headings)) start_index + 1 else NA
+  # Get all elements in document order
+  all_elements <- html_content %>% html_nodes("body") %>% xml_children()
+  # Find the start and end positions by matching heading text
+  start_pos <- NA
+  end_pos <- NA
+  for (i in seq_along(all_elements)) {
+    el <- all_elements[[i]]
+    if (xml_name(el) == "h1" && str_trim(html_text(el)) == start_heading_text && is.na(start_pos)) {
+      start_pos <- i
+    } else if (!is.na(end_index) && xml_name(el) == "h1" && str_trim(html_text(el)) == heading_texts[end_index]) {
+      end_pos <- i - 1
       break
     }
   }
-  
+  if (is.na(start_pos)) {
+    return(as.character(start_heading))
+  }
+  if (is.na(end_pos)) {
+    end_pos <- length(all_elements)
+  }
   # Extract the main content
-  extracted_elements <- all_elements[start_index:end_index]
+  extracted_elements <- all_elements[start_pos:end_pos]
   
   # Deduplicate content to prevent the same text from appearing multiple times
   seen_content <- character(0)
@@ -156,8 +167,7 @@ extract_content_until_next_heading <- function(html_content, start_heading) {
   # Find footnote references in the extracted content
   footnote_refs <- character(0)
   for (element in extracted_elements) {
-    # Look for sup elements with footnote links
-    footnote_links <- element %>% html_nodes("sup a[href*='#ftnt']")
+    footnote_links <- element %>% html_nodes("a[href*='#ftnt']")
     for (link in footnote_links) {
       href <- html_attr(link, "href")
       footnote_num <- stringr::str_extract(href, "\\d+")
@@ -166,58 +176,82 @@ extract_content_until_next_heading <- function(html_content, start_heading) {
       }
     }
   }
-  
-  # Remove duplicates and sort
   footnote_refs <- unique(sort(as.numeric(footnote_refs)))
-  
   # Extract footnote definitions for the referenced footnotes
   if (length(footnote_refs) > 0) {
     footnote_definitions <- character(0)
-    
     for (footnote_num in footnote_refs) {
-      # Look for footnote definition in the full document
       footnote_anchor <- html_content %>% html_nodes(paste0("a[id='ftnt", footnote_num, "']"))
-      
       if (length(footnote_anchor) > 0) {
-        # Get the footnote content - it's in the parent div after the anchor
         footnote_element <- footnote_anchor[[1]]
-        
-        # Get the parent div that contains the footnote
-        parent_div <- xml_parent(footnote_element)
-        
-        if (!is.na(parent_div)) {
-          # Get all children of the parent div
-          children <- xml_children(parent_div)
-          
-          # Find the anchor's position
-          anchor_pos <- which(sapply(children, function(x) identical(x, footnote_element)))
-          
-          if (length(anchor_pos) > 0 && anchor_pos[1] < length(children)) {
-            # Get ALL elements after the anchor (not just the first one)
-            footnote_content_elements <- children[(anchor_pos[1] + 1):length(children)]
-            
-            # Convert footnote content to HTML with preserved formatting
-            footnote_html_content <- paste(sapply(footnote_content_elements, as.character), collapse = "")
-            
-            # Remove Google Docs comment references like [as], [at], [e], etc. (robust)
-            footnote_html_content <- str_replace_all(footnote_html_content, "\\[[a-zA-Z]{1,3}\\]", "")
-            
-            # Create a simple footnote definition with preserved HTML formatting
-            footnote_def <- paste0('<div class="footnote" id="ftnt', footnote_num, '_def">',
-                                 '<sup>[', footnote_num, ']</sup> ', footnote_html_content, '</div>')
-            footnote_definitions <- c(footnote_definitions, footnote_def)
+        # Traverse up to the parent div
+        current_parent <- xml_parent(footnote_element)
+        footnote_div <- NULL
+        while (!is.na(current_parent)) {
+          if (xml_name(current_parent) == "div") {
+            if (length(xml_find_all(current_parent, paste0(".//a[@id='ftnt", footnote_num, "']"))) > 0) {
+              footnote_div <- current_parent
+              break
+            }
           }
+          next_parent <- tryCatch(xml_parent(current_parent), error = function(e) NA)
+          if (is.na(next_parent)) {
+            break
+          }
+          current_parent <- next_parent
+        }
+        if (!is.null(footnote_div) && !is.na(footnote_div)) {
+          # Get all content from the footnote div, but exclude the anchor element
+          footnote_children <- xml_children(footnote_div)
+          
+          # Filter out the anchor element (the one with the footnote number)
+          content_children <- list()
+          for (child in footnote_children) {
+            # Skip if this is the anchor element
+            if (xml_name(child) == "a" && xml_attr(child, "id") == paste0("ftnt", footnote_num)) {
+              next
+            }
+            # Skip if this is a p element that contains only the anchor
+            if (xml_name(child) == "p") {
+              p_children <- xml_children(child)
+              if (length(p_children) == 1 && xml_name(p_children[[1]]) == "a" && 
+                  xml_attr(p_children[[1]], "id") == paste0("ftnt", footnote_num)) {
+                next
+              }
+              # Also skip if this p element contains the anchor and nothing else meaningful
+              p_text <- xml_text(child)
+              p_text_clean <- str_replace_all(p_text, paste0("\\[", footnote_num, "\\]"), "")
+              p_text_clean <- str_squish(p_text_clean)
+              if (p_text_clean == "") {
+                next
+              }
+            }
+            content_children <- c(content_children, list(child))
+          }
+          
+          # Convert the filtered content to HTML
+          footnote_html_content <- paste(sapply(content_children, as.character), collapse = "")
+          footnote_html_content <- str_replace_all(footnote_html_content, "\\[[a-zA-Z]{1,3}\\]", "")
+          # Remove any remaining footnote number references
+          footnote_html_content <- str_replace_all(footnote_html_content, paste0("\\[", footnote_num, "\\]"), "")
+          footnote_html_content <- str_squish(footnote_html_content)
+          
+          footnote_def <- paste0('<div class="footnote" id="ftnt', footnote_num, '_def">',
+                               '<sup>[', footnote_num, ']</sup> ', footnote_html_content, '</div>')
+          footnote_definitions <- c(footnote_definitions, footnote_def)
         }
       }
     }
-    
-    # Add footnote definitions to the extracted content
     if (length(footnote_definitions) > 0) {
+      extracted_content <- paste(sapply(extracted_elements, as.character), collapse = "\n")
       extracted_content <- paste0(extracted_content, "\n\n<div class='footnotes'>\n",
                                  paste(footnote_definitions, collapse = "\n"), "\n</div>")
+    } else {
+      extracted_content <- paste(sapply(extracted_elements, as.character), collapse = "\n")
     }
+  } else {
+    extracted_content <- paste(sapply(extracted_elements, as.character), collapse = "\n")
   }
-  
   return(extracted_content)
 }
 
