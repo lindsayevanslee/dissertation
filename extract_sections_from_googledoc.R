@@ -184,6 +184,10 @@ extract_content_until_next_heading <- function(html_content, start_heading) {
             footnote_content <- paste(footnote_content_parts, collapse = "")
             footnote_content <- str_squish(footnote_content)
             
+            # Remove Google Docs comment references like [as], [at], [e], etc. (robust)
+            footnote_content <- str_replace_all(footnote_content, "\\[[a-zA-Z]{1,3}\\]", "")
+            footnote_content <- str_squish(footnote_content)
+            
             # Create a simple footnote definition
             footnote_def <- paste0('<div class="footnote" id="ftnt', footnote_num, '_def">',
                                  '<sup>[', footnote_num, ']</sup> ', footnote_content, '</div>')

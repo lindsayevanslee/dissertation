@@ -140,51 +140,33 @@ convert_html_to_markdown <- function(html_file) {
   }
   
   # Look for footnote definitions in the HTML
-  footnote_anchors <- xml_find_all(html_content, ".//a[@id[starts-with(., 'ftnt')]]")
-  for (anchor in footnote_anchors) {
-    footnote_id <- xml_attr(anchor, "id")
-    footnote_num <- str_extract(footnote_id, "\\d+")
-    if (!is.na(footnote_num)) {
-      # Look for footnote content in the document
-      # First try to find a footnote definition div
-      footnote_def_div <- xml_find_first(html_content, paste0(".//div[@id='ftnt", footnote_num, "_def']"))
-      
-      if (!is.na(footnote_def_div)) {
+  # Only look for footnote definitions that were extracted by the section extraction function
+  footnote_def_divs <- xml_find_all(html_content, ".//div[contains(@id, '_def')]")
+  for (def_div in footnote_def_divs) {
+    footnote_id <- xml_attr(def_div, "id")
+    # Only process if it's a footnote definition (starts with ftnt and ends with _def)
+    if (str_detect(footnote_id, "^ftnt\\d+_def$")) {
+      footnote_num <- str_extract(footnote_id, "\\d+")
+      if (!is.na(footnote_num)) {
         # Extract content from the footnote definition div
-        footnote_content <- xml_text(footnote_def_div)
+        footnote_content <- xml_text(def_div)
         # Remove the footnote number prefix if present
         footnote_content <- str_replace(footnote_content, paste0("^\\[", footnote_num, "\\]\\s*"), "")
         footnote_content <- str_squish(footnote_content)
-      } else {
-        # Fallback: look for the footnote anchor and try to get content from nearby elements
-        parent <- xml_parent(anchor)
-        if (!is.na(parent)) {
-          # Get all children of the parent
-          siblings <- xml_children(parent)
-          
-          # Find the anchor's position
-          anchor_pos <- which(sapply(siblings, function(x) identical(x, anchor)))
-          
-          if (length(anchor_pos) > 0 && anchor_pos[1] < length(siblings)) {
-            # Get the next element as potential footnote content
-            footnote_content_element <- siblings[[anchor_pos[1] + 1]]
-            footnote_content <- xml_text(footnote_content_element)
-            footnote_content <- str_squish(footnote_content)
-          } else {
-            footnote_content <- paste0("Footnote ", footnote_num)
-          }
-        } else {
-          footnote_content <- paste0("Footnote ", footnote_num)
-        }
+        
+        # Remove Google Docs comment references like [as], [at], [e], etc. (robust)
+        footnote_content <- str_replace_all(footnote_content, "\\[[a-zA-Z]{1,3}\\]", "")
+        footnote_content <- str_squish(footnote_content)
+        
+        footnote_definitions <- c(footnote_definitions, paste0("[^", footnote_num, "]: ", footnote_content))
       }
-      
-      footnote_definitions <- c(footnote_definitions, paste0("[^", footnote_num, "]: ", footnote_content))
     }
   }
   
+  # Deduplicate footnote definitions before appending
+  footnote_definitions <- unique(footnote_definitions)
   # Combine into markdown
   markdown_content <- paste(text_content, collapse = "\n\n")
-  
   # Add footnote definitions at the end
   if (length(footnote_definitions) > 0) {
     markdown_content <- paste0(markdown_content, "\n\n", paste(footnote_definitions, collapse = "\n"))
