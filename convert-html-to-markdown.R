@@ -65,14 +65,54 @@ convert_html_to_markdown <- function(html_file) {
     paste0(out, collapse = "")
   }
   
-  # Extract all paragraphs
-  paragraphs <- xml_find_all(html_content, ".//p")
+  # Function to convert heading to markdown
+  convert_heading <- function(heading) {
+    level <- as.numeric(str_extract(xml_name(heading), "\\d+"))
+    if (is.na(level)) level <- 1
+    
+    # Use the same logic as convert_paragraph to extract heading text
+    children <- xml_children(heading)
+    if (length(children) == 0) {
+      heading_text <- xml_text(heading)
+    } else {
+      heading_text <- convert_paragraph(heading)
+    }
+    heading_text <- str_squish(heading_text)
+    
+    # Create markdown heading with appropriate number of #
+    paste0(paste(rep("#", level), collapse = ""), " ", heading_text)
+  }
+  
+  # Process all elements in document order
   text_content <- character(0)
-  for (p in paragraphs) {
-    md <- convert_paragraph(p)
-    md <- str_squish(md)
-    if (md != "") {
-      text_content <- c(text_content, md)
+  
+  # Get all elements in document order
+  all_elements <- xml_find_all(html_content, ".//p | .//h1 | .//h2 | .//h3 | .//h4 | .//h5 | .//h6")
+  
+  # Track if we've seen the first h1
+  first_h1_skipped <- FALSE
+  
+  for (element in all_elements) {
+    element_name <- xml_name(element)
+    
+    if (element_name == "p") {
+      # Process paragraph
+      md <- convert_paragraph(element)
+      md <- str_squish(md)
+      if (md != "") {
+        text_content <- c(text_content, md)
+      }
+    } else if (str_detect(element_name, "^h\\d+$")) {
+      # Process heading
+      if (element_name == "h1" && !first_h1_skipped) {
+        # Skip the first h1
+        first_h1_skipped <- TRUE
+        next
+      }
+      md <- convert_heading(element)
+      if (md != "") {
+        text_content <- c(text_content, md)
+      }
     }
   }
   
