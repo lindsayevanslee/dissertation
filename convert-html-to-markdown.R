@@ -38,6 +38,28 @@ convert_html_to_markdown <- function(html_file) {
     i <- 1
     while (i <= length(children)) {
       node <- children[[i]]
+      
+      # Check if this is a sup element with footnote
+      if (xml_name(node) == "sup") {
+        # Look for footnote link inside sup
+        footnote_link <- xml_find_first(node, ".//a[contains(@href, '#ftnt')]")
+        if (!is.na(footnote_link)) {
+          # Extract footnote number from href or text
+          href <- xml_attr(footnote_link, "href")
+          footnote_num <- str_extract(href, "\\d+")
+          if (is.na(footnote_num)) {
+            # Fallback to text content
+            footnote_text <- xml_text(footnote_link)
+            footnote_num <- str_extract(footnote_text, "\\d+")
+          }
+          if (!is.na(footnote_num)) {
+            out <- c(out, paste0("[^", footnote_num, "]"))
+            i <- i + 1
+            next
+          }
+        }
+      }
+      
       if (is_italic(node)) {
         # Start italic group
         italic_group <- character(0)
@@ -85,6 +107,7 @@ convert_html_to_markdown <- function(html_file) {
   
   # Process all elements in document order
   text_content <- character(0)
+  footnote_definitions <- character(0)
   
   # Get all elements in document order
   all_elements <- xml_find_all(html_content, ".//p | .//h1 | .//h2 | .//h3 | .//h4 | .//h5 | .//h6")
@@ -116,17 +139,54 @@ convert_html_to_markdown <- function(html_file) {
     }
   }
   
+  # Look for footnote definitions in the HTML
+  footnote_anchors <- xml_find_all(html_content, ".//a[@id[starts-with(., 'ftnt')]]")
+  for (anchor in footnote_anchors) {
+    footnote_id <- xml_attr(anchor, "id")
+    footnote_num <- str_extract(footnote_id, "\\d+")
+    if (!is.na(footnote_num)) {
+      # Look for footnote content in the document
+      # First try to find a footnote definition div
+      footnote_def_div <- xml_find_first(html_content, paste0(".//div[@id='ftnt", footnote_num, "_def']"))
+      
+      if (!is.na(footnote_def_div)) {
+        # Extract content from the footnote definition div
+        footnote_content <- xml_text(footnote_def_div)
+        # Remove the footnote number prefix if present
+        footnote_content <- str_replace(footnote_content, paste0("^\\[", footnote_num, "\\]\\s*"), "")
+        footnote_content <- str_squish(footnote_content)
+      } else {
+        # Fallback: look for the footnote anchor and try to get content from nearby elements
+        parent <- xml_parent(anchor)
+        if (!is.na(parent)) {
+          # Get all children of the parent
+          siblings <- xml_children(parent)
+          
+          # Find the anchor's position
+          anchor_pos <- which(sapply(siblings, function(x) identical(x, anchor)))
+          
+          if (length(anchor_pos) > 0 && anchor_pos[1] < length(siblings)) {
+            # Get the next element as potential footnote content
+            footnote_content_element <- siblings[[anchor_pos[1] + 1]]
+            footnote_content <- xml_text(footnote_content_element)
+            footnote_content <- str_squish(footnote_content)
+          } else {
+            footnote_content <- paste0("Footnote ", footnote_num)
+          }
+        } else {
+          footnote_content <- paste0("Footnote ", footnote_num)
+        }
+      }
+      
+      footnote_definitions <- c(footnote_definitions, paste0("[^", footnote_num, "]: ", footnote_content))
+    }
+  }
+  
   # Combine into markdown
   markdown_content <- paste(text_content, collapse = "\n\n")
   
-  # Add simple footnote definitions at the end (if needed)
-  footnote_refs <- unique(str_extract_all(markdown_content, "\\[\\^([a-z])\\]")[[1]])
-  if (length(footnote_refs) > 0) {
-    footnote_definitions <- character(0)
-    for (ref in footnote_refs) {
-      ref_letter <- str_extract(ref, "[a-z]")
-      footnote_definitions <- c(footnote_definitions, paste0("[^", ref_letter, "]: ", "Footnote ", ref_letter))
-    }
+  # Add footnote definitions at the end
+  if (length(footnote_definitions) > 0) {
     markdown_content <- paste0(markdown_content, "\n\n", paste(footnote_definitions, collapse = "\n"))
   }
   

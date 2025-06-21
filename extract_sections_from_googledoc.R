@@ -99,7 +99,7 @@ list_available_sections <- function(html_file) {
   }
 }
 
-#' Extract content from a heading until the next h1 heading
+#' Extract content from a heading until the next h1 heading, including footnotes
 #' 
 #' @param html_content Parsed HTML content
 #' @param start_heading The starting heading element
@@ -124,9 +124,81 @@ extract_content_until_next_heading <- function(html_content, start_heading) {
     }
   }
   
-  # Extract the content
+  # Extract the main content
   extracted_elements <- all_elements[start_index:end_index]
   extracted_content <- paste(sapply(extracted_elements, as.character), collapse = "\n")
+  
+  # Find footnote references in the extracted content
+  footnote_refs <- character(0)
+  for (element in extracted_elements) {
+    # Look for sup elements with footnote links
+    footnote_links <- element %>% html_nodes("sup a[href*='#ftnt']")
+    for (link in footnote_links) {
+      href <- html_attr(link, "href")
+      footnote_num <- stringr::str_extract(href, "\\d+")
+      if (!is.na(footnote_num)) {
+        footnote_refs <- c(footnote_refs, footnote_num)
+      }
+    }
+  }
+  
+  # Remove duplicates and sort
+  footnote_refs <- unique(sort(as.numeric(footnote_refs)))
+  
+  # Extract footnote definitions for the referenced footnotes
+  if (length(footnote_refs) > 0) {
+    footnote_definitions <- character(0)
+    
+    for (footnote_num in footnote_refs) {
+      # Look for footnote definition in the full document
+      footnote_anchor <- html_content %>% html_nodes(paste0("a[id='ftnt", footnote_num, "']"))
+      
+      if (length(footnote_anchor) > 0) {
+        # Get the footnote content - it's in the parent div after the anchor
+        footnote_element <- footnote_anchor[[1]]
+        
+        # Get the parent div that contains the footnote
+        parent_div <- xml_parent(footnote_element)
+        
+        if (!is.na(parent_div)) {
+          # Get all children of the parent div
+          children <- xml_children(parent_div)
+          
+          # Find the anchor's position
+          anchor_pos <- which(sapply(children, function(x) identical(x, footnote_element)))
+          
+          if (length(anchor_pos) > 0 && anchor_pos[1] < length(children)) {
+            # Get ALL elements after the anchor (not just the first one)
+            footnote_content_elements <- children[(anchor_pos[1] + 1):length(children)]
+            
+            # Extract text from all elements
+            footnote_content_parts <- character(0)
+            for (element in footnote_content_elements) {
+              element_text <- xml_text(element)
+              if (nchar(element_text) > 0) {
+                footnote_content_parts <- c(footnote_content_parts, element_text)
+              }
+            }
+            
+            # Combine all parts
+            footnote_content <- paste(footnote_content_parts, collapse = "")
+            footnote_content <- str_squish(footnote_content)
+            
+            # Create a simple footnote definition
+            footnote_def <- paste0('<div class="footnote" id="ftnt', footnote_num, '_def">',
+                                 '<sup>[', footnote_num, ']</sup> ', footnote_content, '</div>')
+            footnote_definitions <- c(footnote_definitions, footnote_def)
+          }
+        }
+      }
+    }
+    
+    # Add footnote definitions to the extracted content
+    if (length(footnote_definitions) > 0) {
+      extracted_content <- paste0(extracted_content, "\n\n<div class='footnotes'>\n",
+                                 paste(footnote_definitions, collapse = "\n"), "\n</div>")
+    }
+  }
   
   return(extracted_content)
 }
