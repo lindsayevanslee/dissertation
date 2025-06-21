@@ -257,6 +257,21 @@ convert_html_to_markdown <- function(html_file) {
     }
     
     if (element_name == "p") {
+      # Check if this is a blockquote (has border styling and background color)
+      style <- xml_attr(element, "style")
+      is_blockquote <- FALSE
+      if (!is.na(style)) {
+        # Check for border styling and background color that indicates a blockquote
+        has_border <- str_detect(style, "border.*solid") || 
+                     str_detect(style, "border.*style.*solid") ||
+                     str_detect(style, "border.*width.*[1-9]")
+        has_background <- str_detect(style, "background-color")
+        has_margin <- str_detect(style, "margin-left.*36pt") || 
+                     str_detect(style, "margin-left.*36")
+        
+        is_blockquote <- has_border && (has_background || has_margin)
+      }
+      
       # Process paragraph
       md <- convert_paragraph(element)
       md <- str_squish(md)
@@ -265,6 +280,21 @@ convert_html_to_markdown <- function(html_file) {
         md_normalized <- normalize_for_dedup(md)
         if (!(md_normalized %in% seen_content)) {
           seen_content <- c(seen_content, md_normalized)
+          
+          # Format as blockquote if detected
+          if (is_blockquote) {
+            # Split into lines and add > to each line
+            lines <- str_split(md, "\n")[[1]]
+            blockquote_lines <- sapply(lines, function(line) {
+              if (str_trim(line) != "") {
+                paste0("> ", line)
+              } else {
+                ">"
+              }
+            })
+            md <- paste(blockquote_lines, collapse = "\n")
+          }
+          
           final_content[[content_index]] <- md
           content_index <- content_index + 1
         }
