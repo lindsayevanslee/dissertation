@@ -130,11 +130,27 @@ convert_html_to_markdown <- function(html_file) {
   # Track seen content to prevent duplicates
   seen_content <- character(0)
   
-  # Detect the first table and convert it to markdown table
-  table_md <- NULL
-  first_table <- xml_find_first(html_content, ".//table")
-  if (!is.na(first_table)) {
-    rows <- xml_find_all(first_table, ".//tr")
+  # Create a list to store content with table insertions
+  final_content <- list()
+  content_index <- 1
+  
+  # Detect all tables and convert them to markdown tables
+  table_md <- character(0)
+  table_positions <- integer(0)
+  all_tables <- xml_find_all(html_content, ".//table")
+  
+  for (table_idx in seq_along(all_tables)) {
+    current_table <- all_tables[[table_idx]]
+    
+    # Find the position of this table in the document
+    # We'll use the position of the first paragraph before this table
+    table_position <- 0
+    prev_elements <- xml_find_all(current_table, "preceding::p | preceding::h1 | preceding::h2 | preceding::h3 | preceding::h4 | preceding::h5 | preceding::h6")
+    if (length(prev_elements) > 0) {
+      table_position <- length(prev_elements)
+    }
+    
+    rows <- xml_find_all(current_table, ".//tr")
     if (length(rows) > 0) {
       # Get the first row (should be the only row in this case)
       first_row <- rows[[1]]
@@ -193,13 +209,29 @@ convert_html_to_markdown <- function(html_file) {
         # Add separator row after the first row
         ncol <- 2
         sep_row <- paste0("| ", paste(rep("---", ncol), collapse = " | "), " |")
-        table_md <- paste0(table_rows[1], "\n", sep_row, "\n", paste(table_rows[-1], collapse = "\n"))
+        current_table_md <- paste0(table_rows[1], "\n", sep_row, "\n", paste(table_rows[-1], collapse = "\n"))
+        
+        # Add this table to the collection with its position
+        table_md <- c(table_md, current_table_md)
+        table_positions <- c(table_positions, table_position)
       }
     }
   }
   
-  for (element in all_elements) {
+  for (element_idx in seq_along(all_elements)) {
+    element <- all_elements[[element_idx]]
     element_name <- xml_name(element)
+    
+    # Check if we need to insert a table at this position
+    if (length(table_positions) > 0) {
+      for (table_idx in seq_along(table_positions)) {
+        if (table_positions[table_idx] == element_idx - 1) {
+          # Insert table at this position
+          final_content[[content_index]] <- table_md[table_idx]
+          content_index <- content_index + 1
+        }
+      }
+    }
     
     if (element_name == "p") {
       # Process paragraph
@@ -210,7 +242,8 @@ convert_html_to_markdown <- function(html_file) {
         md_normalized <- normalize_for_dedup(md)
         if (!(md_normalized %in% seen_content)) {
           seen_content <- c(seen_content, md_normalized)
-          text_content <- c(text_content, md)
+          final_content[[content_index]] <- md
+          content_index <- content_index + 1
         }
       }
     } else if (str_detect(element_name, "^h\\d+$")) {
@@ -226,8 +259,20 @@ convert_html_to_markdown <- function(html_file) {
         md_normalized <- normalize_for_dedup(md)
         if (!(md_normalized %in% seen_content)) {
           seen_content <- c(seen_content, md_normalized)
-          text_content <- c(text_content, md)
+          final_content[[content_index]] <- md
+          content_index <- content_index + 1
         }
+      }
+    }
+  }
+  
+  # Check if we need to insert any remaining tables at the end
+  if (length(table_positions) > 0) {
+    for (table_idx in seq_along(table_positions)) {
+      if (table_positions[table_idx] >= length(all_elements)) {
+        # Insert table at the end
+        final_content[[content_index]] <- table_md[table_idx]
+        content_index <- content_index + 1
       }
     }
   }
@@ -299,11 +344,7 @@ convert_html_to_markdown <- function(html_file) {
   footnote_definitions <- unique(footnote_definitions)
   
   # Combine into markdown
-  markdown_content <- paste(text_content, collapse = "\n\n")
-  # Add table at the start if present
-  if (!is.null(table_md)) {
-    markdown_content <- paste0(table_md, "\n\n", markdown_content)
-  }
+  markdown_content <- paste(final_content, collapse = "\n\n")
   # Add footnote definitions at the end
   if (length(footnote_definitions) > 0) {
     markdown_content <- paste0(markdown_content, "\n\n", paste(footnote_definitions, collapse = "\n"))
