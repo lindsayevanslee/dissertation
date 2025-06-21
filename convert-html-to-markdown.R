@@ -180,11 +180,31 @@ convert_html_to_markdown <- function(html_file) {
         left_rows <- left_rows[left_rows != ""]
         right_rows <- right_rows[right_rows != ""]
         
+        # Special case: Remove the blank row with "**" from this specific table
+        # This is the table with the quote about "Nos conteurs se fourvoient"
+        if (length(left_rows) > 0 && length(right_rows) > 0) {
+          # Check if this looks like the specific table we want to fix
+          if (any(str_detect(left_rows, "Il sunt del cunte forsveié")) && 
+              any(str_detect(right_rows, "Nos conteurs se fourvoient"))) {
+            # Remove the row that contains just "**"
+            left_rows <- left_rows[left_rows != "**"]
+            right_rows <- right_rows[right_rows != "**"]
+          }
+        }
+        
         # Add ALL table content to seen_content for deduplication
         all_table_content <- c(left_rows, right_rows)
         for (content in all_table_content) {
           if (content != "") {
             seen_content <- c(seen_content, normalize_for_dedup(content))
+          }
+        }
+        
+        # Also add the raw text content to catch duplicates that might appear as separate elements
+        for (p in c(left_ps, right_ps)) {
+          raw_text <- xml_text(p)
+          if (raw_text != "") {
+            seen_content <- c(seen_content, normalize_for_dedup(raw_text))
           }
         }
         
@@ -240,7 +260,7 @@ convert_html_to_markdown <- function(html_file) {
       # Process paragraph
       md <- convert_paragraph(element)
       md <- str_squish(md)
-      if (md != "") {
+      if (md != "" && md != "**") {
         # Check if we've seen this content before
         md_normalized <- normalize_for_dedup(md)
         if (!(md_normalized %in% seen_content)) {
@@ -257,7 +277,7 @@ convert_html_to_markdown <- function(html_file) {
         next
       }
       md <- convert_heading(element)
-      if (md != "") {
+      if (md != "" && md != "**") {
         # Check if we've seen this heading before
         md_normalized <- normalize_for_dedup(md)
         if (!(md_normalized %in% seen_content)) {
