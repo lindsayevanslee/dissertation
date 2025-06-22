@@ -186,41 +186,41 @@ To read these passages in translation, hover over each column with your cursor.
   <div class="hover-text">
 .....<br>
 <span class="verse-line"><span class="line-number">157</span>Of her beauty, of her figure<br></span>
-<span class="verse-line">as it is in the written source<br></span>
-<span class="verse-line">I want to say a little about her appearance<br></span>
+<span class="verse-line">(as it is in the written source)<br></span>
+<span class="verse-line">and about her appearance, I want to say a little<br></span>
 <span class="verse-line">before I go too far.<br></span>
-<span class="verse-line">For at that time in that reign,<br></span>
-<span class="verse-line"><span class="line-number">162</span><span class="negation">no</span> man saw a more beautiful woman.<br></span>
+<span class="verse-line">For at that time in that realm,<br></span>
+<span class="verse-line"><span class="line-number">162</span><span class="negation">no</span> man <span class="negation">ever</span> saw a more beautiful woman.<br></span>
 <span class="verse-line"><span class="negation">Never</span> countess <span class="negation">nor</span> queen<br></span>
 <span class="verse-line">had over her brow more beautiful hair.<br></span>
 <span class="verse-line">She had round ears.<br></span>
 <span class="verse-line">What's more, they were marvelously <span class="color-word">white</span>,<br></span>
 <span class="verse-line"><span class="line-number">167</span><span class="sequence-change">her eyes <span class="color-word">bright</span> and smiling,<br></span></span>
 <span class="verse-line"><span class="sequence-change">her eyebrows <span class="color-word">black</span> and becoming,<br></span></span>
-<span class="verse-line">her little mouth mild,<br></span>
-<span class="verse-line">and pious her gaze,<br></span>
+<span class="verse-line">her small mouth well-proportioned,<br></span>
+<span class="verse-line">and pleasing her expression,<br></span>
 <span class="verse-line">her face tender and <span class="color-word">blushing<br></span></span>
-<span class="verse-line"><span class="line-number">172</span><span class="color-word">like the rose that is always in bloom.<br></span></span>
+<span class="verse-line"><span class="line-number">172</span><span class="color-word">like the rose that has just bloomed.<br></span></span>
 <div class="empty-line"></div>
 <div class="empty-line"></div>
 <span class="verse-line"><span class="negation">Indeed neither</span> on her nose <span class="negation">nor</span> on her chin<br></span>
-<span class="verse-line"><span class="folio-number">335vb</span>would you be aware of <span class="negation">any</span> defect.<br></span>
-<span class="verse-line">Her neck was <span class="color-word">white like ermine</span> too.<br></span>
+<span class="verse-line"><span class="folio-number">335vb</span>would you notice <span class="negation">any</span> defect.<br></span>
+<span class="verse-line">On top of that, her neck was <span class="color-word">white like ermine</span>.<br></span>
 <span class="verse-line">There flowed her <span class="color-word">blonde</span> hair.<br></span>
 <span class="verse-line"><span class="line-number">177</span>The breasts of this lady<br></span>
 <span class="verse-line">were <span class="negation">no smaller</span> than apples.<br></span>
-<span class="verse-line">Above the cleavage of her chest,<br></span>
-<span class="verse-line">it was <span class="color-word">white like hawthorn flower</span>.<br></span>
+<span class="verse-line">Below her throat on her chest,<br></span>
+<span class="verse-line">it was <span class="color-word">white like a hawthorn flower</span>.<br></span>
 <span class="verse-line">She had <span class="color-word">white arms</span> and <span class="color-word">white hands</span>,<br></span>
 <span class="verse-line"><span class="line-number">182</span>her fingers shapely, slender, and smooth.<br></span>
 <span class="verse-line">She had a fine body and well molded<br></span>
-<span class="verse-line">from her underarm along her rib.<br></span>
+<span class="verse-line">from her underarm along her side.<br></span>
 <span class="verse-line"><span class="negation">She was neither too big nor too small.<br></span></span>
 <span class="verse-line">Her frame could <span class="negation">never</span> be written.<br></span>
 <span class="verse-line"><span class="line-number">187</span>The beauty of this lady<br></span>
 <span class="verse-line">could <span class="negation">never</span> be written by <span class="negation">any</span> man.<br></span>
-<span class="verse-line">She was so courteous of speech.<br></span>
-<span class="verse-line">There was <span class="negation">nothing</span> to improve.<br></span>
+<span class="verse-line">She was so courteous of speech;<br></span>
+<span class="verse-line">there was <span class="negation">nothing</span> to improve.<br></span>
 <span class="verse-line">Such a creature makes one lament<br></span>
 <span class="verse-line"><span class="line-number">192</span>when she <span class="negation">does not</span> care about the Creator.<br></span>
 <span class="verse-line">She received many presents<br></span>
@@ -232,14 +232,14 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">she had a fine <span class="color-word">purple silk</span> bliaut<br></span>
 <span class="verse-line">and adorned herself with an ermine mantle.<br></span>
 <span class="verse-line"><span class="color-word">Well-painted</span> shoes of Cordovan leather<br></span>
-<span class="verse-line"><span class="line-number">202</span>she put these on all the days of the year.<br></span>
+<span class="verse-line"><span class="line-number">202</span>she wore all the days of the year.<br></span>
 <span class="verse-line">The citizens of the city<br></span>
 <span class="verse-line">loved her entirely for her beauty.<br></span>
-<span class="verse-line">The old men and the wise<br></span>
+<span class="verse-line">The aged men and the wise<br></span>
 <span class="verse-line">would all say, "God, what a shame!<br></span>
-<span class="verse-line"><span class="line-number">207</span>Oh alas evermore for this suffering!<br></span>
+<span class="verse-line"><span class="line-number">207</span>Oh alas evermore for this sufferer!<br></span>
 <span class="verse-line">There is much to bemoan of her youth.<br></span>
-<span class="verse-line">Alas evermore for her life<br></span>
+<span class="verse-line">Oh alas evermore for her life<br></span>
 <span class="verse-line">as it is so full of folly."<br></span>
 <span class="verse-line">Everyone in the city would say<br></span>
 <span class="verse-line"><span class="line-number">212</span>that she was of high parentage<br></span>
@@ -557,7 +557,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">loved her entirely for her beauty,<br></span>
 <span class="verse-line">and the old men and the wise<br></span>
 <span class="verse-line">would all say, "God, what a shame!<br></span>
-<span class="verse-line"><span class="line-number">199</span>Alas for this sufferer!<br></span>
+<span class="verse-line"><span class="line-number">199</span>Oh alas for this sufferer!<br></span>
 <span class="verse-line">There is much to bemoan of her youth.<br></span>
 <span class="verse-line">Alas evermore for her life,<br></span>
 <span class="verse-line">which is so full of folly."<br></span>
@@ -826,8 +826,8 @@ To read these passages in translation, hover over each column with your cursor.
   <div class="hover-text">
 .....<br>
 <span class="verse-line"><span class="line-number">159</span>Of her beauty, of her figure<br></span>
-<span class="verse-line">as it is in the written source<br></span>
-<span class="verse-line">I want to say a little about her appearance<br></span>
+<span class="verse-line">(as it is in the written source)<br></span>
+<span class="verse-line">and about her appearance, I want to say a little<br></span>
 <span class="verse-line">before I go on.<br></span>
 <span class="verse-line"><span class="unique-verse">At that time, there was <span class="negation">no</span> woman so beautiful<br></span></span>
 <span class="verse-line"><span class="line-number">164</span><span class="unique-verse">for she was a gem above them all.<br></span></span>
@@ -837,30 +837,30 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">They were very marvelously <span class="color-word">white,<br></span></span>
 <span class="verse-line"><span class="folio-number">38v</span>her eyebrows <span class="color-word">black</span> and becoming,<br></span>
 <span class="verse-line">and her eyes <span class="color-word">bright</span> and overjoyed,<br></span>
-<span class="verse-line">her little mouth mild,<br></span>
-<span class="verse-line">and she had a <span class="unique-verse">simple</span> gaze,<br></span>
+<span class="verse-line">her small mouth well-proportioned,<br></span>
+<span class="verse-line">and she had a <span class="unique-verse">simple</span> expression,<br></span>
 <span class="verse-line">her face tender and <span class="color-word">blushing<br></span></span>
-<span class="verse-line"><span class="line-number">174</span><span class="color-word">like a rose that is always in bloom.<br></span></span>
+<span class="verse-line"><span class="line-number">174</span><span class="color-word">like a rose that has just bloomed.<br></span></span>
 <div class="empty-line"></div>
 <div class="empty-line"></div>
 <span class="verse-line"><span class="negation">Indeed neither</span> on her nose <span class="negation">nor</span> on her chin<br></span>
-<span class="verse-line">would you be aware of <span class="negation">any</span> defect.<br></span>
-<span class="verse-line">Along her neck was <span class="color-word">white like ermine.<br></span></span>
+<span class="verse-line">would you notice <span class="negation">any</span> defect.<br></span>
+<span class="verse-line">On top of that, her neck was <span class="color-word">white like ermine.<br></span></span>
 <span class="verse-line">There flowed her <span class="color-word">blonde</span> hair.<br></span>
 <span class="verse-line"><span class="line-number">179</span>Each of the breasts of the lady<br></span>
-<span class="verse-line">was <span class="negation">no more</span> than an apple.<br></span>
-<span class="verse-line">Above the cleavage of her chest,<br></span>
-<span class="verse-line">it was <span class="color-word">white like hawthorn flower.<br></span></span>
+<span class="verse-line">was <span class="negation">no bigger</span> than an apple.<br></span>
+<span class="verse-line">Below her throat on her chest,<br></span>
+<span class="verse-line">it was <span class="color-word">white like a hawthorn flower.<br></span></span>
 <span class="verse-line">She had <span class="unique-verse">long arms</span> and <span class="color-word">white hands</span>,<br></span>
 <span class="verse-line"><span class="line-number">184</span>her fingers shapely, slender, and smooth.<br></span>
 <span class="verse-line">She had a fine body and was well molded<br></span>
-<span class="verse-line">from her underarm along her rib.<br></span>
+<span class="verse-line">from her underarm along her side.<br></span>
 <span class="verse-line"><span class="negation">She was neither too big nor too small.<br></span></span>
 <span class="verse-line">Her frame could <span class="negation">never</span> be described.<br></span>
 <span class="verse-line"><span class="line-number">189</span><span class="negation">Nor</span> could the beauty of this lady<br></span>
 <span class="verse-line"><span class="negation">ever</span> be described by <span class="negation">any</span> <span class="unique-verse">soul</span>.<br></span>
-<span class="verse-line">She was so courteous of speech.<br></span>
-<span class="verse-line">There was <span class="negation">nothing</span> to improve.<br></span>
+<span class="verse-line">She was so courteous of speech;<br></span>
+<span class="verse-line">there was <span class="negation">nothing</span> to improve.<br></span>
 <span class="verse-line">Such a creature makes one lament<br></span>
 <span class="verse-line"><span class="line-number">194</span>when she <span class="negation">does not</span> care about her Creator.<br></span>
 <span class="verse-line"><span class="folio-number">39r</span>She received many presents<br></span>
@@ -869,18 +869,18 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">to better please her lovers.<br></span>
 <span class="verse-line"><span class="line-number">199</span>She <span class="negation">did not</span> care for woollen cloth.<br></span>
 <span class="verse-line">On any of the days of the week,<br></span>
-<span class="verse-line">she wore her own bliaut of fine <span class="color-word">purple silk<br></span></span>
+<span class="verse-line">she wore, instead, a bliaut of fine <span class="color-word">purple silk<br></span></span>
 <span class="verse-line">and adorned herself with an ermine mantle.<br></span>
 <span class="verse-line"><span class="color-word">Well-painted</span> shoes of Cordovan leather,<br></span>
-<span class="verse-line"><span class="line-number">204</span>she put these on all the days of the year.<br></span>
+<span class="verse-line"><span class="line-number">204</span>she wore all the days of the year.<br></span>
 <span class="verse-line">Every man of the city<br></span>
 <span class="verse-line">loved her for her beauty.<br></span>
-<span class="verse-line">The old men and the wise<br></span>
+<span class="verse-line">The aged men and the wise<br></span>
 <span class="verse-line">would say, "Ah! What a shame!<br></span>
-<span class="verse-line"><span class="line-number">209</span>Alas was born suffering!<br></span>
+<span class="verse-line"><span class="line-number">209</span>Oh alas was born the sufferer!<br></span>
 <span class="verse-line">There is much to bemoan of her youth.<br></span>
-<span class="verse-line">Alas evermore, her life<br></span>
-<span class="verse-line">is so full of folly."<br></span>
+<span class="verse-line">Alas evermore for her life<br></span>
+<span class="verse-line">as it is so full of folly."<br></span>
 <span class="verse-line">Everyone in the city would say<br></span>
 <span class="verse-line"><span class="line-number">214</span>that she was of great parentage<br></span>
 <span class="verse-line">for she answered all with reason<br></span>
@@ -1146,31 +1146,31 @@ To read these passages in translation, hover over each column with your cursor.
   <div class="hover-text">
 .....<br>
 <span class="verse-line"><span class="line-number">155</span>Of her beauty and of her figure<br></span>
-<span class="verse-line">as it is in the written source<br></span>
-<span class="verse-line">I want to say a little about her appearance<br></span>
+<span class="verse-line">(as it is in the written source)<br></span>
+<span class="verse-line">and about her appearance, I want to say a little<br></span>
 <span class="verse-line">before I go too far.<br></span>
-<span class="verse-line">At that time and in that reign,<br></span>
+<span class="verse-line">At that time and in that realm,<br></span>
 <span class="verse-line"><span class="line-number">160</span><span class="negation">no</span> man <span class="negation">ever</span> saw a more beautiful woman.<br></span>
 <span class="verse-line"><span class="folio-number">16va</span><span class="negation">No</span> countess <span class="negation">or</span> queen<br></span>
 <span class="verse-line"><span class="negation">ever had</span> such a daughter.<br></span>
-<span class="verse-line">She had round ears,<br></span>
-<span class="verse-line">what's more, they were marvelously <span class="color-word">white,<br></span></span>
+<span class="verse-line">She had round ears.<br></span>
+<span class="verse-line">What's more, they were marvelously <span class="color-word">white,<br></span></span>
 <span class="verse-line"><span class="line-number">165</span>her eyebrows <span class="color-word">black</span> and becoming,<br></span>
 <span class="verse-line">her eyes <span class="color-word">black</span> and smiling,<br></span>
-<span class="verse-line">her mouth small and mild,<br></span>
-<span class="verse-line">and pious her gaze,<br></span>
+<span class="verse-line">her mouth small and well-proportioned,<br></span>
+<span class="verse-line">and pleasing her expression,<br></span>
 <span class="verse-line">her face tender and <span class="color-word">blushing<br></span></span>
-<span class="verse-line"><span class="line-number">170</span><span class="color-word">like a rose that is always in bloom.<br></span></span>
+<span class="verse-line"><span class="line-number">170</span><span class="color-word">like a rose that has just bloomed.<br></span></span>
 <div class="empty-line"></div>
 <div class="empty-line"></div>
 <span class="verse-line"><span class="negation">Indeed neither</span> on her nose <span class="negation">nor</span> on her chin<br></span>
 <span class="verse-line">was seen a defect.<br></span>
-<span class="verse-line">Along her neck was <span class="color-word">white like ermine.<br></span></span>
+<span class="verse-line">On top of that, her neck was <span class="color-word">white like ermine.<br></span></span>
 <span class="verse-line">There flowed her <span class="color-word">blonde</span> hair.<br></span>
 <span class="verse-line"><span class="line-number">175</span>Each of the breasts of the lady<br></span>
 <span class="verse-line">was <span class="negation">not a bit bigger</span> than an apple.<br></span>
-<span class="verse-line">Above the cleavage of her chest,<br></span>
-<span class="verse-line">it was <span class="color-word">white like hawthorn flower.<br></span></span>
+<span class="verse-line">Below her throat on her chest,<br></span>
+<span class="verse-line">it was <span class="color-word">white like a hawthorn flower.<br></span></span>
 <span class="verse-line">She had <span class="color-word">white arms</span> and <span class="unique-verse">beautiful</span> hands,<br></span>
 <span class="verse-line"><span class="line-number">180</span>and long, slender, and smooth fingers.<br></span>
 <div class="empty-line"></div>
@@ -1179,8 +1179,8 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">Her frame could <span class="negation">never</span> be described.<br></span>
 <span class="verse-line">The beauty of this lady<br></span>
 <span class="verse-line">could <span class="negation">never</span> be written by <span class="negation">any</span> man.<br></span>
-<span class="verse-line"><span class="line-number">185</span>She was so courteous in speech.<br></span>
-<span class="verse-line">There was <span class="negation">nothing</span> to improve.<br></span>
+<span class="verse-line"><span class="line-number">185</span>She was so courteous of speech;<br></span>
+<span class="verse-line">there was <span class="negation">nothing</span> to improve.<br></span>
 <span class="verse-line">Such a creature makes one lament<br></span>
 <span class="verse-line">when she <span class="negation">does not</span> care about the Creator.<br></span>
 <span class="verse-line"><span class="unique-verse">She received <span class="color-word">gold</span> and <span class="color-word">silver</span><br></span></span>
@@ -1192,15 +1192,15 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="line-number">195</span>she wore a fine <span class="color-word">purple silk</span> bliaut<br></span>
 <span class="verse-line">and adorned herself with an ermine mantle.<br></span>
 <span class="verse-line"><span class="color-word">Well-painted</span> shoes of Cordovan leather,<br></span>
-<span class="verse-line">she put these on all the days of the year.<br></span>
+<span class="verse-line">she wore all the days of the year.<br></span>
 <span class="verse-line">The citizens of the city<br></span>
 <span class="verse-line"><span class="line-number">200</span>loved her entirely for her beauty.<br></span>
-<span class="verse-line">The old men and the wise<br></span>
+<span class="verse-line">The aged men and the wise<br></span>
 <span class="verse-line">all would say, "God, what a shame!<br></span>
-<span class="verse-line">Alas evermore, the suffering!<br></span>
+<span class="verse-line">Alas evermore for the sufferer!<br></span>
 <span class="verse-line">There is much to bemoan of her youth.<br></span>
-<span class="verse-line"><span class="line-number">205</span>Alas evermore, her life<br></span>
-<span class="verse-line">is so full of folly."<br></span>
+<span class="verse-line"><span class="line-number">205</span>Alas evermore for her life<br></span>
+<span class="verse-line">as it is so full of folly."<br></span>
 <span class="verse-line">Everyone in the city would say<br></span>
 <span class="verse-line">that she was of such high parentage<br></span>
 <span class="verse-line">for she answered all with reason<br></span>
@@ -1466,10 +1466,10 @@ To read these passages in translation, hover over each column with your cursor.
   <div class="hover-text">
 .....<br>
 <span class="verse-line"><span class="line-number">157</span>Of her beauty, of her figure<br></span>
-<span class="verse-line">as it is in the written source<br></span>
-<span class="verse-line">I want to say a little about her appearance<br></span>
+<span class="verse-line">(as it is in the written source)<br></span>
+<span class="verse-line">and about her appearance, I want to say a little<br></span>
 <span class="verse-line">before I go too far.<br></span>
-<span class="verse-line">At that time and in that reign,<br></span>
+<span class="verse-line">At that time and in that realm,<br></span>
 <span class="verse-line"><span class="line-number">162</span>there was <span class="negation">never</span> a more beautiful woman.<br></span>
 <span class="verse-line"><span class="negation">Never</span> countess <span class="negation">nor</span> queen<br></span>
 <span class="verse-line"><span class="negation">had</span> on her head more beautiful hair.<br></span>
@@ -1477,8 +1477,8 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">and they were marvelously <span class="color-word">white,<br></span></span>
 <span class="verse-line"><span class="line-number">167</span>her eyebrows <span class="color-word">black</span> and becoming,<br></span>
 <span class="verse-line">and her eyes <span class="color-word">sparkling</span> and joyful,<br></span>
-<span class="verse-line">her mouth beautiful and mild,<br></span>
-<span class="verse-line">and pious her gaze,<br></span>
+<span class="verse-line">her mouth beautiful and well-proportioned,<br></span>
+<span class="verse-line">and pleasing her expression,<br></span>
 <span class="verse-line">her face tender and <span class="color-word">blushing<br></span></span>
 <span class="verse-line"><span class="line-number">172</span><span class="color-word">like a freshly-bloomed rose.<br></span></span>
 <div class="empty-line"></div>
@@ -1487,20 +1487,20 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">might you perceive <span class="negation">any</span> defect.<br></span>
 <span class="verse-line">Her neck was <span class="color-word">white like ermine.<br></span></span>
 <span class="verse-line">Long was her <span class="color-word">blonde</span> hair.<br></span>
-<span class="verse-line"><span class="line-number">177</span><span class="sequence-change"><span class="negation">Not a bit bigger</span> than an apple were<br></span></span>
+<span class="verse-line"><span class="line-number">177</span><span class="sequence-change"><span class="negation">Not a bit bigger</span> than an apple was<br></span></span>
 <span class="verse-line"><span class="sequence-change">either of the breasts of this lady.<br></span></span>
-<span class="verse-line">Above the bump of her chest,<br></span>
-<span class="verse-line">it was <span class="color-word">as white as hawthorn flower.<br></span></span>
+<span class="verse-line">Below her mouth on her chest,<br></span>
+<span class="verse-line">it was <span class="color-word">as white as a hawthorn flower.<br></span></span>
 <span class="verse-line">She had <span class="color-word">white arms</span> and <span class="color-word">white hands,<br></span></span>
 <span class="verse-line"><span class="line-number">182</span>her fingers shapely, slender, and smooth.<br></span>
 <span class="verse-line">She had a fine body and was well molded<br></span>
-<span class="verse-line">from her underarm along her rib.<br></span>
+<span class="verse-line">from her underarm along her side.<br></span>
 <span class="verse-line"><span class="negation">Neither too big nor too small,<br></span></span>
 <span class="verse-line">her frame could <span class="negation">never</span> be described.<br></span>
 <span class="verse-line"><span class="line-number">187</span>The great beauty of this lady<br></span>
-<span class="verse-line">could <span class="negation">not</span> be written fully by <span class="negation">any</span> man<br></span>
-<span class="verse-line">She was so courteous in speech.<br></span>
-<span class="verse-line">There was <span class="negation">nothing</span> to improve.<br></span>
+<span class="verse-line">could <span class="negation">not</span> be written fully by <span class="negation">any</span> man.<br></span>
+<span class="verse-line">She was so courteous of speech;<br></span>
+<span class="verse-line">there was <span class="negation">nothing</span> to improve.<br></span>
 <span class="verse-line">Such a creature makes one lament<br></span>
 <span class="verse-line"><span class="line-number">192</span>when she <span class="negation">does not</span> care about her Creator.<br></span>
 <span class="verse-line">She received great presents,<br></span>
@@ -1512,15 +1512,15 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">she wore a fine <span class="color-word">purple silk</span> bliaut<br></span>
 <span class="verse-line">and adorned herself with an ermine mantle.<br></span>
 <span class="verse-line"><span class="folio-number">114rd</span><span class="color-word">Well-painted</span> shoes of Cordovan leather,<br></span>
-<span class="verse-line"><span class="line-number">202</span>she put these on all the days of the year.<br></span>
+<span class="verse-line"><span class="line-number">202</span>she wore all the days of the year.<br></span>
 <span class="verse-line">The citizens of the city<br></span>
 <span class="verse-line">loved her entirely for her beauty.<br></span>
-<span class="verse-line">The old men and the wise<br></span>
+<span class="verse-line">The aged men and the wise<br></span>
 <span class="verse-line">all would say that it was a shame.<br></span>
-<span class="verse-line"><span class="line-number">207</span>"Alas for this suffering!<br></span>
+<span class="verse-line"><span class="line-number">207</span>"Oh alas for this sufferer!<br></span>
 <span class="verse-line">There is much to bemoan of her youth.<br></span>
-<span class="verse-line">Alas evermore, her life<br></span>
-<span class="verse-line">is so full of folly."<br></span>
+<span class="verse-line">Alas evermore for her life<br></span>
+<span class="verse-line">as it is so full of folly."<br></span>
 <span class="verse-line">Everyone in the city would say<br></span>
 <span class="verse-line"><span class="line-number">212</span>that she was of high parentage<br></span>
 <span class="verse-line">for she answered all with reason<br></span>
