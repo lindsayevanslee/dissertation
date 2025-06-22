@@ -47,7 +47,7 @@ To read these passages in translation, hover over each column with your cursor.
 <div class="empty-line"></div>
 <div class="empty-line"></div>
 <span class="verse-line"><span class="negation">Ja</span> el nés <span class="negation">ne</span> el menton<br></span>
-<span class="verse-line"><span class="negation">N'</span>aperceussiés mesfaichon<br></span>
+<span class="verse-line"><span class="folio-number">335vb</span><span class="negation">N'</span>aperceussiés mesfaichon<br></span>
 <span class="verse-line">En som le col <span class="color-word">blanc com ermine<br></span></span>
 <span class="verse-line">li undoit le <span class="color-word">bloie</span> crine<br></span>
 <span class="verse-line"><span class="line-number">177</span>Les mameles de cele dame<br></span>
@@ -87,11 +87,11 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">Tout disoient par le cité<br></span>
 <span class="verse-line"><span class="line-number">212</span>Qu'ele estoit de haut parenté<br></span>
 <span class="verse-line">Car a tos respondoit raison<br></span>
-<span class="verse-line">& tant iert bele de fachon<br></span>
+<span class="verse-line"><span class="folio-number">336ra</span>& tant iert bele de fachon<br></span>
 <span class="verse-line">ke li fix d'un empereor<br></span>
 <span class="verse-line">Le peust prendre a grant honor<br></span>
 .....<br>
-<span class="verse-line"><span class="line-number">613</span>Tant ala par jor & par nuit<br></span>
+<span class="verse-line"><span class="folio-number">338va</span>Tant ala par jor & par nuit<br></span>
 <span class="verse-line">A faim & a soif & a dur lit<br></span>
 <span class="verse-line">Que tant parfont fu el boscaige<br></span>
 <span class="verse-line">Toute devint illuec salvaige<br></span>
@@ -133,7 +133,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">Petit de despensse i metoit<br></span>
 <span class="verse-line">Li pié li erent decrevé<br></span>
 <span class="verse-line">En plusors lius erent navré<br></span>
-<span class="verse-line"><span class="line-number">653</span>Car ele <span class="negation">ne</span> se gardoit d'espine<br></span>
+<span class="verse-line"><span class="folio-number">338vb</span>Car ele <span class="negation">ne</span> se gardoit d'espine<br></span>
 <span class="verse-line">Quant ele aloit par le gastine<br></span>
 <span class="verse-line">Che li ert vis sien esciant<br></span>
 <span class="verse-line">Que ele <span class="negation">n'</span>i failloit <span class="negation">nient</span><br></span>
@@ -173,7 +173,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">Ou ele soloit faire les geus<br></span>
 <span class="verse-line">Or fu ichi boneuree<br></span>
 <span class="verse-line">Qu'ele de tout fu obliee<br></span>
-<span class="verse-line"><span class="line-number">693</span><span class="negation">Onques</span> puis en toute se vie<br></span>
+<span class="verse-line"><span class="folio-number">339ra</span><span class="negation">Onques</span> puis en toute se vie<br></span>
 <span class="verse-line"><span class="negation">Ne</span> li souvint <span class="negation">mais</span> de folie<br></span>
 <span class="verse-line"><span class="negation">Ne ainc</span> en trestot le boscaige<br></span>
 <span class="verse-line"><span class="negation">Ne</span> li vint <span class="negation">puis</span> beste salvaige<br></span>
@@ -204,7 +204,7 @@ To read these passages in translation, hover over each column with your cursor.
 <div class="empty-line"></div>
 <div class="empty-line"></div>
 <span class="verse-line"><span class="negation">Indeed neither</span> on her nose <span class="negation">nor</span> on her chin<br></span>
-<span class="verse-line">would you be aware of <span class="negation">any</span> defect.<br></span>
+<span class="verse-line"><span class="folio-number">335vb</span>would you be aware of <span class="negation">any</span> defect.<br></span>
 <span class="verse-line">Her neck was <span class="color-word">white like ermine</span> too.<br></span>
 <span class="verse-line">There flowed her <span class="color-word">blonde</span> hair.<br></span>
 <span class="verse-line"><span class="line-number">177</span>The breasts of this lady<br></span>
@@ -244,11 +244,11 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">Everyone in the city would say<br></span>
 <span class="verse-line"><span class="line-number">212</span>that she was of high parentage<br></span>
 <span class="verse-line">for she answered all with reason<br></span>
-<span class="verse-line">and had such a beautiful frame<br></span>
+<span class="verse-line"><span class="folio-number">336ra</span>and had such a beautiful frame<br></span>
 <span class="verse-line">that the son of an emperor<br></span>
 <span class="verse-line">could have taken her with great honor.<br></span>
 .....<br>
-<span class="verse-line"><span class="line-number">613</span>So she went by day and by night<br></span>
+<span class="verse-line"><span class="folio-number">338va</span>So she went by day and by night<br></span>
 <span class="verse-line">hungry, thirsty, and on hard beds.<br></span>
 <span class="verse-line">She was so deep in the wood<br></span>
 <span class="verse-line">that she became entirely wild there,<br></span>
@@ -290,7 +290,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">She put little provisions in there.<br></span>
 <span class="verse-line">Her feet were split.<br></span>
 <span class="verse-line">In many places, they were wounded<br></span>
-<span class="verse-line"><span class="line-number">653</span>for she did <span class="negation">not</span> protect herself from thorns<br></span>
+<span class="verse-line"><span class="folio-number">338vb</span>for she did <span class="negation">not</span> protect herself from thorns<br></span>
 <span class="verse-line">as she went through the wilderness.<br></span>
 <span class="verse-line">It seemed to her, in her mind,<br></span>
 <span class="verse-line">she was <span class="negation">not</span> wrong about this <span class="negation">at all</span>,<br></span>
@@ -330,7 +330,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">where she was used to playing games.<br></span>
 <span class="verse-line">Now, she was so blissful<br></span>
 <span class="verse-line">that she had forgotten all.<br></span>
-<span class="verse-line"><span class="line-number">693</span><span class="negation">Never</span> then in all her life<br></span>
+<span class="verse-line"><span class="folio-number">339ra</span><span class="negation">Never</span> then in all her life<br></span>
 <span class="verse-line"><span class="negation">did</span> she think <span class="negation">more</span> of folly.<br></span>
 <span class="verse-line"><span class="negation">Never</span> in all the wood<br></span>
 <span class="verse-line"><span class="negation">did any</span> wild beast come to her <span class="negation">thereafter<br></span></span>
@@ -376,7 +376,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="sequence-change">mut bien seans petiz & beles<br></span></span>
 <span class="verse-line"><span class="sequence-change"><span class="color-word">blans bras</span> avoit & <span class="color-word">blanches mains</span>.<br></span></span>
 <span class="verse-line"><span class="line-number">174</span><span class="sequence-change">& les dois grailes lons & plains<br></span></span>
-<span class="verse-line"><span class="sequence-change">Gent cors avoit & bien moleit.<br></span></span>
+<span class="verse-line"><span class="folio-number">110v</span><span class="sequence-change">Gent cors avoit & bien moleit.<br></span></span>
 <span class="verse-line"><span class="sequence-change">desoz l'aisselle & le costeit<br></span></span>
 <span class="verse-line"><span class="sequence-change">tant ert cortoise de parler<br></span></span>
 <span class="verse-line"><span class="sequence-change"><span class="negation">n'</span>i avoit <span class="negation">rien</span> ke amendeir<br></span></span>
@@ -431,7 +431,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="color-word">blance devint conme l'ermine<br></span></span>
 <span class="verse-line">desoz la face eret <span class="color-word">brulee</span>.<br></span>
 <span class="verse-line">del soloilh & de la jalee<br></span>
-<span class="verse-line">La boche li ert atenevie.<br></span>
+<span class="verse-line"><span class="folio-number">114r</span>La boche li ert atenevie.<br></span>
 <span class="verse-line"><span class="line-number">582</span>& environ la cars <span class="color-word">norcie</span><br></span>
 <span class="verse-line">& tant avoit <span class="color-word">noir</span> le menton.<br></span>
 <span class="verse-line"><span class="color-word">com se fuist li chies d'un tison<br></span></span>
@@ -499,7 +499,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="negation">Onques n'</span>i vit beste salvage<br></span>
 <span class="verse-line"><span class="line-number">637</span><span class="negation">Ne nule</span> vive creature.<br></span>
 <span class="verse-line">par le forest vat bien segure<br></span>
-<span class="verse-line">en plusors lius fut ses ostaz.<br></span>
+<span class="verse-line"><span class="folio-number">114v</span>en plusors lius fut ses ostaz.<br></span>
 <span class="verse-line">sa vie astoit spirituaz<br></span>
 .....<br>
   </div>
@@ -533,7 +533,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="sequence-change">very well set, small, and beautiful.<br></span></span>
 <span class="verse-line"><span class="sequence-change">She had <span class="color-word">white arms</span> and <span class="color-word">white hands</span>,<br></span></span>
 <span class="verse-line"><span class="line-number">174</span><span class="sequence-change">and her fingers slender, long, and smooth.<br></span></span>
-<span class="verse-line"><span class="sequence-change">She had a fine body and was well molded<br></span></span>
+<span class="verse-line"><span class="folio-number">110v</span><span class="sequence-change">She had a fine body and was well molded<br></span></span>
 <span class="verse-line"><span class="sequence-change">beneath her underarm and her side.<br></span></span>
 <span class="verse-line"><span class="sequence-change">She was so courteous of speech;<br></span></span>
 <span class="verse-line"><span class="sequence-change">there was <span class="negation">nothing</span> to improve.<br></span></span>
@@ -588,7 +588,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="color-word">It turned white like the ermine.<br></span></span>
 <span class="verse-line">Under that, her face was <span class="color-word">burned<br></span></span>
 <span class="verse-line">from the sun and from the frost.<br></span>
-<span class="verse-line">Her mouth was thinned,<br></span>
+<span class="verse-line"><span class="folio-number">114r</span>Her mouth was thinned,<br></span>
 <span class="verse-line"><span class="line-number">582</span>and her flesh around it <span class="color-word">blackened,<br></span></span>
 <span class="verse-line">and her chin was so <span class="color-word">black<br></span></span>
 <span class="verse-line"><span class="color-word">as if it were the head of a firebrand.<br></span></span>
@@ -656,7 +656,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="negation">Never</span> did she see a wild beast<br></span>
 <span class="verse-line"><span class="line-number">637</span><span class="negation">nor any</span> living creature.<br></span>
 <span class="verse-line">Through the forest, she goes in all security.<br></span>
-<span class="verse-line">In many places, she was sheltered.<br></span>
+<span class="verse-line"><span class="folio-number">114v</span>In many places, she was sheltered.<br></span>
 <span class="verse-line">Her life was spiritual.<br></span>
 .....<br>
   </div>
@@ -678,7 +678,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="negation">N'</span>ot el chief si bele crine .<br></span>
 <span class="verse-line">Rondes avoit les oreilles<br></span>
 <span class="verse-line">Tres <span class="color-word">blanches</span> erent a merveilles .<br></span>
-<span class="verse-line"><span class="line-number">169</span>Les surcius <span class="color-word">noirs</span> e avenanz<br></span>
+<span class="verse-line"><span class="folio-number">38v</span>Les surcius <span class="color-word">noirs</span> e avenanz<br></span>
 <span class="verse-line">e les oils <span class="color-word">clers</span> e suz rianz .<br></span>
 <span class="verse-line">La buche petite par mesure<br></span>
 <span class="verse-line">e <span class="unique-verse">simple</span> avoit la regardure .<br></span>
@@ -706,7 +706,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="negation">Riens n'</span>i avoit k'amender .<br></span>
 <span class="verse-line">A pleindre fist teu creature<br></span>
 <span class="verse-line"><span class="line-number">194</span>Quant de sun Creatur <span class="negation">n'</span>ot cure .<br></span>
-<span class="verse-line">ele recevrit mut presenz<br></span>
+<span class="verse-line"><span class="folio-number">39r</span>ele recevrit mut presenz<br></span>
 <span class="verse-line">S'en achatot beau vestemenz .<br></span>
 <span class="verse-line">Bons dras avoit e avenanz<br></span>
 <span class="verse-line">Pur menz pleire a ses amanz .<br></span>
@@ -745,7 +745,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">Le cors de lui remist tut nu .<br></span>
 <span class="verse-line">La char de lui <span class="color-word">mua colur<br></span></span>
 <span class="verse-line">k'einz ert <span class="color-word">blanche come flur</span> .<br></span>
-<span class="verse-line">ke de l'yver ke de l'esté<br></span>
+<span class="verse-line"><span class="folio-number">47v</span>ke de l'yver ke de l'esté<br></span>
 <span class="verse-line"><span class="line-number">638</span>Tut li <span class="color-word">nercirent</span> li costé .<br></span>
 <span class="verse-line"><span class="color-word">Colur muat la bloie crine<br></span></span>
 <span class="verse-line"><span class="color-word">Blanche devint com ermine .<br></span></span>
@@ -771,7 +771,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">Si les retaillot de ses denz .<br></span>
 <span class="verse-line">Li ventre tut lui ert caeiz<br></span>
 <span class="verse-line">Guere ne mangot. ço ert droiz .<br></span>
-<span class="verse-line"><span class="line-number">663</span>Les piez lui erent escrevez<br></span>
+<span class="verse-line"><span class="folio-number">48r</span>Les piez lui erent escrevez<br></span>
 <span class="verse-line">en plusur lius furent nafrez .<br></span>
 <span class="verse-line">k'ele <span class="negation">ne</span> se gardoit d'espine<br></span>
 <span class="verse-line">kant ele alot par la guastine .<br></span>
@@ -797,7 +797,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">Doncs arracot l'erbe du pré .<br></span>
 <span class="verse-line">Com autre beste la mangot<br></span>
 <span class="verse-line"><span class="line-number">688</span><span class="negation">De rien ne</span> se desconfortout .<br></span>
-<span class="verse-line">Adenz leveit un rosel<br></span>
+<span class="verse-line"><span class="folio-number">48v</span>Adenz leveit un rosel<br></span>
 <span class="verse-line">Dont beut n'ot autre vessel .<br></span>
 <span class="verse-line"><span class="negation">Ne</span> fet a pleindre le pechie<br></span>
 <span class="verse-line">Dont le cors fu si chastie .<br></span>
@@ -835,7 +835,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="negation">had</span> on her head such beautiful hair.<br></span>
 <span class="verse-line">She had round ears.<br></span>
 <span class="verse-line">They were very marvelously <span class="color-word">white,<br></span></span>
-<span class="verse-line"><span class="line-number">169</span>her eyebrows <span class="color-word">black</span> and becoming,<br></span>
+<span class="verse-line"><span class="folio-number">38v</span>her eyebrows <span class="color-word">black</span> and becoming,<br></span>
 <span class="verse-line">and her eyes <span class="color-word">bright</span> and overjoyed,<br></span>
 <span class="verse-line">her little mouth mild,<br></span>
 <span class="verse-line">and she had a <span class="unique-verse">simple</span> gaze,<br></span>
@@ -863,7 +863,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">There was <span class="negation">nothing</span> to improve.<br></span>
 <span class="verse-line">Such a creature makes one lament<br></span>
 <span class="verse-line"><span class="line-number">194</span>when she <span class="negation">does not</span> care about her Creator.<br></span>
-<span class="verse-line">She received many presents<br></span>
+<span class="verse-line"><span class="folio-number">39r</span>She received many presents<br></span>
 <span class="verse-line">and bought herself beautiful garments.<br></span>
 <span class="verse-line">She had good and fitting clothes<br></span>
 <span class="verse-line">to better please her lovers.<br></span>
@@ -902,7 +902,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">her body was left totally naked.<br></span>
 <span class="verse-line">Her own flesh <span class="color-word">changed color,<br></span></span>
 <span class="verse-line">that which before was <span class="color-word">white like a flower.<br></span></span>
-<span class="verse-line">From the winter and from the summer<br></span>
+<span class="verse-line"><span class="folio-number">47v</span>From the winter and from the summer<br></span>
 <span class="verse-line"><span class="line-number">638</span>her sides <span class="color-word">blackened</span> entirely.<br></span>
 <span class="verse-line"><span class="color-word">The color of her blonde hair changed.<br></span></span>
 <span class="verse-line"><span class="color-word">It turned white like ermine.<br></span></span>
@@ -928,7 +928,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">So she reshaped them with her teeth.<br></span>
 <span class="verse-line">Her stomach was all sunken.<br></span>
 <span class="verse-line">She hardly ate, so that was right.<br></span>
-<span class="verse-line"><span class="line-number">663</span>Her feet were split.<br></span>
+<span class="verse-line"><span class="folio-number">48r</span>Her feet were split.<br></span>
 <span class="verse-line">In many places, they were wounded<br></span>
 <span class="verse-line">for she <span class="negation">did not</span> protect herself from thorns<br></span>
 <span class="verse-line">as she went through the wilderness.<br></span>
@@ -954,7 +954,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">then she gathered the grass nearby.<br></span>
 <span class="verse-line">Like other beasts she ate it.<br></span>
 <span class="verse-line"><span class="line-number">688</span>She provided herself with <span class="negation">nothing else</span>.<br></span>
-<span class="verse-line">Prone, she drew from a stream.<br></span>
+<span class="verse-line"><span class="folio-number">48v</span>Prone, she drew from a stream.<br></span>
 <span class="verse-line">Like so, she drank. She had no other vessel.<br></span>
 <span class="verse-line">She <span class="negation">does not</span> bemoan her sins<br></span>
 <span class="verse-line">as her body was so chastised.<br></span>
@@ -994,7 +994,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">einz que jeo trespas avant<br></span>
 <span class="verse-line">en cel tens ne en cel regne<br></span>
 <span class="verse-line"><span class="line-number">160</span><span class="negation">Ne</span> vit <span class="negation">unc</span> home plus bele femme<br></span>
-<span class="verse-line"><span class="negation">Ne</span> cuntesse <span class="negation">ne</span> raine.<br></span>
+<span class="verse-line"><span class="folio-number">16va</span><span class="negation">Ne</span> cuntesse <span class="negation">ne</span> raine.<br></span>
 <span class="verse-line"><span class="negation">N'</span>out <span class="negation">onkes</span> tele meschine<br></span>
 <span class="verse-line">roundes avoit les oreilles<br></span>
 <span class="verse-line">Mais <span class="color-word">blanches</span> erent a merveilles<br></span>
@@ -1030,7 +1030,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="line-number">190</span>Si achatout bons garnemenz<br></span>
 <span class="verse-line">bons dras aveit & avenanz<br></span>
 <span class="verse-line">por miex plesir a ses amanz<br></span>
-<span class="verse-line">ele <span class="negation">n'</span>out cure de dras de leine<br></span>
+<span class="verse-line"><span class="folio-number">16vb</span>ele <span class="negation">n'</span>out cure de dras de leine<br></span>
 <span class="verse-line">al peor jor de la semeine<br></span>
 <span class="verse-line"><span class="line-number">195</span>Vesteit bons bliaus <span class="color-word">d'osturin</span><br></span>
 <span class="verse-line">& afubla mantel hermin<br></span>
@@ -1077,7 +1077,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="color-word">cum ceo fust le chief d'un tisun<br></span></span>
 <span class="verse-line">& <span class="color-word">nerci</span> erent si oil<br></span>
 <span class="verse-line"><span class="line-number">640</span><span class="negation">N'</span>i aveit ore <span class="negation">point d'</span>orguil<br></span>
-<span class="verse-line">Se vous veissés sa oreille<br></span>
+<span class="verse-line"><span class="folio-number">20rb</span>Se vous veissés sa oreille<br></span>
 <span class="verse-line">mult vous semblast grant merveille<br></span>
 <span class="verse-line">car mesgre esteit. & detrevee<br></span>
 <span class="verse-line">& de <span class="color-word">blanc</span> peil avirunee<br></span>
@@ -1111,7 +1111,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="line-number">670</span>de cels vesqui plusors anz<br></span>
 <span class="verse-line">el premier en devindrent dur<br></span>
 <span class="verse-line">cumme ceo fussent pieres de mur<br></span>
-<span class="verse-line">chascun jor en usout Marie<br></span>
+<span class="verse-line"><span class="folio-number">20va</span>chascun jor en usout Marie<br></span>
 <span class="verse-line">mais ceo ert petite partie<br></span>
 <span class="verse-line"><span class="line-number">675</span>& quant ele out son pain usé<br></span>
 <span class="verse-line">Si esracout l'erbe del pré<br></span>
@@ -1151,7 +1151,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">before I go too far.<br></span>
 <span class="verse-line">At that time and in that reign,<br></span>
 <span class="verse-line"><span class="line-number">160</span><span class="negation">no</span> man <span class="negation">ever</span> saw a more beautiful woman.<br></span>
-<span class="verse-line"><span class="negation">No</span> countess <span class="negation">or</span> queen<br></span>
+<span class="verse-line"><span class="folio-number">16va</span><span class="negation">No</span> countess <span class="negation">or</span> queen<br></span>
 <span class="verse-line"><span class="negation">ever had</span> such a daughter.<br></span>
 <span class="verse-line">She had round ears,<br></span>
 <span class="verse-line">what's more, they were marvelously <span class="color-word">white,<br></span></span>
@@ -1187,7 +1187,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="line-number">190</span>and bought good garments.<br></span>
 <span class="verse-line">She had good and fitting clothes<br></span>
 <span class="verse-line">to better please her lovers.<br></span>
-<span class="verse-line">She <span class="negation">did not</span> care for woollen cloth.<br></span>
+<span class="verse-line"><span class="folio-number">16vb</span>She <span class="negation">did not</span> care for woollen cloth.<br></span>
 <span class="verse-line">On the worst day of the week,<br></span>
 <span class="verse-line"><span class="line-number">195</span>she wore a fine <span class="color-word">purple silk</span> bliaut<br></span>
 <span class="verse-line">and adorned herself with an ermine mantle.<br></span>
@@ -1234,7 +1234,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="color-word">It was like the head of a firebrand,<br></span></span>
 <span class="verse-line">and <span class="color-word">black</span> were her eyes.<br></span>
 <span class="verse-line"><span class="line-number">640</span>There was <span class="negation">not a shred</span> of pride now.<br></span>
-<span class="verse-line">If you saw her ears,<br></span>
+<span class="verse-line"><span class="folio-number">20rb</span>If you saw her ears,<br></span>
 <span class="verse-line">they would really seem to you a great marvel<br></span>
 <span class="verse-line">for they were skinny and cracked<br></span>
 <span class="verse-line">and covered in <span class="color-word">white</span> hair.<br></span>
@@ -1268,7 +1268,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="line-number">670</span>On these, she lived for many years.<br></span>
 <span class="verse-line">In the first year, they became hard<br></span>
 <span class="verse-line">as though they were building stones.<br></span>
-<span class="verse-line">Each day, Mary ate some,<br></span>
+<span class="verse-line"><span class="folio-number">20va</span>Each day, Mary ate some,<br></span>
 <span class="verse-line">but this was a small portion.<br></span>
 <span class="verse-line"><span class="line-number">675</span>And as soon as she had eaten up her bread,<br></span>
 <span class="verse-line">then she plucked the grass nearby.<br></span>
@@ -1354,7 +1354,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">Al pior jor de la semaine<br></span>
 <span class="verse-line">vestoit bon bliaut <span class="color-word">ostorin<br></span></span>
 <span class="verse-line">Si afubloit mantel ermin<br></span>
-<span class="verse-line">Sollers <span class="color-word">bien pains</span> de cordoan<br></span>
+<span class="verse-line"><span class="folio-number">114rd</span>Sollers <span class="color-word">bien pains</span> de cordoan<br></span>
 <span class="verse-line"><span class="line-number">202</span>chaucoit a tus les jors del an<br></span>
 <span class="verse-line">li citeain de la cité<br></span>
 <span class="verse-line">l'amoient tot por sa biauté<br></span>
@@ -1409,7 +1409,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="line-number">648</span>Avoit <span class="color-word">plus noirs que n'en est pois<br></span></span>
 <span class="verse-line">molt par avoit les ongles grans<br></span>
 <span class="verse-line"><span class="unique-verse">as dens les ront qu'ele ot trençans<br></span></span>
-<span class="verse-line">li ventres li ert <span class="unique-verse">agaris<br></span></span>
+<span class="verse-line"><span class="folio-number">115va</span>li ventres li ert <span class="unique-verse">agaris<br></span></span>
 <span class="verse-line"><span class="unique-verse">car <span class="negation">n'avoit nul</span> de ses delis<br></span></span>
 <span class="verse-line"><span class="line-number">653</span>li pié li erent decrevé<br></span>
 <span class="verse-line">& environ tot denavré<br></span>
@@ -1448,7 +1448,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">dyable vint a li de premier<br></span>
 <span class="verse-line"><span class="line-number">688</span>Sovent le soloit assaier<br></span>
 <span class="verse-line">tot ce li faisoit ramenbrer<br></span>
-<span class="verse-line">Qu'ele ja dis soloit amer<br></span>
+<span class="verse-line">Qu'ele jadis soloit amer<br></span>
 <span class="verse-line">les biaus delis & les bels lieus<br></span>
 <span class="verse-line">ou ele seut faire ses gieus<br></span>
 <span class="verse-line"><span class="line-number">693</span>ore fu ele boneuree<br></span>
@@ -1459,7 +1459,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="line-number">698</span><span class="negation">Ne</span> vit <span class="negation">gaires</span> beste salvage<br></span>
 <span class="verse-line"><span class="negation">Ne</span> autre vive creature<br></span>
 <span class="verse-line">par la forest vait <span class="unique-verse">tote nue<br></span></span>
-<span class="verse-line">En pluisors lieus prist son ostal<br></span>
+<span class="verse-line"><span class="folio-number">115vb</span>En pluisors lieus prist son ostal<br></span>
 <span class="verse-line">Sa vie estoit esperital<br></span>
 .....<br>
   </div>
@@ -1511,7 +1511,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">On the worst day of the week,<br></span>
 <span class="verse-line">she wore a fine <span class="color-word">purple silk</span> bliaut<br></span>
 <span class="verse-line">and adorned herself with an ermine mantle.<br></span>
-<span class="verse-line"><span class="color-word">Well-painted</span> shoes of Cordovan leather,<br></span>
+<span class="verse-line"><span class="folio-number">114rd</span><span class="color-word">Well-painted</span> shoes of Cordovan leather,<br></span>
 <span class="verse-line"><span class="line-number">202</span>she put these on all the days of the year.<br></span>
 <span class="verse-line">The citizens of the city<br></span>
 <span class="verse-line">loved her entirely for her beauty.<br></span>
@@ -1566,7 +1566,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="line-number">648</span>were <span class="color-word">blacker than pitch.<br></span></span>
 <span class="verse-line">She had such large nails<br></span>
 <span class="verse-line"><span class="unique-verse">on her slicing teeth she made them round.<br></span></span>
-<span class="verse-line">Her stomach was sunken<br></span>
+<span class="verse-line"><span class="folio-number">115va</span>Her stomach was sunken<br></span>
 <span class="verse-line"><span class="unique-verse">for she had <span class="negation">none</span> of her delights.<br></span></span>
 <span class="verse-line"><span class="line-number">653</span>Her feet were split<br></span>
 <span class="verse-line">and wounded all over.<br></span>
@@ -1616,7 +1616,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="line-number">698</span>did she see <span class="negation">any</span> wild beasts <span class="negation">at all<br></span></span>
 <span class="verse-line"><span class="negation">nor any</span> other living creature.<br></span>
 <span class="verse-line">Through the forest, she goes <span class="unique-verse">utterly naked.<br></span></span>
-<span class="verse-line">In many places, she took shelter.<br></span>
+<span class="verse-line"><span class="folio-number">115vb</span>In many places, she took shelter.<br></span>
 <span class="verse-line">Her life was spiritual.<br></span>
 .....<br>
   </div>
