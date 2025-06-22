@@ -281,19 +281,13 @@ convert_html_to_markdown <- function(html_file) {
         next
       }
       
-      # Check if this is a blockquote (has border styling and background color)
+      # Check if this is a blockquote (has margin-left:36pt styling)
       style <- xml_attr(element, "style")
       is_blockquote <- FALSE
       if (!is.na(style)) {
-        # Check for border styling and background color that indicates a blockquote
-        has_border <- str_detect(style, "border.*solid") || 
-                     str_detect(style, "border.*style.*solid") ||
-                     str_detect(style, "border.*width.*[1-9]")
-        has_background <- str_detect(style, "background-color")
-        has_margin <- str_detect(style, "margin-left.*36pt") || 
-                     str_detect(style, "margin-left.*36")
-        
-        is_blockquote <- has_border && (has_background || has_margin)
+        # Check for margin-left:36pt which indicates a blockquote in footnotes
+        is_blockquote <- str_detect(style, "margin-left.*36pt") || 
+                        str_detect(style, "margin-left.*36")
       }
       
       # Process paragraph
@@ -453,13 +447,33 @@ convert_html_to_markdown <- function(html_file) {
       }
     } else if (element_name == "p") {
       # Handle paragraphs
+      # Check if this is a blockquote (has margin-left:36pt styling)
+      style <- xml_attr(element, "style")
+      is_blockquote <- FALSE
+      if (!is.na(style)) {
+        # Check for margin-left:36pt which indicates a blockquote in footnotes
+        is_blockquote <- str_detect(style, "margin-left.*36pt") || 
+                        str_detect(style, "margin-left.*36")
+      }
+      
       if (length(children) > 0) {
         child_content <- sapply(children, convert_single_element)
         content <- paste(child_content, collapse = "")
       } else {
         content <- xml_text(element)
       }
-      return(content)
+      
+      # If this is a blockquote, prefix each line with '> '
+      if (is_blockquote) {
+        lines <- str_split(content, "\n")[[1]]
+        blockquote_lines <- sapply(lines, function(line) {
+          if (str_trim(line) == "") return("")
+          paste0("> ", line)
+        })
+        return(paste(blockquote_lines, collapse = "\n"))
+      } else {
+        return(content)
+      }
     } else {
       # For other elements, process children recursively
       if (length(children) > 0) {
@@ -499,9 +513,76 @@ convert_html_to_markdown <- function(html_file) {
           }
         }
         
-        # Combine the footnote content, preserving paragraph breaks
-        footnote_content <- paste(footnote_content_parts, collapse = "\n\n")
-        footnote_content <- str_squish(footnote_content)
+        # Simple approach: process each part and ensure proper separation
+        processed_paragraphs <- character(0)
+        
+        for (i in seq_along(footnote_content_parts)) {
+          part <- str_trim(footnote_content_parts[i])
+          if (part == "") next
+          
+          # Check if this part contains blockquotes
+          if (str_detect(part, "> ")) {
+            # Split the part into lines and process each line
+            lines <- str_split(part, "\n")[[1]]
+            current_text <- character(0)
+            
+            for (line in lines) {
+              line <- str_trim(line)
+              if (line == "") {
+                # Empty line - add current text as paragraph if not empty
+                if (length(current_text) > 0) {
+                  text <- paste(current_text, collapse = " ")
+                  if (i == 1 && length(processed_paragraphs) == 0) {
+                    processed_paragraphs <- c(processed_paragraphs, text)
+                  } else {
+                    processed_paragraphs <- c(processed_paragraphs, paste0("    ", text))
+                  }
+                  current_text <- character(0)
+                }
+              } else if (str_detect(line, "^> ")) {
+                # Blockquote line - add current text as paragraph first, then add blockquote
+                if (length(current_text) > 0) {
+                  text <- paste(current_text, collapse = " ")
+                  if (i == 1 && length(processed_paragraphs) == 0) {
+                    processed_paragraphs <- c(processed_paragraphs, text)
+                  } else {
+                    processed_paragraphs <- c(processed_paragraphs, paste0("    ", text))
+                  }
+                  current_text <- character(0)
+                }
+                # Add blockquote with proper indentation
+                if (i == 1 && length(processed_paragraphs) == 0) {
+                  processed_paragraphs <- c(processed_paragraphs, line)
+                } else {
+                  processed_paragraphs <- c(processed_paragraphs, paste0("    ", line))
+                }
+              } else {
+                # Regular text line
+                current_text <- c(current_text, line)
+              }
+            }
+            
+            # Add any remaining text
+            if (length(current_text) > 0) {
+              text <- paste(current_text, collapse = " ")
+              if (i == 1 && length(processed_paragraphs) == 0) {
+                processed_paragraphs <- c(processed_paragraphs, text)
+              } else {
+                processed_paragraphs <- c(processed_paragraphs, paste0("    ", text))
+              }
+            }
+          } else {
+            # Regular paragraph without blockquotes
+            if (i == 1 && length(processed_paragraphs) == 0) {
+              processed_paragraphs <- c(processed_paragraphs, part)
+            } else {
+              processed_paragraphs <- c(processed_paragraphs, paste0("    ", part))
+            }
+          }
+        }
+        
+        # Rejoin paragraphs with proper spacing
+        footnote_content <- paste(processed_paragraphs, collapse = "\n\n")
         
         # Remove Google Docs comment references like [as], [at], [e], etc. (robust)
         footnote_content <- str_replace_all(footnote_content, "\\[[a-zA-Z]{1,3}\\]", "")
@@ -521,18 +602,6 @@ convert_html_to_markdown <- function(html_file) {
         footnote_content <- str_replace_all(footnote_content, "\\*([^*]+)\\*([a-zA-Z0-9])", "*\\1* \\2")
         footnote_content <- str_replace_all(footnote_content, "\\s+", " ")
         footnote_content <- str_trim(footnote_content)
-        
-        # Blockquote formatting: detect lines that should be blockquotes (from blockquote-style <p> in footnotes)
-        # If a line starts with a quote or is indented, prefix with '> '
-        lines <- str_split(footnote_content, "\\n")[[1]]
-        blockquote_lines <- sapply(lines, function(line) {
-          if (str_detect(line, '^"|^\\s{2,}|^> ')) {
-            paste0('> ', str_trim(line))
-          } else {
-            line
-          }
-        })
-        footnote_content <- paste(blockquote_lines, collapse = "\n")
         
         footnote_definitions <- c(footnote_definitions, paste0("[^", footnote_num, "]: ", footnote_content))
       }
