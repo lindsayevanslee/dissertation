@@ -7,11 +7,22 @@ convert_html_to_markdown <- function(html_file) {
   library(xml2)
   library(stringr)
   
-  # Initialize table_seen_content at the top so it is always defined
-  table_seen_content <- character(0)
-  
   # Read HTML file with UTF-8 encoding
   html_content <- read_html(html_file, encoding = "UTF-8")
+  
+  # Remove Google Docs comment references before processing
+  comment_refs <- xml_find_all(html_content, ".//sup[a[starts-with(@href, '#cmnt')]]")
+  for (ref in comment_refs) {
+    xml_remove(ref)
+  }
+  
+  # Also remove any remaining comment references in the text using regex
+  html_text <- as.character(html_content)
+  html_text <- str_replace_all(html_text, "<sup><a[^>]*href=\"#cmnt[^>]*>\\[[a-zA-Z]\\]</a></sup>", "")
+  html_content <- read_html(html_text)
+  
+  # Initialize table_seen_content at the top so it is always defined
+  table_seen_content <- character(0)
   
   # Helper: is italic style?
   is_italic <- function(node) {

@@ -31,7 +31,11 @@ extract_section_by_name <- function(html_file, section_name, output_file = NULL,
   heading <- NULL
   for (h in headings) {
     text <- h %>% html_text() %>% str_trim()
-    if (str_detect(tolower(text), tolower(section_name))) {
+    # Strip comment references like [f], [g], etc. for matching
+    text_clean <- str_replace_all(text, "\\[[a-zA-Z]\\]", "")
+    text_clean <- str_squish(text_clean)
+    
+    if (str_detect(tolower(text_clean), tolower(section_name))) {
       heading <- h
       break
     }
@@ -93,7 +97,14 @@ list_available_sections <- function(html_file) {
     heading_id <- headings[i] %>% html_attr("id")
     if (is.na(heading_id)) heading_id <- "No ID"
     
+    # Strip comment references for display
+    title_clean <- str_replace_all(title, "\\[[a-zA-Z]\\]", "")
+    title_clean <- str_squish(title_clean)
+    
     cat(sprintf("%2d. %s\n", i, title))
+    if (title != title_clean) {
+      cat(sprintf("    Clean: %s\n", title_clean))
+    }
     cat(sprintf("    ID: %s\n", heading_id))
     cat("\n")
   }
