@@ -467,26 +467,26 @@ To read these passages in translation, hover over each column with your cursor.
   <div class="hover-text">
 .....<br>
 <span class="verse-line"><span class="line-number">149</span>Of her beauty, of her figure<br></span>
-<span class="verse-line">as it is in the written source<br></span>
-<span class="verse-line">I want to tell you about her appearance<br></span>
+<span class="verse-line">(as it is in the written source)<br></span>
+<span class="verse-line">and about her appearance, I want to tell you<br></span>
 <span class="verse-line">before I go too far.<br></span>
 <span class="verse-line">In this world or in this realm,<br></span>
 <span class="verse-line"><span class="line-number">154</span>no man ever saw a more beautiful woman.<br></span>
 <span class="verse-line">Never did a duchess or a queen<br></span>
 <span class="verse-line">have on her head more beautiful hair.<br></span>
 <span class="verse-line">She had round ears.<br></span>
-<span class="verse-line">Plus, they were marvelously white,<br></span>
+<span class="verse-line">What's more, they were marvelously white,<br></span>
 <span class="verse-line"><span class="line-number">159</span>her eyebrows black and becoming,<br></span>
 <span class="verse-line">and her eyes bright and smiling,<br></span>
 <span class="verse-line">her face tender and covered<br></span>
 <span class="verse-line">like the rose that has only just bloomed.<br></span>
 <span class="verse-line">Her teeth were white and quite small.<br></span>
 <span class="verse-line"><span class="line-number">164</span>A more beautiful mouth no one ever saw.<br></span>
-<span class="verse-line">She had such a pious gaze,<br></span>
+<span class="verse-line">She had such a pleasing expression,<br></span>
 <span class="verse-line">and her look and her features bright.<br></span>
 <span class="verse-line">I believe on her nose and on her chin<br></span>
 <span class="verse-line">there was no defect at all.<br></span>
-<span class="verse-line"><span class="line-number">169</span>Above the bust of her chest,<br></span>
+<span class="verse-line"><span class="line-number">169</span>Below her mouth on her chest,<br></span>
 <span class="verse-line">it was whiter than a hawthorn flower,<br></span>
 <span class="verse-line">and of course she had beautiful breasts,<br></span>
 <span class="verse-line">very well set, small, and beautiful.<br></span>
@@ -499,7 +499,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="line-number">179</span>She was neither too big nor too small.<br></span>
 <span class="verse-line">Her frame could never be described.<br></span>
 <span class="verse-line">The beauty of these proportions<br></span>
-<span class="verse-line">could neither be described nor appraised.<br></span>
+<span class="verse-line">could not be described without praise.<br></span>
 <span class="verse-line">Such a creature makes one lament<br></span>
 <span class="verse-line"><span class="line-number">184</span>when she does not care about her Creator.<br></span>
 <span class="verse-line">She received great presents<br></span>
@@ -507,7 +507,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">She had good and fitting clothes<br></span>
 <span class="verse-line">to better please her lovers,<br></span>
 <span class="verse-line"><span class="line-number">189</span>and she did not wear woollen cloth.<br></span>
-<span class="verse-line">The worst day of the week,<br></span>
+<span class="verse-line">On the worst day of the week,<br></span>
 <span class="verse-line">she wore a fine purple silk bliaut<br></span>
 <span class="verse-line">and adorned herself with an ermine mantle.<br></span>
 <span class="verse-line">Well-painted shoes of Cordovan leather<br></span>
@@ -546,7 +546,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">Thinned were her eyes.<br></span>
 <span class="verse-line">There was not a shred of pride there now.<br></span>
 <span class="verse-line"><span class="line-number">587</span>If you saw her ears,<br></span>
-<span class="verse-line">you would find a great marvel<br></span>
+<span class="verse-line">it would seem to you a great marvel<br></span>
 <span class="verse-line">for they were so skinny and deteriorated<br></span>
 <span class="verse-line">and all wooly with white hairs.<br></span>
 <span class="verse-line">Black and hairy was her chest.<br></span>
@@ -574,7 +574,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">Every day, Mary ate some,<br></span>
 <span class="verse-line">but this was a very poor life.<br></span>
 <span class="verse-line">As soon as she had eaten up all her bread,<br></span>
-<span class="verse-line">then she went wild for the grasses of the fields<br></span>
+<span class="verse-line">then she plucked the grasses of the fields<br></span>
 <span class="verse-line"><span class="line-number">617</span>Like other beasts, she ate them.<br></span>
 <span class="verse-line">None of this bothered her.<br></span>
 <span class="verse-line">From then on, she drank from the stream.<br></span>
@@ -589,7 +589,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">whatever she once used to love,<br></span>
 <span class="verse-line">the fine delights and the fine games<br></span>
 <span class="verse-line">in which she used to take pleasure.<br></span>
-<span class="verse-line">She was so blissful<br></span>
+<span class="verse-line">She felt so blessed<br></span>
 <span class="verse-line"><span class="line-number">632</span>when she had forgotten all of this.<br></span>
 <span class="verse-line">Never again in her life<br></span>
 <span class="verse-line">did she remember a day of folly.<br></span>
