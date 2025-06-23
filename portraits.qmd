@@ -231,16 +231,16 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">that the son of an emperor<br></span>
 <span class="verse-line">could have taken her with great honor.<br></span>
 .....<br>
-<span class="verse-line"><span class="folio-number">338va</span>So she went by day and by night<br></span>
-<span class="verse-line">hungry, thirsty, and on hard beds.<br></span>
-<span class="verse-line">She was so deep in the wood<br></span>
-<span class="verse-line">that she became entirely wild there,<br></span>
+<span class="verse-line"><span class="folio-number">338va</span>She went so long by day and by night,<br></span>
+<span class="verse-line">hungry and thirsty and on hard beds.<br></span>
+<span class="verse-line">There she was so deep in the wood<br></span>
+<span class="verse-line">that she became entirely wild,<br></span>
 <span class="verse-line">but she never forgot<br></span>
 <span class="verse-line"><span class="line-number">618</span>to pray to saint Mary.<br></span>
-<span class="verse-line">Often she remembered the image<br></span>
+<span class="verse-line">Often, she remembered the image<br></span>
 <span class="verse-line">on which she had made her pledge.<br></span>
-<span class="verse-line">Soon her shoes were worn out,<br></span>
-<span class="verse-line">and soon her clothes were all torn up.<br></span>
+<span class="verse-line">Soon, her shoes were worn out,<br></span>
+<span class="verse-line">and soon, her clothes were all torn up.<br></span>
 <span class="verse-line"><span class="line-number">623</span>Her body was left totally naked.<br></span>
 <span class="verse-line">She did not have clothing that was not in tatters.<br></span>
 <span class="verse-line">Her own flesh changed color,<br></span>
@@ -254,9 +254,9 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="line-number">633</span>and her chin was so black<br></span>
 <span class="verse-line">as though it were tainted with charcoal.<br></span>
 <span class="verse-line">Thinned were her eyes.<br></span>
-<span class="verse-line">There was not a shred of pride now.<br></span>
+<span class="verse-line">There was not a shred of pride there now.<br></span>
 <span class="verse-line">If you saw her ears,<br></span>
-<span class="verse-line"><span class="line-number">638</span>you would really take in a great marvel.<br></span>
+<span class="verse-line"><span class="line-number">638</span>it would appear to you a great marvel<br></span>
 <span class="verse-line">for they were black and cracked.<br></span>
 <span class="verse-line">Her white flesh changed entirely<br></span>
 <span class="verse-line">Black and changed was her chest.<br></span>
@@ -282,19 +282,19 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">It was no marvel that she was blackened<br></span>
 <span class="verse-line">for she led such a severe life.<br></span>
 <span class="verse-line"><span class="line-number">663</span>After more than forty years in the nude,<br></span>
-<span class="verse-line">it was no marvel she was wooly.<br></span>
+<span class="verse-line">it was no marvel she was woolly.<br></span>
 <span class="verse-line">She had poor provisions with her.<br></span>
 <span class="verse-line">Pray, may Jesus have mercy on her.<br></span>
-<span class="verse-line">She had two breads of no great size.<br></span>
+<span class="verse-line">She had two loaves of no great size.<br></span>
 <span class="verse-line"><span class="line-number">668</span>On these, she lived for many years.<br></span>
 <span class="verse-line">In the first year, they became hard<br></span>
 <span class="verse-line">as though they were building stones.<br></span>
 <span class="verse-line">Each day, Mary ate some,<br></span>
 <span class="verse-line">but this was a small portion.<br></span>
 <span class="verse-line"><span class="line-number">673</span>As soon as she had eaten up all her bread,<br></span>
-<span class="verse-line">then she plucked the grass nearby.<br></span>
+<span class="verse-line">then she plucked the grass of the field.<br></span>
 <span class="verse-line">Like other beasts she ate it.<br></span>
-<span class="verse-line">She provided herself with nothing else.<br></span>
+<span class="verse-line">None of this bothered her.<br></span>
 <span class="verse-line">On her hands, she drank the water from the stream<br></span>
 <span class="verse-line"><span class="line-number">678</span>as she had no other vessel.<br></span>
 <span class="verse-line">She does not bemoan her sins<br></span>
@@ -306,10 +306,10 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">In the first year, the devil<br></span>
 <span class="verse-line">often used to tempt her,<br></span>
 <span class="verse-line">making her remember all<br></span>
-<span class="verse-line"><span class="line-number">688</span>that she used to always love.<br></span>
-<span class="verse-line">The good eats and the beautiful places<br></span>
+<span class="verse-line"><span class="line-number">688</span>that she used to always love:<br></span>
+<span class="verse-line">the good eats and the fine places<br></span>
 <span class="verse-line">where she was used to playing games.<br></span>
-<span class="verse-line">Now, she was so blissful<br></span>
+<span class="verse-line">Now, she felt so blessed<br></span>
 <span class="verse-line">that she had forgotten all.<br></span>
 <span class="verse-line"><span class="folio-number">339ra</span>Never then in all her life<br></span>
 <span class="verse-line">did she think more of folly.<br></span>
@@ -530,7 +530,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">There she was in the wood so long<br></span>
 <span class="verse-line">that she became entirely wild.<br></span>
 <span class="verse-line">Soon, her clothes were worn out,<br></span>
-<span class="verse-line"><span class="line-number">572</span>and soon her soles were torn up.<br></span>
+<span class="verse-line"><span class="line-number">572</span>and soon, her soles were torn up.<br></span>
 <span class="verse-line">As much from winter as from summer,<br></span>
 <span class="verse-line">her sides blackened entirely.<br></span>
 <span class="verse-line">Her tender flesh changed color,<br></span>
@@ -546,9 +546,9 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">Thinned were her eyes.<br></span>
 <span class="verse-line">There was not a shred of pride there now.<br></span>
 <span class="verse-line"><span class="line-number">587</span>If you saw her ears,<br></span>
-<span class="verse-line">it would seem to you a great marvel<br></span>
+<span class="verse-line">it would occur to you a great marvel<br></span>
 <span class="verse-line">for they were so skinny and deteriorated<br></span>
-<span class="verse-line">and all wooly with white hairs.<br></span>
+<span class="verse-line">and all woolly with white hairs.<br></span>
 <span class="verse-line">Black and hairy was her chest.<br></span>
 <span class="verse-line"><span class="line-number">592</span>It seemed like black thorny bark.<br></span>
 <span class="verse-line">Her stomach was all sunken.<br></span>
@@ -556,7 +556,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">She had large nails.<br></span>
 <span class="verse-line">She reshaped them with her teeth.<br></span>
 <span class="verse-line"><span class="line-number">597</span>Her feet were skinny and split,<br></span>
-<span class="verse-line">and in many places were deeply wounded<br></span>
+<span class="verse-line">and, in many places, were deeply wounded<br></span>
 <span class="verse-line">for she did not protect them from thorns<br></span>
 <span class="verse-line">as she went through the wilderness.<br></span>
 <span class="verse-line">So it seemed to her, in her mind,<br></span>
@@ -565,7 +565,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">one of her sins fell down from her.<br></span>
 <span class="verse-line">She does not bemoan her sins<br></span>
 <span class="verse-line">as her body is so chastised.<br></span>
-<span class="verse-line"><span class="line-number">607</span>It was no marvel that she was wooly;<br></span>
+<span class="verse-line"><span class="line-number">607</span>It was no marvel that she was woolly;<br></span>
 <span class="verse-line">for forty years, she went totally nude.<br></span>
 <span class="verse-line">She had two loaves of no great size.<br></span>
 <span class="verse-line">On these, she lived for many years.<br></span>
@@ -586,7 +586,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">The devil came before her first.<br></span>
 <span class="verse-line">He used to annoy her so much,<br></span>
 <span class="verse-line"><span class="line-number">627</span>making her remember<br></span>
-<span class="verse-line">whatever she once used to love,<br></span>
+<span class="verse-line">whatever she once used to love:<br></span>
 <span class="verse-line">the fine delights and the fine games<br></span>
 <span class="verse-line">in which she used to take pleasure.<br></span>
 <span class="verse-line">She felt so blessed<br></span>
@@ -825,16 +825,16 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">that the son of an emperor<br></span>
 <span class="verse-line">could have taken her with great honor.<br></span>
 .....<br>
-<span class="verse-line"><span class="line-number">623</span>So she went in the day as in the night<br></span>
+<span class="verse-line"><span class="line-number">623</span>She went so long in the day as in the night,<br></span>
 <span class="verse-line">hungry, thirsty, and on hard beds.<br></span>
-<span class="verse-line">She was so deep in the wood<br></span>
-<span class="verse-line">that she became entirely wild there,<br></span>
+<span class="verse-line">There she was so deep in the wood<br></span>
+<span class="verse-line">that she became entirely wild,<br></span>
 <span class="verse-line">but she never forgot<br></span>
 <span class="verse-line"><span class="line-number">628</span>to pray to saint Mary.<br></span>
-<span class="verse-line">Often she remembered the image<br></span>
+<span class="verse-line">Often, she remembered the image<br></span>
 <span class="verse-line">on which she had made her pledge.<br></span>
-<span class="verse-line">Soon her clothes were worn out<br></span>
-<span class="verse-line">and soon her soles were stripped.<br></span>
+<span class="verse-line">Soon, her clothes were worn out,<br></span>
+<span class="verse-line">and soon, her soles were stripped.<br></span>
 <span class="verse-line"><span class="line-number">633</span>As her clothes were in tatters,<br></span>
 <span class="verse-line">her body was left totally naked.<br></span>
 <span class="verse-line">Her own flesh changed color,<br></span>
@@ -852,10 +852,10 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">Tinted and blackened were her eyes.<br></span>
 <span class="verse-line"><span class="line-number">648</span>There was not any pride there now.<br></span>
 <span class="verse-line">If you saw her ears,<br></span>
-<span class="verse-line">they would really be to you a great marvel<br></span>
+<span class="verse-line">it would be a great marvel to you<br></span>
 <span class="verse-line">for they were skinny and cracked<br></span>
-<span class="verse-line">and all wooly with white hairs.<br></span>
-<span class="verse-line"><span class="line-number">653</span>Black and wooly was her chest.<br></span>
+<span class="verse-line">and all woolly with white hairs.<br></span>
+<span class="verse-line"><span class="line-number">653</span>Black and woolly was her chest.<br></span>
 <span class="verse-line">It seemed like thorny bark.<br></span>
 <span class="verse-line">She had no more flesh in her breast,<br></span>
 <span class="verse-line">no more than there is in a glove.<br></span>
@@ -878,19 +878,19 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="line-number">673</span>it was no wonder that she was blackened<br></span>
 <span class="verse-line">for she led such a severe life.<br></span>
 <span class="verse-line">After more than forty years in the nude,<br></span>
-<span class="verse-line">it was no wonder she was wooly.<br></span>
+<span class="verse-line">it was no wonder she was woolly.<br></span>
 <span class="verse-line">She had poor provisions with her.<br></span>
 <span class="verse-line"><span class="line-number">678</span>Pray, may Jesus have mercy on her.<br></span>
-<span class="verse-line">She had two breads of no great size.<br></span>
+<span class="verse-line">She had two loaves of no great size.<br></span>
 <span class="verse-line">On these she sustained herself for many years.<br></span>
 <span class="verse-line">They all became hard in the first year<br></span>
 <span class="verse-line">as though they were made from a wall.<br></span>
 <span class="verse-line"><span class="line-number">683</span>Each day, Mary ate some,<br></span>
 <span class="verse-line">but this was a small portion.<br></span>
 <span class="verse-line">As soon as she had eaten up her bread,<br></span>
-<span class="verse-line">then she gathered the grass nearby.<br></span>
+<span class="verse-line">then she gathered the grass of the field.<br></span>
 <span class="verse-line">Like other beasts she ate it.<br></span>
-<span class="verse-line"><span class="line-number">688</span>She provided herself with nothing else.<br></span>
+<span class="verse-line"><span class="line-number">688</span>None of this bothered her.<br></span>
 <span class="verse-line"><span class="folio-number">48v</span>Prone, she drew from a stream.<br></span>
 <span class="verse-line">Like so, she drank. She had no other vessel.<br></span>
 <span class="verse-line">She does not bemoan her sins<br></span>
@@ -900,12 +900,12 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">Then for thirty years, she never ate<br></span>
 <span class="verse-line">but what the angel of God brought to her.<br></span>
 <span class="verse-line">Devils came to approach her.<br></span>
-<span class="verse-line"><span class="line-number">698</span>Often they used to tempt her,<br></span>
+<span class="verse-line"><span class="line-number">698</span>Often, they used to tempt her,<br></span>
 <span class="verse-line">making her remember all<br></span>
-<span class="verse-line">that she once used to love.<br></span>
-<span class="verse-line">The good eats and the beautiful places<br></span>
+<span class="verse-line">that she once used to love:<br></span>
+<span class="verse-line">the good eats and the fine places<br></span>
 <span class="verse-line">where she was used to playing her games.<br></span>
-<span class="verse-line"><span class="line-number">703</span>Now, she was so blissful<br></span>
+<span class="verse-line"><span class="line-number">703</span>Now, she felt so blessed<br></span>
 <span class="verse-line">that nothing hurt her.<br></span>
 <span class="verse-line">Never, in all her life,<br></span>
 <span class="verse-line">did she think, then, of folly.<br></span>
@@ -1135,16 +1135,16 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">that the son of an emperor<br></span>
 <span class="verse-line">could have taken her with honor.<br></span>
 .....<br>
-<span class="verse-line"><span class="line-number">615</span>So she roamed by day and by night,<br></span>
+<span class="verse-line"><span class="line-number">615</span>She roamed so long by day and by night,<br></span>
 <span class="verse-line">hungry and thirsty and on hard beds,<br></span>
-<span class="verse-line">and so she was in this wood.<br></span>
-<span class="verse-line">She became entirely wild there,<br></span>
+<span class="verse-line">and she was in this wood so long<br></span>
+<span class="verse-line">she became entirely wild there,<br></span>
 <span class="verse-line">but she never forgot<br></span>
 <span class="verse-line"><span class="line-number">620</span>to pray to saint Mary.<br></span>
 <span class="verse-line">Often, she remembers the image<br></span>
 <span class="verse-line">on which she had made her pledge.<br></span>
 <span class="verse-line">Her soles were all worn out,<br></span>
-<span class="verse-line">and soon her clothes were torn up.<br></span>
+<span class="verse-line">and soon, her clothes were torn up.<br></span>
 <span class="verse-line"><span class="line-number">625</span>As her clothes were in tatters,<br></span>
 <span class="verse-line">her body was left totally naked.<br></span>
 <span class="verse-line">Her own flesh changed color,<br></span>
@@ -1160,9 +1160,9 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">Her chin was so black all over.<br></span>
 <span class="verse-line">It was like the head of a firebrand,<br></span>
 <span class="verse-line">and black were her eyes.<br></span>
-<span class="verse-line"><span class="line-number">640</span>There was not a shred of pride now.<br></span>
+<span class="verse-line"><span class="line-number">640</span>There was not a shred of pride there now.<br></span>
 <span class="verse-line"><span class="folio-number">20rb</span>If you saw her ears,<br></span>
-<span class="verse-line">they would really seem to you a great marvel<br></span>
+<span class="verse-line">it would seem to you a great marvel<br></span>
 <span class="verse-line">for they were skinny and cracked<br></span>
 <span class="verse-line">and covered in white hair.<br></span>
 <span class="verse-line"><span class="line-number">645</span>She had no more flesh in her breast,<br></span>
@@ -1186,19 +1186,19 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">it was no wonder she was blackened<br></span>
 <span class="verse-line">for she led a severe life.<br></span>
 <span class="verse-line"><span class="line-number">665</span>After more than forty years in the nude,<br></span>
-<span class="verse-line">it was no wonder she was wooly.<br></span>
+<span class="verse-line">it was no wonder she was woolly.<br></span>
 <span class="verse-line">She had poor provisions with her.<br></span>
 <span class="verse-line">Pray, may Jesus have mercy on her.<br></span>
-<span class="verse-line">She had two breads of no great size.<br></span>
+<span class="verse-line">She had two loaves of no great size.<br></span>
 <span class="verse-line"><span class="line-number">670</span>On these, she lived for many years.<br></span>
 <span class="verse-line">In the first year, they became hard<br></span>
 <span class="verse-line">as though they were building stones.<br></span>
 <span class="verse-line"><span class="folio-number">20va</span>Each day, Mary ate some,<br></span>
 <span class="verse-line">but this was a small portion.<br></span>
 <span class="verse-line"><span class="line-number">675</span>And as soon as she had eaten up her bread,<br></span>
-<span class="verse-line">then she plucked the grass nearby.<br></span>
+<span class="verse-line">then she plucked the grass of the field.<br></span>
 <span class="verse-line">Like other beasts, she ate it.<br></span>
-<span class="verse-line">And she provided herself with nothing else.<br></span>
+<span class="verse-line">And none of this bothered her.<br></span>
 <span class="verse-line">Prone, she drank from the stream.<br></span>
 <span class="verse-line"><span class="line-number">680</span>She had no other vessel.<br></span>
 <span class="verse-line">She does not bemoan her sins<br></span>
@@ -1208,12 +1208,12 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="line-number">685</span>Then, for thirty years, she never ate<br></span>
 <span class="verse-line">but what the angel of God brought to her.<br></span>
 <span class="verse-line">The devil came to her first.<br></span>
-<span class="verse-line">Often he used to tempt her,<br></span>
+<span class="verse-line">Often, he used to tempt her,<br></span>
 <span class="verse-line">making her remember all<br></span>
-<span class="verse-line"><span class="line-number">690</span>that she once used to love.<br></span>
-<span class="verse-line">The good eats and the places<br></span>
+<span class="verse-line"><span class="line-number">690</span>that she once used to love:<br></span>
+<span class="verse-line">the good eats and the places<br></span>
 <span class="verse-line">where she was used to playing her games.<br></span>
-<span class="verse-line">Now, she was so blissful<br></span>
+<span class="verse-line">Now, she felt so blessed<br></span>
 <span class="verse-line">as she had forgotten all of this.<br></span>
 <span class="verse-line"><span class="line-number">695</span>And in all her life,<br></span>
 <span class="verse-line">she never thought of folly.<br></span>
@@ -1449,16 +1449,16 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">The son of an emperor<br></span>
 <span class="verse-line">could have taken her with honor.<br></span>
 .....<br>
-<span class="verse-line"><span class="line-number">613</span>So she went by day and by night<br></span>
+<span class="verse-line"><span class="line-number">613</span>She went so long by day and by night,<br></span>
 <span class="verse-line">through woods, through plains, and through hills,<br></span>
 <span class="verse-line">and so deeply she went into the wood<br></span>
 <span class="verse-line">that she became entirely wild there,<br></span>
 <span class="verse-line">but she never forgot<br></span>
 <span class="verse-line"><span class="line-number">618</span>to pray to saint Mary.<br></span>
-<span class="verse-line">Often she remembered the image<br></span>
+<span class="verse-line">Often, she remembered the image<br></span>
 <span class="verse-line">on which she had made her pledge.<br></span>
-<span class="verse-line">Soon her clothes were worn out,<br></span>
-<span class="verse-line">and soon her soles were stripped.<br></span>
+<span class="verse-line">Soon, her clothes were worn out,<br></span>
+<span class="verse-line">and soon, her soles were stripped.<br></span>
 <span class="verse-line"><span class="line-number">623</span>As her clothes were in tatters,<br></span>
 <span class="verse-line">her body was left totally naked.<br></span>
 <span class="verse-line">Her own flesh changed color.<br></span>
@@ -1476,11 +1476,11 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">All black were her eyes now.<br></span>
 <span class="verse-line"><span class="line-number">638</span>She had, now, not a shred of pride.<br></span>
 <span class="verse-line">If you saw her ears,<br></span>
-<span class="verse-line">you would come upon a great marvel<br></span>
+<span class="verse-line">it would occur to you a great marvel<br></span>
 <span class="verse-line">that was skinny and cracked<br></span>
-<span class="verse-line">and all wooly with white hairs.<br></span>
-<span class="verse-line"><span class="line-number">643</span>Black and wooly was her chest.<br></span>
-<span class="verse-line">It so ressembled thorny bark.<br></span>
+<span class="verse-line">and all woolly with white hairs.<br></span>
+<span class="verse-line"><span class="line-number">643</span>Black and woolly was her chest.<br></span>
+<span class="verse-line">It so resembled thorny bark.<br></span>
 <span class="verse-line">She did not have flesh in her breasts,<br></span>
 <span class="verse-line">nothing more than there is in a glove.<br></span>
 <span class="verse-line">Her arms, her hands, and her long fingers<br></span>
@@ -1502,19 +1502,19 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="line-number">663</span>it was no wonder she was blackened<br></span>
 <span class="verse-line">for she led a very severe life.<br></span>
 <span class="verse-line">After more than forty years in the nude,<br></span>
-<span class="verse-line">it was no wonder she was wooly.<br></span>
+<span class="verse-line">it was no wonder she was woolly.<br></span>
 <span class="verse-line">She had poor provisions with her.<br></span>
 <span class="verse-line"><span class="line-number">668</span>May God have mercy on her.<br></span>
-<span class="verse-line">She had two breads of no great size.<br></span>
+<span class="verse-line">She had two loaves of no great size.<br></span>
 <span class="verse-line">On these she lived for many years.<br></span>
 <span class="verse-line">The first year, they became hard<br></span>
 <span class="verse-line">as though they were building stones.<br></span>
 <span class="verse-line"><span class="line-number">673</span>Each day, Mary ate some,<br></span>
 <span class="verse-line">but this was a small portion.<br></span>
 <span class="verse-line">As soon as she had eaten up all her bread,<br></span>
-<span class="verse-line">then she gathered the grass nearby.<br></span>
+<span class="verse-line">then she gathered the grass of the field.<br></span>
 <span class="verse-line">Like other beasts, she ate it.<br></span>
-<span class="verse-line"><span class="line-number">678</span>She provided herself with nothing else.<br></span>
+<span class="verse-line"><span class="line-number">678</span>None of this bothered her.<br></span>
 <span class="verse-line">Prone, she drank from the stream<br></span>
 <span class="verse-line">for there was no other vessel.<br></span>
 <span class="verse-line">She does not bemoan her sins<br></span>
@@ -1524,12 +1524,12 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">Then, for thirty years, she ate only<br></span>
 <span class="verse-line">what the angel of God brought to her.<br></span>
 <span class="verse-line">The devil came to her first.<br></span>
-<span class="verse-line"><span class="line-number">688</span>Often he used to tempt her,<br></span>
+<span class="verse-line"><span class="line-number">688</span>Often, he used to tempt her,<br></span>
 <span class="verse-line">making her remember all<br></span>
-<span class="verse-line">that she once used to love.<br></span>
-<span class="verse-line">The beautiful delights and the beautiful places<br></span>
+<span class="verse-line">that she once used to love:<br></span>
+<span class="verse-line">the fine delights and the fine places<br></span>
 <span class="verse-line">where she was used to playing her games.<br></span>
-<span class="verse-line"><span class="line-number">693</span>Now, she was blissful<br></span>
+<span class="verse-line"><span class="line-number">693</span>Now, she felt blessed<br></span>
 <span class="verse-line">as she had forgotten all of this<br></span>
 <span class="verse-line">before long. Then for all her life,<br></span>
 <span class="verse-line">she never thought of folly.<br></span>
