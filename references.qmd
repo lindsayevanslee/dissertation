@@ -214,6 +214,8 @@ Fritschi, Ramona. “e-codices – Virtual Manuscript Library of Switzerland: Gr
 
 *Fragmentarium*. Manuscript Research Center - University of Fribourg, 2013-present, https://fragmentarium.ms/. [repository]
 
+Haugen, Odd Einar, editor. *MUFI Character Recommendation: Characters in the Official Unicode Standard and in the Private Use Area for Medieval Texts Written in the Latin Alphabet* (Version 4.0), Medieval Unicode Font Initiative (MUFI), 2015. https://hdl.handle.net/1956/10699. [tool]
+
 Honkapohja, Alpo. “Digital Approaches to Manuscript Abbreviations: Where Are We at the Beginning of the 2020s?” *Digital Medievalist*, vol. 14, 2021. [scholarship]
 
 Kiss, Farkas Gábor, et al. “Old Light on New Media: Medieval Practices in the Digital Age.” *Digital Philology: A Journal of Medieval Cultures*, vol. 2, no. 1, Spring 2013, pp. 16-34. [scholarship]
@@ -254,9 +256,13 @@ Tufte, Edward. *Seeing With Fresh Eyes: Meaning, Space, Data, Truth*. Graphis Pr
 
 Warren, Michelle R. *Holy Digital Grail: A Medieval Book on the Internet*, Redwood City: Stanford University Press, 2022. https://doi-org.proxy1.library.virginia.edu/10.1515/9781503631175 [scholarship]
 
+---. “Introduction: Situating Digital Archives.” *Digital Philology: A Journal of Medieval Cultures*, vol. 3, no. 2, Fall 2014, pp. 169-177. [scholarship]
+
 Whearty, Bridget. *Digital Codicology: Medieval Books and Modern Labor*, Redwood City: Stanford University Press, 2022. https://doi-org.proxy1.library.virginia.edu/10.1515/9781503634190 [scholarship]
 
 ---. “Adam Scriveyn in Cyberspace: Loss, Labour, Ideology, and Infrastructure in Interoperable Reuse of Digital Manuscript Metadata.” *Meeting the Medieval in a Digital World*, edited by Matthew Evan Davis, Tamsyn Mahoney-Steel, and Ece Turnator, Arc Humanities Press, 2018, pp. 157-201. [scholarship]
+
+“Witnessing the Crusades in the Eastern Roman Empire with Dr. Leonora Neville” *Meeting in the Middle Ages*, University of Notre Dame Medieval Institute, 31 Dec. 2024, https://podcasts.apple.com/us/podcast/19-witnessing-the-crusades-in-the-eastern-roman-empire/id1641163866?i=1000682273287. [scholarship]
 
 Xie, Yihui. *bookdown: Authoring Books and Technical Documents with R Markdown*. Chapman & Hall, 2021. https://bookdown.org/yihui/bookdown/. [tool]
 
