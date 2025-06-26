@@ -635,7 +635,7 @@ process_line <- function(line) {
     
     # SPECIAL CASE: Hard-code line v.634 to correct spacing
     if (line_count == 634) {
-      return("<div style='line-height: 1.2;'>& en v iron sachar noircie</div>")
+      return("<div style='line-height: 1.2;'>&#xF158; en v iron sachar noircie</div>")
     }
     
     # SPECIAL CASE: Hard-code line v.635 to correct spacing
@@ -650,7 +650,7 @@ process_line <- function(line) {
     
     # SPECIAL CASE: Hard-code line v.643 to correct spacing
     if (line_count == 643) {
-      return("<div style='line-height: 1.2;'>Noire & molsue ert sapoitrine</div>")
+      return("<div style='line-height: 1.2;'>Noire &#xF158; molsue ert sapoitrine</div>")
     }
     
     # SPECIAL CASE: Hard-code line v.646 to remove apostrophe in "qu'il"
