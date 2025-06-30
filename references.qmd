@@ -414,5 +414,7 @@ Speer, Mary B. “Old French Literature.” *Scholarly Editing: A Guide to Resea
 
 Vieillard, Françoise and Olivier Guyotjeannin. *Conseils pour l’édition des textes médiévaux, Fascicule I: Conseils généraux*. École nationale des chartes, 2001.
 
+Zumthor, Paul. *Essai de poétique médiévale*. Éditions du Seuil, 1972.
+
 ## Epigraph
 Thomas. “Le Roman de Tristan.” *Tristan et Iseut: Les poèmes français et La saga norroise*. Edited and translated by Philippe Walter, Lettres gothiques, 1989, pp. 329-481.
