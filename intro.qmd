@@ -22,7 +22,8 @@ Consider the case of Erik Rankka (1914-2009), former Docent of Uppsala Universit
 Central to both these narratives is a profound indebtedness to the work of those — librarians, curators, catalogers, and the many manuscript scholars who come before us — whose dedication ensures the preservation, accessibility, and comprehensibility of manuscript collections, thereby fundamentally enabling all associated research. The intellectual labor involved in maintaining these objects and curating these collections is not merely administrative; it embodies a deep engagement with the artifacts under our care and represents an essential component of our scholarly ecosystem. Librarians protect and maintain manuscript collections; catalogers render these collections searchable and individual manuscripts discoverable; editors and translators ensure that the texts within these manuscripts are made legible to a wider audience; and other scholars, of course, build on this groundwork to make insightful contributions that highlight the significance of these manuscripts and inform the collecting choices and other work of the librarians and so on. The cycle continues. All of this shared attention augments a manuscript’s value — both its monetary and its incalculable cultural value — and likewise augments the value we place on the texts recorded within these manuscripts. The manuscripts we choose to devote our time and attention to ultimately shape our perceptions of the medieval past and its literature, of its people and its diverse productions. All of those involved, therefore, in the maintenance, curation, and study of medieval manuscripts bear a significant responsibility to preserve and make clear what these objects are and what they might tell us. It is through the meticulous care and collaborative spirit of every person involved in this cycle of scholarship that our field continues to thrive and evolve. Inalienable from our scholarly endeavors are the human relationships formed between researchers and the custodians of our research objects, ensuring that our field not only persists but flourishes.
 
 Furthermore, this comparison between the work of Rankka and myself illustrates how the fundamental procedures we follow — reaching out to special collections librarians, arranging access, and consulting materials — have changed little over time. However, the tools at our disposal have become more diverse and sophisticated. Manuscript research has undergone significant developments over the past several decades, particularly with the advent of digital technologies. The digital turn has made many manuscripts and their associated metadata available online, allowing researchers to conduct much of their work from locations far removed from the special collections reading room, while in no way diminishing the valuable insights that can only come from consulting manuscripts and their curators in person. Even email has accelerated correspondences between special collections librarians and researchers, making it easier than ever to access materials and arrange visits. And yet, it is important to remember that, despite these new developments, the work of manuscript scholars today remains fundamentally the same, and it is this fundamental continuity in combination with the adoption of helpful innovation that is essential to the production of thorough research that builds over time. While our tools may change, the collaborative and human foundations of manuscript research remain constant. The same intellectual labor — careful cataloging, skilled preservation, informed interpretation — continues to sustain our field. Digital technologies do not replace this labor; they extend it. To embrace digital methods is not to abandon traditional scholarship or the relationships that make it possible, but to carry them forward with new capacities. Digital scholarship, at its best, strengthens our ability to ask and answer humanities questions. Manuscripts are not just data; they are objects of care — preserved, interpreted, and made both available and meaningful through the enduring efforts of those who steward them.
-
+  \
+  \
 With this in mind, I enter the manuscript studies ecosystem through this dissertation, viewing editing, in particular, as an instrumental, yet often underappreciated, element that not only reproduces texts but actively reshapes scholarly conversations. In his seminal work *Éloge de la variante* (1989), Bernard Cerquiglini underscores the major — and often contentious — influence of editing on linguistic and literary interpretation:
 
 > L’histoire des méthodes proposées pour l’édition des textes médiévaux de langue romane est curieusement pleine de bruit et de fureur. Symptôme des enjeux de cette activité qui prépare ce qui sera la matière du discours grammatical et littéraire, donnant à lire, informant cette lecture. Mais aussi secrètement formée par elle : la critique textuelle, discipline rigoureuse et austère, est la praxis non dite de la théorie littéraire. La philologie est en cela redoutable : portant un masque candide, elle manipule des faits. (73)
@@ -95,21 +96,14 @@ Pinto-Mathieu makes the argument that Mary’s body (in Version T) is initially 
 
 In fact, if we consider the verses describing Mary the Egyptian’s breasts across the extant manuscript copies, the word *mameles* is *only *used in manuscripts T-A and T-B, and manuscript T-B omits the verse that would use *traians* in the second portrait entirely, whereas every other whole copy — the fragments are, unfortunately, missing these passages of the text— uses the term *traians* for *both *portraits.
 
-> T-A: “Les mameles de cele dame” (v.177) → “N’avoit plus char en ses traians” (v.643)
-
-> T-B: “& si avoit beles mameles” (v.171) → [verse omitted in B]
-
-> T-C: “Chascun des traianz la dame” (v.179) → “N’avoit plus char en sa traiant” (v.655)
-
-> T-D: “Chascun des traianz a la dume” (v.175) → “N’aveit plus char en sun traiant” (v.645)
-
-> T-E: “L’un des traians de cele dome” (v.178) → “N’avoit de char en ses traians” (v.645)
-
-> T-L: “Cacune traiant de la dome” → “N’avoit plus char en son traiant”[^37]
-
-> T-F^1^: [offers only the first 10.5 verses of Portrait 1]
-
-> T-F^2^: [both portraits missing]
+> T-A: “Les **mameles** de cele dame” (v.177) → “N’avoit plus char en ses **traians**” (v.643)  
+T-B: “& si avoit beles **mameles**” (v.171) → [verse omitted in B]  
+T-C: “Chascun des **traianz** la dame” (v.179) → “N’avoit plus char en sa **traiant**” (v.655)  
+T-D: “Chascun des **traianz** a la dume” (v.175) → “N’aveit plus char en sun **traiant**” (v.645)  
+T-E: “L’un des **traians** de cele dome” (v.178) → “N’avoit de char en ses **traians**” (v.645)  
+T-L: “Cacune **traiant** de la dome” → “N’avoit plus char en son **traiant**”[^37]  
+T-F^1^: [offers only the first 10.5 verses of Portrait 1]  
+T-F^2^: [both portraits missing]  
 
 When reading across the T corpus, instead of relying solely on one manuscript copy, we can see that this particular argument of Mary’s supposedly degraded beauty may be called into question. How valid is it to say that the once erotic, sensual, sinful Mary the Egyptian is no longer desirable, or even touchable, in her more purified ascetic form if we find a consistent use of *traians* regardless of Mary’s state of being? The difference of a single word in a single manuscript may seem significant, but when examined more closely, it can reveal how seemingly stable arguments rely on faulty evidence.
 
