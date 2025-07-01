@@ -90,9 +90,9 @@ convert_xml_to_html <- function(xml_file,
         for (choice in choices) {
             # Extract the text from the <orig> tag
             orig_text <- xml_text(xml_find_first(choice, ".//orig"))
-            # Remove all children and set text directly
+            # Remove all children and set text directly with proper spacing
             xml_remove(xml_children(choice))
-            xml_text(choice) <- paste0(orig_text, " ")
+            xml_text(choice) <- paste0(" ", orig_text, " ")
         }
 
         # Now we want to remove any <reg> elements entirely
@@ -118,11 +118,11 @@ convert_xml_to_html <- function(xml_file,
                     text_to_use <- xml_text(xml_find_first(choice, ".//expan/reg"))
                 }
                 xml_remove(xml_children(choice))
-                xml_text(choice) <- paste0(text_to_use, " ")
+                xml_text(choice) <- paste0(" ", text_to_use, " ")
             } else {
                 orig_text <- xml_text(xml_find_first(choice, ".//orig"))
                 xml_remove(xml_children(choice))
-                xml_text(choice) <- paste0(orig_text, " ")
+                xml_text(choice) <- paste0(" ", orig_text, " ")
             }
         }
         # Now we want to remove any <reg> elements entirely
