@@ -23,6 +23,13 @@ convert_xml_to_html <- function(xml_file,
 
     # Function to process each element
     process_line <- function(line) {
+
+    # Handle page breaks differently
+    if (xml_name(line) == "pb") {
+        # Get folio number and format as standalone line
+        folio_num <- xml_attr(line, "n")
+        return(sprintf("<div class='folio-number'>%s</div>", folio_num))
+    }
     
     # Only increment line count for verse lines
     if (xml_name(line) == "l") {
