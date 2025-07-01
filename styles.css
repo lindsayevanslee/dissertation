@@ -320,10 +320,11 @@ body {
   }
 }
 
-/* Line Numbers styling for Portraits Pages */
+/* Line Numbers and Folio Numbers styling for Portraits Pages */
 .verse-line {
   display: block;
   position: relative;
+  padding-left: 10px;
 }
 
 .line-number {
@@ -396,3 +397,14 @@ body {
   box-shadow: none !important;
 }
 
+.folio-number {
+  display: inline-block;
+  position: absolute;
+  left: -25px;
+  width: 25px;
+  text-align: right;
+  font-style: italic;
+  color: #666;
+  font-size: 0.8em;
+  font-family: "Palatino", serif;
+}

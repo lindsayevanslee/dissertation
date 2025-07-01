@@ -15,7 +15,7 @@
 
 > Berlin, Staatsbibliothek, *Photographien von ausgewählten Fragmenten aus der Omayyaden-Moschee in Damaskus in verschiedenen Sprachen*, 1908. Mss simulata orientalia 6, Orientalische Handschriften digital, Photographs 89 (verso) & 101 (recto), http://resolver.staatsbibliothek-berlin.de/SBB000074F100000000.
 
-## Editions & Translations {.unnumbered}
+## Lives of Mary the Egyptian: Editions & Translations {.unnumbered}
 Baker, Alfred Thomas. “Vie de Sainte Marie L’Egyptienne,” *Revue des langues romanes*, LIX (1916-1917), pp. 145-401. [edition]
 
 Cooke, Matthew. *Robert Grossetete’s Chasteau d’Amour to Which Are Added ‘La Vie de sainte Marie Egyptienne’ and an English Version of the Chasteau d’Amour*. Caxton Society, 1852, pp. 62-113. https://hdl.handle.net/2027/hvd.32044081105124?urlappend=%3Bseq=76%3Bownerid=114643825-80. [edition]
@@ -30,7 +30,7 @@ Ogden, Amy V., translator. *The Life of Saint Mary the Egyptian*. University of 
 
 Tobler, Adolf. “Bruchstücke altfranzösischer Dichtung aus den in der Kubbet in Damaskus gefundenen Handschriften, 2. Ein Bruchstück eines Lebens der h. Maria aus Aegypten.” *Sitzungsberichte der königlich-preussischen Akademie der Wissenschaften, philosophisch-historische Classe*, LXIII, Berlin, 1903, pp. 966-969. [edition]
 
-## Mary the Egyptian Scholarship
+## Lives of Mary the Egyptian: Scholarship
 Acquafredda, Marilisa. “Modelli di santità femminile orientale nella Puglia del Medioevo: l'‘eremita penitente’ Maria Egiziaca.” *Archivio storico pugliese*, vol. 61, 2008, pp. 25-58.
 
 Beresford, Andrew M. “Hagiography, corporeality, and the gaze: sexual/ascetic tension in the *Vida de Santa María Egipciaca*.” *Gender and Exemplarity in Medieval and Early Modern Spain*. Eds. Morrás, María, Sanmartín Bastida, Rebeca and Kim, Yonsoo. The Medieval and Early Modern Iberian World; 79. Leiden: Brill, 2020. pp.43-74.
@@ -214,6 +214,8 @@ Fritschi, Ramona. “e-codices – Virtual Manuscript Library of Switzerland: Gr
 
 *Fragmentarium*. Manuscript Research Center - University of Fribourg, 2013-present, https://fragmentarium.ms/. [repository]
 
+Haugen, Odd Einar, editor. *MUFI Character Recommendation: Characters in the Official Unicode Standard and in the Private Use Area for Medieval Texts Written in the Latin Alphabet* (Version 4.0), Medieval Unicode Font Initiative (MUFI), 2015. https://hdl.handle.net/1956/10699. [tool]
+
 Honkapohja, Alpo. “Digital Approaches to Manuscript Abbreviations: Where Are We at the Beginning of the 2020s?” *Digital Medievalist*, vol. 14, 2021. [scholarship]
 
 Kiss, Farkas Gábor, et al. “Old Light on New Media: Medieval Practices in the Digital Age.” *Digital Philology: A Journal of Medieval Cultures*, vol. 2, no. 1, Spring 2013, pp. 16-34. [scholarship]
@@ -254,9 +256,13 @@ Tufte, Edward. *Seeing With Fresh Eyes: Meaning, Space, Data, Truth*. Graphis Pr
 
 Warren, Michelle R. *Holy Digital Grail: A Medieval Book on the Internet*, Redwood City: Stanford University Press, 2022. https://doi-org.proxy1.library.virginia.edu/10.1515/9781503631175 [scholarship]
 
+---. “Introduction: Situating Digital Archives.” *Digital Philology: A Journal of Medieval Cultures*, vol. 3, no. 2, Fall 2014, pp. 169-177. [scholarship]
+
 Whearty, Bridget. *Digital Codicology: Medieval Books and Modern Labor*, Redwood City: Stanford University Press, 2022. https://doi-org.proxy1.library.virginia.edu/10.1515/9781503634190 [scholarship]
 
 ---. “Adam Scriveyn in Cyberspace: Loss, Labour, Ideology, and Infrastructure in Interoperable Reuse of Digital Manuscript Metadata.” *Meeting the Medieval in a Digital World*, edited by Matthew Evan Davis, Tamsyn Mahoney-Steel, and Ece Turnator, Arc Humanities Press, 2018, pp. 157-201. [scholarship]
+
+“Witnessing the Crusades in the Eastern Roman Empire with Dr. Leonora Neville” *Meeting in the Middle Ages*, University of Notre Dame Medieval Institute, 31 Dec. 2024, https://podcasts.apple.com/us/podcast/19-witnessing-the-crusades-in-the-eastern-roman-empire/id1641163866?i=1000682273287. [scholarship]
 
 Xie, Yihui. *bookdown: Authoring Books and Technical Documents with R Markdown*. Chapman & Hall, 2021. https://bookdown.org/yihui/bookdown/. [tool]
 
@@ -407,6 +413,8 @@ Matsumura, Takeshi, and Michel Zink, editor. *Dictionnaire du français médiév
 Speer, Mary B. “Old French Literature.” *Scholarly Editing: A Guide to Research*, MLA, 1995, pp. 382-416.
 
 Vieillard, Françoise and Olivier Guyotjeannin. *Conseils pour l’édition des textes médiévaux, Fascicule I: Conseils généraux*. École nationale des chartes, 2001.
+
+Zumthor, Paul. *Essai de poétique médiévale*. Éditions du Seuil, 1972.
 
 ## Epigraph
 Thomas. “Le Roman de Tristan.” *Tristan et Iseut: Les poèmes français et La saga norroise*. Edited and translated by Philippe Walter, Lettres gothiques, 1989, pp. 329-481.
