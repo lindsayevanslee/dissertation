@@ -5,16 +5,36 @@ format:
     page-layout: full
 ---
 
-This is the first part of the second chapter of my Quarto book...
-
-### Excerpt of T-E (Portrait 2, vv.613-702)
-Paris, BnF Arsenal, 3516, ff.115r, col.d, line 13 - 115v, col.b, line 2 \
-Digitization available via Gallica [HERE](https://gallica.bnf.fr/ark:/12148/btv1b55000507q/f232.item).
-
 ```{r setup, include=FALSE}
-# Load the xml2 package
+# Load required libraries
+library(rvest)
 library(xml2)
+library(dplyr)
+library(stringr)
+
+source("extract_sections_from_googledoc.R")
+source("convert-html-to-markdown.R")
 ```
+
+```{r content, echo=FALSE, results='asis'}
+# Extract chapter 2.1 from google doc (suppress output)
+invisible(
+    extract_section_by_name(
+        html_file = "temp_files/dissertation.html", 
+        section_name = "2.1 An Approach to Editing Version T, Part 1", 
+        output_file = "temp_files/googledoc_chapter2-1.html", 
+        clean_html = FALSE, 
+        verbose = FALSE
+    )
+)
+
+# Read and convert the HTML to markdown
+converted_markdown <- convert_html_to_markdown("temp_files/googledoc_chapter2-1.html")
+
+# Output the markdown content
+cat(converted_markdown)
+```
+
 
 ::: {.column-page-outset layout="[[6,6,6]]"}
 
