@@ -146,11 +146,10 @@ convert_xml_to_html <- function(xml_file,
 
     }
     
-    # Replace <lb/> tags with HTML line break
+    # Remove <lb/> tags entirely
     lb_elements <- xml_find_all(line, ".//lb")
-    for (lb in lb_elements) {
-        xml_set_text(lb, "")
-    }
+    xml_remove(lb_elements)
+    
     
     # Return line with number if applicable
     return(sprintf("<div style='line-height: 1.2;'>%s%s</div>", 
