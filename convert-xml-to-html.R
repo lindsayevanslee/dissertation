@@ -8,8 +8,9 @@ convert_xml_to_html <- function(xml_file,
     version_name <- match.arg(version_name)
 
     # WHITESPACE PRESERVATION: Apply placeholders before xml2 parsing
-    # Read the raw XML file as text
-    raw_xml <- paste(readLines(xml_file), collapse = "\n")
+    # Read the entire XML file as a single string (avoids readLines warnings)
+    file_size <- file.info(xml_file)$size
+    raw_xml <- readChar(xml_file, file_size)
     
     # Replace whitespace between elements with placeholder tags
     processed_xml <- gsub("(</[^>]+>)\\s+(<[^>]*>)", "\\1<SPACE/>\\2", raw_xml)
