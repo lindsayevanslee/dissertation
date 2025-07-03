@@ -523,7 +523,7 @@
                     <l>Un nun avun. ceo est <name type="saint">Marie</name><lb/></l>
                     <l>mais diverse est nostre vie<lb/></l>
                     <l>tu amas tot teus chastee.<lb/></l>
-                    <l>&amp; jeo luxure . &amp;. <choice><orig>chastee</orig><reg></reg></choice>. ordee<lb/></l>
+                    <l>&amp; jeo luxure . &amp;. <choice><orig>chastee</orig><reg></reg></choice> . ordee<lb/></l>
                     <l>deable eus a enemi<lb/></l>
                     <l>&amp; jeo tot teus <choice><orig>lai</orig><reg>l'ai</reg></choice> servi<lb/></l>
                     <l>Unc de la toue <choice><orig>humilite</orig><reg>humilité</reg></choice><lb/></l>
@@ -697,7 +697,7 @@
                     <l>le cors de lui remist tot nu<lb/></l>
                     <l>la char de lui mua color<lb/></l>
                     <l>Qui ainz ert blanche <choice><abbr><orig>cume</orig></abbr><expan><reg>cumme</reg></expan></choice> flor<lb/></l>
-                    <l>Que o <choice><orig>livern</orig><reg>l'ivern</reg></choice>. ke o <choice><orig>leste</orig><reg>l'esté</reg></choice><lb/></l>
+                    <l>Que o <choice><orig>livern</orig><reg>l'ivern</reg></choice> . ke o <choice><orig>leste</orig><reg>l'esté</reg></choice><lb/></l>
                     <l>tuit li nercirent li <choice><orig>coste</orig><reg>costé</reg></choice><lb/></l>
                     <l>color mua sa bloie crigne<lb/></l>
                     <l>blanche devint <choice><abbr><orig>cume</orig></abbr><expan><reg>cumme</reg></expan></choice> ermigne<lb/></l>
@@ -797,7 +797,7 @@
                     <l>car tote jor erent al <choice><orig>.mang.</orig><reg></reg></choice> mostier<lb/></l>
                     <l>fors sol a oure de manger<lb/></l>
                     <l>Il viveient mult povrement<lb/></l>
-                    <l>ceo ert de pain <choice><orig>dorge</orig><reg>d'orge</reg></choice>. &amp; de pulment<lb/></l>
+                    <l>ceo ert de pain <choice><orig>dorge</orig><reg>d'orge</reg></choice> . &amp; de pulment<lb/></l>
                     <l>&amp; toz les vendresdiz <choice><orig>del an</orig><reg>de l'an</reg></choice><lb/></l>
                     <l>Vivoient de noiz .&amp; de glan<lb/></l>
                     <l>&amp; eue beveient. <choice><orig>nemie</orig><reg>ne mie</reg></choice> seine<lb/></l>
@@ -1018,7 +1018,7 @@
                     <l>Servi <choice><orig>las</orig><reg>l'as</reg></choice> des <choice><orig>tenfance</orig><reg>t'enfance</reg></choice><lb/></l>
                     <l>en lui pues aveir grant fiance<lb/></l>
                     <l>mult aras grant gueredun<lb/></l>
-                    <l>mais ore voil ta <choice><orig>beneicun</orig><reg>beneiçun</reg></choice>.<lb/></l>
+                    <l>mais ore voil ta <choice><orig>beneicun</orig><reg>beneiçun</reg></choice> .<lb/></l>
                 <cb/>
                     
                 <pb n="22v"/>
@@ -1064,11 +1064,11 @@
                     <l>Si que ele <choice><orig>ni</orig><reg>n'i</reg></choice> atouca mie<lb/></l>
                     <l><name type="character">Zozimas</name> out poour grant<lb/></l>
                     <l><name type="god">Dampnedeu</name> traist a garant<lb/></l>
-                    <l>ke plus de deus <choice><orig>pies</orig><reg>piés</reg></choice>. &amp; demi<lb/></l>
+                    <l>ke plus de deus <choice><orig>pies</orig><reg>piés</reg></choice> . &amp; demi<lb/></l>
                     <l>aveit entre la terre. &amp; lui<lb/></l>
                     <l>la ou ele faisoit sa proiere<lb/></l>
                     <l>tant <choice><orig>laveit</orig><reg>l'aveit</reg></choice> <name type="god">Nostre Sire</name> ciere<lb/></l>
-                    <l>de la poour <choice><abbr><orig>q</orig></abbr><expan><intermediate>qu</intermediate><reg>qu'</reg></expan></choice>out <name type="character">Zozimas</name><lb/></l>
+                    <l>de la poour <choice><abbr><orig>q </orig></abbr><expan><intermediate>qu</intermediate><reg>qu'</reg></expan></choice>out <name type="character">Zozimas</name><lb/></l>
                     <l>Si cunmence aler le pas<lb/></l>
                     <l>Quida fantosme aveir <choice><orig>trove</orig><reg>trové</reg></choice><lb/></l>
                     <l>ariere <choice><orig>sest</orig><reg>s'est</reg></choice> alques <choice><orig>rause</orig><reg>rausé</reg></choice><lb/></l>
@@ -1502,7 +1502,7 @@
                     <l>&amp; de la terre bien curee<lb/></l>
                     <l><name type="character">Zozimas</name> fu lie qui ceo vit<lb/></l>
                     <l>devers le chief le cors saisist<lb/></l>
-                    <l>le leun <choice><orig>la</orig><reg>l'a</reg></choice> <choice><abbr><orig>a</orig></abbr><expan><reg>as</reg></expan></choice> piez <choice><abbr><orig>ps</orig></abbr><expan><reg>pris</reg></expan></choice>. </l> <!-- LL: The next verse is squeezed into the same line as this one. It is unclear why. -->
+                    <l>le leun <choice><orig>la</orig><reg>l'a</reg></choice> <choice><abbr><orig>a</orig></abbr><expan><reg>as</reg></expan></choice> piez <choice><abbr><orig>ps</orig></abbr><expan><reg>pris</reg></expan></choice> . </l> <!-- LL: The next verse is squeezed into the same line as this one. It is unclear why. -->
                     <l>en <choice><abbr><orig>tre</orig></abbr><expan><reg>terre</reg></expan></choice> <choice><abbr><orig>lut</orig></abbr><expan><intermediate>lunt</intermediate><reg>l'unt</reg></expan></choice> els deus mis.<lb/></l>
                 <cb/>
                     
