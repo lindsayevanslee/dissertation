@@ -7,8 +7,15 @@ convert_xml_to_html <- function(xml_file,
     # Check if the version name is valid
     version_name <- match.arg(version_name)
 
-    # Read the XML content
-    xml_file <- read_xml(xml_file)
+    # WHITESPACE PRESERVATION: Apply placeholders before xml2 parsing
+    # Read the raw XML file as text
+    raw_xml <- paste(readLines(xml_file), collapse = "\n")
+    
+    # Replace whitespace between elements with placeholder tags
+    processed_xml <- gsub("(</[^>]+>)\\s+(<[^>]*>)", "\\1<SPACE/>\\2", raw_xml)
+    
+    # Now parse the XML with placeholders in place
+    xml_file <- read_xml(processed_xml)
 
     # Extract both <l>, <cb>, and <pb> elements
     lines <- xml_find_all(xml_file, "//text//l | //text//cb | //text//pb")
@@ -21,7 +28,7 @@ convert_xml_to_html <- function(xml_file,
     # Track if we're within our desired verse range
     in_desired_range <- FALSE
 
-    # Function to process each element
+    # Function to process each element with whitespace preservation
     process_line <- function(line) {
 
     # Handle page breaks differently
@@ -90,9 +97,9 @@ convert_xml_to_html <- function(xml_file,
         for (choice in choices) {
             # Extract the text from the <orig> tag
             orig_text <- xml_text(xml_find_first(choice, ".//orig"))
-            # Remove all children and set text directly with proper spacing
+            # Remove all children and set text directly
             xml_remove(xml_children(choice))
-            xml_text(choice) <- paste0(" ", orig_text, " ")
+            xml_text(choice) <- orig_text
         }
 
         # Now we want to remove any <reg> elements entirely
@@ -118,11 +125,11 @@ convert_xml_to_html <- function(xml_file,
                     text_to_use <- xml_text(xml_find_first(choice, ".//expan/reg"))
                 }
                 xml_remove(xml_children(choice))
-                xml_text(choice) <- paste0(" ", text_to_use, " ")
+                xml_text(choice) <- text_to_use
             } else {
                 orig_text <- xml_text(xml_find_first(choice, ".//orig"))
                 xml_remove(xml_children(choice))
-                xml_text(choice) <- paste0(" ", orig_text, " ")
+                xml_text(choice) <- orig_text
             }
         }
         # Now we want to remove any <reg> elements entirely
@@ -142,20 +149,33 @@ convert_xml_to_html <- function(xml_file,
             reg_text <- xml_text(xml_find_first(choice, ".//reg"))
             # Remove all children and set text directly
             xml_remove(xml_children(choice))
-            xml_text(choice) <- paste0(" ", reg_text, " ")
+            xml_text(choice) <- reg_text
         }
 
     }
     
-    # Replace <lb/> tags with HTML line break
+    # Remove <lb/> tags entirely
     lb_elements <- xml_find_all(line, ".//lb")
-    for (lb in lb_elements) {
-        xml_set_text(lb, "")
+    xml_remove(lb_elements)
+    
+    # Replace SPACE placeholder elements with actual spaces
+    space_elements <- xml_find_all(line, ".//SPACE")
+    for (space_elem in space_elements) {
+        xml_text(space_elem) <- " "
+        xml_name(space_elem) <- "span"
+        xml_attr(space_elem, "class") <- "space-marker"
     }
+    
+    # Extract text
+    line_text <- xml_text(line)
+    
+    # Clean up extra whitespace but preserve intended spaces
+    line_text <- trimws(line_text)
+    line_text <- gsub("\\s+", " ", line_text)
     
     # Return line with number if applicable
     return(sprintf("<div style='line-height: 1.2;'>%s%s</div>", 
-                line_number, xml_text(line)))
+                line_number, line_text))
     }
 
     # Process each line and wrap with <div class='column-break'> at each <cb/>
