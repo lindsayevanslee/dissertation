@@ -20,8 +20,7 @@ library(xml2)
 ### Minimal
 
 
-```{r}
-source("convert-xml-to-html.R")
+```{r ta-function, file="convert-xml-to-html.R"}
 ```
 
 ```{r results='asis'}

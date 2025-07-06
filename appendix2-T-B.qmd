@@ -85,8 +85,7 @@ cat(formatted_text)
 ::: {.column}
 ## Minimal
 
-```{r}
-source("convert-xml-to-html.R")
+```{r tb-function, file="convert-xml-to-html.R"}
 ```
 
 

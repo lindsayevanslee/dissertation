@@ -19,8 +19,7 @@ library(xml2)
 ::: {.column}
 ## Minimal
 
-```{r}
-source("convert-xml-to-html.R")
+```{r td-function, file="convert-xml-to-html.R"}
 ```
 
 
