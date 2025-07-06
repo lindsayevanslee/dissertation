@@ -92,11 +92,6 @@ cat(formatted_text)
 ```{r tf1-function, file="convert-xml-to-html.R"}
 ```
 
-
-```{r tf1-function, file="convert-xml-to-html.R"}
-```
-
-
 ```{r tf1-minimal, results='asis'}
 
 
