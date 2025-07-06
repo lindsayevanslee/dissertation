@@ -11,15 +11,18 @@ Digitization available via The Digitized Collections of the Staatsbibliothek zu 
 
 Photograph no.101 (featured upside down online) is the recto, and photograph no.89 is the verso.
 
-```{r tf2-setup, include=FALSE}
-# Load the xml2 package
-library(xml2)
-```
-
 ::: {.column-page-outset layout="[[6,6,6]]"}
 
 ::: {.column}
 ## Minimal
+
+```{r tf2-setup}
+# Load the xml2 package
+library(xml2)
+
+#Path to xml file
+path_xml <- "data/T-F2.xml"
+```
 
 ```{r tf2-function, file="convert-xml-to-html.R"}
 ```
@@ -27,7 +30,7 @@ library(xml2)
 
 ```{r tf2-minimal, results='asis'}
 # PRINT "MINIMAL" VERSION
-convert_xml_to_html(xml_file = "data/T-F2.xml", version_name = "minimal")
+convert_xml_to_html(xml_file = path_xml, version_name = "minimal")
 ```
 
 :::
@@ -37,7 +40,7 @@ convert_xml_to_html(xml_file = "data/T-F2.xml", version_name = "minimal")
 
 ```{r tf2-intermediate, results='asis'}
 # PRINT "INTERMEDIATE VERSION"
-convert_xml_to_html(xml_file = "data/T-F2.xml", version_name = "intermediate")
+convert_xml_to_html(xml_file = path_xml, version_name = "intermediate")
 ```
 
 :::
@@ -47,7 +50,7 @@ convert_xml_to_html(xml_file = "data/T-F2.xml", version_name = "intermediate")
 
 ```{r tf2-extensive, results='asis'}
 #PRINT "EXTENSIVE" VERSION
-convert_xml_to_html(xml_file = "data/T-F2.xml", version_name = "extensive")
+convert_xml_to_html(xml_file = path_xml, version_name = "extensive")
 ```
 
 :::

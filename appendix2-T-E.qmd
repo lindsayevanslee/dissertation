@@ -9,26 +9,26 @@ format:
 
 Digitization available via Gallica [HERE](https://gallica.bnf.fr/ark:/12148/btv1b55000507q/f232.item).
 
-```{r te-setup, include=FALSE}
-# Load the xml2 package
-library(xml2)
-```
-
 ::: {.column-page-outset layout="[[6,6,6]]"}
 
 ::: {.column}
 ## Minimal
+
+```{r te-setup}
+# Load the xml2 package
+library(xml2)
+
+#Path to xml file
+path_xml <- "data/T-E.xml"
+```
 
 ```{r te-function, file="convert-xml-to-html.R"}
 ```
 
 
 ```{r te-minimal, results='asis'}
-
-
 # PRINT "MINIMAL" VERSION
-convert_xml_to_html(xml_file = "data/T-E.xml", version_name = "minimal")
-
+convert_xml_to_html(xml_file = path_xml, version_name = "minimal")
 ```
 
 :::
@@ -38,8 +38,7 @@ convert_xml_to_html(xml_file = "data/T-E.xml", version_name = "minimal")
 
 ```{r te-intermediate, results='asis'}
 # PRINT "INTERMEDIATE VERSION"
-convert_xml_to_html(xml_file = "data/T-E.xml", version_name = "intermediate")
-
+convert_xml_to_html(xml_file = path_xml, version_name = "intermediate")
 ```
 
 :::
@@ -49,8 +48,7 @@ convert_xml_to_html(xml_file = "data/T-E.xml", version_name = "intermediate")
 
 ```{r te-extensive, results='asis'}
 #PRINT "EXTENSIVE" VERSION
-convert_xml_to_html(xml_file = "data/T-E.xml", version_name = "extensive")
-
+convert_xml_to_html(xml_file = path_xml, version_name = "extensive")
 ```
 
 :::
