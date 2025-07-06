@@ -14,6 +14,14 @@ Digitization available via Gallica [HERE](https://gallica.bnf.fr/ark:/12148/btv1
 ::: {.column}
 ## Minimal
 
+```{r td-setup}
+# Load the xml2 package
+library(xml2)
+
+#Path to xml file
+path_xml <- "data/T-D.xml"
+```
+
 ```{r td-function, file="convert-xml-to-html.R"}
 ```
 

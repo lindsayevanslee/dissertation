@@ -16,6 +16,14 @@ Photograph no.101 (featured upside down online) is the recto, and photograph no.
 ::: {.column}
 ## Minimal
 
+```{r tf2-setup}
+# Load the xml2 package
+library(xml2)
+
+#Path to xml file
+path_xml <- "data/T-F2.xml"
+```
+
 ```{r tf2-function, file="convert-xml-to-html.R"}
 ```
 
