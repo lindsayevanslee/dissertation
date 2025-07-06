@@ -44,7 +44,7 @@ cat(converted_markdown)
 ```{r ch2-1-function, file="convert-xml-to-html.R"}
 ```
 
-```{r results='asis'}
+```{r ch2-1-minimal, results='asis'}
 # PRINT "MINIMAL" VERSION
 convert_xml_to_html(xml_file = "data/T-E.xml", version_name = "minimal", min_line = 613, max_line = 702)
 ```
@@ -54,7 +54,7 @@ convert_xml_to_html(xml_file = "data/T-E.xml", version_name = "minimal", min_lin
 ::: {.column}
 ## Intermediate
 
-```{r results='asis'}
+```{r ch2-1-intermediate, results='asis'}
 # PRINT "INTERMEDIATE VERSION"
 convert_xml_to_html(xml_file = "data/T-E.xml", version_name = "intermediate", min_line = 613, max_line = 702)
 ```
@@ -64,7 +64,7 @@ convert_xml_to_html(xml_file = "data/T-E.xml", version_name = "intermediate", mi
 ::: {.column}
 ## Extensive
 
-```{r results='asis'}
+```{r ch2-1-extensive, results='asis'}
 #PRINT "EXTENSIVE" VERSION
 convert_xml_to_html(xml_file = "data/T-E.xml", version_name = "extensive", min_line = 613, max_line = 702)
 ```
