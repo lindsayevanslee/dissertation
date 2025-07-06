@@ -5,7 +5,7 @@ format:
     page-layout: full
 ---
 
-## Oxford, Bodleian, Canonici Misc. 74
+# Oxford, Bodleian, Canonici Misc. 74  {.unlisted}
 
 ```{r tb-setup, include=FALSE}
 # Load the xml2 package
@@ -16,7 +16,7 @@ library(xml2)
 ::: {.column-page-outset layout="[[6,6,6,6]]"}
 
 ::: {.column}
-### Nearly Diplomatic
+## Nearly Diplomatic
 
 ```{r results='asis'}
 # START OF "NEARLY DIPLOMATIC" CODE
