@@ -218,6 +218,10 @@ Haugen, Odd Einar, editor. *MUFI Character Recommendation: Characters in the Off
 
 Honkapohja, Alpo. “Digital Approaches to Manuscript Abbreviations: Where Are We at the Beginning of the 2020s?” *Digital Medievalist*, vol. 14, 2021. [scholarship]
 
+*International Image Interoperability Framework (IIIF)*. 2011-present, https://iiif.io/. [tool]
+
+Jänicke, Stefan, and David Joseph Wrisley. “Visualizing *Mouvance*: Toward a Visual Analysis of Variant Medieval Text Traditions.” *Digital Scholarship in the Humanities*, vol. 32, suppl. 2, 2017, pp.ii106-ii123. [scholarship]
+
 Kiss, Farkas Gábor, et al. “Old Light on New Media: Medieval Practices in the Digital Age.” *Digital Philology: A Journal of Medieval Cultures*, vol. 2, no. 1, Spring 2013, pp. 16-34. [scholarship]
 
 Lit, L. W. C. van (Lambertus Willem Cornelis). *Among Digitized Manuscripts: Philology, Codicology, Paleography In a Digital World*. Brill, 2020. [scholarship]
@@ -237,6 +241,8 @@ Nichols, Stephen G. *From Parchment to Cyberspace: Medieval Literature In the Di
 Porter, Dot. “The Uncanny Valley and the Ghost in the Machine: a discussion of analogies for thinking about digitized medieval manuscripts.” *Dot Porter Digital: Development in Production*. http://www.dotporterdigital.org/the-uncanny-valley-and-the-ghost-in-the-machine-a-discussion-of-analogies-for-thinking-about-digitized-medieval-manuscripts/. Accessed April 2023. [scholarship]
 
 Prescott, Andrew. “Ways of Seeing Manuscripts.” *Medieval Manuscripts in the Digital Age*, Routledge, 2020, pp.37-54. [scholarship]
+
+Quéret-Podesta, Adrien. “Les inscriptions marginales, source d’informations sur la circulation des manuscript médiévaux: Le cas du manuscrit XXVIII de la bibliothèque du monastère de Vyšší Brod (République tchèque).” *Cahiers Jean Mabillon*, École nationale des chartes, 2020, pp.96-100. [scholarship]
 
 Robertson, Abigail G. “A Note on Technology and Functionality in Digital Manuscript Studies.” *Medieval Manuscripts in the Digital Age*, Routledge, 2020, pp. 33-36. [scholarship]
 
@@ -265,6 +271,8 @@ Whearty, Bridget. *Digital Codicology: Medieval Books and Modern Labor*, Redwood
 “Witnessing the Crusades in the Eastern Roman Empire with Dr. Leonora Neville” *Meeting in the Middle Ages*, University of Notre Dame Medieval Institute, 31 Dec. 2024, https://podcasts.apple.com/us/podcast/19-witnessing-the-crusades-in-the-eastern-roman-empire/id1641163866?i=1000682273287. [scholarship]
 
 Xie, Yihui. *bookdown: Authoring Books and Technical Documents with R Markdown*. Chapman & Hall, 2021. https://bookdown.org/yihui/bookdown/. [tool]
+
+Yavuz, N. Kıvılcım. “Manuscript of the Month: To Transcribe, or Not to Transcribe, That is Not the Question.” *Inside Spencer: The Kenneth Spencer Research Library Blog*. https://blogs.lib.ku.edu/spencer/manuscript-of-the-month-to-transcribe-or-not-to-transcribe-that-is-not-the-question/. Accessed June 2025. [scholarship]
 
 ## Manuscript Scholarship
 ### Paris, BnF, Français 23112 (T-A)
