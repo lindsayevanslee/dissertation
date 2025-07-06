@@ -33,8 +33,8 @@ body {
   width: 300px;
   height: 100vh;
   overflow-y: auto;
-  background-color: rgba(248, 249, 250, 0.95);
-  border-left: 1px solid #eee;
+  background-color: rgba(255, 255, 255, 0.15);
+  border-left: none;
   z-index: 999;
   padding: 1em;
 }
@@ -46,10 +46,6 @@ body {
   background-color: transparent !important;
 }
 
-/* Keep TOC sidebar background as is */
-.sidebar.margin-sidebar {
-  background-color: rgba(248, 249, 250, 0.95) !important;
-}
 
 /* Remove border when collapsed */
 .quarto-sidebar-collapse-item.collapse:not(.show) {
