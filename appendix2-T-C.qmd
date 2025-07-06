@@ -12,8 +12,7 @@ format:
 ::: {.column}
 ## Minimal
 
-```{r}
-source("convert-xml-to-html.R")
+```{r tc-function, file="convert-xml-to-html.R"}
 ```
 
 

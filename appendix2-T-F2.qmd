@@ -16,8 +16,7 @@ Photograph no.101 (featured upside down online) is the recto, and photograph no.
 ::: {.column}
 ## Minimal
 
-```{r}
-source("convert-xml-to-html.R")
+```{r tf2-function, file="convert-xml-to-html.R"}
 ```
 
 
