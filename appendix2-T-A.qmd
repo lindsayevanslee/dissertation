@@ -23,7 +23,7 @@ library(xml2)
 ```{r ta-function, file="convert-xml-to-html.R"}
 ```
 
-```{r results='asis'}
+```{r ta-minimal, results='asis'}
 
 # PRINT "MINIMAL" VERSION
 convert_xml_to_html(xml_file = "data/T-A.xml", version_name = "minimal")
@@ -36,7 +36,7 @@ convert_xml_to_html(xml_file = "data/T-A.xml", version_name = "minimal")
 ### Intermediate
 
 
-```{r results='asis'}
+```{r ta-intermediate, results='asis'}
 # PRINT "INTERMEDIATE VERSION"
 convert_xml_to_html(xml_file = "data/T-A.xml", version_name = "intermediate")
 
@@ -47,7 +47,7 @@ convert_xml_to_html(xml_file = "data/T-A.xml", version_name = "intermediate")
 ::: {.column}
 ### Extensive
 
-```{r results='asis'}
+```{r ta-extensive, results='asis'}
 #PRINT "EXTENSIVE" VERSION
 convert_xml_to_html(xml_file = "data/T-A.xml", version_name = "extensive")
 ```

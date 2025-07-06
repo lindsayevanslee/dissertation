@@ -90,7 +90,7 @@ cat(formatted_text)
 ```
 
 
-```{r results='asis'}
+```{r tf1-minimal, results='asis'}
 
 
 # PRINT "MINIMAL" VERSION
@@ -103,7 +103,7 @@ convert_xml_to_html(xml_file = "data/T-F1.xml", version_name = "minimal")
 ::: {.column}
 ## Intermediate
 
-```{r results='asis'}
+```{r tf1-intermediate, results='asis'}
 # PRINT "INTERMEDIATE VERSION"
 convert_xml_to_html(xml_file = "data/T-F1.xml", version_name = "intermediate")
 
@@ -114,7 +114,7 @@ convert_xml_to_html(xml_file = "data/T-F1.xml", version_name = "intermediate")
 ::: {.column}
 ## Extensive
 
-```{r results='asis'}
+```{r tf1-extensive, results='asis'}
 #PRINT "EXTENSIVE" VERSION
 convert_xml_to_html(xml_file = "data/T-F1.xml", version_name = "extensive")
 

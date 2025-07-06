@@ -41,8 +41,7 @@ cat(converted_markdown)
 ::: {.column}
 ## Minimal
 
-```{r}
-source("convert-xml-to-html.R")
+```{r ch2-1-function, file="convert-xml-to-html.R"}
 ```
 
 ```{r results='asis'}
