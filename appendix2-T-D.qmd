@@ -5,7 +5,7 @@ format:
     page-layout: full
 ---
 
-# Paris, BnF Français 19525
+# Paris, BnF Français 19525  {.unlisted}
 
 Digitization available via Gallica [HERE](https://gallica.bnf.fr/ark:/12148/btv1b525167312/f39.item).
 

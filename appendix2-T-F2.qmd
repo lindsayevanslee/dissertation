@@ -5,7 +5,7 @@ format:
     page-layout: full
 ---
 
-# Berlin, Staatsbibliothek, MSS Simulata Orientalia 6
+# Berlin, Staatsbibliothek, MSS Simulata Orientalia 6  {.unlisted}
 
 Digitization available via The Digitized Collections of the Staatsbibliothek zu Berlin [HERE](http://resolver.staatsbibliothek-berlin.de/SBB000074F100000000).
 

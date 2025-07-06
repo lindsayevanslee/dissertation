@@ -5,7 +5,7 @@ format:
     page-layout: full
 ---
 
-# Paris, BnF Arsenal, 3516
+# Paris, BnF Arsenal, 3516  {.unlisted}
 
 Digitization available via Gallica [HERE](https://gallica.bnf.fr/ark:/12148/btv1b55000507q/f232.item).
 

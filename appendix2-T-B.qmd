@@ -5,13 +5,13 @@ format:
     page-layout: full
 ---
 
-## Oxford, Bodleian, Canonici Misc. 74
+# Oxford, Bodleian, Canonici Misc. 74  {.unlisted}
 
 
 ::: {.column-page-outset layout="[[6,6,6,6]]"}
 
 ::: {.column}
-### Nearly Diplomatic
+## Nearly Diplomatic
 
 ```{r tb-setup}
 # Load the xml2 package

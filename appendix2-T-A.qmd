@@ -5,7 +5,7 @@ format:
     page-layout: full
 ---
 
-## Paris, BnF, Français 23112
+## Paris, BnF, Français 23112 {.unlisted}
 
 Digitization available via Gallica [HERE](https://gallica.bnf.fr/ark:/12148/btv1b9063234c/f337.item.r=MS%2023112).
 
