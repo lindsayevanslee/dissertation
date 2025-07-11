@@ -5,18 +5,20 @@ format:
     page-layout: full
 ---
 
-## Oxford, Bodleian, Canonici Misc. 74
-
-```{r tb-setup, include=FALSE}
-# Load the xml2 package
-library(xml2)
-```
-
+# Oxford, Bodleian, Canonici Misc. 74  {.unlisted}
 
 ::: {.column-page-outset layout="[[6,6,6,6]]"}
 
 ::: {.column}
-### Nearly Diplomatic
+## Nearly Diplomatic
+
+```{r tb-setup}
+# Load the xml2 package
+library(xml2)
+
+#Path to xml file
+path_xml <- "data/T-B.xml"
+```
 
 ```{r tb-nearly-diplomatic, results='asis'}
 # START OF "NEARLY DIPLOMATIC" CODE
@@ -85,17 +87,15 @@ cat(formatted_text)
 ::: {.column}
 ## Minimal
 
-```{r}
-source("convert-xml-to-html.R")
+```{r tb-function, file="convert-xml-to-html.R"}
 ```
 
 
-```{r results='asis'}
+```{r tb-minimal, results='asis'}
 
 
 # PRINT "MINIMAL" VERSION
-convert_xml_to_html(xml_file = "data/T-B.xml", version_name = "minimal")
-
+convert_xml_to_html(xml_file = path_xml, version_name = "minimal")
 ```
 
 :::
@@ -103,10 +103,9 @@ convert_xml_to_html(xml_file = "data/T-B.xml", version_name = "minimal")
 ::: {.column}
 ## Intermediate
 
-```{r results='asis'}
+```{r tb-intermediate, results='asis'}
 # PRINT "INTERMEDIATE VERSION"
-convert_xml_to_html(xml_file = "data/T-B.xml", version_name = "intermediate")
-
+convert_xml_to_html(xml_file = path_xml, version_name = "intermediate")
 ```
 
 :::
@@ -114,10 +113,9 @@ convert_xml_to_html(xml_file = "data/T-B.xml", version_name = "intermediate")
 ::: {.column}
 ## Extensive
 
-```{r results='asis'}
+```{r tb-extensive, results='asis'}
 #PRINT "EXTENSIVE" VERSION
-convert_xml_to_html(xml_file = "data/T-B.xml", version_name = "extensive")
-
+convert_xml_to_html(xml_file = path_xml, version_name = "extensive")
 ```
 
 :::
