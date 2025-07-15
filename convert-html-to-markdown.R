@@ -124,7 +124,7 @@ convert_html_to_markdown <- function(html_file) {
   footnote_definitions <- character(0)
   
   # Get all elements in document order
-  all_elements <- xml_find_all(html_content, ".//p | .//h1 | .//h2 | .//h3 | .//h4 | .//h5 | .//h6")
+  all_elements <- xml_find_all(html_content, ".//p | .//h1 | .//h2 | .//h3 | .//h4 | .//h5 | .//h6 | .//ul")
   
   # Track if we've seen the first h1
   first_h1_skipped <- FALSE
@@ -326,6 +326,31 @@ convert_html_to_markdown <- function(html_file) {
           
           final_content[[content_index]] <- md
           content_index <- content_index + 1
+        }
+      }
+    } else if (element_name == "ul") {
+      # Process unordered list
+      list_items <- xml_find_all(element, ".//li")
+      if (length(list_items) > 0) {
+        md_list <- character(0)
+        for (li in list_items) {
+          # Convert the list item content using the same logic as paragraphs
+          li_content <- convert_paragraph(li)
+          li_content <- str_squish(li_content)
+          if (li_content != "") {
+            # Format as bullet point
+            md_list <- c(md_list, paste0("- ", li_content))
+          }
+        }
+        if (length(md_list) > 0) {
+          md <- paste(md_list, collapse = "\n")
+          # Check if we've seen this content before
+          md_normalized <- normalize_for_dedup(md)
+          if (!(md_normalized %in% seen_content)) {
+            seen_content <- c(seen_content, md_normalized)
+            final_content[[content_index]] <- md
+            content_index <- content_index + 1
+          }
         }
       }
     } else if (str_detect(element_name, "^h\\d+$")) {
@@ -597,6 +622,10 @@ convert_html_to_markdown <- function(html_file) {
         
         # Remove Google Docs comment references like [as], [at], [e], etc. (robust)
         footnote_content <- str_replace_all(footnote_content, "\\[[a-zA-Z]{1,3}\\]", "")
+        footnote_content <- str_squish(footnote_content)
+        
+        # Remove the anchor tags that link back to footnote references (e.g., [](#ftnt_ref92))
+        footnote_content <- str_replace_all(footnote_content, "\\[\\]\\(#ftnt_ref\\d+\\)\\s*", "")
         footnote_content <- str_squish(footnote_content)
         
         # Remove the footnote number from the beginning if it appears there
