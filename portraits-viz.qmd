@@ -187,7 +187,7 @@ To read these passages in translation, hover over each column with your cursor.
 .....<br>
 <span class="verse-line"><span class="line-number">157</span>Of her beauty, of her figure<br></span>
 <span class="verse-line">(as it is in the written source)<br></span>
-<span class="verse-line">and about her appearance, I want to say a little<br></span>
+<span class="verse-line">I want to say a little — how they appeared —<br></span>
 <span class="verse-line">before I go too far.<br></span>
 <span class="verse-line">For at that time in that realm,<br></span>
 <span class="verse-line"><span class="line-number">162</span><span class="negation">no</span> man <span class="negation">ever</span> saw a more beautiful woman.<br></span>
@@ -205,15 +205,15 @@ To read these passages in translation, hover over each column with your cursor.
 <div class="empty-line"></div>
 <span class="verse-line"><span class="negation">Indeed neither</span> on her nose <span class="negation">nor</span> on her chin<br></span>
 <span class="verse-line"><span class="folio-number">335vb</span>would you notice <span class="negation">any</span> defect.<br></span>
-<span class="verse-line">On top of that, her neck was <span class="color-word">white like ermine</span>.<br></span>
-<span class="verse-line">There flowed her <span class="color-word">blonde</span> hair.<br></span>
+<span class="verse-line">Above the neck that was as <span class="color-word">white as ermine</span>,<br></span>
+<span class="verse-line">there flowed her <span class="color-word">blonde</span> hair.<br></span>
 <span class="verse-line"><span class="line-number">177</span>The breasts of this lady<br></span>
-<span class="verse-line">were <span class="negation">no smaller</span> than apples.<br></span>
+<span class="verse-line">were <span class="negation">no smaller</span> than an apple.<br></span>
 <span class="verse-line">Below her throat on her chest,<br></span>
 <span class="verse-line">it was <span class="color-word">white like a hawthorn flower</span>.<br></span>
 <span class="verse-line">She had <span class="color-word">white arms</span> and <span class="color-word">white hands</span>,<br></span>
 <span class="verse-line"><span class="line-number">182</span>her fingers shapely, slender, and smooth.<br></span>
-<span class="verse-line">She had a fine body and well molded<br></span>
+<span class="verse-line">She had a fine body and was well molded<br></span>
 <span class="verse-line">from her underarm along her side.<br></span>
 <span class="verse-line"><span class="negation">She was neither too big nor too small.<br></span></span>
 <span class="verse-line">Her frame could <span class="negation">never</span> be written.<br></span>
@@ -227,9 +227,9 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">and bought herself good garments.<br></span>
 <span class="verse-line">She had good and fitting clothes<br></span>
 <span class="verse-line">to better please her lovers.<br></span>
-<span class="verse-line"><span class="line-number">197</span>She <span class="negation">did not</span> care for woollen cloth.<br></span>
-<span class="verse-line">On the worst day of the week,<br></span>
-<span class="verse-line">she had a fine <span class="color-word">purple silk</span> bliaut<br></span>
+<span class="verse-line"><span class="line-number">197</span>She <span class="negation">did not</span> care for woollen cloth<br></span>
+<span class="verse-line">on the worst day of the week.<br></span>
+<span class="verse-line">She had a fine <span class="color-word">purple silk</span> bliaut<br></span>
 <span class="verse-line">and adorned herself with an ermine mantle.<br></span>
 <span class="verse-line"><span class="color-word">Well-painted</span> shoes of Cordovan leather<br></span>
 <span class="verse-line"><span class="line-number">202</span>she wore all the days of the year.<br></span>
@@ -254,10 +254,10 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">that she became entirely wild,<br></span>
 <span class="verse-line">but she <span class="negation">never</span> forgot<br></span>
 <span class="verse-line"><span class="line-number">618</span>to pray to saint Mary.<br></span>
-<span class="verse-line">Often, she remembered the image<br></span>
-<span class="verse-line">on which she had made her pledge.<br></span>
-<span class="verse-line">Soon, her shoes were worn out,<br></span>
-<span class="verse-line">and soon, her clothes were all torn up.<br></span>
+<span class="verse-line">Often, she remembered the image,<br></span>
+<span class="verse-line">which she had taken as a guarantor.<br></span>
+<span class="verse-line">Her shoes were worn out,<br></span>
+<span class="verse-line">and her clothes were all torn up.<br></span>
 <span class="verse-line"><span class="line-number">623</span><span class="sequence-change">Her body was left totally naked.<br></span></span>
 <span class="verse-line"><span class="sequence-change">She <span class="negation">did not</span> have clothing that was <span class="negation">not</span> in tatters.<br></span></span>
 <span class="verse-line">Her own flesh <span class="color-word">changed color</span>,<br></span>
@@ -270,8 +270,8 @@ To read these passages in translation, hover over each column with your cursor.
 <div class="empty-line"></div>
 <span class="verse-line">Her mouth was thinned,<br></span>
 <span class="verse-line">and all around it <span class="color-word">blackened</span>,<br></span>
-<span class="verse-line"><span class="line-number">633</span>and her chin was so <span class="color-word">black<br></span></span>
-<span class="verse-line"><span class="unique-verse">as though it were <span class="color-word">tainted with charcoal</span>.<br></span></span>
+<span class="verse-line"><span class="line-number">633</span>and her chin was as <span class="color-word">black<br></span></span>
+<span class="verse-line"><span class="unique-verse">as if it were <span class="color-word">tainted with charcoal</span>.<br></span></span>
 <span class="verse-line"><span class="unique-verse">Thinned</span> were her eyes.<br></span>
 <span class="verse-line">There was <span class="negation">not a shred</span> of pride there now.<br></span>
 <span class="verse-line">If you saw her ears,<br></span>
@@ -287,7 +287,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">She had long and large nails.<br></span>
 <span class="verse-line"><span class="line-number">648</span>She reshaped them with her teeth.<br></span>
 <span class="verse-line">Her stomach was sunken.<br></span>
-<span class="verse-line">She put little provisions in there.<br></span>
+<span class="verse-line">She put few provisions in there.<br></span>
 <span class="verse-line">Her feet were split.<br></span>
 <span class="verse-line">In many places, they were wounded<br></span>
 <span class="verse-line"><span class="folio-number">338vb</span>for she did <span class="negation">not</span> protect herself from thorns<br></span>
@@ -300,10 +300,10 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">as she suffered hardship.<br></span>
 <span class="verse-line"><span class="negation">It was no marvel</span> that she was <span class="color-word">blackened<br></span></span>
 <span class="verse-line">for she led such a severe life.<br></span>
-<span class="verse-line"><span class="line-number">663</span>After more than forty years in the nude,<br></span>
+<span class="verse-line"><span class="line-number">663</span>For more than forty years, she went about nude:<br></span>
 <span class="verse-line"><span class="negation">it was no marvel</span> she was woolly.<br></span>
 <span class="verse-line">She had poor provisions with her.<br></span>
-<span class="verse-line">Pray, may Jesus have mercy on her.<br></span>
+<span class="verse-line">Now may Jesus have mercy on her.<br></span>
 <span class="verse-line">She had two loaves of <span class="negation">no great size</span>.<br></span>
 <span class="verse-line"><span class="line-number">668</span>On these, she lived for many years.<br></span>
 <span class="verse-line">In the first year, they became hard<br></span>
@@ -314,10 +314,10 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">then she plucked the grass of the field.<br></span>
 <span class="verse-line">Like other beasts she ate it.<br></span>
 <span class="verse-line"><span class="negation">None</span> of this bothered her.<br></span>
-<span class="verse-line"><span class="unique-verse">On her hands,</span> she drank the water from the stream<br></span>
+<span class="verse-line"><span class="unique-verse">With her hands,</span> she drank the water from the stream<br></span>
 <span class="verse-line"><span class="line-number">678</span>as she had <span class="negation">no</span> other vessel.<br></span>
-<span class="verse-line">She <span class="negation">does not</span> bemoan her sins<br></span>
-<span class="verse-line">as her body is so chastised.<br></span>
+<span class="verse-line">Sins <span class="negation">are not</span> to be lamented<br></span>
+<span class="verse-line">that chastise the body so.<br></span>
 <span class="verse-line">On grass she lived and on roots<br></span>
 <span class="verse-line">for seventeen years in the wilderness.<br></span>
 <span class="verse-line"><span class="line-number">683</span>Then for thirty years, she ate <span class="negation">nothing<br></span></span>
@@ -326,7 +326,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">often used to tempt her,<br></span>
 <span class="verse-line">making her remember all<br></span>
 <span class="verse-line"><span class="line-number">688</span>that she used to always love:<br></span>
-<span class="verse-line">the good eats and the fine places<br></span>
+<span class="verse-line">the good foods and the fine places<br></span>
 <span class="verse-line">where she was used to playing games.<br></span>
 <span class="verse-line">Now, she felt so blessed<br></span>
 <span class="verse-line">that she had forgotten all.<br></span>
@@ -547,9 +547,9 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">and bought herself expensive garments.<br></span>
 <span class="verse-line">She had good and fitting clothes<br></span>
 <span class="verse-line">to better please her lovers,<br></span>
-<span class="verse-line"><span class="line-number">189</span>and she <span class="negation">did not</span> <span class="unique-verse">wear</span> woollen cloth.<br></span>
-<span class="verse-line">On the worst day of the week,<br></span>
-<span class="verse-line">she wore a fine <span class="color-word">purple silk</span> bliaut<br></span>
+<span class="verse-line"><span class="line-number">189</span>and she <span class="negation">did not</span> <span class="unique-verse">wear</span> woollen cloth<br></span>
+<span class="verse-line">on the worst day of the week.<br></span>
+<span class="verse-line">She wore a fine <span class="color-word">purple silk</span> bliaut<br></span>
 <span class="verse-line">and adorned herself with an ermine mantle.<br></span>
 <span class="verse-line"><span class="color-word">Well-painted</span> shoes of Cordovan leather<br></span>
 <span class="verse-line"><span class="line-number">194</span>she wore all the days of the year.<br></span>
@@ -650,7 +650,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">in which she used to take <span class="unique-verse">pleasure</span>.<br></span>
 <span class="verse-line">She felt so blessed<br></span>
 <span class="verse-line"><span class="line-number">632</span>when she had forgotten all of this.<br></span>
-<span class="verse-line"><span class="negation">Never</span> again in her life<br></span>
+<span class="verse-line"><span class="negation">Never</span> then in her life<br></span>
 <span class="verse-line"><span class="negation">did</span> she remember a day of folly.<br></span>
 <span class="verse-line">Mary goes through the wood.<br></span>
 <span class="verse-line"><span class="negation">Never</span> did she see a wild beast<br></span>
@@ -701,7 +701,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="negation">Ne feut trop grant ne trop petite<br></span></span>
 <span class="verse-line">Sa façon <span class="negation">n'</span>iert <span class="negation">ja</span> descrite .<br></span>
 <span class="verse-line"><span class="line-number">189</span><span class="negation">Ne</span> la beauté de ceste dame<br></span>
-<span class="verse-line"><span class="negation">N'</span>iert <span class="negation">ja</span> descrite pur <span class="negation">nul</span> aume .<br></span>
+<span class="verse-line"><span class="negation">N'</span>iert <span class="negation">ja</span> descrite pur <span class="negation">nul</span> <span class="unique-verse">aume</span> .<br></span>
 <span class="verse-line">Tant ert cortoise de parler<br></span>
 <span class="verse-line"><span class="negation">Riens n'</span>i avoit k'amender .<br></span>
 <span class="verse-line">A pleindre fist teu creature<br></span>
@@ -711,7 +711,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">Bons dras avoit e avenanz<br></span>
 <span class="verse-line">Pur menz pleire a ses amanz .<br></span>
 <span class="verse-line"><span class="line-number">199</span>ele <span class="negation">n'</span>avoit soign de dras de leine<br></span>
-<span class="verse-line">Par nul des jurs de la sumeine .<br></span>
+<span class="verse-line">Par <span class="negation">nul</span> des jurs de la sumeine .<br></span>
 <span class="verse-line">Ainz vesteit bliauz de <span class="color-word">osterin<br></span></span>
 <span class="verse-line">e affublout mantel d'ermin .<br></span>
 <span class="verse-line">Sollers <span class="color-word">bien peinz</span> de cordewan<br></span>
@@ -827,7 +827,7 @@ To read these passages in translation, hover over each column with your cursor.
 .....<br>
 <span class="verse-line"><span class="line-number">159</span>Of her beauty, of her figure<br></span>
 <span class="verse-line">(as it is in the written source)<br></span>
-<span class="verse-line">and about her appearance, I want to say a little<br></span>
+<span class="verse-line">I want to say a little — how they appeared —<br></span>
 <span class="verse-line">before I go on.<br></span>
 <span class="verse-line"><span class="unique-verse">At that time, there was <span class="negation">no</span> woman so beautiful<br></span></span>
 <span class="verse-line"><span class="line-number">164</span><span class="unique-verse">for she was a gem above them all.<br></span></span>
@@ -845,8 +845,8 @@ To read these passages in translation, hover over each column with your cursor.
 <div class="empty-line"></div>
 <span class="verse-line"><span class="negation">Indeed neither</span> on her nose <span class="negation">nor</span> on her chin<br></span>
 <span class="verse-line">would you notice <span class="negation">any</span> defect.<br></span>
-<span class="verse-line">On top of that, her neck was <span class="color-word">white like ermine.<br></span></span>
-<span class="verse-line">There flowed her <span class="color-word">blonde</span> hair.<br></span>
+<span class="verse-line">Above the neck that was <span class="color-word">as white as ermine,<br></span></span>
+<span class="verse-line">there flowed her <span class="color-word">blonde</span> hair.<br></span>
 <span class="verse-line"><span class="line-number">179</span>Each of the breasts of the lady<br></span>
 <span class="verse-line">was <span class="negation">no bigger</span> than an apple.<br></span>
 <span class="verse-line">Below her throat on her chest,<br></span>
@@ -867,9 +867,9 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">and bought herself beautiful garments.<br></span>
 <span class="verse-line">She had good and fitting clothes<br></span>
 <span class="verse-line">to better please her lovers.<br></span>
-<span class="verse-line"><span class="line-number">199</span>She <span class="negation">did not</span> care for woollen cloth.<br></span>
-<span class="verse-line">On any of the days of the week,<br></span>
-<span class="verse-line">she wore, instead, a bliaut of fine <span class="color-word">purple silk<br></span></span>
+<span class="verse-line"><span class="line-number">199</span>She <span class="negation">did not</span> care for woollen cloth<br></span>
+<span class="verse-line">on <span class="negation">any</span> of the days of the week.<br></span>
+<span class="verse-line">She wore, instead, a bliaut of fine <span class="color-word">purple silk<br></span></span>
 <span class="verse-line">and adorned herself with an ermine mantle.<br></span>
 <span class="verse-line"><span class="color-word">Well-painted</span> shoes of Cordovan leather,<br></span>
 <span class="verse-line"><span class="line-number">204</span>she wore all the days of the year.<br></span>
@@ -889,15 +889,15 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">could have taken her with great honor.<br></span>
 .....<br>
 <span class="verse-line"><span class="line-number">623</span>She went so long in the day as in the night,<br></span>
-<span class="verse-line">hungry, thirsty, and on hard beds.<br></span>
-<span class="verse-line">There she was so deep in the wood<br></span>
+<span class="verse-line">hungry, thirsty, and on hard beds<br></span>
+<span class="verse-line">that she was so deep in the wood<br></span>
 <span class="verse-line">that she became entirely wild,<br></span>
 <span class="verse-line">but she <span class="negation">never</span> forgot<br></span>
 <span class="verse-line"><span class="line-number">628</span>to pray to saint Mary.<br></span>
-<span class="verse-line">Often, she remembered the image<br></span>
-<span class="verse-line">on which she had made her pledge.<br></span>
-<span class="verse-line">Soon, her clothes were worn out,<br></span>
-<span class="verse-line">and soon, her soles were stripped.<br></span>
+<span class="verse-line">Often, she remembered the image,<br></span>
+<span class="verse-line">which she had taken as a guarantor.<br></span>
+<span class="verse-line">Her clothes were worn out,<br></span>
+<span class="verse-line">and her soles were stripped.<br></span>
 <span class="verse-line"><span class="line-number">633</span>As her clothes were in tatters,<br></span>
 <span class="verse-line">her body was left totally naked.<br></span>
 <span class="verse-line">Her own flesh <span class="color-word">changed color,<br></span></span>
@@ -924,8 +924,8 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="negation">no more</span> than there is in a glove.<br></span>
 <span class="verse-line">Her arms, her hands, and her long fingers<br></span>
 <span class="verse-line"><span class="line-number">658</span>were <span class="color-word">blacker than any pitch.<br></span></span>
-<span class="verse-line">She had such large nails.<br></span>
-<span class="verse-line">So she reshaped them with her teeth.<br></span>
+<span class="verse-line">She had such large nails,<br></span>
+<span class="verse-line">so she reshaped them with her teeth.<br></span>
 <span class="verse-line">Her stomach was all sunken.<br></span>
 <span class="verse-line">She hardly ate, so that was right.<br></span>
 <span class="verse-line"><span class="folio-number">48r</span>Her feet were split.<br></span>
@@ -938,12 +938,12 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">when a thorn pricked her.<br></span>
 <span class="verse-line">For this, she was so pleased.<br></span>
 <span class="verse-line">As she suffered such hardship,<br></span>
-<span class="verse-line"><span class="line-number">673</span><span class="negation">it was no wonder</span> that she was <span class="color-word">blackened<br></span></span>
+<span class="verse-line"><span class="line-number">673</span><span class="negation">it was no marvel</span> that she was <span class="color-word">blackened<br></span></span>
 <span class="verse-line">for she led such a severe life.<br></span>
-<span class="verse-line">After more than forty years in the nude,<br></span>
-<span class="verse-line"><span class="negation">it was no wonder</span> she was woolly.<br></span>
+<span class="verse-line">For more than forty years, she went about nude:<br></span>
+<span class="verse-line"><span class="negation">it was no marvel</span> she was woolly.<br></span>
 <span class="verse-line">She had poor provisions with her.<br></span>
-<span class="verse-line"><span class="line-number">678</span>Pray, may Jesus have mercy on her.<br></span>
+<span class="verse-line"><span class="line-number">678</span>Now may Jesus have mercy on her.<br></span>
 <span class="verse-line">She had two loaves of <span class="negation">no great size</span>.<br></span>
 <span class="verse-line">On these she sustained herself for many years.<br></span>
 <span class="verse-line">They all became hard in the first year<br></span>
@@ -956,8 +956,8 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="line-number">688</span><span class="negation">None</span> of this bothered her.<br></span>
 <span class="verse-line"><span class="folio-number">48v</span>Prone, she drew from a stream.<br></span>
 <span class="verse-line">Like so, she drank. She had no other vessel.<br></span>
-<span class="verse-line">She <span class="negation">does not</span> bemoan her sins<br></span>
-<span class="verse-line">as her body was so chastised.<br></span>
+<span class="verse-line">A sin <span class="negation">is not</span> bothersome<br></span>
+<span class="verse-line">that chastises the body so.<br></span>
 <span class="verse-line"><span class="line-number">693</span>On grass she lived and on roots<br></span>
 <span class="verse-line">for eighteen years in the wilderness.<br></span>
 <span class="verse-line">Then for thirty years, she <span class="negation">never</span> ate<br></span>
@@ -966,14 +966,14 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="line-number">698</span>Often, they used to tempt her,<br></span>
 <span class="verse-line">making her remember all<br></span>
 <span class="verse-line">that she once used to love:<br></span>
-<span class="verse-line">the good eats and the fine places<br></span>
+<span class="verse-line">the good foods and the fine places<br></span>
 <span class="verse-line">where she was used to playing her games.<br></span>
 <span class="verse-line"><span class="line-number">703</span>Now, she felt so blessed<br></span>
 <span class="verse-line"><span class="unique-verse">that <span class="negation">nothing</span> hurt her.<br></span></span>
 <span class="verse-line"><span class="negation">Never</span>, in all her life,<br></span>
 <span class="verse-line"><span class="negation">did</span> she think, then, of folly.<br></span>
 <span class="verse-line"><span class="negation">Nor</span>, then, in all the wood,<br></span>
-<span class="verse-line"><span class="line-number">708</span>did she see wild beasts <span class="negation">at all</span>.<br></span>
+<span class="verse-line"><span class="line-number">708</span><span class="negation">did</span> she see wild beasts <span class="negation">at all</span>.<br></span>
 <span class="verse-line"><span class="negation">nor any</span> other living creature.<br></span>
 <span class="verse-line">Through the forest, she goes totally sure.<br></span>
 <span class="verse-line">In many places, she takes shelter.<br></span>
@@ -1147,7 +1147,7 @@ To read these passages in translation, hover over each column with your cursor.
 .....<br>
 <span class="verse-line"><span class="line-number">155</span>Of her beauty and of her figure<br></span>
 <span class="verse-line">(as it is in the written source)<br></span>
-<span class="verse-line">and about her appearance, I want to say a little<br></span>
+<span class="verse-line">I want to say a little — how they appeared —<br></span>
 <span class="verse-line">before I go too far.<br></span>
 <span class="verse-line">At that time and in that realm,<br></span>
 <span class="verse-line"><span class="line-number">160</span><span class="negation">no</span> man <span class="negation">ever</span> saw a more beautiful woman.<br></span>
@@ -1155,7 +1155,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="negation">ever had</span> such a daughter.<br></span>
 <span class="verse-line">She had round ears.<br></span>
 <span class="verse-line">What's more, they were marvelously <span class="color-word">white,<br></span></span>
-<span class="verse-line"><span class="line-number">165</span>her eyebrows <span class="color-word">black</span> and becoming,<br></span>
+<span class="verse-line"><span class="line-number">165</span>her eyebrows <span class="color-word">bright</span> and becoming,<br></span>
 <span class="verse-line">her eyes <span class="color-word">black</span> and smiling,<br></span>
 <span class="verse-line">her mouth small and well-proportioned,<br></span>
 <span class="verse-line">and pleasing her expression,<br></span>
@@ -1165,8 +1165,8 @@ To read these passages in translation, hover over each column with your cursor.
 <div class="empty-line"></div>
 <span class="verse-line"><span class="negation">Indeed neither</span> on her nose <span class="negation">nor</span> on her chin<br></span>
 <span class="verse-line">was seen a defect.<br></span>
-<span class="verse-line">On top of that, her neck was <span class="color-word">white like ermine.<br></span></span>
-<span class="verse-line">There flowed her <span class="color-word">blonde</span> hair.<br></span>
+<span class="verse-line">Above the neck that was <span class="color-word">as white as ermine,<br></span></span>
+<span class="verse-line">there flowed her <span class="color-word">blonde</span> hair.<br></span>
 <span class="verse-line"><span class="line-number">175</span>Each of the breasts of the lady<br></span>
 <span class="verse-line">was <span class="negation">not a bit bigger</span> than an apple.<br></span>
 <span class="verse-line">Below her throat on her chest,<br></span>
@@ -1187,9 +1187,9 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="line-number">190</span>and bought good garments.<br></span>
 <span class="verse-line">She had good and fitting clothes<br></span>
 <span class="verse-line">to better please her lovers.<br></span>
-<span class="verse-line"><span class="folio-number">16vb</span>She <span class="negation">did not</span> care for woollen cloth.<br></span>
-<span class="verse-line">On the worst day of the week,<br></span>
-<span class="verse-line"><span class="line-number">195</span>she wore a fine <span class="color-word">purple silk</span> bliaut<br></span>
+<span class="verse-line"><span class="folio-number">16vb</span>She <span class="negation">did not</span> care for woollen cloth<br></span>
+<span class="verse-line">on the worst day of the week.<br></span>
+<span class="verse-line"><span class="line-number">195</span>She wore a fine <span class="color-word">purple silk</span> bliaut<br></span>
 <span class="verse-line">and adorned herself with an ermine mantle.<br></span>
 <span class="verse-line"><span class="color-word">Well-painted</span> shoes of Cordovan leather,<br></span>
 <span class="verse-line">she wore all the days of the year.<br></span>
@@ -1202,7 +1202,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="line-number">205</span>Alas evermore for her life<br></span>
 <span class="verse-line">as it is so full of folly."<br></span>
 <span class="verse-line">Everyone in the city would say<br></span>
-<span class="verse-line">that she was of such high parentage<br></span>
+<span class="verse-line">that she was of very high parentage<br></span>
 <span class="verse-line">for she answered all with reason<br></span>
 <span class="verse-line"><span class="line-number">210</span>and had such a beautiful frame<br></span>
 <span class="verse-line">that the son of an emperor<br></span>
@@ -1211,13 +1211,13 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="line-number">615</span>She roamed so long by day and by night,<br></span>
 <span class="verse-line">hungry and thirsty and on hard beds,<br></span>
 <span class="verse-line">and she was in this wood so long<br></span>
-<span class="verse-line">she became entirely wild there,<br></span>
+<span class="verse-line">that she became entirely wild there,<br></span>
 <span class="verse-line">but she <span class="negation">never</span> forgot<br></span>
 <span class="verse-line"><span class="line-number">620</span>to pray to saint Mary.<br></span>
-<span class="verse-line">Often, she remembers the image<br></span>
-<span class="verse-line">on which she had made her pledge.<br></span>
+<span class="verse-line">Often, she remembers the image,<br></span>
+<span class="verse-line">which she had taken as a guarantor.<br></span>
 <span class="verse-line">Her soles were all worn out,<br></span>
-<span class="verse-line">and soon, her clothes were torn up.<br></span>
+<span class="verse-line">and her clothes were torn up.<br></span>
 <span class="verse-line"><span class="line-number">625</span>As her clothes were in tatters,<br></span>
 <span class="verse-line">her body was left totally naked.<br></span>
 <span class="verse-line">Her own flesh <span class="color-word">changed color,<br></span></span>
@@ -1237,7 +1237,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="folio-number">20rb</span>If you saw her ears,<br></span>
 <span class="verse-line">it would seem to you a great marvel<br></span>
 <span class="verse-line">for they were skinny and cracked<br></span>
-<span class="verse-line">and covered in <span class="color-word">white</span> hair.<br></span>
+<span class="verse-line">and with <span class="color-word">white</span> hair all around.<br></span>
 <div class="empty-line"></div>
 <div class="empty-line"></div>
 <span class="verse-line"><span class="line-number">645</span>She had <span class="negation">no more</span> flesh in her breast,<br></span>
@@ -1258,12 +1258,12 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="line-number">660</span>when a thorn pricked her.<br></span>
 <span class="verse-line">For this, she was pleased.<br></span>
 <span class="verse-line">As she suffered hardship,<br></span>
-<span class="verse-line"><span class="negation">it was no wonder</span> she was <span class="color-word">blackened<br></span></span>
+<span class="verse-line"><span class="negation">it was no marvel</span> she was <span class="color-word">blackened<br></span></span>
 <span class="verse-line">for she led a severe life.<br></span>
-<span class="verse-line"><span class="line-number">665</span>After more than forty years in the nude,<br></span>
-<span class="verse-line"><span class="negation">it was no wonder</span> she was woolly.<br></span>
+<span class="verse-line"><span class="line-number">665</span>For more than forty years, she went about nude:<br></span>
+<span class="verse-line"><span class="negation">it was no marvel</span> she was woolly.<br></span>
 <span class="verse-line">She had poor provisions with her.<br></span>
-<span class="verse-line">Pray, may Jesus have mercy on her.<br></span>
+<span class="verse-line">Now may Jesus have mercy on her.<br></span>
 <span class="verse-line">She had two loaves of <span class="negation">no great size</span>.<br></span>
 <span class="verse-line"><span class="line-number">670</span>On these, she lived for many years.<br></span>
 <span class="verse-line">In the first year, they became hard<br></span>
@@ -1276,22 +1276,22 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">And <span class="negation">none</span> of this bothered her.<br></span>
 <span class="verse-line">Prone, she drank from the stream.<br></span>
 <span class="verse-line"><span class="line-number">680</span>She had <span class="negation">no</span> other vessel.<br></span>
-<span class="verse-line">She <span class="negation">does not</span> bemoan her sins<br></span>
-<span class="verse-line">as her body was so chastised.<br></span>
+<span class="verse-line">A sin <span class="negation">is not</span> bothersome<br></span>
+<span class="verse-line">that chastises the body so.<br></span>
 <span class="verse-line">On grasses she lived and on roots<br></span>
 <span class="verse-line">for seventeen years in the wilderness.<br></span>
 <span class="verse-line"><span class="line-number">685</span>Then, for thirty years, she <span class="negation">never</span> ate<br></span>
 <span class="verse-line">but what the angel of God brought to her.<br></span>
-<span class="verse-line">The devil came to her first.<br></span>
+<span class="verse-line">The devil came to her at first.<br></span>
 <span class="verse-line">Often, he used to tempt her,<br></span>
 <span class="verse-line">making her remember all<br></span>
 <span class="verse-line"><span class="line-number">690</span>that she once used to love:<br></span>
-<span class="verse-line">the good eats and the places<br></span>
+<span class="verse-line">the good foods and the places<br></span>
 <span class="verse-line">where she was used to playing her games.<br></span>
 <span class="verse-line">Now, she felt so blessed<br></span>
 <span class="verse-line">as she had forgotten all of this.<br></span>
 <span class="verse-line"><span class="line-number">695</span>And in all her life,<br></span>
-<span class="verse-line">she <span class="negation">never</span> thought of folly.<br></span>
+<span class="verse-line">she <span class="negation">never</span> thought then of folly.<br></span>
 <span class="verse-line">And <span class="negation">never</span> then in all the wood<br></span>
 <span class="verse-line">did she see <span class="negation">any</span> wild beast<br></span>
 <span class="verse-line"><span class="negation">nor any</span> other living creature<br></span>
@@ -1453,7 +1453,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">ou ele seut faire ses gieus<br></span>
 <span class="verse-line"><span class="line-number">693</span>ore fu ele boneuree<br></span>
 <span class="verse-line">Quant de tot ce fu obliee<br></span>
-<span class="verse-line">Ainc gaires puis en tote sa vie<br></span>
+<span class="verse-line"><span class="negation">Ainc gaires</span> puis en tote sa vie<br></span>
 <span class="verse-line"><span class="negation">Ne</span> li sovint <span class="negation">puis</span> de folie<br></span>
 <span class="verse-line"><span class="negation">Ne ainc</span> en trestot le boscage<br></span>
 <span class="verse-line"><span class="line-number">698</span><span class="negation">Ne</span> vit <span class="negation">gaires</span> beste salvage<br></span>
@@ -1467,7 +1467,7 @@ To read these passages in translation, hover over each column with your cursor.
 .....<br>
 <span class="verse-line"><span class="line-number">157</span>Of her beauty, of her figure<br></span>
 <span class="verse-line">(as it is in the written source)<br></span>
-<span class="verse-line">and about her appearance, I want to say a little<br></span>
+<span class="verse-line">I want to say a little — how they appeared —<br></span>
 <span class="verse-line">before I go too far.<br></span>
 <span class="verse-line">At that time and in that realm,<br></span>
 <span class="verse-line"><span class="line-number">162</span>there was <span class="negation">never</span> a more beautiful woman.<br></span>
@@ -1507,9 +1507,9 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">and bought herself beautiful garments.<br></span>
 <span class="verse-line">She had beautiful and fitting clothes<br></span>
 <span class="verse-line">to please her lovers well.<br></span>
-<span class="verse-line"><span class="line-number">197</span>She <span class="negation">did not</span> care for woollen cloth.<br></span>
-<span class="verse-line">On the worst day of the week,<br></span>
-<span class="verse-line">she wore a fine <span class="color-word">purple silk</span> bliaut<br></span>
+<span class="verse-line"><span class="line-number">197</span>She <span class="negation">did not</span> care for woollen cloth<br></span>
+<span class="verse-line">on the worst day of the week.<br></span>
+<span class="verse-line">She wore a fine <span class="color-word">purple silk</span> bliaut<br></span>
 <span class="verse-line">and adorned herself with an ermine mantle.<br></span>
 <span class="verse-line"><span class="folio-number">114rd</span><span class="color-word">Well-painted</span> shoes of Cordovan leather,<br></span>
 <span class="verse-line"><span class="line-number">202</span>she wore all the days of the year.<br></span>
@@ -1534,29 +1534,29 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">that she became entirely wild there,<br></span>
 <span class="verse-line">but she <span class="negation">never</span> forgot<br></span>
 <span class="verse-line"><span class="line-number">618</span>to pray to saint Mary.<br></span>
-<span class="verse-line">Often, she remembered the image<br></span>
-<span class="verse-line">on which she had made her pledge.<br></span>
-<span class="verse-line">Soon, her clothes were worn out,<br></span>
-<span class="verse-line">and soon, her soles were stripped.<br></span>
+<span class="verse-line">Often, she remembered the image,<br></span>
+<span class="verse-line">which she had taken as a guarantor.<br></span>
+<span class="verse-line">Her clothes were worn out,<br></span>
+<span class="verse-line">and her soles were stripped.<br></span>
 <span class="verse-line"><span class="line-number">623</span>As her clothes were in tatters,<br></span>
 <span class="verse-line">her body was left totally naked.<br></span>
 <span class="verse-line">Her own flesh <span class="color-word">changed color.<br></span></span>
 <span class="verse-line">Before, it was <span class="color-word">white like a flower.<br></span></span>
-<span class="verse-line">In winter as in summer,<br></span>
+<span class="verse-line">When she had been there for one winter,<br></span>
 <span class="verse-line"><span class="line-number">628</span>her sides <span class="color-word">blackened</span> entirely.<br></span>
 <span class="verse-line">Her <span class="color-word">blonde</span> hair changed greatly.<br></span>
 <span class="verse-line"><span class="color-word">It turned white like an ermine<br></span></span>
 <span class="verse-line"><span class="sequence-change">from the sun and from the frost.<br></span></span>
-<span class="verse-line"><span class="sequence-change">Her face was so <span class="color-word">burned.<br></span></span></span>
+<span class="verse-line"><span class="sequence-change">Her face was very <span class="color-word">burned.<br></span></span></span>
 <span class="verse-line"><span class="line-number">633</span>Her mouth was thinned,<br></span>
 <span class="verse-line">and her flesh around it <span class="color-word">blackened.<br></span></span>
-<span class="verse-line">Her chin was so <span class="color-word">black.<br></span></span>
-<span class="verse-line"><span class="color-word">It was like the head of a firebrand.<br></span></span>
+<span class="verse-line">Her chin was so <span class="color-word">black<br></span></span>
+<span class="verse-line"><span class="color-word">it was like the head of a firebrand.<br></span></span>
 <span class="verse-line">All <span class="color-word">black</span> were her eyes now.<br></span>
 <span class="verse-line"><span class="line-number">638</span>She had, now, <span class="negation">not a shred</span> of pride.<br></span>
 <span class="verse-line">If you saw her ears,<br></span>
 <span class="verse-line">it would occur to you a great marvel<br></span>
-<span class="verse-line">that was skinny and cracked<br></span>
+<span class="verse-line">for they were skinny and cracked<br></span>
 <span class="verse-line">and all woolly with <span class="color-word">white</span> hairs.<br></span>
 <span class="verse-line"><span class="line-number">643</span><span class="color-word">Black</span> and woolly was her chest.<br></span>
 <span class="verse-line">It so resembled thorny bark.<br></span>
@@ -1565,8 +1565,8 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">Her arms, her hands, and her long fingers<br></span>
 <span class="verse-line"><span class="line-number">648</span>were <span class="color-word">blacker than pitch.<br></span></span>
 <span class="verse-line">She had such large nails<br></span>
-<span class="verse-line"><span class="unique-verse">on her slicing teeth she made them round.<br></span></span>
-<span class="verse-line"><span class="folio-number">115va</span>Her stomach was sunken<br></span>
+<span class="verse-line"><span class="unique-verse">she ripped them with her sharp teeth.<br></span></span>
+<span class="verse-line"><span class="folio-number">115va</span>Her stomach was <span class="unique-verse">emaciated</span><br></span>
 <span class="verse-line"><span class="unique-verse">for she had <span class="negation">none</span> of her delights.<br></span></span>
 <span class="verse-line"><span class="line-number">653</span>Her feet were split<br></span>
 <span class="verse-line">and wounded all over.<br></span>
@@ -1576,12 +1576,12 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="line-number">658</span>that it would do <span class="negation">little or no good<br></span></span>
 <span class="verse-line"><span class="sequence-change">for as a thorn pricked her<br></span></span>
 <span class="verse-line"><span class="sequence-change">in one of her feet, it would fall away.<br></span></span>
-<span class="verse-line">For this, she was so pleased.<br></span>
+<span class="verse-line">For this, she was very pleased.<br></span>
 <span class="verse-line">As she bore great hardship,<br></span>
-<span class="verse-line"><span class="line-number">663</span><span class="negation">it was no wonder</span> she was <span class="color-word">blackened<br></span></span>
+<span class="verse-line"><span class="line-number">663</span><span class="negation">it was no marvel</span> she was <span class="color-word">blackened<br></span></span>
 <span class="verse-line">for she led a very severe life.<br></span>
-<span class="verse-line">After more than forty years in the nude,<br></span>
-<span class="verse-line"><span class="negation">it was no wonder</span> she was woolly.<br></span>
+<span class="verse-line">For more than forty years, she went about nude:<br></span>
+<span class="verse-line"><span class="negation">it was no marvel</span> she was woolly.<br></span>
 <span class="verse-line">She had poor provisions with her.<br></span>
 <span class="verse-line"><span class="line-number">668</span>May <span class="unique-verse">God</span> have mercy on her.<br></span>
 <span class="verse-line">She had two loaves of <span class="negation">no great size</span>.<br></span>
@@ -1609,11 +1609,11 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">the fine delights and the fine places<br></span>
 <span class="verse-line">where she was used to playing her games.<br></span>
 <span class="verse-line"><span class="line-number">693</span>Now, she felt blessed<br></span>
-<span class="verse-line">as she had forgotten all of this<br></span>
-<span class="verse-line">before long. Then for all her life,<br></span>
-<span class="verse-line">she <span class="negation">never</span> thought of folly.<br></span>
+<span class="verse-line">as she had forgotten all of this.<br></span>
+<span class="verse-line"><span class="negation">Hardly ever</span> again, for all her life,<br></span>
+<span class="verse-line"><span class="negation">did</span> she think then of folly.<br></span>
 <span class="verse-line"><span class="negation">Never</span> in all the wood<br></span>
-<span class="verse-line"><span class="line-number">698</span>did she see <span class="negation">any</span> wild beasts <span class="negation">at all<br></span></span>
+<span class="verse-line"><span class="line-number">698</span><span class="negation">did</span> she see <span class="negation">any</span> wild beasts <span class="negation">at all<br></span></span>
 <span class="verse-line"><span class="negation">nor any</span> other living creature.<br></span>
 <span class="verse-line">Through the forest, she goes <span class="unique-verse">utterly naked.<br></span></span>
 <span class="verse-line"><span class="folio-number">115vb</span>In many places, she took shelter.<br></span>
