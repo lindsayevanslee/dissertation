@@ -30,7 +30,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="line-number">167</span>Les iex clers & sosrians<br></span>
 <span class="verse-line">les sorchix noir & avenans<br></span>
 <span class="verse-line">bouche petite par mesure<br></span>
-<span class="verse-line">& pie le regardeiue<br></span>
+<span class="verse-line">& pie le regardeure<br></span>
 <span class="verse-line">Le face tenrre & coloree<br></span>
 <span class="verse-line"><span class="line-number">172</span>Com le rose qui sempre est nee<br></span>
 <span class="verse-line">Ja el nés ne el menton<br></span>
@@ -45,7 +45,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="line-number">182</span>Les dois reons grailles & plains<br></span>
 <span class="verse-line">Gent cors avoit & bien mollé<br></span>
 <span class="verse-line">Sous l'aissele lonc le costé<br></span>
-<span class="verse-line">El n'iert trop grant no trop petite<br></span>
+<span class="verse-line">El n'iert trop grant ne trop petite<br></span>
 <span class="verse-line">Ja se faichon n'en iert escrite<br></span>
 <span class="verse-line"><span class="line-number">187</span>Ja le biauté de ceste dame<br></span>
 <span class="verse-line">Nen iert escrite par nul home<br></span>
@@ -61,9 +61,9 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">Au pior jor de le semainne<br></span>
 <span class="verse-line">Bon bliaut avoit d'ostorin<br></span>
 <span class="verse-line">& affubloit mantel d'ermin<br></span>
-<span class="verse-line">Soullers bien pains de cordouam<br></span>
+<span class="verse-line">Soullers bien pains de cordovam<br></span>
 <span class="verse-line"><span class="line-number">202</span>Cauchoit a tous les jors de l'an<br></span>
-<span class="verse-line">Le citoien de le cité<br></span>
+<span class="verse-line">Li citoien de le cité<br></span>
 <span class="verse-line">L'amoient tout por se biauté<br></span>
 <span class="verse-line">Li anchien home & li saige<br></span>
 <span class="verse-line">disoient tout Dex quel damage<br></span>
@@ -691,7 +691,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">La face lui estoit bruillee<br></span>
 <span class="verse-line">Del grant soleil e de gelee .<br></span>
 <span class="verse-line"><span class="line-number">643</span>La buche li ert entenvie<br></span>
-<span class="verse-line">e d'environ tote en nercie .<br></span>
+<span class="verse-line">e d'environ tote ennercie .<br></span>
 <span class="verse-line">e tant avoit neir le menton<br></span>
 <span class="verse-line">come ço feust chief d'un tison .<br></span>
 <span class="verse-line">Teint e nerci erent li oil<br></span>
@@ -741,7 +741,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">Ne fet a pleindre le pechie<br></span>
 <span class="verse-line">Dont le cors fu si chastie .<br></span>
 <span class="verse-line"><span class="line-number">693</span>D'erbe vesquit e de racine<br></span>
-<span class="verse-line">Dis e ut. anz en la gastine .<br></span>
+<span class="verse-line">Dis e ut. anz en la guastine .<br></span>
 <span class="verse-line">pus fu trente anz onc ne manga<br></span>
 <span class="verse-line">si l'angle Deu ne lui porta .<br></span>
 <span class="verse-line">Diables la veneient esprimer<br></span>
@@ -933,9 +933,9 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="line-number">160</span>Ne vit unc home plus bele femme<br></span>
 <span class="verse-line"><span class="folio-number">16va</span>Ne cuntesse ne raine.<br></span>
 <span class="verse-line">N'out onkes tele meschine<br></span>
-<span class="verse-line">roundes avoit les oreilles<br></span>
+<span class="verse-line">roundes aveit les oreilles<br></span>
 <span class="verse-line">Mais blanches erent a merveilles<br></span>
-<span class="verse-line"><span class="line-number">165</span>les sorciz neirs & avenanz<br></span>
+<span class="verse-line"><span class="line-number">165</span>les sorciz clers & avenanz<br></span>
 <span class="verse-line">les oilz neirs & sorianz<br></span>
 <span class="verse-line">la bouche brieve & par mesure<br></span>
 <span class="verse-line">& pie la regardeure<br></span>
@@ -967,7 +967,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">al peor jor de la semeine<br></span>
 <span class="verse-line"><span class="line-number">195</span>Vesteit bons bliaus d'osturin<br></span>
 <span class="verse-line">& afubla mantel hermin<br></span>
-<span class="verse-line">Soulers bien pains de cordouen<br></span>
+<span class="verse-line">Soulers bien pains de cordoven<br></span>
 <span class="verse-line">chaucout a toz les jors de l'an<br></span>
 <span class="verse-line">li citeen de la cité<br></span>
 <span class="verse-line"><span class="line-number">200</span>l'amouent tuit por sa bealté<br></span>
@@ -1006,7 +1006,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">del soleil. & de la gelee<br></span>
 <span class="verse-line"><span class="line-number">635</span>la bouche li fu atenvie<br></span>
 <span class="verse-line">& envirun la char nercie<br></span>
-<span class="verse-line">tant par esteit noir sun mentun.<br></span>
+<span class="verse-line">tant par esteit neir sun mentun.<br></span>
 <span class="verse-line">cum ceo fust le chief d'un tisun<br></span>
 <span class="verse-line">& nerci erent si oil<br></span>
 <span class="verse-line"><span class="line-number">640</span>N'i aveit ore point d'orguil<br></span>
@@ -1018,7 +1018,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">Ne mais cum il a en un gant<br></span>
 <span class="verse-line">les bras. les mains. & les deiz<br></span>
 <span class="verse-line">aveit plus neirs que nule peiz<br></span>
-<span class="verse-line">les ongles aveit ele grenz<br></span>
+<span class="verse-line">les umgles aveit ele grenz<br></span>
 <span class="verse-line"><span class="line-number">650</span>ele les taillout o les denz<br></span>
 <span class="verse-line">le ventre lui ert tot dechaet<br></span>
 <span class="verse-line">car povre despense i meteit<br></span>
@@ -1028,7 +1028,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">Quant ele alout par la gastine<br></span>
 <span class="verse-line">mais ceo li ert vis son encient<br></span>
 <span class="verse-line">& ele n'i failli de nient<br></span>
-<span class="verse-line">ke un peche de lui chaeit<br></span>
+<span class="verse-line">ke un peché de lui chaeit<br></span>
 <span class="verse-line"><span class="line-number">660</span>Quant une espine la poingneit<br></span>
 <span class="verse-line">por ceo esteit ele lee<br></span>
 <span class="verse-line">Quant ele soffri une haschee<br></span>
@@ -1241,9 +1241,9 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="line-number">162</span>N'en ot onques plus bele feme<br></span>
 <span class="verse-line">onques comtesse ne roine<br></span>
 <span class="verse-line">Nen ot el chief plus bele crigne<br></span>
-<span class="verse-line">rondes avoit les oreilles<br></span>
+<span class="verse-line">roondes avoit les oreilles<br></span>
 <span class="verse-line">& blances erent a merveilles<br></span>
-<span class="verse-line"><span class="line-number">167</span>les sorcils nois & avenans<br></span>
+<span class="verse-line"><span class="line-number">167</span>les sorcils noirs & avenans<br></span>
 <span class="verse-line">& les ioex vairs & molt rians<br></span>
 <span class="verse-line">La bouche bele & par mesure<br></span>
 <span class="verse-line">& pieue la regardeure<br></span>
@@ -1253,12 +1253,12 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">Ne parceusciés mesfaçon<br></span>
 <span class="verse-line">Le col avoit blanc com ermine<br></span>
 <span class="verse-line">Loiet estoit sa blonde crine<br></span>
-<span class="verse-line"><span class="line-number">177</span>N'iert mie greindres d'une pome<br></span>
+<span class="verse-line"><span class="line-number">177</span>N'iert mie graindres d'une pome<br></span>
 <span class="verse-line">L'un des traians de cele domme<br></span>
 <span class="verse-line">desus la boce en la poitrine<br></span>
 <span class="verse-line">Ert si blance com flor d'espine<br></span>
 <span class="verse-line">blans bras avoit & blances mains<br></span>
-<span class="verse-line"><span class="line-number">182</span>les dois reons greilles & plains<br></span>
+<span class="verse-line"><span class="line-number">182</span>les dois reons grailles & plains<br></span>
 <span class="verse-line">Gent cors avoit & bien mollé<br></span>
 <span class="verse-line">Sus l'asoele lanc le costé<br></span>
 <span class="verse-line">Ne trop grande ne trop petite<br></span>
@@ -1278,11 +1278,11 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">vestoit bon bliaut ostorin<br></span>
 <span class="verse-line">Si afubloit mantel ermin<br></span>
 <span class="verse-line"><span class="folio-number">114rd</span>Sollers bien pains de cordoan<br></span>
-<span class="verse-line"><span class="line-number">202</span>chaucoit a tus les jors del an<br></span>
+<span class="verse-line"><span class="line-number">202</span>chaucoit a tus les jors de l'an<br></span>
 <span class="verse-line">li citeain de la cité<br></span>
 <span class="verse-line">l'amoient tot por sa biauté<br></span>
 <span class="verse-line">li ancien home & li sage<br></span>
-<span class="verse-line">disoient tot que cert damage<br></span>
+<span class="verse-line">disoient tot que c'ert damage<br></span>
 <span class="verse-line"><span class="line-number">207</span>tant par mar fu ceste dolente<br></span>
 <span class="verse-line">molt fait a plaindre sa jovente<br></span>
 <span class="verse-line">mar fu onques la soie vie<br></span>
@@ -1318,7 +1318,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">& environ sa char noircie<br></span>
 <span class="verse-line">itant avoit noir le menton<br></span>
 <span class="verse-line">comme ce fust chies d'un tison<br></span>
-<span class="verse-line">tot li erent noir oi li oil<br></span>
+<span class="verse-line">tot li erent noir ci li oil<br></span>
 <span class="verse-line"><span class="line-number">638</span>N'avoit ore .i. point d'orgoil<br></span>
 <span class="verse-line">Se vos en veisciés l'oreille<br></span>
 <span class="verse-line">molt vos venist a grant merveille<br></span>
@@ -1346,7 +1346,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">Quant ele avoit la grant hascie<br></span>
 <span class="verse-line"><span class="line-number">663</span>N'estoit merveille si ert noircie<br></span>
 <span class="verse-line">car molt demenoit aspre vie<br></span>
-<span class="verse-line">plus de .xl. ans a la nue<br></span>
+<span class="verse-line">plus de .xl. ans ala nue<br></span>
 <span class="verse-line">N'iert par merveille si ert molsue<br></span>
 <span class="verse-line">povre despens avoit od li<br></span>
 <span class="verse-line"><span class="line-number">668</span>Damedex ait de li merci<br></span>
