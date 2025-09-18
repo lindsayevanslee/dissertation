@@ -218,7 +218,7 @@
                     <l>La buche petite par mesure<lb/></l>
                     <l>e simple avoit la regardure .<lb/></l>
                     <l>La face tendre e coluree<lb/></l>
-                    <l>Cum rose <choice><abbr><orig>q</orig></abbr><expan><reg>qui</reg></expan></choice> sempres est nee .<lb/></l>
+                    <l>Cum rose <choice><abbr><orig>q</orig></abbr><expan><intermediate>que</intermediate><reg>qui</reg></expan></choice> sempres est nee .<lb/></l>
                     <l>Ne ja au <choice><orig>nes</orig><reg>nés</reg></choice> <choice><orig>nau</orig><reg>n'au</reg></choice> mentun<lb/></l>
                     <l><choice><orig>Na parceussez</orig><reg>N'aparceussez</reg></choice> <choice><orig>meffacon</orig><reg>meffaçon</reg></choice> .<lb/></l>
                     <l>Par sum le col blanc <choice><abbr><orig>co</orig></abbr><expan><reg>com</reg></expan></choice> ermine<lb/></l>
@@ -742,7 +742,7 @@
                     <l>La face lui estoit bruillee<lb/></l>
                     <l>Del <choice><abbr><orig>gnt</orig></abbr><expan><reg>grant</reg></expan></choice> soleil e de gelee .<lb/></l>
                     <l>La buche li ert entenvie<lb/></l>
-                    <l>e <choice><orig>denviron</orig><reg>d'environ</reg></choice> tote <choice><orig>ennercie</orig><reg>en nercie</reg></choice> .<lb/></l>
+                    <l>e <choice><orig>denviron</orig><reg>d'environ</reg></choice> tote ennercie .<lb/></l>
                     <l>e tant avoit neir le <choice><abbr><orig>meton</orig></abbr><expan><reg>menton</reg></expan></choice><lb/></l>
                     <l>come <choice><orig>co</orig><reg>ço</reg></choice> feust chief <choice><abbr><orig>duntiso</orig></abbr><expan><intermediate>duntison</intermediate><reg>d'un tison</reg></expan></choice> .<lb/></l>
                     <l>Teint e nerci erent li oil<lb/></l>
@@ -757,7 +757,7 @@
                     <l>Ne mes ke <choice><orig>nad</orig><reg>n'ad</reg></choice> en un gant .<lb/></l>
                     <l>Les <choice><abbr><orig>bz</orig></abbr><expan><reg>braz</reg></expan></choice> les mains e les lung dois<lb/></l>
                     <l>Avoit plus noirs ke nule poiz .<lb/></l>
-                    <l>Les ungles avoit ele mut <choice><orig>genz</orig><reg>grenz</reg></choice><lb/></l>
+                    <l>Les ungles avoit ele mut <choice><orig>gez</orig><intermediate>genz</intermediate><reg>grenz</reg></choice><lb/></l>
                     <l>Si les retaillot de ses denz .<lb/></l>
                     <l>Li ventre tut lui ert caeiz<lb/></l>
                     <l>Guere ne <choice><abbr><orig>magot.co</orig></abbr><expan><intermediate>mangot.co</intermediate><reg>mangot ço</reg></expan></choice> ert droiz .<lb/></l>
@@ -798,7 +798,7 @@
                     <l>Ne fet a pleindre le pechie<lb/></l>
                     <l>Dont le cors fu si chastie .<lb/></l>
                     <l><choice><orig>Derbe</orig><reg>D'erbe</reg></choice> vesquit e de racine<lb/></l>
-                    <l>Dis e ut. anz en la <choice><orig>gaastine</orig><reg>gastine</reg></choice> .<lb/></l>
+                    <l>Dis e ut. anz en la <choice><orig>gaastine</orig><reg>guastine</reg></choice> .<lb/></l>
                     <l>pus fu trente anz onc ne <choice><abbr><orig>maga</orig></abbr><expan><reg>manga</reg></expan></choice><lb/></l>
                     <l>si <choice><orig>langle</orig><reg>l'angle</reg></choice> <name type="god">Deu</name> ne lui porta .<lb/></l>
                     <l><name type="devil">Diables</name> la veneient <choice><abbr><orig>espmer</orig></abbr><expan><reg>esprimer</reg></expan></choice><lb/></l>
