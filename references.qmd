@@ -224,6 +224,10 @@ Jänicke, Stefan, and David Joseph Wrisley. “Visualizing *Mouvance*: Toward a 
 
 Kiss, Farkas Gábor, et al. “Old Light on New Media: Medieval Practices in the Digital Age.” *Digital Philology: A Journal of Medieval Cultures*, vol. 2, no. 1, Spring 2013, pp. 16-34. [scholarship]
 
+Lee, Loren. *dissertation* (Version 1.0.0), GitHub, 2025. https://github.com/leeloren/dissertation. [repository]
+
+---. *marie-legyptienne* (Version 1.0.0), GitHub, 2024. https://github.com/leeloren/marie-legyptienne. [repository]
+
 Lit, L. W. C. van (Lambertus Willem Cornelis). *Among Digitized Manuscripts: Philology, Codicology, Paleography In a Digital World*. Brill, 2020. [scholarship]
 
 *Lives of the Saints: The Medieval French Hagiography Project*. directed by Amy V. Ogden, The Institute for Advanced Technology in the Humanities, 2006, https://frenchsaintslives.org/. Accessed 10 March 2025. [project]
@@ -399,30 +403,30 @@ Margoliouth, David Samuel and Walter Spencer-Stanhope Tyrwhitt. *Cairo, Jerusale
 
 Radiciotti, Paolo, and Arianna D’Ottone. “I frammenti della Qubbat al-hazna di Damasco: A proposito di una scoperta sottovalutata.” *Nea Rhome*, vol. 5, 2008, pp. 45-74.
 
-## Old & Middle French Reference Texts
-*Anglo-Norman Dictionary (AND2 Online Edition)*, Aberystwyth University, 2021. https://anglo-norman.net/.
+## Reference and Theoretical Texts on Old & Middle French Language and Literature
+*Anglo-Norman Dictionary (AND2 Online Edition)*, Aberystwyth University, 2021. https://anglo-norman.net/. [reference]
 
-Campion, Edmund J. “Early Modern French Literature.” *Scholarly Editing: A Guide to Research*, MLA, 1995, pp. 417-437.
+Campion, Edmund J. “Early Modern French Literature.” *Scholarly Editing: A Guide to Research*, MLA, 1995, pp. 417-437. [theory]
 
-Cerquiglini, Bernard. *Éloge de la variante: Histoire critique de la philologie*. Éditions du Seuil, 1989.
+Cerquiglini, Bernard. *Éloge de la variante: Histoire critique de la philologie*. Éditions du Seuil, 1989. [theory]
 
-Colby, Alice M. *The Portrait in Twelfth-Century French Literature: An Example of the Stylistic Originality of Chrétien de Troyes*. Droz, 1965.
+Colby, Alice M. *The Portrait in Twelfth-Century French Literature: An Example of the Stylistic Originality of Chrétien de Troyes*. Droz, 1965. [theory]
 
-Derolez, Albert. *The Paleography of Gothic Manuscripts*. Cambridge University Press, 2001.
+Derolez, Albert. *The Paleography of Gothic Manuscripts*. Cambridge University Press, 2001. [theory]
 
-*Dictionnaire du Moyen Français*, version 2020 (DMF 2020). ATILF - CNRS & Université de Lorraine. http://www.atilf.fr/dmf.
+*Dictionnaire du Moyen Français*, version 2020 (DMF 2020). ATILF - CNRS & Université de Lorraine. http://www.atilf.fr/dmf. [reference]
 
-Foulet, Alfred and Mary Blakely Speer. *On Editing Old French Texts*. Regents Press of Kansas, 1979.
+Foulet, Alfred and Mary Blakely Speer. *On Editing Old French Texts*. Regents Press of Kansas, 1979. [theory]
 
-Godefroy, Frédéric. *Dictionnaire de l’ancienne langue française, et de tous ses dialectes du IXe au XVe siècle*. F. Vieweg, 1881.
+Godefroy, Frédéric. *Dictionnaire de l’ancienne langue française, et de tous ses dialectes du IXe au XVe siècle*. F. Vieweg, 1881. [reference]
 
-Matsumura, Takeshi, and Michel Zink, editor. *Dictionnaire du français médiéval*. Les Belles Lettres, 2015.
+Matsumura, Takeshi, and Michel Zink, editor. *Dictionnaire du français médiéval*. Les Belles Lettres, 2015. [reference]
 
-Speer, Mary B. “Old French Literature.” *Scholarly Editing: A Guide to Research*, MLA, 1995, pp. 382-416.
+Speer, Mary B. “Old French Literature.” *Scholarly Editing: A Guide to Research*, MLA, 1995, pp. 382-416. [theory]
 
-Vieillard, Françoise and Olivier Guyotjeannin. *Conseils pour l’édition des textes médiévaux, Fascicule I: Conseils généraux*. École nationale des chartes, 2001.
+Vieillard, Françoise and Olivier Guyotjeannin. *Conseils pour l’édition des textes médiévaux, Fascicule I: Conseils généraux*. École nationale des chartes, 2001. [theory]
 
-Zumthor, Paul. *Essai de poétique médiévale*. Éditions du Seuil, 1972.
+Zumthor, Paul. *Essai de poétique médiévale*. Éditions du Seuil, 1972. [theory]
 
 ## Epigraph
 Thomas. “Le Roman de Tristan.” *Tristan et Iseut: Les poèmes français et La saga norroise*. Edited and translated by Philippe Walter, Lettres gothiques, 1989, pp. 329-481.
