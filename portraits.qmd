@@ -30,7 +30,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="line-number">167</span>Les iex clers & sosrians<br></span>
 <span class="verse-line">les sorchix noir & avenans<br></span>
 <span class="verse-line">bouche petite par mesure<br></span>
-<span class="verse-line">& pie le regardeure<br></span>
+<span class="verse-line">& le pié & le regardeure<br></span>
 <span class="verse-line">Le face tenrre & coloree<br></span>
 <span class="verse-line"><span class="line-number">172</span>Com le rose qui sempre est nee<br></span>
 <span class="verse-line">Ja el nés ne el menton<br></span>
@@ -183,7 +183,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="line-number">167</span>her eyes bright and smiling,<br></span>
 <span class="verse-line">her eyebrows black and becoming,<br></span>
 <span class="verse-line">her small mouth well-proportioned,<br></span>
-<span class="verse-line">and pleasing her expression,<br></span>
+<span class="verse-line">and her foot and her expression,<br></span>
 <span class="verse-line">her face tender and blushing<br></span>
 <span class="verse-line"><span class="line-number">172</span>like the rose that has just bloomed.<br></span>
 <span class="verse-line">Indeed neither on her nose nor on her chin<br></span>
@@ -199,9 +199,9 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">She had a fine body and was well molded<br></span>
 <span class="verse-line">from her underarm along her side.<br></span>
 <span class="verse-line">She was neither too big nor too small.<br></span>
-<span class="verse-line">Her frame could never be written.<br></span>
+<span class="verse-line">Her form could never be written down.<br></span>
 <span class="verse-line"><span class="line-number">187</span>The beauty of this lady<br></span>
-<span class="verse-line">could never be written by any man.<br></span>
+<span class="verse-line">could never be written down by any man.<br></span>
 <span class="verse-line">She was so courteous of speech;<br></span>
 <span class="verse-line">there was nothing to improve.<br></span>
 <span class="verse-line">Such a creature makes one lament<br></span>
@@ -227,7 +227,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">Everyone in the city would say<br></span>
 <span class="verse-line"><span class="line-number">212</span>that she was of high parentage<br></span>
 <span class="verse-line">for she answered all with reason<br></span>
-<span class="verse-line"><span class="folio-number">336ra</span>and had such a beautiful frame<br></span>
+<span class="verse-line"><span class="folio-number">336ra</span>and had such a beautiful form<br></span>
 <span class="verse-line">that the son of an emperor<br></span>
 <span class="verse-line">could have taken her with great honor.<br></span>
 .....<br>
@@ -294,11 +294,11 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="line-number">673</span>As soon as she had eaten up all her bread,<br></span>
 <span class="verse-line">then she plucked the grass of the field.<br></span>
 <span class="verse-line">Like other beasts she ate it.<br></span>
-<span class="verse-line">None of this bothered her.<br></span>
+<span class="verse-line">She sought no other comfort.<br></span>
 <span class="verse-line">With her hands, she drank the water from the stream<br></span>
 <span class="verse-line"><span class="line-number">678</span>as she had no other vessel.<br></span>
-<span class="verse-line">Sins are not to be lamented<br></span>
-<span class="verse-line">that chastise the body so.<br></span>
+<span class="verse-line">Not to be lamented are the sins<br></span>
+<span class="verse-line">that chastised the body so.<br></span>
 <span class="verse-line">On grass she lived and on roots<br></span>
 <span class="verse-line">for seventeen years in the wilderness.<br></span>
 <span class="verse-line"><span class="line-number">683</span>Then for thirty years, she ate nothing<br></span>
@@ -311,12 +311,12 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">where she was used to playing games.<br></span>
 <span class="verse-line">Now, she felt so blessed<br></span>
 <span class="verse-line">that she had forgotten all.<br></span>
-<span class="verse-line"><span class="folio-number">339ra</span>Never then in all her life<br></span>
-<span class="verse-line">did she think more of folly.<br></span>
+<span class="verse-line"><span class="folio-number">339ra</span>Never more in all her life<br></span>
+<span class="verse-line">did she think ever of folly.<br></span>
 <span class="verse-line">Never in all the wood<br></span>
 <span class="verse-line">did any wild beast come to her thereafter<br></span>
 <span class="verse-line">nor any other living creature.<br></span>
-<span class="verse-line"><span class="line-number">698</span>Through the forest, she goes completely safe.<br></span>
+<span class="verse-line"><span class="line-number">698</span>Through the forest, she goes totally assured.<br></span>
 <span class="verse-line">In many places, she took shelter.<br></span>
 <span class="verse-line">Her life was entirely spiritual.<br></span>
 .....<br>
@@ -591,7 +591,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">in which she used to take pleasure.<br></span>
 <span class="verse-line">She felt so blessed<br></span>
 <span class="verse-line"><span class="line-number">632</span>when she had forgotten all of this.<br></span>
-<span class="verse-line">Never then in her life<br></span>
+<span class="verse-line">Never more in her life<br></span>
 <span class="verse-line">did she remember a day of folly.<br></span>
 <span class="verse-line">Mary goes through the wood.<br></span>
 <span class="verse-line">Never did she see a wild beast<br></span>
@@ -738,8 +738,8 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="line-number">688</span>De rien ne se desconfortout .<br></span>
 <span class="verse-line"><span class="folio-number">48v</span>Adenz leveit un rosel<br></span>
 <span class="verse-line">Dont beut n'ot autre vessel .<br></span>
-<span class="verse-line">Ne fet a pleindre le pechie<br></span>
-<span class="verse-line">Dont le cors fu si chastie .<br></span>
+<span class="verse-line">Ne fet a pleindre le pechié<br></span>
+<span class="verse-line">Dont le cors fu si chastié .<br></span>
 <span class="verse-line"><span class="line-number">693</span>D'erbe vesquit e de racine<br></span>
 <span class="verse-line">Dis e ut. anz en la guastine .<br></span>
 <span class="verse-line">pus fu trente anz onc ne manga<br></span>
@@ -793,7 +793,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">She had a fine body and was well molded<br></span>
 <span class="verse-line">from her underarm along her side.<br></span>
 <span class="verse-line">She was neither too big nor too small.<br></span>
-<span class="verse-line">Her frame could never be described.<br></span>
+<span class="verse-line">Her form could never be described.<br></span>
 <span class="verse-line"><span class="line-number">189</span>Nor could the beauty of this lady<br></span>
 <span class="verse-line">ever be described by any soul.<br></span>
 <span class="verse-line">She was so courteous of speech;<br></span>
@@ -821,7 +821,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">Everyone in the city would say<br></span>
 <span class="verse-line"><span class="line-number">214</span>that she was of great parentage<br></span>
 <span class="verse-line">for she answered all with reason<br></span>
-<span class="verse-line">and had such a beautiful frame<br></span>
+<span class="verse-line">and had such a beautiful form<br></span>
 <span class="verse-line">that the son of an emperor<br></span>
 <span class="verse-line">could have taken her with great honor.<br></span>
 .....<br>
@@ -853,7 +853,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="line-number">648</span>There was not any pride there now.<br></span>
 <span class="verse-line">If you saw her ears,<br></span>
 <span class="verse-line">it would be a great marvel to you<br></span>
-<span class="verse-line">for they were skinny and cracked<br></span>
+<span class="verse-line">for they were skinny and shrunken<br></span>
 <span class="verse-line">and all woolly with white hairs.<br></span>
 <span class="verse-line"><span class="line-number">653</span>Black and woolly was her chest.<br></span>
 <span class="verse-line">It seemed like thorny bark.<br></span>
@@ -893,8 +893,8 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="line-number">688</span>None of this bothered her.<br></span>
 <span class="verse-line"><span class="folio-number">48v</span>Prone, she drew from a stream.<br></span>
 <span class="verse-line">Like so, she drank. She had no other vessel.<br></span>
-<span class="verse-line">A sin is not bothersome<br></span>
-<span class="verse-line">that chastises the body so.<br></span>
+<span class="verse-line">Not to be lamented is the sin<br></span>
+<span class="verse-line">that chastised the body so.<br></span>
 <span class="verse-line"><span class="line-number">693</span>On grass she lived and on roots<br></span>
 <span class="verse-line">for eighteen years in the wilderness.<br></span>
 <span class="verse-line">Then for thirty years, she never ate<br></span>
@@ -912,7 +912,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">Nor, then, in all the wood,<br></span>
 <span class="verse-line"><span class="line-number">708</span>did she see wild beasts at all.<br></span>
 <span class="verse-line">nor any other living creature.<br></span>
-<span class="verse-line">Through the forest, she goes totally sure.<br></span>
+<span class="verse-line">Through the forest, she goes totally assured.<br></span>
 <span class="verse-line">In many places, she takes shelter.<br></span>
 <span class="verse-line">Her life is entirely spiritual.<br></span>
 .....<br>
@@ -1012,7 +1012,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="line-number">640</span>N'i aveit ore point d'orguil<br></span>
 <span class="verse-line"><span class="folio-number">20rb</span>Se vous veissés sa oreille<br></span>
 <span class="verse-line">mult vous semblast grant merveille<br></span>
-<span class="verse-line">car mesgre esteit. & detrevee<br></span>
+<span class="verse-line">car mesgre esteit. & decrevee<br></span>
 <span class="verse-line">& de blanc peil avirunee<br></span>
 <span class="verse-line"><span class="line-number">645</span>N'aveit plus char en sun traiant<br></span>
 <span class="verse-line">Ne mais cum il a en un gant<br></span>
@@ -1103,9 +1103,9 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">She had white arms and beautiful hands,<br></span>
 <span class="verse-line"><span class="line-number">180</span>and long, slender, and smooth fingers.<br></span>
 <span class="verse-line">She was neither too big nor too small.<br></span>
-<span class="verse-line">Her frame could never be described.<br></span>
+<span class="verse-line">Her form could never be described.<br></span>
 <span class="verse-line">The beauty of this lady<br></span>
-<span class="verse-line">could never be written by any man.<br></span>
+<span class="verse-line">could never be written down by any man.<br></span>
 <span class="verse-line"><span class="line-number">185</span>She was so courteous of speech;<br></span>
 <span class="verse-line">there was nothing to improve.<br></span>
 <span class="verse-line">Such a creature makes one lament<br></span>
@@ -1131,7 +1131,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">Everyone in the city would say<br></span>
 <span class="verse-line">that she was of very high parentage<br></span>
 <span class="verse-line">for she answered all with reason<br></span>
-<span class="verse-line"><span class="line-number">210</span>and had such a beautiful frame<br></span>
+<span class="verse-line"><span class="line-number">210</span>and had such a beautiful form<br></span>
 <span class="verse-line">that the son of an emperor<br></span>
 <span class="verse-line">could have taken her with honor.<br></span>
 .....<br>
@@ -1201,8 +1201,8 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">And none of this bothered her.<br></span>
 <span class="verse-line">Prone, she drank from the stream.<br></span>
 <span class="verse-line"><span class="line-number">680</span>She had no other vessel.<br></span>
-<span class="verse-line">A sin is not bothersome<br></span>
-<span class="verse-line">that chastises the body so.<br></span>
+<span class="verse-line">Not to be lamented is the sin<br></span>
+<span class="verse-line">that chastised the body so.<br></span>
 <span class="verse-line">On grasses she lived and on roots<br></span>
 <span class="verse-line">for seventeen years in the wilderness.<br></span>
 <span class="verse-line"><span class="line-number">685</span>Then, for thirty years, she never ate<br></span>
@@ -1220,7 +1220,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">And never then in all the wood<br></span>
 <span class="verse-line">did she see any wild beast<br></span>
 <span class="verse-line">nor any other living creature<br></span>
-<span class="verse-line"><span class="line-number">700</span>Through the forest, she goes totally sure.<br></span>
+<span class="verse-line"><span class="line-number">700</span>Through the forest, she goes totally assured.<br></span>
 <span class="verse-line">In many places, she takes shelter.<br></span>
 <span class="verse-line">Her life was spiritual.<br></span>
 .....<br>
@@ -1240,7 +1240,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">En icel tans ne en cel regne<br></span>
 <span class="verse-line"><span class="line-number">162</span>N'en ot onques plus bele feme<br></span>
 <span class="verse-line">onques comtesse ne roine<br></span>
-<span class="verse-line">Nen ot el chief plus bele crigne<br></span>
+<span class="verse-line">N'en ot el chief plus bele crigne<br></span>
 <span class="verse-line">roondes avoit les oreilles<br></span>
 <span class="verse-line">& blances erent a merveilles<br></span>
 <span class="verse-line"><span class="line-number">167</span>les sorcils noirs & avenans<br></span>
@@ -1419,7 +1419,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">Neither too big nor too small,<br></span>
 <span class="verse-line">her frame could never be described.<br></span>
 <span class="verse-line"><span class="line-number">187</span>The great beauty of this lady<br></span>
-<span class="verse-line">could not be written fully by any man.<br></span>
+<span class="verse-line">could not be written down fully by any man.<br></span>
 <span class="verse-line">She was so courteous of speech;<br></span>
 <span class="verse-line">there was nothing to improve.<br></span>
 <span class="verse-line">Such a creature makes one lament<br></span>
@@ -1477,7 +1477,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="line-number">638</span>She had, now, not a shred of pride.<br></span>
 <span class="verse-line">If you saw her ears,<br></span>
 <span class="verse-line">it would occur to you a great marvel<br></span>
-<span class="verse-line">for they were skinny and cracked<br></span>
+<span class="verse-line">for they were skinny and shrunken<br></span>
 <span class="verse-line">and all woolly with white hairs.<br></span>
 <span class="verse-line"><span class="line-number">643</span>Black and woolly was her chest.<br></span>
 <span class="verse-line">It so resembled thorny bark.<br></span>
@@ -1514,11 +1514,11 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">As soon as she had eaten up all her bread,<br></span>
 <span class="verse-line">then she gathered the grass of the field.<br></span>
 <span class="verse-line">Like other beasts, she ate it.<br></span>
-<span class="verse-line"><span class="line-number">678</span>None of this bothered her.<br></span>
+<span class="verse-line"><span class="line-number">678</span>She sought no other relief.<br></span>
 <span class="verse-line">Prone, she drank from the stream<br></span>
 <span class="verse-line">for there was no other vessel.<br></span>
-<span class="verse-line">She does not bemoan her sins<br></span>
-<span class="verse-line">as her body is so chastised.<br></span>
+<span class="verse-line">Not to be lamented is the sin<br></span>
+<span class="verse-line">that chastised the body so.<br></span>
 <span class="verse-line"><span class="line-number">683</span>On grass she lived and on roots<br></span>
 <span class="verse-line">for seventeen years in the wilderness.<br></span>
 <span class="verse-line">Then, for thirty years, she ate only<br></span>
