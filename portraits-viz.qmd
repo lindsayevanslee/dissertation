@@ -951,7 +951,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="line-number">683</span>Each day, Mary ate some,<br></span>
 <span class="verse-line">but this was a small portion.<br></span>
 <span class="verse-line">As soon as she had eaten up her bread,<br></span>
-<span class="verse-line">then she gathered the grass of the field.<br></span>
+<span class="verse-line">then she plucked the grass of the field.<br></span>
 <span class="verse-line">Like other beasts she ate it.<br></span>
 <span class="verse-line"><span class="line-number">688</span><span class="negation">None</span> of this bothered her.<br></span>
 <span class="verse-line"><span class="folio-number">48v</span>Prone, she drew from a stream.<br></span>
@@ -1434,7 +1434,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="line-number">673</span>chascun jor en usoit Marie<br></span>
 <span class="verse-line">mais ço ert petite partie<br></span>
 <span class="verse-line">Quant ele ot tot son pain usé<br></span>
-<span class="verse-line">donques aquelt l'erbe del pré<br></span>
+<span class="verse-line">donques <span class="unique-verse">aquelt</span> l'erbe del pré<br></span>
 <span class="verse-line">com autre beste le mangoit<br></span>
 <span class="verse-line"><span class="line-number">678</span><span class="negation">de rien ne</span> se recomfortoit<br></span>
 <span class="verse-line">as dens bevoit dou ruissel<br></span>
@@ -1591,7 +1591,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="line-number">673</span>Each day, Mary ate some,<br></span>
 <span class="verse-line">but this was a small portion.<br></span>
 <span class="verse-line">As soon as she had eaten up all her bread,<br></span>
-<span class="verse-line">then she gathered the grass of the field.<br></span>
+<span class="verse-line">then she <span class="unique-verse">gathered</span> the grass of the field.<br></span>
 <span class="verse-line">Like other beasts, she ate it.<br></span>
 <span class="verse-line"><span class="line-number">678</span>She sought <span class="negation">no other</span> relief.<br></span>
 <span class="verse-line">Prone, she drank from the stream<br></span>
