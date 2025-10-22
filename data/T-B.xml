@@ -480,7 +480,7 @@
                 <l>Moi refusa si amat toi.</l>
                 <l>dame or aies <choice><abbr><orig>mci</orig></abbr><expan><reg>merci</reg></expan></choice> de moi<lb/></l>
                 <l><choice><orig>entoi</orig><reg>en toi</reg></choice> <choice><abbr><orig>ps</orig></abbr><expan><reg>pris</reg></expan></choice> car <name type="god">li Fiz al Roi</name>.</l>
-                <l><choice><abbr><orig>q</orig></abbr><expan><reg>que</reg></expan></choice> Sains <name type="saint"><choice><abbr><orig>Johas</orig></abbr><expan><reg>Johans</reg></expan></choice></name> mostra <choice><orig>aldoi</orig><reg>al doi</reg></choice><lb/></l>
+                <l><choice><abbr><orig>q</orig></abbr><expan><reg>que</reg></expan></choice> sains <name type="saint"><choice><abbr><orig>Johas</orig></abbr><expan><reg>Johans</reg></expan></choice></name> mostra <choice><orig>aldoi</orig><reg>al doi</reg></choice><lb/></l>
                 <l>Il dist <choice><abbr><orig>ql</orig></abbr><expan><intermediate>quil</intermediate><reg>qu'il</reg></expan></choice> ert li Agniaz <choice><orig>De</orig><reg>Dé</reg></choice>.</l>
                 <l><choice><abbr><orig>p</orig></abbr><expan><reg>par</reg></expan></choice> cui li <choice><abbr><orig>mos</orig></abbr><expan><reg>mons</reg></expan></choice> seroit <choice><orig>salve</orig><reg>salvé</reg></choice><lb/></l>
                 <l>Mais <choice><abbr><orig>cat</orig></abbr><expan><reg>cant</reg></expan></choice> <choice><orig>loit</orig><reg>l'oit</reg></choice> li <name type="devil">Anemis</name>.</l>
@@ -541,7 +541,7 @@
                 <l><choice><orig>enlui</orig><reg>en lui</reg></choice> at tote <choice><orig>sefiance</orig><reg>se fiance</reg></choice>.</l>
                 <l><choice><abbr><orig>elteple</orig></abbr><expan><intermediate>eltemple</intermediate><reg>el temple</reg></expan></choice> en entre sens dotance<lb/></l>
                 <l>A mut <choice><abbr><orig>mvilhose</orig></abbr><expan><reg>mervilhose</reg></expan></choice> paor.</l>
-                <l>Aorat <choice><orig>lacrois</orig><reg>la crois</reg></choice> se <name>Sagnorr</name><lb/></l> <!-- LL: The second "r" at the end of the line is scribal error. -->
+                <l>Aorat <choice><orig>laCrois</orig><reg>la Crois</reg></choice> se <name type="god"><choice><orig>Sagnorr</orig><reg>Sagnor</reg></choice></name><lb/></l> <!-- LL: The second "r" at the end of the line is scribal error. -->
                 <l>&amp; <choice><abbr><orig>cat</orig></abbr><expan><reg>cant</reg></expan></choice> ele <choice><orig>lot</orig><reg>l'ot</reg></choice> aoree.</l>
                 <l>del Saint <choice><orig>Espir</orig><reg>Esprit</reg></choice> fut enspiree<lb/></l>
                 <l><choice><orig>deses</orig><reg>de ses</reg></choice> pechiez <choice><abbr><orig>÷</orig></abbr><expan><reg>est</reg></expan></choice> aligie.</l>
