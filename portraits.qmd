@@ -150,7 +150,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">Xvii. ans. par les gastines<br></span>
 <span class="verse-line"><span class="line-number">683</span>Puis fu .xxx. ans onc ne menga<br></span>
 <span class="verse-line">Se angeles ne li aporta<br></span>
-<span class="verse-line">Li diables le an premier<br></span>
+<span class="verse-line">Li Diables le an premier<br></span>
 <span class="verse-line">Le soloit sovent essaier<br></span>
 <span class="verse-line">Tout che li faisoit remembrer<br></span>
 <span class="verse-line"><span class="line-number">688</span>Qu'ele soloit tos jors amer<br></span>
@@ -303,7 +303,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">for seventeen years in the wilderness.<br></span>
 <span class="verse-line"><span class="line-number">683</span>Then for thirty years, she ate nothing<br></span>
 <span class="verse-line">unless an angel brought it to her.<br></span>
-<span class="verse-line">In the first year, the devil<br></span>
+<span class="verse-line">In the first year, the Devil<br></span>
 <span class="verse-line">often used to tempt her,<br></span>
 <span class="verse-line">making her remember all<br></span>
 <span class="verse-line"><span class="line-number">688</span>that she used to always love:<br></span>
@@ -583,7 +583,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="line-number">622</span>for eighteen years in the wilderness.<br></span>
 <span class="verse-line">Then for twenty years, she only ate<br></span>
 <span class="verse-line">what the angel of God brought to her.<br></span>
-<span class="verse-line">The devil came before her first.<br></span>
+<span class="verse-line">The Devil came before her first.<br></span>
 <span class="verse-line">He used to annoy her so much,<br></span>
 <span class="verse-line"><span class="line-number">627</span>making her remember<br></span>
 <span class="verse-line">whatever she once used to love:<br></span>
