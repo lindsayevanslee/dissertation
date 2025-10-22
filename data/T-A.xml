@@ -46,7 +46,7 @@
                 <l>Car che saichent tout pecheor <lb/></l>
                 <cb/>
                 
-                <l>Ki forfait sont au creator <lb/></l>
+                <l>Ki forfait sont au <name type="god">Creator</name> <lb/></l>
                 <l>Que nus <choice><orig>pekies</orig><reg>pekiés</reg></choice> <choice><orig>nest</orig><reg>n'est</reg></choice> si pesant <lb/></l>
                 <l>Ne si horrible ne si grant <lb/></l>
                 <l>Dont <name type="god">Dex</name> ne fache vrai <choice><abbr><orig>pdon</orig></abbr><expan><reg>pardon</reg></expan></choice> <lb/></l>
@@ -234,7 +234,7 @@
                 <l>Tant iert cortoise de parler <lb/></l>
                 <l>Riens <choice><orig>ni</orig><reg>n'i</reg></choice> avoit <choice><abbr><orig>q</orig></abbr><expan><reg>que</reg></expan></choice> amender <lb/></l>
                 <l>A plaindre fait tel <choice><abbr><orig>caature</orig></abbr><expan><reg>criaature</reg></expan></choice> <lb/></l>
-                <l><choice><abbr><orig>Qnt</orig></abbr><expan><reg>Quant</reg></expan></choice> del Creator <choice><orig>navoit</orig><reg>n'avoit</reg></choice> cure <lb/></l>
+                <l><choice><abbr><orig>Qnt</orig></abbr><expan><reg>Quant</reg></expan></choice> del <name type="god">Creator</name> <choice><orig>navoit</orig><reg>n'avoit</reg></choice> cure <lb/></l>
                 <l>El recevoit plusors <choice><abbr><orig>psens</orig></abbr><expan><reg>presens</reg></expan></choice> <lb/></l>
                 <l><choice><orig>Sen</orig><reg>S'en</reg></choice> acatoit bons <choice><abbr><orig>vestems</orig></abbr><expan><reg>vestemens</reg></expan></choice> <lb/></l>
                 <l>Bons dras avoit . &amp; avenans <lb/></l>
@@ -535,7 +535,7 @@
                 <l>Ne <choice><abbr><orig>nasq</orig></abbr><expan><reg>nasqui</reg></expan></choice> feme en cest <choice><orig>regne</orig><reg>regné</reg></choice> <lb/></l>
                 <l>Je sui povre &amp; orgueilleuse <lb/></l>
                 <l>&amp; de mon cors luxurieuse <lb/></l>
-                <l>Li <name type="god"><choice><abbr><orig>nres</orig></abbr><expan><reg>Nostres</reg></expan></choice> Sires</name> toi ama <lb/></l>
+                <l>Li <name type="god"><choice><abbr><orig>Nres</orig></abbr><expan><reg>Nostres</reg></expan></choice> Sires</name> toi ama <lb/></l>
                 <l>&amp; moi caitive refusa <lb/></l>
                 <l>Moi refusa &amp; ama toi <lb/></l>
                 <l><name type="saint">Dame</name> aies lui merchi de moi <lb/></l>
@@ -543,7 +543,7 @@
                 <l>Qui plus vaut <choice><abbr><orig>q</orig></abbr><expan><reg>que</reg></expan></choice> argent ne or <lb/></l>
                 <l>De toi prist car li <name type="god">Fix le Roi</name> <lb/></l>
                 <l>Que <name type="saint"><choice><abbr><orig>s-</orig></abbr><expan><reg>sains</reg></expan></choice> Jehans</name> moustra au doi <lb/></l>
-                <l>Il dist <choice><abbr><orig>q</orig></abbr><expan><reg>que</reg></expan></choice> li Angeles estoit <lb/></l>
+                <l>Il dist <choice><abbr><orig>q</orig></abbr><expan><reg>que</reg></expan></choice> li <name type="god">Angeles</name> estoit <lb/></l>
                 <l>Par <choice><abbr><orig>qi</orig></abbr><expan><reg>quoi</reg></expan></choice> li mons <choice><orig>salves</orig><reg>salvés</reg></choice> seroit <lb/></l>
                 <l>Mais <choice><abbr><orig>qnt</orig></abbr><expan><reg>quant</reg></expan></choice> <choice><orig>loi</orig><reg>l'oi</reg></choice> li <name type="devil">Anemis</name> <lb/></l> <!-- LL: I just made up this tag "devil" to use here. I haven't used it previously, should I just used "character" instead? Not tag at all? -->
                 <l>Qui nos jeta de paradis <lb/></l>
@@ -562,13 +562,13 @@
                 <l><choice><orig>Seli</orig><reg>Se li</reg></choice> <name type="god">Fix Dieu</name> ne fust ochis <lb/></l>
                 <l>Ja <choice><orig>nentrast</orig><reg>n'entrast</reg></choice> hom <choice><abbr><orig>enpadis</orig></abbr><expan><intermediate>enparadis</intermediate><reg>en paradis</reg></expan></choice> <lb/></l>
                 <l><choice><orig>Parle</orig><reg>Par le</reg></choice> mort prist il le <choice><orig>vretu</orig><reg>vertu</reg></choice> <lb/></l>
-                <l><choice><abbr><orig>P</orig></abbr><expan><reg>Par</reg></expan></choice> <choice><abbr><orig>qi</orig></abbr><expan><reg>quoi</reg></expan></choice> deables fu <!-- LL: There's an apostrophe-looking mark above the final "cu" but it's unclear if this is a mistake or an abbreviation --><choice><orig>vainc'u</orig><reg>vaincu</reg></choice> <lb/></l>
+                <l><choice><abbr><orig>P</orig></abbr><expan><reg>Par</reg></expan></choice> <choice><abbr><orig>qi</orig></abbr><expan><reg>quoi</reg></expan></choice> <name type="devil">Deables</name> fu <!-- LL: There's an apostrophe-looking mark above the final "cu" but it's unclear if this is a mistake or an abbreviation --><choice><orig>vainc'u</orig><reg>vaincu</reg></choice> <lb/></l>
                 <l>Ochis vainqui le oceor <lb/></l>
                 <l>Del tout le traist a desonor <lb/></l>
                 <l><choice><orig>Dinfer</orig><reg>D'infer</reg></choice> froissa les serreures <lb/></l>
                 <l>&amp; rompi toutes les clostures <lb/></l>
                 <l>Hors en geta se <choice><abbr><orig>compaignie</orig></abbr><expan><reg>compaingnie</reg></expan></choice> <lb/></l>
-                <l><choice><abbr><orig>Q</orig></abbr><expan><reg>Qui</reg></expan></choice> del deable es[<!-- HOLE -->]toit ravie <lb/></l>
+                <l><choice><abbr><orig>Q</orig></abbr><expan><reg>Qui</reg></expan></choice> del <name type="devil">Deable</name> es[<!-- HOLE -->]toit ravie <lb/></l>
                 <l>El ciel les <choice><abbr><orig>cduist</orig></abbr><expan><reg>conduist</reg></expan></choice> [<!-- HOLE -->] a sen <name type="god"><choice><abbr><orig>Pe</orig></abbr><expan><reg>Pere</reg></expan></choice></name> <lb/></l>
                 <l>En se gloire la ou [<!-- HOLE -->] il ere <lb/></l>
                 <l>Puis vint au sepulcre a sen cors <lb/></l>
@@ -757,7 +757,7 @@
                 <l>Xvii. ans. <choice><abbr><orig>p</orig></abbr><expan><reg>par</reg></expan></choice> les gastines <lb/></l>
                 <l>Puis fu .xxx. ans onc ne menga <lb/></l>
                 <l>Se angeles ne li aporta <lb/></l>
-                <l>Li diables le an premier <lb/></l>
+                <l>Li <name type="devil">Diables</name> le an premier <lb/></l>
                 <l>Le soloit sovent essaier <lb/></l>
                 <l>Tout che li faisoit <choice><abbr><orig>rembrer</orig></abbr><expan><reg>remembrer</reg></expan></choice> <lb/></l>
                 <l><choice><orig>Quele</orig><reg>Qu'ele</reg></choice> soloit tos jors amer <lb/></l>
@@ -810,7 +810,7 @@
                 <l>Tant estoient de sainte vie <lb/></l>
                 <cb/>
                 
-                <l><choice><abbr><orig>Qnt</orig></abbr><expan><reg>Quant</reg></expan></choice> venue iert le <choice><abbr><orig>qrantaine</orig></abbr><expan><reg>quarantaine</reg></expan></choice> <lb/></l>
+                <l><choice><abbr><orig>Qnt</orig></abbr><expan><reg>Quant</reg></expan></choice> venue iert le <choice><abbr><orig>Qrantaine</orig></abbr><expan><reg>Quarantaine</reg></expan></choice> <lb/></l>
                 <l>El <choice><abbr><orig>pmier</orig></abbr><expan><reg>premier</reg></expan></choice> jor faisoient <choice><orig>caine</orig><reg>çaine</reg></choice> <lb/></l>
                 <l>Li <choice><orig>abes</orig><reg>abés</reg></choice> les acumenioit <lb/></l>
                 <l><choice><abbr><orig>corp dni</orig></abbr><expan><reg>corpus domini</reg></expan></choice> lor donnoit <lb/></l>
@@ -855,7 +855,7 @@
             <pb n="339v"/> 
                 <l>En sen siege de majestieu <lb/></l>
                 <l>&amp; devant lui le fu durable <lb/></l>
-                <l>Dont il cruciera deale <lb/></l>
+                <l>Dont il cruciera <name type="devil">Deale</name> <lb/></l>
                 <l>&amp; toute li malvaise gent <lb/></l>
                 <l>Seront cruciet ensement <lb/></l>
                 <l>&amp; puis enfernal deschendront <lb/></l>
@@ -864,7 +864,7 @@
                 <l>En le forest en tel essoine <lb/></l>
                 <l><choice><orig>Poe</orig><reg>Por</reg></choice> tos lor <choice><orig>pechies</orig><reg>pechiés</reg></choice> espanir <lb/></l>
                 <l>Estoient il en tel peril <lb/></l>
-                <l><choice><abbr><orig>Qnt</orig></abbr><expan><reg>Quant</reg></expan></choice> passee iert le <choice><abbr><orig>qrantaine</orig></abbr><expan><reg>quarantainne</reg></expan></choice> <lb/></l>
+                <l><choice><abbr><orig>Qnt</orig></abbr><expan><reg>Quant</reg></expan></choice> passee iert le <choice><abbr><orig>Qrantaine</orig></abbr><expan><reg>Quarantainne</reg></expan></choice> <lb/></l>
                 <l>&amp; venoit le jor de le Cene <lb/></l>
                 <l>Au jor de ramis <choice><abbr><orig>palmar</orig></abbr><expan><reg>palmarum</reg></expan></choice> <lb/></l>
                 <l>Repairoient tot en maison <lb/></l>
@@ -877,7 +877,7 @@
                 <l><choice><abbr><orig>Aps</orig></abbr><expan><intermediate>Apres</intermediate><reg>Aprés</reg></expan></choice> faisoit les huis fremer <lb/></l>
                 <l>Puis estoient tot <choice><orig>lan</orig><reg>l'an</reg></choice> seur <lb/></l>
                 <l>Ne lor estoit cremir eur <lb/></l>
-                <l><emph n="2" rend="floriate">L</emph>i <choice><abbr><orig>pmiers</orig></abbr><expan><reg>premiers</reg></expan></choice> jors vint de <choice><abbr><orig>qresme</orig></abbr><expan><reg>quaresme</reg></expan></choice> <lb/></l>
+                <l><emph n="2" rend="floriate">L</emph>i <choice><abbr><orig>pmiers</orig></abbr><expan><reg>premiers</reg></expan></choice> jors vint de <choice><abbr><orig>Qresme</orig></abbr><expan><reg>Quaresme</reg></expan></choice> <lb/></l>
                 <l>que <choice><abbr><orig>cascus</orig></abbr><expan><reg>cascuns</reg></expan></choice> <choice><orig>diax</orig><reg>d'iax</reg></choice> aloit sen esme <lb/></l>
                 <l>Li <choice><orig>abes</orig><reg>abés</reg></choice> fist <choice><abbr><orig>q</orig></abbr><expan><reg>que</reg></expan></choice> il soloit <lb/></l>
                 <l>Ses oeilles mist hors del toit <lb/></l>
@@ -1059,10 +1059,10 @@
                 <l><name type="god">Dex</name> <choice><orig>amis</orig><reg>a mis</reg></choice> pais <choice><abbr><orig>p</orig></abbr><expan><reg>par</reg></expan></choice> tot le <choice><abbr><orig>mot</orig></abbr><expan><reg>mont</reg></expan></choice> <lb/></l>
                 <l><choice><orig>Nest</orig><reg>N'est</reg></choice> hom <choice><abbr><orig>q</orig></abbr><expan><reg>qui</reg></expan></choice> <choice><abbr><orig>tat</orig></abbr><expan><reg>tant</reg></expan></choice> voist <choice><abbr><orig>p</orig></abbr><expan><reg>par</reg></expan></choice> le <choice><abbr><orig>te</orig></abbr><expan><reg>tere</reg></expan></choice> <lb/></l>
                 <l>Qui ja oie parler de guerre <lb/></l>
-                <l>Mais sainte Eglise a <choice><abbr><orig>gnt</orig></abbr><expan><reg>grant</reg></expan></choice> besong <lb/></l>
+                <l>Mais Sainte Eglise a <choice><abbr><orig>gnt</orig></abbr><expan><reg>grant</reg></expan></choice> besong <lb/></l>
                 <l>Que por la <choice><orig>faichies</orig><reg>faichiés</reg></choice> orison <lb/></l>
                 <l>Que <name type="god">Dex</name> li envoit pais durable <lb/></l>
-                <l>&amp; le deffende del diale <lb/></l>
+                <l>&amp; le deffende del <name type="devil">Diale</name> <lb/></l>
                 <cb/>
                 
                 <l><name type="saint">Marie</name> li a respondu <lb/></l>
@@ -1080,7 +1080,7 @@
                 <l>Ke plus de .ii. <choice><orig>pies</orig><reg>piés</reg></choice> &amp; demi <lb/></l>
                 <l>Avoit entre le tere &amp; li <lb/></l>
                 <l>Ou ele faisoit se proiere <lb/></l>
-                <l>Tant <choice><orig>lavoit</orig><reg>l'avoit</reg></choice> <name type="god"><choice><abbr><orig>nre</orig></abbr><expan><reg>Nostre</reg></expan></choice> Sire</name> chiere <lb/></l>
+                <l>Tant <choice><orig>lavoit</orig><reg>l'avoit</reg></choice> <name type="god"><choice><abbr><orig>Nre</orig></abbr><expan><reg>Nostre</reg></expan></choice> Sire</name> chiere <lb/></l>
                 <l>De le paor <choice><orig>quot</orig><reg>qu'ot</reg></choice> <name type="character"><choice><orig>Zisomas</orig><reg>Zosimas</reg></choice></name> <lb/></l>
                 <l><choice><orig>Sen</orig><reg>S'en</reg></choice> <choice><abbr><orig>comenche</orig></abbr><expan><reg>conmenche</reg></expan></choice> a aler le pas <lb/></l>
                 <l>Cuida fantosme avoir <choice><abbr><orig>tve</orig></abbr><expan><intermediate>trove</intermediate><reg>trové</reg></expan></choice> <lb/></l>
@@ -1102,7 +1102,7 @@
                 <l>Ele <choice><abbr><orig>lempst</orig></abbr><expan><intermediate>lemprist</intermediate><reg>l'emprist</reg></expan></choice> a lever <lb/></l>
                 <l><choice><orig>Derekies</orig><reg>Derekiés</reg></choice> se <choice><abbr><orig>pst</orig></abbr><expan><reg>prist</reg></expan></choice> <choice><orig>aplorer</orig><reg>a plorer</reg></choice> <lb/></l>
                 <l>Dame dist il saintime feme <lb/></l>
-                <l>Dont <choice><orig>estu</orig><reg>es tu</reg></choice> <choice><orig>?</orig><reg></reg></choice> nee &amp; de <choice><abbr><orig>ql</orig></abbr><expan><reg>quel</reg></expan></choice> regne <lb/></l>
+                <l>Dont <choice><orig>estu</orig><reg>es tu</reg></choice> <choice><orig>?</orig><reg></reg></choice><!-- LL: This appears to be a scribal error. The scribe started to write something and struck it out --> nee &amp; de <choice><abbr><orig>ql</orig></abbr><expan><reg>quel</reg></expan></choice> regne <lb/></l>
                 <l>Descoevre me tote te vie <lb/></l>
                 <l>Por <name type="god">Dieu</name> nel me celer tu mie <lb/></l>
                 <cb/>
@@ -1156,17 +1156,17 @@
                 <l>Emferm seras si <choice><abbr><orig>&#xA76F;</orig></abbr><expan><reg>com</reg></expan></choice> je pens <lb/></l>
                 <l><choice><abbr><orig>Qnt</orig></abbr><expan><reg>Quant</reg></expan></choice> ti per &amp; ti compaignon <lb/></l>
                 <l><choice><orig>Sen</orig><reg>S'en</reg></choice> iront hors de le maison <lb/></l>
-                <l>&amp; li jor venrront de <choice><abbr><orig>qresme</orig></abbr><expan><reg>quaresme</reg></expan></choice> <lb/></l>
+                <l>&amp; li jor venrront de <choice><abbr><orig>Qresme</orig></abbr><expan><reg>Quaresme</reg></expan></choice> <lb/></l>
                 <l>Que <choice><abbr><orig>cascu</orig></abbr><expan><reg>cascun</reg></expan></choice> <choice><orig>dele</orig><reg>de le</reg></choice> ira son esme <lb/></l>
                 <l>En ton lit <choice><orig>testovra</orig><reg>t'estovra</reg></choice> gesir <lb/></l>
                 <l>Ne porras pas o iax issir <lb/></l>
                 <l>Molt <choice><orig>tiert</orig><reg>t'iert</reg></choice> <choice><abbr><orig>gnt</orig></abbr><expan><reg>grant</reg></expan></choice> <choice><orig>ues</orig><reg>ués</reg></choice> de reposer <lb/></l>
                 <l>Ne porras pas o iax aler <lb/></l>
-                <l><choice><abbr><orig>Qnt</orig></abbr><expan><reg>Quant</reg></expan></choice> passee iert le <choice><abbr><orig>qrantene</orig></abbr><expan><reg>quarantene</reg></expan></choice> <lb/></l>
-                <l>&amp; venrra le jour de le cene <lb/></l>
+                <l><choice><abbr><orig>Qnt</orig></abbr><expan><reg>Quant</reg></expan></choice> passee iert le <choice><abbr><orig>Qrantene</orig></abbr><expan><reg>Quarantene</reg></expan></choice> <lb/></l>
+                <l>&amp; venrra le jour de le Cene <lb/></l>
                 <l>Garis seras si <choice><abbr><orig>&#xA76F;</orig></abbr><expan><reg>com</reg></expan></choice> je croi <lb/></l>
                 <l>Dont reporras venir a moi <lb/></l>
-                <l>Le cors <name type="god"><choice><abbr><orig>nre</orig></abbr><expan><reg>Nostre</reg></expan></choice> Seigneur</name> me met <lb/></l>
+                <l>Le cors <name type="god"><choice><abbr><orig>Nre</orig></abbr><expan><reg>Nostre</reg></expan></choice> Seigneur</name> me met <lb/></l>
                 <l>En -i- vaissel <choice><abbr><orig>q</orig></abbr><expan><reg>qui</reg></expan></choice> <choice><abbr><orig>mlt</orig></abbr><expan><reg>molt</reg></expan></choice> soit net <lb/></l>
                 <l>Del sanc en un autre vaissel <lb/></l>
                 <l>mais che garde <choice><abbr><orig>q</orig></abbr><expan><reg>que</reg></expan></choice> <choice><abbr><orig>mlt</orig></abbr><expan><reg>molt</reg></expan></choice> soit bel <lb/></l>
@@ -1211,14 +1211,14 @@
                 <l>Qui se volsist gloirefier <lb/></l>
                 <l>Bien les garda <choice><orig>labes</orig><reg>l'abés</reg></choice> <name type="character">Jehan</name> <lb/></l>
                 <l>mais <choice><abbr><orig>qnt</orig></abbr><expan><reg>quant</reg></expan></choice> orent <choice><orig>passe</orig><reg>passé</reg></choice> cel an <lb/></l>
-                <l>li <choice><abbr><orig>pmiers</orig></abbr><expan><reg>premiers</reg></expan></choice> jors vint de <choice><abbr><orig>qresme</orig></abbr><expan><reg>quaresme</reg></expan></choice> <lb/></l>
+                <l>li <choice><abbr><orig>pmiers</orig></abbr><expan><reg>premiers</reg></expan></choice> jors vint de <choice><abbr><orig>Qresme</orig></abbr><expan><reg>Quaresme</reg></expan></choice> <lb/></l>
                 <l><choice><abbr><orig>Q</orig></abbr><expan><reg>Que</reg></expan></choice> <choice><abbr><orig>cascus</orig></abbr><expan><reg>cascuns</reg></expan></choice> aloit a son esme <lb/></l>
                 <l>En sen lit se jut <name type="character">Zosimas</name> <lb/></l>
                 <l>malades fu <choice><orig>ni</orig><reg>n'i</reg></choice> ala pas <lb/></l>
                 <l>Sot <choice><abbr><orig>q</orig></abbr><expan><reg>que</reg></expan></choice> voire ert le <choice><abbr><orig>pphetie</orig></abbr><expan><reg>prophecie</reg></expan></choice> <lb/></l>
                 <l><choice><orig>Quavoit</orig><reg>Qu'avoit</reg></choice> oi dire <name type="saint">Marie</name> <lb/></l>
-                <l>Toute passa le <choice><abbr><orig>qratene</orig></abbr><expan><reg>quarantene</reg></expan></choice> <lb/></l>
-                <l><choice><abbr><orig>Qnt</orig></abbr><expan><reg>Quant</reg></expan></choice> vint au juesoi de le cene <lb/></l>
+                <l>Toute passa le <choice><abbr><orig>Qratene</orig></abbr><expan><reg>Quarantene</reg></expan></choice> <lb/></l>
+                <l><choice><abbr><orig>Qnt</orig></abbr><expan><reg>Quant</reg></expan></choice> vint au juesoi de le Cene <lb/></l>
                 <l><name type="character">Zosimas</name> se senti gari <lb/></l>
                 <l>dont a pris <choice><abbr><orig>corpus dni</orig></abbr><expan><reg>corpus domini</reg></expan></choice> <lb/></l>
                 <l>le sanc <choice><abbr><orig>pciex</orig></abbr><expan><reg>preciex</reg></expan></choice> ensement <lb/></l>
