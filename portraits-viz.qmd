@@ -1125,7 +1125,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">dis. & set anz. en la gastine<br></span>
 <span class="verse-line"><span class="line-number">685</span>puis fu trente anz <span class="negation">unc ne</span> manja<br></span>
 <span class="verse-line">Se li angres Deu ne lui porta<br></span>
-<span class="verse-line">deable lui vint de premier<br></span>
+<span class="verse-line">Deable lui vint de premier<br></span>
 <span class="verse-line">Sovent la soloit essaier<br></span>
 <span class="verse-line">tot ceo lui faisoit remembrer<br></span>
 <span class="verse-line"><span class="line-number">690</span>Que ele soloit jadis amer<br></span>
@@ -1282,7 +1282,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">for seventeen years in the wilderness.<br></span>
 <span class="verse-line"><span class="line-number">685</span>Then, for thirty years, she <span class="negation">never</span> ate<br></span>
 <span class="verse-line">but what the angel of God brought to her.<br></span>
-<span class="verse-line">The devil came to her at first.<br></span>
+<span class="verse-line">The Devil came to her at first.<br></span>
 <span class="verse-line">Often, he used to tempt her,<br></span>
 <span class="verse-line">making her remember all<br></span>
 <span class="verse-line"><span class="line-number">690</span>that she once used to love:<br></span>
