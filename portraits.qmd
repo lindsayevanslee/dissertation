@@ -1368,7 +1368,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">dis & set anz en la gastine<br></span>
 <span class="verse-line">puis fu .xxx. anz que ne manga<br></span>
 <span class="verse-line">Se l'angles Deu ne l'aporta<br></span>
-<span class="verse-line">dyable vint a li de premier<br></span>
+<span class="verse-line">Dyable vint a li de premier<br></span>
 <span class="verse-line"><span class="line-number">688</span>Sovent le soloit assaier<br></span>
 <span class="verse-line">tot ce li faisoit ramenbrer<br></span>
 <span class="verse-line">Qu'ele jadis soloit amer<br></span>
@@ -1523,7 +1523,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">for seventeen years in the wilderness.<br></span>
 <span class="verse-line">Then, for thirty years, she ate only<br></span>
 <span class="verse-line">what the angel of God brought to her.<br></span>
-<span class="verse-line">The devil came to her first.<br></span>
+<span class="verse-line">The Devil came to her first.<br></span>
 <span class="verse-line"><span class="line-number">688</span>Often, he used to tempt her,<br></span>
 <span class="verse-line">making her remember all<br></span>
 <span class="verse-line">that she once used to love:<br></span>
