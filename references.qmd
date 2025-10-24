@@ -149,7 +149,7 @@ Rudder, Orlando de. “La version X de *La vie de sainte Marie l'Egyptienne*. Mi
 
 Rutebeuf. “La Vie de Sainte Marie L’Égyptienne.” *Œuvres complètes*. edited by Michel Zink, Le Livre de Poche, 2001, pp. 453-529.
 
----. “Vie de Sainte Marie l’Egyptienne.” Œuvres complètes de Rutebeuf. Edited by Julia Bastin and Edmond Faral, vol. 2, 1960, pp. 9-59.
+---. “Vie de Sainte Marie l’Egyptienne.” Œuvres complètes de Rutebeuf. edited by Julia Bastin and Edmond Faral, vol. 2, 1960, pp. 9-59.
 
 Sargent, Anne Marie. “The Penitent Prostitute: The Tradition and Evolution of the Life of St. Mary the Egyptian.” *Dissertation Abstracts International - A: The Humanities and Social Sciences*, vol. 83, no. 3, 1977, pp. 1375–76. 
 
@@ -192,7 +192,7 @@ Allaire, J.J., et al. *Quarto*. Posit, PBC, 2022, https://quarto.org/. [tool]
 
 Bahr, Arthur. “Miscellaneity and Variance in the Medieval Book.” *The Medieval Manuscript Book*, Cambridge University Press, 2015, pp.181-198. [scholarship]
 
-Bamford, Heather and Emily C. Francomano. “On Digital-Medieval Manuscript Culture: A Tentative Manifesto.” *Digital Philology: A Journal of Medieval Cultures*, vol. 7, no.1, Spring 2018, pp. 29-45. [scholarship]
+Bamford, Heather and Emily C. Francomano. “On Digital-Medieval Manuscript Culture: A Tentative Manifesto.” *Digital Philology: A Journal of Medieval Cultures*, vol. 7, no. 1, Spring 2018, pp. 29-45. [scholarship]
 
 Bolter, J. David, and Richard Grusin. *Remediation: Understanding New Media*. MIT Press, 1999. [scholarship]
 
@@ -208,9 +208,11 @@ Echard, Siân. “The Ghost in the Machine: Digital Avatars of Medieval Manuscri
 
 Fafinski, Mateusz. “Facsimile Narratives: Researching the Past in the Age of Digital Reproduction.” *Digital Scholarship in the Humanities*, vol. 37, no. 1, April 2022, pp. 94-108. [scholarship]
 
-Foys, Martin, et al. *Old English Poetry in Facsimile 3.0*. Center for the History of Print and Digital Culture, University of Wisconsin-Madison, 2019-present, https://oepoetryfacsimile.org [repository]
+Foys, Martin. “Digital Editions and the Medieval Untext: Restorative Retention in the *Old English Poetry in Facsimile* Project.” *ARCHIV theorie & praxis*, vol. 77, no. 1, pp. 33-39. [scholarship]
 
-Fritschi, Ramona. “e-codices – Virtual Manuscript Library of Switzerland: Great Achievements and Even Greater Challenges to Come.” *Digital Philology: A Journal of Medieval Cultures*, vol.6, no.2, Fall 2017, pp. 244-256. [scholarship]
+---, et al. *Old English Poetry in Facsimile 3.0*. Center for the History of Print and Digital Culture, University of Wisconsin-Madison, 2019-present, https://oepoetryfacsimile.org [repository]
+
+Fritschi, Ramona. “e-codices – Virtual Manuscript Library of Switzerland: Great Achievements and Even Greater Challenges to Come.” *Digital Philology: A Journal of Medieval Cultures*, vol. 6, no. 2, Fall 2017, pp. 244-256. [scholarship]
 
 *Fragmentarium*. Manuscript Research Center - University of Fribourg, 2013-present, https://fragmentarium.ms/. [repository]
 
@@ -284,7 +286,7 @@ Cloetta, Wilhelm. “Poème moral.” *Romanische Forschungen*, vol. 3, edited b
 
 Ginguené, Pierre-Louis. “Poètes français, Thibaut de Vernon, Alfrius et Lambert de Liège.” *Histoire littéraire de la France*, vol. 13, 1814, pp. 112-114. https://gallica.bnf.fr/ark:/12148/bpt6k6269361v/f146.item.r=Histoire%20litteraire%20de%20la%20France%201814%20Ginguene.
 
-“Notice d’un manuscrit françois conservé dans la bibliothèque de Sorbonne.” *Histoire de l’Académie royale des inscriptions et belles-lettres, avec Les Mémoires de Littérature tirés des Registres de cette Acádemie, depuis l’année M. DCCXLIC, jusques & compris l’année M. DCCLI*, volume 23, edited by Charles Le Beau, Imprimerie royale, 1756, pp. 254-261. https://gallica.bnf.fr/ark:/12148/bpt6k57209789/f274.item.
+“Notice d’un manuscrit françois conservé dans la bibliothèque de Sorbonne.” *Histoire de l’Académie royale des inscriptions et belles-lettres, avec Les Mémoires de Littérature tirés des Registres de cette Acádemie, depuis l’année M. DCCXLIC, jusques & compris l’année M. DCCLI*, vol. 23, edited by Charles Le Beau, Imprimerie royale, 1756, pp. 254-261. https://gallica.bnf.fr/ark:/12148/bpt6k57209789/f274.item.
 
 Meyer, Paul. “Notice du MS. Bibliothèque nationale Français 6447 (Traduction de divers livres de la Bible — Légendes des saints).” *Notices et extraits des manuscrits de la Bibliothèque nationale et autres bibliothèques*, vol. 35, no. 2, Imprimerie nationale, 1896, pp. 435-510. https://gallica.bnf.fr/ark:/12148/bd6t5404189c/f61.item.
 
