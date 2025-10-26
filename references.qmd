@@ -264,6 +264,8 @@ Robinson, Peter. “Current issues in making digital editions of medieval texts 
 
 Szpiech, Ryan. “Cracking the Code: Reflections on Manuscripts in the Age of Digital Books.” *Digital Philology: A Journal of Medieval Cultures*, vol. 3, no. 1, Spring 2014, pp. 75-100. [scholarship]
 
+*Transkribus*. https://www.transkribus.org/. [tool]
+
 Tufte, Edward. *Seeing With Fresh Eyes: Meaning, Space, Data, Truth*. Graphis Press LLc, 2020. [scholarship]
 
 Warren, Michelle R. *Holy Digital Grail: A Medieval Book on the Internet*, Redwood City: Stanford University Press, 2022. https://doi-org.proxy1.library.virginia.edu/10.1515/9781503631175 [scholarship]
