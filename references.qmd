@@ -13,12 +13,12 @@
 
 **T-F^2^**: The location of the original fragment — dated to the second half of the 12th century and most likely originating in Europe — is unknown, but a photographic copy may be found here:\
 
-> Berlin, Staatsbibliothek, *Photographien von ausgewählten Fragmenten aus der Omayyaden-Moschee in Damaskus in verschiedenen Sprachen*, 1908. Mss simulata orientalia 6, Orientalische Handschriften digital, Photographs 89 (verso) & 101 (recto), http://resolver.staatsbibliothek-berlin.de/SBB000074F100000000.
+> Berlin, Staatsbibliothek, *Photographien von ausgewählten Fragmenten aus der Omayyaden-Moschee in Damaskus in verschiedenen Sprachen*, 1908. Mss simulata orientalia 6, Orientalische Handschriften digital, Photographs 89 (verso) & 101 (recto), <http://resolver.staatsbibliothek-berlin.de/SBB000074F100000000>.
 
 ## Lives of Mary the Egyptian: Editions & Translations {.unnumbered}
 Baker, Alfred Thomas. “Vie de Sainte Marie L’Egyptienne,” *Revue des langues romanes*, LIX (1916-1917), pp. 145-401. [edition]
 
-Cooke, Matthew. *Robert Grossetete’s Chasteau d’Amour to Which Are Added ‘La Vie de sainte Marie Egyptienne’ and an English Version of the Chasteau d’Amour*. Caxton Society, 1852, pp. 62-113. https://hdl.handle.net/2027/hvd.32044081105124?urlappend=%3Bseq=76%3Bownerid=114643825-80. [edition]
+Cooke, Matthew. *Robert Grossetete’s Chasteau d’Amour to Which Are Added ‘La Vie de sainte Marie Egyptienne’ and an English Version of the Chasteau d’Amour*. Caxton Society, 1852, pp. 62-113. <https://hdl.handle.net/2027/hvd.32044081105124?urlappend=%3Bseq=76%3Bownerid=114643825-80>. [edition]
 
 Cruz-Sáenz, Michèle Schiavone. *The Life of Saint Mary of Egypt: An Edition and Study of the Medieval French and Spanish Verse Redactions*. Barcelona, Puvill, 1979. [edition]
 
@@ -35,7 +35,7 @@ Acquafredda, Marilisa. “Modelli di santità femminile orientale nella Puglia d
 
 Beresford, Andrew M. “Hagiography, corporeality, and the gaze: sexual/ascetic tension in the *Vida de Santa María Egipciaca*.” *Gender and Exemplarity in Medieval and Early Modern Spain*. Eds. Morrás, María, Sanmartín Bastida, Rebeca and Kim, Yonsoo. The Medieval and Early Modern Iberian World; 79. Leiden: Brill, 2020. pp.43-74.
 
-Bisanti, Armando. “La figura di Zosima, padre ‘autorevole’, nella leggenda di Maria Egiziaca.” *Mediaeval Sophia*, vol. 13, 2013, pp. 32-43. https://www.academia.edu/4366218/BISANTI_La_figura_di_Zosima_padre_autorevole_nella_leggenda_di_Maria_Egiziaca. 
+Bisanti, Armando. “La figura di Zosima, padre ‘autorevole’, nella leggenda di Maria Egiziaca.” *Mediaeval Sophia*, vol. 13, 2013, pp. 32-43. <https://www.academia.edu/4366218/BISANTI_La_figura_di_Zosima_padre_autorevole_nella_leggenda_di_Maria_Egiziaca>. 
 
 Black, John R. “Re-modelling Monastic Holiness: Saints’ Lives and Tensions in Monasticism in Early Medieval England.” *Rewriting Holiness: Reconfiguring Vitae, Re-signifying Cults*. Ed. Gray, Madeleine. King's College London Medieval Studies; 25. London: King's College London, Centre for Late Antique and Medieval Studies, 2017. pp. 51-71.
 
@@ -45,7 +45,7 @@ Blud, Victoria. “Speaking Up and Shutting Up: Expression and Suppression in th
 
 Campbell, Emma. *Medieval Saints’ Lives: The Gift, Kinship and Community in Old French Hagiography*. Boydell & Brewer, 2008.
 
-Cazelles, Brigitte. “Modèle ou Mirage: Marie l’Égyptienne.” *The French Review*, vol. 53, no. 1, American Association of Teachers of French, 1979, pp. 13–22. *JSTOR*, http://www.jstor.org/stable/391272.
+Cazelles, Brigitte. “Modèle ou Mirage: Marie l’Égyptienne.” *The French Review*, vol. 53, no. 1, American Association of Teachers of French, 1979, pp. 13–22. *JSTOR*, <http://www.jstor.org/stable/391272>.
 
 Cortina, Lynn Rice. “The Aesthetics of Morality: Two Portraits of Mary of Egypt in the *Vida de Santa María Egipciaca*.” *Hispanic Journal*, vol. 2, no. 1, Fall 1980, pp. 41-45.
 
@@ -57,11 +57,11 @@ Dawson, Maureen Gillespie. “Hard lessons in Rutebeuf's *Lives of Mary of Egypt
 
 ---. “Reading conversion in French medieval *saint’s lives*.” *Mediaevalia*, vol. 24, 2003, pp. 325-350.
 
-Delfin, Rafael Robert. “The Devil and His Disciples in the Lives of Six Saints.” *The French Review*, vol. 62, no. 4, Mar. 1989, pp. 591-603. https://www.jstor.org/stable/395741.
+Delfin, Rafael Robert. “The Devil and His Disciples in the Lives of Six Saints.” *The French Review*, vol. 62, no. 4, Mar. 1989, pp. 591-603. <https://www.jstor.org/stable/395741>.
 
-Delmas, F. “Encore Sainte Marie l’Égyptienne.” *Revue des études byzantines*, vol. 5, no. 1, Persée - Portail des revues scientifiques en SHS, 1901, pp. 15–17. *Persée*, https://doi.org/10.3406/rebyz.1901.3376. 
+Delmas, F. “Encore Sainte Marie l’Égyptienne.” *Revue des études byzantines*, vol. 5, no. 1, Persée - Portail des revues scientifiques en SHS, 1901, pp. 15–17. *Persée*, <https://doi.org/10.3406/rebyz.1901.3376>. 
 
----. “Remarques sur la vie de Sainte Marie l’Égyptienne.” *Revue des études byzantines*, vol. 4, no. 1, Persée - Portail des revues scientifiques en SHS, 1900, pp. 35–42. *Persée*, https://doi.org/10.3406/rebyz.1900.3313. 
+---. “Remarques sur la vie de Sainte Marie l’Égyptienne.” *Revue des études byzantines*, vol. 4, no. 1, Persée - Portail des revues scientifiques en SHS, 1900, pp. 35–42. *Persée*, <https://doi.org/10.3406/rebyz.1900.3313>. 
 
 Dembowski, Peter F. “Le poème anonyme sur sainte Marie L’Égyptienne: Est-il anglo-normand?” *Atti Del XIV Congresso Internazionale Di Linguistica e Filologia Romanza*, vol. 5, 1981, pp. 445–61.
 
@@ -83,13 +83,13 @@ Gaunt, Simon. “Saints, Sex and Community: Hagiography.” *Gender and Genre in
 
 Grieve, Patricia E. “Paradise Regained in the *Vida de Santa María Egipçiaca*: Harlots, the Fall of Nations and Hagiographic Currency.” *Translatio Studii: Essays by his Students in Honor of Karl D. Uitti for his Sixty-Fifty Birthday*, ed. Renate Blumensfeld-Kosinski. Rodopi, 2000, pp. 133-154. 
 
-Heron, Onnaca. “The Lioness in the Text: Mary of Egypt as Immasculated Female Saint.” *Quidditas*, vol. 21, 2000, pp. 23-44. *MLA International Bibliography*. http://humanities.byu.edu/rmmra/.
+Heron, Onnaca. “The Lioness in the Text: Mary of Egypt as Immasculated Female Saint.” *Quidditas*, vol. 21, 2000, pp. 23-44. *MLA International Bibliography*. <https://scholarsarchive.byu.edu/rmmra/vol21/iss1/3>.
 
 Howie, Cary. “As the Saint Turns: Hagiography at the Threshold of the Visible.” *Exemplaria: A Journal of Theory in Medieval and Renaissance Studies*, vol. 2, no. 2, 2005, pp. 317-346. *MLA International Bibliography*. 
 
 Kaltsogianni, Eleni. “Zur Entstehung der Rede des Manuel II. Palaiologos auf die Heilige Maria von Ägypten [BHG 1044c].” *Parekbolai*, vol. 1, 2011, pp. 37-59.
 
-Karras, Ruth Mazo. “Holy Harlots: Prostitute Saints in Medieval Legend.” *Journal of the History of Sexuality*, vol. 1, no. 1, University of Texas Press, 1990, pp. 3–32. *JSTOR*, http://www.jstor.org/stable/3704459.
+Karras, Ruth Mazo. “Holy Harlots: Prostitute Saints in Medieval Legend.” *Journal of the History of Sexuality*, vol. 1, no. 1, University of Texas Press, 1990, pp. 3–32. *JSTOR*, <http://www.jstor.org/stable/3704459>.
 
 ---. “Sex, Money, and Prostitution in Medieval English Culture.” *Desire and Discipline: Sex and Sexuality in the Premodern West*. Eds. Murray, Jacqueline and Eisenbichler, Konrad. Toronto: University of Toronto Press, 1996. pp. 201-216. 
 
@@ -111,13 +111,13 @@ Maslanka, Christopher. “From Wench to Wonder Woman: Lenten Discipline and Mira
 
 McCulloch, Florence. “Villon’s Portrait of the Belle Heaulmière and Saint Mary the Egyptian.” *Mélanges de Linguistique, de Littérature et de Philologie Médiévales Offerts à J.R. Smeets*, 1982, pp. 187–93.
 
-Meyer, Paul. “Notice du MS. Bibliothèque nationale Français 6447 (Traduction de divers livres de la Bible — Légendes des saints).” *Notices et extraits des manuscrits de la Bibliothèque nationale et autres bibliothèques*, vol. 35, no. 2, Imprimerie nationale, 1896, pp. 435-510. https://gallica.bnf.fr/ark:/12148/bd6t5404189c/f61.item.
+Meyer, Paul. “Notice du MS. Bibliothèque nationale Français 6447 (Traduction de divers livres de la Bible — Légendes des saints).” *Notices et extraits des manuscrits de la Bibliothèque nationale et autres bibliothèques*, vol. 35, no. 2, Imprimerie nationale, 1896, pp. 435-510. <https://gallica.bnf.fr/ark:/12148/bd6t5404189c/f61.item>.
 
-Miller, Patricia Cox. “Is There a Harlot in This Text? Hagiography and the Grotesque.” *Journal of Medieval and Early Modern Studies*, vol. 33, no. 3, Sept. 2003, pp. 419–35, https://doi.org/10.1215/10829636-33-3-419. 
+Miller, Patricia Cox. “Is There a Harlot in This Text? Hagiography and the Grotesque.” *Journal of Medieval and Early Modern Studies*, vol. 33, no. 3, Sept. 2003, pp. 419–35, <https://doi.org/10.1215/10829636-33-3-419>. 
 
 Mirachvili-Springer, Nana. “Les pécheresses repenties et les saintes travesties dans l'hagiographie géorgienne.” *Revue des études byzantines*, vol. 70, 2012, pp. 149-174.
 
-Nash, Suzanne. “Rutebeuf’s Contribution to the Saint Mary the Egyptian Legend.” *The French Review*, vol. 44, no. 4, American Association of Teachers of French, 1971, pp. 695–705. *JSTOR*, http://www.jstor.org/stable/385570.
+Nash, Suzanne. “Rutebeuf’s Contribution to the Saint Mary the Egyptian Legend.” *The French Review*, vol. 44, no. 4, American Association of Teachers of French, 1971, pp. 695–705. *JSTOR*, <http://www.jstor.org/stable/385570>.
 
 Noret, Jacques. “Un fragment de la *Vie de Marie l'Égyptienne* à New Haven.” *Analecta Bollandiana*, vol. 105, no. 1-2, 1987, pp. 133-134. Doi: 10.1484/J.ABOL.4.03189.
 
@@ -139,11 +139,11 @@ Robertson, Duncan. “‘Cume lur cumpaine et lur veisine’: women's roles in A
 
 ---. “Poem and Spirit. The Twelfth-Century French Life of Saint Mary the Egyptian.” *Medioevo Romanzo*, vol. 7, no. 3, 1980, pp. 305–327.
 
----. “The Anglo-Norman Verse Life of St. Mary the Egyptian.” *Romance Philology*, vol. 52, no. 1, Brepols, 1998, pp. 13–44. *JSTOR*, https://www.jstor.org/stable/44742494. 
+---. “The Anglo-Norman Verse Life of St. Mary the Egyptian.” *Romance Philology*, vol. 52, no. 1, Brepols, 1998, pp. 13–44. *JSTOR*, <https://www.jstor.org/stable/44742494>. 
 
 ---. *The Medieval Saints’ Lives: Spiritual Renewal and Old French Literature*. French Forum, 1995.
 
----. “Twelfth-Century Literary Experience: The Life of St. Mary the Egyptian.” *Pacific Coast Philology*, vol. 22, no. 1/2, Penn State University Press, 1987, pp. 71–77. JSTOR, https://doi.org/10.2307/1316660.
+---. “Twelfth-Century Literary Experience: The Life of St. Mary the Egyptian.” *Pacific Coast Philology*, vol. 22, no. 1/2, Penn State University Press, 1987, pp. 71–77. JSTOR, <https://doi.org/10.2307/1316660>.
 
 Rudder, Orlando de. “La version X de *La vie de sainte Marie l'Egyptienne*. Mise en prose et catéchèse.” *Médiévales*, vol. 1, 1982, pp. 39-47. Doi: 10.3406/medi.1982.883.
 
@@ -155,11 +155,11 @@ Sargent, Anne Marie. “The Penitent Prostitute: The Tradition and Evolution of 
 
 Scarborough, Connie L. “Seeing and Believing: the Gaze in the *Vida de Santa María Egipçiaca*.” *La Corónica*, vol. 42, no. 1, 2013, pp. 299-319.
 
-Scheil, Andrew. “Bodies and Boundaries in the Old English Life of St. Mary of Egypt.” *Neophilologus*, vol. 84, no. 1, Jan. 2000. https://doi.org/10.1023/A:1004628602435. 
+Scheil, Andrew. “Bodies and Boundaries in the Old English Life of St. Mary of Egypt.” *Neophilologus*, vol. 84, no. 1, Jan. 2000. <https://doi.org/10.1023/A:1004628602435>. 
 
 Seidenspinner-Núñez, Dayle. “The Poetics of (non)Conversion: the *Vida de Santa María Egipçiaca* and *La Celestina*.” *Medievalia et humanistica*, n.s., vol. 18, 1992, pp. 95-128.
 
-Szarmach, Paul E. “More Genre Trouble: the Life of Mary of Egypt.” *Writing Women Saints in Anglo-Saxon England*. Ed. Szarmach, Paul E.. Toronto Anglo-Saxon Series; 14. Toronto: University of Toronto Press, 2013. pp. 140-164.
+Szarmach, Paul E. “More Genre Trouble: the Life of Mary of Egypt.” *Writing Women Saints in Anglo-Saxon England*. Ed. Szarmach, Paul E. Toronto Anglo-Saxon Series; 14. Toronto: University of Toronto Press, 2013. pp. 140-164.
 
 Uhlig, Marion. “Le Mari de Marie et les figures de la clergie dans *La Vie de sainte Marie l'Egyptienne* de Rutebeuf.” *Revue des Langues romanes*, vol. 114, no. 1, 2010, pp. 179-201.
 
@@ -188,7 +188,7 @@ Zubillaga, Carina. “Categorías espaciales y dicotomías jerárquicas en la de
 ---. “Pecados de juventud: inicios y desvíos de la leyenda medieval de Santa María Egipcíaca en Francia y España.” *Diálogos medievales: Estudios argentinos de literatura francesa*. Eds. Artal Maillie, Susana and Dumas, María. Buenos Aires: Universidad Nacional de General Sarmiento, 2017. pp. 101-106.
 
 ## Digital Humanities Scholarship, Projects, Repositories, & Tools
-Allaire, J.J., et al. *Quarto*. Posit, PBC, 2022, https://quarto.org/. [tool]
+Allaire, J.J., et al. *Quarto*. Posit, PBC, 2022, <https://quarto.org/>. [tool]
 
 Bahr, Arthur. “Miscellaneity and Variance in the Medieval Book.” *The Medieval Manuscript Book*, Cambridge University Press, 2015, pp.181-198. [scholarship]
 
@@ -200,7 +200,7 @@ Bryant, John. *The Fluid Text: A Theory of Revision and Editing for Book and Scr
 
 Busch, Hannah and Philipp Hegel. “Automatic Layout Analysis and Storage of Digitized Medieval Books.” *Digital Philology: A Journal of Medieval Cultures*, vol. 6, no. 2, Fall 2017, pp. 196-212. [scholarship]
 
-*Digital Scriptorium 2.0*. https://digital-scriptorium.org/. [repository] 
+*Digital Scriptorium 2.0*. <https://digital-scriptorium.org/>. [repository] 
 
 Drimmer, Sonja. “Introduction: The Manuscript Copy and the Printed Original in the Digital Present.” *Digital Philology: A Journal of Medieval Cultures*, vol. 9, no. 2, Fall 2020, pp. 93-119. [scholarship]
 
@@ -210,29 +210,29 @@ Fafinski, Mateusz. “Facsimile Narratives: Researching the Past in the Age of D
 
 Foys, Martin. “Digital Editions and the Medieval Untext: Restorative Retention in the *Old English Poetry in Facsimile* Project.” *ARCHIV theorie & praxis*, vol. 77, no. 1, pp. 33-39. [scholarship]
 
----, et al. *Old English Poetry in Facsimile 3.0*. Center for the History of Print and Digital Culture, University of Wisconsin-Madison, 2019-present, https://oepoetryfacsimile.org [repository]
+---, et al. *Old English Poetry in Facsimile 3.0*. Center for the History of Print and Digital Culture, University of Wisconsin-Madison, 2019-present, <https://oepoetryfacsimile.org> [repository]
 
 Fritschi, Ramona. “e-codices – Virtual Manuscript Library of Switzerland: Great Achievements and Even Greater Challenges to Come.” *Digital Philology: A Journal of Medieval Cultures*, vol. 6, no. 2, Fall 2017, pp. 244-256. [scholarship]
 
-*Fragmentarium*. Manuscript Research Center - University of Fribourg, 2013-present, https://fragmentarium.ms/. [repository]
+*Fragmentarium*. Manuscript Research Center - University of Fribourg, 2013-present, <https://fragmentarium.ms/>. [repository]
 
-Haugen, Odd Einar, editor. *MUFI Character Recommendation: Characters in the Official Unicode Standard and in the Private Use Area for Medieval Texts Written in the Latin Alphabet* (Version 4.0), Medieval Unicode Font Initiative (MUFI), 2015. https://hdl.handle.net/1956/10699. [tool]
+Haugen, Odd Einar, editor. *MUFI Character Recommendation: Characters in the Official Unicode Standard and in the Private Use Area for Medieval Texts Written in the Latin Alphabet* (Version 4.0), Medieval Unicode Font Initiative (MUFI), 2015. <https://hdl.handle.net/1956/10699>. [tool]
 
 Honkapohja, Alpo. “Digital Approaches to Manuscript Abbreviations: Where Are We at the Beginning of the 2020s?” *Digital Medievalist*, vol. 14, 2021. [scholarship]
 
-*International Image Interoperability Framework (IIIF)*. 2011-present, https://iiif.io/. [tool]
+*International Image Interoperability Framework (IIIF)*. 2011-present, <https://iiif.io/>. [tool]
 
 Jänicke, Stefan, and David Joseph Wrisley. “Visualizing *Mouvance*: Toward a Visual Analysis of Variant Medieval Text Traditions.” *Digital Scholarship in the Humanities*, vol. 32, suppl. 2, 2017, pp.ii106-ii123. [scholarship]
 
 Kiss, Farkas Gábor, et al. “Old Light on New Media: Medieval Practices in the Digital Age.” *Digital Philology: A Journal of Medieval Cultures*, vol. 2, no. 1, Spring 2013, pp. 16-34. [scholarship]
 
-Lee, Loren. *dissertation* (Version 1.0.0), GitHub, 2025. https://github.com/leeloren/dissertation. [repository]
+Lee, Loren. *dissertation* (Version 1.0.0), GitHub, 2025. <https://github.com/leeloren/dissertation>. [repository]
 
----. *marie-legyptienne* (Version 1.0.0), GitHub, 2024. https://github.com/leeloren/marie-legyptienne. [repository]
+---. *marie-legyptienne* (Version 1.0.0), GitHub, 2024. <https://github.com/leeloren/marie-legyptienne>. [repository]
 
 Lit, L. W. C. van (Lambertus Willem Cornelis). *Among Digitized Manuscripts: Philology, Codicology, Paleography In a Digital World*. Brill, 2020. [scholarship]
 
-*Lives of the Saints: The Medieval French Hagiography Project*. directed by Amy V. Ogden, The Institute for Advanced Technology in the Humanities, 2006, https://frenchsaintslives.org/. Accessed 10 March 2025. [project]
+*Lives of the Saints: The Medieval French Hagiography Project*. directed by Amy V. Ogden, The Institute for Advanced Technology in the Humanities, 2006, <https://frenchsaintslives.org/>. Accessed 10 March 2025. [project]
 
 Mahoney-Steel, Tamsyn. “Encoding and Decoding Machaut.” *Meeting the Medieval in a Digital World*, edited by Matthew Evan Davis, Tamsyn Mahoney-Steel, and Ece Turnator, Arc Humanities Press, 2018, pp. 123-142. [scholarship]
 
@@ -244,7 +244,7 @@ Nichols, Stephen G. *From Parchment to Cyberspace: Medieval Literature In the Di
 
 ---. “Introduction: Philology in a Manuscript Culture.” *The New Philology*, special issue of *Speculum: A Journal of Medieval Studies*, vol. 65, no.1, 1990, pp. 1-10. [scholarship]
 
-Porter, Dot. “The Uncanny Valley and the Ghost in the Machine: a discussion of analogies for thinking about digitized medieval manuscripts.” *Dot Porter Digital: Development in Production*. http://www.dotporterdigital.org/the-uncanny-valley-and-the-ghost-in-the-machine-a-discussion-of-analogies-for-thinking-about-digitized-medieval-manuscripts/. Accessed April 2023. [scholarship]
+Porter, Dot. “The Uncanny Valley and the Ghost in the Machine: a discussion of analogies for thinking about digitized medieval manuscripts.” *Dot Porter Digital: Development in Production*. <http://www.dotporterdigital.org/the-uncanny-valley-and-the-ghost-in-the-machine-a-discussion-of-analogies-for-thinking-about-digitized-medieval-manuscripts/>. Accessed April 2023. [scholarship]
 
 Prescott, Andrew. “Ways of Seeing Manuscripts.” *Medieval Manuscripts in the Digital Age*, Routledge, 2020, pp.37-54. [scholarship]
 
@@ -252,7 +252,7 @@ Quéret-Podesta, Adrien. “Les inscriptions marginales, source d’informations
 
 Robertson, Abigail G. “A Note on Technology and Functionality in Digital Manuscript Studies.” *Medieval Manuscripts in the Digital Age*, Routledge, 2020, pp. 33-36. [scholarship]
 
-Robinson, Peter. “Current issues in making digital editions of medieval texts — or, do electronic scholarly editions have a future?” *Digital Medievalist*, vol. 1, no. 1, 2005, http://doi.org/10.16995/dm.8. [scholarship]
+Robinson, Peter. “Current issues in making digital editions of medieval texts — or, do electronic scholarly editions have a future?” *Digital Medievalist*, vol. 1, no. 1, 2005, <http://doi.org/10.16995/dm.8>. [scholarship]
 
 ---. “Electronic editions which we have made and which we want to make.” *Digital Philology and Medieval Texts*, Pacini, 2007, pp. 1-12. [scholarship]
 
@@ -260,68 +260,68 @@ Robinson, Peter. “Current issues in making digital editions of medieval texts 
 
 ---. “How we have been publishing the wrong way, and how we might publish a better way.” *E-Publishing: Politics and Pragmatics*, edited by Gabriel Egan, Medieval and Renaissance Text Series, 2010, pp. 139-155. [scholarship]
 
-*Roman de la Rose Digital Library*. directed by Tamsyn Mahoney-Steel, Stephen G. Nichols, and Sayeed Choudhury, Johns Hopkins Sheridan Libraries, 2007, https://dlmm.library.jhu.edu/romandelarose/. Accessed 10 March 2025. [project]
+*Roman de la Rose Digital Library*. directed by Tamsyn Mahoney-Steel, Stephen G. Nichols, and Sayeed Choudhury, Johns Hopkins Sheridan Libraries, 2007, <https://dlmm.library.jhu.edu/romandelarose/>. Accessed 10 March 2025. [project]
 
 Szpiech, Ryan. “Cracking the Code: Reflections on Manuscripts in the Age of Digital Books.” *Digital Philology: A Journal of Medieval Cultures*, vol. 3, no. 1, Spring 2014, pp. 75-100. [scholarship]
 
-*Transkribus*. https://www.transkribus.org/. [tool]
+*Transkribus*. <https://www.transkribus.org/>. [tool]
 
 Tufte, Edward. *Seeing With Fresh Eyes: Meaning, Space, Data, Truth*. Graphis Press LLc, 2020. [scholarship]
 
-Warren, Michelle R. *Holy Digital Grail: A Medieval Book on the Internet*, Redwood City: Stanford University Press, 2022. https://doi-org.proxy1.library.virginia.edu/10.1515/9781503631175 [scholarship]
+Warren, Michelle R. *Holy Digital Grail: A Medieval Book on the Internet*, Redwood City: Stanford University Press, 2022. [scholarship]
 
 ---. “Introduction: Situating Digital Archives.” *Digital Philology: A Journal of Medieval Cultures*, vol. 3, no. 2, Fall 2014, pp. 169-177. [scholarship]
 
-Whearty, Bridget. *Digital Codicology: Medieval Books and Modern Labor*, Redwood City: Stanford University Press, 2022. https://doi-org.proxy1.library.virginia.edu/10.1515/9781503634190 [scholarship]
+Whearty, Bridget. *Digital Codicology: Medieval Books and Modern Labor*, Redwood City: Stanford University Press, 2022.  [scholarship]
 
 ---. “Adam Scriveyn in Cyberspace: Loss, Labour, Ideology, and Infrastructure in Interoperable Reuse of Digital Manuscript Metadata.” *Meeting the Medieval in a Digital World*, edited by Matthew Evan Davis, Tamsyn Mahoney-Steel, and Ece Turnator, Arc Humanities Press, 2018, pp. 157-201. [scholarship]
 
-“Witnessing the Crusades in the Eastern Roman Empire with Dr. Leonora Neville” *Meeting in the Middle Ages*, University of Notre Dame Medieval Institute, 31 Dec. 2024, https://podcasts.apple.com/us/podcast/19-witnessing-the-crusades-in-the-eastern-roman-empire/id1641163866?i=1000682273287. [scholarship]
+“Witnessing the Crusades in the Eastern Roman Empire with Dr. Leonora Neville” *Meeting in the Middle Ages*, University of Notre Dame Medieval Institute, 31 Dec. 2024, <https://podcasts.apple.com/us/podcast/19-witnessing-the-crusades-in-the-eastern-roman-empire/id1641163866?i=1000682273287>. [scholarship]
 
-Xie, Yihui. *bookdown: Authoring Books and Technical Documents with R Markdown*. Chapman & Hall, 2021. https://bookdown.org/yihui/bookdown/. [tool]
+Xie, Yihui. *bookdown: Authoring Books and Technical Documents with R Markdown*. Chapman & Hall, 2021. <https://bookdown.org/yihui/bookdown/>. [tool]
 
-Yavuz, N. Kıvılcım. “Manuscript of the Month: To Transcribe, or Not to Transcribe, That is Not the Question.” *Inside Spencer: The Kenneth Spencer Research Library Blog*. https://blogs.lib.ku.edu/spencer/manuscript-of-the-month-to-transcribe-or-not-to-transcribe-that-is-not-the-question/. Accessed June 2025. [scholarship]
+Yavuz, N. Kıvılcım. “Manuscript of the Month: To Transcribe, or Not to Transcribe, That is Not the Question.” *Inside Spencer: The Kenneth Spencer Research Library Blog*. <https://blogs.lib.ku.edu/spencer/manuscript-of-the-month-to-transcribe-or-not-to-transcribe-that-is-not-the-question/>. Accessed June 2025. [scholarship]
 
 ## Manuscript Scholarship
 ### Paris, BnF, Français 23112 (T-A)
-Cloetta, Wilhelm. “Poème moral.” *Romanische Forschungen*, vol. 3, edited by Karl Vollmöller, Deichert, 1887, pp. i-x; 1-268. https://resolver.sub.uni-goettingen.de/purl?PPN345572629_0003.
+Cloetta, Wilhelm. “Poème moral.” *Romanische Forschungen*, vol. 3, edited by Karl Vollmöller, Deichert, 1887, pp. i-x; 1-268.
 
-Ginguené, Pierre-Louis. “Poètes français, Thibaut de Vernon, Alfrius et Lambert de Liège.” *Histoire littéraire de la France*, vol. 13, 1814, pp. 112-114. https://gallica.bnf.fr/ark:/12148/bpt6k6269361v/f146.item.r=Histoire%20litteraire%20de%20la%20France%201814%20Ginguene.
+Ginguené, Pierre-Louis. “Poètes français, Thibaut de Vernon, Alfrius et Lambert de Liège.” *Histoire littéraire de la France*, vol. 13, 1814, pp. 112-114. <https://gallica.bnf.fr/ark:/12148/bpt6k6269361v/f146.item.r=Histoire%20litteraire%20de%20la%20France%201814%20Ginguene>.
 
-“Notice d’un manuscrit françois conservé dans la bibliothèque de Sorbonne.” *Histoire de l’Académie royale des inscriptions et belles-lettres, avec Les Mémoires de Littérature tirés des Registres de cette Acádemie, depuis l’année M. DCCXLIC, jusques & compris l’année M. DCCLI*, vol. 23, edited by Charles Le Beau, Imprimerie royale, 1756, pp. 254-261. https://gallica.bnf.fr/ark:/12148/bpt6k57209789/f274.item.
+“Notice d’un manuscrit françois conservé dans la bibliothèque de Sorbonne.” *Histoire de l’Académie royale des inscriptions et belles-lettres, avec Les Mémoires de Littérature tirés des Registres de cette Acádemie, depuis l’année M. DCCXLIC, jusques & compris l’année M. DCCLI*, vol. 23, edited by Charles Le Beau, Imprimerie royale, 1756, pp. 254-261. <https://gallica.bnf.fr/ark:/12148/bpt6k57209789/f274.item>.
 
-Meyer, Paul. “Notice du MS. Bibliothèque nationale Français 6447 (Traduction de divers livres de la Bible — Légendes des saints).” *Notices et extraits des manuscrits de la Bibliothèque nationale et autres bibliothèques*, vol. 35, no. 2, Imprimerie nationale, 1896, pp. 435-510. https://gallica.bnf.fr/ark:/12148/bd6t5404189c/f61.item.
+Meyer, Paul. “Notice du MS. Bibliothèque nationale Français 6447 (Traduction de divers livres de la Bible — Légendes des saints).” *Notices et extraits des manuscrits de la Bibliothèque nationale et autres bibliothèques*, vol. 35, no. 2, Imprimerie nationale, 1896, pp. 435-510. <https://gallica.bnf.fr/ark:/12148/bd6t5404189c/f61.item>.
 
-Omont, Henri. “Manuscrits français de la Bibliothèque nationale.” *Catalogue général des manuscrits français: Anciens petits fonds français*, vol. 2, edited by Ernest Leroux, Bibliothèque nationale, 1902, Manuscript 23112, pp. 64-65. https://hdl.handle.net/2027/hvd.32044050532084.
+Omont, Henri. “Manuscrits français de la Bibliothèque nationale.” *Catalogue général des manuscrits français: Anciens petits fonds français*, vol. 2, edited by Ernest Leroux, Bibliothèque nationale, 1902, Manuscript 23112, pp. 64-65. <https://hdl.handle.net/2027/hvd.32044050532084>.
 
 Rouse, Richard, and Mary Rouse. *Manuscripts and Their Makers: Commercial Book Producers in Medieval Paris, 1200-1500*. Harvey Miller, vol. 1, 2000, p. 375n138.
 
-Section romane, notice de “Paris, Bibliothèque nationale de France, Manuscrits, fr. 23112” dans la base Jonas-IRHT/CNRS (permalink : http://jonas.irht.cnrs.fr/manuscrit/71291).
+Section romane, notice de “Paris, Bibliothèque nationale de France, Manuscrits, fr. 23112” dans la base Jonas-IRHT/CNRS (permalink : <http://jonas.irht.cnrs.fr/manuscrit/71291>).
 
 
 ### Oxford, Bodleian, Canonici Misc. 74 (T-B)
 Campbell, Emma. *Medieval Saints’ Lives: The Gift, Kinship and Community in Old French Hagiography*. Boydell & Brewer, 2008, pp. 205-222; 236-237; 240-241.
 
-“Canonici.” Digital Bodleian, https://digital.bodleian.ox.ac.uk/collections/canonici/.
+“Canonici.” Digital Bodleian, <https://digital.bodleian.ox.ac.uk/collections/canonici/>.
 
-Coxe, Henry Octavius. *Catalogi codicum manuscriptorum Bibliothecæ Bodleianæ pars tertia codices Græcos et Latinos Canonicianos complectens*, vol. 3, Quarto Catalogues, 1854, Manuscript 74, pp. 400; 480-481. https://archive.org/details/CanoniciGreekAndLatin/page/n243/mode/2up.
+Coxe, Henry Octavius. *Catalogi codicum manuscriptorum Bibliothecæ Bodleianæ pars tertia codices Græcos et Latinos Canonicianos complectens*, vol. 3, Quarto Catalogues, 1854, Manuscript 74, pp. 400; 480-481. <https://archive.org/details/CanoniciGreekAndLatin/page/n243/mode/2up>.
 
 Ogden, Amy V. *Hagiography, Romance and the Vie de Sainte Eufrosine*. Edward C. Armstrong Monographs, 2003.
 
 Rankka, Erik. *Li ver del juïse: Sermon en vers du XIIe siècle*. University of Uppsala, 1982.
 
-Section romane, notice de “OXFORD, Bodleian Library, Canonici misc. 074” dans la base Jonas-IRHT/CNRS (permalink : http://jonas.irht.cnrs.fr/manuscrit/73461).
+Section romane, notice de “OXFORD, Bodleian Library, Canonici misc. 074” dans la base Jonas-IRHT/CNRS (permalink : <http://jonas.irht.cnrs.fr/manuscrit/73461>).
 
 *The Life of Saint Eufrosine: In Old French Verse, with English Translation*. edited by Amy V. Ogden, MLA Texts & Translations, 2021.
 
 ### Oxford, Corpus Christi College, 232 (T-C)
-Coxe, Henry Octavius. *Catalogus codicum mss. qui in collegiis aulisque Oxoniensibus hodic adservantur*, vol. 2, Oxonii, 1852, Manuscript 232, pp. 94-95. https://archive.org/details/cataloguscodicummssquiincoll2/page/n225/mode/2up.
+Coxe, Henry Octavius. *Catalogus codicum mss. qui in collegiis aulisque Oxoniensibus hodic adservantur*, vol. 2, Oxonii, 1852, Manuscript 232, pp. 94-95. <https://archive.org/details/cataloguscodicummssquiincoll2/page/n225/mode/2up>.
 
-Dee, John. *John Dee’s Diary, Catalogue of Manuscripts and Selected Letters*. edited by James Orchard Halliwell, et al. Cambridge University Press, 2013. https://doi-org.proxy1.library.virginia.edu/10.1017/CBO9781139245791.
+Dee, John. *John Dee’s Diary, Catalogue of Manuscripts and Selected Letters*. edited by James Orchard Halliwell, et al. Cambridge University Press, 2013. <https://doi-org.proxy1.library.virginia.edu/10.1017/CBO9781139245791>.
 
----. *The Private Diary of Dr. John Dee, and the Catalogue of his Library of Manuscripts: From the Original Manuscripts in the Ashmolean Museum at Oxford, and Trinity College Library, Cambridge*. edited by James Orchard Halliwell-Phillipps, Camden Society, 1842. https://hdl.handle.net/2027/uc2.ark:/13960/t9183m473.
+---. *The Private Diary of Dr. John Dee, and the Catalogue of his Library of Manuscripts: From the Original Manuscripts in the Ashmolean Museum at Oxford, and Trinity College Library, Cambridge*. edited by James Orchard Halliwell-Phillipps, Camden Society, 1842. <https://hdl.handle.net/2027/uc2.ark:/13960/t9183m473>.
 
-Section romane, notice de “OXFORD, Corpus Christi College, 232” dans la base Jonas-IRHT/CNRS (permalink : http://jonas.irht.cnrs.fr/manuscrit/73474).
+Section romane, notice de “OXFORD, Corpus Christi College, 232” dans la base Jonas-IRHT/CNRS (permalink : <http://jonas.irht.cnrs.fr/manuscrit/73474>).
 
 *St Augustine's Abbey, Canterbury*. Corpus of British Medieval Library Catalogues, 13, edited by Barker-Benfield, B. C., vol. 1-3, The British Library, in association with the British Academy, 2008.
 
@@ -330,26 +330,26 @@ Thomson, Rodney M. *A Descriptive Catalogue of the Medieval Manuscripts of Corpu
 ### Paris, BnF, Français 19525 (T-D)
 Avril, François, and Patricia Danz Stirnemann. *Manuscrits enluminés d’origine insulaire: VIIe-XXe siècle*. Bibliothèque nationale, 1987, no. 107, Manuscript 19525, pp. 67-68.
 
-Delisle, Léopold. *Le Cabinet des manuscrits de la Bibliothèque nationale: Étude sur la formation de ce dépôt comprenant les éléments d’une histoire de la calligraphie de la miniature, de la reliure, et du commerce des livres à Paris avant l’invention de l’imprimerie*, vol. 2, Imprimerie Nationale, 1874, pp. 40-58; 78-99. https://hdl.handle.net/2027/gri.ark:/13960/t7mp83h82.
+Delisle, Léopold. *Le Cabinet des manuscrits de la Bibliothèque nationale: Étude sur la formation de ce dépôt comprenant les éléments d’une histoire de la calligraphie de la miniature, de la reliure, et du commerce des livres à Paris avant l’invention de l’imprimerie*, vol. 2, Imprimerie Nationale, 1874, pp. 40-58; 78-99. <https://hdl.handle.net/2027/gri.ark:/13960/t7mp83h82>.
 
-Omont, Henri. *Catalogue général des manuscrits français. Ancien Saint-Germain français*, vol. 3, Bibliothèque nationale, 1900, Manuscript 19525, pp. 339-341. https://archive.org/details/CatalogueGeneralDesManuscritsAncStGermFr3/page/n353/mode/2up. 
+Omont, Henri. *Catalogue général des manuscrits français. Ancien Saint-Germain français*, vol. 3, Bibliothèque nationale, 1900, Manuscript 19525, pp. 339-341. <https://archive.org/details/CatalogueGeneralDesManuscritsAncStGermFr3/page/n353/mode/2up>. 
 
 Rankka, Erik. *Li ver del juïse: Sermon en vers du XIIe siècle*. University of Uppsala, 1982, pp. 39-41.
 
 Guillaume le Clerc de Normandie. *Le Besant de Dieu*. edited by Pierre Ruelle, Éditions de l’Université de Bruxelles, 1973, pp. 12-13.
 
----. *Le Besant de Dieu*. edited by Ernst Martin, Halle, 1869, pp. i-x. https://hdl.handle.net/2027/hvd.32044087007282.
+---. *Le Besant de Dieu*. edited by Ernst Martin, Halle, 1869, pp. i-x. <https://hdl.handle.net/2027/hvd.32044087007282>.
 
-Section romane, notice de “Paris, Bibliothèque nationale de France, Manuscrits, fr. 19525” dans la base Jonas-IRHT/CNRS (permalink : http://jonas.irht.cnrs.fr/manuscrit/45875).
+Section romane, notice de “Paris, Bibliothèque nationale de France, Manuscrits, fr. 19525” dans la base Jonas-IRHT/CNRS (permalink : <http://jonas.irht.cnrs.fr/manuscrit/45875>).
 
-Söderhjelm, Werner. *De Saint Laurent: Poème Anglo-Normand du XIIe siècle*. H. Welter, 1888. https://hdl.handle.net/2027/hvd.32044087007332.
+Söderhjelm, Werner. *De Saint Laurent: Poème Anglo-Normand du XIIe siècle*. H. Welter, 1888. <https://hdl.handle.net/2027/hvd.32044087007332>.
 
-Wace. *La vie de Sainte Marguerite, poème inédit de Wace précédé de l’histoire de ses transformations et suivi de divers textes inédits et autres et de l’analyse détaillée du mystère de Sainte Marguerite*. edited by Aristide Joy, Vieweg, 1879, pp. 10-12. https://archive.org/details/laviedesaintemar00waceuoft/page/10/mode/2up.
+Wace. *La vie de Sainte Marguerite, poème inédit de Wace précédé de l’histoire de ses transformations et suivi de divers textes inédits et autres et de l’analyse détaillée du mystère de Sainte Marguerite*. edited by Aristide Joy, Vieweg, 1879, pp. 10-12. <https://archive.org/details/laviedesaintemar00waceuoft/page/10/mode/2up>.
 
 ### Paris, BnF, Arsenal 3516 (T-E)
 Benedeit. *The Anglo-Norman Voyage of St. Brendan, a Poem of the Early Twelfth Century*. edited by Edwin George Ross Waters, Oxford Clarendon Press, 1928, pp. xviii-xix.
 
-Blacker, Jean, et al. *Wace, the Hagiographical Works: The Conception Nostre Dame and the Lives of St. Margaret and St. Nicholas*. translated with introduction and notes by Jean Blacker, Glyn S. Burgess, and Amy V. Ogden, with original texts included, Brill, 2013. https://ebookcentral-proquest-com.proxy1.library.virginia.edu/lib/uva/detail.action?docID=1214278.
+Blacker, Jean, et al. *Wace, the Hagiographical Works: The Conception Nostre Dame and the Lives of St. Margaret and St. Nicholas*. translated with introduction and notes by Jean Blacker, Glyn S. Burgess, and Amy V. Ogden, with original texts included, Brill, 2013.
 
 Francis, Elizabeth A. Introduction to Wace’s *La vie de Sainte Marguerite*, edited by Elizabeth, Champion, 1932, pp. iii-xxxii.
 
@@ -359,44 +359,44 @@ Laurent, Françoise, et al. Introduction to Wace’s *Vie de sainte Marguerite, 
 
 Leurquin, Anne-Françoise. “Paris, Bibliothèque de l’Arsenal 3516.” *Album de manuscrits français du XIIIe siècle : mise en page et mise en texte*. edited by Maria Careri, Françoise Fery-Hue, Françoise Gasparri, Geneviève Hasenohr, Gillette Labory, Sylvie Lefèvre, Anne-Françoise Leurquin, Christine Ruby, 2001, pp. 139-141.
 
-Martin, Henry. *Catalogue des manuscript de la Bibliothèque de l’Arsenal*, vol. 3, Plon, 1887, Manuscript 3516, pp. 395-405. https://archive.org/details/cataloguedesmanu03bibl/page/394/mode/2up.
+Martin, Henry. *Catalogue des manuscript de la Bibliothèque de l’Arsenal*, vol. 3, Plon, 1887, Manuscript 3516, pp. 395-405. <https://archive.org/details/cataloguedesmanu03bibl/page/394/mode/2up>.
 
 Rouse, Richard, and Mary Rouse. *Manuscripts and Their Makers: Commercial Book Producers in Medieval Paris, 1200-1500*. Harvey Miller, vol. 1, 2000, p. 375n138.
 
-Section romane, notice de “Paris, Bibliothèque de l'Arsenal, 3516” dans la base Jonas-IRHT/CNRS (permalink : http://jonas.irht.cnrs.fr/manuscrit/43012).
+Section romane, notice de “Paris, Bibliothèque de l'Arsenal, 3516” dans la base Jonas-IRHT/CNRS (permalink : <http://jonas.irht.cnrs.fr/manuscrit/43012>).
 
 
 ### London, British Library, Add. 36614 (T-L)
-Ashburnham Library. *Catalogue of the Portion of the Famous Collection of Manuscripts, the Property of the Right Honorable the Earl of Ashburnham, known as The Barrois Collection, which Will Be Sold by Auction*. Sotheby, Wilkinson, & Hodge, 1901, Lot 463, pp. 171-172 with an image of the ivory cover tipped in between pp. 170-171. https://archive.org/details/ashburnhamlibrar00ashbuoft/page/n197/mode/2up.
+Ashburnham Library. *Catalogue of the Portion of the Famous Collection of Manuscripts, the Property of the Right Honorable the Earl of Ashburnham, known as The Barrois Collection, which Will Be Sold by Auction*. Sotheby, Wilkinson, & Hodge, 1901, Lot 463, pp. 171-172 with an image of the ivory cover tipped in between pp. 170-171. <https://archive.org/details/ashburnhamlibrar00ashbuoft/page/n197/mode/2up>.
 
-*Catalogue of Additions to the Manuscripts in the British Museum in the Years MDCCCC - MDCCCCV [1900-1905]*. British Museum, 1907. Manuscript 36614, pp. 156-157. https://archive.org/details/CatalogueOfAdditionsToTheMSS19005/page/n177/mode/2up.
+*Catalogue of Additions to the Manuscripts in the British Museum in the Years MDCCCC - MDCCCCV [1900-1905]*. British Museum, 1907. Manuscript 36614, pp. 156-157. <https://archive.org/details/CatalogueOfAdditionsToTheMSS19005/page/n177/mode/2up>.
 
 Chrétien de Troyes. *The Continuations of the Old French Perceval of Chrétien de Troyes*. edited by William Roach, 1949, pp. xx-xxii.
 
-Cockburn, Calum. “Our digitised collection keeps on growing.” *Medieval manuscripts blog*, British Library, 18 Jan 2022, https://blogs.bl.uk/digitisedmanuscripts/2022/01/our-digitised-collection-keeps-on-growing.html.
+Cockburn, Calum. “Our digitised collection keeps on growing.” *Medieval manuscripts blog*, British Library, 18 Jan 2022, <https://blogs.bl.uk/digitisedmanuscripts/2022/01/our-digitised-collection-keeps-on-growing.html>.
 
-“Learning Lessons from the Cyber-Attack: British Library cyber incident review.” *Knowledge Matters blog*, British Library, 8 March 2024, https://www.bl.uk/home/british-library-cyber-incident-review-8-march-2024.pdf/.
+“Learning Lessons from the Cyber-Attack: British Library cyber incident review.” *Knowledge Matters blog*, British Library, 8 March 2024, <https://www.bl.uk/home/british-library-cyber-incident-review-8-march-2024.pdf/>.
 
 Micha, Alexandre. *La tradition manuscrite des romans de Chrétien de Troyes*. 2nd ed., Droz, 1966, pp.61-62.
 
-Section romane, notice de “LONDON, British Library, Add MS 36614” dans la base Jonas-IRHT/CNRS (permalink : http://jonas.irht.cnrs.fr/manuscrit/30094).
+Section romane, notice de “LONDON, British Library, Add MS 36614” dans la base Jonas-IRHT/CNRS (permalink : <http://jonas.irht.cnrs.fr/manuscrit/30094>).
 
-Unknown artist. *panel; casket*. c.10th-11th century, The British Museum, London, Registration number 1901,1230.1. *The British Museum*, https://www.britishmuseum.org/collection/object/H_1901-1230-1.
+Unknown artist. *panel; casket*. c.10th-11th century, The British Museum, London, Registration number 1901,1230.1. *The British Museum*, <https://www.britishmuseum.org/collection/object/H_1901-1230-1>.
 
-Williman, Daniel and Karen Corsano. “In the British Royal Library.” *The World Chronicle of Guillaume de Nangis: A Manuscript’s Journey from Saint-Denis to St. Pancras*. New edition ed. Medieval Institute Publications, 2020, pp. 167-173. https://muse.jhu.edu/book/77966. 
+Williman, Daniel and Karen Corsano. “In the British Royal Library.” *The World Chronicle of Guillaume de Nangis: A Manuscript’s Journey from Saint-Denis to St. Pancras*. New edition ed. Medieval Institute Publications, 2020, pp. 167-173. <https://muse.jhu.edu/book/77966>. 
 
 ### Manchester, John Rylands Library, French 6 (T-F^1^)
-Brun, Laurent. “Manuscrit: United Kingdom / London / British Library / Egerton 2710.” *Arlima: Archives de littérature du Moyen Âge*, https://arlima.net/no/4668. 2 June 2024.
+Brun, Laurent. “Manuscrit: United Kingdom / London / British Library / Egerton 2710.” *Arlima: Archives de littérature du Moyen Âge*, <https://arlima.net/no/4668>. 2 June 2024.
 
 Fawtier, R. and E. C. Fawtier-Jones. “Notice du manuscrit *French 6* de la John Rylands Library, Manchester.” *Romania*, vol. 49, 1923, pp. 321-342.
 
-Ker, Neil Ripley. *Medieval manuscripts in British Libraries*. Oxford Clarendon Press, vol. 3, 1983, Manuscript French 6, p.433. https://archive.org/details/medievalmanuscri0003kern/page/432/mode/2up?q=%22fr.+6%22.
+Ker, Neil Ripley. *Medieval manuscripts in British Libraries*. Oxford Clarendon Press, vol. 3, 1983, Manuscript French 6, p.433. <https://archive.org/details/medievalmanuscri0003kern/page/432/mode/2up?q=%22fr.+6%22>.
 
-Marie-Laure Savoye, notice de “LONDON, British Library, Egerton MS 2710; MANCHESTER, John Rylands University Library, French MS 6” dans la base Jonas-IRHT/CNRS (permalink : http://jonas.irht.cnrs.fr/manuscrit/30588).
+Marie-Laure Savoye, notice de “LONDON, British Library, Egerton MS 2710; MANCHESTER, John Rylands University Library, French MS 6” dans la base Jonas-IRHT/CNRS (permalink : <http://jonas.irht.cnrs.fr/manuscrit/30588>).
 
 Rankka, Erik. *Li ver del juïse: Sermon en vers du XIIe siècle*. University of Uppsala, 1982, pp. 41-43.
 
-Russell, D. W. and Clive D. Field. “The Manuscript Source of the Fragment, Rylands French MS 6.” *Bulletin of the John Rylands University Library of Manchester*, vol. 71, no. 1, 1989, pp. 41-47. https://luna.manchester.ac.uk/luna/servlet/detail/Manchester~25~25~2057~199917.
+Russell, D. W. and Clive D. Field. “The Manuscript Source of the Fragment, Rylands French MS 6.” *Bulletin of the John Rylands University Library of Manchester*, vol. 71, no. 1, 1989, pp. 41-47. <https://luna.manchester.ac.uk/luna/servlet/detail/Manchester~25~25~2057~199917>.
 
 Tyson, Moses. “Hand-list of the Collections of French and Italian Manuscripts in the John Rylands Library.” *Bulletin of the John Rylands University Library of Manchester*, vol. 14, no. 2, 1930, Manuscript 6, pp.572-573.
 
@@ -408,7 +408,7 @@ Margoliouth, David Samuel and Walter Spencer-Stanhope Tyrwhitt. *Cairo, Jerusale
 Radiciotti, Paolo, and Arianna D’Ottone. “I frammenti della Qubbat al-hazna di Damasco: A proposito di una scoperta sottovalutata.” *Nea Rhome*, vol. 5, 2008, pp. 45-74.
 
 ## Reference and Theoretical Texts on Old & Middle French Language and Literature
-*Anglo-Norman Dictionary (AND2 Online Edition)*, Aberystwyth University, 2021. https://anglo-norman.net/. [reference]
+*Anglo-Norman Dictionary (AND2 Online Edition)*, Aberystwyth University, 2021. <https://anglo-norman.net/>. [reference]
 
 Campion, Edmund J. “Early Modern French Literature.” *Scholarly Editing: A Guide to Research*, MLA, 1995, pp. 417-437. [theory]
 
@@ -418,7 +418,7 @@ Colby, Alice M. *The Portrait in Twelfth-Century French Literature: An Example o
 
 Derolez, Albert. *The Paleography of Gothic Manuscripts*. Cambridge University Press, 2001. [theory]
 
-*Dictionnaire du Moyen Français*, version 2020 (DMF 2020). ATILF - CNRS & Université de Lorraine. http://www.atilf.fr/dmf. [reference]
+*Dictionnaire du Moyen Français*, version 2020 (DMF 2020). ATILF - CNRS & Université de Lorraine. <http://www.atilf.fr/dmf>. [reference]
 
 Foulet, Alfred and Mary Blakely Speer. *On Editing Old French Texts*. Regents Press of Kansas, 1979. [theory]
 
@@ -433,4 +433,4 @@ Vieillard, Françoise and Olivier Guyotjeannin. *Conseils pour l’édition des 
 Zumthor, Paul. *Essai de poétique médiévale*. Éditions du Seuil, 1972. [theory]
 
 ## Epigraph
-Thomas. “Le Roman de Tristan.” *Tristan et Iseut: Les poèmes français et La saga norroise*. Edited and translated by Philippe Walter, Lettres gothiques, 1989, pp. 329-481.
+Thomas. “Le Roman de Tristan.” *Tristan et Iseut: Les poèmes français et La saga norroise*. edited and translated by Philippe Walter, Lettres gothiques, 1989, pp. 329-481.
