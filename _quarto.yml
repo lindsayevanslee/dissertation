@@ -12,6 +12,7 @@ book:
   date-format: long
   chapters:
     - index.qmd
+    - figures.qmd
     - abstract.qmd
     - acknowledgements.qmd
     - intro.qmd
