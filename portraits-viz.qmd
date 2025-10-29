@@ -288,7 +288,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="line-number">648</span>She reshaped them with her teeth.<br></span>
 <span class="verse-line">Her stomach was sunken.<br></span>
 <span class="verse-line">She put few provisions in there.<br></span>
-<span class="verse-line">Her feet were split.[^4]<br></span>
+<span class="verse-line">Her feet were split.<br></span>
 <span class="verse-line">In many places, they were wounded<br></span>
 <span class="verse-line"><span class="folio-number">338vb</span>for she did <span class="negation">not</span> protect herself from thorns<br></span>
 <span class="verse-line">as she went through the wilderness.<br></span>
@@ -514,14 +514,14 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="negation">Never did</span> a duchess <span class="negation">or</span> a queen<br></span>
 <span class="verse-line"><span class="negation">have</span> on her head more beautiful hair.<br></span>
 <span class="verse-line">She had round ears.<br></span>
-<span class="verse-line">What's more, they were marvelously <span class="color-word">white</span>,[^1]<br></span>
+<span class="verse-line">What's more, they were marvelously <span class="color-word">white</span>,<br></span>
 <span class="verse-line"><span class="line-number">159</span>her eyebrows <span class="color-word">black</span> and becoming,<br></span>
 <span class="verse-line">and her eyes <span class="color-word">bright</span> and smiling,<br></span>
 <span class="verse-line"><span class="sequence-change">her face tender and <span class="unique-verse">covered</span><br></span></span>
 <span class="verse-line"><span class="sequence-change"><span class="color-word">like the rose that has only just bloomed</span>.<br></span></span>
 <span class="verse-line"><span class="unique-verse">Her teeth were <span class="color-word">white</span> and quite small.<br></span></span>
 <span class="verse-line"><span class="line-number">164</span><span class="unique-verse">A more beautiful mouth <span class="negation">no one ever</span> saw.<br></span></span>
-<span class="verse-line"><span class="sequence-change">She had such a pleasing expression,[^2]<br></span></span>
+<span class="verse-line"><span class="sequence-change">She had such a pleasing expression,<br></span></span>
 <span class="verse-line"><span class="sequence-change">and her look and her features <span class="color-word">bright</span>.<br></span></span>
 <span class="verse-line"><span class="sequence-change">I believe on her nose and on her chin<br></span></span>
 <span class="verse-line"><span class="sequence-change">there was <span class="negation">no</span> defect <span class="negation">at all</span>.<br></span></span>
@@ -566,7 +566,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">As she answered all with reason<br></span>
 <span class="verse-line"><span class="line-number">204</span>and had such a beautiful frame,<br></span>
 <span class="verse-line">that the son of an emperor<br></span>
-<span class="verse-line">could have taken her with honor.[^3]<br></span>
+<span class="verse-line">could have taken her with honor.<br></span>
 .....<br>
 <span class="verse-line"><span class="line-number">567</span>She roamed so long <span class="unique-verse">by night and by day</span>,<br></span>
 <span class="verse-line">hungry, thirsty, and on hard beds.<br></span>
@@ -596,7 +596,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">There was <span class="negation">not a shred</span> of pride there now.<br></span>
 <span class="verse-line"><span class="line-number">587</span>If you saw her ears,<br></span>
 <span class="verse-line">it would occur to you a great marvel<br></span>
-<span class="verse-line">for they were so skinny and deteriorated[^4]<br></span>
+<span class="verse-line">for they were so skinny and deteriorated<br></span>
 <span class="verse-line">and all woolly with <span class="color-word">white</span> hairs.<br></span>
 <span class="verse-line"><span class="color-word">Black</span> and hairy was her chest.<br></span>
 <span class="verse-line"><span class="line-number">592</span>It seemed like <span class="color-word">black</span> thorny bark.<br></span>
@@ -608,7 +608,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="sequence-change">She ate <span class="negation">nothing</span> and so that was right.<br></span></span>
 <span class="verse-line"><span class="sequence-change">She had large nails.<br></span></span>
 <span class="verse-line"><span class="sequence-change">She reshaped them with her teeth.<br></span></span>
-<span class="verse-line"><span class="line-number">597</span>Her feet were skinny and split,[^4]<br></span>
+<span class="verse-line"><span class="line-number">597</span>Her feet were skinny and split,<br></span>
 <span class="verse-line">and, in many places, were deeply wounded<br></span>
 <span class="verse-line">for she <span class="negation">did not</span> protect them from thorns<br></span>
 <span class="verse-line">as she went through the wilderness.<br></span>
@@ -838,7 +838,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="folio-number">38v</span>her eyebrows <span class="color-word">black</span> and becoming,<br></span>
 <span class="verse-line">and her eyes <span class="color-word">bright</span> and overjoyed,<br></span>
 <span class="verse-line">her small mouth well-proportioned,<br></span>
-<span class="verse-line">and she had a <span class="unique-verse">simple</span> expression,[^2]<br></span>
+<span class="verse-line">and she had a <span class="unique-verse">simple</span> expression,<br></span>
 <span class="verse-line">her face tender and <span class="color-word">blushing<br></span></span>
 <span class="verse-line"><span class="line-number">174</span><span class="color-word">like a rose that has just bloomed.<br></span></span>
 <div class="empty-line"></div>
@@ -886,7 +886,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">for she answered all with reason<br></span>
 <span class="verse-line">and had such a beautiful form<br></span>
 <span class="verse-line">that the son of an emperor<br></span>
-<span class="verse-line">could have taken her with great honor.[^3]<br></span>
+<span class="verse-line">could have taken her with great honor.<br></span>
 .....<br>
 <span class="verse-line"><span class="line-number">623</span>She went so long in the day as in the night,<br></span>
 <span class="verse-line">hungry, thirsty, and on hard beds<br></span>
@@ -916,7 +916,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="line-number">648</span>There was <span class="negation">not any</span> pride there now.<br></span>
 <span class="verse-line">If you saw her ears,<br></span>
 <span class="verse-line">it would be a great marvel to you<br></span>
-<span class="verse-line">for they were skinny and shrunken[^4]<br></span>
+<span class="verse-line">for they were skinny and shrunken<br></span>
 <span class="verse-line">and all woolly with <span class="color-word">white</span> hairs.<br></span>
 <span class="verse-line"><span class="line-number">653</span><span class="color-word">Black</span> and woolly was her chest.<br></span>
 <span class="verse-line">It seemed like thorny bark.<br></span>
@@ -928,7 +928,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">so she reshaped them with her teeth.<br></span>
 <span class="verse-line">Her stomach was all sunken.<br></span>
 <span class="verse-line">She hardly ate, so that was right.<br></span>
-<span class="verse-line"><span class="folio-number">48r</span>Her feet were split.[^4]<br></span>
+<span class="verse-line"><span class="folio-number">48r</span>Her feet were split.<br></span>
 <span class="verse-line">In many places, they were wounded<br></span>
 <span class="verse-line">for she <span class="negation">did not</span> protect herself from thorns<br></span>
 <span class="verse-line">as she went through the wilderness.<br></span>
@@ -1154,11 +1154,11 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="folio-number">16va</span><span class="negation">No</span> countess <span class="negation">or</span> queen<br></span>
 <span class="verse-line"><span class="negation">ever had</span> such a daughter.<br></span>
 <span class="verse-line">She had round ears.<br></span>
-<span class="verse-line">What's more, they were marvelously <span class="color-word">white,[^1]<br></span></span>
+<span class="verse-line">What's more, they were marvelously <span class="color-word">white,<br></span></span>
 <span class="verse-line"><span class="line-number">165</span>her eyebrows <span class="color-word">bright</span> and becoming,<br></span>
 <span class="verse-line">her eyes <span class="color-word">black</span> and smiling,<br></span>
 <span class="verse-line">her mouth small and well-proportioned,<br></span>
-<span class="verse-line">and pleasing her expression,[^2]<br></span>
+<span class="verse-line">and pleasing her expression,<br></span>
 <span class="verse-line">her face tender and <span class="color-word">blushing<br></span></span>
 <span class="verse-line"><span class="line-number">170</span><span class="color-word">like a rose that has just bloomed.<br></span></span>
 <div class="empty-line"></div>
@@ -1206,7 +1206,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">for she answered all with reason<br></span>
 <span class="verse-line"><span class="line-number">210</span>and had such a beautiful form<br></span>
 <span class="verse-line">that the son of an emperor<br></span>
-<span class="verse-line">could have taken her with honor.[^3]<br></span>
+<span class="verse-line">could have taken her with honor.<br></span>
 .....<br>
 <span class="verse-line"><span class="line-number">615</span>She roamed so long by day and by night,<br></span>
 <span class="verse-line">hungry and thirsty and on hard beds,<br></span>
@@ -1236,7 +1236,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="line-number">640</span>There was <span class="negation">not a shred</span> of pride there now.<br></span>
 <span class="verse-line"><span class="folio-number">20rb</span>If you saw her ears,<br></span>
 <span class="verse-line">it would seem to you a great marvel<br></span>
-<span class="verse-line">for they were skinny and cracked[^4]<br></span>
+<span class="verse-line">for they were skinny and cracked<br></span>
 <span class="verse-line">and with <span class="color-word">white</span> hair <span class="unique-verse">all around</span>.<br></span>
 <div class="empty-line"></div>
 <div class="empty-line"></div>
@@ -1248,7 +1248,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="line-number">650</span>She shaped them with her teeth.<br></span>
 <span class="verse-line">Her stomach was all sunken<br></span>
 <span class="verse-line">for she put poor provisions in there.<br></span>
-<span class="verse-line">Her feet were split[^4]<br></span>
+<span class="verse-line">Her feet were split<br></span>
 <span class="verse-line">and, in many places, were wounded<br></span>
 <span class="verse-line"><span class="line-number">655</span>for she <span class="negation">did not</span> protect herself from thorns<br></span>
 <span class="verse-line">as she went through the wilderness.<br></span>
@@ -1478,7 +1478,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="line-number">167</span>her eyebrows <span class="color-word">black</span> and becoming,<br></span>
 <span class="verse-line">and her eyes <span class="color-word">sparkling</span> and joyful,<br></span>
 <span class="verse-line">her mouth beautiful and well-proportioned,<br></span>
-<span class="verse-line">and pleasing her expression,[^2]<br></span>
+<span class="verse-line">and pleasing her expression,<br></span>
 <span class="verse-line">her face tender and <span class="color-word">blushing<br></span></span>
 <span class="verse-line"><span class="line-number">172</span><span class="color-word">like a freshly-bloomed rose.<br></span></span>
 <div class="empty-line"></div>
@@ -1526,7 +1526,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line">for she answered all with reason<br></span>
 <span class="verse-line">and had such a beautiful frame.<br></span>
 <span class="verse-line">The son of an emperor<br></span>
-<span class="verse-line">could have taken her with honor.[^3]<br></span>
+<span class="verse-line">could have taken her with honor.<br></span>
 .....<br>
 <span class="verse-line"><span class="line-number">613</span>She went so long by day and by night,<br></span>
 <span class="verse-line"><span class="unique-verse">through woods, through plains, and through hills,<br></span></span>
@@ -1556,7 +1556,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="line-number">638</span>She had, now, <span class="negation">not a shred</span> of pride.<br></span>
 <span class="verse-line">If you saw her ears,<br></span>
 <span class="verse-line">it would occur to you a great marvel<br></span>
-<span class="verse-line">for they were skinny and shrunken[^4]<br></span>
+<span class="verse-line">for they were skinny and shrunken<br></span>
 <span class="verse-line">and all woolly with <span class="color-word">white</span> hairs.<br></span>
 <span class="verse-line"><span class="line-number">643</span><span class="color-word">Black</span> and woolly was her chest.<br></span>
 <span class="verse-line">It so resembled thorny bark.<br></span>
@@ -1568,7 +1568,7 @@ To read these passages in translation, hover over each column with your cursor.
 <span class="verse-line"><span class="unique-verse">she ripped them with her sharp teeth.<br></span></span>
 <span class="verse-line"><span class="folio-number">115va</span>Her stomach was <span class="unique-verse">emaciated</span>[^9]<br></span>
 <span class="verse-line"><span class="unique-verse">for she had <span class="negation">none</span> of her delights.<br></span></span>
-<span class="verse-line"><span class="line-number">653</span>Her feet were split[^4]<br></span>
+<span class="verse-line"><span class="line-number">653</span>Her feet were split<br></span>
 <span class="verse-line">and wounded all over.<br></span>
 <span class="verse-line">She <span class="negation">did not</span> protect herself from thorns<br></span>
 <span class="verse-line">as she went through the wilderness.<br></span>
@@ -1627,9 +1627,9 @@ To read these passages in translation, hover over each column with your cursor.
 :::
 
 [^1]: Some might translate “Mais” at the start of this verse — which appears in copies T-A (v.166), T-B (v.158), and T-D (v.164) — with the conjunction ‘but’ to indicate that the roundness of Mary’s ears is a fault compensated for by the fact that they were marvelously white — as in ‘She had round ears, / but they were marvelously white.' However, this would violate the general rule of thumb for twelfth-century portraits that all of the characteristics of a beautiful person should be positive. Alice Colby writes that ears seldom receive much attention in the portraits of beautiful people and that ears are a feature commonly described in the portraits of ‘ugly creatures’ (96-97), but Mary the Egyptian complicates neat categorization between beauty and ugliness. It is, at least, likely that Mary’s ears are mentioned in Portrait 1 to create a more stark comparison between their initial beauty and their later condition in the desert. Therefore, I have translated *mais* in such a way that conveys the full initial beauty of her ears.
-[^2]: Copies T-B (v.165), T-D (v.168), and T-E (v.170) each use a form of the adjective *piu* (pious; compassionate, merciful, benevolent, kind) to describe Mary the Egyptian’s *regardure* (glance, gaze; expression, outward appearance). Although it is a possible translation, ‘pious’ does not seem to be the best choice here as this verse portrays Mary during her most sinful period when she is explicitly indifferent toward God (v.192). Similarly, it seems inappropriate to suggest that Mary would have a ‘compassionate’ look when just before Portrait 1 (vv.126-148), the T-poet recounts Mary’s apparent pleasure at the sight of her many lovers stabbing each other to death at her feet. It may be that this verse foreshadows Mary’s renewed piety and benevolence in the second portrait, but in this moment, Mary’s body and way of being are otherwise only outwardly pleasing, so I have translated the phrase to convey her ‘pleasing expression.’ T-C also offers a challenging verse to interpret, uniquely describing her expression as *simple*, suggesting a plain look of humility, modesty, or innocence, but luckily the Modern English ‘simple’ satisfies these connotations. T-A is the only copy to list Mary’s foot among her positive qualities, suggesting in this verse that she is outwardly pleasing from head to toe.
-[^3]: The translation of this verse in each of the copies intentionally leaves room for some ambiguity. While the verb *prendre* in this context may imply ‘to take in marriage,’ the verb also has the undeniable sexual connotation of ‘to take, have sexual intercourse with.’ Whether the poet means that the son of an emperor might have married Mary or only taken her in as his concubine, either way it is clear that the arrangement would be appropriate and honorable. Mary the Egyptian is not your average escort.
-[^4]: While copies T-A and T-D end each of these verses — vv.639 & 651 in T-A and vv.643 & 653 in T-D — with the past participle of *decrever* (to smash, break; to crack, split), copies T-C and T-E initially use the past participle of *decrestre* (to decrease; to degrade; to shrink) — v.651 in T-C and v.641 in T-E — in order to meet the demands of the rhyme scheme, which pairs the past participle of *decrestre* with the adjective *mossu* (mossy; woolly; fuzzy). T-B follows the same pattern found in copies T-C and T-E but initially uses "degregue" (v.589 in T-B), which seems to be a misspelling of *degrader* (to degrade; to deteriorate).
+[^2]: Copies T-B (v.165), T-D (v.168), and T-E (v.170) each use a form of the adjective *piu* (pious; compassionate, merciful, benevolent, kind) to describe Mary the Egyptian’s *regardure* (glance, gaze; expression, outward appearance). Although it is a possible translation, ‘pious’ does not seem to be the best choice here as this verse portrays Mary during her most sinful period when she is explicitly indifferent toward God (v.192). Similarly, it seems inappropriate to suggest that Mary would have a ‘compassionate’ look when just before Portrait 1 (vv.126-148), the T-poet recounts Mary’s apparent pleasure at the sight of her many lovers stabbing each other to death at her feet. It may be that this verse foreshadows Mary’s renewed piety and benevolence in the second portrait, but in this moment, Mary’s body and way of being are otherwise only outwardly pleasing, so I have translated the phrase to convey her ‘pleasing expression.’ T-C (v.172) also offers a challenging verse to interpret, uniquely describing her expression as *simple*, suggesting a plain look of humility, modesty, or innocence, but luckily the Modern English ‘simple’ satisfies these connotations. T-A (v.170) is the only copy to list Mary’s foot among her positive qualities, suggesting in this verse that she is outwardly pleasing from head to toe.
+[^3]: The translation of this verse in each of the copies — T-A (v.216), T-B (v.206), T-C (v.218), T-D (v.212), and T-E (v.216) — intentionally leaves room for some ambiguity. While the verb *prendre* in this context may imply ‘to take in marriage,’ the verb also has the undeniable sexual connotation of ‘to take, have sexual intercourse with.’ Whether the poet means that the son of an emperor might have married Mary or only taken her in as his concubine, either way it is clear that the arrangement would be appropriate and honorable. Mary the Egyptian is not your average escort.
+[^4]: While copies T-A and T-D end each of these verses — vv.639 & 651 in T-A and vv.643 & 653 in T-D — with the past participle of *decrever* (to smash, break; to crack, split), copies T-C and T-E initially use the past participle of *decrestre* (to decrease; to degrade; to shrink) — v.651 in T-C and v.641 in T-E — in order to meet the demands of the rhyme scheme, which pairs the past participle of *decrestre* with the adjective *mossu* (mossy; woolly; fuzzy). Then — like T-A and T-D — T-E (v.653) uses the part participle of *decrever*, and T-C (v.663) uses the past participle of *escrever* — a near synonym of *decrever*. T-B follows the same pattern found in copies T-C and T-E but initially uses "degregue" (v.589 in T-B), which seems to be a misspelling of *degrader* (to degrade; to deteriorate), followed by “decrevez” in v.597.
 [^5]: A *toise* is a unit of measurement of approximately six feet derived from an arm span. The scribe of T-B may be inviting the reader not just to think of Mary the Egyptian’s size but more specifically to consider the proportions of her upper body, which would be accentuated by her *bliaut*. With the end rhyme of “proise” — *proiser* (to value; to prize) in the following verse (v.182 in T-B), it is possible that the scribe is also implying that Mary’s body may be both ‘praised’ for its quality and ‘appraised’ for its worth.
 [^6]: Readers might interpret the verb of this verse (v.616 in T-B) as *esrager* (‘to go mad, wild, or rabid’) — as in ‘then she went wild for the grasses of the fields’ — but that interpretation disrupts the otherwise peaceful existence Mary is experiencing the desert. Instead *esracher* (to uproot; to tear out; to pull away) has been applied here in alignment with the same verse as it appears in copies T-A (v.674), T-C (v.686), and T-D (v.676). Uniquely, T-E (v.676) uses the verb *acqueller* (to gather; to seize).
 [^7]: It is not totally clear what word the scribe intended to write at the start of this verse (v.176 in T-E) — Dembowski puts a question mark next to the word in the variance notes of his edition (75n176) — but the manuscript clearly reads “Loiet.” It is possible the scribe miscopied an abbreviated form of the verb *ondoier* (to flow; to abound) from an exemplar, which would align well with the same verse as it appears in all other copies — apart from T-B which omits this verse. It could be that the scribe is using the verb *loer* (or *loier*) to say that her hair was ‘praised’ or ‘acclaimed.’ It is also possible — though less likely — that the scribe is using an unusual spelling of *lier*, which uncommonly may be spelled *loier*, meaning ‘bound’ or ‘tied.’ I have translated the word as ‘long’ to keep this verse in alignment with the meaning of the same verse in the other copies while also subtly signaling the uniqueness of this copy. Though “Loiet” is not at all an acceptable spelling of ‘long,’ it seems to me that ‘long’ may be the safest translation as it conveys what would be an expected trait for a beautiful woman’s hair in the context of a twelfth-century portrait: length.
