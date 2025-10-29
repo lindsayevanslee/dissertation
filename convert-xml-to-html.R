@@ -1,4 +1,4 @@
-#function to create html from xml
+# function to create html from xml
 convert_xml_to_html <- function(xml_file, 
                                 version_name = c("minimal", "intermediate", "extensive"),
                                 min_line = NULL, 
@@ -24,38 +24,45 @@ convert_xml_to_html <- function(xml_file,
     # Initialize an empty list to store the processed lines
     processed_lines <- list()
     
-    # Initialize line counter
+    # --- NEW: state for folio handling and range tracking
     line_count <- 0
-    # Track if we're within our desired verse range
     in_desired_range <- FALSE
+    last_folio <- NULL           # most recent <pb n="..."> seen (always recorded)
+    folio_emitted <- FALSE       # ensure we only inject the prelude folio once
+    need_prelude_folio <- FALSE  # signal to inject just before first kept line
     
     # Function to process each element with whitespace preservation
     process_line <- function(line) {
         
-        # Handle page breaks differently
+        # Handle page breaks: always record latest folio, render only if in-range
         if (xml_name(line) == "pb") {
-            # Get folio number and format as standalone line
-            folio_num <- xml_attr(line, "n")
-            return(sprintf("<div class='folio-number'>%s</div>", folio_num))
+            last_folio <<- xml_attr(line, "n")  # record regardless of range
+            if (!in_desired_range) return(NULL) # do not render until we're in range
+            return(sprintf("<div class='folio-number'>%s</div>", last_folio))
         }
         
-        # Only increment line count for verse lines
+        # Only increment line count and compute range for verse lines
         if (xml_name(line) == "l") {
             line_count <<- line_count + 1
             
-            # Check if we're in the desired range (verses 613-702)
-            if (is.null(min_line) && is.null(max_line)) { #min and max line are NULL
-                in_desired_range <<- TRUE
-            } else if (is.null(min_line) && !is.null(max_line) && line_count <= max_line) { #min line is NULL, max line is not NULL, and line is within range
-                in_desired_range <<- TRUE
-            } else if (!is.null(min_line) && is.null(max_line) && line_count >= min_line) { #min line is not NULL, max line is NULL, and line is within range
-                in_desired_range <<- TRUE
-            } else if (!is.null(min_line) && !is.null(max_line) && line_count >= min_line && line_count <= max_line) { #min and max line are not NULL, and line is within range
-                in_desired_range <<- TRUE
+            # compute whether *this* line is in range
+            current_in_range <- if (is.null(min_line) && is.null(max_line)) {
+                TRUE
+            } else if (is.null(min_line) && !is.null(max_line)) {
+                line_count <= max_line
+            } else if (!is.null(min_line) && is.null(max_line)) {
+                line_count >= min_line
             } else {
-                in_desired_range <<- FALSE
-                return(NULL) # Skip lines outside our range
+                line_count >= min_line && line_count <= max_line
             }
+            
+            # detect first entry into range (FALSE -> TRUE)
+            if (current_in_range && !in_desired_range) {
+                need_prelude_folio <<- TRUE
+            }
+            in_desired_range <<- current_in_range
+            
+            if (!in_desired_range) return(NULL) # Skip lines outside our range
             
             # Add line number div every 5th line
             line_number <- if (line_count %% 5 == 0) {
@@ -64,11 +71,9 @@ convert_xml_to_html <- function(xml_file,
                 ""
             }
         } else {
+            # Non-<l> elements (<cb>, etc.)
             line_number <- ""
-            # For non-line elements, if we're not in range, skip them
-            if (!in_desired_range) {
-                return(NULL)
-            }
+            if (!in_desired_range) return(NULL) # Skip non-line elements outside range
         }
         
         # Process emph elements (decorative initials)
@@ -89,12 +94,9 @@ convert_xml_to_html <- function(xml_file,
             xml_text(emph) <- styled_initial
         }
         
-        
         if (version_name == "minimal") {
-            
             # Find all <choice> elements within the line
             choices <- xml_find_all(line, ".//choice")
-            
             for (choice in choices) {
                 # Extract the text from the <orig> tag
                 orig_text <- xml_text(xml_find_first(choice, ".//orig"))
@@ -102,21 +104,18 @@ convert_xml_to_html <- function(xml_file,
                 xml_remove(xml_children(choice))
                 xml_text(choice) <- orig_text
             }
-            
-            # Now we want to remove any <reg> elements entirely
+            # remove any <reg> entirely
             reg_elements <- xml_find_all(line, ".//reg")
             xml_remove(reg_elements)
             
         } else if (version_name == "intermediate") {
             # Find all <choice> elements within the line
             choices <- xml_find_all(line, ".//choice")
-            
             for (choice in choices) {
                 abbr_exists <- xml_find_first(choice, ".//abbr")
                 expan_exists <- xml_find_first(choice, ".//expan")
-                
+                # First check if there's an intermediate tag
                 if (!is.na(abbr_exists) && !is.na(expan_exists)) {
-                    # First check if there's an intermediate tag
                     intermediate_node <- xml_find_first(choice, ".//expan/intermediate")
                     if (!is.na(intermediate_node)) {
                         # If intermediate exists, use its text
@@ -133,26 +132,21 @@ convert_xml_to_html <- function(xml_file,
                     xml_text(choice) <- orig_text
                 }
             }
-            # Now we want to remove any <reg> elements entirely
+            # remove any <reg> entirely
             reg_elements <- xml_find_all(line, ".//reg")
             xml_remove(reg_elements)
             
         } else if (version_name == "extensive") {
-            
-            # Now we want to remove any <orig> elements entirely
+            # remove <orig> entirely
             orig_elements <- xml_find_all(line, ".//orig")
             xml_remove(orig_elements)
-            
-            # Find all <choice> elements within the line
+            # collapse <choice> to <reg>
             choices <- xml_find_all(line, ".//choice")
             for (choice in choices) {
-                # Extract the text from the <reg> tag
                 reg_text <- xml_text(xml_find_first(choice, ".//reg"))
-                # Remove all children and set text directly
                 xml_remove(xml_children(choice))
                 xml_text(choice) <- reg_text
             }
-            
         }
         
         # Remove <lb/> tags entirely
@@ -183,6 +177,15 @@ convert_xml_to_html <- function(xml_file,
     for (line in lines) {
         processed_line <- process_line(line)
         if (!is.null(processed_line)) {
+            
+            # --- NEW: inject the folio that immediately precedes the first kept line
+            if (need_prelude_folio && !folio_emitted && !is.null(last_folio)) {
+                processed_lines <- c(processed_lines,
+                                     sprintf("<div class='folio-number'>%s</div>", last_folio))
+                folio_emitted <- TRUE
+                need_prelude_folio <- FALSE
+            }
+            
             if (xml_name(line) == "cb" && in_desired_range) {
                 # Add a closing </div> for the previous column and an opening <div> for the new column
                 processed_lines <- c(processed_lines, "</div>", "<div class='column-break'>")
@@ -197,4 +200,3 @@ convert_xml_to_html <- function(xml_file,
     formatted_text <- paste(c("<div class='edition-text'>", processed_lines, "</div>"), collapse = "\n")
     cat(formatted_text)
 }
-
