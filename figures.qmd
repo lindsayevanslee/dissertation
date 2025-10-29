@@ -3,29 +3,51 @@ title: "Figures"
 format: html
 ---
 
-::: {.quote-table}
-| Figure 2.1 | Screengrab of Google Sheet containing side-by-side transcriptions of Version T copies. The cells highlighted in orange indicate the verses of Portrait 2, and the uneven shading was roughly applied to begin tracing variation in this passage across the copies. |
-| --- | --- |
-| Figure 2.2 | Screengrab of digital transcription file T-D.xml in Oxygen XML Editor. The text of copy T-D appears in white; the markup tags are blue; tag attributes are red; and special characters — here, ‘&amp;’ indicates the presence of an ‘et’ symbol using an  ampersand. — are yellow. |
-| Figure 2.3 | Paris, BnF Arsenal, 3516, f.115va, line 40/50 (T-E v.690). Detail |
-| Figure 2.4 | Paris, BnF Arsenal, 3516, f.115rd, line 41/50 (T-E v.641). Detail |
-| Figure 2.5 | Paris, BnF Arsenal, 3516, f.115rd, line 49/50 (T-E v.649). Detail |
-| Figure 2.6 | Paris, BnF Arsenal, 3516, f.115rd, line 48/50 (T-E v.648). Detail |
-| Figure 2.7 | Paris, BnF Arsenal, 3516, f.115va, line 8/50 (T-E v.658). Detail |
-| Figure 2.8 | Paris, BnF Arsenal, 3516, f.115va, line 9/50 (T-E v.659). Detail |
-| Figure 2.9 | Paris, BnF Arsenal, 3516, f.115va, line 13/50 (T-E v.663). Detail |
-| Figure 2.10 | Paris, BnF Arsenal, 3516, f.115rd, line 43/50 (T-E v.643). Detail |
-| Figure 2.11 | Paris, BnF Arsenal, 3516, f.115rd, line 46/50 (T-E v.646). Detail |
-| Figure 2.12 | Paris, BnF Arsenal, 3516, f.115vb, line 1/50 (T-E v.701). Detail |
-| Figure 2.13 | Paris, BnF Arsenal, 3516, f.115rd, line 14/50 (T-E v.614). Detail |
-| Figure 2.14 | Paris, BnF Arsenal, 3516, f.115rd, line 26/50 (T-E v.626). Detail |
-| Figure 2.15 | Paris, BnF Arsenal, 3516, f.115rd, line 40/50 (T-E v.640). Detail |
-| Figure 2.16 | Paris, BnF Arsenal, 3516, f.115rd, line 46/50 (T-E v.646). Detail |
-| Figure 2.17 | Paris, BnF Arsenal, 3516, f.115rd, line 15/50 (T-E v.615). Detail |
-| Figure 2.18 | Paris, BnF Arsenal, 3516, f.115rd, line 23/50 (T-E v.623). Detail |
-| Figure 2.19 | Paris, BnF Arsenal, 3516, f.115rd, line 49/50 (T-E v.649). Detail |
-| Figure 2.20 | Paris, BnF Arsenal, 3516, f.115va, line 22/50 (T-E v.672). Detail |
-:::
++---------------+---------------------------------------------------------------------------------------------------------------------+
+| Figure 2.1    | Screengrab of Google Sheet containing side-by-side transcriptions of Version T copies. The cells highlighted in     |
+|               | orange indicate the verses of Portrait 2, and the uneven shading was roughly applied to begin tracing variation     |
+|               | in this passage across the copies.                                                                                  |
++---------------+---------------------------------------------------------------------------------------------------------------------+
+| Figure 2.2    | Screengrab of digital transcription file T-D.xml in Oxygen XML Editor. The text of copy T-D appears in white; the   |
+|               | markup tags are blue; tag attributes are red; and special characters — here, `&amp;` indicates the presence of an   |
+|               | ‘et’ symbol using an  ampersand. — are yellow.                                                                      |
++---------------+---------------------------------------------------------------------------------------------------------------------+
+| Figure 2.3    | Paris, BnF Arsenal, 3516, f.115va, line 40/50 (T-E v.690). Detail                                                   |
++---------------+---------------------------------------------------------------------------------------------------------------------+
+| Figure 2.4    | Paris, BnF Arsenal, 3516, f.115rd, line 41/50 (T-E v.641). Detail                                                   |
++---------------+---------------------------------------------------------------------------------------------------------------------+
+| Figure 2.5    | Paris, BnF Arsenal, 3516, f.115rd, line 49/50 (T-E v.649). Detail                                                   |
++---------------+---------------------------------------------------------------------------------------------------------------------+
+| Figure 2.6    | Paris, BnF Arsenal, 3516, f.115rd, line 48/50 (T-E v.648). Detail                                                   |
++---------------+---------------------------------------------------------------------------------------------------------------------+
+| Figure 2.7    | Paris, BnF Arsenal, 3516, f.115va, line 8/50 (T-E v.658). Detail                                                    |
++---------------+---------------------------------------------------------------------------------------------------------------------+
+| Figure 2.8    | Paris, BnF Arsenal, 3516, f.115va, line 9/50 (T-E v.659). Detail                                                    |
++---------------+---------------------------------------------------------------------------------------------------------------------+
+| Figure 2.9    | Paris, BnF Arsenal, 3516, f.115va, line 13/50 (T-E v.663). Detail                                                   |
++---------------+---------------------------------------------------------------------------------------------------------------------+
+| Figure 2.10   | Paris, BnF Arsenal, 3516, f.115rd, line 43/50 (T-E v.643). Detail                                                   |
++---------------+---------------------------------------------------------------------------------------------------------------------+
+| Figure 2.11   | Paris, BnF Arsenal, 3516, f.115rd, line 46/50 (T-E v.646). Detail                                                   |
++---------------+---------------------------------------------------------------------------------------------------------------------+
+| Figure 2.12   | Paris, BnF Arsenal, 3516, f.115vb, line 1/50 (T-E v.701). Detail                                                    |
++---------------+---------------------------------------------------------------------------------------------------------------------+
+| Figure 2.13   | Paris, BnF Arsenal, 3516, f.115rd, line 14/50 (T-E v.614). Detail                                                   |
++---------------+---------------------------------------------------------------------------------------------------------------------+
+| Figure 2.14   | Paris, BnF Arsenal, 3516, f.115rd, line 26/50 (T-E v.626). Detail                                                   |
++---------------+---------------------------------------------------------------------------------------------------------------------+
+| Figure 2.15   | Paris, BnF Arsenal, 3516, f.115rd, line 40/50 (T-E v.640). Detail                                                   |
++---------------+---------------------------------------------------------------------------------------------------------------------+
+| Figure 2.16   | Paris, BnF Arsenal, 3516, f.115rd, line 46/50 (T-E v.646). Detail                                                   |
++---------------+---------------------------------------------------------------------------------------------------------------------+
+| Figure 2.17   | Paris, BnF Arsenal, 3516, f.115rd, line 15/50 (T-E v.615). Detail                                                   |
++---------------+---------------------------------------------------------------------------------------------------------------------+
+| Figure 2.18   | Paris, BnF Arsenal, 3516, f.115rd, line 23/50 (T-E v.623). Detail                                                   |
++---------------+---------------------------------------------------------------------------------------------------------------------+
+| Figure 2.19   | Paris, BnF Arsenal, 3516, f.115rd, line 49/50 (T-E v.649). Detail                                                   |
++---------------+---------------------------------------------------------------------------------------------------------------------+
+| Figure 2.20   | Paris, BnF Arsenal, 3516, f.115va, line 22/50 (T-E v.672). Detail                                                   |
++---------------+---------------------------------------------------------------------------------------------------------------------+
 
-
+: {.hover tbl-colwidths="[35,65]"}
 
