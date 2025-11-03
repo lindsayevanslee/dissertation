@@ -8,7 +8,7 @@ book:
     - name: "Loren Easterday Lee Cantrell"
       affiliation: 
         name: "Department of French, University of Virginia"
-  date: "10/29/2025"
+  date: "11/02/2025"
   date-format: long
   chapters:
     - index.qmd
