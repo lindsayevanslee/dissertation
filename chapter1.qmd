@@ -144,7 +144,7 @@ In his contribution to the 2007 volume *Digital Philology and Medieval Texts*, P
 
 He goes on to argue that print editions are only *maybe* better than digital editions at doing the first thing: presenting a text. Essentially, digital editions allow us to make editions that are better at creating visualizations, visualizations that enable readers to *see* what they might otherwise be blind to in a traditional print edition. The editing practices of this dissertation seek to meet Robinson’s criteria:
 
-**1. Present a text, and present the different historical forms of the text:** Each manuscript witness of Version T is edited — with clearly delineated layers of editorial intervention — and presented in full in Appendix 2, giving greater visibility to even modest witnesses to the text like fragment T-F2.[^92]
+**1. Present a text, and present the different historical forms of the text:** Each manuscript witness of Version T is edited — with clearly delineated layers of editorial intervention — and presented in full in Appendix 2, giving greater visibility to even modest witnesses to the text like fragment T-F^2^.[^92]
 
 **2. Present the different historical forms of the text, and present the differences between the historical forms of the text:** Appendix 1 provides a thorough description and transmission history of each manuscript witness of Version T, placing each manuscript in context.
 
