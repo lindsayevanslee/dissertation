@@ -1,0 +1,22 @@
+---
+title: "Your Chapter Title"
+format:
+  html:
+    include-after-body:
+      - text: |
+          <script src="figure-number-fix.js"></script>
+          <script>
+          // Configure this chapter's figure numbering
+          window.CHAPTER_CONFIG = {
+              TARGET_CHAPTER: 1  // What chapter number should THIS chapter's figures display as?
+              // Note: Cross-references to other chapters are handled by the global
+              // GLOBAL_FIGURE_MAPPING in figure-number-fix.js
+          };
+          </script>
+---
+
+Your chapter content goes here...
+
+![Your figure](images/your-image.png){#fig-your-id}
+
+Cross-reference example: @fig-your-id or @fig-position-test
