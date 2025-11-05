@@ -310,19 +310,27 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <h2 class="anchored" data-anchor-id="methods-from-transcribing-to-encoding-appendix-2">Methods: From Transcribing to Encoding (Appendix 2)</h2>
 <p>In preparation for the digital edition begun in this dissertation — both the extracted portraits (featured in Chapter 2, Part 2) and the substantial material in Appendix 2 — extensive groundwork was necessary. As detailed in Appendix 1, I engaged deeply with the manuscripts of Version T, visiting both digital repositories and reading rooms to gather the data and images that inform every stage of the transcription and editing process.<a href="#fn11" class="footnote-ref" id="fnref11" role="doc-noteref"><sup>11</sup></a> This approach has ensured that the digital edition presented in this dissertation is firmly grounded in the material witnesses of Version T. From my work with these manuscripts, I have managed to transcribe and encode all accessible copies of Version T, with the exception of the British Library manuscript T-L.<a href="#fn12" class="footnote-ref" id="fnref12" role="doc-noteref"><sup>12</sup></a> These encoded transcriptions are now publicly available as XML files in the GitHub repository <em>marie-legyptienne</em>.<a href="#fn13" class="footnote-ref" id="fnref13" role="doc-noteref"><sup>13</sup></a> In the more immediate future, these XML files will contribute to the ongoing <em>Lives of the Saints: The Medieval French Hagiography Project</em> — a digital humanities project, directed by my advisor Amy Ogden and sponsored by The Institute for Advanced Technology in the Humanities (IATH), with the aim of making “easily accessible the information that is currently known about medieval French hagiography and to make evident the substantial holes in that knowledge” (<em>Lives of the Saints</em>, “Introduction”).<a href="#fn14" class="footnote-ref" id="fnref14" role="doc-noteref"><sup>14</sup></a> But also by making the XML files of my encoded transcriptions open access, it is my hope that they may prove useful to other interested scholars with research goals that I cannot anticipate — perhaps for the purpose of distant reading or OCR training.<a href="#fn15" class="footnote-ref" id="fnref15" role="doc-noteref"><sup>15</sup></a> As discussed in Chapter 1 (section 3. Ephemeral and Error-prone), I follow Whearty’s model of sustainability not as permanence but as potential: by making my data, methods, and decisions publically available, I aim to offer future researchers the very kind of “raw materials” (<em>Digital Codicology</em> 211) that may yet be reworked and reimagined in ways I cannot now foresee. Openly offering these files and their complete version history also furthers the goal of enhancing the transparency of the editorial process, preventing the proliferation of both the errors and silent emendations that create the “crisis of authenticity” (<em>Digital Codicology</em> 228) addressed in Chapter 1. With the use of Git for version control, anyone can see the choices I have made throughout the development of these files and of this digital edition from start to finish.</p>
 <p>Prior to diving into the XML encoding though, I first transcribed each manuscript of Version T — working from both the digitized images of the manuscripts and my own collected images — into a basic Google Sheet,<a href="#fn16" class="footnote-ref" id="fnref16" role="doc-noteref"><sup>16</sup></a> with each verse occupying its own cell.<a href="#fn17" class="footnote-ref" id="fnref17" role="doc-noteref"><sup>17</sup></a> This early stage served as a no-code method that organized the texts in a manipulatable, shareable format, and by adding color coding to this spreadsheet to highlight the major narrative scenes as they appear across the manuscript copies, I was able to quickly recognize key areas of interest and direct the focus of my subsequent research:</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/Fig2.01_GoogleSheets_color_viz.png" class="img-fluid figure-img" style="width:100.0%"></p>
-<figcaption>Figure 2.1: Screengrab of Google Sheet containing side-by-side transcriptions of Version T copies. The cells highlighted in orange indicate the verses of Portrait 2, and the uneven shading was roughly applied to begin tracing variation in this passage across the copies.</figcaption>
+<div id="fig-2_1" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-2_1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/Fig2.01_GoogleSheets_color_viz.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-2_1-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.1: Screengrab of Google Sheet containing side-by-side transcriptions of Version T copies. The cells highlighted in orange indicate the verses of Portrait 2, and the uneven shading was roughly applied to begin tracing variation in this passage across the copies.
+</figcaption>
 </figure>
 </div>
 <p>Laying out all of the T copies this way side by side made it easy to visualize how these copies differ from each other in key places, and even by merely scrolling to the bottom of the spreadsheet, one could obviously see how dramatically these copies differ in length and therefore in content.<a href="#fn18" class="footnote-ref" id="fnref18" role="doc-noteref"><sup>18</sup></a> This colorized spreadsheet served as the eventual design inspiration for the current presentation of the T portraits in this dissertation (Chapter 2, Part 2), with all of the copies arranged in parallel and with the addition of color highlighting to draw attention to the areas of interest discussed in the close reading in Chapter 3.</p>
 <p>The transcription spreadsheet not only served as an initial organizational tool and later design inspiration but also as a quality control mechanism. By first producing this Google Sheet before pivoting to encoding the transcriptions of each manuscript copy as separate XML files using Oxygen XML Editor,<a href="#fn19" class="footnote-ref" id="fnref19" role="doc-noteref"><sup>19</sup></a> I built into my work a quality control procedure that required me to review every letter of my initial transcriptions as I encoded them. During this second pass over of my transcriptions, I was forced to meticulously go back over my work, scrutinizing my initial transcriptions, and repeatedly referring back to my manuscript images. Although this process was time consuming, tedious work, it helped to improve the consistency of these important files, which now feature in this dissertation as reference material in Appendix 2. To facilitate this process, I also generated a digital transcription of Dembowski’s print edition — visible in the above screengrab as the left-most column in the spreadsheet — using OCR so that I could reference the edition more quickly when transcribing the manuscript copies.<a href="#fn20" class="footnote-ref" id="fnref20" role="doc-noteref"><sup>20</sup></a> Although the OCR-generated digital transcription of Dembowski’s work was largely accurate, the software struggled to recognize the Old French text — despite reading from a cleanly edited print exemplar — and required extensive correction on my part to ensure its fidelity and usefulness as a working reference. I highlight this small step in my process as a reminder that digital tools can accelerate our workflows but by no means replace our scholarly judgement and labor: even automated processes depend on careful human verification and interpretive decision-making. As discussed in Chapter 1 (section 4. Automation and Augmentation), digital methods do not replace the skilled human labor essential to editing but instead augment it. Even tasks that may seem ripe for automation — such as transcription — depend on human judgment and intervention; as Lit reminds us, “transcription itself is not an objective task but can be considered an editorial task dependent on the editor’s erudition” (172).</p>
 <p>Despite all this careful attention, Appendix 2 should be considered a good but faulty draft until eyes fresher than my own have reviewed its accuracy. In the meantime though, this material has already served as a useful laboratory for working out the fundamental strategies of this project and future iterations of this project as well as provide substantial material to probe for further literary research.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><img src="images/Fig2.02_Oxygen_T-D_XML.png" class="img-fluid figure-img" style="width:100.0%"></p>
-<figcaption>Figure 2.2: Screengrab of digital transcription file T-D.xml in Oxygen XML Editor. The text of copy T-D appears in white; the markup tags are blue; tag attributes are red; and special characters — here, <code>&amp;amp;</code> indicates the presence of an ‘et’ symbol using an ampersand — are yellow.</figcaption>
+<div id="fig-2_2" class="quarto-float quarto-figure quarto-figure-center anchored" data-fig-align="center">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-2_2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/Fig2.02_Oxygen_T-D_XML.png" class="img-fluid quarto-figure quarto-figure-center figure-img" style="width:100.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-2_2-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.2: Screengrab of digital transcription file T-D.xml in Oxygen XML Editor. The text of copy T-D appears in white; the markup tags are blue; tag attributes are red; and special characters — here, <code>&amp;amp;</code> indicates the presence of an ‘et’ symbol using an ampersand — are yellow.
+</figcaption>
 </figure>
 </div>
 <p>Transcribing each copy of Version T has presented unique challenges, and encoding each copy has required thousands of individual judgment calls.<a href="#fn21" class="footnote-ref" id="fnref21" role="doc-noteref"><sup>21</sup></a> Now, each copy of Version T is both human <em>and</em> machine-readable with the addition of the following tags:</p>
@@ -375,10 +383,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </thead>
 <tbody>
 <tr class="odd">
-<td><div class="quarto-figure quarto-figure-left">
-<figure class="figure">
-<p><img src="images/Fig2.03T-E_f.115va_v.690.png" class="img-fluid figure-img"></p>
-<figcaption>Fig. 2.3: f.115va, v.690</figcaption>
+<td><div id="fig-2_3" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-2_3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/Fig2.03T-E_f.115va_v.690.png" class="img-fluid quarto-figure quarto-figure-left figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-2_3-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.3: f.115va, v.690
+</figcaption>
 </figure>
 </div></td>
 <td><code>&amp;#x02BC;</code></td>
@@ -386,10 +398,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>Qʼ → Que</td>
 </tr>
 <tr class="even">
-<td><div class="quarto-figure quarto-figure-left">
-<figure class="figure">
-<p><img src="images/Fig2.04T-E_f.115rd_v.641.png" class="img-fluid figure-img"></p>
-<figcaption>Fig. 2.4: f.115rd, v.641</figcaption>
+<td><div id="fig-2_4" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-2_4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/Fig2.04T-E_f.115rd_v.641.png" class="img-fluid quarto-figure quarto-figure-left figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-2_4-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.4: f.115rd, v.641
+</figcaption>
 </figure>
 </div></td>
 <td><code>&amp;#x02C8;</code></td>
@@ -397,10 +413,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>Qˈ → Qui</td>
 </tr>
 <tr class="odd">
-<td><div class="quarto-figure quarto-figure-left">
-<figure class="figure">
-<p><img src="images/Fig2.05T-E_f.115rd_v.649.png" class="img-fluid figure-img"></p>
-<figcaption>Fig. 2.5: f.115rd, v.649</figcaption>
+<td><div id="fig-2_5" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-2_5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/Fig2.05T-E_f.115rd_v.649.png" class="img-fluid quarto-figure quarto-figure-left figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-2_5-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.5: f.115rd, v.649
+</figcaption>
 </figure>
 </div></td>
 <td><code>&amp;#x0300;</code></td>
@@ -408,10 +428,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>mlt̀ → molt</td>
 </tr>
 <tr class="even">
-<td><div class="quarto-figure quarto-figure-left">
-<figure class="figure">
-<p><img src="images/Fig2.06T-E_f.115rd_v.648.png" class="img-fluid figure-img"></p>
-<figcaption>Fig. 2.6: f.115rd, v.648</figcaption>
+<td><div id="fig-2_6" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-2_6-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/Fig2.06T-E_f.115rd_v.648.png" class="img-fluid quarto-figure quarto-figure-left figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-2_6-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.6: f.115rd, v.648
+</figcaption>
 </figure>
 </div></td>
 <td><code>&amp;#x0305;</code></td>
@@ -419,10 +443,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>q̅ → que</td>
 </tr>
 <tr class="odd">
-<td><div class="quarto-figure quarto-figure-left">
-<figure class="figure">
-<p><img src="images/Fig2.07T-E_f.115va_v.658.png" class="img-fluid figure-img"></p>
-<figcaption>Fig. 2.7: f.115va, v.658</figcaption>
+<td><div id="fig-2_7" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-2_7-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/Fig2.07T-E_f.115va_v.658.png" class="img-fluid quarto-figure quarto-figure-left figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-2_7-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.7: f.115va, v.658
+</figcaption>
 </figure>
 </div></td>
 <td>〃</td>
@@ -430,10 +458,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>bn̅ → bien</td>
 </tr>
 <tr class="even">
-<td><div class="quarto-figure quarto-figure-left">
-<figure class="figure">
-<p><img src="images/Fig2.08T-E_f.115va_v.659.png" class="img-fluid figure-img"></p>
-<figcaption>Fig. 2.8: f.115va, v.659</figcaption>
+<td><div id="fig-2_8" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-2_8-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/Fig2.08T-E_f.115va_v.659.png" class="img-fluid quarto-figure quarto-figure-left figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-2_8-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.8: f.115va, v.659
+</figcaption>
 </figure>
 </div></td>
 <td>〃</td>
@@ -441,10 +473,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>Qnt̅ → Quant</td>
 </tr>
 <tr class="odd">
-<td><div class="quarto-figure quarto-figure-left">
-<figure class="figure">
-<p><img src="images/Fig2.09T-E_f.115va_v.663.png" class="img-fluid figure-img"></p>
-<figcaption>Fig. 2.9: f.115va, v.663</figcaption>
+<td><div id="fig-2_9" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-2_9-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/Fig2.09T-E_f.115va_v.663.png" class="img-fluid quarto-figure quarto-figure-left figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-2_9-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.9: f.115va, v.663
+</figcaption>
 </figure>
 </div></td>
 <td><code>&amp;#x033E;</code></td>
@@ -452,10 +488,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>m̾veille → merveille</td>
 </tr>
 <tr class="even">
-<td><div class="quarto-figure quarto-figure-left">
-<figure class="figure">
-<p><img src="images/Fig2.10T-E_f.115rd_v.643.png" class="img-fluid figure-img"></p>
-<figcaption>Fig. 2.10: f.115rd, v.643</figcaption>
+<td><div id="fig-2_10" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-2_10-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/Fig2.10T-E_f.115rd_v.643.png" class="img-fluid quarto-figure quarto-figure-left figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-2_10-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.10: f.115rd, v.643
+</figcaption>
 </figure>
 </div></td>
 <td><code>&amp;#x030D;</code></td>
@@ -463,10 +503,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>poit̍ne → poitrine</td>
 </tr>
 <tr class="odd">
-<td><div class="quarto-figure quarto-figure-left">
-<figure class="figure">
-<p><img src="images/Fig2.11T-E_f.115rd_v.646.png" class="img-fluid figure-img"></p>
-<figcaption>Fig. 2.11: f.115rd, v.646</figcaption>
+<td><div id="fig-2_11" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-2_11-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/Fig2.11T-E_f.115rd_v.646.png" class="img-fluid quarto-figure quarto-figure-left figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-2_11-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.11: f.115rd, v.646
+</figcaption>
 </figure>
 </div></td>
 <td>〃</td>
@@ -474,10 +518,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>q̍ → qui</td>
 </tr>
 <tr class="even">
-<td><div class="quarto-figure quarto-figure-left">
-<figure class="figure">
-<p><img src="images/Fig2.12T-E_f.115vb_v.701.png" class="img-fluid figure-img"></p>
-<figcaption>Fig. 2.12: f.115vb, v.701</figcaption>
+<td><div id="fig-2_12" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-2_12-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/Fig2.12T-E_f.115vb_v.701.png" class="img-fluid quarto-figure quarto-figure-left figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-2_12-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.12: f.115vb, v.701
+</figcaption>
 </figure>
 </div></td>
 <td>〃</td>
@@ -485,10 +533,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>p̍st → prist</td>
 </tr>
 <tr class="odd">
-<td><div class="quarto-figure quarto-figure-left">
-<figure class="figure">
-<p><img src="images/Fig2.13T-E_f.115rd_v.614.png" class="img-fluid figure-img"></p>
-<figcaption>Fig. 2.13: f.115rd, v.614</figcaption>
+<td><div id="fig-2_13" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-2_13-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/Fig2.13T-E_f.115rd_v.614.png" class="img-fluid quarto-figure quarto-figure-left figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-2_13-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.13: f.115rd, v.614
+</figcaption>
 </figure>
 </div></td>
 <td><code>&amp;#xA751;</code></td>
@@ -496,10 +548,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>ꝑ → par</td>
 </tr>
 <tr class="even">
-<td><div class="quarto-figure quarto-figure-left">
-<figure class="figure">
-<p><img src="images/Fig2.14T-E_f.115rd_v.626.png" class="img-fluid figure-img"></p>
-<figcaption>Fig. 2.14: f.115rd, v.626</figcaption>
+<td><div id="fig-2_14" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-2_14-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/Fig2.14T-E_f.115rd_v.626.png" class="img-fluid quarto-figure quarto-figure-left figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-2_14-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.14: f.115rd, v.626
+</figcaption>
 </figure>
 </div></td>
 <td><code>&amp;#xA76F;</code></td>
@@ -507,10 +563,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>ꝯ → con or com</td>
 </tr>
 <tr class="odd">
-<td><div class="quarto-figure quarto-figure-left">
-<figure class="figure">
-<p><img src="images/Fig2.15T-E_f.115rd_v.640.png" class="img-fluid figure-img"></p>
-<figcaption>Fig. 2.15: f.115rd, v.640</figcaption>
+<td><div id="fig-2_15" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-2_15-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/Fig2.15T-E_f.115rd_v.640.png" class="img-fluid quarto-figure quarto-figure-left figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-2_15-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.15: f.115rd, v.640
+</figcaption>
 </figure>
 </div></td>
 <td><code>&amp;#xA770;</code></td>
@@ -518,10 +578,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>vꝰ → vos</td>
 </tr>
 <tr class="even">
-<td><div class="quarto-figure quarto-figure-left">
-<figure class="figure">
-<p><img src="images/Fig2.16T-E_f.115rd_f.646.png" class="img-fluid figure-img"></p>
-<figcaption>Fig. 2.16: f.115rd, v.646</figcaption>
+<td><div id="fig-2_16" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-2_16-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/Fig2.16T-E_f.115rd_f.646.png" class="img-fluid quarto-figure quarto-figure-left figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-2_16-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.16: f.115rd, v.646
+</figcaption>
 </figure>
 </div></td>
 <td>〃</td>
@@ -529,10 +593,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>plꝰ → plus</td>
 </tr>
 <tr class="odd">
-<td><div class="quarto-figure quarto-figure-left">
-<figure class="figure">
-<p><img src="images/Fig2.17T-E_f.115rd_v.615.png" class="img-fluid figure-img"></p>
-<figcaption>Fig. 2.17: f.115rd, v.615</figcaption>
+<td><div id="fig-2_17" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-2_17-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/Fig2.17T-E_f.115rd_v.615.png" class="img-fluid quarto-figure quarto-figure-left figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-2_17-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.17: f.115rd, v.615
+</figcaption>
 </figure>
 </div></td>
 <td><code>&amp;#xF158;</code></td>
@@ -540,10 +608,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td> → &amp;</td>
 </tr>
 <tr class="even">
-<td><div class="quarto-figure quarto-figure-left">
-<figure class="figure">
-<p><img src="images/Fig2.18T-E_f.115rd_v.623.png" class="img-fluid figure-img"></p>
-<figcaption>Fig. 2.18: f.115rd, v.623</figcaption>
+<td><div id="fig-2_18" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-2_18-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/Fig2.18T-E_f.115rd_v.623.png" class="img-fluid quarto-figure quarto-figure-left figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-2_18-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.18: f.115rd, v.623
+</figcaption>
 </figure>
 </div></td>
 <td><code>&amp;#xF1C1;</code></td>
@@ -551,10 +623,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>dpel → drapel</td>
 </tr>
 <tr class="odd">
-<td><div class="quarto-figure quarto-figure-left">
-<figure class="figure">
-<p><img src="images/Fig2.19T-E_f.115rd_v.649.png" class="img-fluid figure-img"></p>
-<figcaption>Fig. 2.19: f.115rd, v.649</figcaption>
+<td><div id="fig-2_19" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-2_19-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/Fig2.19T-E_f.115rd_v.649.png" class="img-fluid quarto-figure quarto-figure-left figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-2_19-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.19: f.115rd, v.649
+</figcaption>
 </figure>
 </div></td>
 <td>〃</td>
@@ -562,10 +638,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <td>gns → grans</td>
 </tr>
 <tr class="even">
-<td><div class="quarto-figure quarto-figure-left">
-<figure class="figure">
-<p><img src="images/Fig2.20T-E_f.115va_v.672.png" class="img-fluid figure-img"></p>
-<figcaption>Fig. 2.20: f.115va, v.672</figcaption>
+<td><div id="fig-2_20" class="quarto-float quarto-figure quarto-figure-left anchored" data-fig-align="left">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-2_20-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="images/Fig2.20T-E_f.115va_v.672.png" class="img-fluid quarto-figure quarto-figure-left figure-img">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-2_20-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;8.20: f.115va, v.672
+</figcaption>
 </figure>
 </div></td>
 <td><code>&amp;#x1DD1;</code></td>
@@ -2344,6 +2424,15 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
   </div>
 </nav>
 </div> <!-- /content -->
+<script src="figure-number-fix.js"></script>
+<script>
+// Configure this chapter's figure numbering
+window.CHAPTER_CONFIG = {
+    TARGET_CHAPTER: 2  // What chapter number should THIS chapter's figures display as?
+    // Note: Cross-references to other chapters are handled by the global
+    // GLOBAL_FIGURE_MAPPING in figure-number-fix.js
+};
+</script>
 
 
 

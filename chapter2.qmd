@@ -3,6 +3,17 @@ title: "Chapter 2. An Approach to Editing Version T"
 format:
   html:
     page-layout: full
+    include-after-body:
+      - text: |
+          <script src="figure-number-fix.js"></script>
+          <script>
+          // Configure this chapter's figure numbering
+          window.CHAPTER_CONFIG = {
+              TARGET_CHAPTER: 2  // What chapter number should THIS chapter's figures display as?
+              // Note: Cross-references to other chapters are handled by the global
+              // GLOBAL_FIGURE_MAPPING in figure-number-fix.js
+          };
+          </script>
 ---
 # Part 1
 When the holy man Zozimas first encounters Mary the Egyptian in the desert, he struggles to see her clearly. She is “un ombre” (v.823), a shadow “qui estoit ou d’ome ou de feme” (v.824), who was either man or woman. She is the luxurious sinner, the ascetic penitent. In turns, she is clothed and stripped bare, revealed and concealed, as she sheds her life of vanity in favor of profound humility. This interplay between what is visible and knowable and what remains obscured defines not only Mary’s narrative but also the challenges of studying the text itself. Like Zozimas confronting Mary, modern readers must grapple with the text’s shifting contours: its narrative variations, scribal interventions, and material differences across the many manuscript witnesses. What does it mean to ‘see’ Version T clearly? What can we grasp by looking at each manuscript closely, and what do we learn about the complexity of this text and its transmission from considering the entire corpus? 
@@ -28,7 +39,7 @@ In preparation for the digital edition begun in this dissertation — both the e
 
 Prior to diving into the XML encoding though, I first transcribed each manuscript of Version T — working from both the digitized images of the manuscripts and my own collected images — into a basic Google Sheet,[^109] with each verse occupying its own cell.[^110] This early stage served as a no-code method that organized the texts in a manipulatable, shareable format, and by adding color coding to this spreadsheet to highlight the major narrative scenes as they appear across the manuscript copies, I was able to quickly recognize key areas of interest and direct the focus of my subsequent research:
 
-![Figure 2.1: Screengrab of Google Sheet containing side-by-side transcriptions of Version T copies. The cells highlighted in orange indicate the verses of Portrait 2, and the uneven shading was roughly applied to begin tracing variation in this passage across the copies.](images/Fig2.01_GoogleSheets_color_viz.png){width=100% fig-align="center"}
+![Screengrab of Google Sheet containing side-by-side transcriptions of Version T copies. The cells highlighted in orange indicate the verses of Portrait 2, and the uneven shading was roughly applied to begin tracing variation in this passage across the copies.](images/Fig2.01_GoogleSheets_color_viz.png){#fig-2_1 width=100% fig-align="center"}
 
 Laying out all of the T copies this way side by side made it easy to visualize how these copies differ from each other in key places, and even by merely scrolling to the bottom of the spreadsheet, one could obviously see how dramatically these copies differ in length and therefore in content.[^111] This colorized spreadsheet served as the eventual design inspiration for the current presentation of the T portraits in this dissertation (Chapter 2, Part 2), with all of the copies arranged in parallel and with the addition of color highlighting to draw attention to the areas of interest discussed in the close reading in Chapter 3.
 
@@ -36,7 +47,7 @@ The transcription spreadsheet not only served as an initial organizational tool 
 
 Despite all this careful attention, Appendix 2 should be considered a good but faulty draft until eyes fresher than my own have reviewed its accuracy. In the meantime though, this material has already served as a useful laboratory for working out the fundamental strategies of this project and future iterations of this project as well as provide substantial material to probe for further literary research.
 
-![Figure 2.2: Screengrab of digital transcription file T-D.xml in Oxygen XML Editor. The text of copy T-D appears in white; the markup tags are blue; tag attributes are red; and special characters — here, `&amp;` indicates the presence of an ‘et’ symbol using an  ampersand — are yellow.](images/Fig2.02_Oxygen_T-D_XML.png){width=100% fig-align="center"}
+![Screengrab of digital transcription file T-D.xml in Oxygen XML Editor. The text of copy T-D appears in white; the markup tags are blue; tag attributes are red; and special characters — here, `&amp;` indicates the presence of an ‘et’ symbol using an  ampersand — are yellow.](images/Fig2.02_Oxygen_T-D_XML.png){#fig-2_2 width=100% fig-align="center"}
 
 Transcribing each copy of Version T has presented unique challenges, and encoding each copy has required thousands of individual judgment calls.[^114] Now, each copy of Version T is both human *and* machine-readable with the addition of the following tags:
 
@@ -78,41 +89,41 @@ The selected verses below comprise the second portrait of Mary as she lives asce
 +---------------------------------------------------------------------------------------+------------+------------------------------------------------------+--------------------------------+
 | Graphemes                                                                             | Code       | Description                                          | Use                            |
 +=======================================================================================+============+======================================================+================================+
-| ![Fig. 2.3: f.115va, v.690](images/Fig2.03T-E_f.115va_v.690.png){fig-align="left"}    | `&#x02BC;` | modifier letter apostrophe                           | Q&#x02BC; → Que                |
+| ![f.115va, v.690](images/Fig2.03T-E_f.115va_v.690.png){#fig-2_3 fig-align="left"}     | `&#x02BC;` | modifier letter apostrophe                           | Q&#x02BC; → Que                |
 +---------------------------------------------------------------------------------------+------------+------------------------------------------------------+--------------------------------+
-| ![Fig. 2.4: f.115rd, v.641](images/Fig2.04T-E_f.115rd_v.641.png){fig-align="left"}    | `&#x02C8;` | modifier letter vertical line                        | Q&#x02C8; → Qui                |
+| ![f.115rd, v.641](images/Fig2.04T-E_f.115rd_v.641.png){#fig-2_4 fig-align="left"}     | `&#x02C8;` | modifier letter vertical line                        | Q&#x02C8; → Qui                |
 +---------------------------------------------------------------------------------------+------------+------------------------------------------------------+--------------------------------+
-| ![Fig. 2.5: f.115rd, v.649](images/Fig2.05T-E_f.115rd_v.649.png){fig-align="left"}    | `&#x0300;` | combining grave accent                               | mlt&#x0300; → molt             |
+| ![f.115rd, v.649](images/Fig2.05T-E_f.115rd_v.649.png){#fig-2_5 fig-align="left"}     | `&#x0300;` | combining grave accent                               | mlt&#x0300; → molt             |
 +---------------------------------------------------------------------------------------+------------+------------------------------------------------------+--------------------------------+
-| ![Fig. 2.6: f.115rd, v.648](images/Fig2.06T-E_f.115rd_v.648.png){fig-align="left"}    | `&#x0305;` | combining overline                                   | q&#x0305; → que                |
+| ![f.115rd, v.648](images/Fig2.06T-E_f.115rd_v.648.png){#fig-2_6 fig-align="left"}     | `&#x0305;` | combining overline                                   | q&#x0305; → que                |
 +---------------------------------------------------------------------------------------+------------+------------------------------------------------------+--------------------------------+
-| ![Fig. 2.7: f.115va, v.658](images/Fig2.07T-E_f.115va_v.658.png){fig-align="left"}    |  &#12291;  |    &#12291;                                          | bn&#x0305; → bien              |
+| ![f.115va, v.658](images/Fig2.07T-E_f.115va_v.658.png){#fig-2_7 fig-align="left"}     |  &#12291;  |    &#12291;                                          | bn&#x0305; → bien              |
 +---------------------------------------------------------------------------------------+------------+------------------------------------------------------+--------------------------------+
-| ![Fig. 2.8: f.115va, v.659](images/Fig2.08T-E_f.115va_v.659.png){fig-align="left"}    |  &#12291;  |    &#12291;                                          | Qnt&#x0305; → Quant            |
+| ![f.115va, v.659](images/Fig2.08T-E_f.115va_v.659.png){#fig-2_8 fig-align="left"}     |  &#12291;  |    &#12291;                                          | Qnt&#x0305; → Quant            |
 +---------------------------------------------------------------------------------------+------------+------------------------------------------------------+--------------------------------+
-| ![Fig. 2.9: f.115va, v.663](images/Fig2.09T-E_f.115va_v.663.png){fig-align="left"}    | `&#x033E;` | combining vertical tilde                             | m&#x033E;veille → merveille    |
+| ![f.115va, v.663](images/Fig2.09T-E_f.115va_v.663.png){#fig-2_9 fig-align="left"}     | `&#x033E;` | combining vertical tilde                             | m&#x033E;veille → merveille    |
 +---------------------------------------------------------------------------------------+------------+------------------------------------------------------+--------------------------------+
-| ![Fig. 2.10: f.115rd, v.643](images/Fig2.10T-E_f.115rd_v.643.png){fig-align="left"}   | `&#x030D;` | combining vertical line above                        | poit&#x030D;ne → poitrine      |
+| ![f.115rd, v.643](images/Fig2.10T-E_f.115rd_v.643.png){#fig-2_10 fig-align="left"}    | `&#x030D;` | combining vertical line above                        | poit&#x030D;ne → poitrine      |
 +---------------------------------------------------------------------------------------+------------+------------------------------------------------------+--------------------------------+
-| ![Fig. 2.11: f.115rd, v.646](images/Fig2.11T-E_f.115rd_v.646.png){fig-align="left"}   |  &#12291;  |    &#12291;                                          | q&#x030D; → qui                |
+| ![f.115rd, v.646](images/Fig2.11T-E_f.115rd_v.646.png){#fig-2_11 fig-align="left"}    |  &#12291;  |    &#12291;                                          | q&#x030D; → qui                |
 +---------------------------------------------------------------------------------------+------------+------------------------------------------------------+--------------------------------+
-| ![Fig. 2.12: f.115vb, v.701](images/Fig2.12T-E_f.115vb_v.701.png){fig-align="left"}   |  &#12291;  |    &#12291;                                          | p&#x030D;st → prist            |
+| ![f.115vb, v.701](images/Fig2.12T-E_f.115vb_v.701.png){#fig-2_12 fig-align="left"}    |  &#12291;  |    &#12291;                                          | p&#x030D;st → prist            |
 +---------------------------------------------------------------------------------------+------------+------------------------------------------------------+--------------------------------+
-| ![Fig. 2.13: f.115rd, v.614](images/Fig2.13T-E_f.115rd_v.614.png){fig-align="left"}   | `&#xA751;` | Latin small letter ‘p’ with stroke through descender | &#xA751; → par                 |
+| ![f.115rd, v.614](images/Fig2.13T-E_f.115rd_v.614.png){#fig-2_13 fig-align="left"}    | `&#xA751;` | Latin small letter ‘p’ with stroke through descender | &#xA751; → par                 |
 +---------------------------------------------------------------------------------------+------------+------------------------------------------------------+--------------------------------+
-| ![Fig. 2.14: f.115rd, v.626](images/Fig2.14T-E_f.115rd_v.626.png){fig-align="left"}   | `&#xA76F;` | Latin small letter ‘con’                             | &#xA76F; → con or com          |
+| ![f.115rd, v.626](images/Fig2.14T-E_f.115rd_v.626.png){#fig-2_14 fig-align="left"}    | `&#xA76F;` | Latin small letter ‘con’                             | &#xA76F; → con or com          |
 +---------------------------------------------------------------------------------------+------------+------------------------------------------------------+--------------------------------+
-| ![Fig. 2.15: f.115rd, v.640](images/Fig2.15T-E_f.115rd_v.640.png){fig-align="left"}   | `&#xA770;` | modifier letter ‘us’                                 | v&#xA770; → vos                |
+| ![f.115rd, v.640](images/Fig2.15T-E_f.115rd_v.640.png){#fig-2_15 fig-align="left"}    | `&#xA770;` | modifier letter ‘us’                                 | v&#xA770; → vos                |
 +---------------------------------------------------------------------------------------+------------+------------------------------------------------------+--------------------------------+
-| ![Fig. 2.16: f.115rd, v.646](images/Fig2.16T-E_f.115rd_f.646.png){fig-align="left"}   |  &#12291;  |    &#12291;                                          | pl&#xA770; → plus              |
+| ![f.115rd, v.646](images/Fig2.16T-E_f.115rd_f.646.png){#fig-2_16 fig-align="left"}    |  &#12291;  |    &#12291;                                          | pl&#xA770; → plus              |
 +---------------------------------------------------------------------------------------+------------+------------------------------------------------------+--------------------------------+
-| ![Fig. 2.17: f.115rd, v.615](images/Fig2.17T-E_f.115rd_v.615.png){fig-align="left"}   | `&#xF158;` | Latin abbreviations sign small ‘et’ with stroke      | &#xF158; → &amp;               |
+| ![f.115rd, v.615](images/Fig2.17T-E_f.115rd_v.615.png){#fig-2_17 fig-align="left"}    | `&#xF158;` | Latin abbreviations sign small ‘et’ with stroke      | &#xF158; → &amp;               |
 +---------------------------------------------------------------------------------------+------------+------------------------------------------------------+--------------------------------+
-| ![Fig. 2.18: f.115rd, v.623](images/Fig2.18T-E_f.115rd_v.623.png){fig-align="left"}   | `&#xF1C1;` | combining abbreviation mark superscript ‘ra’         | d&#xF1C1;pel → drapel          |
+| ![f.115rd, v.623](images/Fig2.18T-E_f.115rd_v.623.png){#fig-2_18 fig-align="left"}    | `&#xF1C1;` | combining abbreviation mark superscript ‘ra’         | d&#xF1C1;pel → drapel          |
 +---------------------------------------------------------------------------------------+------------+------------------------------------------------------+--------------------------------+
-| ![Fig. 2.19: f.115rd, v.649](images/Fig2.19T-E_f.115rd_v.649.png){fig-align="left"}   |  &#12291;  |    &#12291;                                          | g&#xF1C1;ns → grans            |
+| ![f.115rd, v.649](images/Fig2.19T-E_f.115rd_v.649.png){#fig-2_19 fig-align="left"}    |  &#12291;  |    &#12291;                                          | g&#xF1C1;ns → grans            |
 +---------------------------------------------------------------------------------------+------------+------------------------------------------------------+--------------------------------+
-| ![Fig. 2.20: f.115va, v.672](images/Fig2.20T-E_f.115va_v.672.png){fig-align="left"}   | `&#x1DD1;` | combining abbreviation mark superscript ‘ur’         | m&#x1DD1; → mur                |
+| ![f.115va, v.672](images/Fig2.20T-E_f.115va_v.672.png){#fig-2_20 fig-align="left"}    | `&#x1DD1;` | combining abbreviation mark superscript ‘ur’         | m&#x1DD1; → mur                |
 +---------------------------------------------------------------------------------------+------------+------------------------------------------------------+--------------------------------+
 
 : {.hover tbl-colwidths="[30,20,30,20]"}
