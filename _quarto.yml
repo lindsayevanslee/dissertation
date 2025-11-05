@@ -8,6 +8,7 @@ book:
     - name: "Loren Easterday Lee Cantrell"
       affiliation: 
         name: "Department of French, University of Virginia"
+      orcid: "0009-0001-2153-9991"
   date: "11/05/2025"
   date-format: long
   chapters:
