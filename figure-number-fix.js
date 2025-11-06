@@ -8,6 +8,7 @@ const GLOBAL_FIGURE_MAPPING = {
     // Format: "original-chapter-position": "display-chapter-number"
     "8": "2",  // Figures from 8th position → display as Chapter 2  
     "10": "3",  // Figures from 10th position → display as Chapter 3
+    "11": "C",  // Figures from 8th position → display as Conclusion
     // Add more mappings for your book here
 };
 

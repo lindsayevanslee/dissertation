@@ -1,13 +1,27 @@
 ---
 title: "Conclusion"
+format:
+  html:
+    include-after-body:
+      - text: |
+          <script src="figure-number-fix.js"></script>
+          <script>
+          // Configure this chapter's figure numbering
+          window.CHAPTER_CONFIG = {
+              TARGET_CHAPTER: C  // What chapter number should THIS chapter's figures display as?
+              // Note: Cross-references to other chapters are handled by the global
+              // GLOBAL_FIGURE_MAPPING in figure-number-fix.js
+          };
+          </script>
 ---
 
 Numerous challenges persist that demand increasingly nuanced editorial choices to enable modern readers to appreciate the full complexity of Mary the Egyptian as she is depicted across the T corpus. First, there are many scribal choices and errors and corrections that can complicate the transcription and text encoding process described in this dissertation. For example, there is a powerful moment in which Mary the Egyptian tells Zozimas that he will find her dead or alive when next they meet (vv.1259-1260), and in copy T-B, the scribe has written these existential options on top of one another within the same ruled line like this:  
 
-
 > Del flu[n]c Jordan ne pas la rive. puis me trovras $\begin{array}{c} \text{u vive} \\ \text{u morte} \end{array}$ (vv.1179-1180 in T-B)
 
 It is as though the scribe wanted to emphasize this simultaneous, ambiguous state for Mary as both alive and dead at once. Yes, it is possible this was merely a choice made for the sake of maintaining the spacing of the line, but because Manuscript B was so carefully copied otherwise, I see potential here to read this juxtaposition as intentional. Regardless of the scribe’s unknowable intentions, we are nevertheless left with the question of how to best encode this line given the present limitations of TEI’s functionality. We have the text “u vive” written above “u morte” within the same ruled line, a scribal choice that would go unacknowledged in a traditional print edition, while a digital edition may offer more options in how to render this copy, potentially even in a dynamic way. Similarly, we often find in the T manuscripts moments where the scribe has offered corrections to their own copying. In T-E, we have a couplet (vv.1021-1022 in T-E) whose lines appear in reverse order, and the scribe has offered a correction with the letters “b” and “a” at the end of the lines:  
+
+![Paris, BnF Arsenal, 3516, f.116rd, lines 21-22/50 (T-E vv.1021-1022). Detail.](images/FigC.1T-E_f.116rdDetail.png){#fig-C_1 width=100% fig-align="center"}
 
 > d[on]t est venue & de q[ue]l t[er]e **b**\
 > Zosimas li p[ri]st a enq[ue]rre **a**\
@@ -22,4 +36,7 @@ The editing practice of this dissertation has been driven by questions like: How
 
 All of this is a fruitful process, but an imperative for better editing outcomes, whether traditional print or digital editing, is increased transparency throughout as well as thoughtful and helpfully inventive visualizations. A great deal of work remains to be done to bring about a full edition and translation of the T corpus in its entirety, but in sharing the foundational stages of these efforts, I hope others may likewise see the value in rendering the complexities of our medieval texts both human- and machine-readable and in exposing the choices we make as editors to broader scrutiny along the way. The methods I propose exploring are not a cure-all for the inherent issue of mediation that occurs when a premodern text is represented to a modern audience in any format. However, I propose an editing practice that would give the modern reader more agency and clarity in their reading experience and bring the reader closer to the text in question as a body of texts, all the while acknowledging that bridging the gap between modern reader and premodern manuscript is an asymptotic endeavor. We may inch ever closer to one-to-one engagement with the imagined ‘original text’ of the T-poet, but no single, static edition could give full voice to a text as layered as the matrix that is *La Vie de sainte Marie l’Égyptienne*.  
 
+![Paris, BnF Arsenal, 3516, f.117vc&d (T-E vv.1549-1578). Detail.](images/FigC.2T-E_f.117v.png){#fig-C_2 fig-align="center"}
+
+![Oxford, Bodleian, Canonici Misc. 74, f.119r, line 10/29 (T-B vv.1179-1180). Detail.](images/FigC.3T-B_f.119rDetail.png){#fig-C_3 width=100% fig-align="center"}
 
