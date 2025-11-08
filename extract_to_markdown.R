@@ -140,10 +140,12 @@ extract_all_sections_to_markdown <- function(output_dir = "temp_files", html_fil
   sections <- list(
     list(name = "Abstract", file = "googledoc_abstract.md"),
     list(name = "Introduction", file = "googledoc_intro.md"),
-    list(name = "1. On Digital Editing", file = "googledoc_chapter1.md"),
-    list(name = "2.1 An Approach to Editing Version T, Part 1", file = "googledoc_chapter2-1.md"),
-    list(name = "2.2 An Approach to Editing Version T, Part 2", file = "googledoc_chapter2-2.md"),
-    list(name = "3. A Cross-Copy Close Reading of the T Portraits", file = "googledoc_chapter3.md")
+    list(name = "Chapter 1. On Digital Editing", file = "googledoc_chapter1.md"),
+    list(name = "Chapter 2.1 An Approach to Editing Version T, Part 1", file = "googledoc_chapter2-1.md"),
+    list(name = "Chapter 2.2 An Approach to Editing Version T, Part 2", file = "googledoc_chapter2-2.md"),
+    list(name = "Chapter 3. A Cross-Copy Close Reading of the T Portraits", file = "googledoc_chapter3.md"),
+    list(name = "Appendix 1: The Manuscripts", file = "googledoc_appendix1.md"),
+    list(name = "Conclusion", file = "googledoc_conclusion.md")
   )
   
   cat("Extracting all main sections to markdown files...\n\n")
